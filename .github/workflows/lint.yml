@@ -1,0 +1,14 @@
+name: lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ruff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      # Same pin as the pre-push hook (.githooks/pre-push) and pyproject dev group.
+      - run: uvx ruff@0.15.17 check .

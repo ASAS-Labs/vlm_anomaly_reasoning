@@ -1,0 +1,9 @@
+# uv / Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated artifacts
+data/datasets/
+
+.claude/settings.local.json
