@@ -73,7 +73,7 @@ def load_pipeline() -> Cosmos3OmniPipeline:
         MODEL_ID,
         torch_dtype=torch.bfloat16,
         safety_checker=None,
-        enable_safety_checker=True,
+        enable_safety_checker=False,
         token=os.environ.get("HF_TOKEN") or None,
     )
     pipe.scheduler = UniPCMultistepScheduler.from_config(pipe.scheduler.config, flow_shift=SHIFT)
