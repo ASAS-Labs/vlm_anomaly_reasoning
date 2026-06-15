@@ -8,7 +8,6 @@ Classifies each video as Anomaly/Normal and writes a detailed JSON report.
 
 import argparse
 import json
-import os
 import socket
 import sys
 import time
