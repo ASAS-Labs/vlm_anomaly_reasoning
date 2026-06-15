@@ -3,10 +3,10 @@
 __pycache__/
 *.pyc
 
-
-.env
-
 # Generated artifacts
 data/datasets/
 
 .claude/settings.local.json
+.env
+spec/
+todo.md

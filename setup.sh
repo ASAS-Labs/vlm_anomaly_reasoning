@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Install the system graphics libraries the Diffusers pipeline needs on headless
 # servers, and point git at the committed hooks. Python dependencies and env
 # vars are managed by uv.
