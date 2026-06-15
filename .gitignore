@@ -3,6 +3,9 @@
 __pycache__/
 *.pyc
 
+
+.env
+
 # Generated artifacts
 data/datasets/
 
