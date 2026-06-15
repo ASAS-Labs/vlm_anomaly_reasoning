@@ -1,5 +1,6 @@
 # uv / Python
 .venv/
+.venv-vllm/
 __pycache__/
 *.pyc
 

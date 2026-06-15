@@ -12,12 +12,17 @@ against the `/v1/videos/sync` endpoint, then shuts the server down on exit.
 
 Setup (run once):
 
-    uv sync                # install Python deps (incl. vllm) into .venv from uv.lock
+    ./setup_vllm.sh                    # creates .venv-vllm with the vllm-omni CLI
+    source .venv-vllm/bin/activate
     export HF_TOKEN=<token with access to the gated model and the dataset repo>
+
+The vLLM-Omni backend lives in its own venv (.venv-vllm) because it pins
+diffusers==0.38.0, which conflicts with the git diffusers the main project env
+uses for generate_videos_diffusers.py.
 
 Run:
 
-    uv run python data/cosmos3/generate_videos_vllm.py
+    python data/cosmos3/generate_videos_vllm.py
 
 Switch models by editing MODEL_ID below (Cosmos3-Nano by default).
 """
@@ -101,6 +106,10 @@ def start_server() -> subprocess.Popen:
         "--init-timeout",
         str(SERVER_STARTUP_TIMEOUT),
     ]
+    # Cosmos3-Super (64B) usually needs layerwise offload to fit; it trades some
+    # latency to offload transformer blocks between CPU and GPU. Nano doesn't.
+    if "Super" in MODEL_ID:
+        cmd.append("--enable-layerwise-offload")
     print(f"starting vLLM server: {' '.join(cmd)}")
     # New session so we can signal the whole process group (TP spawns worker procs).
     return subprocess.Popen(cmd, start_new_session=True)
