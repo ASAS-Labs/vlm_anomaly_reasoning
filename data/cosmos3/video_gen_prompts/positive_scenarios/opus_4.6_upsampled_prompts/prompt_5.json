@@ -1,0 +1,111 @@
+{
+  "subjects": [
+    {
+      "description": "Two stray polythene bags, one white and semi-translucent, the other a crinkled blue plastic bag, both lightweight and partially flattened, tumbling along the asphalt road surface.",
+      "appearance_details": "The white bag is partially inflated by the wind with visible wrinkles and creases; the blue bag is smaller, more crumpled, and has a faded printed logo. Both show signs of wear and dirt from being on the street.",
+      "relationship": "The two bags are near each other on the road ahead of the ego vehicle, acting as minor road debris.",
+      "location": "Center-right foreground to mid-ground on the road surface",
+      "relative_size": "Small within frame",
+      "orientation": "Facing various directions as they tumble and rotate in the wind",
+      "pose": "",
+      "action": "Being tossed and tumbled along the road surface by intermittent gusts of wind",
+      "state_changes": "The bags shift position laterally and roll forward slightly as wind catches them; the white bag briefly inflates and lifts a few inches off the ground before settling back down.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A moderately busy urban city road during daytime. The road is a two-lane asphalt surface with faded lane markings and occasional patches. On both sides of the road, multi-story commercial and residential buildings line the street, some with balconies, awnings, and air conditioning units. A few parked cars are visible along the right curb. Sparse trees with dusty leaves are planted along the sidewalk. Electrical wires crisscross overhead. In the distance, traffic lights and a few other vehicles can be seen further down the road. The sidewalks show pedestrians walking at a distance.",
+  "lighting": {
+    "conditions": "Bright, slightly hazy daylight with a thin overcast layer diffusing the sunlight",
+    "direction": "Front-lit to slightly top-lit, with sunlight coming from a high angle ahead and slightly to the left",
+    "shadows": "Soft, muted shadows beneath vehicles and buildings; the overcast diffuses harsh shadow edges. Short shadows cast by parked cars and street furniture.",
+    "illumination_effect": "Even, naturalistic urban daylight illumination with a warm tint; asphalt reflects subtle glare from the diffused sunlight."
+  },
+  "aesthetics": {
+    "composition": "First-person ego-vehicle perspective with the road stretching ahead in a slight vanishing-point composition. The polythene bags are positioned slightly off-center to the right in the lower-middle portion of the frame, drawing the eye before the vehicle passes over or beside them.",
+    "color_scheme": "Muted urban palette dominated by grays of asphalt and concrete, with accents of beige and brown building facades, sparse green from distant trees, and the contrasting white and blue of the polythene bags against the dark road.",
+    "mood_atmosphere": "Mundane, everyday urban commute; indifferent and matter-of-fact; a slice-of-life feeling with minor visual interest from the windblown debris.",
+    "patterns": "Repetitive lane markings on the road; rows of evenly spaced buildings and parked vehicles along the street edge"
+  },
+  "cinematography": {
+    "camera_motion": "Steady forward-moving tracking shot from the vehicle's dashboard perspective, maintaining consistent forward velocity with very subtle vibrations from road surface irregularities",
+    "framing": "Wide shot from dashboard-mounted ego-vehicle camera capturing the full road ahead and peripheral urban environment",
+    "camera_angle": "Slightly low eye-level, approximately driver's seated eye height, looking straight ahead down the road",
+    "depth_of_field": "Deep",
+    "focus": "Road surface and polythene bags in sharp focus; buildings and distant traffic slightly softer but still legible",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic, documentary-style dashcam footage",
+  "context": "Ego-vehicle dashcam perspective capturing a routine city drive where minor road debris (stray polythene bags) appears ahead and is ignored as the vehicle continues steadily.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the city road. In the distance ahead, two polythene bags become visible on the road surface, being gently pushed by the wind."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle closes distance on the polythene bags. The white bag briefly lifts off the ground a few inches as a gust of wind catches it, then settles back down. The blue bag skitters sideways slightly."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its speed and lane position, passing directly over or beside the polythene bags without any change in trajectory. The bags pass beneath or to the side of the camera view and disappear from frame as the vehicle continues forward along the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 40",
+      "category": "scene_sign",
+      "appearance": "White rectangular sign with black text and a red circular border, standard municipal traffic sign, slightly weathered",
+      "spatial_temporal": "Right side of road on a metal pole, visible from approximately 0:00 to 0:02 as the vehicle approaches and passes it",
+      "context": "Standard urban speed limit sign indicating the road's speed regulation"
+    },
+    {
+      "text": "PHARMACY",
+      "category": "physical_in_scene",
+      "appearance": "Green backlit sign with white capital letters mounted above a storefront on the right side of the road",
+      "spatial_temporal": "Right background, visible from approximately 0:01 to 0:03",
+      "context": "Commercial storefront signage on one of the buildings lining the street"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle drives steadily along the urban road. The polythene bags become visible ahead on the asphalt, gently moved by the wind. The surrounding city environment with buildings, parked cars, and distant traffic is visible.",
+      "key_changes": "The polythene bags grow larger in frame as the vehicle approaches. A speed limit sign passes on the right side.",
+      "camera": "Steady forward-moving dashcam perspective with slight road vibration; consistent speed and heading."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle is now close to the polythene bags. The white bag catches a gust and briefly lifts a few inches into the air before settling. The blue bag skids laterally. The vehicle shows no signs of slowing or swerving.",
+      "key_changes": "The white bag momentarily inflates and lifts; the bags are now in the near foreground of the frame.",
+      "camera": "Continuous steady forward motion; no change in speed or direction."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes over or alongside the polythene bags, which exit the bottom of the frame. The road ahead continues clear with distant vehicles and city buildings. The vehicle maintains its lane and speed uninterrupted.",
+      "key_changes": "The polythene bags pass out of frame beneath or beside the vehicle. The road ahead opens up with no further obstacles.",
+      "camera": "Steady forward dashcam motion continues unchanged through the end of the clip."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle is driving steadily along a city road lined with buildings and parked cars under hazy daylight. Ahead on the asphalt, two polythene bags — one white and one blue — become visible, sitting on the road and gently disturbed by the breeze. By 0:01, the bags grow closer and a speed limit sign passes on the right. At 0:02, the white bag catches a gust of wind and briefly lifts a few inches off the ground before settling back, while the blue bag skitters sideways slightly. Between 0:03 and 0:05, the vehicle maintains its lane and speed, passing directly over or beside the bags without deviation. The bags disappear from the bottom of the frame and the road ahead continues clear, with distant traffic and city buildings stretching onward.",
+  "audio_description": "Continuous low hum of the vehicle's engine and road noise — tires on asphalt producing a steady rolling sound. Faint ambient city sounds including distant honking, muffled chatter, and the occasional bird call. A subtle whoosh of wind as the polythene bags are tossed. No music, no speech. The sound profile remains consistent throughout, emphasizing the mundane, everyday driving experience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

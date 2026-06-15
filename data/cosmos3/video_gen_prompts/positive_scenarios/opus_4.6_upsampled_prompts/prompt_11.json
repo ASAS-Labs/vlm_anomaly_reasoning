@@ -1,0 +1,151 @@
+{
+  "subjects": [
+    {
+      "description": "A standard regulatory traffic sign pole assembly at an intersection, featuring a vertical metal post painted silver-gray, topped with a traffic light housing (three circular lights arranged vertically: red on top, amber in the middle, green on the bottom). The red light is illuminated brightly, the green and amber lights are off/dark.",
+      "appearance_details": "The traffic light housing is a matte black rectangular box with sun visors over each lens. Below the traffic light, a white rectangular stop line sign is mounted. The pole also has a horizontal mast arm extending to the right.",
+      "relationship": "Central navigational obstacle the ego vehicle is approaching; the balloons are tied to this same post",
+      "location": "Center-right of frame, growing larger as the vehicle approaches",
+      "relative_size": "Medium within frame, growing to large within frame as vehicle approaches",
+      "orientation": "Facing directly toward the camera/ego vehicle",
+      "pose": "Stationary, upright vertical pole",
+      "action": "Displaying a red light signal",
+      "state_changes": "Red light remains steadily illuminated throughout; the sign assembly grows larger in frame as the vehicle approaches and then remains stationary as the vehicle stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A bundle of approximately 8-10 vibrant party balloons in assorted bright colors — red, yellow, blue, green, magenta, and orange — tied together with curling ribbons and fastened to the traffic sign post just below the traffic light housing.",
+      "appearance_details": "The balloons are glossy latex, inflated tightly, catching sunlight with bright specular highlights. Curling ribbons in white and gold dangle from the knot. Several balloons overlap and partially obscure the illuminated red traffic light from the ego vehicle's perspective.",
+      "relationship": "Tied to the traffic sign post; partially obstructing the red light from the driver's viewpoint",
+      "location": "Center-right of frame, clustered around and slightly in front of the red traffic light",
+      "relative_size": "Medium within frame",
+      "orientation": "Floating upward and swaying gently to the left due to a light breeze",
+      "pose": "Buoyant cluster floating at the top of their tether",
+      "action": "Swaying and bobbing gently in the wind, partially overlapping the red light",
+      "state_changes": "Continuous gentle swaying motion; the cluster drifts left then right rhythmically; as the vehicle gets closer, the overlap with the red light becomes more apparent",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 9,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle — implied through the dashboard perspective. The hood of a dark charcoal sedan is faintly visible at the very bottom edge of the frame, with subtle dashboard reflections on the windshield.",
+      "appearance_details": "Slight curvature of the dark gray/charcoal hood visible at the bottom of frame; faint windshield reflections of interior elements",
+      "relationship": "The ego vehicle from whose perspective the entire scene is viewed; approaches and stops at the intersection",
+      "location": "Bottom edge of frame (ego perspective)",
+      "relative_size": "Small within frame (only the hood edge is visible)",
+      "orientation": "Facing forward toward the intersection",
+      "pose": "Moving forward then decelerating to a stop",
+      "action": "Driving forward and braking to a compliant stop at the red light",
+      "state_changes": "Transitions from forward motion to gradual deceleration to a complete stop; slight nose-dip as brakes are applied",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A suburban four-way intersection on a two-lane road during a clear afternoon. The road is smooth dark asphalt with white lane markings and a painted stop line. On both sides of the road, sidewalks border neatly trimmed grass strips with a few deciduous trees showing green foliage. A strip mall with low-rise commercial buildings is visible in the background to the left, and a residential neighborhood with single-story houses and fences extends to the right. A few parked cars line the far side of the cross street. The sky is a clear blue with scattered white cumulus clouds.",
+  "lighting": {
+    "conditions": "Bright afternoon daylight, clear sky with direct sunlight",
+    "direction": "Front-lit to slightly top-lit, sun positioned high and slightly behind the camera (afternoon sun from the southwest)",
+    "shadows": "Moderate, well-defined shadows cast by the traffic pole and balloons onto the pavement, angled slightly to the right; tree shadows dapple the sidewalks",
+    "illumination_effect": "Warm, vivid illumination that makes the balloon colors pop and creates bright specular highlights on the glossy balloon surfaces and the traffic light lenses"
+  },
+  "aesthetics": {
+    "composition": "Ego-vehicle dashboard camera perspective with the road converging toward a vanishing point at the intersection center; the traffic sign and balloon cluster are positioned at the right-of-center focal point using a rule-of-thirds placement; the stop line and lane markings create strong leading lines toward the signal",
+    "color_scheme": "Dominant warm asphalt gray and sky blue background contrasted with vivid balloon colors (red, yellow, blue, green, magenta, orange) and the glowing red traffic light; white lane markings provide graphic contrast",
+    "mood_atmosphere": "Unexpectedly whimsical yet cautionary; the festive balloons create a playful incongruity against the strict regulatory traffic environment, evoking a sense of everyday surprise and slight visual confusion",
+    "patterns": "Repeated circular shapes of the balloons echoing the circular traffic light lenses; parallel lane markings receding toward the intersection"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-tracking shot from the ego vehicle's perspective, gradually decelerating and coming to a complete stop; slight natural vibration consistent with a dashcam mounted on a moving vehicle",
+    "framing": "Wide shot capturing the full intersection ahead, narrowing focus on the traffic signal and balloons as the vehicle approaches",
+    "camera_angle": "Eye-level, approximately driver's-seat height (about 1.2 meters above the road surface)",
+    "depth_of_field": "Deep — both the nearby road markings and the distant background buildings remain in focus",
+    "focus": "Sharp focus on the traffic signal, balloons, and the road ahead",
+    "lens_focal_length": "Standard wide-angle dashcam equivalent, approximately 28-35mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage style, cinematic color grading",
+  "context": "Ego-vehicle dashcam footage capturing an unusual intersection scenario where festive balloons partially obstruct a red traffic light, demonstrating safe and compliant driving behavior",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle is driving at moderate speed along a suburban road, approaching an intersection visible ahead with a traffic signal and a colorful cluster of balloons tied to the signal post."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The vehicle continues approaching the intersection; the red traffic light becomes clearly visible and the party balloons are seen swaying in the wind, partially overlapping and obscuring the red light. The vehicle begins to decelerate."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle smoothly brakes and comes to a complete, compliant stop at the white stop line. The balloons continue gently swaying in the breeze, partially overlapping the illuminated red light. The scene is stationary from the stopped vehicle's perspective."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White capital letters on a red octagonal sign, standard reflective material, approximately 30 inches wide",
+      "spatial_temporal": "Mounted on the right side of the road on a separate post near the intersection, visible from 0:01 onward, positioned right-of-center in frame",
+      "context": "Standard regulatory stop sign supplementing the traffic light at the intersection"
+    },
+    {
+      "text": "NO TURN ON RED",
+      "category": "scene_sign",
+      "appearance": "White rectangular sign with black text, standard DOT font, mounted below the traffic light",
+      "spatial_temporal": "Attached to the traffic signal pole, becoming legible from approximately 0:02 onward, center-right of frame",
+      "context": "Regulatory traffic sign providing additional turning restrictions at this intersection"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle travels at a moderate speed along a suburban two-lane road. In the distance, the intersection comes into view with the traffic signal pole and a colorful cluster of balloons visible. Road markings and sidewalks frame the scene.",
+      "key_changes": "The intersection and traffic signal grow slightly larger as the vehicle moves forward; the balloons are visible as a small colorful cluster in the distance.",
+      "camera": "Forward-tracking at moderate speed with slight natural dashcam vibration; wide framing of the road ahead"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "The vehicle continues approaching the intersection. The illuminated red traffic light and the swaying party balloons become more prominent. The balloons bob and sway in the wind, and their partial overlap with the red light is now clearly visible. The vehicle begins to decelerate noticeably.",
+      "key_changes": "The traffic signal and balloons grow significantly larger in frame; forward motion slows; the balloon overlap with the red light becomes clearly apparent; slight nose-dip of the vehicle as braking begins.",
+      "camera": "Forward-tracking with decelerating motion; the framing tightens naturally on the signal and balloons as they grow larger; slight forward pitch from braking"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop at the white stop line. The traffic light shows a steady red with green and amber off. The party balloons continue swaying gently in the breeze, their vibrant colors contrasting with the signal housing. The scene is observed from the stationary vehicle's perspective.",
+      "key_changes": "Forward motion ceases entirely; the scene becomes a stationary view; the balloons continue their gentle wind-driven sway; the red light glows steadily; ambient street activity is visible in the periphery.",
+      "camera": "Stationary with very subtle natural dashcam micro-vibrations from the idling engine; the framing is fixed on the intersection, traffic signal, and balloons"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the dashcam shows a suburban road stretching ahead toward a four-way intersection under a clear blue afternoon sky. A traffic signal is visible in the distance with a small colorful cluster near it. By 0:01, as the vehicle steadily approaches, the traffic light becomes identifiable with its red light glowing, and the bundle of bright party balloons tied to the post becomes clearer, swaying gently. Between 0:01 and 0:02, the balloons' vibrant reds, yellows, blues, and greens become vivid, and their partial overlap with the illuminated red light is noticeable. The vehicle begins to slow down. From 0:02 to 0:03, the braking intensifies and the vehicle decelerates smoothly; the stop line on the road approaches. The balloons bob rhythmically in a light breeze, their ribbons trailing. At 0:03, the vehicle reaches the stop line and comes to a full stop. From 0:03 to 0:05, the view is stationary: the red light remains steadily illuminated, the festive balloons continue their gentle swaying motion partially covering the red lens, surrounding trees rustle lightly, and the quiet suburban intersection stretches out ahead.",
+  "audio_description": "The audio begins with the low steady hum of the vehicle's engine and the soft hiss of tires on asphalt. Faint wind noise is audible through the vehicle cabin. As the vehicle decelerates from 0:02, the engine tone drops and gentle brake pad contact is faintly heard. At 0:03, the tire noise ceases as the vehicle stops, leaving only the idle engine hum, ambient birdsong from nearby trees, and a distant sound of a car passing on the cross street. A very faint rustling of the balloon ribbons in the wind is subtly audible throughout.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

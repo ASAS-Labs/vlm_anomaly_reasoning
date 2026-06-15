@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle seen from the ego vehicle's perspective, appearing as a pair of intensely bright white-yellow headlights growing larger as it approaches over the crest of the hill",
+      "appearance_details": "The vehicle body is barely discernible behind the overwhelming glare of its high-beam headlights; faint silhouette suggests a mid-size sedan or SUV with LED or HID headlamps",
+      "relationship": "Oncoming traffic in the opposite lane, directly ahead of the ego vehicle",
+      "location": "Center to center-left of frame, approaching from background",
+      "relative_size": "Small within frame initially, growing to medium within frame as it passes",
+      "orientation": "Facing directly toward the camera (ego vehicle)",
+      "pose": "",
+      "action": "Driving downhill toward the ego vehicle at highway speed",
+      "state_changes": "Grows from a distant pair of bright dots to a blinding, frame-dominating glare that causes severe lens artifacts, then rapidly passes out of frame to the left",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle's dashboard and hood visible at the bottom edge of the frame, a dark-colored sedan with a slightly reflective hood surface",
+      "appearance_details": "Faint dashboard instrument glow visible at the very bottom of frame; windshield edges and A-pillars frame the view; minor dust specks on the windshield catch light",
+      "relationship": "The viewer's own vehicle providing the first-person driving perspective",
+      "location": "Bottom foreground, persistent throughout",
+      "relative_size": "Large within frame (bottom edge only)",
+      "orientation": "Facing forward along the road",
+      "pose": "",
+      "action": "Driving uphill then transitioning to downhill on a city highway, with abrupt corrective steering inputs",
+      "state_changes": "Smooth forward travel transitions to jerky lateral swerving as the driver reacts to blinding glare, the hood visibly shifting left and right relative to the lane markings",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane city highway at nighttime, bordered by concrete jersey barriers and metal guardrails. The road features a moderate uphill grade that transitions to a downhill slope mid-video. Distant city lights and illuminated high-rise buildings line the horizon beyond the highway. Overhead highway lighting poles with orange sodium-vapor lamps are spaced at regular intervals along the median. Sparse vegetation on embankments flanks the road edges. Lane markings are white dashed lines with a solid yellow center divider. A few other vehicles' taillights are visible far ahead in the same direction of travel.",
+  "lighting": {
+    "conditions": "Nighttime urban highway lighting with overhead sodium-vapor street lamps providing dim orange ambient illumination; punctuated by extremely intense oncoming headlight glare",
+    "direction": "Overhead street lamps cast downward light; oncoming headlights blast direct front-facing light into the camera, creating a strong front-lit glare effect",
+    "shadows": "Faint shadows from overhead lamps stretch along the road surface; the ego vehicle's shadow is negligible at night; oncoming headlights create fleeting harsh shadows of the guardrails and jersey barriers",
+    "illumination_effect": "The dominant effect is the blinding bloom and lens flare from oncoming high beams, washing out the center of the frame with white-yellow overexposure, reducing visibility of road markings and surroundings dramatically"
+  },
+  "aesthetics": {
+    "composition": "First-person dashcam-style framing with the road's vanishing point near the upper third; the hood occupies the lower eighth of the frame; lane lines converge toward center; the crest of the hill dominates the mid-ground",
+    "color_scheme": "Dark asphalt grays and blacks dominate, accented by warm orange from street lamps, white and yellow from lane markings, and an overwhelming white-yellow glare bloom from the oncoming headlights; faint cool blue-white city lights in the far background",
+    "mood_atmosphere": "Tense, disorienting, hazardous; a feeling of sudden visual impairment and loss of control",
+    "patterns": "Evenly spaced overhead highway lamps receding into the distance; regular dashed lane markings on the road surface"
+  },
+  "cinematography": {
+    "camera_motion": "Mounted dashcam perspective with slight vibration from road texture; increasingly erratic lateral sway during the steering correction segment, mimicking the vehicle's jagged lane-keeping maneuvers",
+    "framing": "Wide shot capturing the full windshield view of the highway ahead",
+    "camera_angle": "Eye-level from driver's perspective, slightly above dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and oncoming headlights in sharp focus initially; focus becomes degraded by intense glare bloom and lens artifacts during the headlight encounter",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage, documentary-style",
+  "context": "A demonstration of dangerous driving conditions caused by oncoming headlight glare on a city highway at night, illustrating visual impairment and reactive steering behavior",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle steadily drives uphill along the city highway at night; road ahead is visible under street lamps with normal visibility; lane markings and distant taillights are clearly seen"
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "As the vehicle crests the hill and begins descending, a bright pair of oncoming headlights appear over the hilltop, rapidly intensifying and creating severe lens flare, bloom, and visual artifacts across the windshield view"
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The oncoming headlights dominate the frame with blinding glare; the ego vehicle begins abrupt, jagged steering corrections left and right, visible through the erratic lateral shifting of the frame and the hood's position relative to lane markings; the oncoming vehicle eventually passes and the glare subsides"
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "60",
+      "category": "scene_sign",
+      "appearance": "White numerals on a green reflective highway speed limit sign, medium size",
+      "spatial_temporal": "Right side of frame on a roadside post, briefly visible at 0:00-0:01 as the vehicle passes it",
+      "context": "Highway speed limit sign indicating 60 km/h"
+    },
+    {
+      "text": "EXIT 14",
+      "category": "scene_sign",
+      "appearance": "White text on green reflective overhead highway sign",
+      "spatial_temporal": "Upper portion of frame, visible at approximately 0:01-0:02 as the vehicle drives under it",
+      "context": "Highway exit sign indicating an upcoming off-ramp"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle drives steadily uphill on a nighttime city highway. The road is well-lit by overhead sodium-vapor lamps. Dashed white lane markings and the solid yellow center divider are clearly visible. A few distant taillights from vehicles ahead glow red. The dashboard faintly glows at the bottom of the frame. The ride is smooth with minor road vibration.",
+      "key_changes": "The road gradient begins leveling off near the end of this segment as the vehicle approaches the crest of the hill",
+      "camera": "Stable forward-facing dashcam with subtle road vibration; slight upward tilt as vehicle ascends"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle crests the hill and the road transitions to a downhill slope. An oncoming vehicle's headlights appear just beyond the crest, initially as bright points that rapidly expand into a blinding white-yellow glare. Severe visual artifacts — lens flare streaks, bloom, and overexposure — engulf the center and upper portions of the frame. Road markings and surroundings become difficult to discern.",
+      "key_changes": "Rapid transition from clear nighttime visibility to near-total visual impairment from headlight glare; lens artifacts intensify dramatically",
+      "camera": "Dashcam begins slight downward tilt as the road descends; the frame is increasingly dominated by light bloom"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "With visibility severely compromised by the oncoming headlights, the ego vehicle makes abrupt, jagged steering corrections — the view lurches sharply to the right, then overcorrects to the left, then back right — as the driver struggles to maintain lane position. The hood of the vehicle visibly weaves across lane markings. The oncoming vehicle passes around 0:04, and the glare rapidly diminishes, revealing the road ahead as the ego vehicle's path stabilizes slightly but remains unsteady.",
+      "key_changes": "Erratic lateral motion peaks around 0:03-0:04; oncoming vehicle passes and glare subsides by 0:04-0:05; steering begins to stabilize but remains jerky",
+      "camera": "Violent lateral sway mimicking the vehicle's jagged steering inputs; the entire frame shifts left and right abruptly; stabilizes somewhat in the final second"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the viewer sees the nighttime city highway from a dashcam perspective as the vehicle climbs a gentle uphill grade; overhead orange street lamps illuminate evenly spaced lane markings and a speed limit sign passes on the right. By 0:01 the vehicle continues uphill, passing under a green highway exit sign, with distant red taillights visible ahead. At 0:02 the road crests and begins to slope downhill; suddenly two blindingly bright headlights appear from an oncoming vehicle just beyond the hilltop, causing immediate white-yellow glare bloom and radiating lens flare streaks across the windshield. By 0:03 the glare is overwhelming, washing out most of the frame; the ego vehicle abruptly jerks to the right as the driver struggles to see lane markings. At 0:03.5 the vehicle overcorrects sharply to the left, the hood crossing over the lane line. Around 0:04 the oncoming vehicle whips past on the left and the glare rapidly fades, but the ego vehicle makes another jagged correction back to the right. By 0:05 the road ahead is visible again under normal street lamp illumination, though the vehicle's path remains slightly unsteady as the driver recovers.",
+  "audio_description": "Steady tire-on-asphalt road noise and a low engine hum throughout; faint wind buffeting against the windshield. At around 0:02 a subtle whooshing builds as the oncoming vehicle approaches at speed. From 0:03 to 0:04, tire squealing and sharp steering column creaks punctuate the jagged maneuvers; the oncoming vehicle's engine Doppler-shifts as it passes rapidly. After 0:04, the road noise returns to a steadier hum with residual tire scrubbing sounds fading out.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "The ego vehicle, seen from the driver's perspective — the vehicle's hood is faintly visible at the bottom of the frame, a dark-colored sedan with subtle reflections on its paint from the moonlight and highway lane markers.",
+      "appearance_details": "Faint dashboard glow visible at the very bottom edge of frame; windshield frame barely visible at the periphery; no distinctive hood ornament.",
+      "relationship": "Primary viewpoint vehicle; the camera represents the driver's perspective.",
+      "location": "Bottom foreground, partially visible",
+      "relative_size": "Large within frame (hood edge spans bottom)",
+      "orientation": "Facing forward along the highway",
+      "pose": "Stationary relative to camera, moving forward at cruising speed",
+      "action": "Driving forward steadily along the highway",
+      "state_changes": "No significant change; steady forward motion throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A large, low-hanging yellow moon, full and luminous, sitting just above the horizon directly ahead. It has a warm golden-amber hue with faint crater details visible on its surface, appearing unusually large due to the moon illusion near the horizon.",
+      "appearance_details": "Warm golden-yellow glow with a subtle orange tinge at its lower edge; soft halo of light surrounding it; faint darker maria visible on the surface; positioned centrally on the horizon as if it could be mistaken for an overhead traffic signal.",
+      "relationship": "Dominant visual focal point ahead of the ego vehicle, positioned at the vanishing point of the highway.",
+      "location": "Center of frame, just above the horizon line",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera directly",
+      "pose": "Static celestial body on the horizon",
+      "action": "Hanging motionless on the horizon, glowing steadily",
+      "state_changes": "No significant change; remains fixed on the horizon as the vehicle approaches.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide, multi-lane highway at night under a clear sky. The road stretches straight ahead toward the horizon with gentle, flat terrain on either side. Sparse highway infrastructure — metal guardrails and occasional reflective mile markers — lines the road edges. The sky is deep indigo-black, cloudless, dotted with faint stars. Distant tree silhouettes and low vegetation border the shoulders. No other vehicles are immediately ahead, giving an open, solitary feeling. The asphalt is dark and smooth, with white dashed lane markings and solid shoulder lines reflecting the vehicle's headlights.",
+  "lighting": {
+    "conditions": "Nighttime with a dominant low-hanging full moon providing warm ambient illumination; vehicle headlights cast a forward cone of white light on the road surface.",
+    "direction": "Front-lit by the moon on the horizon; headlights illuminate the road from the ego vehicle's position forward.",
+    "shadows": "Minimal shadows due to low-angle moonlight; faint elongated shadows from guardrails and road signs stretching toward the vehicle; headlight beams create a bright pool on the road surface that fades into darkness at the edges.",
+    "illumination_effect": "The golden moon casts a warm, ethereal glow across the horizon and upper road surface, contrasting with the cool white of the headlights. The combination creates a dramatic, slightly surreal atmosphere with the moon dominating the visual center."
+  },
+  "aesthetics": {
+    "composition": "Central one-point perspective with the highway vanishing point aligned directly with the moon, creating a strong leading-line effect. Lane markings converge toward the luminous moon, drawing the eye to center-frame. The hood edge grounds the bottom of the frame.",
+    "color_scheme": "Deep indigo and navy-black sky; warm golden-amber moon; cool gray and dark charcoal asphalt; white lane markings; faint green-black vegetation silhouettes on the roadside.",
+    "mood_atmosphere": "Solitary, hypnotic, serene, slightly surreal, nocturnal wonder",
+    "patterns": "Repeating dashed white lane markers flowing toward the vanishing point at regular intervals; evenly spaced reflective road markers along the shoulder."
+  },
+  "cinematography": {
+    "camera_motion": "Steady forward tracking at vehicle cruising speed; very slight natural micro-vibrations consistent with a dashboard-mounted camera on smooth highway pavement.",
+    "framing": "Wide shot from the driver's ego perspective, capturing the full width of the highway and the sky above the horizon.",
+    "camera_angle": "Eye-level, approximately at seated driver height, looking straight ahead.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the moon on the horizon; lane markings and road surface in the near foreground remain clear.",
+    "lens_focal_length": "Medium-wide, approximately 28-35mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Cinematic, realistic dashcam aesthetic with slightly heightened atmosphere",
+  "context": "A nighttime driving POV sequence capturing the striking visual of a large harvest moon appearing on a clear highway horizon, evoking the feeling of a long nocturnal road trip.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises steadily along the highway at night. The road stretches ahead under a dark sky, headlights illuminating the lane markings. The large yellow moon becomes visible low on the horizon directly ahead."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The vehicle continues forward at a constant cruising speed. The moon remains centered on the horizon, appearing to hang where an overhead traffic signal might be. Dashed lane markers flow steadily beneath the vehicle, and the road remains empty and clear ahead."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 65",
+      "category": "scene_sign",
+      "appearance": "White rectangular highway sign with black text, standard US DOT font, reflective surface catching the headlight beam",
+      "spatial_temporal": "Right side of frame, passes by quickly around 0:01-0:02",
+      "context": "Standard highway speed limit sign indicating the posted speed on this stretch of road"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The nighttime highway scene establishes itself from the ego vehicle's perspective. The dark, clear road ahead is lit by the vehicle's headlights, and the massive golden moon comes into view, sitting low and prominent on the distant horizon at the road's vanishing point.",
+      "key_changes": "Moon gradually becomes more prominent as the eye adjusts to the scene; a speed limit sign passes on the right.",
+      "camera": "Steady forward tracking at cruising speed, eye-level, centered on the road ahead."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The ego vehicle continues its steady cruise along the open highway. The enormous yellow moon holds its position on the horizon, glowing warmly and dominating the center of the visual field. Lane markings stream past rhythmically. The scene is serene and uninterrupted, with no other traffic visible.",
+      "key_changes": "Lane markers continue flowing past; slight natural vibration of the camera; the moon remains a constant, mesmerizing focal point.",
+      "camera": "Continuous steady forward tracking, maintaining the same eye-level framing with the moon centered at the vanishing point."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the video opens from the ego perspective of a vehicle driving on a clear, empty highway at night. The headlights illuminate the smooth dark asphalt and white dashed lane markings stretching ahead. By 0:01, a large, low-hanging golden-yellow moon is clearly visible on the horizon directly ahead, sitting at the road's vanishing point where an overhead signal light might typically appear. Around 0:01-0:02, a reflective speed limit sign passes on the right side. From 0:02 through 0:05, the vehicle maintains its steady cruising speed. The dashed lane markers flow rhythmically toward the camera. The immense moon remains centered on the horizon, glowing warmly against the deep indigo sky, its amber light softly illuminating the distant road surface. The scene feels hypnotic and serene, a solitary night drive toward an impossibly large moon.",
+  "audio_description": "Continuous low hum of road noise and tire-on-asphalt contact. A faint, steady engine drone at cruising RPM. Subtle wind buffeting around the vehicle cabin. No music, no speech. Occasional soft thump as the tires cross expansion joints in the pavement. The overall soundscape is quiet and meditative, emphasizing the solitude of the nighttime drive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

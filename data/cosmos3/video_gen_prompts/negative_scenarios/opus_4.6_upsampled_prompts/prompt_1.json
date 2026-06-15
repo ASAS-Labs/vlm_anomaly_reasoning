@@ -1,0 +1,144 @@
+{
+  "subjects": [
+    {
+      "description": "A medium-sized flatbed truck carrying several vertical traffic sign poles on its bed. The truck is a white-cabbed commercial vehicle with a weathered flatbed cargo area. The traffic sign poles are bundled upright, each topped with a traffic signal head whose lights are off.",
+      "appearance_details": "The truck has a slightly dusty rear, visible tail lights, and a metal flatbed with tie-down straps securing the signal poles. One of the traffic signal heads has a clearly visible glass cover with a distinct red, amber, and green lens arrangement, catching ambient light and showing the colored glass despite being unpowered.",
+      "relationship": "The truck is the lead vehicle directly ahead of the ego vehicle, occupying the same lane.",
+      "location": "Center of frame, middle-ground to foreground as the ego vehicle approaches",
+      "relative_size": "Medium within frame initially, growing to Large within frame as ego vehicle closes distance",
+      "orientation": "Facing away from camera (rear of truck visible)",
+      "pose": "Stationary or moving slowly ahead in lane",
+      "action": "Traveling slowly ahead in the same lane, carrying traffic signal equipment",
+      "state_changes": "Truck appears smaller at the start and grows progressively larger as the ego car approaches, eventually filling much of the center frame when the ego vehicle comes to a stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle — implied by the dashboard-camera perspective. The hood of a sedan is faintly visible at the very bottom of the frame, dark metallic grey in color.",
+      "appearance_details": "A sliver of the car's hood is visible at the bottom edge, slightly reflective under daylight. Windshield frame edges may be faintly perceptible at the corners.",
+      "relationship": "The ego vehicle is following the truck ahead in the same lane, decelerating to a stop.",
+      "location": "Bottom edge of frame (ego perspective)",
+      "relative_size": "Small within frame (only hood edge visible)",
+      "orientation": "Facing forward (camera is mounted on or behind the windshield)",
+      "pose": "Driving position, decelerating",
+      "action": "Approaching the truck and gradually decelerating to a complete stop",
+      "state_changes": "Vehicle transitions from steady forward motion to gradual deceleration and finally a complete stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Multiple traffic signal poles loaded vertically on the truck's flatbed. Each pole is a galvanized steel post topped with a three-lens traffic signal head. The signal housings are dark charcoal grey with hooded visors over each lens.",
+      "appearance_details": "One prominent signal head has clearly distinguishable colored glass covers — a deep red lens on top, an amber/yellow lens in the middle, and a green lens at the bottom — all unlit but with their colors visible due to ambient light reflecting off the glass surfaces. The other signal heads are partially obscured or angled away.",
+      "relationship": "Cargo on the flatbed truck, the prominent signal head visually mimics an active traffic light from the ego driver's perspective.",
+      "location": "Upper-center of frame, atop the truck bed",
+      "relative_size": "Small within frame initially, growing to Medium within frame",
+      "orientation": "One signal head faces rearward toward the ego vehicle",
+      "pose": "Vertically mounted, secured to the flatbed",
+      "action": "Stationary cargo, passively reflecting light",
+      "state_changes": "As the ego vehicle approaches, the colored glass lenses become more visible and discernible. The red lens in particular catches light convincingly.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane suburban road on a mildly overcast day. Low commercial buildings and scattered trees line both sides of the road. The asphalt is grey with faded lane markings. A few parked cars are visible along the roadside. Utility poles with power lines run parallel to the road. The horizon shows a flat terrain with a pale sky. There is light traffic in the opposite lane.",
+  "lighting": {
+    "conditions": "Overcast daylight with diffused natural light, soft and even illumination",
+    "direction": "Top-lit and slightly front-lit, with ambient light coming from the overcast sky above",
+    "shadows": "Soft, diffused shadows beneath vehicles and along the road surface; no harsh shadow edges due to cloud cover",
+    "illumination_effect": "The even, diffused light allows the colored glass covers on the traffic signal heads to be subtly visible without glare, creating an understated but noticeable color distinction on the unlit lenses"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective centered composition with the truck and its cargo forming the primary focal point in the center of the frame; the road converges toward a vanishing point behind the truck; the dashboard edge anchors the bottom of the frame",
+    "color_scheme": "Muted tones — grey asphalt, white truck cab, overcast pale sky, dark charcoal signal housings with pops of red, amber, and green from the glass covers of the traffic signal",
+    "mood_atmosphere": "Mundane, everyday driving scene with a subtle ironic or humorous undertone as the ego driver treats the cargo signal as if it were a real traffic light",
+    "patterns": "Repeating vertical traffic signal poles on the truck bed; parallel utility poles along the roadside"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective that gradually decelerates and comes to a stop; slight natural vibration consistent with a vehicle-mounted camera",
+    "framing": "Wide shot from inside the vehicle, showing the road ahead, the truck, and surrounding environment",
+    "camera_angle": "Eye-level, slightly above the hood line, typical of a windshield-mounted dashcam",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the truck and its cargo traffic signals; background buildings and trees in acceptable focus",
+    "lens_focal_length": "Wide-angle, approximately 28-35mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic, dashcam-style documentary footage with naturalistic color grading",
+  "context": "A dashcam captures an amusing real-world driving scenario where a car approaches a truck hauling uninstalled traffic signals, and the driver instinctively decelerates to a stop as if obeying the signal — a humorous slice-of-life moment.",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle is driving at moderate speed along a suburban road. The truck is visible ahead in the same lane at a moderate distance, with the traffic signal poles on its bed just becoming discernible."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The ego vehicle continues to close the distance to the truck. The traffic signal poles become clearer, and the colored glass covers on one rearward-facing signal head — red, amber, and green — become visible. The ego vehicle begins to decelerate noticeably."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle decelerates further and comes to a complete stop a safe distance behind the truck, as though obeying a red traffic signal. The truck and its cargo fill a significant portion of the frame. The colored glass covers are clearly visible. The vehicle remains stopped."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "WIDE LOAD",
+      "category": "vehicle_graphic",
+      "appearance": "Bold black uppercase text on a yellow rectangular placard, slightly weathered",
+      "spatial_temporal": "Mounted on the rear of the truck's flatbed, visible from 0:01 onward as the ego vehicle gets closer",
+      "context": "Standard warning sign on a truck carrying oversized cargo, indicating the wide load of traffic signal equipment"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle drives at a steady pace along a suburban road. The truck ahead is visible at a moderate distance with indistinct cargo on its flatbed.",
+      "key_changes": "Truck becomes gradually larger in frame as the distance decreases slightly.",
+      "camera": "Forward-moving dashcam perspective at steady speed with slight road vibration."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "The ego vehicle closes the gap to the truck. The traffic signal poles and one rearward-facing signal head with visible red, amber, and green glass covers become apparent. The ego vehicle begins to decelerate.",
+      "key_changes": "The truck grows significantly larger in frame; the colored glass lenses on the traffic signal head become distinguishable; forward motion slows noticeably.",
+      "camera": "Forward-moving dashcam with decreasing forward velocity; slight pitch-forward motion as brakes are applied."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle decelerates to a full stop behind the truck. The truck and its cargo of traffic signal poles dominate the center of the frame. The colored glass covers are clearly visible. The ego car remains stationary as if obeying a traffic signal.",
+      "key_changes": "Vehicle comes to a complete stop; minor settling of the dashcam as the car halts; the scene becomes static with the truck and signal poles clearly in view.",
+      "camera": "Dashcam decelerates to stationary; slight forward tilt as vehicle brakes and then settles level."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, a dashcam view shows a suburban road stretching ahead under an overcast sky, with a white flatbed truck visible in the distance carrying tall vertical poles. By 0:01, the ego vehicle has moved closer and the cargo is revealed to be traffic signal poles with signal heads on top. Around 0:02, one signal head facing rearward shows its colored glass covers — red on top, amber in the middle, green on the bottom — catching the diffused daylight despite being completely off. The ego vehicle begins braking. By 0:03, the car has slowed considerably, the truck now filling much of the frame, the colored lenses clearly visible. From 0:03 to 0:05, the ego vehicle comes to a complete stop behind the truck, as if the driver has instinctively obeyed what appears to be a traffic signal. The scene holds steady with the car stopped, the truck's cargo of uninstalled traffic signals prominent in view.",
+  "audio_description": "The audio features a steady engine hum and road tire noise on asphalt at the start. Around 0:02, the engine tone drops as the driver lifts off the accelerator, and subtle brake pad engagement sounds are heard. By 0:03, the engine idles quietly as the car comes to a stop. Faint ambient sounds of distant traffic and a light breeze are present throughout. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

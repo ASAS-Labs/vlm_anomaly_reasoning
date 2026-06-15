@@ -26,11 +26,8 @@ export PROMPT_UPSAMPLER_MODEL_NAME="claude-opus-4-6"
 INPUT="${1:-${REPO_ROOT}/data/cosmos3/prompts.txt}"
 OUTPUT="${2:-${REPO_ROOT}/data/cosmos3/video_gen_prompts}"
 
-# Resilient runner: writes each prompt as it succeeds and skips ones that fail
-# (e.g. LLM content refusals) instead of aborting the whole batch.
-set +e
 PYTHONPATH="${FRAMEWORK_DIR}" uv run --no-project --with requests \
-  python "${REPO_ROOT}/data/cosmos3/upsample_runner.py" \
+  python -m cosmos_framework.inference.prompt_upsampling \
   --input "${INPUT}" \
   --output "${OUTPUT}" \
   --mode text2video \
@@ -39,13 +36,7 @@ PYTHONPATH="${FRAMEWORK_DIR}" uv run --no-project --with requests \
   --api-token "${PROMPT_UPSAMPLER_API_TOKEN}" \
   --resolution 720 \
   --aspect-ratio "16,9"
-status=$?
-set -e
 
-# Unwrap the {"prompt": ...} wrapper and pretty-print whatever was generated,
-# even if some prompts were skipped.
+# Unwrap the {"prompt": ...} wrapper and pretty-print the generated JSON prompts.
 uv run --no-project python "${REPO_ROOT}/data/cosmos3/prettify_prompts.py" "${OUTPUT}"
-
-# Surface a non-zero exit if any prompt was skipped.
-exit "${status}"
 

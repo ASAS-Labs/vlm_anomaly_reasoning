@@ -1,0 +1,167 @@
+{
+  "subjects": [
+    {
+      "description": "A group of pedestrians crossing the road at the intersection ahead of the ego vehicle. They are a mix of adults and children, casually dressed, walking across the crosswalk from left to right. Several of them are holding colorful balloons, with some notably bright green balloons standing out among reds, yellows, and whites.",
+      "appearance_details": "The pedestrians carry round helium-filled balloons on strings; the bright green balloons are vivid and glossy, catching the daylight. Some pedestrians carry shopping bags or backpacks. A child near the center holds two green balloons tightly.",
+      "relationship": "They are the primary obstacle causing the ego vehicle to remain stopped; they occupy the crosswalk directly ahead.",
+      "location": "Center midground, spanning from center-left to center-right across the crosswalk",
+      "relative_size": "Medium within frame",
+      "orientation": "Moving laterally from left to right relative to the camera, bodies turned perpendicular to the camera's forward axis",
+      "pose": "Upright walking postures, arms at sides or raised holding balloon strings",
+      "action": "Walking across the crosswalk carrying balloons",
+      "state_changes": "Pedestrians gradually move from left to right across the frame, eventually clearing the crosswalk by the end of the video",
+      "clothing": "Casual urban attire: light jackets, jeans, t-shirts, sneakers; a child wears a bright red hoodie; one woman wears a floral sundress",
+      "expression": "Relaxed, cheerful expressions; the child holding green balloons is smiling broadly",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones across the group, ranging from light to medium-brown",
+      "facial_features": "Faces are at mid-distance so fine details are limited; general outlines of features visible",
+      "number_of_subjects": 6,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle's dashboard and hood visible at the bottom of the frame, representing the driver's first-person perspective. A dark-colored sedan hood with a subtle metallic sheen stretches across the lower portion of the view.",
+      "appearance_details": "The hood is a deep charcoal grey with faint reflections of the sky and surrounding buildings. Windshield frame edges are barely visible at the periphery. A rearview mirror hangs at the top center of the frame.",
+      "relationship": "The ego vehicle from which the entire scene is observed; stationary throughout",
+      "location": "Bottom foreground, extending across the lower edge of the frame",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward along the road",
+      "pose": "Stationary",
+      "action": "Stopped at the intersection",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A red octagonal stop sign mounted on a metal pole on the right side of the road at the intersection.",
+      "appearance_details": "Standard North American stop sign with white border and white lettering reading 'STOP'. The sign is slightly weathered with minor scuff marks.",
+      "relationship": "Traffic control device marking the intersection where the ego vehicle is stopped",
+      "location": "Right midground, slightly above the road level",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the ego vehicle directly",
+      "pose": "Fixed, upright on pole",
+      "action": "Stationary",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A traffic light hanging above the intersection on a horizontal mast, currently displaying a red signal that changes to green at the end of the video.",
+      "appearance_details": "Standard three-light vertical traffic signal with a black housing. The red light is illuminated brightly; the green and yellow lights are dark until the transition.",
+      "relationship": "Controls traffic flow at the intersection; dictates when the ego vehicle may proceed",
+      "location": "Upper center of the frame, suspended above the road",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the ego vehicle",
+      "pose": "Fixed, hanging from horizontal mast",
+      "action": "Displaying red, then transitioning to green",
+      "state_changes": "Red light turns off and green light illuminates at approximately the 3-second mark",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy urban intersection on a multi-lane city road during daytime. Medium-rise buildings line both sides of the street, including a mix of commercial storefronts with awnings and older brick-facade office buildings. Trees with green foliage are planted along the sidewalks. Other vehicles are visible in adjacent lanes, also stopped. Crosswalk markings are painted in bold white stripes on the asphalt. A clear blue sky is visible above the rooftops with a few wispy clouds.",
+  "lighting": {
+    "conditions": "Bright daylight, clear afternoon sun with high visibility",
+    "direction": "Front-lit to slightly top-lit, with the sun high and slightly ahead of the vehicle's position",
+    "shadows": "Short, defined shadows cast by pedestrians onto the road surface; building shadows fall along the right sidewalk; the stop sign casts a small angled shadow on the ground",
+    "illumination_effect": "Warm, even illumination that highlights the vivid colors of the balloons, especially the bright green ones, and creates a lively, well-lit urban atmosphere"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the vehicle hood anchoring the bottom of frame; the road recedes toward a vanishing point at center; pedestrians are arranged across the middle third; traffic light and stop sign frame the upper and right portions respectively",
+    "color_scheme": "Dominant grey asphalt and charcoal hood contrasted by bright green, red, yellow, and white balloons; red stop sign and red traffic light accent the scene; green foliage and blue sky provide a pleasant background palette",
+    "mood_atmosphere": "Calm, patient, everyday urban life; a sense of safe waiting and cheerful pedestrian activity",
+    "patterns": "White crosswalk stripes create a repeating horizontal pattern on the road surface"
+  },
+  "cinematography": {
+    "camera_motion": "Static, fixed to the ego vehicle's dashboard perspective; no movement since the vehicle is stationary",
+    "framing": "Wide shot from driver's POV, capturing the full intersection scene",
+    "camera_angle": "Eye-level from a seated driver's perspective, slightly above road surface",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the pedestrians crossing in the midground and the traffic light above",
+    "lens_focal_length": "Standard wide-angle, approximately 28mm equivalent to simulate a dashcam or driver's natural field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic, documentary-style dashcam footage",
+  "context": "Ego-perspective driving footage depicting a vehicle waiting at a city intersection for pedestrians to cross before the traffic light changes to green, suitable for autonomous driving datasets or traffic safety demonstrations",
+  "actions": [
+    {
+      "time": "0:00-0:03",
+      "description": "The ego vehicle is stationary at the intersection with the traffic light showing red. Pedestrians carrying colorful balloons, including bright green ones, walk across the crosswalk from left to right ahead of the vehicle."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The last pedestrians clear the crosswalk. The traffic light transitions from red to green. The ego vehicle remains stopped momentarily as the light changes, then the scene holds with the green light displayed."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold white uppercase letters on a red octagonal sign with a white border, standard size",
+      "spatial_temporal": "Right midground on a metal pole; visible throughout the entire video from 0:00 to 0:05",
+      "context": "Traffic stop sign at the intersection indicating the vehicle must come to a full stop"
+    },
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on a black rectangular sign with a white arrow pointing right",
+      "spatial_temporal": "Mounted below the traffic light mast, upper center of frame; visible throughout",
+      "context": "Directional traffic sign indicating one-way street crossing the intersection"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Opening view from the ego vehicle's dashboard perspective. The vehicle is fully stopped at the intersection. The red traffic light is visible above. The stop sign is on the right. Pedestrians begin crossing the crosswalk ahead, carrying balloons with several bright green balloons bobbing in the air.",
+      "key_changes": "Scene establishes the stationary ego perspective; pedestrians enter the crosswalk from the left side",
+      "camera": "Static, fixed dashcam-style POV"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Pedestrians continue to cross the intersection. The group moves steadily from left to right. The bright green balloons sway gently in the breeze. A child near the center of the group clutches two green balloons. The traffic light remains red. The vehicle stays completely stopped.",
+      "key_changes": "Pedestrians progress across the crosswalk; balloons gently sway; the crossing is about halfway complete",
+      "camera": "Static, fixed dashcam-style POV"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The last pedestrians step off the crosswalk onto the far sidewalk. The traffic light changes from red to green. The ego vehicle remains safely stationary as the green light illuminates. The intersection ahead is now clear of pedestrians, and the green balloons recede into the right side of the frame as the pedestrians walk away.",
+      "key_changes": "Traffic light transitions from red to green; crosswalk clears; scene settles with the green light displayed",
+      "camera": "Static, fixed dashcam-style POV"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the video opens from a first-person driver's perspective inside a stationary vehicle at a city intersection. The charcoal hood of the car occupies the lower frame, and ahead a red traffic light glows above the road while a stop sign stands on the right. A group of six pedestrians begins walking across the white-striped crosswalk from left to right, carrying colorful balloons — several of which are a vivid bright green that stand out against the urban backdrop. By 0:01-0:02, the pedestrians are in the middle of the crosswalk; the green balloons bob and sway gently in the breeze, and a child in a red hoodie holds two green balloons tightly. The traffic light remains red and the vehicle stays completely still. Around 0:03, the trailing pedestrians step off the crosswalk onto the far sidewalk. At approximately 0:03-0:04, the traffic light transitions from red to green, the red lamp fading and the green lamp illuminating. From 0:04-0:05, the intersection is clear, the green light is fully lit, and the ego vehicle remains safely stopped as the scene concludes.",
+  "audio_description": "Ambient city sounds throughout: distant traffic hum, the low idle of the ego vehicle's engine, occasional muffled car horns in the background. Faint chatter and laughter from the pedestrians crossing, especially a child's cheerful voice. A gentle breeze rustles through nearby trees. No music. A subtle click or mechanical sound as the traffic light changes at the 3-second mark.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

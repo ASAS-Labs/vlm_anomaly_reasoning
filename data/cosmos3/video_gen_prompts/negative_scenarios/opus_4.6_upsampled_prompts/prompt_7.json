@@ -1,0 +1,182 @@
+{
+  "subjects": [
+    {
+      "description": "The ego vehicle's dashboard and hood visible at the bottom of the frame — a modern sedan with a dark gray metallic hood, windshield wipers at rest, and a slightly dusty windshield.",
+      "appearance_details": "The hood has a subtle center crease line; faint reflections of the sky on the paint; dashboard edge visible with a black matte finish.",
+      "relationship": "Primary viewpoint vehicle; the camera is mounted on its windshield looking forward.",
+      "location": "Bottom foreground, extending across the lower portion of the frame.",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward along the road, directly toward the viewer's gaze direction.",
+      "pose": "Stationary relative to camera (ego vehicle).",
+      "action": "Driving forward, initially in the correct lane, then veering into the oncoming lane.",
+      "state_changes": "The vehicle's trajectory shifts from a straight path to a leftward drift as it misinterprets the diversion, then continues straight in the wrong lane.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A row of bright orange and white traffic cones arranged in a staggered diagonal line across the road, marking a construction zone lane diversion.",
+      "appearance_details": "Standard 28-inch reflective traffic cones with two white reflective bands each; some cones are slightly tilted or displaced, creating a confusing pattern.",
+      "relationship": "Obstacles that the ego vehicle misinterprets, leading to the wrong-way deviation.",
+      "location": "Center midground, arranged diagonally from center-right to center-left of the roadway.",
+      "relative_size": "Small within frame",
+      "orientation": "Standing upright on the asphalt, arranged in a diagonal pattern.",
+      "pose": "Upright and stationary.",
+      "action": "Static placement on the road surface.",
+      "state_changes": "They pass out of frame as the ego vehicle drives past them.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "An oncoming silver compact SUV driving in the correct lane, now directly facing the ego vehicle after the wrong-way maneuver.",
+      "appearance_details": "Silver paint, headlights on, rectangular grille, slightly mud-splashed bumper, visible license plate.",
+      "relationship": "Oncoming traffic that the ego vehicle is now heading toward, creating a dangerous head-on scenario.",
+      "location": "Center background, growing larger as it approaches.",
+      "relative_size": "Small within frame initially, growing to Medium within frame",
+      "orientation": "Facing directly toward the camera (head-on).",
+      "pose": "Moving forward in its lane.",
+      "action": "Driving toward the ego vehicle in its correct lane.",
+      "state_changes": "Grows rapidly in size as the distance closes; headlights become more prominent and glaring.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A second oncoming vehicle — a dark blue sedan — visible further behind the silver SUV in the same lane.",
+      "appearance_details": "Dark blue metallic paint, headlights on, partially obscured by the silver SUV ahead of it.",
+      "relationship": "Additional oncoming traffic reinforcing the danger of the wrong-way driving.",
+      "location": "Center far background, behind the silver SUV.",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the camera.",
+      "pose": "Moving forward.",
+      "action": "Driving in the correct oncoming lane.",
+      "state_changes": "Becomes slightly more visible as the scene progresses.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane main road in a suburban area undergoing active road construction. The right lane is partially blocked by an active construction zone with excavation equipment, piles of gravel, and orange safety barriers visible on the right shoulder. Temporary yellow lane markings painted over faded original white lane lines create a confusing pattern on the asphalt. A row of construction barrels and temporary signage flank the right side. The road is flanked by low commercial buildings and sparse trees. The pavement is worn gray asphalt with patches of fresh black tarmac near the construction area. A distant traffic light is visible at an upcoming intersection. The sky is overcast with a flat gray cloud cover.",
+  "lighting": {
+    "conditions": "Overcast daylight, diffused and even with no harsh direct sunlight, typical of a cloudy afternoon.",
+    "direction": "Diffused from above with no strong directional component; slightly brighter toward the horizon ahead.",
+    "shadows": "Soft and minimal due to overcast conditions; faint shadows beneath the traffic cones and construction barriers.",
+    "illumination_effect": "Flat, slightly desaturated lighting that reduces contrast, making the temporary lane markings harder to read and contributing to the visual confusion of the construction zone."
+  },
+  "aesthetics": {
+    "composition": "First-person ego-vehicle perspective with the vehicle hood anchoring the bottom third of the frame; the road stretches into the center vanishing point; construction elements and cones create diagonal lines across the midground.",
+    "color_scheme": "Muted grays of the asphalt and overcast sky dominate; bright orange cones and construction barriers provide high-contrast accents; yellow temporary lane markings clash with faded white original markings; silver and dark blue of oncoming vehicles stand out against the gray road.",
+    "mood_atmosphere": "Tense, disorienting, increasingly alarming as the wrong-way situation unfolds; a sense of impending danger.",
+    "patterns": "Repeating pattern of orange traffic cones at regular intervals; alternating dashed lane markings on the road surface."
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving tracking shot from the ego vehicle's dashcam perspective; subtle leftward drift as the vehicle veers into the oncoming lane; slight vibrations from road surface imperfections.",
+    "framing": "Wide shot capturing the full width of the road and surrounding environment from dashboard height.",
+    "camera_angle": "Eye-level from the driver's seated position, approximately 1.2 meters above the road surface.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the entire road ahead, from the near cones to the distant oncoming vehicles.",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent, typical of a dashcam perspective."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage, documentary-style driving POV",
+  "context": "A driving safety or autonomous vehicle training scenario depicting a dangerous wrong-way driving incident caused by misinterpretation of temporary construction zone lane diversion markings.",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle approaches the construction zone at moderate speed; traffic cones and construction signage become visible ahead on the road."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "The vehicle reaches the row of traffic cones and altered lane markings; the vehicle begins to drift leftward, misinterpreting the temporary diversion and steering toward the oncoming lane."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle fully crosses into the oncoming lane, passing the last of the traffic cones on the right; the confusing temporary yellow markings are now beneath the vehicle."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues driving forward in the wrong direction in the oncoming lane; a silver SUV appears ahead with headlights on, approaching head-on; a second dark blue sedan is visible behind it; the gap between the ego vehicle and the oncoming SUV narrows rapidly."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD WORK AHEAD",
+      "category": "scene_sign",
+      "appearance": "Bold black text on a bright orange diamond-shaped road sign, approximately 36-inch sign with reflective sheeting.",
+      "spatial_temporal": "Right side of the road, visible from 0:00 to 0:01 before passing out of frame.",
+      "context": "Standard construction zone warning sign alerting drivers to upcoming roadwork."
+    },
+    {
+      "text": "DETOUR →",
+      "category": "scene_sign",
+      "appearance": "White text with a right arrow on an orange rectangular sign mounted on a portable stand.",
+      "spatial_temporal": "Right midground near the cone line, visible from 0:01 to 0:02.",
+      "context": "Temporary detour sign indicating the intended diversion path, which the ego vehicle fails to follow correctly."
+    },
+    {
+      "text": "SPEED LIMIT 25",
+      "category": "scene_sign",
+      "appearance": "Black text on a white rectangular sign with a black border, standard roadside post-mounted sign.",
+      "spatial_temporal": "Right side of the road, briefly visible at 0:00.",
+      "context": "Temporary reduced speed limit for the construction zone."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle drives forward on the main road at moderate speed, approaching the construction zone. Orange cones, a 'ROAD WORK AHEAD' sign, and construction barriers come into view. The road surface shows conflicting old white and new yellow lane markings.",
+      "key_changes": "Construction zone elements grow larger and more defined as the vehicle approaches; the visual confusion of the lane markings becomes apparent.",
+      "camera": "Steady forward-moving dashcam shot with slight road vibration; the vanishing point is centered."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "The vehicle reaches the cone line and begins misinterpreting the diversion. Instead of following the intended rightward detour, the vehicle drifts left across the temporary markings. The cones pass by on the right side. The vehicle fully enters the oncoming lane, crossing the center line.",
+      "key_changes": "The camera perspective shifts subtly leftward as the vehicle steers into the wrong lane; cones and the detour sign pass out of frame to the right; the opposite lane's perspective opens up ahead.",
+      "camera": "Forward-moving dashcam with a noticeable leftward drift in the framing as the vehicle changes trajectory; slight increase in road vibration as the vehicle crosses over uneven lane markings."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle is now fully committed to driving in the oncoming lane. A silver compact SUV appears ahead, headlights glaring, driving directly toward the ego vehicle. Behind it, a dark blue sedan is also visible. The distance between the ego vehicle and the oncoming SUV decreases rapidly, creating an imminent head-on collision scenario.",
+      "key_changes": "The oncoming SUV grows rapidly from a small distant shape to a prominent, alarming presence filling the center of the frame; its headlights intensify; the dark blue sedan becomes more visible; the tension escalates significantly.",
+      "camera": "Steady forward-moving dashcam shot now aligned with the oncoming lane; slight vibrations continue; the framing emphasizes the narrowing gap between the ego vehicle and the approaching oncoming traffic."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the dashcam view shows a main road stretching ahead under overcast skies, with construction signs and orange cones visible in the distance along with a 'ROAD WORK AHEAD' sign on the right. By 0:01, the vehicle has closed the distance to the construction zone, and the staggered row of bright orange cones stretches diagonally across the road alongside confusing temporary yellow markings painted over faded white lines. A 'DETOUR' sign with a right arrow is visible near the cones. Between 0:01 and 0:02, the ego vehicle begins drifting leftward, misreading the cone placement and altered markings, steering away from the intended detour path. By 0:02 to 0:03, the vehicle has fully crossed into the oncoming traffic lane, with the last cones now behind and to the right. From 0:03 onward, the vehicle continues forward in the wrong lane; at approximately 0:03.5 a silver SUV with headlights on appears ahead, driving directly toward the ego vehicle. A dark blue sedan is visible behind the SUV. Between 0:04 and 0:05, the oncoming silver SUV grows rapidly larger in the frame, its headlights becoming increasingly bright and glaring, as the two vehicles close the distance between them in a tense, dangerous wrong-way confrontation.",
+  "audio_description": "The audio begins with the steady hum of the ego vehicle's engine at moderate speed and the muffled sound of tires rolling on worn asphalt. As the vehicle approaches the construction zone around 0:01, a faint rhythmic thumping is heard as the tires cross over uneven temporary lane markings and patched asphalt. There is no music. By 0:03, the faint sound of the oncoming SUV's engine and a brief distant horn honk from the oncoming vehicle become audible, growing louder as the vehicles close distance. The ambient sound includes a low wind noise against the windshield throughout.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

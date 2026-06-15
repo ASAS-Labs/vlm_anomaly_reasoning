@@ -1,0 +1,111 @@
+{
+  "subjects": [
+    {
+      "description": "A pair of stray balloons — one red and one yellow — partially deflated, hovering and tumbling near the road surface, caught by gusts of urban wind",
+      "appearance_details": "The red balloon is slightly more inflated with a dangling curled ribbon; the yellow balloon is more wrinkled with a shorter ribbon trailing behind it. Both have a matte, slightly dusty surface from being on the road",
+      "relationship": "Obstacles in the path of the ego vehicle, positioned ahead on the road",
+      "location": "Center-left of the frame, near the road surface, gradually shifting right as the vehicle maneuvers",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, facing various directions as wind tosses them",
+      "pose": "Low to the ground, bobbing and rolling along the asphalt",
+      "action": "Being pushed and tossed by wind gusts, skittering erratically across the road surface",
+      "state_changes": "Initially stationary or gently drifting, then caught by a gust and tumbling more actively; they drift to the left side of the road as the vehicle passes by on the right",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A modern urban city road during the daytime. The road is a two-lane asphalt street with faded lane markings and occasional potholes. On either side are mid-rise buildings — a mix of commercial storefronts with awnings and older apartment blocks with balconies. Parked cars line the right curb. A few sparse trees with green foliage grow from sidewalk planters. In the distance, traffic lights and more buildings define the urban corridor. The sky is partly cloudy with patches of blue visible above the roofline.",
+  "lighting": {
+    "conditions": "Bright daylight with intermittent cloud cover, creating slightly diffused natural light",
+    "direction": "Front-lit to slightly top-lit, with the sun positioned ahead and above the vehicle's direction of travel",
+    "shadows": "Moderate shadows cast by buildings on the left side of the road; dappled tree shadows on the sidewalk; the balloons cast tiny, faint shadows on the asphalt",
+    "illumination_effect": "The scene feels naturally lit with warm afternoon tones; the road surface has a slight sheen from ambient light, and the balloons catch highlights on their curved surfaces"
+  },
+  "aesthetics": {
+    "composition": "First-person ego perspective from the vehicle's dashboard, with the road stretching ahead in one-point perspective converging toward the distance; the balloons occupy the lower-center of the frame against the asphalt",
+    "color_scheme": "Muted urban grays and tans of the road and buildings, with pops of vivid red and yellow from the balloons; green foliage accents; blue-gray sky",
+    "mood_atmosphere": "Mundane urban drive with a touch of whimsy and surprise from the unexpected balloons; calm, slightly surreal everyday moment",
+    "patterns": "Repeating rectangular windows on building facades; evenly spaced parked cars along the curb"
+  },
+  "cinematography": {
+    "camera_motion": "Steady forward-tracking motion simulating the ego vehicle's movement; subtle rightward drift as the vehicle steers around the balloons",
+    "framing": "Wide shot from dashboard level, capturing the full width of the road and surrounding environment",
+    "camera_angle": "Eye-level from the driver's perspective, slightly above the road plane",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the balloons; buildings and distant objects remain in focus due to deep depth of field",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent, consistent with a dashcam or windshield-mounted perspective"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic, documentary-style dashcam footage with cinematic clarity",
+  "context": "An ego-vehicle dashcam perspective capturing an ordinary city drive with an unexpected minor obstacle — stray balloons on the road — requiring a gentle maneuver",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives steadily forward on the city road; in the distance, two colorful balloons become visible near the road surface, gently bobbing in the wind"
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "As the vehicle approaches, the balloons are caught by a gust of wind and tumble erratically across the asphalt; the vehicle begins to steer slightly to the right to avoid them"
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle smoothly maneuvers around the balloons, passing them on the right side; the balloons drift to the left of the frame and recede behind the vehicle as it continues its steady forward drive along the road"
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White text on a red octagonal sign, standard road sign size, slightly weathered",
+      "spatial_temporal": "Visible on the right side of the road in the mid-ground, appearing from approximately 0:03 onward as the vehicle advances",
+      "context": "A standard stop sign at a side-street intersection ahead, part of the urban road infrastructure"
+    },
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on a black rectangular sign with a white arrow, mounted on a pole",
+      "spatial_temporal": "Briefly visible on the left side of the road around 0:02-0:04 as the vehicle passes",
+      "context": "A directional traffic sign indicating one-way traffic on a cross street"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle travels forward on a city road. The road stretches ahead with buildings on both sides and parked cars. Two stray balloons — one red, one yellow — come into view near the road surface in the distance, gently bobbing near the ground.",
+      "key_changes": "Balloons grow larger in frame as the vehicle approaches; slight wind movement causes the balloons to sway",
+      "camera": "Steady forward-tracking motion at consistent vehicle speed; no lateral movement yet"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle draws closer to the balloons. A gust of wind catches them, causing them to tumble and skitter across the road. The vehicle begins a gentle rightward steering adjustment to avoid the balloons.",
+      "key_changes": "Balloons become more animated and erratic; the camera perspective shifts slightly right as the vehicle begins its maneuver",
+      "camera": "Forward-tracking with a subtle rightward drift beginning, simulating the steering input"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle smoothly passes the balloons on the right side. The balloons drift toward the left of the frame and fall behind. The vehicle straightens its course and continues driving smoothly along the city road, with the road ahead clear.",
+      "key_changes": "Balloons transition from center-left to the left edge of frame and then out of view behind the vehicle; the road ahead opens up and the vehicle resumes a straight path",
+      "camera": "Forward-tracking with a gentle correction back to center as the vehicle straightens; steady smooth motion throughout"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the video opens from a vehicle's windshield perspective driving forward on a daytime city road lined with mid-rise buildings and parked cars. By 0:01, two small colorful balloons — one red, one yellow — become visible on the road ahead, resting near the asphalt surface and gently swaying. At 0:02, as the vehicle draws closer, a wind gust catches the balloons and they tumble erratically across the road. The vehicle begins to steer gently to the right. By 0:03, the vehicle is alongside the balloons, which have drifted to the left side of the road. The vehicle passes them smoothly on the right. From 0:03 to 0:05, the balloons recede behind the vehicle and disappear from view as the car straightens its path and continues driving steadily along the city road, the urban scenery flowing past on both sides.",
+  "audio_description": "Continuous low hum of the vehicle's engine and tires rolling on asphalt. Faint ambient city sounds including distant traffic, an occasional car horn in the background. A subtle whoosh of wind gusts audible as the balloons tumble. No music or speech. The overall audio is naturalistic and subdued, consistent with an interior cabin recording.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
