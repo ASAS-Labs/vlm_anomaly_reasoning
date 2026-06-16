@@ -1,13 +1,13 @@
 """generate_videos_vllm.py - Cosmos3 text-to-video generation via vLLM Omni.
 
-Same job as generate_videos_diffusers.py (5s / 720p videos, no audio, for every
+Same job as generate_videos_diffusers.py (5s / 480p videos, no audio, for every
 structured JSON prompt under data/cosmos3/video_gen_prompts/, written to
 data/datasets/generated_vids/ and uploaded to a Hugging Face dataset repo), but
 instead of loading a Diffusers pipeline in-process it serves the model with
 vLLM Omni and drives it over HTTP, mirroring run_with_vllm_omni.ipynb.
 
-The script launches its own vLLM Omni server with tensor parallelism across 4
-GPUs (`--tensor-parallel-size 4`), waits for it to come up, runs every prompt
+The script launches its own vLLM Omni server on a single GPU
+(`--tensor-parallel-size 1`), waits for it to come up, runs every prompt
 against the `/v1/videos/sync` endpoint, then shuts the server down on exit.
 
 Environment: a vLLM Omni Docker container. `vllm` ships with the image and is
@@ -44,7 +44,7 @@ from huggingface_hub import HfApi
 MODEL_ID = "nvidia/Cosmos3-Super"  # change to "nvidia/Cosmos3-Nano" for Nano
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
 
-TENSOR_PARALLEL_SIZE = 4
+TENSOR_PARALLEL_SIZE = 1
 SERVER_PORT = 8000
 SERVER_BASE_URL = f"http://localhost:{SERVER_PORT}"
 SERVER_STARTUP_TIMEOUT = 1800  # seconds to wait for the model to load
@@ -57,8 +57,8 @@ NEGATIVE_PROMPT_FILE = SCRIPT_DIR / "text2video_neg_prompt.json"
 # 5s of video. Video diffusion expects a 4n+1 frame count, so 121 -> ~5.04s @ 24fps.
 NUM_FRAMES = 121
 FPS = 24
-HEIGHT = 720
-WIDTH = 1280
+HEIGHT = 480
+WIDTH = 832
 
 NUM_STEPS = 35
 GUIDANCE = 6.0
@@ -87,7 +87,7 @@ EXTRA_PARAMS = json.dumps(
 
 
 def start_server() -> subprocess.Popen:
-    """Launch the vLLM Omni server with tensor parallelism across 4 GPUs."""
+    """Launch the vLLM Omni server (tensor-parallel size from TENSOR_PARALLEL_SIZE)."""
     cmd = [
         "vllm",
         "serve",

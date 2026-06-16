@@ -122,8 +122,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a vehicle cruising down a narrow city street lined with brick buildings and parked cars; ahead, the road appears to stretch endlessly into a sunlit horizon. By 0:01, the vehicle has covered some distance and the end of the street is closer — a DEAD END sign is visible on the right, yet the painted mural on the terminal wall still convincingly mimics an open road. From 0:01 to 0:03, the vehicle noticeably decelerates as the mural grows larger; fine details of the painted asphalt, lane markings, rolling hills, and golden sky become visible, and the boundary between the real street and the painted wall starts to reveal itself. From 0:03 to 0:05, the vehicle makes a smooth, controlled stop a couple of meters from the wall. The camera is now still. The mural dominates the frame — a hyper-realistic painting of a road vanishing into a luminous sky — but its flat, painted nature is now apparent through surface texture and edge lines. The scene holds, quiet and contemplative, for the remaining seconds.",
   "audio_description": "The video begins with the low hum of a car engine and the soft rumble of tires on asphalt. Faint urban ambient sounds — distant traffic, a pigeon cooing, the hum of an air conditioner — are present in the background. As the vehicle decelerates, the tire noise decreases and a subtle squeak of brake pads is heard. When the vehicle comes to a full stop, the engine idles quietly. In the final two seconds, the ambient city sounds — a distant horn honk, wind gently passing — dominate the near-silence, underscoring the stillness of the stopped vehicle before the painted wall.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

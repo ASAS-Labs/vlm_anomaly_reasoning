@@ -95,8 +95,8 @@
   "temporal_caption": "At 0:00, the view from inside a moving vehicle shows a city road stretching ahead with buildings on both sides and parked cars along the curb; two white polythene bags are faintly visible on the road ahead. By 0:01, the vehicle continues forward and the bags become clearer, one tumbling slightly in a gust of wind. At 0:02, the vehicle begins to slow as the polythene bags are now clearly in the vehicle's path, skittering across the asphalt. By 0:03, the vehicle has slowed significantly and is nearly at a stop, the bags just a few meters ahead, one bag lifting momentarily before settling. From 0:03 to 0:05, the vehicle is fully stopped and stationary; the two polythene bags drift and flutter gently on the road surface in the breeze, with the idling vehicle remaining motionless as the urban scene continues around it.",
   "audio_description": "Steady engine hum and tire-on-asphalt rolling noise at the start, gradually diminishing as the vehicle decelerates. Subtle wind sounds are present throughout, with the faint rustling and crackling of plastic bags audible as the vehicle nears them. Distant ambient city sounds include faint traffic noise and occasional bird calls. When the vehicle stops, the engine idles quietly and the wind and plastic rustling become the dominant sounds.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

@@ -104,8 +104,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a highway stretching ahead with a flatbed truck visible at moderate distance in the same lane, carrying horizontal traffic signal poles. From 0:00 to 0:01, the ego vehicle is closing in, and the truck's white cab and grey flatbed become clearer. Between 0:01 and 0:02, the cargo details sharpen — metallic poles secured with yellow straps, and the circular outlines of traffic signal heads start to emerge. By 0:02 to 0:03, the ego vehicle is noticeably closer; the colored glass covers on one signal head — a faint red on top, amber in the middle, and green at the bottom — catch ambient light and become distinguishable, though the signals are entirely off. From 0:03 to 0:04, the ego vehicle decelerates gently and locks into a safe following distance, with the truck occupying a stable, larger portion of the center frame. The road markings scroll at a consistent rate. From 0:04 to 0:05, both vehicles continue forward at matched speed. The inactive traffic signals remain clearly visible on the cargo but elicit no reaction from the ego vehicle. The scene remains calm and steady through the end.",
   "audio_description": "Continuous low hum of the ego vehicle's engine and road noise — tires rolling on asphalt producing a steady, muffled roar. A faint whoosh of passing wind increases slightly as the ego vehicle approaches the truck, then levels off. Occasional muted rumble from the truck's diesel engine ahead. No music, no speech, no honking — just ambient highway driving sounds.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

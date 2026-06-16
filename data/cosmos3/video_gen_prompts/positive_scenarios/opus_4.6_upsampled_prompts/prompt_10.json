@@ -104,8 +104,8 @@
   "temporal_caption": "At 0:00, the video opens from the ego perspective of a vehicle driving on a clear, empty highway at night. The headlights illuminate the smooth dark asphalt and white dashed lane markings stretching ahead. By 0:01, a large, low-hanging golden-yellow moon is clearly visible on the horizon directly ahead, sitting at the road's vanishing point where an overhead signal light might typically appear. Around 0:01-0:02, a reflective speed limit sign passes on the right side. From 0:02 through 0:05, the vehicle maintains its steady cruising speed. The dashed lane markers flow rhythmically toward the camera. The immense moon remains centered on the horizon, glowing warmly against the deep indigo sky, its amber light softly illuminating the distant road surface. The scene feels hypnotic and serene, a solitary night drive toward an impossibly large moon.",
   "audio_description": "Continuous low hum of road noise and tire-on-asphalt contact. A faint, steady engine drone at cruising RPM. Subtle wind buffeting around the vehicle cabin. No music, no speech. Occasional soft thump as the tires cross expansion joints in the pavement. The overall soundscape is quiet and meditative, emphasizing the solitude of the nighttime drive.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

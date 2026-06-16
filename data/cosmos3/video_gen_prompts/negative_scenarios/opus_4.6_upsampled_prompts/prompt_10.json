@@ -107,8 +107,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a nighttime highway stretching ahead with a striking large yellow moon sitting low on the horizon directly above the road's vanishing point, resembling an overhead traffic signal. Lane markings stream past rapidly under the headlights. Around 0:01, the vehicle begins to slow down, the passing lane markings decelerating noticeably as if the driver is responding to a caution signal. By 0:02, the speed has dropped considerably, the road reflectors glinting less frequently. At 0:03, the vehicle has nearly stopped, the last lane marking barely drifting past. From 0:03 to 0:05, the vehicle is completely stationary on the open highway, the camera perfectly still, with the large golden moon hanging motionless on the horizon — clearly a celestial body, yet positioned exactly where one would expect a yellow or red traffic light. The scene holds in this quiet, surreal stillness for a full two seconds.",
   "audio_description": "Initially, the sound of tires humming on asphalt at highway speed, accompanied by a faint wind rush. As the vehicle decelerates, the tire noise lowers in pitch and volume, and the wind sound fades. A subtle braking sound — a soft hydraulic hiss — can be heard during deceleration. Once the vehicle stops, near-silence sets in with only very faint ambient cricket chirps and a distant, barely perceptible hum of the idling engine. No music. No speech.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

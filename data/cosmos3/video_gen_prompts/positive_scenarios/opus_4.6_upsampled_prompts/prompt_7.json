@@ -142,8 +142,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a straight suburban main road stretching ahead, with a construction zone becoming visible in the distance—orange cones and warning signs dot the horizon. By 0:01, the 'ROAD WORK AHEAD' sign is clearly legible on the right shoulder, and the line of traffic cones defining the diversion comes into sharper focus. At 0:02, the vehicle has reached the diversion entry point; a 'DETOUR' sign with a rightward arrow stands on the right side, and bright yellow temporary lane markings appear on the asphalt, diverging from the faded white originals. The vehicle begins a smooth rightward steering adjustment. From 0:03 onward, the vehicle is fully within the diversion corridor, passing closely alongside the row of orange cones on the left. Through the gaps between cones, a yellow backhoe and piles of excavated earth are briefly visible. The temporary yellow dashed markings guide the vehicle along a gentle curve. By 0:04, the vehicle is centered confidently within the diverted lane, and the road begins to straighten. At 0:05, the vehicle is completing the diversion path, with the last cones passing out of frame to the left, and the open road ahead begins to return to its normal configuration.",
   "audio_description": "Consistent low hum of the vehicle's engine and tire noise on asphalt throughout. At the start, a faint ambient road noise is present with distant traffic sounds. As the vehicle enters the construction zone around 0:02, a subtle change in road surface texture produces a slightly rougher tire sound. Faint construction activity sounds—distant clanking of machinery and a low diesel engine rumble from the backhoe—are audible from 0:03 to 0:05. A soft electronic chime or beep at 0:02 suggests the vehicle's detection system acknowledging the construction zone. Wind noise is minimal due to moderate speed.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

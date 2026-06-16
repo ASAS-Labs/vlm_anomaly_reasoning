@@ -122,8 +122,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a two-lane urban road stretching ahead under bright midday light, with parked cars and low buildings on both sides, and a green traffic light in the distance. A figure is just visible standing on the right curb. By 0:01, the ego vehicle has closed some distance and the pedestrian — a young man in a white shirt — becomes clearer against the urban backdrop. At 0:02, the car is close enough to reveal a large red-and-white stop sign graphic printed on the pedestrian's shirt; the word 'STOP' is plainly legible. The pedestrian stands still, facing the vehicle. At 0:03, the vehicle reaches the pedestrian's position without any deceleration, maintaining smooth forward motion. From 0:03 to 0:05, the pedestrian slides rapidly to the right edge of the frame and disappears off-screen as the ego car continues cruising past. The open road ahead fills the frame, with lane markings and the green traffic light growing closer, underscoring that the vehicle never stopped or slowed.",
   "audio_description": "Consistent low engine hum and tire-on-asphalt rumble from the ego vehicle throughout the clip, with no change in engine pitch indicating constant speed. Faint ambient urban sounds — distant traffic, a brief chirp of a bird around 0:01, and a muffled horn from a distant vehicle around 0:03. No speech, no music, no braking sounds.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

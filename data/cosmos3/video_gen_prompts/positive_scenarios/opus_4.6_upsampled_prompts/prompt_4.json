@@ -102,8 +102,8 @@
   "temporal_caption": "At 0:00, the video opens from a vehicle's windshield perspective driving forward on a daytime city road lined with mid-rise buildings and parked cars. By 0:01, two small colorful balloons — one red, one yellow — become visible on the road ahead, resting near the asphalt surface and gently swaying. At 0:02, as the vehicle draws closer, a wind gust catches the balloons and they tumble erratically across the road. The vehicle begins to steer gently to the right. By 0:03, the vehicle is alongside the balloons, which have drifted to the left side of the road. The vehicle passes them smoothly on the right. From 0:03 to 0:05, the balloons recede behind the vehicle and disappear from view as the car straightens its path and continues driving steadily along the city road, the urban scenery flowing past on both sides.",
   "audio_description": "Continuous low hum of the vehicle's engine and tires rolling on asphalt. Faint ambient city sounds including distant traffic, an occasional car horn in the background. A subtle whoosh of wind gusts audible as the balloons tumble. No music or speech. The overall audio is naturalistic and subdued, consistent with an interior cabin recording.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

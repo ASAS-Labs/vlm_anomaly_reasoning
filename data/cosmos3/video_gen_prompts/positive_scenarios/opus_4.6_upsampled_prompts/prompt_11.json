@@ -142,8 +142,8 @@
   "temporal_caption": "At 0:00, the dashcam shows a suburban road stretching ahead toward a four-way intersection under a clear blue afternoon sky. A traffic signal is visible in the distance with a small colorful cluster near it. By 0:01, as the vehicle steadily approaches, the traffic light becomes identifiable with its red light glowing, and the bundle of bright party balloons tied to the post becomes clearer, swaying gently. Between 0:01 and 0:02, the balloons' vibrant reds, yellows, blues, and greens become vivid, and their partial overlap with the illuminated red light is noticeable. The vehicle begins to slow down. From 0:02 to 0:03, the braking intensifies and the vehicle decelerates smoothly; the stop line on the road approaches. The balloons bob rhythmically in a light breeze, their ribbons trailing. At 0:03, the vehicle reaches the stop line and comes to a full stop. From 0:03 to 0:05, the view is stationary: the red light remains steadily illuminated, the festive balloons continue their gentle swaying motion partially covering the red lens, surrounding trees rustle lightly, and the quiet suburban intersection stretches out ahead.",
   "audio_description": "The audio begins with the low steady hum of the vehicle's engine and the soft hiss of tires on asphalt. Faint wind noise is audible through the vehicle cabin. As the vehicle decelerates from 0:02, the engine tone drops and gentle brake pad contact is faintly heard. At 0:03, the tire noise ceases as the vehicle stops, leaving only the idle engine hum, ambient birdsong from nearby trees, and a distant sound of a car passing on the cross street. A very faint rustling of the balloon ribbons in the wind is subtly audible throughout.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

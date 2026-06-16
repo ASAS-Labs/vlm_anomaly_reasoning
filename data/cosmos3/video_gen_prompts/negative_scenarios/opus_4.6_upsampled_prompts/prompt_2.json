@@ -115,8 +115,8 @@
   "temporal_caption": "At 0:00 the video begins from the ego perspective of a car driving at moderate speed along a sunlit urban road flanked by low-rise buildings, parked cars, and scattered trees. At around 0:01 a small figure of a pedestrian becomes visible ahead standing on the right curb. Between 0:01 and 0:02 the car continues forward and the pedestrian grows in the frame, revealing a white t-shirt with something red on it. By 0:02-0:03 the stop sign graphic on the pedestrian's shirt becomes clearly distinguishable as the vehicle begins to slow down. From 0:03 onward the vehicle decelerates noticeably, the braking smooth and progressive. By 0:04 the bold white 'STOP' text inside the red octagon on the man's shirt is fully legible. The car comes to a complete stop by approximately 0:04, resting a few meters from the pedestrian. From 0:04 to 0:05 the vehicle remains stationary, the pedestrian standing calmly with a neutral expression facing the stopped car, the stop sign shirt prominently displayed.",
   "audio_description": "The audio begins with the low steady hum of a car engine and the soft sound of tires rolling on asphalt. Faint ambient urban sounds are present — distant traffic, a subtle breeze. Around 0:03, the sound of the engine note dropping is audible as the vehicle decelerates, accompanied by a gentle braking sound. By 0:04-0:05, the engine idles quietly and the ambient urban soundscape is more prominent — a distant car horn, birds chirping faintly, the rustle of tree leaves.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

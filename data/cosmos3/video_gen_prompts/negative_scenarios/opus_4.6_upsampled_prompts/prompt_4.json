@@ -102,8 +102,8 @@
   "temporal_caption": "At 0:00, the view from inside a vehicle shows a city road stretching ahead between mid-rise buildings under partly cloudy skies, with the vehicle moving at a steady urban pace. By 0:01, two small colorful objects—a red and a yellow balloon—become visible on the road surface ahead, dancing in the wind. At 0:02, the balloons are now clearly identifiable, tumbling along the asphalt, and the vehicle begins to slow down. By 0:03, the vehicle is decelerating noticeably, the forward motion dropping as the balloons grow larger in view, the red one skittering sideways while the yellow one bounces lightly. At 0:04, the vehicle is nearly stopped, the balloons just meters ahead rolling gently on the road. By 0:05, the vehicle has come to a complete halt, idling behind the two stray balloons which continue their leisurely wind-tossed tumbling on the asphalt ahead.",
   "audio_description": "The audio begins with the steady hum of a car engine and the soft drone of tires on asphalt, accompanied by muffled urban ambient sounds—distant traffic, a faint horn honk. Around 0:02, the engine note drops and the sound of braking is subtly audible as the vehicle decelerates. By 0:03-0:05, the tire noise fades to near silence, replaced by the low idle rumble of the engine and the gentle whisper of wind outside, with faint flapping sounds from the balloons being pushed across the road surface.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

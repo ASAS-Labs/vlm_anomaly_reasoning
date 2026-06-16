@@ -102,8 +102,8 @@
   "temporal_caption": "At 0:00, the ego vehicle is driving steadily along a city road lined with buildings and parked cars under hazy daylight. Ahead on the asphalt, two polythene bags — one white and one blue — become visible, sitting on the road and gently disturbed by the breeze. By 0:01, the bags grow closer and a speed limit sign passes on the right. At 0:02, the white bag catches a gust of wind and briefly lifts a few inches off the ground before settling back, while the blue bag skitters sideways slightly. Between 0:03 and 0:05, the vehicle maintains its lane and speed, passing directly over or beside the bags without deviation. The bags disappear from the bottom of the frame and the road ahead continues clear, with distant traffic and city buildings stretching onward.",
   "audio_description": "Continuous low hum of the vehicle's engine and road noise — tires on asphalt producing a steady rolling sound. Faint ambient city sounds including distant honking, muffled chatter, and the occasional bird call. A subtle whoosh of wind as the polythene bags are tossed. No music, no speech. The sound profile remains consistent throughout, emphasizing the mundane, everyday driving experience.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

@@ -155,8 +155,8 @@
   "temporal_caption": "At 0:00, the video opens from the ego perspective of a car stopped at a city intersection. A red traffic signal and a STOP sign are clearly visible on the right. At 0:01, a group of pedestrians — adults and a child — begin crossing the road from right to left on the crosswalk, carrying colorful balloons in red, yellow, and blue that bob above their heads. By 0:02, the pedestrians are mid-crossing, chatting casually, with the child looking cheerful in a red puffer jacket. The vehicle remains stationary. At 0:03, a new pedestrian carrying a bright, vivid green helium balloon enters the frame from the right side. Almost immediately, the ego vehicle begins to creep forward — the camera drifts ahead and the asphalt beneath starts moving. The traffic signal is still glowing red. From 0:04 to 0:05, the car continues to accelerate gently, the bright green balloon prominent in the scene as the remaining pedestrians are still near the crosswalk. The red light persists, highlighting the driver's premature departure from the stop.",
   "audio_description": "Ambient urban sounds: the low hum of the idling car engine, distant city traffic noise, muffled voices of pedestrians chatting as they cross. A faint rustling of balloon strings in a light breeze. At around 3 seconds, the engine revs slightly as the vehicle begins to move, accompanied by the soft crunch of tires on asphalt. No music. No horn sounds.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

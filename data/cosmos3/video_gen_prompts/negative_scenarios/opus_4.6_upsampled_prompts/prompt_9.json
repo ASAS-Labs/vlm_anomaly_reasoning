@@ -122,8 +122,8 @@
   "temporal_caption": "At 0:00 the video begins from the ego perspective of a vehicle driving down a narrow city street lined with brick buildings and parked cars; a 'NO OUTLET' sign is visible on the right. By 0:01 the street's dead end becomes apparent in the distance, but the wall is covered with a hyper-realistic mural of a continuing open road under a blue sky, making it appear as though the road extends infinitely. From 0:01 to 0:03 the vehicle maintains speed, the mural growing larger and more detailed — dashed yellow lines, green shoulders, distant hills — all perfectly aligned with the real road's perspective, creating a seamless illusion. At 0:03 the vehicle reaches the wall and collides head-on with no deceleration whatsoever. The impact is immediate and jarring: cracks spiderweb across the mural's surface, paint and concrete fragments explode outward, the camera lurches forward violently and shakes. From 0:03 to 0:05 the aftermath unfolds — dust billows, the shattered mural reveals raw grey concrete underneath, and the once-convincing painted road is exposed as a flat, broken wall. The camera continues to vibrate from residual collision energy as the scene settles.",
   "audio_description": "The video opens with the steady hum of a car engine and the muffled sound of tires rolling on asphalt. Faint urban ambient noise — distant traffic, a brief car horn — can be heard. As the vehicle approaches the wall, the engine drone remains constant with no braking sounds. At 0:03, a loud, explosive crash erupts — the crunch of metal against concrete, shattering impact sounds, and crumbling debris. This is followed by the tinkle of falling paint chips and concrete fragments, a hissing sound from the damaged vehicle, and settling dust. The final seconds feature eerie quiet punctuated by creaking metal and small debris pieces continuing to fall.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

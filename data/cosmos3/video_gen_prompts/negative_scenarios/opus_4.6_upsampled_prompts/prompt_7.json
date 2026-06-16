@@ -173,8 +173,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a main road stretching ahead under overcast skies, with construction signs and orange cones visible in the distance along with a 'ROAD WORK AHEAD' sign on the right. By 0:01, the vehicle has closed the distance to the construction zone, and the staggered row of bright orange cones stretches diagonally across the road alongside confusing temporary yellow markings painted over faded white lines. A 'DETOUR' sign with a right arrow is visible near the cones. Between 0:01 and 0:02, the ego vehicle begins drifting leftward, misreading the cone placement and altered markings, steering away from the intended detour path. By 0:02 to 0:03, the vehicle has fully crossed into the oncoming traffic lane, with the last cones now behind and to the right. From 0:03 onward, the vehicle continues forward in the wrong lane; at approximately 0:03.5 a silver SUV with headlights on appears ahead, driving directly toward the ego vehicle. A dark blue sedan is visible behind the SUV. Between 0:04 and 0:05, the oncoming silver SUV grows rapidly larger in the frame, its headlights becoming increasingly bright and glaring, as the two vehicles close the distance between them in a tense, dangerous wrong-way confrontation.",
   "audio_description": "The audio begins with the steady hum of the ego vehicle's engine at moderate speed and the muffled sound of tires rolling on worn asphalt. As the vehicle approaches the construction zone around 0:01, a faint rhythmic thumping is heard as the tires cross over uneven temporary lane markings and patched asphalt. There is no music. By 0:03, the faint sound of the oncoming SUV's engine and a brief distant horn honk from the oncoming vehicle become audible, growing louder as the vehicles close distance. The ambient sound includes a low wind noise against the windshield throughout.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

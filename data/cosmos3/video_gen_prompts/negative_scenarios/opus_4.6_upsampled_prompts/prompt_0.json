@@ -133,8 +133,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a highway stretching ahead under bright daylight, with the ego vehicle cruising at normal speed — lane markings flow rapidly beneath. By 0:01, a banner structure on the right shoulder of the highway comes into view, and a red octagonal shape begins to emerge on it. Around 0:02, the ego vehicle starts decelerating noticeably as the stop sign graphic on the banner becomes clearly recognizable, with 'STOP' written in white on the red octagon. From 0:03, heavy braking brings the vehicle nearly to a halt; the banner looms large on the right side of the frame, its advertisement text 'SafeDrive Insurance — We Make You Stop and Think!' now legible alongside the prominent stop sign image. By 0:04 the vehicle has fully stopped, the dashcam shows a completely still scene with the banner dominating the view, and the realistic stop sign graphic is unmistakable. The final second at 0:05 holds this stationary view as the vehicle remains at a complete stop in front of the misleading advertisement banner.",
   "audio_description": "Initially, the sound of a car engine humming at highway speed is heard along with tire noise on asphalt and a faint rush of wind. As the vehicle decelerates starting around 0:01-0:02, the engine pitch drops and tire noise diminishes. A subtle brake squeal may be audible around 0:03. By 0:04-0:05, the ambient sound is reduced to a quiet engine idle, distant traffic noise from opposing lanes, and faint birdsong from the roadside vegetation.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

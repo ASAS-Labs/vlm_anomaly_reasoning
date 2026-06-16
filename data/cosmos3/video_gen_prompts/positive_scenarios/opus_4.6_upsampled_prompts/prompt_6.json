@@ -130,8 +130,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a nighttime city highway as the vehicle climbs uphill, amber streetlights passing overhead and white lane markings streaming beneath on dark asphalt. A speed limit sign briefly appears on the right. At 0:01, the vehicle reaches the crest of the hill and the road begins to slope downward; suddenly, two blazing white-blue headlights from an oncoming vehicle appear ahead in the opposite lane. By 0:02, the headlights have grown intensely bright, flooding the windshield view with severe lens flare, bloom halos, and horizontal streaking artifacts that wash out the road surface and lane markings. The ego vehicle's speed is visibly decreasing as the lane markings slow their pace. At 0:03, the oncoming vehicle sweeps past on the left side, its headlight glare dragging across the frame and then vanishing off the left edge. The visual artifacts rapidly clear and the road ahead comes back into sharp view with normal nighttime lighting. From 0:03 to 0:05, the ego vehicle smoothly picks up speed, lane markings begin scrolling faster again, and the clear highway stretches ahead under amber streetlights with a green overhead exit sign becoming visible in the distance.",
   "audio_description": "Continuous low-frequency road and engine hum from the ego vehicle, with tire noise on asphalt providing a steady backdrop. As the vehicle crests the hill, a subtle whoosh of wind. When the oncoming vehicle approaches, the rising Doppler-shifted engine roar and tire noise of the passing truck/SUV grow louder, peaking as it passes alongside, then rapidly fading to the rear. During deceleration, the engine note drops in pitch; during re-acceleration, it rises again. Faint ambient city sounds — distant traffic, an occasional horn in the background — are barely audible beneath the primary road noise.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

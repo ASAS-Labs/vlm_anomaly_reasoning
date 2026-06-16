@@ -122,8 +122,8 @@
   "temporal_caption": "At 0:00 the viewer sees the nighttime city highway from a dashcam perspective as the vehicle climbs a gentle uphill grade; overhead orange street lamps illuminate evenly spaced lane markings and a speed limit sign passes on the right. By 0:01 the vehicle continues uphill, passing under a green highway exit sign, with distant red taillights visible ahead. At 0:02 the road crests and begins to slope downhill; suddenly two blindingly bright headlights appear from an oncoming vehicle just beyond the hilltop, causing immediate white-yellow glare bloom and radiating lens flare streaks across the windshield. By 0:03 the glare is overwhelming, washing out most of the frame; the ego vehicle abruptly jerks to the right as the driver struggles to see lane markings. At 0:03.5 the vehicle overcorrects sharply to the left, the hood crossing over the lane line. Around 0:04 the oncoming vehicle whips past on the left and the glare rapidly fades, but the ego vehicle makes another jagged correction back to the right. By 0:05 the road ahead is visible again under normal street lamp illumination, though the vehicle's path remains slightly unsteady as the driver recovers.",
   "audio_description": "Steady tire-on-asphalt road noise and a low engine hum throughout; faint wind buffeting against the windshield. At around 0:02 a subtle whooshing builds as the oncoming vehicle approaches at speed. From 0:03 to 0:04, tire squealing and sharp steering column creaks punctuate the jagged maneuvers; the oncoming vehicle's engine Doppler-shifts as it passes rapidly. After 0:04, the road noise returns to a steadier hum with residual tire scrubbing sounds fading out.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

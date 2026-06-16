@@ -122,8 +122,8 @@
   "temporal_caption": "At 0:00, the dashcam view shows a grey sedan hood in the foreground as the ego vehicle drives steadily along a multi-lane highway under a partly cloudy afternoon sky. White dashed lane markings stream past beneath. By 0:01, a small structure is noticeable on the right shoulder in the distance. At 0:02, the structure resolves into a large roadside advertisement banner mounted on metal poles; a red octagonal stop sign graphic and the words 'DRIVE SAFE. ARRIVE ALIVE.' become increasingly clear. At 0:03, the banner is at its closest and fully legible, the stop sign vivid red against the white background. The ego vehicle shows no sign of braking or slowing. From 0:03 to 0:04, the banner rapidly sweeps to the right as the vehicle passes it at highway speed. By 0:04, the banner is nearly out of frame on the far right. At 0:05, the banner has completely disappeared behind the vehicle, and the open highway stretches ahead with distant vehicles and the tree-lined horizon.",
   "audio_description": "Consistent road noise and tire hum on asphalt at highway speed throughout the clip. A subtle low-frequency engine drone from the ego vehicle. Faint wind buffeting against the vehicle at cruising speed. No music, speech, or horn sounds. A brief whooshing sound as the vehicle passes the banner around 0:03-0:04 due to the slight aerodynamic disturbance.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

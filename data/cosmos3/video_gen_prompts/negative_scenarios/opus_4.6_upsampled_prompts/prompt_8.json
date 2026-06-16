@@ -126,8 +126,8 @@
   "temporal_caption": "At 0:00, the ego vehicle moves steadily down a tree-lined residential street under afternoon sunlight; houses, parked cars, and a speed limit sign are visible, and a tiny figure stands on the right sidewalk far ahead. By 0:01, the vehicle passes the 25 mph speed limit sign, and the small child — wearing a bright red shirt — steps off the curb and begins walking into the street from right to left. At 0:02, the child is partway into the vehicle's lane, their short stature making them barely above the hood line from the driver's perspective, and the vehicle shows no sign of slowing. At 0:03, the child is fully in the vehicle's travel lane, walking steadily, and the vehicle continues at the same speed, the gap narrowing rapidly. By 0:04, the child is near the center of the lane, now clearly visible in frame with the red shirt contrasting against the grey road, and the vehicle is dangerously close with no deceleration. At 0:05, the video ends with the child still in the path and the vehicle mere meters away, but before any contact occurs.",
   "audio_description": "Consistent low-frequency road noise and tire hum from the vehicle traveling on asphalt. Subtle ambient sounds of a quiet residential neighborhood — distant bird chirping, a faint lawnmower in the background. No engine revving changes, no brake squeal, no horn — reinforcing the absence of any driver or system response. No music. The ambient calm contrasts disturbingly with the visual tension of the closing distance.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",

@@ -158,8 +158,8 @@
   "temporal_caption": "At 0:00, the video opens from a first-person driver's perspective inside a stationary vehicle at a city intersection. The charcoal hood of the car occupies the lower frame, and ahead a red traffic light glows above the road while a stop sign stands on the right. A group of six pedestrians begins walking across the white-striped crosswalk from left to right, carrying colorful balloons — several of which are a vivid bright green that stand out against the urban backdrop. By 0:01-0:02, the pedestrians are in the middle of the crosswalk; the green balloons bob and sway gently in the breeze, and a child in a red hoodie holds two green balloons tightly. The traffic light remains red and the vehicle stays completely still. Around 0:03, the trailing pedestrians step off the crosswalk onto the far sidewalk. At approximately 0:03-0:04, the traffic light transitions from red to green, the red lamp fading and the green lamp illuminating. From 0:04-0:05, the intersection is clear, the green light is fully lit, and the ego vehicle remains safely stopped as the scene concludes.",
   "audio_description": "Ambient city sounds throughout: distant traffic hum, the low idle of the ego vehicle's engine, occasional muffled car horns in the background. Faint chatter and laughter from the pedestrians crossing, especially a child's cheerful voice. A gentle breeze rustles through nearby trees. No music. A subtle click or mechanical sound as the traffic light changes at the 3-second mark.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
