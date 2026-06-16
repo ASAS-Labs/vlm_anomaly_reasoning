@@ -4,6 +4,7 @@
 - [Installation](#installation)
 - [Synthetic Data Generation with Cosmos3](#synthetic-data-generation-with-cosmos3)
   - [Prompt Upsampling](#prompt-upsampling)
+  - [Cosmos3 Video Generation](#cosmos3-video-generation)
 
 ## Installation
 
@@ -72,3 +73,41 @@ Defaults read `data/cosmos3/prompts.txt` and write one JSON file per prompt to
 `data/cosmos3/video_gen_prompts/`. After upsampling, the script automatically
 unwraps and pretty-prints the generated JSON (via `prettify_prompts.py`), leaving
 clean Cosmos3 prompt objects ready for video generation.
+
+### Cosmos3 Video Generation
+
+[`data/cosmos3/generate_videos_vllm.py`](data/cosmos3/generate_videos_vllm.py)
+generates a 5s, 720p (1280×720), 24fps MP4 — no audio — for every structured JSON
+prompt under `data/cosmos3/video_gen_prompts/`. It launches a vLLM Omni server,
+drives it over HTTP (`/v1/videos/sync`), writes each video to
+`data/datasets/generated_vids/`, and uploads it to the Hugging Face dataset repo
+(`HF_DATASET_REPO` in the script). Videos that already exist locally are skipped.
+
+**1. Run inside the vLLM Omni container.** The `vllm` CLI and the Omni runtime
+ship in the `vllm/vllm-omni:cosmos3` image — they are *not* installed by `uv sync`
+(which only provides the script's Python deps, e.g. `huggingface_hub`). Start the
+container with the repo mounted, your GPUs exposed, and `HF_TOKEN` passed in (see
+[Hugging Face access](#hugging-face-access)):
+```bash
+docker run --gpus all -it --rm \
+  -v "$PWD":/workspace -w /workspace \
+  --env-file .env \
+  vllm/vllm-omni:cosmos3 bash
+
+# inside the container:
+uv sync
+uv run python data/cosmos3/generate_videos_vllm.py
+```
+
+**2. Pick the model and matching GPU count.** Set both `MODEL_ID` and
+`TENSOR_PARALLEL_SIZE` near the top of the script. The model is served with one
+GPU per tensor-parallel rank, so the container must expose at least
+`TENSOR_PARALLEL_SIZE` GPUs — a mismatch fails at server startup.
+
+| Model                  | GPUs | `TENSOR_PARALLEL_SIZE` |
+| ---------------------- | ---- | ---------------------- |
+| `nvidia/Cosmos3-Nano`  | 1    | `1`                    |
+| `nvidia/Cosmos3-Super` | 4    | `4` (default)          |
+
+The first run downloads the gated Cosmos3 weights (tens of GB) into the Hugging
+Face cache, so model load can take several minutes.

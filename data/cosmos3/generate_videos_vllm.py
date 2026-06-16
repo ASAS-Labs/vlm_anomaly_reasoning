@@ -10,16 +10,19 @@ The script launches its own vLLM Omni server with tensor parallelism across 4
 GPUs (`--tensor-parallel-size 4`), waits for it to come up, runs every prompt
 against the `/v1/videos/sync` endpoint, then shuts the server down on exit.
 
+Environment: a vLLM Omni Docker container. `vllm` ships with the image and is
+already on PATH
+
 Setup (run once):
 
-    uv sync                # install Python deps (incl. vllm) into .venv from uv.lock
-    export HF_TOKEN=<token with access to the gated model and the dataset repo>
+    uv sync                # install Python deps into .venv from uv.lock
 
-Run:
+Run (from the repo root):
 
+    export HF_TOKEN=<your read/write HF Token>
     uv run python data/cosmos3/generate_videos_vllm.py
 
-Switch models by editing MODEL_ID below (Cosmos3-Nano by default).
+Switch models by editing MODEL_ID below (Cosmos3-Super by default).
 """
 
 from __future__ import annotations
@@ -38,7 +41,7 @@ os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
 from huggingface_hub import HfApi
 
 # --- Configuration (the only things you should need to change) -----------
-MODEL_ID = "nvidia/Cosmos3-Nano"  # change to "nvidia/Cosmos3-Super" for Super
+MODEL_ID = "nvidia/Cosmos3-Super"  # change to "nvidia/Cosmos3-Nano" for Nano
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
 
 TENSOR_PARALLEL_SIZE = 4
