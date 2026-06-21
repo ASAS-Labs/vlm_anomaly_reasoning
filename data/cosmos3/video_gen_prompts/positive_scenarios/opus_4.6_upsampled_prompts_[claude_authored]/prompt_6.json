@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle in the opposite lane, identifiable mainly by its intensely bright high-beam headlights piercing through the darkness; the body of the car is obscured behind the glare, only faint hints of a dark sedan silhouette visible around the light source",
+      "appearance_details": "Two blinding white-blue circular headlight pools with prominent lens-flare star artifacts, halation, and bloom radiating outward; faint amber side marker glow",
+      "relationship": "The source of glare impairing the ego vehicle's visibility; travels directly opposite the ego vehicle on the shared two-lane road",
+      "location": "center to slightly left of frame, approaching from background to midground",
+      "relative_size": "Small within frame growing to Medium within frame as it nears",
+      "orientation": "Front-facing toward the camera, headlights aimed directly at the ego viewpoint",
+      "pose": "",
+      "action": "Approaching on the opposite lane with high beams on, then passing by",
+      "state_changes": "Grows brighter and larger as it nears the crest, peaks in glare intensity at closest approach, then sweeps past to the left and recedes, glare clearing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, represented only by its interior dashboard edge and the forward illumination of its own headlights spilling onto the road ahead",
+      "appearance_details": "Faint dashboard reflection along the bottom edge of the frame, twin cones of headlight light spreading over the asphalt and lane markings",
+      "relationship": "The point-of-view vehicle through which the entire scene is observed",
+      "location": "implied at camera position, dashboard at bottom foreground",
+      "relative_size": "Large within frame (occupying viewpoint)",
+      "orientation": "Facing forward down the road in the driving direction",
+      "pose": "",
+      "action": "Driving uphill, cresting, then descending while slowing and resuming speed",
+      "state_changes": "Decelerates significantly during peak glare, then accelerates back to nominal cruising speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dark rural two-lane road at night with no central divider, flanked by faintly visible grassy shoulders, scattered roadside trees, and distant unlit fields. The road rises uphill then crests and slopes gently downhill. The asphalt shows worn lane markings and a faded white edge line. Beyond the reach of the headlights the landscape dissolves into near-total blackness, with only a faint band of deep blue sky and a few distant pinpoint lights suggesting farms or homes far off.",
+  "lighting": {
+    "conditions": "Night driving with artificial headlight illumination only; no street lamps",
+    "direction": "Ego headlights front-lit from camera position; intense oncoming high-beam glare from the opposite vehicle straight ahead and slightly left",
+    "shadows": "Long, shifting shadows cast by roadside grass and trees as the headlights sweep; deep black shadows beyond the light cones",
+    "illumination_effect": "Pools of cool white light on the road foreground contrasted against pitch darkness; oncoming high beams produce overwhelming bloom, lens flare, starburst artifacts, and temporary washout across the frame"
+  },
+  "aesthetics": {
+    "composition": "Centered road vanishing point with the crest of the hill near mid-frame; oncoming headlight glare dominates the upper-center, dashboard edge anchors the bottom",
+    "color_scheme": "Predominantly black and deep navy night tones punctuated by harsh white-blue headlight glare and warm faint amber accents",
+    "mood_atmosphere": "Tense, disorienting, momentarily blinding, cautious",
+    "patterns": "Intermittent dashed lane markings sliding past"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted as ego dashcam, subtle vertical bob over the crest, deceleration drift then re-acceleration",
+    "framing": "Wide shot of the road ahead from driver viewpoint",
+    "camera_angle": "Eye-level, fixed forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and lane markings, though glare overwhelms focus during peak brightness",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Demonstration of nighttime oncoming-headlight glare and driver visibility management on a rural road",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives uphill at nominal speed, distant oncoming headlights appear faint over the crest"
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "Vehicle crests the hill and begins descending; oncoming high beams rapidly intensify, flooding the view with glare and lens artifacts"
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "Ego vehicle slows significantly to manage impaired visibility as the oncoming car passes on the left"
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "Glare clears, road becomes visible again, ego vehicle resumes nominal speed downhill"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Driving uphill at steady speed with faint oncoming light cresting ahead",
+      "key_changes": "Distant headlights begin to appear",
+      "camera": "Forward tracking with slight upward pitch on the climb"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Cresting and beginning descent as oncoming high beams flare into severe glare",
+      "key_changes": "Rapid increase in brightness, bloom and starburst artifacts wash across the frame",
+      "camera": "Subtle bob over the crest, then leveling into descent"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle slows for the passing car, then glare clears and nominal speed resumes downhill",
+      "key_changes": "Deceleration, oncoming vehicle sweeps past to the left, artifacts fade, road regains visibility, re-acceleration",
+      "camera": "Slight forward dip during braking, then smooth resumed forward tracking"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark rural road climbing uphill, the ego headlights casting cones of light over worn lane markings while a faint glow appears over the crest. By 0:01 the vehicle reaches the top of the hill and a pair of oncoming high beams rapidly brightens. Through 0:02-0:03 the view is overwhelmed by intense white-blue glare, lens flare starbursts, and bloom that wash out much of the road as the vehicle begins heading downhill. Around 0:03 the ego vehicle slows noticeably to cope with the impaired visibility, and the oncoming car sweeps past on the left. From 0:04 to 0:05 the glare and artifacts clear, the road ahead becomes visible once more, and the ego vehicle accelerates back to its nominal cruising speed on the descent.",
+  "audio_description": "Steady low hum of the engine and tire noise on asphalt, rising slightly on the uphill climb then dipping as the vehicle decelerates. A faint whoosh of the oncoming vehicle passing close by. Subtle wind and ambient rural night silence; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

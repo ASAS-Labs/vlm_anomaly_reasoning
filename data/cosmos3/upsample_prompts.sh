@@ -20,7 +20,7 @@ if [[ -f "${REPO_ROOT}/.env" ]]; then
 fi
 
 export PROMPT_UPSAMPLER_ENDPOINT_URL="https://api.anthropic.com/v1/"
-export PROMPT_UPSAMPLER_MODEL_NAME="claude-opus-4-6"
+export PROMPT_UPSAMPLER_MODEL_NAME="claude-opus-4-8"
 : "${PROMPT_UPSAMPLER_API_TOKEN:?Set PROMPT_UPSAMPLER_API_TOKEN in .env}"
 
 INPUT="${1:-${REPO_ROOT}/data/cosmos3/prompts.txt}"

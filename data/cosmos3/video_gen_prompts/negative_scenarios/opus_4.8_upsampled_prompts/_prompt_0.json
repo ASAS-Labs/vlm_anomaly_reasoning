@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large overhead billboard structure spanning across and above the multi-lane highway, displaying a banking advertisement on the left side and a prominent red octagonal 'Stop Sign' graphic on the right side.",
+      "appearance_details": "Wide rectangular gantry-mounted billboard with a clean white/blue background, glossy printed surface, sturdy steel support pillars on either side of the road; the stop sign graphic is bold red with white border and white 'STOP' lettering.",
+      "relationship": "The main visual obstacle and focal point the ego vehicle is approaching and reacting to.",
+      "location": "center, spanning the upper portion of the frame above the road",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the camera directly, perpendicular to the direction of travel",
+      "pose": "Static, fixed structure mounted across the highway",
+      "action": "Standing fixed across the road, growing larger as the vehicle approaches",
+      "state_changes": "Appears small in the distance at first, then grows progressively larger and dominant in the frame as the ego vehicle approaches and stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen from the driver's first-person perspective with the dashboard and hood partially visible in the lower frame.",
+      "appearance_details": "Dark dashboard, slight reflection on the windshield, hood edge visible at bottom of frame; modern sedan interior framing.",
+      "relationship": "The viewpoint from which the entire scene is observed; the vehicle reacting to the billboard.",
+      "location": "foreground, implied by the ego camera position",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the highway",
+      "pose": "Traveling forward along the lane, then decelerating to a complete stop",
+      "action": "Driving on the highway then braking to a full stop near the billboard",
+      "state_changes": "Transitions from steady highway speed to gradual deceleration and finally a complete stationary halt.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane highway under clear daytime conditions, stretching toward the horizon with lane markings, guardrails, and sparse roadside vegetation. Distant low hills and a faint city skyline blur at the horizon. The large overhead billboard gantry spans across the road ahead, supported by steel pillars. Other vehicles are sparse, with light traffic. The asphalt shows wear lines and faded lane dividers.",
+  "lighting": {
+    "conditions": "Bright daylight, partly clear sky",
+    "direction": "Front-lit from above and slightly ahead, sun high in the sky",
+    "shadows": "Soft shadows cast by the billboard gantry onto the road below; short vehicle shadows on the asphalt",
+    "illumination_effect": "Even, natural daylight giving high visibility, slight glare on the windshield and bright reflections off the billboard surface"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the highway converging toward the billboard at the vanishing point; dashboard anchors the lower frame, sky fills the upper third",
+    "color_scheme": "Cool greys of the asphalt, blue sky, with a striking red accent from the stop sign and blue-white tones from the banking advertisement",
+    "mood_atmosphere": "Anticipatory, attentive, slightly cautionary",
+    "patterns": "Repeating lane dividers and dashed road markings receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from ego vehicle perspective, decelerating to static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's first-person viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the billboard and road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic dashcam aesthetic",
+  "context": "Automotive perception / advertising scenario demonstrating an ego vehicle responding to a stop sign displayed on an overhead billboard",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels at highway speed, the overhead billboard visible in the distance ahead."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The billboard grows larger; the banking advertisement on the left and the prominent red stop sign on the right become clearly legible as the vehicle decelerates and comes to a complete, fully stopped halt directly before the billboard."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle remains fully stopped and stationary directly beneath and before the billboard for the final two seconds."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold white uppercase lettering centered on a red octagonal sign with a white border",
+      "spatial_temporal": "Right portion of the overhead billboard, visible throughout, increasingly prominent as the vehicle approaches",
+      "context": "A stop sign graphic prompting the vehicle to halt"
+    },
+    {
+      "text": "SECURE BANK — Your Future, Our Promise",
+      "category": "logo",
+      "appearance": "Blue and white corporate font with a small shield-style bank logo, clean sans-serif text",
+      "spatial_temporal": "Left portion of the overhead billboard, visible throughout the clip",
+      "context": "Banking advertisement occupying the left side of the billboard"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises on the highway with the billboard small in the distance ahead.",
+      "key_changes": "Billboard begins to grow in size; steady forward motion",
+      "camera": "Forward tracking at constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Billboard becomes large and legible; banking ad on left and stop sign on right are clearly visible as the vehicle brakes and comes to a complete stop before the billboard.",
+      "key_changes": "Deceleration completes; vehicle reaches a full stop; billboard graphics become sharp",
+      "camera": "Forward tracking decelerating to static"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle remains fully stationary beneath the billboard for the final two seconds.",
+      "key_changes": "No motion; scene is held static",
+      "camera": "Static, vehicle fully stopped"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At second 0, the ego car drives forward along a wide daytime highway, the overhead billboard small near the horizon. By second 1, the billboard grows and its layout begins to resolve. Between seconds 1 and 3, the banking advertisement on the left and the prominent red stop sign on the right become fully legible while the car decelerates and comes to a complete halt directly before the billboard. From second 3 onward, the vehicle remains fully stopped and stationary through seconds 4 and 5.",
+  "audio_description": "Ambient highway sounds dominate: steady tire-on-asphalt rolling noise and wind rush at speed during the first segment, gradually fading as the engine note lowers and brakes engage with a soft whir during deceleration. In the final segment the audio settles to a quiet idle hum with faint distant traffic, conveying the vehicle has fully stopped. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

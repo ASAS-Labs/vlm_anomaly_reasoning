@@ -1,0 +1,151 @@
+{
+  "subjects": [
+    {
+      "description": "A line of bright orange traffic cones with reflective white bands, arranged diagonally to taper off the oncoming lane and merge traffic into the ego vehicle's lane",
+      "appearance_details": "Conical PVC cones, weathered orange surface with a single horizontal reflective collar, some lightly dusted with construction grime",
+      "relationship": "Define the closed-off oncoming lane and channelize shared traffic; primary objects the ego vehicle's perception system detects",
+      "location": "center-right, extending from mid-ground toward the foreground along the lane boundary",
+      "relative_size": "Medium within frame",
+      "orientation": "Standing upright, facing camera as the vehicle approaches",
+      "pose": "Static upright placement in a tapering row",
+      "action": "Marking the lane shift and channelizing oncoming traffic",
+      "state_changes": "Cones grow larger and pass to the right as the ego vehicle advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "An oncoming sedan sharing the ego vehicle's lane as it passes through the narrowed work zone",
+      "appearance_details": "Silver mid-size sedan with headlights on, slightly slowing as it approaches the shared section",
+      "relationship": "Oncoming traffic temporarily sharing the open lane with the ego vehicle",
+      "location": "center background on the open lane",
+      "relative_size": "Small within frame",
+      "orientation": "Front-facing toward the camera, approaching head-on within the shared lane",
+      "pose": "Moving forward, hugging the right edge of the open lane",
+      "action": "Driving cautiously toward the ego vehicle through the work zone",
+      "state_changes": "Approaches and grows slightly larger, maintaining safe lateral distance",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Orange diamond-shaped construction warning signs mounted on temporary roadside posts",
+      "appearance_details": "Fluorescent orange diamond signs with black symbols indicating road work and lane shift ahead",
+      "relationship": "Warn drivers of the upcoming construction zone and lane-shift condition",
+      "location": "right roadside, mid-ground",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the approaching ego vehicle",
+      "pose": "Static, mounted upright on portable stands",
+      "action": "Signaling the construction zone ahead",
+      "state_changes": "Passes to the right and out of frame as the vehicle advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A simple rural-suburban two-lane asphalt road with one lane in each direction and no central divider, running through flat open terrain dotted with low grass shoulders and occasional trees. Ahead lies an active construction work zone where the oncoming lane has been closed with orange traffic cones, temporary yellow lane markings reroute both directions of traffic into the ego vehicle's lane, and orange diamond warning signs flank the roadside. The sky is clear blue with bright daytime sun.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High front-side sunlight from the upper left",
+    "shadows": "Consistent, crisp shadows cast to the right of cones, signs, and vehicles",
+    "illumination_effect": "Even, high-visibility illumination with vivid colors and strong contrast on reflective surfaces"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing road composition with the lane vanishing point slightly left of center, cones tapering diagonally from mid-ground toward the lower right",
+    "color_scheme": "Gray asphalt, bright safety orange, yellow lane markings, blue sky, green shoulders",
+    "mood_atmosphere": "Calm, orderly, attentive driving",
+    "patterns": "Repeating diagonal row of evenly spaced orange cones and dashed temporary lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the vehicle's perspective, smoothly advancing down the lane",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, dashboard-mounted ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road, cones, lane markings, and oncoming traffic ahead",
+    "lens_focal_length": "Wide-angle, roughly 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS demonstration of work-zone perception and safe lane navigation",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels down the open two-lane road, detecting orange diamond warning signs and the start of the cone line marking the construction zone ahead."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Vehicle reads the altered temporary lane markings and adjusts its trajectory to stay within the open lane as the oncoming lane closes off."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Vehicle smoothly navigates the shared-lane section, passing the cones safely on the right while an oncoming sedan approaches in the same shared lane, maintaining safe distance."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD WORK AHEAD",
+      "category": "scene_sign",
+      "appearance": "Black uppercase text on fluorescent orange diamond sign",
+      "spatial_temporal": "Right roadside mid-ground, visible from 0:00 to 0:02",
+      "context": "Warns drivers of the upcoming construction zone"
+    },
+    {
+      "text": "LANE SHIFT",
+      "category": "scene_sign",
+      "appearance": "Black symbol and text on orange diamond sign",
+      "spatial_temporal": "Right roadside, visible 0:01 to 0:03",
+      "context": "Indicates that traffic must shift into the shared open lane"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle approaches the work zone on the clear two-lane road, with warning signs and the beginning of the cone line coming into view.",
+      "key_changes": "Construction signage and first cones appear in the mid-ground",
+      "camera": "Smooth forward tracking from the ego viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Vehicle interprets the temporary lane markings and adjusts course to remain within the open lane as the oncoming lane is closed off.",
+      "key_changes": "Trajectory subtly aligns with the shifted lane",
+      "camera": "Continued forward motion with slight lateral easing"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle navigates the shared section, passing cones on the right and yielding adequate space to an oncoming sedan in the shared lane.",
+      "key_changes": "Cones pass close to the right; oncoming car approaches and passes safely",
+      "camera": "Steady forward tracking through the narrowed corridor"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle drives along a sunlit two-lane road and orange diamond construction signs and the first cones appear ahead on the right. By 0:02 the vehicle recognizes the altered temporary lane markings and gently adjusts its path to stay within the open lane as the oncoming lane closes off with cones. From 0:03 to 0:05 the vehicle smoothly threads the shared work-zone corridor, passing the orange cones safely on its right while an oncoming silver sedan approaches in the same shared lane, with the system maintaining a steady, centered, and safe trajectory throughout.",
+  "audio_description": "Ambient road noise dominates: the steady hum of tires on asphalt and faint wind. Distant low rumble of construction activity and the muffled engine of the oncoming sedan. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Glossy latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails and the occasional reflective highlight from the sun",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A typical urban city road under clear daytime conditions. The two-lane asphalt road stretches ahead with painted lane markings, flanked by curbside sidewalks, parked cars, low commercial buildings, and street trees casting consistent shadows. Utility poles, traffic lights, and the occasional pedestrian crossing line the route. No stop sign is present anywhere in the scene. The sky is bright and mostly clear, lending a calm, ordinary daytime urban ambiance.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from the upper left, casting consistent directional shadows",
+    "shadows": "Crisp, consistent shadows cast by trees, poles, parked cars, and the balloons onto the road surface",
+    "illumination_effect": "Even, naturalistic illumination with good visibility and gentle highlights on glossy balloon surfaces and the road"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective centered on the road ahead, vanishing point near the horizon, balloons occupying the lower-center foreground as focal obstacles",
+    "color_scheme": "Neutral grays of the asphalt, blue sky, green street trees, accented by the pastel pink and blue of the balloons",
+    "mood_atmosphere": "Calm, ordinary, mildly whimsical",
+    "patterns": "Repeating lane markings and roadside parked cars"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Road surface and balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the city road; two pastel balloons appear ahead, drifting and rolling on the asphalt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by the wind, rolling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the road."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the city road under clear daylight; two medium-sized balloons drift and roll ahead at ground level, pushed around by the wind.",
+      "key_changes": "Balloons enter the path and shift positions due to wind gusts",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly while continuing forward smoothly along its lane.",
+      "key_changes": "Subtle lateral steering to avoid balloons; road continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a bright, clear city road with consistent shadows; two pastel party balloons appear ahead, drifting on the asphalt. By 0:02 the wind tosses the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the road without stopping.",
+  "audio_description": "Ambient urban driving sounds: the steady hum of the vehicle's engine and tires on asphalt, occasional distant city traffic, and a soft whoosh of wind. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

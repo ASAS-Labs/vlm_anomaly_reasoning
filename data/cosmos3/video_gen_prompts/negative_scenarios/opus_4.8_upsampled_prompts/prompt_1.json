@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed utility truck transporting a load of traffic signal heads stacked and secured on its bed, moving slowly along the road directly ahead of the ego vehicle.",
+      "appearance_details": "Boxy traffic signal housings in dark green and black, mounted clusters with three-lamp configurations, secured with orange ratchet straps; the truck has a weathered white cab and a dusty metal flatbed with a reflective hazard placard.",
+      "relationship": "The obstacle ahead that the ego vehicle is approaching and decelerating for; defines the driving scenario.",
+      "location": "center, slightly right of frame, mid-to-far distance on the road ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear of the truck facing the camera, moving away from the ego vehicle",
+      "pose": "Upright, traveling forward in the same lane as the ego vehicle",
+      "action": "Driving slowly forward while carrying the traffic signal heads",
+      "state_changes": "Maintains a slow speed throughout; the gap between it and the ego vehicle remains large as the ego decelerates.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A stacked cluster of traffic signal heads loaded on the truck's flatbed, with all lamps unlit except a glare reflecting off one red lens.",
+      "appearance_details": "Standard three-section traffic signal housings, dark visors over each lens, dull unlit lamps; one upper red lens catches sunlight and produces a bright specular glare resembling an illuminated red light.",
+      "relationship": "The notable cargo on the truck whose glaring red lamp mimics a stop signal, influencing the ego vehicle's behavior.",
+      "location": "center frame on the truck's flatbed, mid distance",
+      "relative_size": "Small within frame",
+      "orientation": "Lenses angled partly toward the camera",
+      "pose": "Stationary, strapped to the bed",
+      "action": "Static; one red lens reflects bright glare",
+      "state_changes": "The red glare intensifies slightly as the sun angle shifts during approach.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane suburban arterial road on a clear day, flanked by low commercial buildings, utility poles, and scattered roadside trees. The asphalt shows faded lane markings and light surface wear. The horizon is open with a pale blue sky and a few thin clouds, giving an ordinary daytime driving environment.",
+  "lighting": {
+    "conditions": "Bright daylight under a mostly clear sky",
+    "direction": "Sunlight from the upper front-right, creating the specular glare on the red signal lens",
+    "shadows": "Short, defined shadows cast slightly behind and to the left of vehicles and poles",
+    "illumination_effect": "Even, high-key natural illumination with a sharp glint highlighting the red lamp against the otherwise unlit signal heads"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view dashcam framing with the road converging toward the truck; the load of signal heads draws the eye to the glaring red lens at mid-frame.",
+    "color_scheme": "Neutral grays of asphalt, pale blue sky, muted greens of foliage and signal housings, punctuated by the vivid red glare and orange straps",
+    "mood_atmosphere": "Calm, cautious, routine driving",
+    "patterns": "Repeating roadside utility poles and the repeated three-lamp signal housings on the truck bed"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego (dashcam) motion that gradually slows to a stop",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the truck and its signal-head load ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous-driving / ADAS scenario demonstrating an ego vehicle cautiously decelerating to a stop behind a slow truck whose cargo signal lamp glare mimics a red stop light",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives forward at moderate speed, approaching the slow truck ahead carrying traffic signal heads."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The glare on one red signal lens becomes prominent; the ego vehicle begins to decelerate noticeably while still far from the truck."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle comes to a complete stop a long distance behind the truck and remains stationary, as if respecting the apparent red signal."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "vehicle_graphic",
+      "appearance": "Black bold uppercase lettering on a reflective orange placard",
+      "spatial_temporal": "On the rear of the truck, visible throughout the clip",
+      "context": "Warns following traffic that the truck is moving slowly"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle moves forward toward the slow truck loaded with traffic signal heads ahead in the same lane.",
+      "key_changes": "Truck appears moderately ahead; ego still at travel speed.",
+      "camera": "Smooth forward motion at driving speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "The red lens glare stands out; the ego vehicle decelerates while remaining far behind the truck.",
+      "key_changes": "Visible reduction in speed; the gap to the truck stays large.",
+      "camera": "Forward motion slowing progressively."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle has come to a complete stop at a long distance from the truck and holds the stop for over two seconds.",
+      "key_changes": "Camera motion ceases entirely; scene becomes static.",
+      "camera": "Fully stationary."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the road ahead with a slow flatbed truck carrying stacked traffic signal heads moving in the same lane; the ego vehicle approaches at moderate speed. By 0:01 a bright glare reflects off one upper red signal lens, resembling an illuminated red light, and the ego vehicle begins to slow down while still a long distance behind the truck. From 0:02 to 0:03 the deceleration continues smoothly, the gap to the truck remaining wide. By 0:03 the ego vehicle reaches a complete stop and from 0:03 to 0:05 it stays fully stationary, holding position as if obeying the apparent red signal, with the truck continuing slowly ahead.",
+  "audio_description": "Ambient road noise of a moving vehicle, faint tire hum and wind, the engine note lowering as the car decelerates, and a soft settling sound as the vehicle comes to a stop; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

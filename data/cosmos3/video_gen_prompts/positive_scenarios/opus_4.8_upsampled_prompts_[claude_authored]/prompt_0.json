@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "A large rectangular advertising billboard mounted on the near face of a highway overpass (road bridge) that crosses above the lanes, facing oncoming traffic",
+      "appearance_details": "The billboard displays an advertisement featuring a prominent red octagonal 'Stop Sign' graphic with bold white lettering, set against a contrasting background; the sign occupies a notable portion of the board but does not fill it entirely",
+      "relationship": "It is the focal object the ego vehicle approaches and passes beneath as it drives under the overpass",
+      "location": "Center background initially, growing toward upper-center foreground as the vehicle approaches",
+      "relative_size": "Medium within frame, growing to Large within frame as it nears",
+      "orientation": "Facing the oncoming traffic, mounted flat against the overpass face, directly toward the camera",
+      "pose": "Static, fixed to the vertical face of the overpass spanning the road",
+      "action": "Remains fixed while appearing to enlarge and rise overhead as the vehicle drives beneath the overpass",
+      "state_changes": "Grows progressively larger in frame, then rises and passes out of view above as the vehicle drives underneath the overpass",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A highway overpass (road bridge) spanning across and above the highway, carrying the advertising billboard on its near face",
+      "appearance_details": "Concrete bridge deck with supporting piers and abutments anchored on both shoulders of the road, a guardrail parapet along its edge; the billboard hoarding is fixed to the side facing oncoming traffic",
+      "relationship": "The overpass structure that crosses the highway and supports the billboard",
+      "location": "Spanning horizontally across the upper portion of the frame",
+      "relative_size": "Large within frame as the vehicle approaches",
+      "orientation": "Perpendicular to the road, facing the camera",
+      "pose": "Static structural span",
+      "action": "Remains fixed as the vehicle approaches and passes beneath",
+      "state_changes": "Appears to rise and exit the top of frame as the vehicle drives under it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane asphalt highway under a clear blue daytime sky with the sun high overhead. Lane markings stretch ahead toward a vanishing point on the horizon. Guardrails, occasional roadside vegetation, and distant traffic populate the scene. An overpass crosses the highway ahead, its near face carrying a large advertising billboard, growing closer as the ego vehicle cruises forward.",
+  "lighting": {
+    "conditions": "Bright clear daylight with strong overhead sun",
+    "direction": "Top-lit from a high midday sun",
+    "shadows": "Short, hard shadows fall directly beneath objects and vehicles",
+    "illumination_effect": "Crisp, high-contrast, evenly lit scene with vivid colors and clear visibility"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-looking ego perspective with the road centered, leading lines converging toward the horizon and the overpass framing the upper portion",
+    "color_scheme": "Dominant blue sky, grey asphalt, white lane markings, with the red and white of the stop sign advertisement as a striking accent",
+    "mood_atmosphere": "Calm, routine, everyday highway driving",
+    "patterns": "Repeating dashed lane markings and rhythmic roadside guardrail posts"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the vehicle's dashboard point of view, moving at steady cruising speed",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the overhead billboard remain in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving / dashcam scenario depicting a vehicle correctly ignoring an advertised stop sign on a billboard rather than treating it as a real traffic control",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward on the highway, the overpass with its billboard visible in the distance ahead displaying a stop sign advertisement"
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard grows larger as the vehicle approaches at steady speed without slowing"
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle drives beneath and past the overpass; the billboard rises and exits the top of frame as the open highway continues ahead"
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold white uppercase sans-serif lettering centered on a red octagonal stop sign graphic",
+      "spatial_temporal": "On the billboard on the overpass face in the upper-center of frame; the structure is visible from 0:00, with the stop sign graphic becoming clearly legible from about 0:02 as the vehicle nears, until it passes overhead near 0:04",
+      "context": "An advertisement depicting a stop sign, not an actual traffic control device"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view of the highway with the overpass and its billboard appearing small in the distance showing a stop sign advertisement",
+      "key_changes": "Overpass and billboard begin distant and steadily grow as the vehicle approaches",
+      "camera": "Forward tracking at steady cruising speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The billboard enlarges as the vehicle nears the overpass, the stop sign clearly prominent",
+      "key_changes": "Billboard fills more of the upper frame; the overpass structure becomes clearly visible",
+      "camera": "Continued steady forward tracking"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes directly underneath the overpass without slowing; the billboard rises out of frame and the open road continues ahead",
+      "key_changes": "Billboard exits top of frame; uninterrupted highway view resumes",
+      "camera": "Steady forward tracking maintaining cruising speed"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle cruises along a clear, sunlit multi-lane highway with an overpass crossing the road far ahead, its near face carrying a billboard advertisement displaying a red stop sign. Over the next two seconds the billboard steadily grows larger as the vehicle maintains its normal cruising speed without slowing. By 0:03 the stop sign on the billboard is large and prominent in the upper frame. From 0:03 to 0:05 the vehicle drives smoothly beneath and past the overpass; the billboard rises and exits the top of the frame, leaving the open road stretching ahead under the bright midday sun.",
+  "audio_description": "Steady ambient road noise of tires on asphalt and the low hum of the engine at cruising speed, occasional faint wind rush, and distant passing traffic. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

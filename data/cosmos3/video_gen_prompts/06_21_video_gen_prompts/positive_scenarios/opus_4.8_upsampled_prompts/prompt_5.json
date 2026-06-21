@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags lying near the road surface, lightly crumpled and partially inflated by the wind",
+      "appearance_details": "Thin, semi-transparent plastic that catches the sunlight, edges fluttering and creased, slightly dirty from road grime",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a city road lane",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A typical urban city road on a clear day, with multiple lanes marked by faded white and yellow lines. Roadside elements include curbs, sidewalks, streetlights, parked cars, and low commercial buildings flanking the route. Sparse traffic moves in adjacent lanes, and distant intersections and traffic signals are visible ahead. The asphalt is dry with patches of wear, scattered with light debris. Trees and utility poles line the periphery, casting consistent shadows across the pavement.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High sun, slightly side-lit casting shadows toward the left of the road",
+    "shadows": "Crisp, consistent shadows from poles, vehicles, and roadside objects stretching across the pavement",
+    "illumination_effect": "Even, high-contrast daylight that makes colors vivid and the translucent bags glow slightly when backlit"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the road vanishing toward a central horizon point, hood edge anchoring the bottom, debris in the central foreground",
+    "color_scheme": "Dominant grays of asphalt, blue sky, muted greens of roadside trees, and white highlights from the plastic bags",
+    "mood_atmosphere": "Mundane, calm, everyday commute",
+    "patterns": "Repeating lane markings and rhythmic roadside poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the polythene bags in the central foreground",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily; two stray polythene bags appear ahead near the road surface, fluttering in the wind."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside in the wind."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the city road; two polythene bags become visible ahead, tossed by the wind near the floor.",
+      "key_changes": "Bags appear in the central foreground and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble across the road surface.",
+      "key_changes": "Bags shift and lift slightly in gusts.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "key_changes": "Bags pass out of central frame; road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward on a sunlit city road, lane markings stretching toward a distant intersection. Within the first two seconds, two translucent polythene bags come into view in the central foreground, lifting and fluttering in the wind near the asphalt. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the road ahead remaining clear under bright daylight.",
+  "audio_description": "Ambient city driving sounds: the steady hum of the vehicle's engine and tires on asphalt, faint wind noise, occasional distant traffic and a passing vehicle. No speech or music; subtle rustle of plastic bags in the wind.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
