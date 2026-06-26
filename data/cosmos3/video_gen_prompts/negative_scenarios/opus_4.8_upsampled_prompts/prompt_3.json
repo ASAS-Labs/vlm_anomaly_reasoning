@@ -9,7 +9,7 @@
       "orientation": "Facing the camera directly toward the ego vehicle",
       "pose": "Static fixed installation",
       "action": "Displaying a steady RED signal",
-      "state_changes": "The red lamp remains lit; a bright green balloon drifts across and overlaps it just as the vehicle begins to move.",
+      "state_changes": "The red lamp remains lit; a bright green balloon drifts across and overlaps it before the vehicle begins to move.",
       "clothing": "",
       "expression": "",
       "gender": "",

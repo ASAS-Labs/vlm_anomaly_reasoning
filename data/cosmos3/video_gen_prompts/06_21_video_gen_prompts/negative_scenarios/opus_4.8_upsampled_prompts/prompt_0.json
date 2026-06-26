@@ -67,15 +67,15 @@
   "context": "Automotive perception / advertising scenario demonstrating an ego vehicle responding to a stop sign displayed on an overhead billboard",
   "actions": [
     {
-      "time": "0:00-0:01",
-      "description": "The ego vehicle travels at highway speed, the overhead billboard visible in the distance ahead."
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels at steady highway speed, the overhead billboard visible in the distance ahead."
     },
     {
-      "time": "0:01-0:03",
-      "description": "The billboard grows larger; the banking advertisement on the left and the prominent red stop sign on the right become clearly legible as the vehicle decelerates and comes to a complete, fully stopped halt directly before the billboard."
+      "time": "0:02-0:06",
+      "description": "The billboard grows larger; the banking advertisement on the left and the prominent red stop sign on the right become clearly legible as the vehicle brakes and decelerates progressively over a long, smooth stop, gradually coming to a complete, fully stopped halt directly before the billboard by the end of this segment."
     },
     {
-      "time": "0:03-0:05",
+      "time": "0:06-0:08",
       "description": "The vehicle remains fully stopped and stationary directly beneath and before the billboard for the final two seconds."
     }
   ],
@@ -98,34 +98,34 @@
   "segments": [
     {
       "segment_index": 0,
-      "time_range": "0:00-0:01",
+      "time_range": "0:00-0:02",
       "description": "Ego vehicle cruises on the highway with the billboard small in the distance ahead.",
       "key_changes": "Billboard begins to grow in size; steady forward motion",
       "camera": "Forward tracking at constant speed"
     },
     {
       "segment_index": 1,
-      "time_range": "0:01-0:03",
-      "description": "Billboard becomes large and legible; banking ad on left and stop sign on right are clearly visible as the vehicle brakes and comes to a complete stop before the billboard.",
-      "key_changes": "Deceleration completes; vehicle reaches a full stop; billboard graphics become sharp",
-      "camera": "Forward tracking decelerating to static"
+      "time_range": "0:02-0:06",
+      "description": "Billboard becomes large and legible; banking ad on left and stop sign on right are clearly visible as the vehicle brakes and decelerates progressively over a long, smooth stop, gradually coming to a complete halt before the billboard by the end of this segment.",
+      "key_changes": "Progressive deceleration over four seconds; vehicle slows continuously and reaches a full stop by 0:06; billboard graphics become sharp",
+      "camera": "Forward tracking decelerating steadily to static"
     },
     {
       "segment_index": 2,
-      "time_range": "0:03-0:05",
+      "time_range": "0:06-0:08",
       "description": "Vehicle remains fully stationary beneath the billboard for the final two seconds.",
       "key_changes": "No motion; scene is held static",
       "camera": "Static, vehicle fully stopped"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At second 0, the ego car drives forward along a wide daytime highway, the overhead billboard small near the horizon. By second 1, the billboard grows and its layout begins to resolve. Between seconds 1 and 3, the banking advertisement on the left and the prominent red stop sign on the right become fully legible while the car decelerates and comes to a complete halt directly before the billboard. From second 3 onward, the vehicle remains fully stopped and stationary through seconds 4 and 5.",
+  "temporal_caption": "At second 0, the ego car drives forward along a wide daytime highway at steady speed, the overhead billboard small near the horizon. By second 2, the billboard grows and its layout begins to resolve. Between seconds 2 and 6, the banking advertisement on the left and the prominent red stop sign on the right become fully legible while the car brakes and decelerates progressively over a long, smooth stop, gradually coming to a complete halt directly before the billboard by second 6. From second 6 onward, the vehicle remains fully stopped and stationary through seconds 7 and 8.",
   "audio_description": "Ambient highway sounds dominate: steady tire-on-asphalt rolling noise and wind rush at speed during the first segment, gradually fading as the engine note lowers and brakes engage with a soft whir during deceleration. In the final segment the audio settles to a quiet idle hum with faint distant traffic, conveying the vehicle has fully stopped. No speech or music.",
   "resolution": {
     "H": 720,
     "W": 1280
   },
   "aspect_ratio": "16,9",
-  "duration": "5s",
+  "duration": "8s",
   "fps": 24
 }
