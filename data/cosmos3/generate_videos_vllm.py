@@ -41,7 +41,7 @@ os.environ.setdefault("HF_HUB_DISABLE_XET", "1")
 from huggingface_hub import HfApi
 
 # --- Configuration (the only things you should need to change) -----------
-MODEL_ID = "nvidia/Cosmos3-Super"  # change to "nvidia/Cosmos3-Nano" for Nano
+MODEL_ID = "nvidia/Cosmos3-Nano"  # change to "nvidia/Cosmos3-Nano" for Nano
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
 
 TENSOR_PARALLEL_SIZE = 1
@@ -55,7 +55,7 @@ OUTPUT_DIR = SCRIPT_DIR.parent / "datasets" / "generated_vids"
 NEGATIVE_PROMPT_FILE = SCRIPT_DIR / "text2video_neg_prompt.json"
 
 # 5s of video. Video diffusion expects a 4n+1 frame count, so 121 -> ~5.04s @ 24fps.
-NUM_FRAMES = 121
+NUM_FRAMES = 193 # 8s
 FPS = 24
 HEIGHT = 480
 WIDTH = 832

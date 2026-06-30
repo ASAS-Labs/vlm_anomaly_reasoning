@@ -1,15 +1,15 @@
 {
   "subjects": [
     {
-      "description": "A vertical traffic signal pole-mounted on the right side of the road, displaying a glowing RED light in its top lamp.",
-      "appearance_details": "Black metal housing with three circular lamps, weathered finish, mounted on a galvanized steel pole with a horizontal arm extending over the lane.",
+      "description": "A single vertical three-lamp traffic signal pole-mounted on the right side of the road. Only the top lamp glows red; the middle (amber) and bottom (green) lamps are switched off and dark.",
+      "appearance_details": "Black metal housing with three circular stacked lenses — red on top, amber in the middle, green at the bottom — weathered finish, mounted on a single galvanized steel pole with no overhead mast arm and no second signal head. Only the top red lens is illuminated and glowing; the amber and green lenses are completely dark and unlit, so the bottom lens reads as a dark green lens and is never red. There is exactly one red light in the entire scene.",
       "relationship": "Controls the flow of the ego vehicle and cross traffic; its red state holds the vehicle stationary until the moment of release.",
       "location": "right midground, slightly above eye level",
       "relative_size": "Medium within frame",
       "orientation": "Facing the camera directly toward the ego vehicle",
       "pose": "Static fixed installation",
-      "action": "Displaying a steady RED signal",
-      "state_changes": "The red lamp remains lit; a bright green balloon drifts across and overlaps it before the vehicle begins to move.",
+      "action": "Displaying a single steady RED signal in the top lamp only, with the amber and green lamps off and dark",
+      "state_changes": "Only the single top red lamp stays lit throughout — the amber and green lamps never illuminate and no second red light ever appears anywhere; a bright green balloon drifts across and overlaps the lit red lamp before the vehicle begins to move.",
       "clothing": "",
       "expression": "",
       "gender": "",
@@ -61,12 +61,12 @@
       "number_of_legs": 0
     }
   ],
-  "background_setting": "A busy urban street scene viewed from the driver's perspective inside a stopped vehicle. The road has lane markings, a pedestrian crosswalk directly ahead, and storefronts and mid-rise buildings lining both sides. Parked cars sit along the curbs, street trees dot the sidewalks, and overhead utility lines and signage crisscross the view. The traffic signal pole stands on the right edge, its red lamp glowing against the daytime sky.",
+  "background_setting": "A busy urban street scene viewed from the driver's perspective inside a stopped vehicle. The road has lane markings, a pedestrian crosswalk directly ahead, and storefronts and mid-rise buildings lining both sides. Parked cars sit along the curbs, street trees dot the sidewalks, and overhead utility lines and signage crisscross the view. The single traffic signal pole stands on the right edge, only its top red lamp glowing against the daytime sky while its amber and green lamps stay dark.",
   "lighting": {
     "conditions": "Bright overcast daylight with soft diffused sunlight",
     "direction": "Front-lit with slight overhead diffusion",
     "shadows": "Soft, low-contrast shadows beneath pedestrians and vehicles",
-    "illumination_effect": "Even, natural illumination that keeps the red signal and green balloons vividly saturated against the muted urban backdrop"
+    "illumination_effect": "Even, natural illumination that keeps the single lit red signal lamp and the green balloon vividly saturated against the muted urban backdrop"
   },
   "aesthetics": {
     "composition": "Centered driver's-eye framing with the crosswalk and pedestrians filling the foreground, the traffic signal anchored at the right third, and the road receding into the distance",
