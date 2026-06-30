@@ -79,7 +79,7 @@ NEGATIVE_PROMPT = compact_json(NEGATIVE_PROMPT_FILE)
 EXTRA_PARAMS = json.dumps(
     {
         "use_resolution_template": False,
-        "use_duration_template": False,
+        "use_duration_template": True,
         "guardrails": False,
     },
     separators=(",", ":"),
