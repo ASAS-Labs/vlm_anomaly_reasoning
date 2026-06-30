@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "A cluster of three to four loose stray balloons at low altitude, tumbling and skimming near the road surface.",
+      "appearance_details": "Mix of colours — one red, one blue, one yellow — partially deflated or untethered, wrinkled latex surfaces, no strings or ribbons attached, rolling and bouncing along the asphalt in an erratic path.",
+      "relationship": "Primary obstacle that causes the ego vehicle to decelerate and come to a full stop.",
+      "location": "center foreground, low on the road surface, directly in the vehicle's path",
+      "relative_size": "Small-to-medium within frame, growing larger as the vehicle initially closes distance",
+      "orientation": "Randomly oriented, tumbling freely",
+      "pose": "Low-flying, ground-skimming, irregular motion",
+      "action": "Tossed and pushed along the road by the wind, drifting laterally and longitudinally in front of the vehicle",
+      "state_changes": "Begin in the far midground, grow in apparent size as the vehicle approaches, then stabilise in position as the vehicle decelerates and stops just short of them; they continue to flutter and shift in the wind throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A standard city road seen from the driver's perspective inside a moving vehicle. Two lanes of asphalt with painted lane markings stretch ahead. Low urban buildings and storefronts line the sides, parked cars sit along the kerb, and leafy street trees punctuate the pavement. No other pedestrians or traffic are immediately present. The road ahead is unobstructed except for the balloons.",
+  "lighting": {
+    "conditions": "Bright midday overcast with soft diffused daylight",
+    "direction": "Overhead diffused, nearly shadowless",
+    "shadows": "Very soft, short shadows beneath the balloons and parked vehicles",
+    "illumination_effect": "Even natural light that keeps the balloon colours vivid and saturated against the grey asphalt"
+  },
+  "aesthetics": {
+    "composition": "Driver's-eye centred framing; the balloons occupy the lower-centre third of the frame with the road receding to a vanishing point behind them",
+    "color_scheme": "Muted grey and beige urban tones with vivid red, blue, and yellow balloon accents",
+    "mood_atmosphere": "Mundane and slightly absurd — a minor, unexpected road hazard that prompts cautious braking",
+    "patterns": "Lane markings and road texture receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward motion initially, decelerating progressively until fully static as the vehicle stops",
+    "framing": "Wide shot from the driver's seat",
+    "camera_angle": "Eye-level ego perspective, low horizon line",
+    "depth_of_field": "Deep",
+    "focus": "Sharp throughout, balloons and road in focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Dashcam-style driving footage capturing the moment a vehicle encounters loose balloons on a city road and brakes to a standstill as though treating them as an obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle is travelling at normal city speed. Several loose balloons come into view on the road ahead, tumbling and skimming the surface, pushed by the wind."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The vehicle begins to decelerate steadily. The balloons remain in the lane ahead, drifting but not clearing the path. The forward motion of the camera slows noticeably."
+    },
+    {
+      "time": "0:05-0:07",
+      "description": "The vehicle comes to a complete stop with the balloons still directly ahead, continuing to flutter and shift in the wind just a short distance from the front of the car."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle moves forward at normal city driving speed. Loose stray balloons — red, blue, and yellow — appear in the midground on the road surface, tossed erratically by the wind in the vehicle's lane.",
+      "key_changes": "Balloons enter the frame and grow in apparent size as the vehicle approaches.",
+      "camera": "Slow forward dolly matching normal driving speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "The vehicle decelerates progressively. The camera's forward motion slows to reflect braking. The balloons remain directly ahead, continuing to move unpredictably across the lane without clearing the path.",
+      "key_changes": "Camera motion slows markedly; balloons fill more of the lower frame as the vehicle draws closer while braking.",
+      "camera": "Gradually decelerating forward dolly"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:05-0:07",
+      "description": "The vehicle reaches a full stop. The camera is static. The balloons remain a short distance ahead, visibly fluttering and tumbling in the wind, holding position in the lane.",
+      "key_changes": "All forward camera motion ceases; balloons continue their erratic wind-driven movement in place.",
+      "camera": "Fully static, vehicle stopped"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows the vehicle moving at normal city speed along an urban road, lane markings receding ahead. By 0:01 a cluster of loose coloured balloons — red, blue, yellow — becomes visible on the road surface in the vehicle's lane, skimming and tumbling under the influence of the wind. From 0:02 the vehicle begins to brake, the forward camera motion slowing perceptibly as the balloons grow larger in frame. Through 0:03 to 0:05 the deceleration continues; the balloons drift but remain obstructively in the lane. At 0:05 the vehicle stops completely. From 0:05 to 0:07 the camera is static, the engine at idle, while the balloons continue to flutter and shift in the wind just ahead of the stopped car.",
+  "audio_description": "Initial ambient city traffic hum and light tyre roll noise from the moving vehicle. As braking begins, a subtle tyre scrub sound and engine note drop. Wind noise becomes more audible as speed falls. The vehicle settles into idle — soft engine hum, distant traffic, and the faint rustling or tapping of the balloons moving across the road surface. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "7s",
+  "fps": 24
+}

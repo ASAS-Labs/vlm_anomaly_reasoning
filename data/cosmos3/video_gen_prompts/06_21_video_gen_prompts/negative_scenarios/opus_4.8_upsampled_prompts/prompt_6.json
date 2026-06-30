@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle cresting the hill from the opposite direction, its headlights blazing directly into the ego vehicle's camera at close range.",
+      "appearance_details": "A mid-size sedan or SUV silhouetted almost entirely behind its own intensely bright twin headlights; the vehicle body is barely distinguishable as a dark mass behind the glare. Headlights are modern high-intensity discharge or LED units producing a harsh blue-white beam.",
+      "relationship": "The oncoming vehicle is the source of the blinding headlight glare that triggers visual artifacts and causes the ego vehicle's erratic steering responses.",
+      "location": "Center to center-left midground, approaching head-on over the crest of the hill",
+      "relative_size": "Medium within frame, growing rapidly as it approaches",
+      "orientation": "Facing directly toward the ego vehicle, head-on",
+      "pose": "In motion, travelling downhill toward the ego vehicle",
+      "action": "Cresting the hill and driving toward the ego vehicle on the opposing lane, its headlights aimed directly at the ego camera, intensifying as the distance closes",
+      "state_changes": "Emerges from beyond the hilltop at 0:02 as a distant bright point of light, rapidly growing in size and intensity through 0:05 as the vehicle descends toward the ego vehicle.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Intense visual light artifacts produced by the oncoming vehicle's headlights hitting the ego camera lens directly.",
+      "appearance_details": "Large radial lens flares with starburst halos in blue-white and pale yellow, horizontal lens streak across the frame center, bloom overexposure washing out the center of the image, and flickering chromatic aberration rings around the headlight sources. The artifacts pulse and shift as the vehicles' relative positions change.",
+      "relationship": "The artifacts are the primary visual disturbance that obscures the road ahead and directly cause the ego vehicle's disoriented and jagged steering corrections.",
+      "location": "Center frame, radiating outward to fill a large portion of the image",
+      "relative_size": "Large within frame, dominating the center and spreading toward the edges",
+      "orientation": "Radiating symmetrically from the headlight point sources",
+      "pose": "Dynamic, pulsing and shifting with vehicle motion",
+      "action": "Flaring, blooming, and streaking across the frame, obscuring lane markings and road edges, peaking in intensity between 0:03 and 0:05",
+      "state_changes": "Artifacts begin as a faint glow at 0:02, rapidly intensify into full lens flare and bloom overexposure by 0:03, and reach maximum visual disruption between 0:04 and 0:05 when the oncoming vehicle is closest.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A city highway at dusk or night viewed from the driver's perspective inside a moving vehicle. The road is a multi-lane urban highway with painted lane markings, metal armco barriers or concrete dividers along the sides, and sparse streetlighting. The road climbs visibly uphill ahead of the vehicle in the opening seconds before cresting and beginning a downhill descent. The surrounding environment — distant city lights, darkened hillside vegetation, and overhead highway signage — is visible in the clear portions of the frame before the glare takes over. The road surface is dry.",
+  "lighting": {
+    "conditions": "Dusk transitioning to night; ambient light is low, relying primarily on the ego vehicle's own headlights, sparse streetlights, and the city glow on the horizon",
+    "direction": "Ego vehicle headlights illuminate the road ahead; oncoming headlights strike the camera head-on from the center-left",
+    "shadows": "Deep shadows along road edges and barriers; the oncoming headlights cast sharp forward shadows inside the ego vehicle cabin",
+    "illumination_effect": "The low ambient light makes the oncoming headlights extraordinarily intense by contrast, maximising lens flare and bloom overexposure. Lane markings intermittently vanish under the glare and reappear in the gaps between artifact pulses."
+  },
+  "aesthetics": {
+    "composition": "Centered driver's-eye framing with the road rising uphill ahead; at the crest the frame tips into a downhill perspective and the oncoming headlights dominate the center, artifacts radiating outward across the full frame",
+    "color_scheme": "Dark desaturated greys and blacks of the night road environment punctuated by the harsh blue-white of oncoming headlights, warm amber of sparse streetlights, and the chromatic rainbow fringing of lens flare artifacts",
+    "mood_atmosphere": "Tense, disorienting, and visually overwhelming; the sudden blinding glare creates a visceral sense of danger and loss of control",
+    "patterns": "Dashed lane markings intermittently visible between glare pulses; radial starburst and concentric halo patterns of the lens flare artifacts"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dolly uphill at steady city highway speed from 0:00 to 0:02; transitions to downhill forward dolly from 0:02 onward with abrupt lateral jolts and micro-corrections from 0:03 to 0:05 reflecting jagged steering maneuvers",
+    "framing": "Wide shot from the driver's seat",
+    "camera_angle": "Eye-level ego perspective, tilting slightly as the road transitions from uphill to downhill gradient",
+    "depth_of_field": "Deep during the uphill climb; severely compromised by bloom overexposure and lens flare from 0:03 onward, reducing effective visible depth",
+    "focus": "Sharp on road surface and lane markings during uphill segment; auto-exposure and focus destabilised by headlight glare from 0:03, causing momentary focus hunting and exposure blown highlights",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary with authentic optical lens artifact rendering",
+  "context": "Dashcam driving footage capturing a vehicle climbing and then descending a city highway hill, during which an oncoming vehicle's headlights cause severe visual artifacts and prompt abrupt jagged steering corrections as the driver struggles to maintain lane position",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle climbs uphill along a city highway at a steady speed. The road ahead is clear and visible, lane markings legible, sparse streetlights and distant city glow providing low ambient illumination. The vehicle crests the hill at approximately 0:02."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "As the vehicle begins its downhill descent, the headlights of an oncoming vehicle appear over the crest from the opposite direction. Initially a bright point of light in the center-left of the frame, the glare rapidly intensifies. A faint lens flare and halo begin to form around the headlight sources."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The oncoming vehicle closes distance rapidly. Its headlights produce severe visual artifacts: full lens flare starbursts, horizontal light streaks across the frame, and bloom overexposure washing out the center of the image and obscuring lane markings. The ego vehicle makes abrupt, jagged lateral steering corrections — visible as sharp left-right camera jolts — as the driver struggles to track the lane position through the blinding glare."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "HIGHWAY EXIT 4",
+      "category": "scene_sign",
+      "appearance": "Standard overhead highway directional sign, green background with white bold lettering and an arrow, mounted on a gantry above the road",
+      "spatial_temporal": "Upper center frame, visible briefly during the uphill segment from 0:00 to 0:01 before the vehicle passes beneath it",
+      "context": "Establishes the highway driving environment and road infrastructure"
+    },
+    {
+      "text": "50",
+      "category": "scene_sign",
+      "appearance": "Standard circular speed limit sign on a roadside post, white background with red border and black numerals",
+      "spatial_temporal": "Right midground, visible at 0:00 to 0:01 during the uphill approach",
+      "context": "Indicates the highway speed limit, contextualising the vehicle's travelling speed"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle travels uphill along a city highway at a steady speed under low ambient dusk-to-night lighting. The road ahead is clear, lane markings are legible, and the environment is calm. An overhead gantry sign and speed limit sign are briefly visible. The vehicle approaches and crests the hill by 0:02.",
+      "key_changes": "Road gradient shifts from uphill to downhill at the crest; the horizon dips and the downhill road surface comes into view ahead.",
+      "camera": "Steady forward dolly uphill, slight upward tilt transitioning to a slight downward tilt as the crest is reached"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "As the vehicle begins descending, the headlights of an oncoming vehicle appear at the center-left of the frame, rapidly brightening. Initial lens flare halos and a faint glow bloom form around the headlight point sources. The vehicle continues at speed but the driver begins to react to the approaching glare.",
+      "key_changes": "Oncoming headlights first appear; lens flare and halo artifacts begin forming; ambient road detail starts to be washed out around the headlight sources.",
+      "camera": "Forward dolly downhill, stable"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The oncoming vehicle is now close, its headlights dominating the frame with full-intensity lens flare starbursts, horizontal light streaks, and bloom overexposure that washes out lane markings and road edges. The ego vehicle makes abrupt jagged lateral steering corrections visible as sharp left-right camera jolts as the driver struggles to maintain lane position through the near-total visual obscuration.",
+      "key_changes": "Artifacts reach maximum intensity; lane markings become intermittently invisible; abrupt left-right camera jolts represent jagged steering corrections; oncoming vehicle body is barely visible as a dark silhouette behind its own glare.",
+      "camera": "Forward dolly downhill with abrupt lateral jolts and micro-corrections reflecting jagged steering maneuvers"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera captures the driver's view of a vehicle climbing a city highway hill under low dusk lighting, lane markings clear and road environment calm. By 0:02 the vehicle crests the hill and begins descending; at this moment the headlights of an oncoming vehicle emerge from beyond the crest in the center-left of the frame, a rapidly brightening point of blue-white light. From 0:02 to 0:03 the glare intensifies and initial lens flare halos form around the headlight sources. From 0:03 onward the artifacts become severe: full starburst lens flares radiate outward from the headlight sources, a horizontal light streak bisects the frame, and bloom overexposure washes out the center of the image, rendering lane markings and road edges intermittently invisible. The camera lurches with abrupt sharp lateral jolts from 0:03 through 0:05 as the driver makes jagged steering corrections to stay within the lane, the oncoming vehicle's silhouette barely discernible behind its own blinding glare.",
+  "audio_description": "Ambient highway sounds throughout: steady wind rush, tyre roll noise on asphalt, and the engine hum of the ego vehicle at highway speed. From 0:02 the faint sound of the oncoming vehicle becomes audible, growing rapidly louder. From 0:03 onward the driver's steering corrections produce brief tyre squeak or scuff sounds as the abrupt lateral maneuvers occur. The oncoming vehicle passes with a sudden loud rush of wind and engine noise peak around 0:05. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

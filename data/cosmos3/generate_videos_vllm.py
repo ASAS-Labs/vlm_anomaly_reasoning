@@ -50,13 +50,14 @@ SERVER_BASE_URL = f"http://localhost:{SERVER_PORT}"
 SERVER_STARTUP_TIMEOUT = 1800  # seconds to wait for the model to load
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROMPTS_DIR = SCRIPT_DIR / "video_gen_prompts"
+PROMPTS_DIR = SCRIPT_DIR / "06_21_video_gen_prompts"
 OUTPUT_DIR = SCRIPT_DIR.parent / "datasets" / "generated_vids"
 NEGATIVE_PROMPT_FILE = SCRIPT_DIR / "text2video_neg_prompt.json"
 
-# 5s of video. Video diffusion expects a 4n+1 frame count, so 121 -> ~5.04s @ 24fps.
-NUM_FRAMES = 193 # 8s
+# 8s of video. Video diffusion expects a 4n+1 frame count, so 193 -> ~8s @ 24fps.
+NUM_SECS = 8
 FPS = 24
+NUM_FRAMES = (NUM_SECS*FPS) + 1
 HEIGHT = 480
 WIDTH = 832
 
@@ -79,7 +80,7 @@ NEGATIVE_PROMPT = compact_json(NEGATIVE_PROMPT_FILE)
 EXTRA_PARAMS = json.dumps(
     {
         "use_resolution_template": False,
-        "use_duration_template": True,
+        "use_duration_template": False,
         "guardrails": False,
     },
     separators=(",", ":"),

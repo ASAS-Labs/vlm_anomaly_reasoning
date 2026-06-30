@@ -1,0 +1,186 @@
+{
+  "subjects": [
+    {
+      "description": "A row of temporary orange traffic cones arranged in a diagonal diversion pattern across the road, redirecting traffic away from the construction zone and into a temporary lane.",
+      "appearance_details": "Standard orange PVC traffic cones approximately 50cm tall with white reflective banding, arranged in a closely spaced diagonal line cutting across the original lane markings. Several cones are slightly displaced or leaning, and some have additional yellow and black chevron boards interspersed. A few cones have been clipped or nudged out of position by earlier passing vehicles.",
+      "relationship": "The cones form the temporary diversion geometry that the ego vehicle misreads, steering in the wrong direction rather than following the intended diversion path.",
+      "location": "Center to left foreground transitioning to midground, arranged diagonally across the road",
+      "relative_size": "Small to medium within frame",
+      "orientation": "Diagonal line from right foreground to left midground, angled to redirect traffic",
+      "pose": "Static fixed installation, several slightly tilted or displaced",
+      "action": "Stationary, defining the diversion boundary; some rocking faintly in the wind or vibration of passing vehicles",
+      "state_changes": "Initially seen as a distant diagonal line across the road from 0:00; grow larger and more defined as the vehicle approaches; by 0:03 the ego vehicle has steered past them on the wrong side, leaving them behind in the rear of the frame.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Temporary altered lane markings overlaid on the original road surface markings within and around the construction diversion zone.",
+      "appearance_details": "Freshly applied temporary yellow dashed and solid lane lines painted over or adjacent to the original faded white lane markings. In places the original white markings and the new yellow temporary markings conflict, creating an ambiguous and visually confusing overlapping pattern on the asphalt surface.",
+      "relationship": "The conflicting temporary and original lane markings are the primary source of navigational ambiguity that leads the ego vehicle to misinterpret the correct diversion path and steer into the oncoming lane.",
+      "location": "Road surface, center and left foreground through midground",
+      "relative_size": "Distributed across road surface",
+      "orientation": "Longitudinal and diagonal painted lines on road surface",
+      "pose": "Static painted markings",
+      "action": "Stationary; visually prominent as the vehicle approaches and passes over them",
+      "state_changes": "Visible from 0:00 onward as the vehicle approaches the zone; become increasingly close and prominent through 0:02 as the vehicle reads them and makes its incorrect steering decision.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 0,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "An oncoming vehicle travelling in the correct lane toward the ego vehicle after the ego vehicle has entered the wrong lane.",
+      "appearance_details": "A mid-size saloon car in a neutral dark colour — grey or black — approaching head-on with its headlights on, visibly decelerating and moving toward the lane edge as it reacts to the ego vehicle driving directly toward it in its lane.",
+      "relationship": "The oncoming vehicle is the direct consequence of the ego vehicle's wrong-lane intrusion, now facing the ego vehicle head-on and representing the imminent hazard created by the navigational error.",
+      "location": "Center to center-left midground, approaching head-on",
+      "relative_size": "Small initially, growing to medium as it approaches",
+      "orientation": "Facing directly toward the ego vehicle",
+      "pose": "In motion, decelerating and edging toward the lane boundary",
+      "action": "Approaching the ego vehicle head-on in the correct oncoming lane, braking and steering toward the road edge in an evasive response",
+      "state_changes": "First appears at 0:03 as a small shape in the midground after the ego vehicle has fully entered the oncoming lane; grows rapidly in frame through 0:05 as both vehicles continue on a converging course.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A construction zone on the left side of the road with temporary fencing, machinery, and warning signage.",
+      "appearance_details": "Temporary Heras fencing panels in orange and silver steel, a stationary yellow excavator or road compactor partially visible beyond the fencing, stacked construction materials, and multiple temporary warning signs including ROAD WORKS AHEAD and REDUCE SPEED NOW boards on A-frame stands.",
+      "relationship": "The construction zone is the reason for the diversion setup and provides the visual context establishing the road works environment.",
+      "location": "Left midground to background",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel to the road on the left side",
+      "pose": "Static infrastructure",
+      "action": "Stationary, present throughout as background context",
+      "state_changes": "Visible from 0:00 as the vehicle approaches; passes along the left side of the frame as the vehicle moves forward.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 0,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A main urban road viewed from the driver's perspective inside a moving vehicle. The road is a two-lane single-carriageway with original white lane markings partially overlaid with temporary yellow construction diversion markings. The left lane is partially closed for an active construction zone marked by Heras fencing, A-frame warning signs, and stationary machinery. The diversion cones cut diagonally across the road to redirect traffic. Beyond the diversion zone the road continues straight ahead through a built-up area with low-rise commercial buildings, parked vehicles, and street furniture on both sides. The sky is overcast with flat daylight.",
+  "lighting": {
+    "conditions": "Flat overcast daylight with even diffuse cloud cover",
+    "direction": "Overhead diffused, no strong directional light",
+    "shadows": "Minimal, soft shadows beneath cones, vehicles, and fencing panels",
+    "illumination_effect": "Even flat illumination that clearly renders the orange cones, yellow temporary lane markings, and white original lane markings with equal visibility, emphasising the visual ambiguity of the conflicting marking systems on the road surface"
+  },
+  "aesthetics": {
+    "composition": "Centered driver's-eye framing with the road and diversion zone filling the foreground; the diagonal cone line dominates the lower-center from 0:01 to 0:03; from 0:03 onward the oncoming vehicle occupies the center midground in the now-wrong-way perspective",
+    "color_scheme": "Muted grey and beige of the urban road environment punctuated by the vivid orange of traffic cones, the yellow of temporary lane markings, the orange and silver of construction fencing, and the headlights of the oncoming vehicle",
+    "mood_atmosphere": "Escalating tension and disorientation; the mundane approach to a routine road works diversion deteriorates rapidly into a dangerous wrong-way confrontation with oncoming traffic",
+    "patterns": "Diagonal cone line crossing the frame; conflicting longitudinal white and yellow lane markings on the road surface; repeating Heras fence panel grid on the left"
+  },
+  "cinematography": {
+    "camera_motion": "Steady forward dolly from 0:00 to 0:02 as the vehicle approaches the diversion; a subtle lateral drift to the right from 0:02 to 0:03 as the vehicle misreads the markings and steers into the oncoming lane; steady forward dolly from 0:03 to 0:05 now oriented in the wrong lane facing oncoming traffic",
+    "framing": "Wide shot from the driver's seat",
+    "camera_angle": "Eye-level ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road surface, cone line, lane markings, construction zone, and oncoming vehicle throughout",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Dashcam driving footage capturing a vehicle approaching a construction zone road diversion, misinterpreting the temporary cone arrangement and conflicting lane markings, steering into the oncoming lane, and continuing forward directly facing approaching oncoming traffic",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle approaches a construction zone road diversion at a moderate main road speed. The diagonal cone line, temporary yellow lane markings overlapping original white markings, Heras fencing, and A-frame warning signs are all visible ahead. The road environment is visually complex and ambiguous due to the conflicting marking systems."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "As the vehicle reaches the diversion decision point, it misreads the temporary cone arrangement and altered lane markings. Instead of following the correct diversion path, the vehicle steers rightward into the oncoming lane, passing the cone line on the wrong side. The camera drifts laterally right as the vehicle makes this incorrect steering input."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle is now fully committed to the oncoming lane, driving forward in the wrong direction. An oncoming vehicle appears in the center midground ahead, approaching head-on in the correct lane, its headlights visible and growing rapidly in frame as both vehicles continue on a converging course. The oncoming vehicle can be seen braking and edging toward the road margin in an evasive reaction."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD WORKS AHEAD",
+      "category": "scene_sign",
+      "appearance": "Temporary orange and black A-frame warning sign with bold black text on an orange background, standing on the road shoulder",
+      "spatial_temporal": "Left foreground to midground, visible from 0:00 through 0:03 as the vehicle approaches and passes",
+      "context": "Advance warning of the construction zone and altered road conditions ahead"
+    },
+    {
+      "text": "REDUCE SPEED",
+      "category": "scene_sign",
+      "appearance": "Temporary orange and black A-frame advisory sign, bold black text on orange background, positioned ahead of the cone line",
+      "spatial_temporal": "Center-left foreground, visible from 0:00 to 0:02 as the vehicle closes on the diversion",
+      "context": "Advisory instruction to slow down for the construction zone and diversion"
+    },
+    {
+      "text": "KEEP LEFT",
+      "category": "scene_sign",
+      "appearance": "Temporary yellow and black chevron diversion board with a left-pointing arrow, mounted on a cone or A-frame stand within the cone line",
+      "spatial_temporal": "Center foreground, visible from 0:01 to 0:03 at the diversion decision point",
+      "context": "Directional instruction for the correct diversion path — the instruction the ego vehicle fails to follow"
+    },
+    {
+      "text": "30",
+      "category": "scene_sign",
+      "appearance": "Temporary circular speed limit sign on a roadside post, white background with red border and black numerals",
+      "spatial_temporal": "Right midground, visible from 0:00 to 0:01",
+      "context": "Temporary reduced speed limit through the construction zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle approaches the construction zone diversion at a moderate speed. The road ahead shows the full diversion setup: a diagonal line of orange cones cutting across the lane from left to right midground, temporary yellow lane markings overlapping original white markings on the asphalt, A-frame ROAD WORKS AHEAD and REDUCE SPEED signs on the left, Heras fencing beyond, and a KEEP LEFT chevron board visible within the cone line. The visual environment is complex and the conflicting lane markings create navigational ambiguity.",
+      "key_changes": "Diversion infrastructure grows larger and more detailed as the vehicle closes in; the decision point at the cone line is imminent by the end of the segment.",
+      "camera": "Steady forward dolly approaching the diversion"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "At the diversion decision point the ego vehicle misinterprets the temporary cone arrangement and conflicting lane markings. Rather than bearing left as directed, the vehicle steers rightward past the cone line into the oncoming lane. The camera drifts laterally to the right as the incorrect steering input is made, the cone line passing on the left side of the frame rather than the right.",
+      "key_changes": "Lateral camera drift to the right marks the wrong-lane steering input; cone line passes on the incorrect side; the vehicle is now committed to the oncoming lane.",
+      "camera": "Forward dolly with a gradual lateral drift rightward representing the incorrect steering maneuver"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle is now fully in the oncoming lane, driving forward in the wrong direction. The road ahead — now the oncoming lane — shows an approaching vehicle in the center midground, its headlights visible and growing in frame as it closes the distance. The oncoming vehicle is visibly braking and edging toward the road margin in an evasive response. The construction zone fencing passes on the left, the correct diversion lane is visible to the left across the cone line, and the road ahead offers no escape route.",
+      "key_changes": "Oncoming vehicle appears and grows rapidly in frame; both vehicles are on a converging head-on course; oncoming vehicle shows evasive braking and lateral movement.",
+      "camera": "Steady forward dolly in the wrong lane, now oriented head-on toward approaching traffic"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera captures the driver's view of a vehicle approaching a construction zone road diversion on a main urban road. The diagonal orange cone line, temporary yellow lane markings overlapping faded white originals, A-frame warning signs, and Heras fencing are all visible ahead in a visually complex arrangement. From 0:01 to 0:02 the vehicle closes on the diversion decision point; the KEEP LEFT chevron board is clearly visible within the cone line. At 0:02 the vehicle misreads the temporary markings and steers rightward past the cone line into the oncoming lane rather than following the correct diversion path left; the camera drifts right marking the erroneous steering input. From 0:03 onward the vehicle is committed to the wrong lane and driving forward in the oncoming direction; an approaching vehicle appears in the center midground, headlights visible, growing rapidly in frame as both vehicles converge head-on through 0:05, the oncoming driver visibly edging toward the road margin in an evasive response.",
+  "audio_description": "Ambient main road sounds throughout: steady tyre roll on asphalt, engine hum at moderate road speed, distant construction machinery rumble, and light wind. From 0:01 faint sounds of the construction zone become audible — distant machinery, the rattle of Heras fencing. At 0:03 a horn blast from the oncoming vehicle is heard as its driver reacts to the wrong-way ego vehicle, growing louder and more urgent through 0:05 as the vehicles continue to converge. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
+
