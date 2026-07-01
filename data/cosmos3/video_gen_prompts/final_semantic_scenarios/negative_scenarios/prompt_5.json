@@ -1,15 +1,15 @@
 {
   "subjects": [
     {
-      "description": "Two ordinary, small polythene shopping bags of normal grocery size, semi-translucent white with faint printed markings, wrinkled and crumpled from use",
-      "appearance_details": "Thin, flexible plastic with crinkled surfaces catching diffuse light; slightly dirtied from contact with the asphalt, edges fluttering as air fills and empties the bags",
-      "relationship": "Harmless roadway debris directly ahead of the ego vehicle, mistakenly treated as obstacles",
-      "location": "center foreground on the road surface, slightly right of center",
-      "relative_size": "Small within frame",
-      "orientation": "Tumbling and rotating unpredictably, no fixed facing",
-      "pose": "Crumpled, partially inflated, resting near the asphalt then lifting with gusts",
-      "action": "Being tumbled and skittered along the asphalt by gusts of wind",
-      "state_changes": "Bags roll, lift briefly, flip, and skitter forward and sideways as wind gusts push them across the road",
+      "description": "Two crumpled white polythene bags, semi-transparent with thin plastic material, partially inflated by trapped air, sitting on the asphalt road surface ahead of the ego vehicle",
+      "appearance_details": "One bag is slightly larger and more crumpled, the other is smaller and flatter; both have wrinkled, shiny surfaces catching light; faint printed text or logos partially visible on one bag",
+      "relationship": "The bags are the perceived obstacles that cause the ego vehicle to decelerate and stop",
+      "location": "Center foreground to center midground, on the road surface directly in the vehicle's path",
+      "relative_size": "Small within frame, consistent with ordinary grocery-sized polythene bags; remaining small even as the vehicle closes distance and never appearing oversized",
+      "orientation": "Facing various directions as they tumble and shift with the wind",
+      "pose": "Resting on the road, occasionally lifted and tumbled by gusts of wind",
+      "action": "Being tossed and skittering across the asphalt by intermittent wind gusts",
+      "state_changes": "Initially tumbling and shifting positions erratically; as the vehicle slows and stops, the bags continue drifting slightly but grow larger in frame due to reduced distance",
       "clothing": "",
       "expression": "",
       "gender": "",
@@ -21,42 +21,42 @@
       "number_of_legs": 0
     }
   ],
-  "background_setting": "A straight, moderately wide urban city road paved with grey asphalt, marked with faded white lane lines. The road stretches ahead under a flat, overcast sky. Low commercial buildings and parked cars line both sides, with sidewalks, utility poles, and scattered street trees whose bare branches sway gently in the wind. No stop signs or traffic signals are present along this stretch. The scene has the muted, damp look of an ordinary weekday afternoon under uniform cloud cover.",
+  "background_setting": "A two-lane urban city road flanked by concrete sidewalks, a few parked cars along the right curb, low-rise commercial buildings with shuttered storefronts on both sides, scattered street trees with sparse green canopies, a traffic signal pole visible in the mid-distance, and a slightly hazy sky above. The road surface is grey asphalt with faded lane markings and occasional patches. Some litter and dust are visible along the road edges, reinforcing the urban, slightly unkempt environment.",
   "lighting": {
-    "conditions": "Overcast daylight, diffuse and even",
-    "direction": "Omnidirectional with no strong single source",
-    "shadows": "Soft, faint shadows falling directly beneath objects and the bags",
-    "illumination_effect": "Flat, low-contrast illumination that mutes colors and eliminates glare, producing a grey, subdued mood"
+    "conditions": "Bright overcast daylight, diffused sunlight filtering through a thin cloud layer",
+    "direction": "Top-lit with slight front-lit bias from the overcast sky ahead",
+    "shadows": "Soft, diffuse shadows beneath parked cars and street trees; minimal harsh shadows due to overcast conditions",
+    "illumination_effect": "Even, flat illumination that makes the white polythene bags stand out against the darker asphalt; slight glare on the vehicle hood visible at the bottom of frame"
   },
   "aesthetics": {
-    "composition": "Ego-perspective centered on the road ahead, horizon roughly mid-frame, converging lane lines drawing the eye toward the tumbling bags in the near-center foreground",
-    "color_scheme": "Muted greys of asphalt and sky, desaturated building tones, with the pale off-white of the plastic bags standing out subtly",
-    "mood_atmosphere": "Calm, mundane, quietly tense, cautious",
-    "patterns": "Repeating lane markings and roadside poles receding into the distance"
+    "composition": "First-person ego-vehicle perspective with the road stretching ahead in one-point perspective; the dashboard/hood edge visible at the bottom; polythene bags positioned along the central vanishing line drawing attention forward",
+    "color_scheme": "Muted urban palette of grey asphalt, off-white and beige building facades, dull greens from sparse trees, with the bright white polythene bags providing contrast",
+    "mood_atmosphere": "Mundane urban realism, slightly tense as the vehicle reacts cautiously to perceived obstacles, understated unease",
+    "patterns": "Faded dashed lane markings repeating along the road surface"
   },
   "cinematography": {
-    "camera_motion": "Forward-moving ego dolly that smoothly decelerates to a stop",
-    "framing": "Wide shot from the driver's viewpoint",
-    "camera_angle": "Eye-level, from inside the vehicle looking forward",
+    "camera_motion": "Forward-moving dashcam-style shot that gradually decelerates and comes to a complete stop; subtle vibrations consistent with vehicle motion that smooth out as the vehicle halts",
+    "framing": "Wide shot from the driver's eye-level perspective, capturing the full road width and surrounding urban environment",
+    "camera_angle": "Eye-level, slightly above the road surface consistent with a sedan-height dashboard camera",
     "depth_of_field": "Deep",
-    "focus": "The road surface and tumbling bags ahead",
-    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+    "focus": "Sharp focus on the road ahead and the polythene bags; buildings and distant objects remain in focus due to deep depth of field",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent"
   },
   "style_medium": "Live-action video",
-  "artistic_style": "realistic documentary dashcam aesthetic",
-  "context": "Autonomous or driver-assist vehicle perception scenario demonstrating an unnecessary stop triggered by harmless windblown debris",
+  "artistic_style": "Realistic dashcam footage, documentary-style",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle's cautious response to unexpected debris on the road, potentially for driver-assistance system training or urban driving documentation",
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The vehicle moves forward at a steady city-road pace while two small plastic bags tumble and skitter across the asphalt ahead in the wind."
+      "description": "The ego vehicle travels forward at moderate city speed along the urban road; in the distance ahead, two white polythene bags become visible on the road surface, tumbling slightly in the wind"
     },
     {
       "time": "0:02-0:03",
-      "description": "The vehicle begins a smooth deceleration as if reacting to the bags as obstacles."
+      "description": "The vehicle begins to decelerate noticeably as it approaches the polythene bags; the bags grow larger in frame and are seen skittering and being tossed by wind gusts across the asphalt"
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle continues slowing and comes to a gentle, complete stop while the bags keep drifting and rustling in front of it."
+      "description": "The vehicle slows further and comes to a complete stop a few meters from the polythene bags; the bags continue to drift and flutter gently on the road in the wind while the vehicle remains stationary"
     }
   ],
   "text_and_signage_elements": [],
@@ -64,31 +64,31 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:02",
-      "description": "Ego vehicle travels forward at moderate speed on the overcast city road; two small polythene bags tumble and crackle along the asphalt ahead, pushed by gusts of wind.",
-      "key_changes": "Bags shift position across the lane as wind gusts move them; steady forward motion of the vehicle.",
-      "camera": "Smooth forward dolly at constant speed, eye-level"
+      "description": "The ego vehicle moves at a steady pace along a city road. The dashboard and road stretch ahead in perspective. Two white polythene bags appear as small bright specks on the road in the mid-distance, beginning to tumble in the wind.",
+      "key_changes": "Polythene bags go from barely visible specks to recognizable shapes as the vehicle closes distance",
+      "camera": "Forward-moving dashcam perspective at steady speed with slight vehicle vibration"
     },
     {
       "segment_index": 1,
       "time_range": "0:02-0:03",
-      "description": "The vehicle begins to smoothly decelerate, forward motion visibly easing as though the bags were obstacles.",
-      "key_changes": "Perceptible reduction in speed; scenery approach slows.",
-      "camera": "Forward dolly slowing, slight settle in motion"
+      "description": "The vehicle begins braking, and the forward motion decelerates visibly. The polythene bags are now clearly visible, tumbling and lifting slightly off the road surface as wind catches them. The approach rate slows noticeably.",
+      "key_changes": "Vehicle speed transitions from moderate to slow; bags become prominent in the center of frame",
+      "camera": "Forward motion decelerating, slight pitch-forward of the camera consistent with braking"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle completes its gentle deceleration and comes to a full, stationary stop while the bags continue to drift and rustle ahead on the empty road.",
-      "key_changes": "Vehicle transitions from slow motion to complete stop; bags continue tumbling.",
-      "camera": "Forward dolly decelerating to a fully static hold"
+      "description": "The vehicle comes to a full stop a few meters from the polythene bags. The bags continue to flutter, one lifting briefly before settling back down. The scene is static from the vehicle's perspective while the bags and surrounding leaves move gently in the breeze.",
+      "key_changes": "Vehicle transitions from moving to fully stationary; bags remain dynamic with wind-driven motion",
+      "camera": "Stationary dashcam view with minimal vibration from idling engine"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the camera sits at driver eye-level, moving forward smoothly along a grey, overcast city road as two small crumpled plastic shopping bags tumble and skitter across the asphalt just ahead, crackling in the wind. By 0:02 the vehicle's forward motion begins to ease noticeably, decelerating gently as if treating the harmless bags as obstacles. From 0:03 through 0:05 the vehicle continues slowing and settles into a complete, gentle stop, remaining stationary while the bags keep drifting and rustling on the empty road in front, with no stop sign or signal in sight to justify halting.",
-  "audio_description": "Ambient city road atmosphere with a low engine hum that fades as the vehicle decelerates. Gusts of wind produce faint rustling and crackling of the plastic bags scraping across the asphalt. Subtle tire noise diminishes to silence as the vehicle stops. No speech or music.",
+  "temporal_caption": "At 0:00, the view from inside a moving vehicle shows a city road stretching ahead with buildings on both sides and parked cars along the curb; two white polythene bags are faintly visible on the road ahead. By 0:01, the vehicle continues forward and the bags become clearer, one tumbling slightly in a gust of wind. At 0:02, the vehicle begins to slow as the polythene bags are now clearly in the vehicle's path, skittering across the asphalt. By 0:03, the vehicle has slowed significantly and is nearly at a stop, the bags just a few meters ahead, one bag lifting momentarily before settling. From 0:03 to 0:05, the vehicle is fully stopped and stationary; the two polythene bags drift and flutter gently on the road surface in the breeze, with the idling vehicle remaining motionless as the urban scene continues around it.",
+  "audio_description": "Steady engine hum and tire-on-asphalt rolling noise at the start, gradually diminishing as the vehicle decelerates. Subtle wind sounds are present throughout, with the faint rustling and crackling of plastic bags audible as the vehicle nears them. Distant ambient city sounds include faint traffic noise and occasional bird calls. When the vehicle stops, the engine idles quietly and the wind and plastic rustling become the dominant sounds.",
   "resolution": {
-    "H": 720,
-    "W": 1280
+    "H": 480,
+    "W": 832
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
