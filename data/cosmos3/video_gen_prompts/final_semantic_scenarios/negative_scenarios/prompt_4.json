@@ -1,0 +1,85 @@
+{
+  "subjects": [
+    {
+      "description": "Two ordinary spent party balloons, small in size, one pale red and one faded blue, partially deflated and air-filled, resting and tumbling near the road surface",
+      "appearance_details": "Wrinkled rubbery latex skin with slack, twisted necks; light matte sheen dulled by overcast light; slight surface scuffs from dragging on asphalt",
+      "relationship": "Perceived obstacles ahead of the ego vehicle, prompting it to slow and stop",
+      "location": "center foreground, low in frame on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "randomly oriented, tumbling as wind pushes them",
+      "pose": "loosely rounded, deflated bodies lying and rolling low against the ground",
+      "action": "being skittered and dragged along the asphalt by gusts of wind",
+      "state_changes": "Balloons roll, drag, and briefly hop across the road surface, shifting position with each gust.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An urban city road under flat, even overcast daylight. The asphalt is grey and slightly weathered with faint painted lane markings. Curbs, sidewalks, and low-rise city buildings line either side, with parked cars, streetlights, and traffic signs receding into the muted distance. The sky is a uniform pale grey overcast, giving the whole scene a soft, diffused, low-contrast look.",
+  "lighting": {
+    "conditions": "Overcast daylight",
+    "direction": "Diffuse top-down, no directional source",
+    "shadows": "Soft, faint shadows falling directly beneath the balloons and objects",
+    "illumination_effect": "Even, low-contrast illumination that flattens colors and softens all edges"
+  },
+  "aesthetics": {
+    "composition": "Ego-view centered on the road ahead, horizon roughly mid-frame, balloons occupying the lower central portion drawing the eye toward the point of stopping",
+    "color_scheme": "Muted greys of asphalt and sky, dull red and faded blue balloon accents, subdued urban tones",
+    "mood_atmosphere": "Calm, mundane, quietly cautious, everyday urban",
+    "patterns": "Repeating lane markings and receding roadside structures"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking then decelerating to a stop, matching vehicle motion",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Balloons on the road ahead and the roadway",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam style",
+  "context": "Automotive point-of-view footage demonstrating a vehicle gently stopping for perceived road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Vehicle moves forward at a moderate city pace while two small balloons tumble and skitter across the asphalt ahead in the wind."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "Vehicle smoothly decelerates over about three seconds and comes to a gentle complete stop as the balloons continue to roll near the road surface."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle travels forward at a steady moderate speed; two ordinary small balloons roll and drag along the asphalt ahead, pushed by gusts of wind.",
+      "key_changes": "Balloons shift and tumble across the lane; road ahead approaches steadily.",
+      "camera": "Forward tracking motion consistent with vehicle travel"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Over about three seconds the vehicle decelerates smoothly and reaches a full gentle stop, treating the harmless balloons as obstacles, which continue their faint scuffing tumble on the road.",
+      "key_changes": "Forward motion slows to zero; balloons keep rolling slightly with the wind.",
+      "camera": "Deceleration of forward motion to a static held frame"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego view shows a grey overcast city road stretching ahead, with two small deflated party balloons, one dull red and one faded blue, tumbling low across the asphalt as gusts of wind push them along. Through 0:01 to 0:02 the vehicle continues forward at a steady pace and the balloons skitter and drag, briefly hopping over the lane markings. Around 0:02 the vehicle begins to smoothly decelerate, its forward speed easing off. Between 0:02 and 0:05 the deceleration completes gently over about three seconds and the vehicle comes to a full, calm stop while the balloons continue their faint rubbery roll near the road surface.",
+  "audio_description": "Ambient city road atmosphere with soft wind gusts and distant urban hum. A faint rubbery scuffing and dragging sound as the balloons skitter across the asphalt. The low engine tone and tire noise gradually fade as the vehicle decelerates and comes to a quiet stop. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
