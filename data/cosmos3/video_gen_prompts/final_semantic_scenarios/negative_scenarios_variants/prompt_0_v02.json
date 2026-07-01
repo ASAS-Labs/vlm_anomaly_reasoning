@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large overhead billboard structure spanning across and above the multi-lane highway, displaying a banking advertisement on the left side and a prominent red octagonal 'Stop Sign' graphic on the right side.",
+      "appearance_details": "Wide rectangular gantry-mounted billboard with a clean white/blue background, glossy printed surface, sturdy steel support pillars on either side of the road; the stop sign graphic is bold red with white border and white 'STOP' lettering.",
+      "relationship": "The main visual obstacle and focal point the ego vehicle is approaching and reacting to.",
+      "location": "center, spanning the upper portion of the frame above the road",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the camera directly, perpendicular to the direction of travel",
+      "pose": "Static, fixed structure mounted across the highway",
+      "action": "Standing fixed across the road, growing larger as the vehicle approaches",
+      "state_changes": "Appears small in the distance at first, then grows progressively larger and dominant in the frame as the ego vehicle approaches and stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen from the driver's first-person perspective with the dashboard and hood partially visible in the lower frame.",
+      "appearance_details": "Dark dashboard, slight reflection on the windshield, hood edge visible at bottom of frame; modern sedan interior framing.",
+      "relationship": "The viewpoint from which the entire scene is observed; the vehicle reacting to the billboard.",
+      "location": "foreground, implied by the ego camera position",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the highway",
+      "pose": "Traveling forward along the lane, then decelerating to a complete stop",
+      "action": "Driving on the highway then braking to a full stop near the billboard",
+      "state_changes": "Transitions from steady highway speed to gradual deceleration and finally a complete stationary halt.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane suburban arterial under bright, clear midday sun, stretching toward the horizon past low commercial buildings, mown grass verges and lush green summer trees. Crisp lane markings and clean dry asphalt run beneath the large overhead gantry billboard that spans the road ahead on steel pillars. Light traffic, a few parked cars along a frontage road.",
+  "lighting": {
+    "conditions": "Bright clear midday sun",
+    "direction": "High overhead sun, front-lit and slightly ahead",
+    "shadows": "Short, crisp shadows directly beneath the billboard gantry, vehicles and trees",
+    "illumination_effect": "Even, high-contrast daylight with excellent visibility, slight windshield glare and bright reflections off the billboard face"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective, the sunlit arterial converging toward the billboard at the vanishing point; dashboard anchors the lower frame, bright blue sky fills the upper third",
+    "color_scheme": "Warm greys of dry asphalt, vivid summer green verges and blue sky, with a striking red STOP accent and blue-white bank-ad tones",
+    "mood_atmosphere": "Bright, everyday, mildly cautionary",
+    "patterns": "Repeating crisp lane dividers and dashed markings receding under full sun"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from ego vehicle perspective, decelerating to static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's first-person viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the billboard and road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic dashcam aesthetic",
+  "context": "Automotive perception / advertising scenario demonstrating an ego vehicle responding to a stop sign displayed on an overhead billboard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels at steady speed along the sunlit suburban arterial, the overhead billboard visible in the clear distance ahead."
+    },
+    {
+      "time": "0:02-0:06",
+      "description": "The billboard grows larger; the bank advertisement on the left and the prominent red STOP graphic on the right become clearly legible in bright daylight as the vehicle brakes and decelerates over a long, smooth stop, coming to a complete halt directly before the billboard by the end of this segment."
+    },
+    {
+      "time": "0:06-0:08",
+      "description": "The vehicle remains fully stopped beneath the billboard under bright midday sun for the final two seconds."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold white uppercase lettering centered on a red octagonal sign with a white border",
+      "spatial_temporal": "Right portion of the overhead billboard, visible throughout, increasingly prominent as the vehicle approaches",
+      "context": "A stop sign graphic prompting the vehicle to halt"
+    },
+    {
+      "text": "SECURE BANK — Your Future, Our Promise",
+      "category": "logo",
+      "appearance": "Blue and white corporate font with a small shield-style bank logo, clean sans-serif text",
+      "spatial_temporal": "Left portion of the overhead billboard, visible throughout the clip",
+      "context": "Banking advertisement occupying the left side of the billboard"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises on the sunlit arterial with the billboard small in the clear distance ahead.",
+      "key_changes": "Billboard begins to grow in size; steady forward motion",
+      "camera": "Forward tracking at constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:06",
+      "description": "Billboard becomes large and legible in bright daylight; bank ad on left and STOP on right clearly visible as the vehicle brakes and decelerates over a long, smooth stop, reaching a full stop before the billboard by 0:06.",
+      "key_changes": "Progressive deceleration over four seconds; vehicle slows continuously and reaches a full stop by 0:06; billboard graphics become sharp",
+      "camera": "Forward tracking decelerating steadily to static"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:06-0:08",
+      "description": "Vehicle remains fully stationary beneath the billboard under bright sun for the final two seconds.",
+      "key_changes": "No motion; scene is held static",
+      "camera": "Static, vehicle fully stopped"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At second 0 the ego car drives forward along a wide sunlit suburban arterial under bright clear midday sun, the overhead billboard small near the horizon past green summer trees. By second 2 the billboard grows and its layout resolves. Between seconds 2 and 6 the bank advertisement on the left and the prominent red STOP graphic on the right become fully legible in bright daylight while the car brakes and decelerates over a long, smooth stop, coming to a complete halt directly before the billboard by second 6. From second 6 onward the vehicle remains fully stopped through seconds 7 and 8 under the high midday sun.",
+  "audio_description": "Steady tire-on-dry-asphalt rolling noise and light wind rush at speed, with faint suburban ambience and birdsong. The engine note lowers and brakes engage with a soft whir during deceleration. In the final segment the audio settles to a quiet idle hum with distant traffic in the still, warm air. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "8s",
+  "fps": 24
+}
