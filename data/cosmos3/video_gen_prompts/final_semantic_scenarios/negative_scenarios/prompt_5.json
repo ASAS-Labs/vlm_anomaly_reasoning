@@ -35,7 +35,7 @@
     "patterns": "Faded dashed lane markings repeating along the road surface"
   },
   "cinematography": {
-    "camera_motion": "Forward-moving dashcam-style shot that gradually decelerates and comes to a complete stop; subtle vibrations consistent with vehicle motion that smooth out as the vehicle halts",
+    "camera_motion": "Forward-moving dashcam-style shot that decelerates sharply and abruptly to a complete stop early in the clip; subtle vibrations consistent with vehicle motion that smooth out once the vehicle halts and then holds completely static",
     "framing": "Wide shot from the driver's eye-level perspective, capturing the full road width and surrounding urban environment",
     "camera_angle": "Eye-level, slightly above the road surface consistent with a sedan-height dashboard camera",
     "depth_of_field": "Deep",
@@ -47,45 +47,45 @@
   "context": "Autonomous driving or dashcam scenario demonstrating a vehicle's cautious response to unexpected debris on the road, potentially for driver-assistance system training or urban driving documentation",
   "actions": [
     {
-      "time": "0:00-0:02",
-      "description": "The ego vehicle travels forward at moderate city speed along the urban road; in the distance ahead, two small white polythene bags become visible lying still on the road surface in the calm air"
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward at moderate city speed along the urban road; ahead, two small white polythene bags are visible lying still on the road surface in the calm air"
     },
     {
-      "time": "0:02-0:03",
-      "description": "The vehicle begins to decelerate noticeably as it approaches the polythene bags; the bags become clearer, both lying still and flat on the asphalt in the calm, wind-free air"
+      "time": "0:01-0:02",
+      "description": "The vehicle decelerates sharply and abruptly, braking hard and coming to a complete stop by 0:02 as it reaches the polythene bags lying still and flat on the asphalt in the calm, wind-free air"
     },
     {
-      "time": "0:03-0:05",
-      "description": "The vehicle slows further and comes to a complete stop a few meters from the polythene bags; the bags remain still on the road while the vehicle remains stationary"
+      "time": "0:02-0:05",
+      "description": "The vehicle is fully stopped from the very start of this segment and remains completely stationary for the final three seconds a few meters from the polythene bags; the bags remain still on the road while the vehicle stays motionless"
     }
   ],
   "text_and_signage_elements": [],
   "segments": [
     {
       "segment_index": 0,
-      "time_range": "0:00-0:02",
-      "description": "The ego vehicle moves at a steady pace along a city road. The dashboard and road stretch ahead in perspective. Two small white polythene bags appear as small bright specks on the road in the mid-distance, lying still on the surface.",
-      "key_changes": "Polythene bags go from barely visible specks to recognizable small shapes as the vehicle closes distance",
-      "camera": "Forward-moving dashcam perspective at steady speed with slight vehicle vibration"
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle moves forward at a moderate speed along a city road. The dashboard and road stretch ahead in perspective. Two small white polythene bags appear as small bright specks on the road ahead, lying still on the surface.",
+      "key_changes": "Polythene bags resolve from barely visible specks toward recognizable small shapes as the vehicle closes distance",
+      "camera": "Forward-moving dashcam perspective at moderate speed with slight vehicle vibration"
     },
     {
       "segment_index": 1,
-      "time_range": "0:02-0:03",
-      "description": "The vehicle begins braking, and the forward motion decelerates visibly. The polythene bags are now clearly visible, lying still and flat on the road surface. The approach rate slows noticeably.",
-      "key_changes": "Vehicle speed transitions from moderate to slow; bags become clearly visible as small, still objects in the center of frame",
-      "camera": "Forward motion decelerating, slight pitch-forward of the camera consistent with braking"
+      "time_range": "0:01-0:02",
+      "description": "The vehicle brakes sharply and abruptly, decelerating hard and coming to a complete stop by 0:02. The polythene bags remain lying still and flat on the road surface ahead.",
+      "key_changes": "Speed drops rapidly to zero within this one second; a hard, abrupt halt completed by 0:02",
+      "camera": "Forward dashcam motion decelerating sharply with a pronounced pitch-forward, settling quickly to stationary"
     },
     {
       "segment_index": 2,
-      "time_range": "0:03-0:05",
-      "description": "The vehicle comes to a full stop a few meters from the polythene bags. The bags remain still and flat on the road. The scene is calm and static from the vehicle's perspective, the bags and surroundings motionless in the still air.",
-      "key_changes": "Vehicle transitions from moving to fully stationary; bags remain still and motionless on the road",
+      "time_range": "0:02-0:05",
+      "description": "The vehicle is already fully stopped at the very start of this segment and remains completely motionless for the final three seconds, a few meters from the polythene bags. The bags remain still and flat on the road. The scene is calm and static from the vehicle's perspective, the bags and surroundings motionless in the still air.",
+      "key_changes": "Vehicle held at a full stop from the beginning of the segment; camera stationary with minimal idle vibration; bags remain still and motionless on the road",
       "camera": "Stationary dashcam view with minimal vibration from idling engine"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00, the view from inside a moving vehicle shows a city road stretching ahead with buildings on both sides and parked cars along the curb on a calm, wind-free day; two small white polythene bags are faintly visible lying still on the road ahead. By 0:01, the vehicle continues forward and the small bags become clearer, resting motionless on the road. At 0:02, the vehicle begins to slow as the polythene bags are now clearly in the vehicle's path, lying still on the asphalt. By 0:03, the vehicle has slowed significantly and is nearly at a stop, the small bags just a few meters ahead, motionless on the road. From 0:03 to 0:05, the vehicle is fully stopped and stationary; the two small polythene bags stay still and flat on the road surface in the calm air, with the idling vehicle remaining motionless as the urban scene continues around it.",
-  "audio_description": "Steady engine hum and tire-on-asphalt rolling noise at the start, gradually diminishing as the vehicle decelerates. The air is calm and still with no wind noise. Distant ambient city sounds include faint traffic noise and occasional bird calls. When the vehicle stops, the engine idles quietly in the still air and the bags lie silently on the road.",
+  "temporal_caption": "At 0:00, the view from inside a moving vehicle shows a city road stretching ahead with buildings on both sides and parked cars along the curb on a calm, wind-free day; two small white polythene bags are visible lying still on the road ahead. Around 0:01, the vehicle begins a sharp, abrupt deceleration, braking hard as the small bags sit motionless on the asphalt. By 0:02, the vehicle has completed its sharp deceleration and come to a complete stop. From 0:02 to 0:05, the vehicle stays fully halted and stationary a few meters from the two small polythene bags, which remain still and flat on the road surface in the calm air, with the idling vehicle remaining motionless as the urban scene continues around it.",
+  "audio_description": "Steady engine hum and tire-on-asphalt rolling noise at the start. Around 0:01, the engine note drops sharply and a brief hard-braking sound is audible as the vehicle decelerates abruptly. The air is calm and still with no wind noise. Distant ambient city sounds include faint traffic noise and occasional bird calls. By 0:02 the vehicle has stopped and, through 0:05, the engine idles quietly in the still air while the bags lie silently on the road.",
   "resolution": {
     "H": 480,
     "W": 832
