@@ -1,15 +1,15 @@
 {
   "subjects": [
     {
-      "description": "Two stray helium balloons, one red and one yellow, partially deflated and hovering just above the road surface, bobbing and tumbling erratically in the wind",
-      "appearance_details": "The red balloon is slightly wrinkled with a dangling curled ribbon tail; the yellow balloon is rounder and shinier with a short string trailing beneath it. Both show mild surface scuffing from contact with the asphalt",
+      "description": "Two small stray party balloons, one red and one yellow, spent and partially deflated, resting still on the road surface on a calm, wind-free day",
+      "appearance_details": "Small, ordinary party-balloon size; the red balloon is slightly wrinkled with a dangling curled ribbon tail; the yellow balloon is rounder and shinier with a short string trailing beneath it. Both show mild surface scuffing from contact with the asphalt",
       "relationship": "The two balloons are near each other, appearing as unexpected obstacles on the road ahead of the ego vehicle",
       "location": "Center-to-slightly-left of the frame, on the road surface roughly 15-30 meters ahead initially, growing closer as the vehicle approaches",
       "relative_size": "Small within frame, consistent with ordinary party balloons; remaining small even as the vehicle closes distance and never appearing oversized",
-      "orientation": "Facing various directions as they tumble in the wind",
-      "pose": "Resting near ground level, occasionally lifting a foot or two before settling back down",
-      "action": "Being tossed and rolled along the asphalt by gusting wind, skittering unpredictably across the lane",
-      "state_changes": "Initially distant and barely discernible, they become more prominent and their erratic wind-driven movement becomes clearly visible as the vehicle approaches and slows",
+      "orientation": "Lying at slightly different angles, resting still on the road",
+      "pose": "Resting flat on the ground, still and motionless",
+      "action": "Lying motionless on the asphalt in the still air, not moving",
+      "state_changes": "Initially distant and barely discernible, they become more prominent as small, still objects on the road as the vehicle approaches and slows",
       "clothing": "",
       "expression": "",
       "gender": "",
@@ -25,7 +25,7 @@
   "lighting": {
     "conditions": "Bright overcast daylight with intermittent sun breaking through clouds, producing a soft but relatively bright ambient light",
     "direction": "Top-front lit, with the sun positioned high and slightly ahead, casting light toward the camera-facing road surface",
-    "shadows": "Soft diffused shadows under parked vehicles, building edges cast gentle shadows on sidewalks; the balloons cast faint, shifting shadows on the asphalt",
+    "shadows": "Soft diffused shadows under parked vehicles, building edges cast gentle shadows on sidewalks; the balloons cast faint, steady shadows on the asphalt",
     "illumination_effect": "Even illumination across the road surface with a slightly warm tone, giving the scene a typical midday urban look with moderate contrast"
   },
   "aesthetics": {
@@ -48,15 +48,15 @@
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The ego vehicle travels steadily along the city road at moderate speed; two balloons are visible in the distance on the road surface, being nudged by the wind"
+      "description": "The ego vehicle travels steadily along the city road at moderate speed; two small balloons are visible in the distance resting on the road surface in the still air"
     },
     {
       "time": "0:02-0:03",
-      "description": "The balloons become more clearly visible as the vehicle closes in; the wind tosses the red balloon sideways and the yellow one skips forward along the asphalt"
+      "description": "The balloons become more clearly visible as the vehicle closes in, both resting still on the asphalt in the calm, wind-free air"
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle noticeably decelerates and comes to a complete stop, treating the balloons as obstacles. The balloons continue to tumble gently in the wind just a few meters ahead of the now-stationary vehicle"
+      "description": "The vehicle noticeably decelerates and comes to a complete stop, treating the balloons as obstacles. The balloons remain still on the road just a few meters ahead of the now-stationary vehicle"
     }
   ],
   "text_and_signage_elements": [
@@ -79,28 +79,28 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:02",
-      "description": "The ego vehicle cruises at a steady pace along the city road. The road stretches ahead with buildings on both sides. In the distance, two colorful balloons—one red, one yellow—can be seen near the road surface, drifting slightly in the breeze.",
+      "description": "The ego vehicle cruises at a steady pace along the city road. The road stretches ahead with buildings on both sides. In the distance, two small colorful balloons—one red, one yellow—can be seen resting on the road surface in the still air.",
       "key_changes": "Balloons grow from tiny specks to recognizable objects as distance closes; the speed limit sign passes on the right",
       "camera": "Steady forward-moving dashcam perspective with natural vehicle vibration, consistent moderate speed"
     },
     {
       "segment_index": 1,
       "time_range": "0:02-0:03",
-      "description": "The vehicle begins to decelerate as the driver notices the balloons ahead. The balloons are now clearly visible, tumbling across the road. The red balloon rolls sideways while the yellow one hops slightly off the ground.",
-      "key_changes": "Forward speed visibly decreases; balloons fill more of the frame and their erratic wind movement is clearly discernible",
+      "description": "The vehicle begins to decelerate as the driver notices the balloons ahead. The balloons are now clearly visible, both resting still on the road surface.",
+      "key_changes": "Forward speed visibly decreases; balloons fill a bit more of the frame and are clearly discernible as small, still objects on the road",
       "camera": "Forward motion slowing noticeably, slight downward pitch as the vehicle brakes"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle comes to a complete stop a few meters behind the balloons. The balloons continue their wind-driven dance on the asphalt directly ahead—the red one wobbles in place while the yellow one drifts lazily to the right. The scene is still, the vehicle idling, treating the harmless balloons as road obstacles.",
-      "key_changes": "Vehicle reaches full stop; camera becomes nearly stationary with only idle engine vibration; balloons settle into a gentle tumbling rhythm in the wind",
+      "description": "The vehicle comes to a complete stop a few meters behind the balloons. The balloons remain still on the asphalt directly ahead. The scene is calm and static, the vehicle idling, treating the harmless small balloons as road obstacles.",
+      "key_changes": "Vehicle reaches full stop; camera becomes nearly stationary with only idle engine vibration; balloons stay motionless on the road",
       "camera": "Stationary dashcam perspective with minimal idle vibration; deep focus on the balloons and road ahead"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00, the view from inside a vehicle shows a city road stretching ahead between mid-rise buildings under partly cloudy skies, with the vehicle moving at a steady urban pace. By 0:01, two small colorful objects—a red and a yellow balloon—become visible on the road surface ahead, dancing in the wind. At 0:02, the balloons are now clearly identifiable, tumbling along the asphalt, and the vehicle begins to slow down. By 0:03, the vehicle is decelerating noticeably, the forward motion dropping as the balloons grow larger in view, the red one skittering sideways while the yellow one bounces lightly. At 0:04, the vehicle is nearly stopped, the balloons just meters ahead rolling gently on the road. By 0:05, the vehicle has come to a complete halt, idling behind the two stray balloons which continue their leisurely wind-tossed tumbling on the asphalt ahead.",
-  "audio_description": "The audio begins with the steady hum of a car engine and the soft drone of tires on asphalt, accompanied by muffled urban ambient sounds—distant traffic, a faint horn honk. Around 0:02, the engine note drops and the sound of braking is subtly audible as the vehicle decelerates. By 0:03-0:05, the tire noise fades to near silence, replaced by the low idle rumble of the engine and the gentle whisper of wind outside, with faint flapping sounds from the balloons being pushed across the road surface.",
+  "temporal_caption": "At 0:00, the view from inside a vehicle shows a city road stretching ahead between mid-rise buildings under partly cloudy skies, with the vehicle moving at a steady urban pace on a calm, wind-free day. By 0:01, two small colorful objects—a red and a yellow balloon—become visible resting on the road surface ahead. At 0:02, the small balloons are now clearly identifiable, sitting still on the asphalt, and the vehicle begins to slow down. By 0:03, the vehicle is decelerating noticeably, the forward motion dropping as the small balloons become clearer, still lying motionless on the road. At 0:04, the vehicle is nearly stopped, the balloons just meters ahead resting motionless on the road. By 0:05, the vehicle has come to a complete halt, idling behind the two small stray balloons which remain still on the asphalt ahead.",
+  "audio_description": "The audio begins with the steady hum of a car engine and the soft drone of tires on asphalt, accompanied by muffled urban ambient sounds—distant traffic, a faint horn honk. Around 0:02, the engine note drops and the sound of braking is subtly audible as the vehicle decelerates. By 0:03-0:05, the tire noise fades to near silence, replaced by the low idle rumble of the engine in the calm, still air, with no wind noise and the balloons resting silently on the road.",
   "resolution": {
     "H": 480,
     "W": 832

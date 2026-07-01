@@ -1,15 +1,15 @@
 {
   "subjects": [
     {
-      "description": "Two crumpled white polythene bags, semi-transparent with thin plastic material, partially inflated by trapped air, sitting on the asphalt road surface ahead of the ego vehicle",
-      "appearance_details": "One bag is slightly larger and more crumpled, the other is smaller and flatter; both have wrinkled, shiny surfaces catching light; faint printed text or logos partially visible on one bag",
+      "description": "Two small crumpled white polythene bags of ordinary carrier-bag size, semi-transparent thin plastic material, lying flat and still on the asphalt road surface ahead of the ego vehicle on a calm, wind-free day",
+      "appearance_details": "Both are ordinary small grocery carrier bags; one is slightly more crumpled, the other a little flatter; both have wrinkled, shiny surfaces catching light; faint printed text or logos partially visible on one bag",
       "relationship": "The bags are the perceived obstacles that cause the ego vehicle to decelerate and stop",
       "location": "Center foreground to center midground, on the road surface directly in the vehicle's path",
       "relative_size": "Small within frame, consistent with ordinary grocery-sized polythene bags; remaining small even as the vehicle closes distance and never appearing oversized",
-      "orientation": "Facing various directions as they tumble and shift with the wind",
-      "pose": "Resting on the road, occasionally lifted and tumbled by gusts of wind",
-      "action": "Being tossed and skittering across the asphalt by intermittent wind gusts",
-      "state_changes": "Initially tumbling and shifting positions erratically; as the vehicle slows and stops, the bags continue drifting slightly but grow larger in frame due to reduced distance",
+      "orientation": "Lying at slightly different angles, resting still and flat on the road",
+      "pose": "Lying flat on the road, still and motionless",
+      "action": "Lying motionless on the asphalt in the still air, not moving",
+      "state_changes": "The bags lie still on the road throughout; as the vehicle slows and stops, they become more prominent as small, still objects due to the reduced distance",
       "clothing": "",
       "expression": "",
       "gender": "",
@@ -48,15 +48,15 @@
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The ego vehicle travels forward at moderate city speed along the urban road; in the distance ahead, two white polythene bags become visible on the road surface, tumbling slightly in the wind"
+      "description": "The ego vehicle travels forward at moderate city speed along the urban road; in the distance ahead, two small white polythene bags become visible lying still on the road surface in the calm air"
     },
     {
       "time": "0:02-0:03",
-      "description": "The vehicle begins to decelerate noticeably as it approaches the polythene bags; the bags grow larger in frame and are seen skittering and being tossed by wind gusts across the asphalt"
+      "description": "The vehicle begins to decelerate noticeably as it approaches the polythene bags; the bags become clearer, both lying still and flat on the asphalt in the calm, wind-free air"
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle slows further and comes to a complete stop a few meters from the polythene bags; the bags continue to drift and flutter gently on the road in the wind while the vehicle remains stationary"
+      "description": "The vehicle slows further and comes to a complete stop a few meters from the polythene bags; the bags remain still on the road while the vehicle remains stationary"
     }
   ],
   "text_and_signage_elements": [],
@@ -64,28 +64,28 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:02",
-      "description": "The ego vehicle moves at a steady pace along a city road. The dashboard and road stretch ahead in perspective. Two white polythene bags appear as small bright specks on the road in the mid-distance, beginning to tumble in the wind.",
-      "key_changes": "Polythene bags go from barely visible specks to recognizable shapes as the vehicle closes distance",
+      "description": "The ego vehicle moves at a steady pace along a city road. The dashboard and road stretch ahead in perspective. Two small white polythene bags appear as small bright specks on the road in the mid-distance, lying still on the surface.",
+      "key_changes": "Polythene bags go from barely visible specks to recognizable small shapes as the vehicle closes distance",
       "camera": "Forward-moving dashcam perspective at steady speed with slight vehicle vibration"
     },
     {
       "segment_index": 1,
       "time_range": "0:02-0:03",
-      "description": "The vehicle begins braking, and the forward motion decelerates visibly. The polythene bags are now clearly visible, tumbling and lifting slightly off the road surface as wind catches them. The approach rate slows noticeably.",
-      "key_changes": "Vehicle speed transitions from moderate to slow; bags become prominent in the center of frame",
+      "description": "The vehicle begins braking, and the forward motion decelerates visibly. The polythene bags are now clearly visible, lying still and flat on the road surface. The approach rate slows noticeably.",
+      "key_changes": "Vehicle speed transitions from moderate to slow; bags become clearly visible as small, still objects in the center of frame",
       "camera": "Forward motion decelerating, slight pitch-forward of the camera consistent with braking"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle comes to a full stop a few meters from the polythene bags. The bags continue to flutter, one lifting briefly before settling back down. The scene is static from the vehicle's perspective while the bags and surrounding leaves move gently in the breeze.",
-      "key_changes": "Vehicle transitions from moving to fully stationary; bags remain dynamic with wind-driven motion",
+      "description": "The vehicle comes to a full stop a few meters from the polythene bags. The bags remain still and flat on the road. The scene is calm and static from the vehicle's perspective, the bags and surroundings motionless in the still air.",
+      "key_changes": "Vehicle transitions from moving to fully stationary; bags remain still and motionless on the road",
       "camera": "Stationary dashcam view with minimal vibration from idling engine"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00, the view from inside a moving vehicle shows a city road stretching ahead with buildings on both sides and parked cars along the curb; two white polythene bags are faintly visible on the road ahead. By 0:01, the vehicle continues forward and the bags become clearer, one tumbling slightly in a gust of wind. At 0:02, the vehicle begins to slow as the polythene bags are now clearly in the vehicle's path, skittering across the asphalt. By 0:03, the vehicle has slowed significantly and is nearly at a stop, the bags just a few meters ahead, one bag lifting momentarily before settling. From 0:03 to 0:05, the vehicle is fully stopped and stationary; the two polythene bags drift and flutter gently on the road surface in the breeze, with the idling vehicle remaining motionless as the urban scene continues around it.",
-  "audio_description": "Steady engine hum and tire-on-asphalt rolling noise at the start, gradually diminishing as the vehicle decelerates. Subtle wind sounds are present throughout, with the faint rustling and crackling of plastic bags audible as the vehicle nears them. Distant ambient city sounds include faint traffic noise and occasional bird calls. When the vehicle stops, the engine idles quietly and the wind and plastic rustling become the dominant sounds.",
+  "temporal_caption": "At 0:00, the view from inside a moving vehicle shows a city road stretching ahead with buildings on both sides and parked cars along the curb on a calm, wind-free day; two small white polythene bags are faintly visible lying still on the road ahead. By 0:01, the vehicle continues forward and the small bags become clearer, resting motionless on the road. At 0:02, the vehicle begins to slow as the polythene bags are now clearly in the vehicle's path, lying still on the asphalt. By 0:03, the vehicle has slowed significantly and is nearly at a stop, the small bags just a few meters ahead, motionless on the road. From 0:03 to 0:05, the vehicle is fully stopped and stationary; the two small polythene bags stay still and flat on the road surface in the calm air, with the idling vehicle remaining motionless as the urban scene continues around it.",
+  "audio_description": "Steady engine hum and tire-on-asphalt rolling noise at the start, gradually diminishing as the vehicle decelerates. The air is calm and still with no wind noise. Distant ambient city sounds include faint traffic noise and occasional bird calls. When the vehicle stops, the engine idles quietly in the still air and the bags lie silently on the road.",
   "resolution": {
     "H": 480,
     "W": 832
