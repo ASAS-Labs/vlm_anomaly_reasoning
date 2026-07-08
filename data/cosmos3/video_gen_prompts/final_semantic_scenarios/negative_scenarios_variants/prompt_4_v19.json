@@ -1,0 +1,104 @@
+{
+  "subjects": [
+    {
+      "description": "Two small stray party balloons, one red and one yellow, spent and partially deflated, resting still on the road surface on a calm, wind-free day",
+      "appearance_details": "Small, ordinary party-balloon size; the red balloon is slightly wrinkled with a dangling curled ribbon tail; the yellow balloon is rounder and shinier with a short string trailing beneath it. Both show mild surface scuffing from contact with the asphalt",
+      "relationship": "The two balloons are near each other, appearing as unexpected obstacles on the road ahead of the ego vehicle",
+      "location": "Center-to-slightly-left of the frame, on the road surface roughly 15-30 meters ahead initially, growing closer as the vehicle approaches",
+      "relative_size": "Small within frame, consistent with ordinary party balloons; remaining small even as the vehicle closes distance and never appearing oversized",
+      "orientation": "Lying at slightly different angles, resting still on the road",
+      "pose": "Resting flat on the ground, still and motionless",
+      "action": "Lying motionless on the asphalt in the still air, not moving",
+      "state_changes": "Initially distant and barely discernible, they become more prominent as small, still objects on the road as the vehicle approaches and slows",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A Middle-Eastern arid-city street under a bright hard midday sun, viewed from inside a moving vehicle; warm sand-toned stone facades, a palm-lined margin and dusty edges line the sides, pale sun-warmed asphalt below. The air is calm and dry, without gusts. Two small stray party balloons—one red, one yellow—lie still on the pale road ahead.",
+  "lighting": {
+    "conditions": "Bright clear arid midday, warm",
+    "direction": "Very high hard sun, front-lit and nearly overhead",
+    "shadows": "Short hard shadows beneath the balloons and palms on the bright road",
+    "illumination_effect": "Intense warm high-contrast daylight with faint dust haze; the small red and yellow balloons are vivid against the pale sun-warmed asphalt"
+  },
+  "aesthetics": {
+    "composition": "First-person dashcam framing on the arid-city street in one-point perspective past sand-toned facades, hood faintly visible at the bottom; facades funnel attention to the small balloons ahead",
+    "color_scheme": "Warm sand and stone tones, pale bright sky and dry asphalt, with the small red and yellow balloons as vivid accents",
+    "mood_atmosphere": "Mundane arid-city drive disrupted by a whimsical encounter; cautious, mildly humorous tension",
+    "patterns": "Lane markings and a palm-lined margin repeating under hard sun"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective that decelerates sharply and abruptly to a complete stop early in the clip, with slight natural vibration consistent with a vehicle on asphalt; after halting it holds completely static with no further movement",
+    "framing": "Wide shot from windshield level, capturing the full width of the road and the flanking roadside",
+    "camera_angle": "Eye-level from driver's perspective, slightly above the road surface",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the balloons; the surrounding roadside in the periphery remains reasonably sharp",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent, typical of a dashcam or windshield-mounted camera"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage, naturalistic and documentary-like",
+  "context": "Ego-view driving footage depicting a vehicle encountering stray balloons on a road and treating them as obstacles, decelerating to a full stop",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward along the arid-city street at a moderate speed; two small balloons are visible ahead resting still on the pale road in the calm dry air."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "The vehicle decelerates sharply and abruptly, braking hard and coming to a complete stop by 0:02, treating the small resting balloons as obstacles."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The vehicle is fully stopped from the very start of this segment and remains completely stationary for the final three seconds; the small balloons stay still on the sun-warmed road just a few meters ahead."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "30",
+      "category": "scene_sign",
+      "appearance": "Black numerals on a white rectangular speed-limit sign with black border",
+      "spatial_temporal": "Right side of the road on a pole, visible from 0:00 through approximately 0:02 as the vehicle passes it",
+      "context": "Posted speed limit of 30 mph"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle moves forward at a moderate speed along the arid-city street, sand-toned facades and palms on either side. Ahead, two small party balloons—one red, one yellow—rest still on the pale road in the calm dry air.",
+      "key_changes": "Balloons resolve from small specks toward recognizable small objects as distance closes; the speed limit sign passes on the right",
+      "camera": "Steady forward-moving dashcam perspective with natural vehicle vibration, moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:02",
+      "description": "The vehicle brakes sharply and abruptly, decelerating hard and coming to a complete stop by 0:02. The small balloons remain still on the road ahead.",
+      "key_changes": "Speed drops rapidly to zero within this one second; a hard, abrupt halt completed by 0:02",
+      "camera": "Forward dashcam motion decelerating sharply with a pronounced forward pitch, settling quickly to stationary"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:02-0:05",
+      "description": "The vehicle is already fully stopped at the very start of this segment and remains completely motionless for the final three seconds, a few meters behind the balloons on the sun-warmed street, treating the harmless small balloons as road obstacles.",
+      "key_changes": "Vehicle held at a full stop from the beginning of the segment; camera stationary with only idle engine vibration; balloons stay motionless on the road",
+      "camera": "Stationary dashcam perspective with minimal idle vibration; deep focus on the balloons and road ahead"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the view from inside a vehicle shows a Middle-Eastern arid-city street under a bright hard midday sun, sand-toned stone facades and palms around it as the vehicle moves forward at a moderate pace in calm, dry air; two small colorful balloons—one red, one yellow—rest still on the pale road ahead. Around 0:01, the vehicle begins a sharp, abrupt deceleration, braking hard as the small balloons sit motionless on the asphalt. By 0:02, the vehicle has come to a complete stop. From 0:02 to 0:05, the vehicle stays fully halted and motionless a few meters behind the two small stray balloons, which remain still on the sun-warmed street.",
+  "audio_description": "Ambient dry arid-city audio begins with tire roll on warm asphalt and faint city hum in dry calm air. Around 0:01 the engine note drops sharply and a brief hard-braking sound is audible as the vehicle decelerates abruptly. The air is calm without gusts. By 0:02 the tire noise falls to near silence and, from 0:02 to 0:05, a low idle rumble dominates in the dry still air while the balloons rest silently on the road.",
+  "resolution": {
+    "H": 480,
+    "W": 832
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

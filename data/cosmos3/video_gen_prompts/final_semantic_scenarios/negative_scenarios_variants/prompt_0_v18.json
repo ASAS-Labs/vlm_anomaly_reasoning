@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large overhead billboard structure spanning across and above the multi-lane highway, displaying a banking advertisement on the left side and a prominent red octagonal 'Stop Sign' graphic on the right side.",
+      "appearance_details": "Wide rectangular gantry-mounted billboard with a clean white/blue background, glossy printed surface, sturdy steel support pillars on either side of the road; the stop sign graphic is bold red with white border and white 'STOP' lettering.",
+      "relationship": "The main visual obstacle and focal point the ego vehicle is approaching and reacting to.",
+      "location": "center, spanning the upper portion of the frame above the road",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the camera directly, perpendicular to the direction of travel",
+      "pose": "Static, fixed structure mounted across the highway",
+      "action": "Standing fixed across the road, growing larger as the vehicle approaches",
+      "state_changes": "Appears small in the distance at first, then grows progressively larger and dominant in the frame as the ego vehicle approaches and stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen from the driver's first-person perspective with the dashboard and hood partially visible in the lower frame.",
+      "appearance_details": "Dark dashboard, slight reflection on the windshield, hood edge visible at bottom of frame; modern sedan interior framing.",
+      "relationship": "The viewpoint from which the entire scene is observed; the vehicle reacting to the billboard.",
+      "location": "foreground, implied by the ego camera position",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the highway",
+      "pose": "Traveling forward along the lane, then decelerating to a complete stop",
+      "action": "Driving on the highway then braking to a full stop near the billboard",
+      "state_changes": "Transitions from steady highway speed to gradual deceleration and finally a complete stationary halt.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane bridge span in a cold winter afternoon sleet, grey water far below beyond exposed railings, gusty wind driving wet sleet across the slushy road. Steel towers and cables loom in the dim grey light. The large overhead gantry billboard spans the bridge deck ahead, its face streaked with wet sleet. Moderate traffic crawling in poor visibility.",
+  "lighting": {
+    "conditions": "Cold winter afternoon, sleet, windy, dim",
+    "direction": "Flat dim grey light from a heavy sleet-laden sky",
+    "shadows": "No cast shadows; wet slushy sheen and wind-driven sleet across the exposed deck",
+    "illumination_effect": "Low-contrast dim grey illumination with wet sleet reducing visibility and a slushy sheen on the deck; the billboard face reads through the sleet, its red STOP graphic muted but clear"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective, the exposed bridge deck converging toward the billboard between looming towers; dashboard anchors the lower frame, grey sleet-sky above",
+    "color_scheme": "Cold desaturated greys of sleet, slush, steel and grey water, with the red STOP accent and blue-white bank ad muted by the weather",
+    "mood_atmosphere": "Bleak, exposed, cautionary",
+    "patterns": "Repeating slush-streaked lane markings and bridge cables receding into the grey"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from ego vehicle perspective, decelerating to static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's first-person viewpoint",
+    "depth_of_field": "Deep, degraded by sleet at distance",
+    "focus": "Sharp on the billboard and deck ahead, softened by wind-driven sleet",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic dashcam aesthetic",
+  "context": "Automotive perception / advertising scenario demonstrating an ego vehicle responding to a stop sign displayed on an overhead billboard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels at steady speed across the sleet-swept bridge span, the overhead billboard looming dimly through the cold grey afternoon ahead."
+    },
+    {
+      "time": "0:02-0:06",
+      "description": "The billboard grows larger through the sleet; the bank advertisement on the left and the prominent red STOP graphic on the right become legible through the weather as the vehicle brakes gently and decelerates over a long, smooth stop on the slushy deck, coming to a complete halt directly before the billboard by the end of this segment."
+    },
+    {
+      "time": "0:06-0:08",
+      "description": "The vehicle remains fully stopped beneath the billboard as sleet streaks the windshield on the exposed span for the final two seconds."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold white uppercase lettering centered on a red octagonal sign with a white border",
+      "spatial_temporal": "Right portion of the overhead billboard, visible throughout, increasingly prominent as the vehicle approaches",
+      "context": "A stop sign graphic prompting the vehicle to halt"
+    },
+    {
+      "text": "SECURE BANK — Your Future, Our Promise",
+      "category": "logo",
+      "appearance": "Blue and white corporate font with a small shield-style bank logo, clean sans-serif text",
+      "spatial_temporal": "Left portion of the overhead billboard, visible throughout the clip",
+      "context": "Banking advertisement occupying the left side of the billboard"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle crosses the sleet-swept bridge span with the billboard looming dimly through the cold grey afternoon ahead.",
+      "key_changes": "Billboard begins to grow in size; steady forward motion",
+      "camera": "Forward tracking at constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:06",
+      "description": "Billboard becomes large and legible through the sleet; bank ad on left and STOP on right visible as the vehicle brakes gently and decelerates over a long, smooth stop on the slushy deck, reaching a full stop before the billboard by 0:06.",
+      "key_changes": "Progressive deceleration over four seconds; vehicle slows continuously and reaches a full stop by 0:06; billboard graphics become sharp",
+      "camera": "Forward tracking decelerating steadily to static"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:06-0:08",
+      "description": "Vehicle remains fully stationary beneath the billboard as sleet streaks the windshield on the exposed span for the final two seconds.",
+      "key_changes": "No motion; scene is held static",
+      "camera": "Static, vehicle fully stopped"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At second 0 the ego car drives forward across a wide bridge span in cold winter sleet, grey water below and steel towers looming as gusty wind drives sleet across the slushy deck, the overhead billboard dim ahead. By second 2 the billboard grows and its layout resolves through the sleet. Between seconds 2 and 6 the bank advertisement on the left and the prominent red STOP graphic on the right become legible through the weather while the car brakes gently and decelerates over a long, smooth stop on the slushy deck, coming to a complete halt directly before the billboard by second 6. From second 6 onward the vehicle remains fully stopped through seconds 7 and 8 on the exposed, sleet-swept span.",
+  "audio_description": "Gusting wind buffeting the car, sleet ticking on the glass and slushy tire roll dominate at speed on the exposed deck, wipers sweeping. The engine note lowers and brakes engage with a soft whir during deceleration. In the final segment the audio settles to an idle beneath the wind and ticking sleet. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "8s",
+  "fps": 24
+}

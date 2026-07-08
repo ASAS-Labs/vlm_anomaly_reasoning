@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "A male pedestrian standing on the right-side curb of the road, facing the ego vehicle, wearing a light gray short-sleeve t-shirt prominently displaying a red octagonal 'STOP' sign graphic across the chest.",
+      "appearance_details": "Casual urban attire with dark jeans and sneakers; carries a small backpack on one shoulder; clean-cut appearance.",
+      "relationship": "He is the focal pedestrian whose presence prompts the ego vehicle to decelerate and stop.",
+      "location": "Right side of frame, mid-ground on the curb",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing toward the camera (ego vehicle)",
+      "pose": "Standing upright, weight evenly distributed, arms relaxed at sides, looking directly toward the approaching car.",
+      "action": "Standing still on the curb, facing the ego vehicle.",
+      "state_changes": "Remains largely stationary; turns head slightly to track the approaching vehicle as it slows to a stop.",
+      "clothing": "Light gray short-sleeve t-shirt with a red octagonal 'STOP' sign print, dark blue jeans, white sneakers, single-strap backpack.",
+      "expression": "Calm, attentive, neutral expression with slightly raised eyebrows.",
+      "gender": "Male",
+      "age": "Young adult",
+      "skin_tone_and_texture": "Light-medium skin tone with a smooth, even complexion.",
+      "facial_features": "Short dark brown hair, brown eyes, clean-shaven jawline, straight nose, neutral lips.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle itself is implied through the dashcam/driver perspective; visible elements include the lower edge of the vehicle's hood — a dark gray metallic car hood subtly visible at the bottom of the frame.",
+      "appearance_details": "Slight reflections on the hood surface, windshield frame edges barely visible at the periphery of the shot",
+      "relationship": "The ego vehicle is the viewer's point of reference, approaching the pedestrian",
+      "location": "Bottom edge of frame (hood visible), perspective originates from behind the windshield",
+      "relative_size": "Large within frame (occupies bottom edge as reference)",
+      "orientation": "Facing forward along the road toward the pedestrian",
+      "pose": "",
+      "action": "Driving forward along the road at a brisk, elevated speed, then braking sharply and abruptly to a complete stop and remaining stopped",
+      "state_changes": "Vehicle transitions from a brisk forward speed to a sharp, abrupt deceleration to a full stop, after which it remains completely stationary and never resumes moving for the rest of the clip.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane forested road at dawn under light mist, tall green late-spring trees crowding both verges, cool soft light through the canopy and wisps of ground fog on the damp asphalt, a young male pedestrian standing at a trailhead on the right verge facing the ego vehicle.",
+  "lighting": {
+    "conditions": "Dawn, light mist, cool soft light",
+    "direction": "Low early sun diffused through mist and canopy from ahead",
+    "shadows": "Soft long low-contrast shadows through the misty trees onto the damp road",
+    "illumination_effect": "Cool soft dawn illumination gently diffused by mist; the red STOP graphic on the shirt bright in the muted light"
+  },
+  "aesthetics": {
+    "composition": "Centered ego dashcam framing with the forested road vanishing into dawn mist; the pedestrian at the trailhead on the right verge",
+    "color_scheme": "Cool greens and misty greys, damp asphalt tones, accented by the red STOP-shirt graphic",
+    "mood_atmosphere": "Fresh, tranquil, quietly cautious",
+    "patterns": "Repeating lane markings and tree trunks receding into drifting mist"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dashcam motion at a brisk approach speed that decelerates sharply and abruptly to a complete stop, then holds completely static with no further movement",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep, gently hazed by mist at distance",
+    "focus": "Sharp on the pedestrian and road ahead, softened by dawn mist at distance",
+    "lens_focal_length": "Wide-angle dashcam lens (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / driver-assistance scenario demonstrating deceleration and stopping in response to a stop-sign visual cue.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the misty forested road at a brisk, elevated speed, quickly approaching the pedestrian standing at the trailhead on the right verge."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle brakes sharply and abruptly over a short braking distance on the damp road as it nears the pedestrian whose shirt shows the red STOP graphic in the cool dawn light, coming to a complete full stop by the end of this segment."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle remains completely stopped and motionless beside the pedestrian as dawn mist drifts for the final two seconds."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagon with a white border, printed on a gray t-shirt",
+      "spatial_temporal": "On the pedestrian's chest, visible throughout the clip on the right side of frame",
+      "context": "A stop-sign graphic on the pedestrian's shirt that serves as the visual cue prompting the vehicle to stop"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle drives forward in its lane along the misty forested road at a brisk speed, the stop-sign-shirted pedestrian at the trailhead on the right verge ahead.",
+      "key_changes": "Brisk forward motion; pedestrian grows larger in frame quickly.",
+      "camera": "Forward-moving dashcam at brisk speed, maintaining lane center."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle brakes sharply and abruptly on the damp road as it closes the distance to the pedestrian, coming to a complete stop by the end of the segment.",
+      "key_changes": "Speed drops rapidly to zero within about one second; a hard, abrupt halt.",
+      "camera": "Forward dashcam motion decelerating sharply with a pronounced forward pitch, settling quickly to stationary."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle is fully stopped beside the pedestrian as dawn mist drifts and remains completely motionless for the final two seconds.",
+      "key_changes": "Complete halt held; absolutely no forward motion; the vehicle never starts moving again; pedestrian remains standing facing the vehicle.",
+      "camera": "Static dashcam, no forward motion whatsoever, vehicle held stationary in lane."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "From 0:00 to 0:02 the dashcam view cruises forward along a forested road at dawn under light mist at a brisk speed, spring-green trees and drifting ground fog around it while a young male pedestrian in a t-shirt bearing a red STOP graphic stands at a trailhead on the right verge. From 0:02 to 0:03 the vehicle brakes sharply and abruptly on the damp road as it approaches him, coming to a complete stop by 0:03. From 0:03 to 0:05 it sits fully stationary beside the pedestrian as dawn mist drifts, remaining completely motionless.",
+  "audio_description": "Fresh misty-dawn forest soundscape with muffled tire roll on damp asphalt and full birdsong that drop with a brief sharp brake squeal from 0:02. The birdsong settles into a quiet idle at the full stop by 0:03 and stays through the end. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

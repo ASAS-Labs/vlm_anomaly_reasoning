@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "A small child, approximately 4-5 years old, with light brown hair, wearing a bright red t-shirt and dark blue shorts. The child is short in stature, barely reaching the height of a standard mailbox, making them a low-profile pedestrian from a vehicle's perspective.",
+      "appearance_details": "Small white sneakers, no helmet or reflective gear, carrying nothing. The child's height is notably low relative to the vehicle hood line.",
+      "relationship": "Unaccompanied pedestrian stepping into the ego vehicle's travel path; no guardian visible nearby.",
+      "location": "Initially right side of frame near the sidewalk edge, then moves toward center of frame as they step into the road.",
+      "relative_size": "Small within frame",
+      "orientation": "Facing left (crossing the road perpendicular to the vehicle's direction of travel)",
+      "pose": "Upright walking posture with short strides, arms loosely at sides",
+      "action": "Stepping off the curb and beginning to cross the residential street directly in the vehicle's lane",
+      "state_changes": "Transitions from standing on the sidewalk edge to stepping off the curb and walking into the roadway; grows slightly larger in frame as vehicle closes distance.",
+      "clothing": "Bright red short-sleeve t-shirt, dark blue denim shorts, small white sneakers with velcro straps",
+      "expression": "Neutral, looking ahead across the street, unaware of the approaching vehicle",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Light fair skin with a slight sun-kissed tone on the arms",
+      "facial_features": "Round face, small nose, light brown hair in a messy short cut, large eyes looking across the street",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle, visible only through dashboard elements at the very bottom edge of frame — a portion of the dark grey dashboard and the lower edge of the windshield frame. The vehicle is a mid-size sedan or SUV.",
+      "appearance_details": "Dark interior dashboard trim visible at the bottom of the frame; slight reflections on the inside of the windshield glass.",
+      "relationship": "The camera platform / ego vehicle approaching the child at residential speed without decelerating.",
+      "location": "Bottom edge of frame (dashboard visible as ego-view reference)",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward along the road (camera is mounted behind the windshield)",
+      "pose": "",
+      "action": "Travelling forward along the residential street at a consistent speed of approximately 25-30 mph without braking",
+      "state_changes": "No deceleration; the road ahead grows closer as the vehicle continues at constant speed.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A residential street bordering a road-construction zone under a flat overcast damp sky; low houses on one side, orange cones, temporary barriers and parked plant machinery on the other, wet patched asphalt with fresh temporary markings, parked cars at the curb. A small child in a bright red t-shirt stands near the right sidewalk edge.",
+  "lighting": {
+    "conditions": "Overcast damp daylight, construction nearby, autumn",
+    "direction": "Flat diffuse light from a clouded sky",
+    "shadows": "Soft near-shadowless light; faint wet reflections on the patched damp asphalt",
+    "illumination_effect": "Even low-contrast grey illumination with a damp sheen; the child's bright red shirt stands out against the patched grey street and orange cones"
+  },
+  "aesthetics": {
+    "composition": "First-person ego view on the residential street beside the roadworks, vanishing point centered; the child near the right edge, moving toward center as the vehicle approaches",
+    "color_scheme": "Muted greys and patched wet asphalt, safety-orange cones, with the child's bright red shirt as the critical accent",
+    "mood_atmosphere": "Tense, unsettling dread beneath a workaday, damp calm",
+    "patterns": "Repetitive houses on one side, cones and barriers on the other"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking at constant vehicle speed; slight natural vibration consistent with a dashboard-mounted camera in a moving vehicle",
+    "framing": "Wide shot from ego/dashboard perspective, encompassing the full road ahead and both sidewalks",
+    "camera_angle": "Eye-level from driver's seated position, approximately 1.2 meters above road surface",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and surroundings in sharp focus; child becomes increasingly in focus as distance closes",
+    "lens_focal_length": "Wide-angle, approximately 28-35mm equivalent to simulate a dashcam or driver's forward view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic, dashcam-style documentary footage with a cinematic tension",
+  "context": "Autonomous driving safety scenario demonstrating a failure to detect a low-profile child pedestrian in a residential area",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward through the residential street beside the roadworks; the road ahead is clear, houses on one side and cones and barriers on the other, and a small child is barely visible near the right sidewalk in the distance."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "The vehicle continues at constant speed. The child steps off the curb on the right and begins walking into the street. Their small stature makes them hard to distinguish against the cones and parked cars."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The child is now in the right portion of the vehicle's lane, walking steadily across the patched road. The vehicle shows no signs of deceleration—no pitch forward, no speed change. The distance is closing noticeably."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The child continues toward the center of the lane. The vehicle maintains its constant speed, rapidly closing the gap; the child grows larger in frame, the bright red shirt vivid against the patched grey road. The scene ends with the child near the center of the path and the vehicle dangerously close, before any contact."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White text on a standard red octagonal sign, slightly weathered",
+      "spatial_temporal": "Visible in the far center-left background at a distant cross-street intersection, visible throughout the video",
+      "context": "A stop sign at a distant intersection indicating cross-street traffic control in the residential area"
+    },
+    {
+      "text": "25",
+      "category": "scene_sign",
+      "appearance": "Black text on a white rectangular speed limit sign with black border",
+      "spatial_temporal": "Right side of the road, visible briefly in the first two seconds as the vehicle passes it",
+      "context": "Posted residential speed limit of 25 mph, emphasizing the vehicle should be traveling at a moderate controlled speed"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Establishing ego view: the vehicle cruises through the residential street beside the roadworks, houses on one side and cones and barriers on the other. In the distance on the right sidewalk, a tiny figure—the child—stands near the curb edge.",
+      "key_changes": "Scene establishes the calm residential environment; the child is a barely perceptible figure in the distance near the right curb.",
+      "camera": "Forward-moving dashcam perspective at constant speed with slight road vibration; wide shot of the road ahead."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "The child steps off the curb and begins crossing from right to left into the vehicle's lane. The vehicle does not slow down. The speed limit sign passes on the right. The gap visibly decreases.",
+      "key_changes": "Child transitions from sidewalk to roadway; vehicle maintains constant velocity; distance closes significantly.",
+      "camera": "Continuous forward tracking at constant speed; no panning or adjustment to follow the child — the camera stays fixed forward as a dashcam would."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The child is now clearly in the vehicle's direct path, walking across the lane, the red shirt vivid against the patched asphalt. The vehicle continues without any braking or steering, rapidly closing the remaining distance. The segment ends with the child near center-frame and the vehicle dangerously close, before any contact.",
+      "key_changes": "Child becomes prominently visible in the lane; tension peaks as distance shrinks rapidly; no vehicle response (no brake lights, no deceleration pitch). The video cuts before any impact.",
+      "camera": "Steady forward dashcam motion at unchanged speed; the child fills an increasingly larger portion of the center frame."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle moves steadily down a residential street beside a road-construction zone under a flat overcast damp sky; houses, orange cones, barriers and a speed limit sign are visible, and a tiny figure stands on the right sidewalk far ahead. By 0:01, the vehicle passes the speed limit sign, and the small child—in a bright red shirt—steps off the curb and begins walking into the street from right to left. At 0:02, the child is partway into the lane, their short stature keeping them barely above the hood line, and the vehicle shows no sign of slowing. At 0:03, the child is fully in the lane, walking steadily, and the vehicle continues at the same speed, the gap narrowing rapidly. By 0:04, the child is near the center of the lane, the red shirt vivid against the patched road, and the vehicle is dangerously close with no deceleration. At 0:05, the video ends with the child still in the path and the vehicle mere meters away, before any contact.",
+  "audio_description": "Consistent low road noise and tire roll on patched damp asphalt with distant construction machinery beeping. Faint neighborhood ambience. No engine revving changes, no brake squeal, no horn from the ego vehicle—reinforcing the absence of any driver or system response. No music. The workaday calm contrasts disturbingly with the closing distance.",
+  "resolution": {
+    "H": 480,
+    "W": 832
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
