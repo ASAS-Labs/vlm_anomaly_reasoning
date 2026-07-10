@@ -8,20 +8,20 @@ video under data/cosmos3/generated_vids (next to this script). For each video it
   1. predicts the ego-motion action trajectory ([T-1, 9] = translation(3) + rot6d(6)),
   2. converts it with pose_rel_to_abs into camera-to-world poses (metric: with
      translation_scale=1.35 the cookbook documents the poses as meters),
-  3. derives a [[velocity, heading_angle_from_center], ...] sequence downsampled
-     to 5 Hz - velocity in mph computed from the metric displacements (the
-     initial velocity is evaluated from the first INIT_VELOCITY_FRAMES frames at
-     the native 10 Hz, before downsampling), heading in degrees relative to the
-     first frame's heading,
-  4. validates the tail of that sequence against the last sentence of the matching
-     prompt line. The video tree under generated_vids mirrors the prompts tree
-     (default data/cosmos3/video_gen_prompts, override with --prompts-root or
-     PROMPTS_ROOT): for each video the nearest updated_human_prompt.txt (falling
-     back to prompt.txt) is found by walking up the mirrored directory path, with
-     '<name>_variants' folders sharing '<name>'s prompt file. prompt_N (variant
-     suffixes like prompt_3_v07 are trimmed) maps to line N (0-based) of that
-     file; mismatches are flagged.
-  5. saves the sequence as <video>.txt next to the video, and
+  3. derives [[velocity, heading_angle_from_center], ...] sequences at the native
+     FPS and downsampled to TARGET_HZ - velocity in mph from metric displacements
+     (initial velocity from the first INIT_VELOCITY_FRAMES frames at native FPS,
+     before downsampling), heading in degrees relative to the first frame,
+  4. validates the tail of the native-rate sequence against the last sentence of
+     the matching prompt line. The video tree under generated_vids mirrors the
+     prompts tree (default data/cosmos3/video_gen_prompts, override with
+     --prompts-root or PROMPTS_ROOT): for each video the nearest
+     updated_human_prompt.txt (falling back to prompt.txt) is found by walking
+     up the mirrored directory path, with '<name>_variants' folders sharing
+     '<name>'s prompt file. prompt_N (variant suffixes like prompt_3_v07 are
+     trimmed) maps to line N (0-based) of that file; mismatches are flagged.
+  5. saves the downsampled sequence as <video>.txt and the native-rate sequence
+     as <video>_<FPS>fps.txt next to the video, and
   6. uploads all .txt files to the Hugging Face dataset repo in one commit
      at the mirrored paths.
 
@@ -57,7 +57,7 @@ IMAGE_SIZE = 480
 CHECKPOINT = "Cosmos3-Nano"
 
 # Validation thresholds (heuristic, language-based).
-TAIL_FRAC = 0.2     # fraction of the sequence treated as "tail"/"start"
+TAIL_RANGE = (0.05, 0.2)  # start_v: [5%, 20%); end_v: [80%, 95%) — skip noisy edges
 DECEL_RATIO = 0.6   # end/start velocity below this => decelerating
 ACCEL_RATIO = 1.4   # end/start velocity above this => accelerating
 MAINTAIN_LO = 0.6   # maintain band: MAINTAIN_LO*start <= end <= MAINTAIN_HI*start
@@ -286,11 +286,31 @@ def output_path_for(name: str) -> Path:
 # ---------------------------------------------------------------------------
 # Conversion: predicted action -> [[velocity, heading_angle_from_center], ...]
 # ---------------------------------------------------------------------------
-def action_to_sequence(action) -> tuple[list[list[float]], float]:
-    """Convert a predicted action [T-1, 9] into a 5 Hz [[velocity, heading], ...].
+def _poses_to_sequence(poses, hz: float) -> list[list[float]]:
+    """[[velocity_mph, heading_deg], ...] from absolute poses sampled at hz."""
+    import numpy as np
 
-    Returns (sequence, initial_velocity_mph). pose_rel_to_abs with
-    translation_scale=1.35 yields camera-to-world poses in meters (per the
+    if len(poses) < 2:
+        return []
+    pos = poses[:, :3, 3]   # camera centers (world; X right, Y up, Z heading)
+    fwd = poses[:, :3, 2]   # heading direction (+Z)
+
+    # Heading (deg) relative to the first frame, on the ground plane (X-Z).
+    yaw = np.arctan2(fwd[:, 0], fwd[:, 2])
+    heading = np.degrees(np.unwrap(yaw - yaw[0]))
+
+    # Ground-plane per-step displacement (meters) -> speed in mph.
+    disp = np.diff(pos[:, [0, 2]], axis=0)
+    d = np.linalg.norm(disp, axis=1)
+    velocity = d * hz * MPS_TO_MPH
+    return [[round(float(velocity[i]), 4), round(float(heading[i]), 4)] for i in range(len(d))]
+
+
+def action_to_sequence(action) -> tuple[list[list[float]], list[list[float]], float]:
+    """Convert a predicted action [T-1, 9] into native-FPS and TARGET_HZ sequences.
+
+    Returns (downsampled_seq, native_seq, initial_velocity_mph). pose_rel_to_abs
+    with translation_scale=1.35 yields camera-to-world poses in meters (per the
     cookbook), so velocity is the metric ground-plane speed converted to mph;
     heading is degrees relative to the first frame. The initial velocity is
     evaluated over the first INIT_VELOCITY_FRAMES steps at the native FPS,
@@ -311,29 +331,15 @@ def action_to_sequence(action) -> tuple[list[list[float]], float]:
     pos_native = poses_abs[:, :3, 3]
     d_native = np.linalg.norm(np.diff(pos_native[:, [0, 2]], axis=0), axis=1)
     if len(d_native) == 0:
-        return [], 0.0
+        return [], [], 0.0
     initial_velocity = float(d_native[:INIT_VELOCITY_FRAMES].mean() * FPS * MPS_TO_MPH)
+
+    seq_native = _poses_to_sequence(poses_abs, FPS)
 
     # Downsample poses to TARGET_HZ so all derived values share a 5 Hz step.
     stride = max(1, round(FPS / TARGET_HZ))
-    poses = poses_abs[::stride]
-    if len(poses) < 2:
-        return [], initial_velocity
-
-    pos = poses[:, :3, 3]   # camera centers (world; X right, Y up, Z heading)
-    fwd = poses[:, :3, 2]   # heading direction (+Z)
-
-    # Heading (deg) relative to the first frame, on the ground plane (X-Z).
-    yaw = np.arctan2(fwd[:, 0], fwd[:, 2])
-    heading = np.degrees(np.unwrap(yaw - yaw[0]))
-
-    # Ground-plane per-step displacement (meters) -> speed in mph.
-    disp = np.diff(pos[:, [0, 2]], axis=0)
-    d = np.linalg.norm(disp, axis=1)  # [T_5hz - 1]
-    velocity = d * TARGET_HZ * MPS_TO_MPH
-
-    seq = [[round(float(velocity[i]), 4), round(float(heading[i]), 4)] for i in range(len(d))]
-    return seq, initial_velocity
+    seq = _poses_to_sequence(poses_abs[::stride], TARGET_HZ)
+    return seq, seq_native, initial_velocity
 
 
 # ---------------------------------------------------------------------------
@@ -434,9 +440,16 @@ def evaluate_sequence(seq: list[list[float]]) -> tuple[float, float, float]:
     v = np.array([row[0] for row in seq], dtype=np.float64)
     h = np.array([row[1] for row in seq], dtype=np.float64)
     n = len(v)
-    k = max(1, int(round(n * TAIL_FRAC)))
-    start_v = float(v[:k].mean())
-    end_v = float(v[-k:].mean())
+    lo, hi = TAIL_RANGE
+    i0 = int(round(n * lo))
+    i1 = max(i0 + 1, int(round(n * hi)))
+    j0 = int(round(n * (1.0 - hi)))
+    j1 = max(j0 + 1, int(round(n * (1.0 - lo))))
+    # Clamp so empty/tiny sequences still yield a defined mean.
+    i0, i1 = max(0, min(i0, n - 1)), max(1, min(i1, n))
+    j0, j1 = max(0, min(j0, n - 1)), max(1, min(j1, n))
+    start_v = float(v[i0:i1].mean()) if n else 0.0
+    end_v = float(v[j0:j1].mean()) if n else 0.0
     max_abs_heading = float(np.max(np.abs(h))) if n else 0.0
     return start_v, end_v, max_abs_heading
 
@@ -515,20 +528,22 @@ def main() -> None:
 
         outputs = json.loads(out_json.read_text())
         action = outputs["outputs"][0]["content"]["action"]  # [T-1, 9]
-        seq, init_v = action_to_sequence(action)
-        if not seq:
+        seq, seq_native, init_v = action_to_sequence(action)
+        if not seq or not seq_native:
             msg = f"FLAG  {rel}: action too short to derive a sequence"
             print(msg)
             flags.append(msg)
             continue
 
-        # Save the clean action sequence next to the video (same name, .txt).
+        # Save downsampled (<video>.txt) and native-rate (<video>_<FPS>fps.txt).
         txt_path = video_path.with_suffix(".txt")
         txt_path.write_text(json.dumps(seq) + "\n")
+        txt_native_path = video_path.with_name(f"{video_path.stem}_{FPS}fps.txt")
+        txt_native_path.write_text(json.dumps(seq_native) + "\n")
 
         # Validate against the prompt's last sentence.
         sentence = prompt_sentence_for(rel, prompts_root)
-        start_v, end_v, max_heading = evaluate_sequence(seq)
+        start_v, end_v, max_heading = evaluate_sequence(seq_native)
         if sentence is None:
             line = (f"NOTE  {rel}: no matching prompt sentence; "
                     f"init_v={init_v:.1f} start_v={start_v:.1f} end_v={end_v:.1f} "
@@ -555,11 +570,16 @@ def main() -> None:
                     flags.append(line)
                 print(line)
 
-        # Queue the .txt for a single end-of-run commit (mirrored repo path).
+        # Queue both .txt files for a single end-of-run commit (mirrored paths).
         path_in_repo = rel.with_suffix(".txt").as_posix()
+        path_native_in_repo = rel.with_name(f"{rel.stem}_{FPS}fps.txt").as_posix()
         upload_ops.append(CommitOperationAdd(
             path_in_repo=path_in_repo,
             path_or_fileobj=str(txt_path),
+        ))
+        upload_ops.append(CommitOperationAdd(
+            path_in_repo=path_native_in_repo,
+            path_or_fileobj=str(txt_native_path),
         ))
 
     if upload_ops:
