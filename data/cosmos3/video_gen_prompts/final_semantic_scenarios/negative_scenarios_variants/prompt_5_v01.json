@@ -1,0 +1,96 @@
+{
+  "subjects": [
+    {
+      "description": "Two small crumpled white polythene bags of ordinary carrier-bag size, semi-transparent thin plastic material, lying flat and still on the asphalt road surface ahead of the ego vehicle on a calm, wind-free day",
+      "appearance_details": "Both are ordinary small grocery carrier bags; one is slightly more crumpled, the other a little flatter; both have wrinkled, shiny surfaces catching light; faint printed text or logos partially visible on one bag",
+      "relationship": "The bags are the perceived obstacles that cause the ego vehicle to decelerate and stop",
+      "location": "Center foreground to center midground, on the road surface directly in the vehicle's path",
+      "relative_size": "Small within frame, consistent with ordinary grocery-sized polythene bags; remaining small even as the vehicle closes distance and never appearing oversized",
+      "orientation": "Lying at slightly different angles, resting still and flat on the road",
+      "pose": "Lying flat on the road, still and motionless",
+      "action": "Lying motionless on the asphalt in the still air, not moving",
+      "state_changes": "The bags lie still on the road throughout; as the vehicle slows and stops, they become more prominent as small, still objects due to the reduced distance",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A downtown street at night under light rain, viewed from inside a moving vehicle; wet black asphalt mirrors neon and streetlights, mid-rise buildings with lit shopfronts line both sides and parked cars sit along the curb. The air is calm and the rain falls straight down. Two small stray polythene bags lie still on the wet road ahead, caught in the glow of the headlights and streetlights.",
+  "lighting": {
+    "conditions": "Night, light rain, artificial city lighting",
+    "direction": "No sun; streetlights and neon light the scene, headlights on the road",
+    "shadows": "No cast sun shadows; wet specular reflections of neon and headlights pool on the asphalt around the bags",
+    "illumination_effect": "Low ambient light lifted by neon and streetlights with headlight illumination; wet-road highlights make the small white polythene bags stand out on the black asphalt"
+  },
+  "aesthetics": {
+    "composition": "First-person dashcam framing on the wet night street in one-point perspective, hood faintly visible at the bottom; buildings and neon funnel attention to the small bags on the road ahead",
+    "color_scheme": "Wet blacks and warm streetlight amber cut by neon, with the small white polythene bags standing out as pale shapes",
+    "mood_atmosphere": "Mundane late-night commute disrupted by a whimsical encounter; cautious, mildly humorous tension",
+    "patterns": "Rain-gleaming dashed lane markings and reflected light streaks along the wet road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam-style shot that decelerates sharply and abruptly to a complete stop early in the clip; subtle vibrations consistent with vehicle motion that smooth out once the vehicle halts and then holds completely static",
+    "framing": "Wide shot from the driver's eye-level perspective, capturing the full road width and surrounding environment",
+    "camera_angle": "Eye-level, slightly above the road surface consistent with a sedan-height dashboard camera",
+    "depth_of_field": "Deep, with soft rain-blur at the edges",
+    "focus": "Sharp on the road and the small bags ahead, headlights flaring softly on the wet asphalt",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage, documentary-style",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle's cautious response to unexpected debris on the road, potentially for driver-assistance system training or road driving documentation",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward along the wet night street at a moderate speed; two small bags are visible ahead resting still on the wet road in the calm air, lit by the headlights."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "The vehicle decelerates sharply and abruptly, braking hard and coming to a complete stop by 0:02, treating the small resting bags as obstacles on the wet asphalt."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The vehicle is fully stopped from the very start of this segment and remains completely stationary for the final three seconds; the small bags stay still on the wet road just a few meters ahead, reflections shimmering around them."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle moves forward at a moderate speed along the wet night street, neon reflected on the black asphalt. Ahead, two small white polythene bags rest still on the wet road in the calm air, caught in the headlights.",
+      "key_changes": "Polythene bags resolve from barely visible specks toward recognizable small shapes as the vehicle closes distance",
+      "camera": "Forward-moving dashcam perspective at moderate speed with slight vehicle vibration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:02",
+      "description": "The vehicle brakes sharply and abruptly on the wet asphalt, decelerating hard and coming to a complete stop by 0:02. The small bags remain still on the road ahead.",
+      "key_changes": "Speed drops rapidly to zero within this one second; a hard, abrupt halt completed by 0:02",
+      "camera": "Forward dashcam motion decelerating sharply with a pronounced pitch-forward, settling quickly to stationary"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:02-0:05",
+      "description": "The vehicle is already fully stopped at the very start of this segment and remains completely motionless for the final three seconds, a few meters behind the bags on the rainy street, treating the harmless small bags as road obstacles.",
+      "key_changes": "Vehicle held at a full stop from the beginning of the segment; camera stationary with minimal idle vibration; bags remain still and motionless on the road",
+      "camera": "Stationary dashcam view with minimal vibration from idling engine"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the view from inside a vehicle shows a wet downtown street at night under light rain, neon reflected on the black asphalt as the vehicle moves forward at a moderate pace in calm air; two small white polythene bags rest still on the wet road ahead, lit by the headlights. Around 0:01, the vehicle begins a sharp, abrupt deceleration, braking hard as the small bags sit motionless on the asphalt. By 0:02, the vehicle has completed its sharp deceleration and come to a complete stop. From 0:02 to 0:05, the vehicle stays fully halted and motionless a few meters behind the two small polythene bags, which remain still on the wet road, reflections shimmering around them.",
+  "audio_description": "Ambient wet night-city audio begins with tire hiss on rain-soaked asphalt, the light patter of rain and a faint neon-district hum. Around 0:01 the engine note drops sharply and a brief hard-braking sound is audible as the vehicle decelerates abruptly. The air is calm with no wind noise. By 0:02 the tire noise falls to near silence and, from 0:02 to 0:05, the low idle rumble and steady rain patter dominate while the bags rest silently on the wet road.",
+  "resolution": {
+    "H": 480,
+    "W": 832
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
