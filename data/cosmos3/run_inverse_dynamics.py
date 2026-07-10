@@ -1,17 +1,26 @@
 """run_inverse_dynamics.py - Cosmos3 action inverse-dynamics over generated_vids.
 
 Runs Cosmos3-Nano inverse-dynamics inference (native Cosmos Framework PyTorch
-entrypoint, the same path as
-cookbooks/cosmos3/generator/action/run_id_with_cosmos_framework.ipynb) on every
-video under ./generated_vids. For each video it:
+entrypoint, the same path as 
+packages/cosmos/cookbooks/cosmos3/generator/action/run_id_with_cosmos_framework.ipynb) on every
+video under ./data/datasets/generated_vids. For each video it:
 
   1. predicts the ego-motion action trajectory ([T-1, 9] = translation(3) + rot6d(6)),
-  2. converts it with pose_rel_to_abs into camera-to-world poses,
+  2. converts it with pose_rel_to_abs into camera-to-world poses (metric: with
+     translation_scale=1.35 the cookbook documents the poses as meters),
   3. derives a [[velocity, heading_angle_from_center], ...] sequence downsampled
-     to 5 Hz - velocity anchored to an initial 30 mph, heading in degrees relative
-     to the first frame's heading,
+     to 5 Hz - velocity in mph computed from the metric displacements (the
+     initial velocity is evaluated from the first INIT_VELOCITY_FRAMES frames at
+     the native 10 Hz, before downsampling), heading in degrees relative to the
+     first frame's heading,
   4. validates the tail of that sequence against the last sentence of the matching
-     prompts/<scenario>/prompt.txt line and flags mismatches,
+     prompt line. The video tree under generated_vids mirrors the prompts tree
+     (default <cosmos root>/video_gen_prompts, override with --prompts-root or
+     PROMPTS_ROOT): for each video the nearest updated_human_prompt.txt (falling
+     back to prompt.txt) is found by walking up the mirrored directory path, with
+     '<name>_variants' folders sharing '<name>'s prompt file. prompt_N (variant
+     suffixes like prompt_3_v07 are trimmed) maps to line N (0-based) of that
+     file; mismatches are flagged.
   5. saves the sequence as <video>.txt next to the video, and
   6. uploads the .txt to the Hugging Face dataset repo at the mirrored path.
 
@@ -38,7 +47,8 @@ from pathlib import Path
 
 # --- Configuration (the only things you should need to change) -----------
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
-INITIAL_SPEED_MPH = 30.0  # assumed ego speed at the first frame (anchors velocity)
+INIT_VELOCITY_FRAMES = 5  # native-rate frames used to evaluate the initial velocity
+MPS_TO_MPH = 2.2369362921
 FPS = 10                  # model action rate (AV inverse-dynamics is 10 Hz)
 TARGET_HZ = 5             # downsample the final action sequence to this rate
 ACTION_CHUNK_SIZE = 60    # AV reference setting (60 frames @ 10 FPS)
@@ -64,7 +74,7 @@ def find_repo_root(start: Path) -> Path:
 SCRIPT_DIR = Path(__file__).resolve().parent
 COSMOS_ROOT = find_repo_root(SCRIPT_DIR)
 GENERATED_VIDS_DIR = COSMOS_ROOT / "generated_vids"
-PROMPTS_DIR = COSMOS_ROOT / "prompts"
+DEFAULT_PROMPTS_ROOT = Path(os.environ.get("PROMPTS_ROOT", COSMOS_ROOT / "video_gen_prompts"))
 COSMOS3_REPO = Path(os.environ.get("COSMOS3_REPO", COSMOS_ROOT / "packages" / "cosmos3")).resolve()
 WORK_DIR = Path(os.environ.get("COSMOS3_ID_WORK_DIR", COSMOS_ROOT / "outputs" / "inverse_dynamics")).resolve()
 SPEC_PATH = WORK_DIR / "inverse_dynamics_av.jsonl"
@@ -273,13 +283,15 @@ def output_path_for(name: str) -> Path:
 # ---------------------------------------------------------------------------
 # Conversion: predicted action -> [[velocity, heading_angle_from_center], ...]
 # ---------------------------------------------------------------------------
-def action_to_sequence(action) -> tuple[list[list[float]], bool]:
+def action_to_sequence(action) -> tuple[list[list[float]], float]:
     """Convert a predicted action [T-1, 9] into a 5 Hz [[velocity, heading], ...].
 
-    Returns (sequence, anchor_fallback). velocity is anchored so the first 5 Hz
-    step is INITIAL_SPEED_MPH; heading is degrees relative to the first frame.
-    anchor_fallback is True when the first step was ~stationary and velocity was
-    anchored on the max step instead.
+    Returns (sequence, initial_velocity_mph). pose_rel_to_abs with
+    translation_scale=1.35 yields camera-to-world poses in meters (per the
+    cookbook), so velocity is the metric ground-plane speed converted to mph;
+    heading is degrees relative to the first frame. The initial velocity is
+    evaluated over the first INIT_VELOCITY_FRAMES steps at the native FPS,
+    before downsampling.
     """
     import numpy as np
     from cosmos_framework.data.vfm.action.pose_utils import pose_rel_to_abs
@@ -290,13 +302,20 @@ def action_to_sequence(action) -> tuple[list[list[float]], bool]:
         rotation_format="rot6d",
         pose_convention="backward_framewise",
         translation_scale=1.35,
-    ), dtype=np.float64)  # [T, 4, 4] camera-to-world at FPS Hz
+    ), dtype=np.float64)  # [T, 4, 4] camera-to-world (meters) at FPS Hz
 
-    # Downsample poses to TARGET_HZ first so all derived values share a 5 Hz step.
+    # Initial velocity from the first few native-rate frames (ground plane X-Z).
+    pos_native = poses_abs[:, :3, 3]
+    d_native = np.linalg.norm(np.diff(pos_native[:, [0, 2]], axis=0), axis=1)
+    if len(d_native) == 0:
+        return [], 0.0
+    initial_velocity = float(d_native[:INIT_VELOCITY_FRAMES].mean() * FPS * MPS_TO_MPH)
+
+    # Downsample poses to TARGET_HZ so all derived values share a 5 Hz step.
     stride = max(1, round(FPS / TARGET_HZ))
     poses = poses_abs[::stride]
     if len(poses) < 2:
-        return [], False
+        return [], initial_velocity
 
     pos = poses[:, :3, 3]   # camera centers (world; X right, Y up, Z heading)
     fwd = poses[:, :3, 2]   # heading direction (+Z)
@@ -305,43 +324,67 @@ def action_to_sequence(action) -> tuple[list[list[float]], bool]:
     yaw = np.arctan2(fwd[:, 0], fwd[:, 2])
     heading = np.degrees(np.unwrap(yaw - yaw[0]))
 
-    # Ground-plane per-step displacement.
+    # Ground-plane per-step displacement (meters) -> speed in mph.
     disp = np.diff(pos[:, [0, 2]], axis=0)
     d = np.linalg.norm(disp, axis=1)  # [T_5hz - 1]
-
-    eps = 1e-6
-    anchor_fallback = False
-    anchor = d[0]
-    if anchor <= eps:
-        # Start-from-stop scenario: anchoring on a ~0 first step would explode.
-        anchor = d.max() if d.max() > eps else eps
-        anchor_fallback = True
-    velocity = INITIAL_SPEED_MPH * d / anchor
+    velocity = d * TARGET_HZ * MPS_TO_MPH
 
     seq = [[round(float(velocity[i]), 4), round(float(heading[i]), 4)] for i in range(len(d))]
-    return seq, anchor_fallback
+    return seq, initial_velocity
 
 
 # ---------------------------------------------------------------------------
 # Validation against the prompt's last sentence
 # ---------------------------------------------------------------------------
 def last_sentence(text: str) -> str:
-    parts = re.split(r"(?<=[.!?])\s+", text.strip())
+    text = text.strip()
+    # Drop trailing parenthetical instructions, e.g. "(The last segment should
+    # be at least 2 seconds long)" - validation wants the behavior sentence.
+    while True:
+        trimmed = re.sub(r"\s*\([^()]*\)\s*$", "", text)
+        if trimmed == text or not trimmed:
+            break
+        text = trimmed
+    parts = re.split(r"(?<=[.!?])\s+", text)
     parts = [p.strip() for p in parts if p.strip()]
-    return parts[-1] if parts else text.strip()
+    return parts[-1] if parts else text
 
 
-def prompt_sentence_for(rel_path: Path) -> str | None:
-    """Last sentence of prompts/<scenario>/prompt.txt at line N for prompt_N_*."""
-    scenario = rel_path.parts[0]
-    match = re.match(r"prompt_(\d+)_", rel_path.stem)
+def resolve_prompt_file(video_dir_rel: Path, prompts_root: Path) -> Path | None:
+    """Nearest prompt file for a video directory mirrored under prompts_root.
+
+    Walks from the mirrored directory up to prompts_root. At each level the
+    directory itself is tried and, for '<name>_variants' folders, the '<name>'
+    sibling (variants share the base folder's prompt file). Within a directory
+    updated_human_prompt.txt wins over prompt.txt.
+    """
+    current = prompts_root / video_dir_rel
+    while True:
+        candidates = [current]
+        base_name = re.sub(r"_variants?$", "", current.name)
+        if base_name != current.name:
+            candidates.append(current.parent / base_name)
+        for directory in candidates:
+            for filename in ("updated_human_prompt.txt", "prompt.txt"):
+                prompt_file = directory / filename
+                if prompt_file.exists():
+                    return prompt_file
+        if current == prompts_root:
+            return None
+        current = current.parent
+
+
+def prompt_sentence_for(rel_path: Path, prompts_root: Path) -> str | None:
+    """Last sentence of line N of the nearest prompt file for a prompt_N video."""
+    stem = re.sub(r"_v\d+$", "", rel_path.stem)  # trim variant suffix (prompt_3_v07)
+    match = re.fullmatch(r"prompt_(\d+)", stem)
     if match is None:
         return None
     idx = int(match.group(1))
-    prompt_file = PROMPTS_DIR / scenario / "prompt.txt"
-    if not prompt_file.exists():
+    prompt_file = resolve_prompt_file(rel_path.parent, prompts_root)
+    if prompt_file is None:
         return None
-    lines = [ln for ln in prompt_file.read_text().splitlines()]
+    lines = prompt_file.read_text().splitlines()
     if idx >= len(lines):
         return None
     return last_sentence(lines[idx])
@@ -423,11 +466,23 @@ def check_match(expected: dict, start_v: float, end_v: float, max_heading: float
 def main() -> None:
     bootstrap_runtime_env()  # configures env + re-execs once; returns only when ready
 
+    import argparse
+
     from huggingface_hub import HfApi
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--prompts-root", type=Path, default=DEFAULT_PROMPTS_ROOT,
+        help="root of the prompts tree mirrored by generated_vids "
+             "(default: $PROMPTS_ROOT or <cosmos root>/video_gen_prompts)",
+    )
+    args = parser.parse_args()
+    prompts_root = args.prompts_root.resolve()
 
     print(f"cosmos root:        {COSMOS_ROOT}")
     print(f"framework:          {COSMOS3_REPO}")
     print(f"generated_vids:     {GENERATED_VIDS_DIR}")
+    print(f"prompts root:       {prompts_root}")
     print(f"work dir:           {WORK_DIR}")
 
     records = discover_videos()
@@ -456,7 +511,7 @@ def main() -> None:
 
         outputs = json.loads(out_json.read_text())
         action = outputs["outputs"][0]["content"]["action"]  # [T-1, 9]
-        seq, anchor_fallback = action_to_sequence(action)
+        seq, init_v = action_to_sequence(action)
         if not seq:
             msg = f"FLAG  {rel}: action too short to derive a sequence"
             print(msg)
@@ -468,19 +523,19 @@ def main() -> None:
         txt_path.write_text(json.dumps(seq) + "\n")
 
         # Validate against the prompt's last sentence.
-        sentence = prompt_sentence_for(rel)
+        sentence = prompt_sentence_for(rel, prompts_root)
         start_v, end_v, max_heading = evaluate_sequence(seq)
-        note = " [velocity anchored on max step: start was ~stationary]" if anchor_fallback else ""
         if sentence is None:
             line = (f"NOTE  {rel}: no matching prompt sentence; "
-                    f"start_v={start_v:.1f} end_v={end_v:.1f} max|heading|={max_heading:.1f}deg{note}")
+                    f"init_v={init_v:.1f} start_v={start_v:.1f} end_v={end_v:.1f} "
+                    f"max|heading|={max_heading:.1f}deg")
             print(line)
         else:
             expected = classify_expected(sentence)
             if expected["speed"] is None and not expected["steer"]:
                 line = (f"NOTE  {rel}: unclassified prompt; "
-                        f"start_v={start_v:.1f} end_v={end_v:.1f} "
-                        f"max|heading|={max_heading:.1f}deg{note} :: \"{sentence}\"")
+                        f"init_v={init_v:.1f} start_v={start_v:.1f} end_v={end_v:.1f} "
+                        f"max|heading|={max_heading:.1f}deg :: \"{sentence}\"")
                 print(line)
             else:
                 ok, reasons = check_match(expected, start_v, end_v, max_heading)
@@ -489,8 +544,8 @@ def main() -> None:
                 if expected["steer"]:
                     exp_str += "+steer"
                 line = (f"{tag} {rel}: expected={exp_str} "
-                        f"start_v={start_v:.1f} end_v={end_v:.1f} "
-                        f"max|heading|={max_heading:.1f}deg{note}")
+                        f"init_v={init_v:.1f} start_v={start_v:.1f} end_v={end_v:.1f} "
+                        f"max|heading|={max_heading:.1f}deg")
                 if not ok:
                     line += " | " + "; ".join(reasons) + f" :: \"{sentence}\""
                     flags.append(line)
