@@ -22,7 +22,8 @@ video under data/cosmos3/generated_vids (next to this script). For each video it
      suffixes like prompt_3_v07 are trimmed) maps to line N (0-based) of that
      file; mismatches are flagged.
   5. saves the sequence as <video>.txt next to the video, and
-  6. uploads the .txt to the Hugging Face dataset repo at the mirrored path.
+  6. uploads all .txt files to the Hugging Face dataset repo in one commit
+     at the mirrored paths.
 
 Setup (run once):
 
@@ -296,7 +297,7 @@ def action_to_sequence(action) -> tuple[list[list[float]], float]:
     before downsampling.
     """
     import numpy as np
-    from cosmos_framework.data.vfm.action.pose_utils import pose_rel_to_abs
+    from cosmos_framework.data.generator.action.pose_utils import pose_rel_to_abs
 
     action = np.asarray(action, dtype=np.float64)
     poses_abs = np.asarray(pose_rel_to_abs(
@@ -470,7 +471,7 @@ def main() -> None:
 
     import argparse
 
-    from huggingface_hub import HfApi
+    from huggingface_hub import CommitOperationAdd, HfApi
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -502,6 +503,7 @@ def main() -> None:
     api.create_repo(HF_DATASET_REPO, repo_type="dataset", exist_ok=True)
 
     flags: list[str] = []
+    upload_ops: list[CommitOperationAdd] = []
     for rec in records:
         name, rel, video_path = rec["name"], rec["rel_path"], rec["video_path"]
         out_json = output_path_for(name)
@@ -553,18 +555,25 @@ def main() -> None:
                     flags.append(line)
                 print(line)
 
-        # Upload the .txt to the dataset at the mirrored path.
+        # Queue the .txt for a single end-of-run commit (mirrored repo path).
         path_in_repo = rel.with_suffix(".txt").as_posix()
+        upload_ops.append(CommitOperationAdd(
+            path_in_repo=path_in_repo,
+            path_or_fileobj=str(txt_path),
+        ))
+
+    if upload_ops:
+        print(f"\nuploading {len(upload_ops)} file(s) in one commit to {HF_DATASET_REPO}...")
         try:
-            api.upload_file(
-                path_or_fileobj=str(txt_path),
-                path_in_repo=path_in_repo,
+            api.create_commit(
                 repo_id=HF_DATASET_REPO,
                 repo_type="dataset",
+                operations=upload_ops,
+                commit_message=f"Add {len(upload_ops)} inverse-dynamics action sequences",
             )
-            print(f"  uploaded -> {HF_DATASET_REPO}:{path_in_repo}")
-        except Exception as exc:  # noqa: BLE001 - surface upload errors but continue
-            msg = f"FLAG  {rel}: upload failed: {exc}"
+            print(f"uploaded {len(upload_ops)} file(s) -> {HF_DATASET_REPO}")
+        except Exception as exc:  # noqa: BLE001 - surface upload errors
+            msg = f"FLAG  batch upload failed: {exc}"
             print(msg)
             flags.append(msg)
 
