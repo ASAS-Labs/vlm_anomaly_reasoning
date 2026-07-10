@@ -1,9 +1,9 @@
 """run_inverse_dynamics.py - Cosmos3 action inverse-dynamics over generated_vids.
 
 Runs Cosmos3-Nano inverse-dynamics inference (native Cosmos Framework PyTorch
-entrypoint, the same path as 
+entrypoint, the same path as
 packages/cosmos/cookbooks/cosmos3/generator/action/run_id_with_cosmos_framework.ipynb) on every
-video under ./data/datasets/generated_vids. For each video it:
+video under data/cosmos3/generated_vids (next to this script). For each video it:
 
   1. predicts the ego-motion action trajectory ([T-1, 9] = translation(3) + rot6d(6)),
   2. converts it with pose_rel_to_abs into camera-to-world poses (metric: with
@@ -15,7 +15,7 @@ video under ./data/datasets/generated_vids. For each video it:
      first frame's heading,
   4. validates the tail of that sequence against the last sentence of the matching
      prompt line. The video tree under generated_vids mirrors the prompts tree
-     (default <cosmos root>/video_gen_prompts, override with --prompts-root or
+     (default data/cosmos3/video_gen_prompts, override with --prompts-root or
      PROMPTS_ROOT): for each video the nearest updated_human_prompt.txt (falling
      back to prompt.txt) is found by walking up the mirrored directory path, with
      '<name>_variants' folders sharing '<name>'s prompt file. prompt_N (variant
@@ -31,7 +31,7 @@ Setup (run once):
 
 Run (any interpreter; it re-execs into the framework venv automatically):
 
-    python run_inverse_dynamics.py
+    python data/cosmos3/run_inverse_dynamics.py
 """
 
 from __future__ import annotations
@@ -65,18 +65,20 @@ STEER_DEG = 5.0     # max |heading change| above this => steering
 
 
 def find_repo_root(start: Path) -> Path:
+    """Root of this repo: walk up to .git (or the vendored framework for
+    non-git deployments, e.g. rsync'd to a GPU machine)."""
     for path in [start, *start.parents]:
-        if (path / "README.md").exists() and (path / "cookbooks").exists():
+        if (path / ".git").exists() or (path / "packages" / "cosmos-framework").exists():
             return path
     return start
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-COSMOS_ROOT = find_repo_root(SCRIPT_DIR)
-GENERATED_VIDS_DIR = COSMOS_ROOT / "generated_vids"
-DEFAULT_PROMPTS_ROOT = Path(os.environ.get("PROMPTS_ROOT", COSMOS_ROOT / "video_gen_prompts"))
-COSMOS3_REPO = Path(os.environ.get("COSMOS3_REPO", COSMOS_ROOT / "packages" / "cosmos3")).resolve()
-WORK_DIR = Path(os.environ.get("COSMOS3_ID_WORK_DIR", COSMOS_ROOT / "outputs" / "inverse_dynamics")).resolve()
+REPO_ROOT = find_repo_root(SCRIPT_DIR)
+GENERATED_VIDS_DIR = REPO_ROOT / "data/datasets/generated_vids"
+DEFAULT_PROMPTS_ROOT = Path(os.environ.get("PROMPTS_ROOT", REPO_ROOT / "data/cosmos3/video_gen_prompts"))
+COSMOS3_REPO = Path(os.environ.get("COSMOS3_REPO", REPO_ROOT / "packages" / "cosmos-framework")).resolve()
+WORK_DIR = Path(os.environ.get("COSMOS3_ID_WORK_DIR", REPO_ROOT / "outputs" / "inverse_dynamics")).resolve()
 SPEC_PATH = WORK_DIR / "inverse_dynamics_av.jsonl"
 RUNS_DIR = WORK_DIR / "runs"
 
@@ -474,12 +476,12 @@ def main() -> None:
     parser.add_argument(
         "--prompts-root", type=Path, default=DEFAULT_PROMPTS_ROOT,
         help="root of the prompts tree mirrored by generated_vids "
-             "(default: $PROMPTS_ROOT or <cosmos root>/video_gen_prompts)",
+             "(default: $PROMPTS_ROOT or video_gen_prompts next to this script)",
     )
     args = parser.parse_args()
     prompts_root = args.prompts_root.resolve()
 
-    print(f"cosmos root:        {COSMOS_ROOT}")
+    print(f"repo root:          {REPO_ROOT}")
     print(f"framework:          {COSMOS3_REPO}")
     print(f"generated_vids:     {GENERATED_VIDS_DIR}")
     print(f"prompts root:       {prompts_root}")
