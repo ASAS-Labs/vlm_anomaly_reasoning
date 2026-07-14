@@ -1,0 +1,111 @@
+{
+  "subjects": [
+    {
+      "description": "Two small stray party balloons, one red and one yellow, spent and partially deflated, resting still on the road surface on a calm, wind-free day",
+      "appearance_details": "Small, ordinary party-balloon size; the red balloon is slightly wrinkled with a dangling curled ribbon tail; the yellow balloon is rounder and shinier with a short string trailing beneath it. Both show mild surface scuffing from contact with the asphalt",
+      "relationship": "The two balloons are near each other, appearing as unexpected obstacles on the road ahead of the ego vehicle",
+      "location": "Center-to-slightly-left of the frame, on the road surface roughly 15-30 meters ahead initially, growing closer as the vehicle approaches",
+      "relative_size": "Small within frame, consistent with ordinary party balloons; remaining small even as the vehicle closes distance and never appearing oversized",
+      "orientation": "Lying at slightly different angles, resting still on the road",
+      "pose": "Resting flat on the ground, still and motionless",
+      "action": "Lying motionless on the asphalt in the still air, not moving",
+      "state_changes": "Initially distant and barely discernible, they become more prominent as small, still objects on the road as the vehicle approaches and slows",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A moderately busy urban city road during daytime. The road is a two-lane asphalt street with faded white lane markings and a central dashed dividing line. On both sides stand mid-rise commercial and residential buildings with concrete facades, some with awnings and ground-floor shops. A few parked cars line the right curb. Sparse street trees with green foliage dot the sidewalk. Traffic signals and utility poles are visible further down the road. The sky is partly cloudy with patches of blue visible above the rooftops.",
+  "lighting": {
+    "conditions": "Bright overcast daylight with intermittent sun breaking through clouds, producing a soft but relatively bright ambient light",
+    "direction": "Top-front lit, with the sun positioned high and slightly ahead, casting light toward the camera-facing road surface",
+    "shadows": "Soft diffused shadows under parked vehicles, building edges cast gentle shadows on sidewalks; the balloons cast faint, steady shadows on the asphalt",
+    "illumination_effect": "Even illumination across the road surface with a slightly warm tone, giving the scene a typical midday urban look with moderate contrast"
+  },
+  "aesthetics": {
+    "composition": "First-person dashcam-style framing with the road stretching ahead in one-point perspective, vanishing toward the center of the frame. The hood of the ego vehicle is faintly visible at the very bottom edge. Buildings frame either side, funneling attention toward the balloons on the road ahead",
+    "color_scheme": "Muted urban grays and tans of asphalt and buildings contrasted by the vivid red and yellow of the balloons; patches of green from sidewalk trees; a pale blue-white sky",
+    "mood_atmosphere": "Mundane urban commute disrupted by a whimsical, slightly surreal encounter; cautious, mildly humorous tension",
+    "patterns": "Dashed lane markings repeating along the road center; regular spacing of utility poles and parked cars along the curb"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective that decelerates sharply and abruptly to a complete stop early in the clip, with slight natural vibration consistent with a vehicle on asphalt; after halting it holds completely static with no further movement",
+    "framing": "Wide shot from windshield level, capturing the full width of the road and flanking buildings",
+    "camera_angle": "Eye-level from driver's perspective, slightly above the road surface",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the balloons; buildings in the periphery remain reasonably sharp",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent, typical of a dashcam or windshield-mounted camera"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage, naturalistic and documentary-like",
+  "context": "Ego-view driving footage depicting a vehicle encountering stray balloons on a city road and treating them as obstacles, decelerating to a full stop",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward along the city road at a moderate speed; two small balloons are visible ahead resting still on the road surface in the calm air"
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "The vehicle decelerates sharply and abruptly, braking hard and coming to a complete stop by 0:02, treating the small resting balloons as obstacles"
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The vehicle is fully stopped from the very start of this segment and remains completely stationary for the final three seconds; the small balloons stay still on the road just a few meters ahead"
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "30",
+      "category": "scene_sign",
+      "appearance": "White numerals on a red-bordered circular speed limit sign, standard European/international style, slightly weathered",
+      "spatial_temporal": "Right side of the road on a pole, visible from 0:00 through approximately 0:02 as the vehicle passes it",
+      "context": "Speed limit sign indicating 30 km/h zone, reinforcing the urban residential road setting"
+    },
+    {
+      "text": "PHARMACY",
+      "category": "scene_sign",
+      "appearance": "Green block letters on a white storefront sign with a green cross icon, medium-sized",
+      "spatial_temporal": "Right side background on a building facade, visible throughout the video",
+      "context": "A local pharmacy shop sign adding urban authenticity to the street scene"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle moves forward at a moderate speed along the city road. The road stretches ahead with buildings on both sides. Ahead, two small colorful balloons—one red, one yellow—rest still on the road surface in the calm air.",
+      "key_changes": "Balloons resolve from small specks toward recognizable small objects as distance closes; the speed limit sign passes on the right",
+      "camera": "Steady forward-moving dashcam perspective with natural vehicle vibration, moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:02",
+      "description": "The vehicle brakes sharply and abruptly, decelerating hard and coming to a complete stop by 0:02. The small balloons remain still on the road ahead.",
+      "key_changes": "Speed drops rapidly to zero within this one second; a hard, abrupt halt completed by 0:02",
+      "camera": "Forward dashcam motion decelerating sharply with a pronounced forward pitch, settling quickly to stationary"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:02-0:05",
+      "description": "The vehicle is already fully stopped at the very start of this segment and remains completely motionless for the final three seconds, a few meters behind the balloons. The small balloons stay still on the asphalt directly ahead. The scene is calm and static, the vehicle idling, treating the harmless small balloons as road obstacles.",
+      "key_changes": "Vehicle held at a full stop from the beginning of the segment; camera stationary with only idle engine vibration; balloons stay motionless on the road",
+      "camera": "Stationary dashcam perspective with minimal idle vibration; deep focus on the balloons and road ahead"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the view from inside a vehicle shows a city road stretching ahead between mid-rise buildings under partly cloudy skies, with the vehicle moving forward at a moderate pace on a calm, wind-free day; two small colorful balloons—one red and one yellow—rest still on the road surface ahead. Around 0:01, the vehicle begins a sharp, abrupt deceleration, braking hard as the small balloons sit motionless on the asphalt. By 0:02, the vehicle has completed its sharp deceleration and come to a complete stop. From 0:02 to 0:05, the vehicle stays fully halted and motionless, idling a few meters behind the two small stray balloons which remain still on the road ahead.",
+  "audio_description": "The audio begins with the steady hum of a car engine and the soft drone of tires on asphalt, accompanied by muffled urban ambient sounds—distant traffic, a faint horn honk. Around 0:01, the engine note drops sharply and a brief hard-braking sound is audible as the vehicle decelerates abruptly. By 0:02 the tire noise has fallen to near silence and, from 0:02 to 0:05, the low idle rumble of the engine dominates in the calm, still air, with no wind noise and the balloons resting silently on the road.",
+  "resolution": {
+    "H": 480,
+    "W": 832
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

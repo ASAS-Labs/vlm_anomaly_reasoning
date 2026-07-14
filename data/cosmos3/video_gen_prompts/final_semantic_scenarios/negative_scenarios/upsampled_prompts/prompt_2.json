@@ -28,8 +28,8 @@
       "relative_size": "Large within frame (occupies bottom edge as reference)",
       "orientation": "Facing forward along the road toward the pedestrian",
       "pose": "",
-      "action": "Driving forward along the urban road, then decelerating to a complete stop",
-      "state_changes": "Vehicle transitions from moderate forward speed to gradual deceleration to a full stop",
+      "action": "Driving forward along the urban road at a brisk, elevated speed, then braking sharply and abruptly to a complete stop and remaining stopped",
+      "state_changes": "Vehicle transitions from a brisk forward speed to a sharp, abrupt deceleration to a full stop, after which it remains completely stationary and never resumes moving for the rest of the clip.",
       "clothing": "",
       "expression": "",
       "gender": "",
@@ -55,7 +55,7 @@
     "patterns": "Repeating lane dashes, curb lines, and rows of building windows"
   },
   "cinematography": {
-    "camera_motion": "Forward dashcam motion that gradually decelerates to a complete stop",
+    "camera_motion": "Forward dashcam motion at a brisk approach speed that decelerates sharply and abruptly to a complete stop, then holds completely static with no further movement",
     "framing": "Wide shot from the driver's viewpoint",
     "camera_angle": "Eye-level, mounted at windshield height",
     "depth_of_field": "Deep",
@@ -67,16 +67,16 @@
   "context": "Autonomous driving / driver-assistance scenario demonstrating deceleration and stopping in response to a stop-sign visual cue.",
   "actions": [
     {
-      "time": "0:00-0:01",
-      "description": "The ego vehicle cruises forward along the urban lane, approaching the pedestrian standing on the right curb."
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the urban lane at a brisk, elevated speed, quickly approaching the pedestrian standing on the right curb."
     },
     {
-      "time": "0:01-0:03",
-      "description": "The vehicle decelerates smoothly and progressively as it nears the pedestrian whose shirt displays the stop sign, coming to a full stop by the end of the segment."
+      "time": "0:02-0:03",
+      "description": "The vehicle brakes sharply and abruptly over a short braking distance as it nears the pedestrian whose shirt displays the stop sign, coming to a complete, full stop by the end of this segment."
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle comes to a full stop and remains stationary in its lane beside the pedestrian for the final segment."
+      "description": "The vehicle remains completely stopped and motionless in its lane beside the pedestrian for the final two seconds, never resuming any forward movement."
     }
   ],
   "text_and_signage_elements": [
@@ -91,29 +91,29 @@
   "segments": [
     {
       "segment_index": 0,
-      "time_range": "0:00-0:01",
-      "description": "The ego vehicle drives forward in its lane along the urban road, with the stop-sign-shirted pedestrian visible ahead on the right curb.",
-      "key_changes": "Steady forward motion; pedestrian grows larger in frame.",
-      "camera": "Forward-moving dashcam at cruising speed, maintaining lane center."
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle drives forward in its lane along the urban road at a brisk, elevated speed, with the stop-sign-shirted pedestrian visible ahead on the right curb.",
+      "key_changes": "Brisk forward motion; pedestrian grows larger in frame quickly.",
+      "camera": "Forward-moving dashcam at brisk speed, maintaining lane center."
     },
     {
       "segment_index": 1,
-      "time_range": "0:01-0:03",
-      "description": "The vehicle decelerates smoothly and progressively as it closes the distance to the pedestrian, coming to a full stop by the end of the segment.",
-      "key_changes": "Speed reduces gradually to zero; the scene's forward motion slows to a halt.",
-      "camera": "Forward dashcam motion slowing steadily, gentle settling of the frame to stationary."
+      "time_range": "0:02-0:03",
+      "description": "The vehicle brakes sharply and abruptly over a short braking distance as it closes the distance to the pedestrian, coming to a complete stop by the end of the segment.",
+      "key_changes": "Speed drops rapidly to zero within about one second; a hard, abrupt halt.",
+      "camera": "Forward dashcam motion decelerating sharply with a pronounced forward pitch, settling quickly to stationary."
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle is fully stopped in its lane next to the pedestrian and remains motionless for at least two seconds.",
-      "key_changes": "Complete halt; pedestrian remains standing facing the vehicle.",
-      "camera": "Static dashcam, no forward motion, vehicle stationary in lane."
+      "description": "The vehicle is fully stopped in its lane next to the pedestrian and remains completely motionless for the final two seconds, never resuming movement.",
+      "key_changes": "Complete halt held; absolutely no forward motion; the vehicle never starts moving again; pedestrian remains standing facing the vehicle.",
+      "camera": "Static dashcam, no forward motion whatsoever, vehicle held stationary in lane."
     }
   ],
   "transitions": [],
-  "temporal_caption": "From 0:00 to 0:01 the dashcam view cruises forward along an urban street, the asphalt lane stretching ahead while a young male pedestrian in a gray t-shirt bearing a red 'STOP' sign graphic stands on the right curb facing the car. From 0:01 to 0:03 the vehicle decelerates smoothly and progressively as it approaches him, coming to a full stop by 0:03. From 0:03 to 0:05 it sits fully stationary in its lane directly beside the pedestrian, who remains standing and watching, with the vehicle holding its position without parking or leaving the lane.",
-  "audio_description": "Ambient urban soundscape with the low hum of the engine and tire noise that gradually decreases from 0:01 as the car decelerates. Faint distant traffic, occasional birdsong, and a subtle brake whisper before the vehicle settles into silence at the full stop by 0:03. No speech or music.",
+  "temporal_caption": "From 0:00 to 0:02 the dashcam view cruises forward along an urban street at a brisk, elevated speed, the asphalt lane stretching ahead while a young male pedestrian in a gray t-shirt bearing a red 'STOP' sign graphic stands on the right curb facing the car. From 0:02 to 0:03 the vehicle brakes sharply and abruptly over a short braking distance as it approaches him, coming to a complete stop by 0:03. From 0:03 to 0:05 it sits fully stationary in its lane directly beside the pedestrian and remains completely motionless, never resuming any movement, holding its position without parking or leaving the lane.",
+  "audio_description": "Ambient urban soundscape with the low hum of the engine and tire noise that drops abruptly from 0:02 with a brief sharp brake squeal as the car brakes hard. Faint distant traffic, occasional birdsong, and a pronounced brake sound before the vehicle settles into a quiet idle at the full stop by 0:03 and stays silent and still through the end. No speech or music.",
   "resolution": {
     "H": 720,
     "W": 1280
