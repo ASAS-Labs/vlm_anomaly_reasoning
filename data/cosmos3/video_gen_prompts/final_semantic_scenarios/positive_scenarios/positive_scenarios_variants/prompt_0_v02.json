@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside advertising billboard mounted on a single steel monopole, displaying a banking advertisement that prominently features a red octagonal 'Stop Sign' graphic as part of the ad design",
+      "appearance_details": "Rectangular billboard panel with a glossy printed surface; cool blue-and-white banking branding, a bold red stop-sign illustration and white promo text; clean galvanized monopole gleaming in the midday sun",
+      "relationship": "The primary point of interest the ego vehicle passes; positioned beyond the right shoulder, distinct from any real traffic signage",
+      "location": "right side of frame, mid-to-far background moving toward right foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "angled toward oncoming traffic, facing the approaching ego vehicle and camera",
+      "pose": "static, elevated upright on the monopole above the roadside plantings",
+      "action": "remains stationary as the vehicle approaches and passes",
+      "state_changes": "Grows larger in frame as the car approaches, then sweeps to the right edge and out of view as the car passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen only from its interior ego perspective via the windshield and visible dashboard edge",
+      "appearance_details": "Glossy dashboard brightly lit, faint interior reflection on the sun-struck windshield, dark hood nose visible at the bottom of frame",
+      "relationship": "The viewpoint vehicle driving down the suburban arterial past the billboard",
+      "location": "implied at camera position, hood visible in bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the suburban arterial, away from camera",
+      "pose": "moving forward at cruising speed",
+      "action": "driving steadily along the lane without slowing",
+      "state_changes": "Maintains constant cruising speed throughout; no braking or stopping.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide suburban arterial under a bright, clear midday sky, lined with big-box storefronts, drive-through signage, and mature summer street trees in full green leaf. The multi-lane asphalt is dry and freshly paved with crisp white lane markings and a landscaped right shoulder. Beyond the shoulder a billboard rises on a tall monopole. Passing traffic, turn lanes, and evenly spaced light poles complete a sunny suburban commercial corridor.",
+  "lighting": {
+    "conditions": "Bright clear daylight, high midday sun",
+    "direction": "top-lit from directly overhead",
+    "shadows": "Short, hard shadows directly beneath the monopole, vehicles, trees, and light poles",
+    "illumination_effect": "Strong, even illumination with high contrast, vivid summer greens and road colors, glare off the windshield and glossy billboard surface"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-looking ego composition with the road vanishing point near center; billboard placed on the right third following the rule of thirds; hood edge anchors the bottom frame",
+    "color_scheme": "Bright blue sky, gray asphalt, lush green summer foliage, with the red stop sign and blue-white banking ad as accents",
+    "mood_atmosphere": "Calm, routine, sunny suburban drive",
+    "patterns": "Repeating dashed lane markings, storefront frontages, and evenly spaced street trees"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle's perspective",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the approaching billboard",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam style",
+  "context": "Autonomous-driving / dashcam scenario testing recognition of advertisement signage versus real traffic signs",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the sunny suburban arterial; the billboard appears small in the right background ahead."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard grows larger as the car approaches, its banking ad and red stop sign graphic becoming clearly legible."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed and passes the billboard, which sweeps to the right edge and out of frame without any slowing or stopping."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase lettering on a red octagonal stop-sign graphic, printed as part of the advertisement",
+      "spatial_temporal": "On the billboard at right side of frame, clearly visible from 0:02 to 0:05",
+      "context": "Decorative element within the banking advertisement, not a real traffic control sign"
+    },
+    {
+      "text": "STOP OVERPAYING — SWITCH YOUR BANK TODAY",
+      "category": "physical_in_scene",
+      "appearance": "Clean blue and white sans-serif promotional text alongside a bank logo",
+      "spatial_temporal": "On the billboard panel, right side of frame, legible 0:02-0:05",
+      "context": "Banking advertisement slogan promoting a financial service"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives steadily on the suburban arterial under bright midday sun; billboard small in the distance on the right amid summer greenery.",
+      "key_changes": "Billboard begins to grow as distance closes.",
+      "camera": "Forward tracking from the moving car, stable."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Approach phase as the billboard enlarges and the banking ad with the stop sign becomes clearly readable.",
+      "key_changes": "Ad text and red stop sign graphic become legible.",
+      "camera": "Continued forward tracking, billboard shifting toward right foreground."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the billboard at unchanged cruising speed; billboard sweeps off the right edge while the road ahead remains clear.",
+      "key_changes": "Billboard exits frame; vehicle does not slow or stop.",
+      "camera": "Forward tracking continues smoothly past the billboard."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks down a sunlit suburban arterial lined with summer trees and storefronts, the hood at the bottom and a billboard small in the right distance. By 0:01 the car holds steady cruising speed with hard midday shadows directly beneath roadside objects. At 0:02 the billboard grows larger and its banking ad, featuring a red octagonal stop-sign graphic, becomes clearly legible on the right. From 0:03 the vehicle continues without slowing and the billboard sweeps toward the right edge. By 0:04-0:05 it passes out of view while the road ahead stays open, the car never braking.",
+  "audio_description": "Low engine hum and steady tire-on-asphalt noise, occasional passing traffic and faint suburban ambience; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

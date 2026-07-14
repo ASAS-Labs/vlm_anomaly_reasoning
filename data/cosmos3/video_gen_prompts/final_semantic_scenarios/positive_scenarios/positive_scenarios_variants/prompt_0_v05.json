@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside advertising billboard mounted on a single steel monopole, displaying a banking advertisement that prominently features a red octagonal 'Stop Sign' graphic as part of the ad design",
+      "appearance_details": "Rectangular billboard panel half-veiled by fog, its glossy surface dimly lit; cool blue-and-white banking branding, a bold red stop-sign illustration and white promo text emerging as the car nears; damp monopole above the treeline",
+      "relationship": "The primary point of interest the ego vehicle passes; positioned beyond the right shoulder, distinct from any real traffic signage",
+      "location": "right side of frame, mid-to-far background moving toward right foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "angled toward oncoming traffic, facing the approaching ego vehicle and camera",
+      "pose": "static, elevated upright on the monopole above the forest shoulder",
+      "action": "remains stationary as the vehicle approaches and passes",
+      "state_changes": "Emerges from the fog and grows larger as the car approaches, then sweeps to the right edge and back into mist as the car passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen only from its interior ego perspective via the windshield and visible dashboard edge",
+      "appearance_details": "Dim dashboard under pre-dawn light, faint condensation on the windshield edge, dark hood nose barely lit at the bottom of frame",
+      "relationship": "The viewpoint vehicle driving down the rural road past the billboard",
+      "location": "implied at camera position, hood visible in bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the rural road, away from camera",
+      "pose": "moving forward at cruising speed",
+      "action": "driving steadily along the lane without slowing",
+      "state_changes": "Maintains constant cruising speed throughout; no braking or stopping.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane road at pre-dawn, wrapped in low fog drifting between dark forested shoulders of autumn conifers and bare hardwoods. The damp asphalt holds a faint sheen; worn edge lines vanish into the mist a short distance ahead. Beyond the right shoulder a billboard looms half-veiled on a monopole above the treeline. The dim blue pre-dawn sky barely separates from the fog.",
+  "lighting": {
+    "conditions": "Dim pre-dawn light with dense ground fog",
+    "direction": "Weak, diffuse ambient glow; no visible sun",
+    "shadows": "No hard shadows; forms are soft and low-contrast, fading into the fog",
+    "illumination_effect": "Fog shortens visible range and mutes contrast; the billboard emerges gradually from the mist, the red stop-sign graphic softened but readable up close"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-looking ego composition with the road vanishing point near center; billboard placed on the right third following the rule of thirds; hood edge anchors the bottom frame",
+    "color_scheme": "Cool blue-grey fog, dark green-brown forest, damp black asphalt, with the red stop sign and blue-white ad as muted accents",
+    "mood_atmosphere": "Quiet, hushed, misty pre-dawn rural drive",
+    "patterns": "Fading edge lines and rows of fog-veiled trees"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle's perspective",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Shallowed by fog beyond a short distance",
+    "focus": "Sharp on the near road; far background dissolves in fog",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam style",
+  "context": "Autonomous-driving / dashcam scenario testing recognition of advertisement signage versus real traffic signs",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the foggy rural road; the fog-veiled billboard appears faint in the right background ahead."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard emerges from the mist as the car approaches, its banking ad and red stop sign graphic becoming clearly legible up close."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed and passes the billboard, which sweeps to the right edge and back into the fog without any slowing or stopping."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase lettering on a red octagonal stop-sign graphic, printed as part of the advertisement",
+      "spatial_temporal": "On the billboard at right side of frame, clearly visible from 0:02 to 0:05",
+      "context": "Decorative element within the banking advertisement, not a real traffic control sign"
+    },
+    {
+      "text": "STOP OVERPAYING — SWITCH YOUR BANK TODAY",
+      "category": "physical_in_scene",
+      "appearance": "Clean blue and white sans-serif promotional text alongside a bank logo",
+      "spatial_temporal": "On the billboard panel, right side of frame, legible 0:02-0:05",
+      "context": "Banking advertisement slogan promoting a financial service"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives steadily on the misty forest road at pre-dawn; billboard faint and half-veiled in the distance on the right.",
+      "key_changes": "Billboard begins to emerge from the fog as distance closes.",
+      "camera": "Forward tracking from the moving car, stable."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Approach phase as the billboard resolves from the mist and the banking ad with the stop sign becomes clearly readable.",
+      "key_changes": "Ad text and red stop sign graphic become legible.",
+      "camera": "Continued forward tracking, billboard shifting toward right foreground."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the billboard at unchanged cruising speed; billboard sweeps off the right edge back into fog while the road ahead remains clear.",
+      "key_changes": "Billboard exits frame; vehicle does not slow or stop.",
+      "camera": "Forward tracking continues smoothly past the billboard."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks down a foggy rural two-lane at pre-dawn, forest shoulders barely visible and a billboard half-veiled small in the right distance. By 0:01 the car holds steady cruising speed as fog mutes the scene. At 0:02 the billboard emerges from the mist and its banking ad, featuring a red octagonal stop-sign graphic, becomes clearly legible on the right. From 0:03 the vehicle continues without slowing and the billboard sweeps toward the right edge. By 0:04-0:05 it recedes back into the fog while the damp road ahead stays open, the car never braking.",
+  "audio_description": "Low engine hum and tire noise on damp asphalt, muffled by fog, with faint dripping foliage and distant birdsong stirring before dawn; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

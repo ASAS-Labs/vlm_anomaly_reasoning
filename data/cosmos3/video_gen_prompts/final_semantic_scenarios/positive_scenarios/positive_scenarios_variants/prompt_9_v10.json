@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A solid structural wall that terminates the alpine mountain road, its flat vertical face entirely covered by a hyper-realistic trompe-l'oeil mural depicting an open road stretching toward a distant horizon beneath a clear blue sky",
+      "appearance_details": "The painted mural shows asphalt lane markings receding to a vanishing point, soft cumulus clouds, and a graduated blue sky; a warm late-afternoon cast and subtle brush sheen, a passing cloud shadow drifting across the paint, and the faint seam where the mural meets adjacent structures, reveal it is a flat painted surface",
+      "relationship": "It is the terminal obstacle the ego vehicle must recognize and stop before; it deceptively mimics a continuation of the street",
+      "location": "center frame, filling the far end of the street",
+      "relative_size": "Large within frame",
+      "orientation": "facing directly toward the camera/ego vehicle",
+      "pose": "static vertical flat surface",
+      "action": "Standing as a fixed barrier closing off the road",
+      "state_changes": "Grows larger in frame as the ego vehicle approaches, then stabilizes as the vehicle stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, an autonomous passenger car, seen only through its forward-facing point of view as it travels down the warm-lit alpine mountain road",
+      "appearance_details": "Implied by the dashboard-level ego perspective; smooth motion suggests a modern sedan with advanced driver-assistance sensors",
+      "relationship": "The observer and protagonist of the scene, approaching and correctly recognizing the mural wall",
+      "location": "implied first-person, behind the camera",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the street toward the wall",
+      "pose": "moving forward then decelerating to a halt",
+      "action": "Driving down the street, then braking to a smooth controlled stop before the wall",
+      "state_changes": "Transitions from steady forward motion to deceleration to a complete, sustained stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An alpine mountain road in late afternoon, winding through rolling hills clad in autumn foliage with pine stands, chalet-style houses and distant peaks. The dry asphalt runs straight ahead on this stretch with faded lane markings, framed by golden and rust-colored trees. The road dead-ends at a solid structural wall whose surface bears a hyper-realistic mural of an open road and clear sky, creating an optical illusion of the road continuing toward the mountains. No traffic signs of any kind are present anywhere in the scene.",
+  "lighting": {
+    "conditions": "Warm late-afternoon sun with partly cloudy sky",
+    "direction": "Low warm side light from the west, raking across the hills",
+    "shadows": "Long side shadows with drifting soft-edged cloud shadows moving across the road",
+    "illumination_effect": "Warm raking light gilds the autumn foliage while cloud shadows drift over the scene; the painted mural catches a warm afternoon cast, its fixed blue sky slightly warmer than the real partly-cloudy sky, subtle brush sheen betraying the flat surface"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the mountain road receding toward the mural wall at the vanishing point; autumn hillsides and peaks frame the road",
+    "color_scheme": "Golden and rust autumn foliage, deep pine green, warm asphalt and the painted mural's warm-lit blue",
+    "mood_atmosphere": "Crisp, expansive, subtly uncanny",
+    "patterns": "Layered autumn hillsides and rhythmic lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dolly (ego vehicle motion) decelerating to static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "The mural wall and the full length of the street ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary-style autonomous driving footage",
+  "context": "Autonomous vehicle perception test demonstrating correct recognition of a deceptive mural wall and safe stopping behavior",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels steadily forward down the alpine mountain road toward the mural wall at the far end."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle begins a smooth, controlled deceleration as it recognizes the solid wall painted to look like an open road."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop before the wall and remains stationary, holding the view of the mural under warm late-afternoon light."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward down the straight stretch of alpine road, the mural wall growing larger ahead while autumn foliage and chalets pass on either side under drifting cloud shadow.",
+      "key_changes": "Steady approach; wall increases in apparent size in warm side light.",
+      "camera": "Forward tracking motion at constant speed, eye-level."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle decelerates smoothly as it recognizes the wall as a solid barrier rather than open road.",
+      "key_changes": "Forward speed decreases; the mural fills more of the frame.",
+      "camera": "Forward motion slowing to a halt."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle is fully stopped before the wall and remains stationary, holding a steady view of the trompe-l'oeil mural in warm afternoon light.",
+      "key_changes": "No motion; the scene is held static for over two seconds.",
+      "camera": "Static, locked off at eye-level."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward down a warm-lit, sign-free alpine mountain road in late afternoon, autumn hills framing the road as it appears to continue into an open sky at the far end. Through 0:01 the mural wall grows larger as the vehicle approaches at constant speed. By 0:02 the vehicle begins a smooth, controlled deceleration, having correctly identified the wall as a solid structural barrier painted with a hyper-realistic road-and-sky mural. From 0:03 onward the vehicle has come to a complete stop a safe distance before the wall, and it remains stationary through 0:05, holding the view of the deceptive painted surface under warm afternoon light.",
+  "audio_description": "Ambient alpine afternoon sounds: the low hum of the vehicle's electric motor and tires on dry asphalt, wind through pines, distant birdsong and mountain stillness. As the vehicle slows, a soft regenerative braking whir is audible, followed by the quiet of the stationary vehicle. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

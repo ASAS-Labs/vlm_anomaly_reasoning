@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A solid structural wall that terminates the desert highway, its flat vertical face entirely covered by a hyper-realistic trompe-l'oeil mural depicting an open road stretching toward a distant horizon beneath a clear blue sky",
+      "appearance_details": "The painted mural shows asphalt lane markings receding to a vanishing point, soft cumulus clouds, and a graduated blue sky; a brilliant sun-bleached glare and faint heat-shimmer over the paint, subtle brush sheen, and the faint seam where the mural meets adjacent structures, reveal it is a flat painted surface",
+      "relationship": "It is the terminal obstacle the ego vehicle must recognize and stop before; it deceptively mimics a continuation of the street",
+      "location": "center frame, filling the far end of the street",
+      "relative_size": "Large within frame",
+      "orientation": "facing directly toward the camera/ego vehicle",
+      "pose": "static vertical flat surface",
+      "action": "Standing as a fixed barrier closing off the road",
+      "state_changes": "Grows larger in frame as the ego vehicle approaches, then stabilizes as the vehicle stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, an autonomous passenger car, seen only through its forward-facing point of view as it travels down the sun-blasted desert highway",
+      "appearance_details": "Implied by the dashboard-level ego perspective; smooth motion suggests a modern sedan with advanced driver-assistance sensors",
+      "relationship": "The observer and protagonist of the scene, approaching and correctly recognizing the mural wall",
+      "location": "implied first-person, behind the camera",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the street toward the wall",
+      "pose": "moving forward then decelerating to a halt",
+      "action": "Driving down the street, then braking to a smooth controlled stop before the wall",
+      "state_changes": "Transitions from steady forward motion to deceleration to a complete, sustained stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A desert highway across an open arid plain under harsh midday sun, flanked by scrub brush, sparse cacti and distant mesas shimmering in heat haze. The dry, sun-cracked asphalt runs dead straight ahead with sun-faded lane markings. The road dead-ends at a solid structural wall whose surface bears a hyper-realistic mural of an open road and clear sky, blending with the real sky above it and shimmering slightly in the heat, creating an optical illusion of the road continuing across the plain. No traffic signs of any kind are present anywhere in the scene.",
+  "lighting": {
+    "conditions": "Harsh bright midday desert sun",
+    "direction": "Sunlight from nearly directly overhead",
+    "shadows": "Very short, hard shadows pooled beneath scrub and the wall",
+    "illumination_effect": "Intense overhead sun bleaches the plain and heat shimmer distorts distant detail; the painted mural is brilliantly lit and its fixed blue sky blends convincingly with the real sky, strengthening the trompe-l'oeil deception, though subtle brush sheen still betrays the flat surface"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the desert highway receding toward the mural wall at the vanishing point; open plain and distant mesas frame the road",
+    "color_scheme": "Bleached sand tans, dusty scrub green, pale bright sky and the painted mural's matching vivid blue",
+    "mood_atmosphere": "Arid, stark, subtly uncanny",
+    "patterns": "Sparse scrub dotting the plain and dead-straight lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dolly (ego vehicle motion) decelerating to static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "The mural wall and the long desert highway ahead through heat shimmer",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary-style autonomous driving footage",
+  "context": "Autonomous vehicle perception test demonstrating correct recognition of a deceptive mural wall and safe stopping behavior",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels steadily forward down the desert highway toward the mural wall shimmering at the far end."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle begins a smooth, controlled deceleration as it recognizes the solid wall painted to look like an open road."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop before the wall and remains stationary, holding the view of the mural under harsh desert sun."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward down the dead-straight desert highway, the mural wall growing larger ahead while scrub and distant mesas shimmer on either side.",
+      "key_changes": "Steady approach; wall increases in apparent size through the heat haze.",
+      "camera": "Forward tracking motion at constant speed, eye-level."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle decelerates smoothly as it recognizes the wall as a solid barrier rather than open road.",
+      "key_changes": "Forward speed decreases; the mural fills more of the frame.",
+      "camera": "Forward motion slowing to a halt."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle is fully stopped before the wall and remains stationary, holding a steady view of the trompe-l'oeil mural in blazing sun.",
+      "key_changes": "No motion; the scene is held static for over two seconds.",
+      "camera": "Static, locked off at eye-level."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward down a sun-blasted, sign-free desert highway under harsh midday sun, the road appearing to continue across the open plain into the sky at the far end. Through 0:01 the mural wall grows larger as the vehicle approaches at constant speed, shimmering in the heat. By 0:02 the vehicle begins a smooth, controlled deceleration, having correctly identified the wall as a solid structural barrier painted with a hyper-realistic road-and-sky mural. From 0:03 onward the vehicle has come to a complete stop a safe distance before the wall, and it remains stationary through 0:05, holding the view of the deceptive painted surface under blazing sun.",
+  "audio_description": "Ambient desert daytime sounds: the low hum of the vehicle's electric motor and tires on dry cracked asphalt, a dry hot wind, faint insect buzz and vast open stillness. As the vehicle slows, a soft regenerative braking whir is audible, followed by the quiet of the stationary vehicle. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

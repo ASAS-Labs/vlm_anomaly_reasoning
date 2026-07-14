@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle in the opposite lane, identifiable mainly by its intensely bright high-beam headlights piercing through the darkness; the body of the car is obscured behind the glare, only faint hints of a dark sedan silhouette visible around the light source",
+      "appearance_details": "Two blinding white-blue headlight pools with lens-flare star artifacts, halation, and bloom, multiplied across streaming wet asphalt reflections amid neon; faint amber side marker glow",
+      "relationship": "The source of glare impairing the ego vehicle's visibility; travels directly opposite the ego on the shared flooded downtown street",
+      "location": "center to slightly left of frame, approaching from background to midground",
+      "relative_size": "Small within frame growing to Medium within frame as it nears",
+      "orientation": "Front-facing toward the camera, headlights aimed directly at the ego viewpoint",
+      "pose": "",
+      "action": "Approaching on the opposite lane with high beams on, then passing by",
+      "state_changes": "Grows brighter and larger as it nears the ramp hump amid neon, peaks in glare at closest approach, then sweeps past to the left throwing spray and recedes, glare clearing into reflections",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, represented only by its interior dashboard edge and the forward illumination of its own headlights spilling onto the road ahead",
+      "appearance_details": "Faint dashboard reflection along the bottom edge of the frame, twin cones of headlight light spreading over the asphalt and lane markings",
+      "relationship": "The point-of-view vehicle through which the entire scene is observed",
+      "location": "implied at camera position, dashboard at bottom foreground",
+      "relative_size": "Large within frame (occupying viewpoint)",
+      "orientation": "Facing forward down the road in the driving direction",
+      "pose": "",
+      "action": "Driving the flooded neon street, rising over a ramp hump, then continuing while slowing and resuming speed",
+      "state_changes": "Decelerates significantly during peak glare, then accelerates back to nominal cruising speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dense Asian megacity downtown at night in heavy monsoon rain, a flat multi-lane street walled by towering neon-clad buildings and layered signage. Wet reflective asphalt mirrors a riot of neon, giant screens, and streetlights into vertical streaks; no central divider is discernible under the reflections. Rain sheets through the light. The street runs level then rises over an on-ramp hump ahead, a crest that briefly hides then reveals the oncoming lane amid the neon. Beyond the glowing blocks the rain-soaked city dissolves into bright wet haze.",
+  "lighting": {
+    "conditions": "Heavy monsoon-rain megacity night, saturated neon and screens with streetlights; wet reflective roadway",
+    "direction": "Ego headlights front-lit; intense oncoming high-beam glare ahead and slightly left, competing with dense neon and its reflections",
+    "shadows": "Chaotic multi-colored reflected shadows shattered across the streaming wet asphalt",
+    "illumination_effect": "Neon and signage smear into long vertical reflections on flooded asphalt; oncoming high beams add overwhelming rain-scattered bloom, multiplied starburst flares, and washout amid the glow"
+  },
+  "aesthetics": {
+    "composition": "Neon-walled street to a ramp hump near mid-frame, oncoming glare blooming amid signage upper-center, dashboard edge at bottom",
+    "color_scheme": "Saturated neon magenta/cyan/red over black flooded asphalt, cut by harsh white-blue headlight glare",
+    "mood_atmosphere": "Tense, overstimulating, disorienting, momentarily blinding, cautious in the downpour",
+    "patterns": "Vertical neon reflections and rain streaks pouring down the frame"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dashcam tracking through flooded neon streets, rain-jittered frame, subtle rise over the ramp hump, deceleration drift then re-acceleration",
+    "framing": "Wide shot of the road ahead from driver viewpoint",
+    "camera_angle": "Eye-level, fixed forward-facing",
+    "depth_of_field": "Deep, heavily softened by rain and spray",
+    "focus": "Road ahead amid reflections, though glare and heavy rain overwhelm focus at peak brightness",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Demonstration of nighttime oncoming-headlight glare and driver visibility management on a rain-soaked downtown street",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives the neon-walled megacity street at nominal speed, distant oncoming headlights appear faint amid neon past a ramp hump"
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "Vehicle rises over the ramp hump; oncoming high beams rapidly intensify, flooding the rain-neon view with glare and lens artifacts"
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "Ego vehicle slows significantly to manage impaired visibility as the oncoming car passes on the left throwing spray"
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "Glare clears, the flooded street becomes visible again, ego vehicle resumes nominal speed"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Driving the flooded neon street at steady speed with faint oncoming light growing past a ramp hump",
+      "key_changes": "Distant headlights begin to appear amid dense neon reflections",
+      "camera": "Forward tracking with slight upward pitch on the climb"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Rising over the ramp hump as oncoming high beams flare into severe rain-scattered glare",
+      "key_changes": "Rapid increase in brightness, multiplied bloom and starburst artifacts wash across the wet frame",
+      "camera": "Subtle bob over the crest, then leveling into descent"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle slows for the passing car throwing spray, then glare clears and nominal speed resumes",
+      "key_changes": "Deceleration, oncoming vehicle sweeps past left, artifacts fade, flooded street regains visibility, re-acceleration",
+      "camera": "Slight forward dip during braking, then smooth resumed forward tracking"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam looks down a neon-walled megacity street in heavy rain, ego headlights and mirrored neon streaking over flooded asphalt while a faint glow grows past a ramp hump. By 0:01 the vehicle rises over the hump and a pair of oncoming high beams rapidly brightens amid the neon. Through 0:02-0:03 the view is overwhelmed by rain-scattered white-blue glare, multiplied lens flares, and bloom. Around 0:03 the ego slows noticeably to cope with impaired visibility as the oncoming car sweeps past on the left throwing spray. From 0:04 to 0:05 the glare clears, the flooded street reappears, and the ego accelerates back to nominal cruising speed.",
+  "audio_description": "Steady hum of the engine and heavy tire hiss through standing water, rising then dipping as the vehicle decelerates. Roaring monsoon rain on the roof, dense city traffic, a loud whoosh and spray as the oncoming car passes; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

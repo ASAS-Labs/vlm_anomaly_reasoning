@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails, their surfaces beaded with rain and catching glossy neon and streetlight highlights",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dense downtown grid at night in a North American city under light rain. A two-lane wet worn-asphalt road stretches ahead with faded lane markings, flanked by glowing storefronts, neon signage reflected in puddles, parked cars, and streetlights. Utility poles and traffic lights line the route. No stop sign is present anywhere in the scene. The autumn night sky is dark and drizzly, lending a moody, rain-slicked urban ambiance.",
+  "lighting": {
+    "conditions": "Rainy night lit by neon and streetlights",
+    "direction": "Mixed overhead streetlight and side neon glow, no single sun direction",
+    "shadows": "Soft, diffuse shadows blurred by rain and wet reflections on the asphalt",
+    "illumination_effect": "Wet specular highlights and neon color casts glinting on rain-beaded balloon surfaces and puddled road"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective centered on the wet road ahead, neon reflections streaking toward the vanishing point, balloons in the lower-center foreground",
+    "color_scheme": "Dark wet grays and blacks, saturated neon reds, blues, and magentas, accented by the rain-dulled pastel pink and blue of the balloons",
+    "mood_atmosphere": "Moody, rain-slicked, mildly whimsical",
+    "patterns": "Reflected neon streaks and repeating streetlight pools on wet asphalt"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Moderate, with rain and reflections softening the far background",
+    "focus": "Road surface and rain-beaded balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the rain-slicked downtown road at night; two pastel balloons appear ahead, drifting and rolling on the wet asphalt amid neon reflections."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by the gusty wind, rolling toward the center of the lane through puddles as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the glistening night street."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the wet downtown road under neon and streetlight at night; two rain-beaded balloons drift and roll ahead at ground level, pushed around by gusty wind.",
+      "key_changes": "Balloons enter the path and shift positions due to wind gusts across the wet asphalt",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly while continuing forward smoothly along its lane through the rain.",
+      "key_changes": "Subtle lateral steering to avoid balloons; wet road continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a rain-slicked downtown street at night, neon reflections shimmering on wet asphalt; two rain-beaded pastel party balloons appear ahead. By 0:02 gusty wind tosses the balloons, rolling them toward the lane center through puddles as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the glistening road without stopping.",
+  "audio_description": "Ambient rainy-night driving sounds: the hum of the engine and the hiss of tires on wet asphalt, light rain pattering, gusts of wind, and faint distant city traffic. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

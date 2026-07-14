@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still on the snow-covered curb, facing the oncoming ego vehicle, wearing an open winter parka over a long-sleeve shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Warm winter attire with the parka worn open, plus dark snow trousers, a knit hat, and boots; the open parka keeps the bold stop sign graphic fully visible on the chest against the snow.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "Open winter parka over a long-sleeve shirt printed with a red stop sign, dark snow trousers, knit hat, insulated boots.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Fair skin tone with a cold-flushed, evenly lit complexion under flat snowy light.",
+      "facial_features": "Light hair mostly under a knit hat, light eyes, relaxed brow, breath faintly visible in the cold, no distinguishing marks at distance.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet Scandinavian residential street on an overcast winter day under falling snow. The snow-packed road with faint tire tracks is bordered by snow-covered sidewalks and verges, tidy timber and painted houses with steep snow-laden roofs, bare birch trees, and lamp posts. Snow blankets the surroundings and softens the distance; a few bundled pedestrians appear faintly, conveying a still, cold residential scene.",
+  "lighting": {
+    "conditions": "Flat, dim overcast winter daylight with light snowfall.",
+    "direction": "Diffuse light from a pale grey sky reflecting off the snow, evenly and brightly lighting the pedestrian from all sides.",
+    "shadows": "Nearly shadowless; snow-reflected light fills any shadow, leaving flat white illumination.",
+    "illumination_effect": "Bright but flat white illumination; the red stop sign shirt graphic reads as a strong warm accent against the snowy white surroundings."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the snow-packed street, the pedestrian on the right snow-covered curb; faint tire tracks lead toward the softened vanishing point.",
+    "color_scheme": "Near-white snow and pale grey sky, muted timber-house colors and dark bare birches, with the red stop sign on the shirt as the single vivid accent.",
+    "mood_atmosphere": "Still, cold, quiet snowy residential drive.",
+    "patterns": "Repeating snow-laden roofs, bare birch trunks, and lamp posts among the snow."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the snowy street, with the pedestrian clearly resolved against the softly falling snow.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario on a snowy Scandinavian residential street demonstrating a stationary pedestrian on the curb with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the snow-packed residential street under falling snow; the pedestrian appears ahead on the right snow-covered curb, facing the vehicle, with a stop sign clearly visible on their shirt beneath an open parka."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed over the snow; the pedestrian grows larger in frame but stays stationary on the snowy curb."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the snow-packed road; the pedestrian remains on the curb and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's long-sleeve shirt, framed by the open parka and reading clearly against the snowy white backdrop.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on a snow-packed road under flat overcast winter light and light snowfall, approaching the stationary pedestrian on the right snow-covered curb whose shirt displays a stop sign beneath an open parka.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches through falling snow; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its lane; the pedestrian remains on the snowy curb and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position on the snow-packed road.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a snow-packed Scandinavian residential street under falling snow with snow-laden roofs and bare birches, the ego vehicle moving steadily forward; a pedestrian stands on the right snow-covered curb facing the camera, a red stop sign clearly printed on their shirt beneath an open parka. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the snowy curb. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the snowy street continues ahead.",
+  "audio_description": "Ambient cold-weather driving sounds muffled by snow: a steady engine hum, the soft crunch and hiss of tires on snow-packed road, and hushed, snow-dampened surroundings. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive, muffled by the snow.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

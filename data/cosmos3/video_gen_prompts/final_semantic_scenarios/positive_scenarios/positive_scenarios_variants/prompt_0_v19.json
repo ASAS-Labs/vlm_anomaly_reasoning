@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside advertising billboard mounted on a single steel monopole, displaying a banking advertisement that prominently features a red octagonal 'Stop Sign' graphic as part of the ad design",
+      "appearance_details": "Rectangular billboard panel glossy but dust-filmed under hazy light; blue-and-white banking branding, a bold red stop-sign illustration and white promo text clear against the sand tones; monopole above the flat rooftops",
+      "relationship": "The primary point of interest the ego vehicle passes; positioned beyond the right kerb, distinct from any real traffic signage",
+      "location": "right side of frame, mid-to-far background moving toward right foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "angled toward oncoming traffic, facing the approaching ego vehicle and camera",
+      "pose": "static, elevated upright on the monopole above the arterial kerb",
+      "action": "remains stationary as the vehicle approaches and passes",
+      "state_changes": "Grows larger in frame as the car approaches, then sweeps to the right edge and out of view as the car passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen only from its interior ego perspective via the windshield and visible dashboard edge",
+      "appearance_details": "Glossy dashboard under warm hazy light, fine dust film on the windshield, dark hood nose at the bottom of frame",
+      "relationship": "The viewpoint vehicle driving down the arterial road past the billboard",
+      "location": "implied at camera position, hood visible in bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the arterial road, away from camera",
+      "pose": "moving forward at cruising speed",
+      "action": "driving steadily along the lane without slowing",
+      "state_changes": "Maintains constant cruising speed throughout; no braking or stopping.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A broad Middle-Eastern arterial road at the desert's edge under a hazy midday sky, fine dust softening the light and the low sand-colored buildings, palms, and roadside walls. The dry asphalt carries a thin film of blown sand over faded lane paint; a few scattered palms and dusty medians line the route. Beyond the right kerb a billboard stands on a monopole above the flat rooftops, the desert haze paling the far distance.",
+  "lighting": {
+    "conditions": "Hazy bright midday with light airborne dust",
+    "direction": "High sun diffused through dust haze",
+    "shadows": "Soft-edged, moderately short shadows muted by the haze",
+    "illumination_effect": "Warm, slightly hazy diffuse light with a sandy glow; distance pales into dust while the red stop-sign graphic stays clear against the sand tones"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-looking ego composition with the road vanishing point near center; billboard placed on the right third following the rule of thirds; hood edge anchors the bottom frame",
+    "color_scheme": "Warm sand and ochre buildings, pale hazy sky, dusty asphalt, muted palm green, with red stop sign and blue-white ad accents",
+    "mood_atmosphere": "Warm, dusty, arid arterial drive",
+    "patterns": "Scattered palms, low flat rooftops, and dust-softened lane paint"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle's perspective",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road and billboard; dust haze pales the far distance",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam style",
+  "context": "Autonomous-driving / dashcam scenario testing recognition of advertisement signage versus real traffic signs",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the hazy desert-edge arterial; the billboard appears small in the right background ahead through the dust."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard grows larger as the car approaches, its banking ad and red stop sign graphic becoming clearly legible against the sand tones."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed and passes the billboard, which sweeps to the right edge and out of frame without any slowing or stopping."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase lettering on a red octagonal stop-sign graphic, printed as part of the advertisement",
+      "spatial_temporal": "On the billboard at right side of frame, clearly visible from 0:02 to 0:05",
+      "context": "Decorative element within the banking advertisement, not a real traffic control sign"
+    },
+    {
+      "text": "STOP OVERPAYING — SWITCH YOUR BANK TODAY",
+      "category": "physical_in_scene",
+      "appearance": "Clean blue and white sans-serif promotional text alongside a bank logo",
+      "spatial_temporal": "On the billboard panel, right side of frame, legible 0:02-0:05",
+      "context": "Banking advertisement slogan promoting a financial service"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives steadily along the desert-edge arterial under hazy sun; billboard small in the dusty distance on the right above flat rooftops.",
+      "key_changes": "Billboard begins to grow as distance closes.",
+      "camera": "Forward tracking from the moving car, stable."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Approach phase as the billboard enlarges and the banking ad with the stop sign becomes clearly readable against the sand tones.",
+      "key_changes": "Ad text and red stop sign graphic become legible.",
+      "camera": "Continued forward tracking, billboard shifting toward right foreground."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the billboard at unchanged cruising speed; billboard sweeps off the right edge while the road ahead remains clear.",
+      "key_changes": "Billboard exits frame; vehicle does not slow or stop.",
+      "camera": "Forward tracking continues smoothly past the billboard."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks down a broad desert-edge arterial under hazy midday light, sand-colored buildings and palms flanking the road and a billboard small in the right distance. By 0:01 the car holds steady cruising speed. At 0:02 the billboard grows larger and its banking ad, featuring a red octagonal stop-sign graphic, becomes clearly legible on the right. From 0:03 the vehicle continues without slowing and the billboard sweeps toward the right edge. By 0:04-0:05 it passes out of view into the dust haze while the road ahead stays open, the car never braking.",
+  "audio_description": "Low engine hum and tire noise on sandy asphalt, warm dry wind and faint distant city sounds; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

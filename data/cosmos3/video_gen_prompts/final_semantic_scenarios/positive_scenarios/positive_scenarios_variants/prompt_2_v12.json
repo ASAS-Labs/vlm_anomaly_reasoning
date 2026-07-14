@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still on the footpath verge curb, facing the oncoming ego vehicle, wearing a white short-sleeve t-shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual summer attire with dark jeans and white sneakers; the bold stop sign graphic dominates the shirt's front, warmly lit by the low morning sun.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "White short-sleeve t-shirt with a printed red stop sign, dark blue jeans, white sneakers.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone with a smooth complexion, warmly lit by golden-hour morning light.",
+      "facial_features": "Short dark hair, dark eyes, clean-shaven, relaxed brow, no distinguishing marks visible at distance.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "An expressway frontage road along the edge of a town on a clear golden-hour summer morning, running parallel to the main expressway. The two-lane dry fresh asphalt has a paved footpath and grassy verge alongside where a person can stand, with low commercial frontage buildings, signage, lamp posts, and the raised expressway and its passing traffic beyond. Warm low sunlight rakes down the road, conveying a calm early-morning roadside scene.",
+  "lighting": {
+    "conditions": "Warm clear golden-hour summer morning sunlight.",
+    "direction": "Low sun from the east, front-lighting the pedestrian with a warm glow.",
+    "shadows": "Long shadows stretch westward across the fresh asphalt away from the low sun; the pedestrian's front stays warmly lit.",
+    "illumination_effect": "Soft warm golden illumination with gentle contrast; the stop sign shirt graphic stays clearly legible in the morning light."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the frontage road, the pedestrian on the right footpath verge, the raised expressway beyond; long shadows and lane markings lead toward the vanishing point.",
+    "color_scheme": "Warm golden light on fresh asphalt and frontage buildings, deep blue morning sky, long cool shadows, with the red stop sign on the white shirt as a vivid focal accent.",
+    "mood_atmosphere": "Calm, routine early-morning roadside drive.",
+    "patterns": "Repeating lane dashes, lamp posts, frontage signage, and the rhythm of expressway traffic beyond."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the road scene, with the pedestrian remaining clearly resolved as the car approaches.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario on an expressway frontage road at golden hour demonstrating a stationary pedestrian on the verge with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the expressway frontage road in warm golden-hour light; the pedestrian appears ahead on the right footpath verge, facing the vehicle, with a stop sign clearly visible on their shirt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed; the pedestrian grows larger in frame but stays stationary on the verge curb amid long morning shadows."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the fresh asphalt; the pedestrian remains on the verge and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's white t-shirt.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on dry fresh asphalt along the frontage road under warm golden-hour morning sun, approaching the stationary pedestrian on the right footpath verge whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches; long shadows stretch across the road and vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its lane; the pedestrian remains on the verge and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a golden-lit expressway frontage road of fresh asphalt with a footpath verge and the raised expressway beyond, the ego vehicle moving steadily forward; a pedestrian stands on the right verge facing the camera, a red stop sign clearly printed on their white shirt. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the verge amid long morning shadows. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the frontage road continues ahead.",
+  "audio_description": "Ambient roadside morning driving sounds: a steady engine hum, tire noise on fresh asphalt, and the distant whoosh of expressway traffic. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

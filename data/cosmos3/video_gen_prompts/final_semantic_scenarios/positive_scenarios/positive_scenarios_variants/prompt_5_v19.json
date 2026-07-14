@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags on the sand-dusted asphalt, warm-cast and dust-filmed, lightly crumpled and partially inflated by the hot sandy wind",
+      "appearance_details": "Thin, semi-transparent plastic taking on a warm sandy cast in the hazy light, filmed with fine dust, edges fluttering and creased, lightly grimed with sand",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a desert-edge arterial road lane",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An arterial road on the desert edge of a Middle-Eastern city at hazy midday, wide dry asphalt filmed with fine sand under a warm, dust-hazed sky. Low sand-colored concrete buildings, block walls, and a few palms line the route; a light dust haze softens the sun into a warm sandy glow and blurs the distance. Blowing sand drifts in ribbons across the lanes in the dry-season heat.",
+  "lighting": {
+    "conditions": "Hazy midday sun through light dust, warm and diffuse",
+    "direction": "High sun diffused by dust haze into a soft warm overhead glow",
+    "shadows": "Soft, weak, warm-edged shadows muted by the airborne dust",
+    "illumination_effect": "Warm, sandy diffuse light with a hazy glow; the two translucent bags take on a warm sandy cast, softly lit and dust-filmed as they skitter over the sand-dusted asphalt"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the arterial vanishing into hazy distance near center, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Warm sandy tans and ochres, dust-hazed pale sky, sand-colored buildings, and warm dust-filmed off-white bags",
+    "mood_atmosphere": "Hot, hazy, dusty desert-edge midday",
+    "patterns": "Ribbons of blowing sand, block walls, and scattered palms along the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the two bags in the central foreground; the dust haze softens the distance",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the hazy desert-edge arterial; two stray polythene bags appear ahead on the sandy asphalt, warm-cast as they flutter in the hot wind."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the sand-dusted road as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside in the sandy wind."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the desert-edge arterial under hazy warm midday; two warm-cast polythene bags become visible ahead, tossed by the sandy wind.",
+      "key_changes": "Bags appear in the central foreground, softly lit and dust-filmed, and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble across the sand-dusted road surface.",
+      "key_changes": "Bags shift and lift in the hot sandy gusts.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "key_changes": "Bags pass out of central frame; the hazy road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a desert-edge arterial road in a Middle-Eastern city at hazy midday, dry asphalt filmed with sand under a warm dust-hazed sky. Within the first two seconds, two translucent polythene bags come into view in the central foreground, warm-cast and softly lit through the dust haze as they lift and flutter. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the sand-dusted road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the arterial ahead remaining clear but hazy in the warm sandy light.",
+  "audio_description": "Ambient desert-edge city sounds: the hum of the engine and tires over sand-filmed asphalt, a hot dry wind carrying blowing sand, distant traffic and a faint call to prayer. No speech or music; the dry gritty rustle of dust-filmed plastic bags in the wind.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Glossy latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails and warm side-lit highlights from the low afternoon sun, dimming as cloud shadows pass",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An alpine mountain road winding through rolling autumn hills in the late afternoon. The dry asphalt road curves ahead with painted lane markings, flanked by golden-red foliage, a low stone-edged verge, evergreen slopes, and distant peaks. No stop sign is present anywhere in the scene. The sky is partly cloudy with drifting cloud shadows sweeping the hills, lending a crisp, scenic mountain ambiance.",
+  "lighting": {
+    "conditions": "Warm crisp late-afternoon mountain light, partly cloudy",
+    "direction": "Warm side light from the low afternoon sun, intermittently broken by drifting clouds",
+    "shadows": "Crisp side-cast shadows that soften and shift as cloud shadows drift across the road",
+    "illumination_effect": "Warm directional illumination with bright highlights on glossy balloon surfaces, modulated by passing cloud shadow"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective along the winding mountain road, autumn hills and peaks beyond, balloons in the lower-center foreground",
+    "color_scheme": "Warm golds and reds of autumn foliage, deep evergreen, grey asphalt, accented by the warm-lit pastel pink and blue of the balloons",
+    "mood_atmosphere": "Crisp, scenic, mildly whimsical",
+    "patterns": "Winding road curve and drifting cloud-shadow bands across the hills"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Road surface and balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the winding alpine road in warm late-afternoon light; two pastel balloons appear ahead, drifting and rolling on the dry asphalt amid autumn foliage."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by a crisp mountain gust, rolling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues along the mountain road."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the winding alpine mountain road under warm partly-cloudy afternoon light; two medium-sized balloons drift and roll ahead at ground level, pushed around by crisp gusts.",
+      "key_changes": "Balloons enter the path and shift positions in the mountain gusts as cloud shadow drifts across",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly along the curve while continuing forward smoothly.",
+      "key_changes": "Subtle lateral steering to avoid balloons; mountain road continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a winding alpine mountain road amid autumn foliage in warm late-afternoon light with drifting cloud shadows; two warm-lit pastel party balloons appear ahead. By 0:02 a crisp mountain gust tosses the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing along the road without stopping.",
+  "audio_description": "Ambient mountain driving sounds: the steady hum of the engine and tires on dry asphalt, crisp gusts of mountain wind, rustling autumn leaves, and distant birdcall. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still on the sidewalk curb in light drizzle, facing the oncoming ego vehicle, wearing an open light jacket over a long-sleeve shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual attire with dark jeans and worn sneakers; the open jacket keeps the bold stop sign graphic fully visible on the chest under the flat grey light.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "Open light jacket over a long-sleeve shirt printed with a red stop sign, dark jeans, worn sneakers.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Warm brown skin tone with an evenly lit complexion and faint damp sheen under overcast drizzle.",
+      "facial_features": "Short dark hair damp from drizzle, dark eyes, relaxed brow, no distinguishing marks visible at distance.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A Latin American commercial strip under an overcast drizzly spring sky. The two-lane worn asphalt with a faint wet sheen is bordered by concrete sidewalks, brightly painted low shops with hand-lettered signage, roll-down shutters, utility wires overhead, and a few parked cars. Fine drizzle dampens the street; distant vendors and pedestrians appear faintly under the grey light, conveying a busy but muted commercial-strip scene.",
+  "lighting": {
+    "conditions": "Flat, dim overcast daylight with light drizzle.",
+    "direction": "Diffuse light from a uniformly grey sky, evenly front-lighting the pedestrian.",
+    "shadows": "Soft, nearly shadowless diffuse light; a faint wet sheen on the asphalt gives weak reflections rather than hard shadows.",
+    "illumination_effect": "Flat grey illumination with a faint wet sheen; the red stop sign shirt graphic reads clearly as the strongest color in the muted scene."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the commercial strip, the pedestrian on the right sidewalk among painted shopfronts; the wet-sheened lane leads toward the grey vanishing point.",
+    "color_scheme": "Muted grey sky and wet asphalt against brightly painted but rain-dulled shopfronts, with the red stop sign on the shirt as a vivid focal accent.",
+    "mood_atmosphere": "Calm, damp, everyday commercial-strip drive.",
+    "patterns": "Repeating painted shopfronts, hand-lettered signs, overhead wires, and roll-down shutters."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the drizzly strip, with the pedestrian clearly resolved against the faint wet sheen.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario on a drizzly Latin American commercial strip demonstrating a stationary pedestrian on the curb with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the Latin American commercial strip under overcast drizzle; the pedestrian appears ahead on the right sidewalk, facing the vehicle, with a stop sign clearly visible on their shirt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed through the fine drizzle; the pedestrian grows larger in frame but stays stationary on the curb."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the wet-sheened asphalt; the pedestrian remains on the curb and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's long-sleeve shirt, framed by the open jacket and reading clearly against the muted drizzly backdrop.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on worn wet-sheened asphalt under flat overcast drizzle, approaching the stationary pedestrian on the right curb amid painted shopfronts whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches through the drizzle; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its lane; the pedestrian remains on the curb and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a drizzly Latin American commercial strip of worn wet-sheened asphalt with brightly painted shops, the ego vehicle moving steadily forward; a pedestrian stands on the right sidewalk facing the camera, a red stop sign clearly printed on their shirt beneath an open jacket. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the curb in the fine drizzle. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the strip continues ahead.",
+  "audio_description": "Ambient commercial-strip driving sounds in drizzle: a steady engine hum, tire noise on damp asphalt, a faint patter of drizzle, and distant street chatter. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

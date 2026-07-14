@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags on the damp road, soft and pale in the fog, lightly crumpled and partially lifted by the still air",
+      "appearance_details": "Thin, semi-transparent plastic looking soft, dim, and indistinct in the mist, edges barely defined and creased, half-dissolved into the grey haze, damp from the humid air",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a foggy rural two-lane forest road",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane road winding through forest in the dim light before dawn, thick fog hanging between the tree trunks and drifting across the damp asphalt. The narrow road has a faded centerline and no markings at the edges; dark evergreens and autumn-bare hardwoods crowd close on both sides. Visibility is low, the road fading into grey mist a short distance ahead. The asphalt is damp and dark, strewn with fallen leaves.",
+  "lighting": {
+    "conditions": "Pre-dawn dim light in dense fog",
+    "direction": "Weak, sourceless ambient glow diffused evenly through the fog",
+    "shadows": "No distinct shadows; the fog scatters the faint light uniformly",
+    "illumination_effect": "Dim, desaturated grey-blue light with heavy atmospheric haze; the two translucent bags look soft, pale, and indistinct, half-dissolved into the mist as they drift over the damp road"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the road fading into fog near center, hood edge anchoring the bottom, the two bags dim in the central foreground",
+    "color_scheme": "Desaturated grey-blues and dim greens of fog and forest, dark damp asphalt, muted brown leaves, and faint pale bags",
+    "mood_atmosphere": "Still, hushed, eerie pre-dawn forest drive",
+    "patterns": "Receding tree trunks fading into fog and a single faint centerline"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Shallow, the background dissolving quickly into fog",
+    "focus": "The near damp road and the two faint bags in the central foreground; the mist blurs everything beyond a short distance",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the foggy forest road; two stray polythene bags emerge faintly ahead from the mist, pale as they flutter."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the damp road as the gap closes in the fog."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift back into the mist."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the foggy rural forest road in dim pre-dawn light; two pale polythene bags emerge faintly ahead from the mist.",
+      "key_changes": "Bags appear dimly in the central foreground and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble across the damp road surface in the fog.",
+      "key_changes": "Bags shift and lift slightly, soft against the mist.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside into the fog.",
+      "key_changes": "Bags fade out of central frame; the misty road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a foggy rural two-lane forest road in the dim light before dawn, the damp asphalt fading into grey mist a short distance ahead. Within the first two seconds, two translucent polythene bags emerge faintly in the central foreground, soft and pale in the fog as they lift and flutter. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the damp road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift back into the mist, the road ahead remaining faintly visible through the fog.",
+  "audio_description": "Ambient quiet pre-dawn forest sounds: the muffled hum of the engine and tires on damp asphalt, deadened by the fog, faint drips and still air, distant birdcall. No speech or music; the soft muted rustle of plastic bags in the humid stillness.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

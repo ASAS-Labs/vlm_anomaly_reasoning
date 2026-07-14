@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails, their surfaces lightly coated in fine construction dust that dulls the harsh midday highlights",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A North American road construction zone at bright dusty midday. The patched, worn asphalt road stretches ahead with temporary lane markings, flanked by orange barrels, jersey barriers, idle earth-moving equipment, and gravel shoulders raising fine dust. No stop sign is present anywhere in the scene. The sky is bright and clear but hazed with drifting construction dust, lending a busy, sun-baked worksite ambiance.",
+  "lighting": {
+    "conditions": "Harsh bright midday sun diffused by drifting dust",
+    "direction": "High overhead sunlight, softened and scattered where dust drifts",
+    "shadows": "Crisp short shadows softened at the edges where dust haze diffuses the light",
+    "illumination_effect": "Bright, slightly hazed illumination with dust-dusted highlights on the balloon surfaces and patched asphalt"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective down the coned-off construction lane, dust drifting in the sunlight, balloons in the lower-center foreground",
+    "color_scheme": "Dusty tans and greys of patched asphalt and gravel, safety-orange barrels, bright sky, accented by the dust-dulled pastel pink and blue of the balloons",
+    "mood_atmosphere": "Busy, gritty, mildly whimsical",
+    "patterns": "Repeating orange barrels and jersey barriers channeling the lane"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Road surface and balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the coned-off construction lane at dusty midday; two pastel balloons appear ahead, drifting and rolling on the patched asphalt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by a dusty gust, rolling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons within the coned lane, maintaining smooth motion as it continues through the work zone."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the barrel-lined construction zone under harsh dusty midday sun; two medium-sized dust-coated balloons drift and roll ahead at ground level, pushed around by dusty gusts.",
+      "key_changes": "Balloons enter the coned path and shift positions due to dusty wind gusts",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons within the coned lane, steering slightly while continuing forward smoothly.",
+      "key_changes": "Subtle lateral steering to avoid balloons; work-zone lane continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a barrel-lined road construction zone under harsh dusty midday sun; two dust-coated pastel party balloons appear ahead on the patched asphalt. By 0:02 a dusty gust tosses the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons within the coned lane, maintaining its smooth path and continuing through the work zone without stopping.",
+  "audio_description": "Ambient construction-zone driving sounds: the hum of the engine and tires on patched asphalt, distant idling machinery and backup beepers, a dusty gust of wind, and gravel crunch. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

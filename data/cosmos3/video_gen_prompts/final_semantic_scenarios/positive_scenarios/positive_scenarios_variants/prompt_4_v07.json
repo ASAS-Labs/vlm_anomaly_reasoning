@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails, their surfaces flecked with clinging snowflakes and dulled under the flat winter light as they tumble over the snow",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and tumbling over the snow-packed road, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A Scandinavian residential street on an overcast winter day during snowfall. The snow-packed road stretches ahead with lane markings buried under white, flanked by snow-laden hedges, timber houses, parked cars under snow caps, and bare frosted trees. No stop sign is present anywhere in the scene. The sky is a flat pale white with falling snow, lending a quiet, muffled wintry ambiance.",
+  "lighting": {
+    "conditions": "Flat dim overcast winter daylight with falling snow",
+    "direction": "Soft omnidirectional light, no distinct sun direction",
+    "shadows": "Essentially shadowless; the snow and overcast flatten all contrast",
+    "illumination_effect": "Bright but flat white illumination with cold, low-contrast highlights on the snow-flecked balloon surfaces and snow-packed road"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective along the snow-covered street, softly veiled by falling snow, balloons tumbling in the lower-center foreground",
+    "color_scheme": "Whites and cold pale greys of snow and sky, dark timber accents, accented by the snow-dusted pastel pink and blue of the balloons",
+    "mood_atmosphere": "Quiet, muffled, mildly whimsical",
+    "patterns": "Falling snowflakes and snow-capped rooflines and hedges"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Moderate, with falling snow softening the background",
+    "focus": "Road surface and snow-flecked balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the snow-packed residential street; two pastel balloons appear ahead, drifting and tumbling over the snow."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by a cold wintry gust, tumbling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the snowy street."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the snow-packed Scandinavian residential street under overcast snowfall; two medium-sized snow-flecked balloons drift and tumble ahead at ground level, pushed around by cold gusts.",
+      "key_changes": "Balloons enter the path and tumble to new positions in the wintry gusts",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly while continuing forward smoothly along the snowy lane.",
+      "key_changes": "Subtle lateral steering to avoid balloons; snow-packed road continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a snow-packed Scandinavian residential street under falling snow; two snow-flecked pastel party balloons appear ahead. By 0:02 a cold wintry gust tosses the balloons, tumbling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the snowy street without stopping.",
+  "audio_description": "Ambient snowy driving sounds: the muffled hum of the engine and the crunch of tires on snow-packed road, softly falling snow hushing the scene, and cold gusts of wind. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

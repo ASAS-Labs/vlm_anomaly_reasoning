@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle in the opposite lane, identifiable mainly by its intensely bright high-beam headlights piercing through the darkness; the body of the car is obscured behind the glare, only faint hints of a dark sedan silhouette visible around the light source",
+      "appearance_details": "Two blinding white-blue circular headlight pools with prominent lens-flare star artifacts, halation, and bloom radiating outward; faint amber side marker glow",
+      "relationship": "The source of glare impairing the ego vehicle's visibility; travels directly opposite the ego on the shared desert highway",
+      "location": "center to slightly left of frame, approaching from background to midground",
+      "relative_size": "Small within frame growing to Medium within frame as it nears",
+      "orientation": "Front-facing toward the camera, headlights aimed directly at the ego viewpoint",
+      "pose": "",
+      "action": "Approaching on the opposite lane with high beams on, then passing by",
+      "state_changes": "Grows from a stark faint point to a blinding bloom as it nears the low rise, peaks at closest approach, then sweeps past to the left and recedes into the desert dark",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, represented only by its interior dashboard edge and the forward illumination of its own headlights spilling onto the road ahead",
+      "appearance_details": "Faint dashboard reflection along the bottom edge of the frame, twin cones of headlight light spreading over the asphalt and lane markings",
+      "relationship": "The point-of-view vehicle through which the entire scene is observed",
+      "location": "implied at camera position, dashboard at bottom foreground",
+      "relative_size": "Large within frame (occupying viewpoint)",
+      "orientation": "Facing forward down the road in the driving direction",
+      "pose": "",
+      "action": "Driving the desert highway, lifting over a long low rise, then continuing while slowing and resuming speed",
+      "state_changes": "Decelerates significantly during peak glare, then accelerates back to nominal cruising speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An open desert highway in the arid Southwest on a clear, moonless night, a flat two-lane ribbon of dry cracked asphalt cutting across empty scrubland with no central divider. Faded lane markings and cracked patches show under the headlights; low creosote and scattered rock lie beyond the shoulder. A brilliant star field arcs overhead. The highway runs dead-flat then lifts over a long low rise ahead, the crest briefly hiding then revealing the oncoming lane across miles of dark plain. Beyond the light cones the desert is total blackness.",
+  "lighting": {
+    "conditions": "Clear moonless desert night with only starlight and headlights; dry cracked roadway",
+    "direction": "Ego headlights front-lit across empty asphalt; intense oncoming high-beam glare far ahead and slightly left, isolated in blackness",
+    "shadows": "Sharp long shadows from creosote and rocks racing past the ego light cone, deep black beyond",
+    "illumination_effect": "Twin headlight cones on cracked asphalt against absolute desert dark; oncoming high beams, unobscured by any ambient light, produce overwhelming isolated bloom, sharp starburst flares, and washout"
+  },
+  "aesthetics": {
+    "composition": "Dead-straight highway to a low rise near mid-frame under a star field, oncoming glare a stark point growing upper-center, dashboard edge at bottom",
+    "color_scheme": "Absolute black desert and starlit sky over pale cracked asphalt, cut by harsh isolated white-blue headlight glare",
+    "mood_atmosphere": "Tense, vast, isolating, disorienting, momentarily blinding, cautious",
+    "patterns": "Cracked asphalt patches and faded dashed markings streaking past"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dashcam tracking down the open highway, subtle bob over the low rise, deceleration drift then re-acceleration",
+    "framing": "Wide shot of the road ahead from driver viewpoint",
+    "camera_angle": "Eye-level, fixed forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Road and faded markings ahead, though the isolated glare overwhelms focus at peak brightness",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Demonstration of nighttime oncoming-headlight glare and driver visibility management on a desert highway",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives the open desert highway at nominal speed, distant oncoming headlights appear as a stark faint point past a long low rise"
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "Vehicle lifts over the low rise; oncoming high beams rapidly intensify, flooding the black view with isolated glare and lens artifacts"
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "Ego vehicle slows significantly to manage impaired visibility as the oncoming car passes on the left"
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "Glare clears, empty highway becomes visible again, ego vehicle resumes nominal speed"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Driving the desert highway at steady speed with a stark faint oncoming point past a long low rise",
+      "key_changes": "A distant isolated headlight point begins to appear in the blackness",
+      "camera": "Forward tracking with slight upward pitch on the climb"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Lifting over the low rise as oncoming high beams flare into severe isolated glare",
+      "key_changes": "Rapid increase in brightness, stark bloom and sharp starburst artifacts wash across the frame",
+      "camera": "Subtle bob over the crest, then leveling into descent"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle slows for the passing car, then glare clears and nominal speed resumes",
+      "key_changes": "Deceleration, oncoming vehicle sweeps past left, artifacts fade, highway regains visibility, re-acceleration",
+      "camera": "Slight forward dip during braking, then smooth resumed forward tracking"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dead-flat desert highway on a starlit night, ego headlights over cracked asphalt while a stark faint glow appears past a long low rise. By 0:01 the vehicle lifts over the rise and a pair of oncoming high beams rapidly brightens, isolated in the blackness. Through 0:02-0:03 the view is overwhelmed by stark white-blue glare, sharp lens-flare starbursts, and bloom against total dark. Around 0:03 the ego slows noticeably to cope with impaired visibility as the oncoming car sweeps past on the left. From 0:04 to 0:05 the glare clears, the empty highway reappears, and the ego accelerates back to nominal cruising speed.",
+  "audio_description": "Steady low hum of the engine and tire noise on cracked asphalt, rising then dipping as the vehicle decelerates. Empty desert silence and faint wind, a sharp whoosh of the oncoming vehicle passing; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

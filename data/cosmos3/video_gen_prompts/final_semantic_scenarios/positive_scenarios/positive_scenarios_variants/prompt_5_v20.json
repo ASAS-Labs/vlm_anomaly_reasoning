@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags on the dry concrete approach, shifting from dull pale to amber under the sodium glow, lightly crumpled and partially inflated by the wind funneling toward the portal",
+      "appearance_details": "Thin, semi-transparent plastic dull pale in the flat outdoor light and turning warm amber under the tunnel's sodium lamps, edges fluttering and creased, lightly grimed",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along an urban road toward a tunnel underpass",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An urban road approaching a tunnel underpass on an overcast morning, dry concrete pavement leading from flat grey daylight into the sodium-orange glow of the tunnel mouth ahead. Concrete retaining walls, overhead signage gantries (blank), and a curved tunnel portal frame the approach; rows of sodium lamps recede into the bore. The dim exterior light gives way to warm orange artificial glow as the road dips toward the underpass.",
+  "lighting": {
+    "conditions": "Overcast morning exterior transitioning to sodium-lit tunnel",
+    "direction": "Flat dim daylight outside, giving way to warm overhead sodium lamps in the tunnel",
+    "shadows": "Weak flat shadows outside; warm multiplied lamp-cast shadows toward the portal",
+    "illumination_effect": "A shift from dim flat grey to warm sodium-orange glow; the two translucent bags turn from dull pale to a warm amber cast under the sodium lamps as they skitter toward the tunnel mouth"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the road funneling into the tunnel portal near center, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Flat concrete greys outside grading to warm sodium-orange at the portal, with bags shifting from dull pale to amber-lit",
+    "mood_atmosphere": "Transitional, enclosed, mundane underpass approach",
+    "patterns": "Receding concrete walls, sodium lamp rows, and the curved tunnel portal"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep, the tunnel interior glowing warm beyond the dim portal",
+    "focus": "The road ahead and the two bags in the central foreground through the light transition into the tunnel",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily toward the tunnel underpass; two stray polythene bags appear ahead on the concrete, dull pale as they flutter near the sodium-lit portal."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter toward the tunnel mouth, taking on an amber cast, as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside under the sodium glow."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward toward the tunnel underpass under flat overcast morning light; two dull-pale polythene bags become visible ahead near the sodium-lit portal.",
+      "key_changes": "Bags appear in the central foreground against the concrete and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble toward the tunnel mouth, turning amber under the sodium lamps.",
+      "key_changes": "Bags shift and lift, taking on the warm sodium cast.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside under the glow.",
+      "key_changes": "Bags pass out of central frame; the sodium-lit road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along an urban road toward a tunnel underpass on an overcast morning, dry concrete leading from flat grey daylight into the sodium-orange glow of the portal ahead. Within the first two seconds, two translucent polythene bags come into view in the central foreground, dull pale in the flat light as they lift and flutter near the tunnel mouth. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter toward the portal, taking on a warm amber cast under the sodium lamps. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the sodium-lit road ahead remaining clear.",
+  "audio_description": "Ambient tunnel-approach sounds: the hum of the engine and tires on dry concrete rising into a boomy echo as the walls close in, a wind funneling toward the portal, faint traffic reverberation. No speech or music; the light rustle of plastic bags echoing near the tunnel mouth.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

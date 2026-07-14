@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails, their surfaces catching a warm horizon rim on one side and cool blue dusk ambient on the other",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A North American rural two-lane road over rolling autumn hills at dusk. The dry asphalt road rises and dips ahead with painted lane markings, flanked by harvested fields, wooden fence lines, scattered farmsteads, and golden-brown trees. No stop sign is present anywhere in the scene. The sky transitions from a warm glowing horizon to deepening blue overhead as the light dims, lending a peaceful, rural-dusk ambiance.",
+  "lighting": {
+    "conditions": "Fading dusk light transitioning from warm horizon to cool blue",
+    "direction": "Low warm light on the horizon fading, cool blue ambient rising overhead",
+    "shadows": "Long, softening shadows dimming and cooling as daylight departs",
+    "illumination_effect": "Warm-to-cool transitional illumination with fading highlights on the balloon surfaces and dry asphalt"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective over the rolling road, warm horizon glow beyond a rise, balloons in the lower-center foreground",
+    "color_scheme": "Warm amber horizon deepening to cool blue, golden-brown fields, grey asphalt, accented by the dusk-tinted pastel pink and blue of the balloons",
+    "mood_atmosphere": "Peaceful, transitional, mildly whimsical",
+    "patterns": "Rolling road rises and repeating fence posts receding to the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Deep, with the dimming dusk softening the far background",
+    "focus": "Road surface and dusk-lit balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the rolling rural road at dusk; two pastel balloons appear ahead, drifting and rolling on the dry asphalt in the fading light."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by an evening gust, rolling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues over the rolling hills."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the rolling rural two-lane road at dusk under a warm-to-blue sky; two medium-sized balloons drift and roll ahead at ground level, pushed around by an evening gust.",
+      "key_changes": "Balloons enter the path and shift positions due to evening wind gusts as light dims",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly over a rise while continuing forward smoothly.",
+      "key_changes": "Subtle lateral steering to avoid balloons; rolling road continues ahead into the dusk",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a rolling rural two-lane road at dusk, warm horizon glow deepening to blue overhead; two dusk-tinted pastel party balloons appear ahead on the dry asphalt. By 0:02 an evening gust tosses the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing over the hills without stopping.",
+  "audio_description": "Ambient rural dusk driving sounds: the steady hum of the engine and tires on dry asphalt, an evening breeze over the fields, distant crickets and birdsong settling for night. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

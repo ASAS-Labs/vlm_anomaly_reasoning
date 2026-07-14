@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Glossy latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails and bright reflective highlights from the high midday sun",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A North American suburban arterial road at bright summer midday. The two-lane fresh dark-asphalt road stretches ahead with crisp painted lane markings, flanked by curbside sidewalks, tidy front lawns, parked cars, and low retail signs. Utility poles and traffic lights line the route. No stop sign is present anywhere in the scene. The sky is bright and clear, lending a hot, ordinary suburban daytime ambiance.",
+  "lighting": {
+    "conditions": "Bright clear summer midday sun",
+    "direction": "High overhead sunlight casting short, hard shadows",
+    "shadows": "Crisp, short shadows pooled directly beneath trees, poles, parked cars, and the balloons",
+    "illumination_effect": "Intense even illumination with strong highlights on glossy balloon surfaces and the fresh asphalt"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective centered on the road ahead, vanishing point near the horizon, balloons occupying the lower-center foreground as focal obstacles",
+    "color_scheme": "Dark fresh asphalt, vivid blue sky, green lawns, accented by the pastel pink and blue of the balloons",
+    "mood_atmosphere": "Bright, calm, ordinary, mildly whimsical",
+    "patterns": "Repeating lane markings and roadside parked cars"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Road surface and balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the sunny suburban arterial at midday; two pastel balloons appear ahead, drifting and rolling on the fresh asphalt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by a warm summer breeze, rolling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the bright road."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the suburban arterial under bright midday sun; two medium-sized balloons drift and roll ahead at ground level, pushed around by a warm breeze.",
+      "key_changes": "Balloons enter the path and shift positions due to breezy gusts",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly while continuing forward smoothly along its lane.",
+      "key_changes": "Subtle lateral steering to avoid balloons; road continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along a bright, clear suburban arterial at summer midday with short hard shadows; two glossy pastel party balloons appear ahead on the fresh asphalt. By 0:02 a warm breeze tosses the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the road without stopping.",
+  "audio_description": "Ambient suburban driving sounds: the steady hum of the engine and tires on dry asphalt, occasional distant traffic, chirping summer insects, and a soft warm breeze. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

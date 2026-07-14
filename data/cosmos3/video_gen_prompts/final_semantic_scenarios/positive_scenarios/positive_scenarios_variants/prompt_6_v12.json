@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle in the opposite lane, identifiable mainly by its intensely bright high-beam headlights piercing through the darkness; the body of the car is obscured behind the glare, only faint hints of a dark sedan silhouette visible around the light source",
+      "appearance_details": "Two blinding white-blue circular headlight pools with prominent lens-flare star artifacts, halation, and bloom radiating outward; faint amber side marker glow",
+      "relationship": "The source of glare impairing the ego vehicle's visibility; travels the opposite carriageway across the median from the ego",
+      "location": "center to slightly left of frame, approaching from background to midground",
+      "relative_size": "Small within frame growing to Medium within frame as it nears",
+      "orientation": "Front-facing toward the camera, headlights aimed directly at the ego viewpoint",
+      "pose": "",
+      "action": "Approaching on the opposite lane with high beams on, then passing by",
+      "state_changes": "Grows brighter and larger as it nears across the median past the overpass rise, peaks in glare at closest approach, then sweeps past to the left and recedes, glare clearing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, represented only by its interior dashboard edge and the forward illumination of its own headlights spilling onto the road ahead",
+      "appearance_details": "Faint dashboard reflection along the bottom edge of the frame, twin cones of headlight light spreading over the asphalt and lane markings",
+      "relationship": "The point-of-view vehicle through which the entire scene is observed",
+      "location": "implied at camera position, dashboard at bottom foreground",
+      "relative_size": "Large within frame (occupying viewpoint)",
+      "orientation": "Facing forward down the road in the driving direction",
+      "pose": "",
+      "action": "Driving the expressway, lifting over an overpass rise, then continuing while slowing and resuming speed",
+      "state_changes": "Decelerates significantly during peak glare, then accelerates back to nominal cruising speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A flat N.American expressway on a clear summer night, a wide multi-lane divided highway of fresh dry asphalt with crisp reflective lane striping and reflective delineator posts. Sparse mast lighting glows at intervals; low sound walls and dark median flank the lanes. The expressway runs level then lifts over an overpass rise ahead, a crest that briefly hides then reveals the oncoming carriageway. Beyond the mast lights the corridor fades into open dark with distant tail-light strings.",
+  "lighting": {
+    "conditions": "Clear summer night on a lit expressway with sparse mast lighting; dry fresh roadway",
+    "direction": "Ego headlights front-lit; intense oncoming high-beam glare from across the median ahead and slightly left",
+    "shadows": "Faint pooled shadows under mast lights, crisp on fresh asphalt",
+    "illumination_effect": "Reflective striping and delineators sparkle under headlights; oncoming high beams across the median produce overwhelming bloom, sharp starburst flares, and washout"
+  },
+  "aesthetics": {
+    "composition": "Wide expressway to an overpass rise near mid-frame, oncoming glare across the median dominating upper-center, dashboard edge at bottom",
+    "color_scheme": "Deep night blue and dark median over pale fresh asphalt with sparkling striping, cut by harsh white-blue headlight glare",
+    "mood_atmosphere": "Tense, fast, disorienting, momentarily blinding, cautious",
+    "patterns": "Reflective lane striping and delineator posts streaking past"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dashcam tracking at highway speed, subtle bob over the overpass rise, deceleration drift then re-acceleration",
+    "framing": "Wide shot of the road ahead from driver viewpoint",
+    "camera_angle": "Eye-level, fixed forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Road and reflective striping ahead, though glare overwhelms focus at peak brightness",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Demonstration of nighttime oncoming-headlight glare and driver visibility management on a divided expressway",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives the expressway at nominal speed, distant oncoming headlights appear faint across the median past an overpass rise"
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "Vehicle lifts over the overpass rise; oncoming high beams rapidly intensify, flooding the view with glare and lens artifacts"
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "Ego vehicle slows significantly to manage impaired visibility as the oncoming car passes on the left across the median"
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "Glare clears, expressway becomes visible again, ego vehicle resumes nominal speed"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Driving the expressway at steady speed with faint oncoming light growing across the median past an overpass rise",
+      "key_changes": "Distant headlights begin to appear beyond the mast lights",
+      "camera": "Forward tracking with slight upward pitch on the climb"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Lifting over the overpass rise as oncoming high beams flare into severe glare",
+      "key_changes": "Rapid increase in brightness, bloom and starburst artifacts wash across the frame",
+      "camera": "Subtle bob over the crest, then leveling into descent"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle slows for the passing car, then glare clears and nominal speed resumes",
+      "key_changes": "Deceleration, oncoming vehicle sweeps past left across the median, artifacts fade, expressway regains visibility, re-acceleration",
+      "camera": "Slight forward dip during braking, then smooth resumed forward tracking"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a flat expressway at night, ego headlights over sparkling reflective striping while faint oncoming glow appears past an overpass rise. By 0:01 the vehicle lifts over the rise and a pair of oncoming high beams across the median rapidly brightens. Through 0:02-0:03 the view is overwhelmed by white-blue glare, sharp lens-flare starbursts, and bloom. Around 0:03 the ego slows noticeably to cope with impaired visibility as the oncoming car sweeps past on the left. From 0:04 to 0:05 the glare clears, the expressway reappears, and the ego accelerates back to nominal cruising speed.",
+  "audio_description": "Steady higher hum of the engine and rushing tire noise at expressway speed, dropping as the vehicle decelerates. Wind roar past the vehicle, a fast whoosh of the oncoming vehicle passing across the median; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

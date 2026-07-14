@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "description": "A single overhead-arm traffic light mounted on a metal post at an urban intersection, with three vertically stacked lamps housed in a black casing",
+      "appearance_details": "The top red lamp is brightly illuminated; the central amber and lower green lamps remain dark and unlit. A weathered gray-galvanized metal pole, tinted by the warm tunnel glow, supports the signal head whose lit red lamp glows clearly before the underpass, with a small bundle of party balloons tied near the base of the signal arm",
+      "relationship": "Primary scene-controlling object that governs the vehicle's stopping behavior; the balloons are attached to its post",
+      "location": "center-right foreground, mounted above the road",
+      "relative_size": "Medium within frame",
+      "orientation": "Signal head faces directly toward the camera/vehicle",
+      "pose": "Static, mounted upright on the post",
+      "action": "Displaying a steady red signal",
+      "state_changes": "No significant change; red remains lit, amber and green stay off throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A bundle of vibrant party balloons tied to the traffic-light post, swaying gently in the wind",
+      "appearance_details": "Mixed colors including bright green, red, blue, and yellow latex balloons with curling ribbon; their latex picking up a warm sodium-orange tint from the tunnel glow; one bright green balloon is positioned so it physically overlaps and partially covers the illuminated red lamp",
+      "relationship": "Attached to the traffic-light post; one balloon physically overlaps the red lamp without affecting the vehicle's compliance",
+      "location": "center-right foreground, around the traffic-light post and signal head",
+      "relative_size": "Small within frame",
+      "orientation": "Floating and drifting, facing no particular direction",
+      "pose": "Suspended on ribbons, clustered together",
+      "action": "Swaying and bobbing in the breeze, with the green balloon overlapping the red lamp",
+      "state_changes": "The balloons sway in the wind; the green balloon remains overlapping the red lamp throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle from which the dashcam-style point of view originates, implied rather than visible",
+      "appearance_details": "Visible only as a slight dashboard edge and hood at the bottom of the frame; a modern passenger car, its hood picking up a warm sodium-orange tint near the tunnel mouth",
+      "relationship": "The observer vehicle approaching and stopping at the red light",
+      "location": "implied bottom foreground (ego perspective)",
+      "relative_size": "Small within frame",
+      "orientation": "Facing forward toward the intersection",
+      "pose": "Driving forward then decelerating to a stop",
+      "action": "Approaching the intersection and coming to a safe, compliant stop at the red light",
+      "state_changes": "Transitions from forward motion to a complete, smooth stop before the stop line.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An urban tunnel-underpass approach intersection on an overcast morning, the roadway dipping toward a sodium-lit tunnel mouth. The dry concrete surface bears a painted white stop line and lane markings, flanked by retaining walls and the dim tunnel entrance ahead. A single traffic light on a metal post governs the crossing before the underpass, with a colorful bundle of party balloons tied to it. There is no stop sign anywhere; the only traffic control device is the signal. Dim overcast daylight gives way to a warm sodium-orange glow spilling from the tunnel, and the red lamp glows clearly against it.",
+  "lighting": {
+    "conditions": "Overcast morning transitioning to sodium-orange tunnel light",
+    "direction": "Flat overcast skylight above, warm sodium glow spilling from the tunnel mouth ahead",
+    "shadows": "Soft ambiguous shadows blending flat daylight with the warm tunnel glow beneath the post and balloons",
+    "illumination_effect": "Dim overcast light mixing with warm sodium-orange tunnel glow under which the illuminated red lamp glows clearly and balloons pick up a warm underpass tint"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view framing with the road dipping toward the sodium-lit tunnel mouth and the traffic light center-right before it; balloons cluster around the signal head with the green balloon overlapping the red lamp against the warm tunnel glow",
+    "color_scheme": "Muted urban palette of grey overcast and concrete warmed by sodium-orange tunnel light, with the red lamp and warmly tinted balloons as accents",
+    "mood_atmosphere": "Urban, transitional, subdued, faintly whimsical from the festive balloons at the tunnel mouth",
+    "patterns": "Repeating lane markings converging toward the tunnel, retaining-wall lines, and rounded clustered balloon shapes"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward dolly motion mimicking the vehicle approaching, decelerating to static",
+    "framing": "Wide shot from driver's eye-level perspective",
+    "camera_angle": "Eye-level ego/dashcam angle",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the traffic light, red lamp, and overlapping green balloon against the warm tunnel glow",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam style",
+  "context": "Autonomous-driving / traffic-compliance scenario illustrating correct red-light stopping despite a visual occlusion by a balloon",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle moves forward along the urban road on an overcast morning toward the tunnel-underpass approach, approaching the intersection where the red light glows before the sodium-lit tunnel mouth and balloons sway on the post."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle begins to decelerate as it nears the stop line before the underpass; the green balloon clearly overlaps the red lamp while the amber and green lamps stay off."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle comes to a complete, safe stop at the red light and remains stationary as the balloons continue to sway against the warm tunnel glow."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view approaches the tunnel-underpass intersection on an overcast morning; the single traffic light displays a steady red before the sodium-lit tunnel mouth, with party balloons tied to the post swaying in the draft.",
+      "key_changes": "Forward motion brings the traffic light and balloons closer toward the tunnel; the green balloon's overlap with the red lamp becomes apparent against the warm glow.",
+      "camera": "Slow forward dolly at eye-level"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle decelerates while nearing the painted stop line on dry concrete before the underpass; the red lamp stays lit and the green balloon physically overlaps it.",
+      "key_changes": "Speed reduces noticeably as the warm tunnel glow strengthens; the overlapping balloon is clearly framed.",
+      "camera": "Forward motion slowing to near-static"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle reaches a full, compliant stop at the red light and holds position; balloons continue to gently sway against the tunnel glow.",
+      "key_changes": "Vehicle fully stationary; only the balloons move in the tunnel draft.",
+      "camera": "Static, holding the framing"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam ego view rolls forward along an urban road on an overcast morning toward a tunnel-underpass approach, where a single traffic light glows steady red before the sodium-lit tunnel mouth, with a bundle of colorful party balloons tied to its post swaying in the draft. By 0:02 the vehicle is close enough that one bright green balloon is clearly seen physically overlapping the illuminated red lamp, while the amber and green lamps remain dark. The vehicle begins to slow as it approaches the painted stop line before the underpass. From 0:03 to 0:05 the vehicle completes a smooth, safe, compliant stop at the red light and stays stationary, the balloons still gently bobbing against the warm sodium-orange tunnel glow.",
+  "audio_description": "Ambient underpass-approach sounds: a low urban hum amplifying toward the tunnel, distant echoing traffic, a faint draft from the tunnel mouth, the soft mechanical whir of the decelerating vehicle and a subtle brake sound as it stops. Light rustle of balloon ribbons. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

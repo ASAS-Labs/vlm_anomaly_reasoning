@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A small child wearing a bright red hooded jacket with the hood up and dark trousers, stepping off the roadside to cross the foggy hamlet street directly in the vehicle's path",
+      "appearance_details": "Carries a small backpack, wears rubber boots damp with dew; the red jacket the one vivid shape in the mist, hood raised",
+      "relationship": "The pedestrian hazard that prompts the ego vehicle to brake; the central reason for the deceleration event",
+      "location": "Center foreground, crossing from right sidewalk into the road",
+      "relative_size": "Small within frame",
+      "orientation": "Profile view, facing left as the child walks across the road",
+      "pose": "Mid-stride, one leg forward, arms slightly swinging while walking",
+      "action": "Steps off the sidewalk and begins crossing the road",
+      "state_changes": "Moves from curb into roadway, continuing across the vehicle's path and pausing briefly mid-road",
+      "clothing": "Bright red hooded jacket with hood up, dark trousers, rubber boots, small backpack",
+      "expression": "Unaware and casual, looking ahead across the street",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Fair, smooth youthful skin cool in the misty light",
+      "facial_features": "Round face partly veiled by mist and the raised hood, small features",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A few parked pickups and older cars along the gravel-edged curbs of the hamlet street, half-dissolved in fog",
+      "appearance_details": "Weathered pickups and older sedans in dark, muted colors, their outlines softened and dulled by the drifting mist",
+      "relationship": "Part of the residential environment; potential occlusion that hides the child until they step out",
+      "location": "Left and right midground along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel-parked, facing toward and away from camera along the road edges",
+      "pose": "Stationary at the curb",
+      "action": "Remain parked and motionless",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A small forested-hamlet residential street in rural North America in dim pre-dawn fog. A handful of timber and clapboard cottages sit among tall pines and bare autumn trees along a narrow two-lane road of damp asphalt. Low mist hangs between the trunks, softening a few parked pickups and older cars along the gravel-edged curbs. A porch light or two glows faintly. The damp road shows faded center markings; the diffuse foggy half-light casts no real shadows.",
+  "lighting": {
+    "conditions": "Dim pre-dawn twilight thick with fog and mist",
+    "direction": "Weak, diffuse pre-dawn glow scattered evenly by the fog",
+    "shadows": "No distinct shadows; fog flattens the dim light",
+    "illumination_effect": "Low, cool, misty illumination with drifting fog reducing visibility; the child's red jacket reads as the one strong color emerging from the grey murk"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road vanishing toward the horizon, child positioned in the central lane, parked cars framing the sides",
+    "color_scheme": "Cool grey-blue fog, dark pine silhouettes, damp charcoal asphalt, faint warm porch light, and a muted red accent from the child's jacket",
+    "mood_atmosphere": "Still, hushed foggy pre-dawn calm broken by sudden caution",
+    "patterns": "Receding tree trunks fading into fog, a few parked pickups, drifting mist"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego dashcam motion that decelerates and comes to a complete stop",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Shallow to medium, foreground sharp",
+    "focus": "Sharp on the near road and crossing child; the misty background dissolves into soft grey",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving or ADAS demonstration of pedestrian detection and emergency braking in a residential setting",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward at a moderate speed down the foggy rural hamlet street before dawn."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A small child in a red jacket emerges from the mist, steps off the right roadside and begins crossing into the vehicle's path."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle promptly applies firm, controlled braking on the damp road, decelerating as the nose dips slightly."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped while the child continues across."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "White painted text on the damp asphalt, partially faded and softened by the low fog, still readable up close",
+      "spatial_temporal": "On the road surface ahead, visible in the center of frame throughout",
+      "context": "Traffic calming marking indicating a low-speed residential zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises forward through the foggy pre-dawn hamlet street, dim pines and parked pickups half-hidden in mist.",
+      "key_changes": "Steady forward motion at moderate speed through fog",
+      "camera": "Forward dashcam motion, smooth and steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A child emerges from the mist and steps into the road; the vehicle begins firm, controlled braking and decelerates rapidly.",
+      "key_changes": "Hazard appears from the fog; speed drops sharply, nose dips under braking",
+      "camera": "Forward motion slowing, slight forward pitch from deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely through the mist.",
+      "key_changes": "Vehicle fully stopped and held stationary in the fog",
+      "camera": "Static, fully stopped viewpoint"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam moves forward down a foggy rural hamlet street before dawn, dim pines and a few parked pickups emerging from the mist. By 0:01 a small child in a bright red jacket steps off the right sidewalk and begins crossing directly ahead out of the murk. From 0:01 to 0:03 the ego vehicle applies firm, controlled braking, slowing with a slight forward pitch on the damp road. By 0:03 the vehicle has stopped completely well before the child, and from 0:03 to 0:05 it holds stationary in the fog while the child crosses safely.",
+  "audio_description": "Muffled pre-dawn forest quiet with faint dripping from wet branches and a distant bird, the low hum of the vehicle over damp asphalt, then firm tire and brake friction as it decelerates, settling into a soft idle deadened by the fog.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

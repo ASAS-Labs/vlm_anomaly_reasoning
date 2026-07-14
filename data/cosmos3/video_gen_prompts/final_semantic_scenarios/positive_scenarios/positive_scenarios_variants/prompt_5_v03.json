@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags at the road's edge near the cobblestone gutter, lightly crumpled and partially inflated by the morning breeze",
+      "appearance_details": "Thin, semi-transparent plastic lit through and glowing warm amber by the low golden sun, edges fluttering and creased, casting long soft shadows toward the west",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a tree-lined old-town boulevard lane",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A tree-lined boulevard in a European old town at golden-hour morning under a clear sky, a single lane each way edged by cobblestone gutters where the asphalt meets the stone. Rows of plane trees in fresh spring bloom arch overhead; ornate low stone facades, iron balconies, and cafe awnings line the sides. The warm low eastern sun rakes down the street, throwing long shadows of trunks and lampposts across the pavement.",
+  "lighting": {
+    "conditions": "Clear golden-hour morning sunlight",
+    "direction": "Warm low sun from the east, raking along the boulevard",
+    "shadows": "Long, soft-edged golden shadows of trees and lampposts stretching across the asphalt",
+    "illumination_effect": "Warm amber light gilds the facades and blossoms; the two translucent bags glow warmly, lit through by the low sun as they drift over the stone-edged road"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the boulevard vanishing toward a central point, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Warm ambers and honey tones on pale stone facades, fresh spring green blossom, long violet shadows, and warmly lit translucent bags",
+    "mood_atmosphere": "Serene, picturesque early-morning old-town drive",
+    "patterns": "Arching rows of plane trees, rhythmic lampposts, and cobblestone gutter edges"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the polythene bags in the central foreground",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the golden-lit boulevard; two stray polythene bags appear ahead near the cobblestone gutter, glowing warm as they flutter."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter along the stone-edged road as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside in the morning breeze."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the tree-lined old-town boulevard in golden-hour light; two polythene bags become visible ahead, tossed by the breeze near the gutter.",
+      "key_changes": "Bags appear in the central foreground, glowing warm in the low sun, and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble along the stone-edged road surface.",
+      "key_changes": "Bags shift and lift slightly in gusts, casting long shadows.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "key_changes": "Bags pass out of central frame; the road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a tree-lined European old-town boulevard at golden-hour morning, long shadows of blossoming plane trees striping the stone-edged asphalt. Within the first two seconds, two translucent polythene bags come into view in the central foreground, glowing warm amber as the low sun shines through them while they lift and flutter. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter along the road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the boulevard ahead remaining clear in the warm morning light.",
+  "audio_description": "Ambient quiet old-town morning sounds: the soft hum of the engine and tires over asphalt and cobble edges, a gentle breeze in the blossoming trees, faint birdsong and distant cafe murmur. No speech or music; the light rustle of plastic bags in the breeze.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

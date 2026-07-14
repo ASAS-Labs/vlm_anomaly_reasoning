@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A small child wearing a bright red hooded winter jacket over warm layers, a knit hat, and waterproof trousers, stepping off the curb to cross the slushy street directly in the vehicle's path",
+      "appearance_details": "Carries a small backpack, wears rubber snow boots splashed with slush; the bright red jacket vivid in the grey murk, hat added for the cold",
+      "relationship": "The pedestrian hazard that prompts the ego vehicle to brake; the central reason for the deceleration event",
+      "location": "Center foreground, crossing from right sidewalk into the road",
+      "relative_size": "Small within frame",
+      "orientation": "Profile view, facing left as the child walks across the road",
+      "pose": "Mid-stride, one leg forward, arms slightly swinging while walking",
+      "action": "Steps off the sidewalk and begins crossing the road",
+      "state_changes": "Moves from curb into roadway, continuing across the vehicle's path and pausing briefly mid-road",
+      "clothing": "Bright red hooded winter jacket, knit hat, warm layers, waterproof trousers, rubber snow boots, small backpack",
+      "expression": "Unaware and casual, looking ahead across the street",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Fair, smooth youthful skin with cold-reddened cheeks",
+      "facial_features": "Round face under a knit hat, light hair, small features, cold-flushed cheeks",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A few slush-splashed parked cars along the curbs of the Scandinavian street near the intersection",
+      "appearance_details": "Sedans and a wagon in muted colors, their lower panels streaked with grey-brown slush, roofs holding half-melted snow",
+      "relationship": "Part of the residential environment; potential occlusion that hides the child until they step out",
+      "location": "Left and right midground along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel-parked, facing toward and away from camera along the road edges",
+      "pose": "Stationary at the curb",
+      "action": "Remain parked and motionless",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A Scandinavian residential street near a small intersection under a dim, murky overcast winter afternoon, with sleet falling and slush on the road. Rendered apartment houses in muted greys and ochres line a two-lane road coated in grey-brown slush and half-melted snow at the curbs. A traffic-island crossing sits near the corner; a few slush-splashed parked cars line the edges, and sidewalks are heaped with dirty snow beside the homes. The flat, cold grey light casts no shadows over the slushy road and its wet center markings.",
+  "lighting": {
+    "conditions": "Dim, murky overcast winter afternoon with falling sleet",
+    "direction": "Flat, weak light from a heavy grey sky, no direct sun",
+    "shadows": "No distinct shadows; the murky overcast flattens the low light",
+    "illumination_effect": "Cold, low-contrast grey murk with a wet sheen on the slush; the child's red jacket stands out sharply against the drab, dim street"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road vanishing toward the horizon, child positioned in the central lane, parked cars framing the sides",
+    "color_scheme": "Cold greys and dirty white slush, muted ochre facades, wet grey-brown road, and a vivid red accent from the child's jacket in the murk",
+    "mood_atmosphere": "Cold, dreary, slushy winter-afternoon calm broken by sudden caution",
+    "patterns": "Repeating grey apartment houses, slush-splashed parked cars, heaped dirty snowbanks, the corner crossing"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego dashcam motion that decelerates and comes to a complete stop",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the slushy road and crossing child; the dim sleety distance softly muted",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving or ADAS demonstration of pedestrian detection and emergency braking in a residential setting",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward at a moderate speed down the slushy Scandinavian residential street near the intersection in dim sleet."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A small child in a red jacket steps off the right sidewalk and begins crossing into the vehicle's path."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle promptly applies firm, controlled braking through the wet slush, decelerating as the nose dips slightly."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped while the child continues across."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "White painted text on the slushy road, partly obscured by wet grey-brown slush yet still readable where tires have cleared it",
+      "spatial_temporal": "On the road surface ahead, visible in the center of frame throughout",
+      "context": "Traffic calming marking indicating a low-speed residential zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises forward through the slushy Scandinavian street near the corner, grey houses and slush-splashed parked cars in the dim sleet.",
+      "key_changes": "Steady forward motion at moderate speed through slush",
+      "camera": "Forward dashcam motion, smooth and steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A child steps off the sidewalk into the road; the vehicle begins firm, controlled braking through the slush and decelerates rapidly.",
+      "key_changes": "Hazard appears; speed drops sharply, nose dips, slush spray",
+      "camera": "Forward motion slowing, slight forward pitch from deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely through the sleet.",
+      "key_changes": "Vehicle fully stopped and held stationary in the sleet",
+      "camera": "Static, fully stopped viewpoint"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam moves forward down a slushy Scandinavian residential street near an intersection in dim sleet, grey apartment houses and slush-splashed parked cars along the murky road. By 0:01 a small child in a bright red jacket steps off the right sidewalk and begins crossing directly ahead. From 0:01 to 0:03 the ego vehicle applies firm, controlled braking through the slush, slowing with a slight forward pitch. By 0:03 the vehicle has stopped completely well before the child, and from 0:03 to 0:05 it holds stationary in the sleet while the child crosses safely.",
+  "audio_description": "Cold sleety hush with the slap of tires through slush and faint sleet ticking, the low hum of the vehicle, then firm brake and tire friction through the wet slush as it decelerates, settling into a low idle muffled by the falling sleet.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

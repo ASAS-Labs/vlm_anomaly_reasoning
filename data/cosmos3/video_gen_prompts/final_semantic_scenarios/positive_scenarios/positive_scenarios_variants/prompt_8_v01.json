@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A small child wearing a bright red hooded jacket with the hood up against the rain and dark jeans, stepping off the curb to cross the wet downtown street directly in the vehicle's path",
+      "appearance_details": "Carries a small backpack, wears rain-beaded sneakers; the red jacket glistens under the streetlight, hood drawn up",
+      "relationship": "The pedestrian hazard that prompts the ego vehicle to brake; the central reason for the deceleration event",
+      "location": "Center foreground, crossing from right sidewalk into the road",
+      "relative_size": "Small within frame",
+      "orientation": "Profile view, facing left as the child walks across the road",
+      "pose": "Mid-stride, one leg forward, arms slightly swinging while walking",
+      "action": "Steps off the sidewalk and begins crossing the road",
+      "state_changes": "Moves from curb into roadway, continuing across the vehicle's path and pausing briefly mid-road",
+      "clothing": "Bright red hooded jacket with hood up, dark jeans, rain-damp sneakers, small backpack",
+      "expression": "Unaware and casual, looking ahead across the street",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Medium brown, smooth youthful skin damp with rain",
+      "facial_features": "Round face partly shadowed by the raised hood, small features",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "Parked passenger cars lining both curbs of the downtown residential street, rain-beaded and reflecting the streetlights",
+      "appearance_details": "A mix of sedans and compact SUVs in dark city colors, wet roofs catching neon and lamplight, parked bumper to bumper",
+      "relationship": "Part of the residential environment; potential occlusion that hides the child until they step out",
+      "location": "Left and right midground along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel-parked, facing toward and away from camera along the road edges",
+      "pose": "Stationary at the curb",
+      "action": "Remain parked and motionless",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet downtown residential cross-street on a rainy autumn night in a North American grid city. Brick row houses and low brownstone apartments with stoops line both sides of a two-lane street, their windows glowing warmly. Streetlights and distant neon storefront signs cast colored reflections across the wet, worn asphalt. Parked cars sit bumper to bumper along both curbs; sidewalks run behind narrow tree pits with bare-limbed street trees. Faded center lane markings shimmer under a thin film of rain.",
+  "lighting": {
+    "conditions": "Rainy night under mixed streetlight and neon",
+    "direction": "Downward pools from overhead sodium and white streetlamps, with colored neon spill from the sides",
+    "shadows": "Soft, multiplied shadows from several artificial sources, blurred by rain on the pavement",
+    "illumination_effect": "Wet specular highlights and colored reflections streak the dark asphalt; the child's red jacket glows vividly under a nearby streetlamp"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road vanishing toward the horizon, child positioned in the central lane, parked cars framing the sides",
+    "color_scheme": "Dark wet asphalt with amber streetlight pools and pink-blue neon reflections, warm lit windows, and a vivid red accent from the child's jacket",
+    "mood_atmosphere": "Hushed rainy-night city calm broken by sudden braking tension",
+    "patterns": "Repeating parked cars, streetlamp reflections streaking the wet road, rows of stoops"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego dashcam motion that decelerates and comes to a complete stop",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep but softened by rain",
+    "focus": "Sharp on the road and crossing child; distant neon and rain haze softly blurred",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving or ADAS demonstration of pedestrian detection and emergency braking in a residential setting",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle rolls forward at a moderate speed down the wet, neon-lit downtown residential street at night."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A small child in a red hooded jacket steps off the right sidewalk between parked cars and begins crossing into the vehicle's path."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle promptly applies firm, controlled braking on the wet asphalt, decelerating as the nose dips and headlights sweep low."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped in the rain while the child continues across."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "White painted text on the wet asphalt, partially faded, its edges catching streetlight reflections in the rain",
+      "spatial_temporal": "On the road surface ahead, visible in the center of frame throughout",
+      "context": "Traffic calming marking indicating a low-speed residential zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises forward through the rain-slicked downtown residential street at night, parked cars and glowing windows on both sides.",
+      "key_changes": "Steady forward motion at moderate speed over wet asphalt",
+      "camera": "Forward dashcam motion, smooth and steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A child steps off the sidewalk into the road; the vehicle begins firm, controlled braking, tires hissing on the wet surface as it decelerates.",
+      "key_changes": "Hazard appears; speed drops sharply, nose dips, wet-road spray",
+      "camera": "Forward motion slowing, slight forward pitch from deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely under the streetlights.",
+      "key_changes": "Vehicle fully stopped and held stationary in the rain",
+      "camera": "Static, fully stopped viewpoint"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam glides forward down a rain-slicked downtown residential street at night, streetlights and neon reflecting on the wet asphalt. By 0:01 a small child in a bright red hooded jacket steps off the right sidewalk between parked cars and begins crossing directly ahead. From 0:01 to 0:03 the ego vehicle applies firm, controlled braking, the wet road hissing under the tires as the nose dips. By 0:03 the vehicle has stopped completely well before the child, and from 0:03 to 0:05 it holds stationary in the rain while the child crosses safely.",
+  "audio_description": "Steady patter of light rain and the hiss of tires on wet asphalt, the low hum of the vehicle and faint distant city traffic, then the distinct wet friction of firm braking, settling into the quiet idle of the stopped car with rain drumming on the roof.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

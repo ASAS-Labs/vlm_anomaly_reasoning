@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still at the roadside bus stop on the damp verge, facing the oncoming ego vehicle, wearing an open dark jacket over a long-sleeve shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual rural cool-weather attire with dark jeans and boots; the open jacket keeps the bold stop sign graphic visible on the chest, emerging clearly from the foggy dimness as the headlights reach it.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "Open dark jacket over a long-sleeve shirt printed with a red stop sign, dark jeans, boots.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle's headlights.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, softly and dimly lit under foggy pre-dawn light with faint damp sheen.",
+      "facial_features": "Short dark hair damp with mist, dark eyes, relaxed brow, no distinguishing marks visible in the dim light.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "The forested edge of a rural village at pre-dawn under fog and mist. A two-lane damp asphalt road passes a small roadside bus stop with a short gravel verge and a narrow footpath where a person can stand, bordered by dense autumn woods, a few cottages set back among the trees, and a wooden fence. Fog hangs low, dimming the dark treeline; faint diffuse light seeps from the eastern sky, conveying a still, misty pre-dawn scene.",
+  "lighting": {
+    "conditions": "Dim pre-dawn light heavily diffused by fog and mist.",
+    "direction": "Weak, directionless glow from the overcast pre-dawn sky, gently front-lighting the pedestrian; the ego headlights add near fill.",
+    "shadows": "No hard shadows; fog scatters light into a flat, even dimness.",
+    "illumination_effect": "Muted, low-contrast foggy glow with short visible range; the ego headlights and the near verge keep the red stop sign shirt graphic legible up close."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective into fog down the damp rural road, the pedestrian at the roadside bus stop on the right; the road fades into grey mist toward a short vanishing point.",
+    "color_scheme": "Desaturated greys and blues of fog and dawn, dark autumn woods, with the red stop sign on the shirt as the one vivid accent emerging from the mist.",
+    "mood_atmosphere": "Still, quiet, hushed pre-dawn drive through fog.",
+    "patterns": "Repeating tree silhouettes fading into fog, fence posts, and the near verge edge."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Shallow",
+    "focus": "Sharp on the near damp road and the roadside pedestrian, with the background dissolving quickly into fog.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario on a foggy pre-dawn rural roadside demonstrating a stationary pedestrian at a bus stop with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the foggy rural road at pre-dawn; the pedestrian appears ahead at the right-side bus stop, facing the vehicle, with a stop sign clearly visible on their shirt as the headlights reach it."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed through the mist; the pedestrian grows larger in frame but stays stationary on the damp verge."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the damp asphalt; the pedestrian remains at the roadside and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's long-sleeve shirt, emerging clearly from the fog as the headlights reach the roadside.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on damp asphalt through pre-dawn fog, approaching the stationary pedestrian at the right-side bus stop whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian emerges from the mist and grows progressively larger in frame as the vehicle approaches; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view with short foggy visibility."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its lane; the pedestrian remains on the damp verge and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and back into fog out of frame; vehicle maintains speed and lane position.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a foggy pre-dawn rural road of damp asphalt beside a small bus stop and dark autumn woods, the ego vehicle moving steadily forward; a pedestrian stands at the right roadside facing the camera, a red stop sign printed on their shirt emerging from the mist. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the damp verge. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before dissolving back into fog as the road continues ahead.",
+  "audio_description": "Ambient hushed pre-dawn driving sounds muffled by fog: a steady engine hum, tire noise on damp asphalt, faint dripping and distant birds. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive, muted by the mist.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

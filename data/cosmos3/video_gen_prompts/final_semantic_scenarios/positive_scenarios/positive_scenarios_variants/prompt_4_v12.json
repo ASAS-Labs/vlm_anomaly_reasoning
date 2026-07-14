@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of medium-sized stray party balloons, ordinary balloon size, drifting and rolling along the road surface",
+      "appearance_details": "Glossy latex balloons in soft pastel colors (one pale blue, one light pink), slightly deflated, with small knotted tails and warm golden rim-light along their upper edges from the low morning sun",
+      "relationship": "Obstacles directly ahead of the ego vehicle, being avoided by the driver",
+      "location": "Center to slightly right of frame, on the road ahead at ground level",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling unpredictably, no fixed orientation",
+      "pose": "Resting and rolling on the asphalt, bouncing lightly as wind catches them",
+      "action": "Drifting, rolling, and being tossed across the road by the wind",
+      "state_changes": "Balloons shift positions, roll sideways and bounce slightly as gusts push them; ego vehicle steers gently around them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A North American multi-lane expressway on a clear summer morning at golden hour. The dry, fresh asphalt stretches ahead with crisp painted lane markings, flanked by a wide grass median, guardrails, overhead gantries, and distant low buildings. No stop sign is present anywhere in the scene. The sky is clear with warm low sun, lending an open, fast-moving highway ambiance.",
+  "lighting": {
+    "conditions": "Warm clear golden-hour morning light",
+    "direction": "Low warm sunlight from the east, casting long directional shadows down the highway",
+    "shadows": "Long, crisp golden shadows cast by gantries, guardrails, and the balloons across the asphalt",
+    "illumination_effect": "Warm directional illumination with golden highlights glowing along the glossy balloon surfaces and fresh asphalt"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego perspective down the open expressway, long shadows stretching toward the camera, balloons in the lower-center foreground",
+    "color_scheme": "Warm golden asphalt, green median, clear sky, accented by the warmly lit pastel pink and blue of the balloons",
+    "mood_atmosphere": "Open, brisk, mildly whimsical",
+    "patterns": "Repeating lane markings, guardrail posts, and overhead gantries"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver/dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Road surface and balloons ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-view driving footage demonstrating a vehicle smoothly navigating around minor road obstacles",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle drives forward smoothly along the open expressway in golden morning light; two pastel balloons appear ahead, drifting and rolling on the fresh asphalt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The balloons are tossed by the slipstream and morning breeze, rolling toward the center of the lane as the vehicle approaches."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the highway."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle proceeds along the open expressway under warm golden-hour morning light; two medium-sized balloons drift and roll ahead at ground level, pushed around by breeze and passing slipstream.",
+      "key_changes": "Balloons enter the path and shift positions due to wind and slipstream gusts",
+      "camera": "Smooth forward tracking from driver's viewpoint"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly within its lane while continuing forward smoothly.",
+      "key_changes": "Subtle lateral steering to avoid balloons; expressway continues ahead clear",
+      "camera": "Forward tracking with slight directional shift mirroring the steering"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along an open North American expressway in golden-hour morning light with long shadows; two warmly rim-lit pastel party balloons appear ahead on the fresh asphalt. By 0:02 breeze and slipstream toss the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the highway without stopping.",
+  "audio_description": "Ambient expressway driving sounds: the steady hum of the engine and the rush of tires on fresh asphalt, wind and passing-vehicle slipstream, and the open drone of highway traffic. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

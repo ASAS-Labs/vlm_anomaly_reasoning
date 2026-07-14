@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still on the sidewalk curb at night, facing the oncoming ego vehicle, wearing an open light jacket over a long-sleeve shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual autumn-evening attire with dark jeans and sneakers; the open jacket keeps the bold stop sign graphic fully visible on the chest, lit by a nearby streetlamp.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "Open light jacket over a long-sleeve shirt printed with a red stop sign, dark jeans, sneakers.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle's headlights.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, cool-lit by streetlight against the dark surroundings.",
+      "facial_features": "Short dark hair, dark eyes, relaxed brow, no distinguishing marks visible in the streetlight.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A suburban residential street on a clear autumn night. The two-lane dry asphalt is lit by pools of cool streetlight between darker stretches, bordered by concrete sidewalks, single-family houses with lit porch lamps, parked cars in driveways, autumn trees dropping leaves, and lamp posts. A few lit windows glow in the dark; the quiet street conveys a calm late-evening residential scene.",
+  "lighting": {
+    "conditions": "Clear night, lit by streetlights and porch lamps.",
+    "direction": "Overhead cool streetlight pools from the right and above, plus the ego headlights raking forward.",
+    "shadows": "Pooled, layered shadows between streetlights; the pedestrian is front-lit under a streetlamp and the headlights.",
+    "illumination_effect": "Cool streetlight pools against dark surroundings; the streetlamp and headlights keep the red stop sign shirt graphic legible."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the dark residential street, the pedestrian on the right sidewalk within a streetlight pool; the lane fades between lamp pools toward the vanishing point.",
+    "color_scheme": "Dark night blues with cool streetlight pools and warm porch-lamp accents, dry grey asphalt, with the red stop sign on the shirt as a vivid accent under the streetlamp.",
+    "mood_atmosphere": "Calm, quiet, ordinary late-night residential drive.",
+    "patterns": "Repeating streetlight pools, lit porches, parked cars, and evenly spaced lamp posts."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Moderate",
+    "focus": "Sharp on the streetlamp-lit pedestrian and near lane, with the dark stretches between lamps softening.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario on a suburban residential street at night demonstrating a stationary pedestrian on the curb with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the dark suburban residential street at night; the pedestrian appears ahead on the right sidewalk within a streetlight pool, facing the vehicle, with a stop sign clearly visible on their shirt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed; the pedestrian grows larger in frame but stays stationary on the curb."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the dry asphalt; the pedestrian remains on the curb and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's long-sleeve shirt, lit by a nearby streetlamp and reading clearly against the dark night street.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on dry asphalt through cool streetlight pools on a clear autumn night, approaching the stationary pedestrian on the right curb within a lamp pool whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches through the lit and dark stretches; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its lane; the pedestrian remains on the curb and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark suburban residential street of dry asphalt lit by cool streetlight pools with glowing porch lamps, the ego vehicle moving steadily forward; a pedestrian stands on the right sidewalk within a lamp pool facing the camera, a red stop sign clearly printed on their shirt beneath an open jacket. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the curb. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the night street continues ahead.",
+  "audio_description": "Ambient quiet night-residential driving sounds: a steady engine hum, tire noise on dry asphalt, faint insect chirps, and distant stillness. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

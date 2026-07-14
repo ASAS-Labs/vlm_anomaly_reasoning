@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags on the slushy road, sodden and sleet-heavy, limp and darkened, crumpled and dragging in the wet mush",
+      "appearance_details": "Thin, semi-transparent plastic soaked with sleet and looking grey-white, limp and heavy, edges plastered and creased, smeared with slush grime",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward across a slushy urban intersection",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A broad urban intersection in a Scandinavian city under a dim overcast winter sky, sleet falling into grey slush that coats the murky wet road. Traffic signals, crossings, and low stone-and-glass buildings surround the junction; brown slush is heaped along the curbs and lane markings show faintly through the wet grey mush. The light is flat and cold, visibility low and murky in the falling sleet.",
+  "lighting": {
+    "conditions": "Dim overcast winter day with falling sleet",
+    "direction": "Flat, dim light from the whole leaden sky; no direct sun",
+    "shadows": "Essentially shadowless; the murky overcast gives no defined shadows",
+    "illumination_effect": "Flat, cold grey light with low, murky visibility; the two translucent bags look sodden, grey-white, and heavy with sleet, limp and darkened as they slide over the slushy road"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the intersection opening toward a central point, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Cold flat greys of overcast, murky slush browns, faint signal-light color, and sodden grey-white bags",
+    "mood_atmosphere": "Cold, dreary, grimy winter intersection",
+    "patterns": "Crossing stripes and lane markings faint through slush, heaped curbside mush"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the two sodden bags in the central foreground; falling sleet lowers visibility beyond",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily across the slushy intersection; two stray polythene bags appear ahead, sodden and sleet-heavy as they drag and flutter."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the heavy wet bags tumble and slide across the slushy road as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside through the slush."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward across the Scandinavian intersection under dim overcast sleet; two sodden polythene bags become visible ahead, dragging in the wind.",
+      "key_changes": "Bags appear in the central foreground, grey and sleet-heavy, and begin to flutter limply.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the heavy wet bags tumble and slide across the slushy road.",
+      "key_changes": "Bags shift and lift sluggishly, weighed down by sleet.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "key_changes": "Bags pass out of central frame; the slushy road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward across a broad Scandinavian urban intersection under dim overcast, sleet falling into grey slush on the murky wet road. Within the first two seconds, two translucent polythene bags come into view in the central foreground, sodden and sleet-heavy as they drag and flutter limply. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the heavy wet bags tumble and slide across the slushy road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the intersection ahead remaining murky but clear through the falling sleet.",
+  "audio_description": "Ambient cold-city intersection sounds: the hum of the engine and the wet slushy hiss of tires through mush, sleet ticking on the glass and wipers dragging, distant muffled traffic. No speech or music; the sodden wet slap of heavy plastic bags in the slush.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

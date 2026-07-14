@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags slapping across the flooded road, rain-soaked and limp, crumpled and heavy with water",
+      "appearance_details": "Thin, semi-transparent plastic soaked and clinging, glowing with saturated neon reds and cyans reflected from the signs, edges plastered down and creased, streaming water",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a flooded neon-lit downtown boulevard at night",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A downtown boulevard in a dense Asian megacity at night in heavy monsoon rain, the wide asphalt sheeted with water and mirroring towering walls of neon and LED billboards in reds, magentas, and cyans. Vertical signage crowds the mid-rise and high-rise facades; crowded arcades and scooters line the flooded curbs. Rain streaks hard through the glare, and the reflective road throws up specular blooms of colored light in the humid summer night.",
+  "lighting": {
+    "conditions": "Night, heavy rain, dense artificial neon and LED illumination",
+    "direction": "Saturated multi-directional glow from towering neon signs and headlights; no natural light",
+    "shadows": "Soft, multiplied, blurred shadows dissolved by the heavy rain and glare",
+    "illumination_effect": "Intense wet specular bloom and colored reflections flood the road; glare limits visibility, and the two translucent bags glow with saturated neon color, rain-soaked and limp as they slap across the flooded asphalt"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the boulevard vanishing into neon glare near center, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Deep blacks flooded with saturated neon reds, magentas, and cyans mirrored in the wet road, with neon-tinted translucent bags",
+    "mood_atmosphere": "Dense, electric, rain-soaked megacity night",
+    "patterns": "Towering vertical neon signage and colored reflections rippling across the flooded road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep, with heavy bloom and glare around the many bright light sources",
+    "focus": "The road and the two neon-lit bags in the central foreground, held despite heavy rain and glare on the glass",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the flooded neon boulevard; two rain-soaked polythene bags appear ahead, glowing with reflected neon as they slap in the wind."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the sodden bags tumble and slide across the flooded asphalt as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside over the reflective road."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the flooded downtown boulevard under dense neon and heavy rain; two rain-soaked polythene bags become visible ahead, glowing with reflected color.",
+      "key_changes": "Bags appear in the central foreground, neon-tinted and sodden, and begin to slap in the wind.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the heavy wet bags tumble and slide across the flooded road.",
+      "key_changes": "Bags shift and lift sluggishly, weighed down by water.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "key_changes": "Bags pass out of central frame; the flooded neon road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a downtown boulevard in a dense Asian megacity at night, heavy monsoon rain sheeting the road as towering neon mirrors across the flooded asphalt. Within the first two seconds, two translucent polythene bags come into view in the central foreground, rain-soaked and glowing with reflected neon as they slap and flutter. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the sodden bags tumble and slide over the flooded road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the neon-lit road ahead remaining clear through the rain and glare.",
+  "audio_description": "Ambient rainy megacity night sounds: the hum of the engine and the heavy wet hiss of tires through standing water, drumming monsoon rain and wiper sweeps, distant scooters and city noise. No speech or music; the wet slap and rustle of sodden plastic bags in the rain.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

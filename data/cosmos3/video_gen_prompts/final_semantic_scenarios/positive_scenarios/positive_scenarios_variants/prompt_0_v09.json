@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside advertising billboard mounted on a single steel monopole, displaying a banking advertisement that prominently features a red octagonal 'Stop Sign' graphic as part of the ad design",
+      "appearance_details": "Large backlit billboard panel blazing among vertical neon signs, its surface streaming with rain; blue-and-white banking branding, a bold red stop-sign illustration and white promo text glowing intensely; monopole among the crowded signage",
+      "relationship": "The primary point of interest the ego vehicle passes; positioned beyond the right sidewalk, distinct from any real traffic signage",
+      "location": "right side of frame, mid-to-far background moving toward right foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "angled toward oncoming traffic, facing the approaching ego vehicle and camera",
+      "pose": "static, elevated upright on the monopole above the crowded sidewalk",
+      "action": "remains stationary as the vehicle approaches and passes",
+      "state_changes": "Grows larger and brighter in frame as the car approaches, then sweeps to the right edge and out of view as the car passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen only from its interior ego perspective via the windshield and visible dashboard edge",
+      "appearance_details": "Glossy dashboard drenched in reflected neon, heavy rain and reflections on the windshield, dark hood nose mirroring LED colors at the bottom of frame",
+      "relationship": "The viewpoint vehicle driving down the megacity street past the billboard",
+      "location": "implied at camera position, hood visible in bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the megacity street, away from camera",
+      "pose": "moving forward at cruising speed",
+      "action": "driving steadily along the lane without slowing",
+      "state_changes": "Maintains constant cruising speed throughout; no braking or stopping.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dense Asian-megacity downtown at night in heavy monsoon rain, towering facades sheathed in vertical neon signage and giant LED screens whose colors pour down the streaming wet asphalt. Multiple lanes of glossy black roadway mirror the riot of light; painted markings shimmer under running water. Beyond the crowded right sidewalk a huge backlit billboard blazes on a monopole among the signs. Umbrellas and taxis crowd a soaked, luminous cityscape.",
+  "lighting": {
+    "conditions": "Night, heavy rain, saturated artificial city light only",
+    "direction": "Light from all directions — neon, LED screens, streetlights, headlights; no sun",
+    "shadows": "Chaotic, multiplied, rain-smeared shadows from countless sources",
+    "illumination_effect": "Overwhelming wet specular reflections and colored bloom across the streaming asphalt; rain streaks the frame while the backlit red stop-sign graphic glows intensely amid the neon"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-looking ego composition with the road vanishing point near center; billboard placed on the right third following the rule of thirds; hood edge anchors the bottom frame",
+    "color_scheme": "Saturated neon reds, magentas, cyans, and gold reflected in black wet streets, with the red stop sign and blue-white ad blazing among them",
+    "mood_atmosphere": "Dense, dazzling, rain-soaked megacity night drive",
+    "patterns": "Vertical neon columns, LED screens, and shimmering lane markings mirrored in the flooded road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle's perspective",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep, with strong bloom around the many light sources",
+    "focus": "Sharp on the road and billboard through heavy rain and glare",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam style",
+  "context": "Autonomous-driving / dashcam scenario testing recognition of advertisement signage versus real traffic signs",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the neon-drenched, rain-soaked megacity street; the huge backlit billboard glows small among the signs in the right background ahead."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard grows larger as the car approaches, its blazing banking ad and red stop sign graphic becoming clearly legible amid the neon."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed and passes the billboard, which sweeps to the right edge and out of frame without any slowing or stopping."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase lettering on a red octagonal stop-sign graphic, printed as part of the advertisement and glowing intensely on the backlit panel amid the neon",
+      "spatial_temporal": "On the billboard at right side of frame, clearly visible from 0:02 to 0:05",
+      "context": "Decorative element within the banking advertisement, not a real traffic control sign"
+    },
+    {
+      "text": "STOP OVERPAYING — SWITCH YOUR BANK TODAY",
+      "category": "physical_in_scene",
+      "appearance": "Clean blue and white sans-serif promotional text alongside a bank logo, backlit and legible against the rain-soaked neon night",
+      "spatial_temporal": "On the billboard panel, right side of frame, legible 0:02-0:05",
+      "context": "Banking advertisement slogan promoting a financial service"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives steadily through the neon megacity in heavy rain; huge backlit billboard small among the signs on the right, colors pouring across the wet road.",
+      "key_changes": "Billboard begins to grow as distance closes.",
+      "camera": "Forward tracking from the moving car, stable."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Approach phase as the billboard enlarges and the backlit banking ad with the stop sign becomes clearly readable amid the neon.",
+      "key_changes": "Ad text and red stop sign graphic become legible.",
+      "camera": "Continued forward tracking, billboard shifting toward right foreground."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the billboard at unchanged cruising speed; billboard sweeps off the right edge while the streaming road ahead remains clear.",
+      "key_changes": "Billboard exits frame; vehicle does not slow or stop.",
+      "camera": "Forward tracking continues smoothly past the billboard."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks down a neon-drenched Asian-megacity street at night in heavy rain, LED-lit facades pouring color onto the flooded asphalt and a huge backlit billboard small among the signs in the right distance. By 0:01 the car holds steady cruising speed through the downpour. At 0:02 the billboard grows larger and its backlit banking ad, featuring a red octagonal stop-sign graphic, becomes clearly legible on the right. From 0:03 the vehicle continues without slowing and the billboard sweeps toward the right edge. By 0:04-0:05 it passes out of view amid the neon while the streaming road ahead stays open, the car never braking.",
+  "audio_description": "Low engine hum and the loud hiss of tires through standing water, heavy rain drumming on the roof and rapid wiper sweeps, muffled dense-city ambience; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

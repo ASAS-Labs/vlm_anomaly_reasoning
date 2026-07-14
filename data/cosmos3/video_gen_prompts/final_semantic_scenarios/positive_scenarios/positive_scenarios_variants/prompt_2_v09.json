@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still at the covered-sidewalk curb at night, facing the oncoming ego vehicle, wearing an open transparent rain shell over a long-sleeve shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual megacity wet-weather attire with dark trousers and dark shoes; the open, transparent rain shell keeps the bold stop sign graphic fully visible on the chest, glowing under the neon and headlights.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "Open transparent rain shell over a long-sleeve shirt printed with a red stop sign, dark trousers, dark shoes.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle's headlights.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "East Asian skin tone, softly lit by colored neon with a wet sheen from the rain.",
+      "facial_features": "Short dark hair damp with rain, dark eyes, relaxed brow, no distinguishing marks visible at distance.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A downtown street in a dense Asian megacity at night during heavy monsoon rain. The two-lane wet reflective asphalt mirrors a dense wall of neon signage, glowing shop fronts, and towering illuminated buildings on both sides, with crowded covered sidewalks, umbrellas, and scooters parked at the curb. Heavy rain streaks through the neon glow and pools on the road; the reflective surface blooms with colored light, conveying a vivid, rain-soaked late-night megacity scene.",
+  "lighting": {
+    "conditions": "Nighttime heavy rain; scene saturated by dense neon, LED billboards, and shop lighting.",
+    "direction": "Intense multi-directional artificial light from neon and signage on both sides and overhead, plus the ego headlights raking through the rain.",
+    "shadows": "No natural shadows; wet asphalt throws bright specular blooms and colored reflections through the falling rain.",
+    "illumination_effect": "Dense neon wet specular bloom and glare on the reflective road; nearby signage and headlights keep the red stop sign shirt graphic legible amid the glow."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the neon-walled wet lane, the pedestrian on the right covered sidewalk under signage; reflected neon streaks lead into the rainy vanishing point.",
+    "color_scheme": "Deep night saturated with dense magenta, cyan, and amber neon reflected in the wet black asphalt, with the printed red stop sign on the shirt reading as a vivid accent among the glow.",
+    "mood_atmosphere": "Calm, routine late-night megacity drive through heavy rain.",
+    "patterns": "Repeating stacked neon signs, reflected light streaks on wet asphalt, and rain streaks through the beams."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Shallow",
+    "focus": "Sharp on the wet lane and the signage-lit pedestrian, with distant neon dissolving into rainy specular bloom.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario in a rain-soaked Asian megacity downtown at night demonstrating a stationary pedestrian on the curb with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the neon-lit downtown lane in heavy night rain; the pedestrian appears ahead on the right covered sidewalk, facing the vehicle, with a stop sign clearly visible on their shirt through an open rain shell."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed through the heavy rain; the pedestrian grows larger in frame but stays stationary at the wet curb."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the wet reflective asphalt; the pedestrian remains at the curb and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's long-sleeve shirt, visible through the open transparent rain shell and reading clearly amid the neon glow.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on wet reflective asphalt under dense neon in heavy night rain, approaching the stationary pedestrian on the right covered sidewalk whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches through the rain and neon bloom; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view with heavy wet-road reflections."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its neon-reflected lane; the pedestrian remains at the curb and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position on the wet reflective road.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a neon-walled downtown megacity lane at night in heavy monsoon rain, wet asphalt blooming with reflected signage, the ego vehicle moving steadily forward; a pedestrian stands on the right covered sidewalk facing the camera, a red stop sign clearly printed on their shirt through an open rain shell. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted at the wet curb. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the neon-lit wet road continues ahead.",
+  "audio_description": "Ambient rainy megacity night driving sounds: a steady engine hum, the hiss and splash of tires on wet reflective asphalt, heavy rain drumming, and a dense muffled city murmur. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive through heavy rain.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

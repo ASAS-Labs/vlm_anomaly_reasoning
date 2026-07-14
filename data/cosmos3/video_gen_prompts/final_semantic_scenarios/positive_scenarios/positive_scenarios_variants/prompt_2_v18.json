@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still on the gravel-shouldered footpath curb at dusk, facing the oncoming ego vehicle, wearing a white long-sleeve shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual rural attire with dark jeans and boots; the bold stop sign graphic dominates the shirt's front, lit by the fading warm dusk glow and the nearby lamp.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "White long-sleeve shirt with a printed red stop sign, dark jeans, boots.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, warmly lit by the fading dusk glow shifting toward cool blue.",
+      "facial_features": "Short dark hair, dark eyes, relaxed brow, no distinguishing marks visible at distance.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "The edge of a small rural village on rolling autumn hills at clear dusk. A two-lane dry asphalt road passes the last houses and a gravel-shouldered footpath where a person can stand, with split-rail fences, autumn-colored fields and hills rolling into the distance, a few farm buildings, and a lamp post beginning to glow. The western sky glows warm and fades to deep blue overhead, conveying a calm rural-village dusk scene.",
+  "lighting": {
+    "conditions": "Clear dusk transitioning from warm horizon glow to deepening blue; a lamp post just coming on.",
+    "direction": "Low warm light from the west fading fast, front-lighting the pedestrian with a warm glow that cools; the lamp adds near fill.",
+    "shadows": "Long, softening shadows from the low western light, dimming as dusk deepens; the pedestrian's front stays warmly lit then cools.",
+    "illumination_effect": "Warm-to-blue transitional dusk illumination; the fading glow and lamp keep the red stop sign shirt graphic legible."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the rural road at the village edge, the pedestrian on the right gravel-shouldered footpath, autumn hills beyond; the lane leads toward the warm-then-blue horizon.",
+    "color_scheme": "Warm amber western sky over deep-blue dusk, autumn field russets, dry grey asphalt, with the red stop sign on the shirt as a vivid accent.",
+    "mood_atmosphere": "Calm, quiet, tranquil rural-village dusk drive.",
+    "patterns": "Repeating split-rail fence posts, rolling autumn hills, and the last village houses."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp along the rural road, with the pedestrian clearly resolved against the deepening dusk.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario on a rural village-edge road at dusk demonstrating a stationary pedestrian on the shoulder with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the rural village-edge road at clear dusk; the pedestrian appears ahead on the right gravel-shouldered footpath, facing the vehicle, with a stop sign clearly visible on their shirt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed as the dusk light fades; the pedestrian grows larger in frame but stays stationary on the shoulder."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the dry asphalt; the pedestrian remains on the shoulder and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's white t-shirt.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on dry asphalt at the village edge under a clear fading dusk, approaching the stationary pedestrian on the right gravel-shouldered footpath whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches while the warm dusk cools toward blue; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its lane; the pedestrian remains on the shoulder and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a rural village-edge road of dry asphalt with split-rail fences and autumn hills under a clear fading dusk, the ego vehicle moving steadily forward; a pedestrian stands on the right gravel-shouldered footpath facing the camera, a red stop sign clearly printed on their white shirt. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the shoulder as the warm dusk cools. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the rural road continues ahead.",
+  "audio_description": "Ambient rural-dusk driving sounds: a steady engine hum, tire noise on dry asphalt, evening insects and a light breeze, and distant quiet. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

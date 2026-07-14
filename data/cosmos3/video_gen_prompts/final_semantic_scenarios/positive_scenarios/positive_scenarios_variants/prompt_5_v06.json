@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags whipping across the salt-sheened road, briskly lifted and tumbled by the steady sea wind, crumpled and half-inflated",
+      "appearance_details": "Thin, semi-transparent plastic tinted cool blue from the dusk sky with a faint warm horizon glow, edges snapping and fluttering in the gusts, creased and lightly salt-damp",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a coastal shoreline road lane",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A coastal road along rolling seaside bluffs at dusk in the blue hour, a warm orange band still glowing low over the ocean horizon while the sky above deepens to cool blue. Two lanes hug the shoreline with a low guardrail on the seaward side; dune grass and scattered coastal shrubs bend in a steady gusty wind. The asphalt carries a faint salt sheen. Distant surf and a few early lights dot the coast.",
+  "lighting": {
+    "conditions": "Dusk / blue hour, fading daylight after sunset",
+    "direction": "Cool ambient sky light overall with a warm low glow lingering at the ocean horizon",
+    "shadows": "Soft, weak, long shadows fading as the light dims; low contrast",
+    "illumination_effect": "Cool blue ambient tones with a warm horizon band; the two translucent bags pick up cool sky-blue on top and faint warm glow toward the horizon as they whip across the salt-sheened road in the gusts"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the coastal road curving toward a central point, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Cool dusk blues and violets, a warm orange horizon band, muted dune greens, and softly lit pale bags",
+    "mood_atmosphere": "Tranquil, breezy, cinematic seaside dusk drive",
+    "patterns": "Curving guardrail, bending dune grass, and the horizon line of sea and sky"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the two wind-whipped bags in the central foreground under the dimming dusk light",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the coastal road at dusk; two stray polythene bags appear ahead, whipping briskly in the sea wind."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the salt-sheened road as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they are carried aside by the gusts."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the coastal road in blue-hour dusk; two polythene bags become visible ahead, whipped by the steady sea wind.",
+      "key_changes": "Bags appear in the central foreground, tinted by the dusk light, and begin to snap and flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble briskly across the salt-sheened road.",
+      "key_changes": "Bags lift and swirl in the strong gusts.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they are carried aside.",
+      "key_changes": "Bags blow out of central frame; the coastal road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a coastal road at dusk, a warm band glowing low over the ocean while the sky deepens to cool blue. Within the first two seconds, two translucent polythene bags come into view in the central foreground, tinted cool blue with a faint warm glow as they whip and flutter in the sea wind. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble briskly across the salt-sheened road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as the gusts carry them aside, the shoreline road ahead remaining clear in the fading dusk light.",
+  "audio_description": "Ambient coastal dusk sounds: the hum of the engine and tires on asphalt over the steady rush of sea wind and distant surf, occasional gull calls. No speech or music; the sharp snapping and rustle of plastic bags whipped by the gusts.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

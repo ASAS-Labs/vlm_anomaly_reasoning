@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags on the dry night road, glowing when lit and dim between lamps, lightly crumpled and partially lifted by the cool wind",
+      "appearance_details": "Thin, semi-transparent plastic that glows softly when passing under a streetlight and fades to a faint pale shape in the dark stretches, edges fluttering and creased, lightly grimed",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a dark suburban residential street at night",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street at night under a clear sky, a single dry lane each way lined with parked cars, driveways, and single-family homes with lit porch lamps. Widely spaced streetlights cast pools of cool light on the dark asphalt between stretches of shadow. Autumn trees stand mostly bare along the verge, a few dry leaves on the road. The neighbourhood is still and dark beyond the lamp pools.",
+  "lighting": {
+    "conditions": "Clear night, artificial streetlight illumination",
+    "direction": "Localized downward light from widely spaced streetlights; dark between pools",
+    "shadows": "Sharp radial shadows within each streetlight pool, deep darkness between them",
+    "illumination_effect": "Cool pools of streetlight on dark asphalt; the two translucent bags glow softly and brighten as they skitter through each lamp pool, then dim to faint shapes in the dark stretches between"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the street vanishing into darkness near center, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Deep night blues and blacks, cool white streetlight pools, warm porch-lamp accents, and softly glowing pale bags",
+    "mood_atmosphere": "Still, quiet, sleepy suburban night drive",
+    "patterns": "Rhythmic streetlight pools alternating with dark gaps, rows of parked cars"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep, darkness swallowing the far background between lamps",
+    "focus": "The road and the two bags in the central foreground, brightening within the streetlight pools",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the dark suburban street; two stray polythene bags appear ahead, glowing as they pass through a streetlight pool while fluttering."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the dry road, brightening and dimming between lamps, as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside into the dark."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the dark suburban street under scattered streetlights; two polythene bags become visible ahead in a lamp pool, tossed by the cool wind.",
+      "key_changes": "Bags appear in the central foreground, glowing under a streetlight, and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble across the dry road, brightening and dimming between lamps.",
+      "key_changes": "Bags shift and lift, catching and losing the streetlight glow.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside into the dark.",
+      "key_changes": "Bags pass out of central frame; the dark road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a quiet suburban residential street at night, cool streetlight pools spaced along the dark asphalt under a clear sky. Within the first two seconds, two translucent polythene bags come into view in the central foreground, glowing softly as they pass through a lamp pool while lifting and fluttering. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the dry road, brightening and dimming between the lamps. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside into the dark, the road ahead remaining clear between the streetlights.",
+  "audio_description": "Ambient quiet suburban night sounds: the low hum of the engine and tires on dry asphalt, a cool breeze, faint distant traffic and crickets, otherwise stillness. No speech or music; the soft rustle of plastic bags in the wind.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

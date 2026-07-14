@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle in the opposite lane, identifiable mainly by its intensely bright high-beam headlights piercing through the darkness; the body of the car is obscured behind the glare, only faint hints of a dark sedan silhouette visible around the light source",
+      "appearance_details": "Two blinding white-blue circular headlight pools with prominent lens-flare star artifacts, halation, and bloom radiating outward; faint amber side marker glow",
+      "relationship": "The source of glare impairing the ego vehicle's visibility; travels directly opposite the ego on the shared commercial strip",
+      "location": "center to slightly left of frame, approaching from background to midground",
+      "relative_size": "Small within frame growing to Medium within frame as it nears",
+      "orientation": "Front-facing toward the camera, headlights aimed directly at the ego viewpoint",
+      "pose": "",
+      "action": "Approaching on the opposite lane with high beams on, then passing by",
+      "state_changes": "Grows brighter and larger as it nears the speed-hump, peaks in glare at closest approach, then sweeps past to the left and recedes, glare clearing amid the drizzle",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, represented only by its interior dashboard edge and the forward illumination of its own headlights spilling onto the road ahead",
+      "appearance_details": "Faint dashboard reflection along the bottom edge of the frame, twin cones of headlight light spreading over the asphalt and lane markings",
+      "relationship": "The point-of-view vehicle through which the entire scene is observed",
+      "location": "implied at camera position, dashboard at bottom foreground",
+      "relative_size": "Large within frame (occupying viewpoint)",
+      "orientation": "Facing forward down the road in the driving direction",
+      "pose": "",
+      "action": "Driving the commercial strip, lifting over a speed-hump, then continuing while slowing and resuming speed",
+      "state_changes": "Decelerates significantly during peak glare, then accelerates back to nominal cruising speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A flat Latin American commercial strip on a drizzly overcast night, a two-lane road lined with shuttered shopfronts, hand-painted signs, and tangled overhead wires. Worn wet asphalt with faded markings holds a dull sheen under a few buzzing sodium and fluorescent shop lights; no central divider. A low overcast reflects the town's dim glow. The road runs level then lifts over a topes speed-hump ahead, a crest that briefly hides then reveals the oncoming lane. Beyond the sparse lights the strip fades into damp grey-black.",
+  "lighting": {
+    "conditions": "Drizzly overcast night with sparse sodium and fluorescent shop lights; worn wet roadway",
+    "direction": "Ego headlights front-lit; intense oncoming high-beam glare ahead and slightly left through the drizzle",
+    "shadows": "Weak diffuse shadows from mixed shop lights, faint reflections on wet asphalt",
+    "illumination_effect": "Dull wet sheen catching sodium and fluorescent color on worn asphalt; oncoming high beams produce overwhelming drizzle-scattered bloom, starburst flares, and washout"
+  },
+  "aesthetics": {
+    "composition": "Commercial strip to a speed-hump near mid-frame, oncoming glare blooming upper-center, dashboard edge at bottom",
+    "color_scheme": "Damp grey overcast and worn asphalt with warm sodium and cool fluorescent shop color, cut by harsh white-blue headlight glare",
+    "mood_atmosphere": "Tense, worn, disorienting, momentarily blinding, cautious in the drizzle",
+    "patterns": "Shuttered shopfronts and overhead wire silhouettes sliding past on wet asphalt"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dashcam tracking along the strip, faint drizzle speckle, subtle rise over the speed-hump, deceleration drift then re-acceleration",
+    "framing": "Wide shot of the road ahead from driver viewpoint",
+    "camera_angle": "Eye-level, fixed forward-facing",
+    "depth_of_field": "Deep, softened by drizzle",
+    "focus": "Road and faded markings ahead, though glare overwhelms focus at peak brightness",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Demonstration of nighttime oncoming-headlight glare and driver visibility management on a commercial strip",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives the commercial strip at nominal speed, distant oncoming headlights appear faint past a speed-hump"
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "Vehicle lifts over the speed-hump; oncoming high beams rapidly intensify, flooding the drizzly view with glare and lens artifacts"
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "Ego vehicle slows significantly to manage impaired visibility as the oncoming car passes on the left"
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "Glare clears, strip becomes visible again, ego vehicle resumes nominal speed"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Driving the commercial strip at steady speed with faint oncoming light growing past a speed-hump",
+      "key_changes": "Distant headlights begin to appear amid dim shop lights",
+      "camera": "Forward tracking with slight upward pitch on the climb"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Lifting over the speed-hump as oncoming high beams flare into severe drizzle-scattered glare",
+      "key_changes": "Rapid increase in brightness, bloom and starburst artifacts wash across the wet frame",
+      "camera": "Subtle bob over the crest, then leveling into descent"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle slows for the passing car, then glare clears and nominal speed resumes",
+      "key_changes": "Deceleration, oncoming vehicle sweeps past left, artifacts fade, strip regains visibility, re-acceleration",
+      "camera": "Slight forward dip during braking, then smooth resumed forward tracking"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a Latin American commercial strip on a drizzly night, ego headlights over worn wet asphalt and dim shop lights while a faint glow appears past a speed-hump. By 0:01 the vehicle lifts over the hump and a pair of oncoming high beams rapidly brightens. Through 0:02-0:03 the view is overwhelmed by drizzle-scattered white-blue glare, lens-flare starbursts, and bloom. Around 0:03 the ego slows noticeably to cope with impaired visibility as the oncoming car sweeps past on the left. From 0:04 to 0:05 the glare clears, the strip reappears, and the ego accelerates back to nominal cruising speed.",
+  "audio_description": "Steady low hum of the engine and wet tire noise on worn asphalt, rising then dipping as the vehicle decelerates over the hump. Light drizzle, a buzzing shop light, a faint whoosh of the oncoming vehicle passing, distant dogs; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

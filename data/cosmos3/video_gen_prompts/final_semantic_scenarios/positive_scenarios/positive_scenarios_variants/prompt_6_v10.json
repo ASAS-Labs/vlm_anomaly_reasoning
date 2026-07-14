@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming vehicle in the opposite lane, identifiable mainly by its intensely bright high-beam headlights piercing through the darkness; the body of the car is obscured behind the glare, only faint hints of a dark sedan silhouette visible around the light source",
+      "appearance_details": "Two blinding white-blue circular headlight pools with prominent lens-flare star artifacts, halation, and bloom radiating outward; faint amber side marker glow",
+      "relationship": "The source of glare impairing the ego vehicle's visibility; travels directly opposite the ego on the shared mountain road",
+      "location": "center to slightly left of frame, approaching from background to midground",
+      "relative_size": "Small within frame growing to Medium within frame as it nears",
+      "orientation": "Front-facing toward the camera, headlights aimed directly at the ego viewpoint",
+      "pose": "",
+      "action": "Approaching on the opposite lane with high beams on, then passing by",
+      "state_changes": "Grows brighter and larger as it bursts from behind the rock buttress on the switchback, peaks in glare at closest approach, then sweeps past to the left and recedes down-valley, glare clearing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, represented only by its interior dashboard edge and the forward illumination of its own headlights spilling onto the road ahead",
+      "appearance_details": "Faint dashboard reflection along the bottom edge of the frame, twin cones of headlight light spreading over the asphalt and lane markings",
+      "relationship": "The point-of-view vehicle through which the entire scene is observed",
+      "location": "implied at camera position, dashboard at bottom foreground",
+      "relative_size": "Large within frame (occupying viewpoint)",
+      "orientation": "Facing forward down the road in the driving direction",
+      "pose": "",
+      "action": "Driving the mountain road, rounding a left switchback, then continuing while slowing and resuming speed",
+      "state_changes": "Decelerates significantly during peak glare, then accelerates back to nominal cruising speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An Alpine mountain road at night, a dry two-lane winding along a forested slope with no central divider, partly cloudy sky letting scattered moonlight silver the peaks. Autumn foliage crowds the uphill bank while the downhill side drops away past a low guardrail into black valley. Worn lane markings hug the curves. The road bends sharply left around a rock buttress ahead, the switchback briefly hiding then revealing the oncoming lane. Beyond the guardrail the valley is deep darkness dotted with a few distant village lights.",
+  "lighting": {
+    "conditions": "Partly cloudy mountain night with scattered moonlight; no street lighting, headlights only, dry roadway",
+    "direction": "Ego headlights front-lit into the bend; intense oncoming high-beam glare emerging from around the left switchback",
+    "shadows": "Sharp swinging shadows from foliage and rock as headlights sweep the curve, black void down-valley",
+    "illumination_effect": "Headlight cones sweeping rock and autumn leaves against valley black; oncoming high beams burst around the buttress with overwhelming bloom, sharp starburst flares, and washout"
+  },
+  "aesthetics": {
+    "composition": "Road curving left around a rock buttress near mid-frame with valley black to the right, oncoming glare bursting from the bend upper-center, dashboard edge at bottom",
+    "color_scheme": "Moon-silvered peaks and black valley with warm autumn foliage in the light cones, cut by harsh white-blue headlight glare",
+    "mood_atmosphere": "Tense, precarious, disorienting, momentarily blinding, very cautious on the curve",
+    "patterns": "Guardrail posts and switchback curves sweeping past"
+  },
+  "cinematography": {
+    "camera_motion": "Forward dashcam tracking around the mountain switchback, lateral swing into the left bend, deceleration drift then re-acceleration",
+    "framing": "Wide shot of the road ahead from driver viewpoint",
+    "camera_angle": "Eye-level, fixed forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Road and guardrail ahead, though glare overwhelms focus at peak brightness",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Demonstration of nighttime oncoming-headlight glare and driver visibility management on a mountain road",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives the mountain road at nominal speed, distant oncoming headlights appear faint around a left switchback"
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "Vehicle rounds the switchback; oncoming high beams rapidly intensify, bursting from the bend with glare and lens artifacts"
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "Ego vehicle slows significantly to manage impaired visibility as the oncoming car passes on the left"
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "Glare clears, mountain road becomes visible again, ego vehicle resumes nominal speed"
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Driving the mountain road at steady speed with faint oncoming light growing around a left switchback",
+      "key_changes": "Distant headlights begin to appear past the rock buttress",
+      "camera": "Forward tracking with a gentle swing into the bend"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Rounding the switchback as oncoming high beams burst into severe glare",
+      "key_changes": "Rapid increase in brightness, bloom and sharp starburst artifacts wash across the frame",
+      "camera": "Lateral swing through the bend, then straightening onto the road ahead"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle slows for the passing car on the curve, then glare clears and nominal speed resumes",
+      "key_changes": "Deceleration, oncoming vehicle sweeps past left, artifacts fade, mountain road regains visibility, re-acceleration",
+      "camera": "Slight forward dip during braking, then smooth resumed forward tracking"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows an Alpine mountain road at night, ego headlights sweeping autumn foliage and guardrail while a faint glow appears around a left switchback. By 0:01 the vehicle enters the bend and a pair of oncoming high beams rapidly brightens, bursting from behind the rock buttress. Through 0:02-0:03 the view is overwhelmed by white-blue glare, sharp lens-flare starbursts, and bloom against the valley black. Around 0:03 the ego slows noticeably to cope with impaired visibility as the oncoming car sweeps past on the left. From 0:04 to 0:05 the glare clears, the mountain road reappears, and the ego accelerates back to nominal cruising speed.",
+  "audio_description": "Steady low hum of the engine and tire noise on dry asphalt with a slight strain, rising then dipping as the vehicle decelerates. A faint whoosh of the oncoming vehicle passing close on the curve, mountain wind and deep valley silence; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

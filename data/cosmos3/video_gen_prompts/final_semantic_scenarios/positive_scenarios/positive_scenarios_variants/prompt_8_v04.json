@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A small child wearing a bright red hooded jacket and dark trousers, stepping off the curb to cross the industrial-edge street directly in the vehicle's path",
+      "appearance_details": "Carries a small backpack, wears scuffed sneakers; the red jacket vivid against the grey concrete and bare trees",
+      "relationship": "The pedestrian hazard that prompts the ego vehicle to brake; the central reason for the deceleration event",
+      "location": "Center foreground, crossing from right sidewalk into the road",
+      "relative_size": "Small within frame",
+      "orientation": "Profile view, facing left as the child walks across the road",
+      "pose": "Mid-stride, one leg forward, arms slightly swinging while walking",
+      "action": "Steps off the sidewalk and begins crossing the road",
+      "state_changes": "Moves from curb into roadway, continuing across the vehicle's path and pausing briefly mid-road",
+      "clothing": "Bright red hooded jacket, dark trousers, scuffed sneakers, small backpack",
+      "expression": "Unaware and casual, looking ahead across the street",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Medium tan, smooth youthful skin",
+      "facial_features": "Round face, dark short hair, small features",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "Parked older cars and work vans lining the curbs of the industrial-edge residential street",
+      "appearance_details": "A mix of weathered sedans and utility vans in drab and faded colors, dull under the overcast light beside chain-link fencing",
+      "relationship": "Part of the residential environment; potential occlusion that hides the child until they step out",
+      "location": "Left and right midground along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel-parked, facing toward and away from camera along the road edges",
+      "pose": "Stationary at the curb",
+      "action": "Remain parked and motionless",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A plain residential street on the edge of a North American industrial district under a flat, overcast late-autumn noon. Modest brick and clapboard houses stand between low warehouse walls and chain-link fences along a two-lane road paved in worn, patched concrete. Bare-limbed trees and a few parked work vans and older cars line the curbs; cracked sidewalks run beside the homes. Light haze mutes the distance and the diffuse grey sky casts no distinct shadows on the pale concrete and its faded center markings.",
+  "lighting": {
+    "conditions": "Flat overcast late-autumn daylight with light haze",
+    "direction": "Even, diffuse light from the whole grey sky, no direct sun",
+    "shadows": "Essentially shadowless; soft, indistinct grounding shadows only",
+    "illumination_effect": "Muted, low-contrast grey illumination that flattens depth; the child's red jacket stands out sharply against the drab concrete and bare trees"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road vanishing toward the horizon, child positioned in the central lane, parked cars framing the sides",
+    "color_scheme": "Muted greys of concrete and overcast sky, drab brick and rust tones, bare brown branches, and a striking red accent from the child's jacket",
+    "mood_atmosphere": "Bleak, still industrial-edge calm sharply broken by sudden caution",
+    "patterns": "Repeating parked vans and cars, chain-link fencing, bare tree trunks, warehouse walls"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego dashcam motion that decelerates and comes to a complete stop",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road and crossing child; hazy distance softly muted",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving or ADAS demonstration of pedestrian detection and emergency braking in a residential setting",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward at a moderate speed down the overcast industrial-edge residential street."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A small child in a red jacket steps off the right sidewalk and begins crossing into the vehicle's path."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle promptly applies firm, controlled braking on the worn concrete, decelerating as the nose dips slightly."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped while the child continues across."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "White painted text on the worn concrete, partially faded and scuffed, flat under the grey overcast light",
+      "spatial_temporal": "On the road surface ahead, visible in the center of frame throughout",
+      "context": "Traffic calming marking indicating a low-speed residential zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises forward through the drab industrial-edge residential street with parked vans and bare trees under flat grey light.",
+      "key_changes": "Steady forward motion at moderate speed",
+      "camera": "Forward dashcam motion, smooth and steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A child steps off the sidewalk into the road; the vehicle begins firm, controlled braking and decelerates rapidly.",
+      "key_changes": "Hazard appears; speed drops sharply, nose dips under braking",
+      "camera": "Forward motion slowing, slight forward pitch from deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely on the concrete road.",
+      "key_changes": "Vehicle fully stopped and held stationary",
+      "camera": "Static, fully stopped viewpoint"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam moves forward down a drab industrial-edge residential street under flat overcast light, bare trees and parked vans lining the worn concrete road. By 0:01 a small child in a bright red jacket steps off the right sidewalk and begins crossing directly ahead. From 0:01 to 0:03 the ego vehicle applies firm, controlled braking, slowing with a slight forward pitch in the flat grey light. By 0:03 the vehicle has stopped completely well before the child, and from 0:03 to 0:05 it holds stationary while the child crosses safely.",
+  "audio_description": "Dull industrial-edge ambience of a distant machinery hum and faint traffic, the steady hum of the vehicle over worn concrete, then firm tire and brake friction as it decelerates, settling into a low idle with muffled background noise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

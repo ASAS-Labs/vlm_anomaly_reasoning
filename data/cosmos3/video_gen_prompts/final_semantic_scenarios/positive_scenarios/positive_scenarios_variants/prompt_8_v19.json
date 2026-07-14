@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A small child wearing a bright red hooded jacket over a light long-sleeved top and light trousers, stepping off the curb to cross the desert-edge town street directly in the vehicle's path",
+      "appearance_details": "Carries a small backpack, wears canvas shoes dusted with sand; the red jacket vivid against the pale sandy haze",
+      "relationship": "The pedestrian hazard that prompts the ego vehicle to brake; the central reason for the deceleration event",
+      "location": "Center foreground, crossing from right sidewalk into the road",
+      "relative_size": "Small within frame",
+      "orientation": "Profile view, facing left as the child walks across the road",
+      "pose": "Mid-stride, one leg forward, arms slightly swinging while walking",
+      "action": "Steps off the sidewalk and begins crossing the road",
+      "state_changes": "Moves from curb into roadway, continuing across the vehicle's path and pausing briefly mid-road",
+      "clothing": "Bright red hooded jacket over a light long-sleeved top, light trousers, canvas shoes, small backpack",
+      "expression": "Unaware and casual, looking ahead across the street",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Olive to light brown, smooth youthful skin",
+      "facial_features": "Round face, dark short hair, small features",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A couple of parked cars along the curbs of the desert-edge town street, dulled by a film of sandy dust",
+      "appearance_details": "Older sedans in sun-faded pale colors, a coating of fine sand haze on their panels beside the low courtyard walls",
+      "relationship": "Part of the residential environment; potential occlusion that hides the child until they step out",
+      "location": "Left and right midground along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel-parked, facing toward and away from camera along the road edges",
+      "pose": "Stationary at the curb",
+      "action": "Remain parked and motionless",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A residential street in a Middle-Eastern desert-edge town on a hazy midday, with light dust haze softening the air. Low sand-colored concrete and stucco houses with flat roofs and walled courtyards line a two-lane road of dry, sand-dusted asphalt. A few date palms and a couple of parked cars sit along the curbs; low walls edge the homes. A warm, sandy diffuse glow fills the hazy sky, muting the distance and casting soft, weak shadows over the pale road and its faded center markings.",
+  "lighting": {
+    "conditions": "Hazy desert-edge midday with light dust in the air",
+    "direction": "High sun diffused by warm dust haze, softening its direction",
+    "shadows": "Soft, weak, warm-toned shadows muted by the dust haze",
+    "illumination_effect": "Warm, sandy diffuse glow with hazy low contrast; the child's red jacket cuts vividly through the pale sandy haze"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road vanishing toward the horizon, child positioned in the central lane, parked cars framing the sides",
+    "color_scheme": "Sandy tans and warm beiges, pale dust-hazed sky, dry sand-dusted asphalt, dusty date palms, and a vivid red accent from the child's jacket",
+    "mood_atmosphere": "Warm, still, hazy desert-town midday calm broken by sudden caution",
+    "patterns": "Repeating walled courtyards and flat roofs, date palms, a couple of parked cars, drifting dust haze"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego dashcam motion that decelerates and comes to a complete stop",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road and crossing child; the sandy dust haze softly veils the distance",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving or ADAS demonstration of pedestrian detection and emergency braking in a residential setting",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward at a moderate speed down the hazy desert-edge town residential street at midday."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A small child in a red jacket steps off the right sidewalk and begins crossing into the vehicle's path."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle promptly applies firm, controlled braking on the sand-dusted asphalt, decelerating as the nose dips slightly."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped while the child continues across."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "White painted text on the sand-dusted asphalt, partially faded and dust-filmed, still legible in the hazy light",
+      "spatial_temporal": "On the road surface ahead, visible in the center of frame throughout",
+      "context": "Traffic calming marking indicating a low-speed residential zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises forward through the hazy desert-edge town street, sand-colored houses and date palms softened by dust haze along the road.",
+      "key_changes": "Steady forward motion at moderate speed through dust haze",
+      "camera": "Forward dashcam motion, smooth and steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A child steps off the sidewalk into the road; the vehicle begins firm, controlled braking and decelerates rapidly on the sandy surface.",
+      "key_changes": "Hazard appears; speed drops sharply, nose dips under braking",
+      "camera": "Forward motion slowing, slight forward pitch from deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely in the hazy warmth.",
+      "key_changes": "Vehicle fully stopped and held stationary",
+      "camera": "Static, fully stopped viewpoint"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam moves forward down a hazy Middle-Eastern desert-edge town residential street at midday, sand-colored houses and date palms softened by dust haze past a couple of parked cars. By 0:01 a small child in a bright red jacket steps off the right sidewalk and begins crossing directly ahead. From 0:01 to 0:03 the ego vehicle applies firm, controlled braking on the sandy asphalt, slowing with a slight forward pitch. By 0:03 the vehicle has stopped completely well before the child, and from 0:03 to 0:05 it holds stationary in the hazy heat while the child crosses safely.",
+  "audio_description": "Warm desert-town midday sounds of a dry wind and distant voices, the hum of the vehicle over sand-dusted asphalt, then firm tire and brake friction on the gritty surface as it decelerates, settling into a quiet idle in the hazy heat.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

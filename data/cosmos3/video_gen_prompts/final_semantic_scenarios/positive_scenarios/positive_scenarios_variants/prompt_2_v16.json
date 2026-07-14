@@ -1,0 +1,97 @@
+{
+  "subjects": [
+    {
+      "description": "An adult pedestrian standing still on the dusty construction walkway curb, facing the oncoming ego vehicle, wearing a white short-sleeve t-shirt with a large red octagonal stop sign graphic printed across the chest.",
+      "appearance_details": "Casual summer attire with dark work trousers and dusty boots; the bold stop sign graphic dominates the shirt's front, clearly lit despite the drifting dust.",
+      "relationship": "The primary point of interest for the ego vehicle as it passes; remains stationary relative to the moving camera.",
+      "location": "Initially center-right background, moving toward right midground and then right foreground as the car approaches and passes.",
+      "relative_size": "Small within frame initially, growing to Medium as the vehicle nears.",
+      "orientation": "Facing the camera (the ego vehicle) directly, front toward the lens.",
+      "pose": "Standing upright, feet planted on the curb, arms relaxed at sides, head oriented toward the approaching car.",
+      "action": "Standing still on the curb, watching the ego vehicle pass without stepping into the road.",
+      "state_changes": "No significant change; remains stationary on the curb throughout, never entering the vehicle's lane.",
+      "clothing": "White short-sleeve t-shirt with a printed red stop sign, dark work trousers, dusty boots.",
+      "expression": "Calm, neutral, attentive gaze toward the vehicle.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone with a matte, brightly lit complexion under dust-diffused midday sun.",
+      "facial_features": "Short dark hair, dark eyes, relaxed brow, faint dust on the skin, no distinguishing marks visible at distance.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A road through an active construction zone under bright clear midday summer sun with dust in the air. The two-lane patched worn asphalt with temporary lane paint runs past orange barrels, plastic barrier fencing, a raised concrete curb and dusty pedestrian walkway where a person can stand, stacked materials, and parked machinery. Fine dust drifts and diffuses the harsh sunlight; workers and equipment appear faintly beyond, conveying a busy sunlit construction scene.",
+  "lighting": {
+    "conditions": "Bright clear midday summer sun with drifting dust haze.",
+    "direction": "High overhead sun slightly behind the ego vehicle, front-lighting the pedestrian; dust softens the light slightly.",
+    "shadows": "Short, hard shadows beneath the pedestrian and barrels, softened marginally by drifting dust; the front stays well lit.",
+    "illumination_effect": "Bright, slightly dust-diffused illumination; the red stop sign shirt graphic reads clearly against the dusty construction backdrop."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam perspective down the construction-zone road, the pedestrian on the right dusty walkway beside orange barrels; temporary lane paint leads toward the hazy vanishing point.",
+    "color_scheme": "Dusty tans and greys of patched asphalt and gravel, safety-orange barrels and fencing, under a bright pale sky, with the red stop sign on the white shirt as a vivid accent among the orange.",
+    "mood_atmosphere": "Busy, dusty, ordinary midday construction-zone drive.",
+    "patterns": "Repeating orange barrels, barrier fencing panels, and stacked materials along the route."
+  },
+  "cinematography": {
+    "camera_motion": "Smooth forward tracking shot as the ego vehicle drives steadily down the lane.",
+    "framing": "Wide shot showing the road, sidewalk, and surroundings from the driver's viewpoint.",
+    "camera_angle": "Eye-level dashcam perspective from inside the vehicle.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the road scene, with the pedestrian remaining clearly resolved as the car approaches.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario in a dusty midday construction zone demonstrating a stationary pedestrian on the walkway with a distracting stop-sign graphic on clothing, while the ego vehicle correctly continues at speed in its lane.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives smoothly forward along the construction-zone road under bright dusty midday sun; the pedestrian appears ahead on the right dusty walkway beside orange barrels, facing the vehicle, with a stop sign clearly visible on their shirt."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching at a steady speed through the drifting dust; the pedestrian grows larger in frame but stays stationary on the walkway curb."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian, maintaining its lane and speed on the patched asphalt; the pedestrian remains on the walkway and never enters the road."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold uppercase letters centered on a red octagonal sign graphic printed on the pedestrian's white t-shirt.",
+      "spatial_temporal": "On the pedestrian's chest, visible on the right side of frame throughout the approach and pass.",
+      "context": "A decorative stop-sign graphic on clothing that resembles a traffic sign but is not an actual traffic control device."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels forward in its lane on patched worn asphalt with temporary lane paint through a dusty construction zone under bright midday sun, approaching the stationary pedestrian on the right dusty walkway whose shirt displays a stop sign.",
+      "key_changes": "The pedestrian grows progressively larger in frame as the vehicle approaches past orange barrels through drifting dust; vehicle speed remains steady.",
+      "camera": "Smooth forward tracking motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives smoothly past the pedestrian without slowing, staying in its temporary lane; the pedestrian remains on the walkway curb and does not step into the road.",
+      "key_changes": "Pedestrian passes from midground to right foreground and out of frame; vehicle maintains speed and lane position.",
+      "camera": "Continued smooth forward tracking, no deceleration or steering away."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dusty construction-zone road of patched worn asphalt with orange barrels and barrier fencing under bright midday sun, the ego vehicle moving steadily forward; a pedestrian stands on the right dusty walkway facing the camera, a red stop sign clearly printed on their white shirt. By 0:01-0:02 the pedestrian grows larger as the vehicle approaches at constant speed, remaining planted on the walkway curb through drifting dust. Around 0:03 the vehicle continues smoothly without slowing, keeping its lane. From 0:03 to 0:05 the ego vehicle drives past the stationary pedestrian, who never steps into the lane, and the pedestrian shifts to the right foreground before leaving frame as the construction road continues ahead.",
+  "audio_description": "Ambient construction-zone driving sounds: a steady engine hum, tire noise on patched asphalt, distant machinery and beeping, and a dry dusty breeze. No speech and no music; the audio remains consistent with a smooth, uninterrupted drive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

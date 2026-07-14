@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A couple of translucent white stray polythene plastic bags on the rain-wet boulevard, gleaming and glossy, lightly crumpled and partially lifted by the freshening breeze",
+      "appearance_details": "Thin, semi-transparent plastic wet and gleaming after the rain, catching the brightening sky in glossy highlights, edges clinging and creased, water beading on the film",
+      "relationship": "Loose debris on the road ahead of the moving ego vehicle, harmless obstacles being ignored",
+      "location": "center foreground to lower-center of frame, on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Tumbling and shifting, no fixed orientation",
+      "pose": "Crumpled and partially lifted, drifting along the asphalt",
+      "action": "Being tossed and skittered across the road by gusts of wind",
+      "state_changes": "Bags shift position, lift briefly, and tumble as the vehicle approaches and passes near them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, implied by the first-person dashboard-level point of view, traveling forward along a wet tree-lined boulevard lane",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, windshield framing the view of the road ahead",
+      "relationship": "The observer vehicle whose perspective the entire video is shot from",
+      "location": "implied at camera position, hood visible lower frame",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Facing forward down the road, aligned with the camera",
+      "pose": "Driving steadily forward in its lane",
+      "action": "Maintaining consistent speed and lane position",
+      "state_changes": "No significant change; continues straight at constant speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A tree-lined European boulevard at midday just after rain, clouds breaking to let bright light through onto freshly wet asphalt that mirrors the sky and trees. A single lane each way runs between rows of leafing spring plane trees; elegant facades and iron railings line the sides, dripping from the shower. Puddles gather along the gutters, and the wet road shines under the brightening, rain-washed light.",
+  "lighting": {
+    "conditions": "Midday, clouds breaking after rain, bright and fresh",
+    "direction": "Brightening high light through breaking cloud, increasingly direct",
+    "shadows": "Soft shadows sharpening as the clouds break, reflected and doubled in the wet road",
+    "illumination_effect": "Bright, rain-washed light with vivid wet reflections; the two translucent bags gleam wet and bright, catching the brightening sky in glossy highlights as they slide over the shining asphalt"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective with the boulevard vanishing toward a central point, hood edge anchoring the bottom, the two bags in the central foreground",
+    "color_scheme": "Fresh rain-washed greens and clean greys, bright sky reflected in wet asphalt, and gleaming wet-bright bags",
+    "mood_atmosphere": "Fresh, luminous, revived post-rain spring boulevard",
+    "patterns": "Rows of leafing plane trees mirrored in the wet road, puddled gutters"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "framing": "Wide shot capturing the road ahead",
+    "camera_angle": "Eye-level dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the two wet-gleaming bags in the central foreground amid the bright reflections",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving or dashcam scenario demonstrating a vehicle ignoring harmless road debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward steadily along the rain-washed boulevard; two stray polythene bags appear ahead, gleaming wet as they flutter in the freshening breeze."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed; the bags tumble and slide across the shining wet road as the gap closes."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside over the reflective asphalt."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the tree-lined boulevard just after rain as clouds break; two wet-gleaming polythene bags become visible ahead, tossed by the breeze.",
+      "key_changes": "Bags appear in the central foreground, glossy against the wet road, and begin to flutter.",
+      "camera": "Smooth forward tracking from dashboard view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle holds speed and lane as the bags tumble and slide across the shining road surface.",
+      "key_changes": "Bags shift and lift, catching bright reflections.",
+      "camera": "Continuous forward tracking, steady."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "key_changes": "Bags pass out of central frame; the wet road ahead stays clear.",
+      "camera": "Steady forward tracking, unchanged."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a tree-lined European boulevard at midday just after rain, clouds breaking to brighten the freshly wet asphalt that mirrors the leafing trees. Within the first two seconds, two translucent polythene bags come into view in the central foreground, gleaming wet and glossy as they lift and flutter in the freshening breeze. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and slide across the shining road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the reflective boulevard ahead remaining clear under the brightening light.",
+  "audio_description": "Ambient post-rain boulevard sounds: the hum of the engine and the wet hiss of tires on shining asphalt, dripping from the trees, a fresh breeze and distant city murmur. No speech or music; the light wet rustle of plastic bags in the breeze.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

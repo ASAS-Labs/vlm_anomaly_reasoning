@@ -1,0 +1,116 @@
+{
+  "subjects": [
+    {
+      "description": "A solid structural wall that terminates the megacity street, its flat vertical face entirely covered by a hyper-realistic trompe-l'oeil mural depicting an open road stretching toward a distant horizon beneath a clear blue sky",
+      "appearance_details": "The painted mural shows asphalt lane markings receding to a vanishing point, soft cumulus clouds, and a graduated blue sky; sheets of running rain and a wet specular gloss reflecting the neon, faint bloom over the paint, and the faint seam where the mural meets adjacent structures, reveal it is a flat painted surface",
+      "relationship": "It is the terminal obstacle the ego vehicle must recognize and stop before; it deceptively mimics a continuation of the street",
+      "location": "center frame, filling the far end of the street",
+      "relative_size": "Large within frame",
+      "orientation": "facing directly toward the camera/ego vehicle",
+      "pose": "static vertical flat surface",
+      "action": "Standing as a fixed barrier closing off the road",
+      "state_changes": "Grows larger in frame as the ego vehicle approaches, then stabilizes as the vehicle stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, an autonomous passenger car, seen only through its forward-facing point of view as it travels down the rain-flooded megacity street at night",
+      "appearance_details": "Implied by the dashboard-level ego perspective; smooth motion suggests a modern sedan with advanced driver-assistance sensors",
+      "relationship": "The observer and protagonist of the scene, approaching and correctly recognizing the mural wall",
+      "location": "implied first-person, behind the camera",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the street toward the wall",
+      "pose": "moving forward then decelerating to a halt",
+      "action": "Driving down the street, then braking to a smooth controlled stop before the wall",
+      "state_changes": "Transitions from steady forward motion to deceleration to a complete, sustained stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A downtown street in a dense Asian megacity at night during heavy monsoon rain, flanked by towering buildings sheathed in dense neon signage, glowing billboards and stacked lit shopfronts, parked scooters and cars along streaming curbs. The wet reflective asphalt mirrors a riot of colored light and runs straight ahead with faded lane markings. The street dead-ends at a solid structural wall whose surface bears a hyper-realistic mural of an open road and clear sky, streaming with rain, creating an optical illusion of the road continuing under a painted daytime blue amid the neon night. No traffic signs of any kind are present anywhere in the scene.",
+  "lighting": {
+    "conditions": "Nighttime heavy rain lit by dense neon",
+    "direction": "Saturated multi-directional artificial light from neon signs and billboards, no natural sun",
+    "shadows": "Confused multi-directional shadows drowned in colored specular reflections on the streaming road",
+    "illumination_effect": "Dense neon blooms and smears through the heavy rain, colored light streaming across the wet asphalt; the painted mural is sheeted with running water and its wet gloss plus the glare-limited darkness make the trompe-l'oeil illusion less convincing, though the solid wall remains"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the flooded street receding toward the mural wall at the vanishing point; neon towers frame the road",
+    "color_scheme": "Rain-black street streaming with saturated neon pinks, blues and greens, the painted mural's blue drowned among reflections",
+    "mood_atmosphere": "Dense, electric, subtly uncanny",
+    "patterns": "Stacked neon signage and rippling reflections on the flooded road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dolly (ego vehicle motion) decelerating to static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, dashboard height",
+    "depth_of_field": "Shallow",
+    "focus": "The mural wall at the end of the street, with heavy rain and neon bloom softening and glaring the foreground",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary-style autonomous driving footage",
+  "context": "Autonomous vehicle perception test demonstrating correct recognition of a deceptive mural wall and safe stopping behavior",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels steadily forward down the rain-flooded megacity street toward the mural wall at the far end."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle begins a smooth, controlled deceleration as it recognizes the solid wall painted to look like an open road."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle comes to a complete stop before the wall and remains stationary, holding the view of the rain-streamed mural under dense neon."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward down the straight, flooded megacity street, the mural wall growing larger ahead while neon towers and parked scooters stream past on either side.",
+      "key_changes": "Steady approach; wall increases in apparent size amid neon bloom and heavy rain.",
+      "camera": "Forward tracking motion at constant speed, eye-level."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle decelerates smoothly as it recognizes the wall as a solid barrier rather than open road.",
+      "key_changes": "Forward speed decreases; the rain-streamed mural fills more of the frame.",
+      "camera": "Forward motion slowing to a halt."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle is fully stopped before the wall and remains stationary, holding a steady view of the trompe-l'oeil mural running with rain.",
+      "key_changes": "No motion; the scene is held static for over two seconds.",
+      "camera": "Static, locked off at eye-level."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward down a flooded, sign-free megacity street at night in heavy monsoon rain, dense neon smearing across the wet asphalt as the road appears to continue into a painted open sky at the far end. Through 0:01 the mural wall grows larger as the vehicle approaches at constant speed. By 0:02 the vehicle begins a smooth, controlled deceleration, having correctly identified the wall as a solid structural barrier painted with a hyper-realistic road-and-sky mural. From 0:03 onward the vehicle has come to a complete stop a safe distance before the wall, and it remains stationary through 0:05, holding the view of the deceptive painted surface streaming with rain under the neon.",
+  "audio_description": "Ambient monsoon-night megacity sounds: the low hum of the vehicle's electric motor and tires sluicing through standing water, heavy rain drumming, distant honks and dense city din. As the vehicle slows, a soft regenerative braking whir is audible, followed by the muffled quiet of the stationary vehicle in the rain. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

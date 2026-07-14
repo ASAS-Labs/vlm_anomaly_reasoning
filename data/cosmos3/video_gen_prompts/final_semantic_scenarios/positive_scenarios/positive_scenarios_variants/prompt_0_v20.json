@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside advertising billboard mounted on a single steel monopole, displaying a banking advertisement that prominently features a red octagonal 'Stop Sign' graphic as part of the ad design",
+      "appearance_details": "Large backlit billboard panel glowing at the tunnel portal against the grey approach; blue-and-white banking branding, a bold red stop-sign illustration and white promo text lit on the panel; monopole above the tunnel mouth",
+      "relationship": "The primary point of interest the ego vehicle passes; positioned beyond the right retaining wall, distinct from any real traffic signage",
+      "location": "right side of frame, mid-to-far background moving toward right foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "angled toward oncoming traffic, facing the approaching ego vehicle and camera",
+      "pose": "static, elevated upright on the monopole above the tunnel portal",
+      "action": "remains stationary as the vehicle approaches and passes",
+      "state_changes": "Grows larger and brighter in frame as the car approaches the portal, then sweeps to the right edge and out of view as the car passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen only from its interior ego perspective via the windshield and visible dashboard edge",
+      "appearance_details": "Dashboard shifting from grey daylight to warm sodium glow, faint reflection on the windshield, dark hood nose at the bottom of frame",
+      "relationship": "The viewpoint vehicle driving down the tunnel approach past the billboard",
+      "location": "implied at camera position, hood visible in bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the tunnel approach, away from camera",
+      "pose": "moving forward at cruising speed",
+      "action": "driving steadily along the lane without slowing",
+      "state_changes": "Maintains constant cruising speed throughout; no braking or stopping.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "The approach to an urban tunnel on a dry overcast morning, the roadway diving toward a concrete portal ahead where the daylight gives way to a warm sodium-orange interior glow. Retaining walls, ventilation louvres, and gantry signage flank the descending dry concrete carriageway with crisp lane paint. Beyond the right retaining wall at the portal a large backlit advertising billboard stands on a monopole above the tunnel mouth.",
+  "lighting": {
+    "conditions": "Overcast morning outside transitioning to sodium tunnel lighting at the portal",
+    "direction": "Flat grey daylight above; warm orange artificial glow spilling from the tunnel mouth ahead",
+    "shadows": "Soft outside; warm artificial shadows appearing toward the portal",
+    "illumination_effect": "Cool flat daylight meeting warm sodium glow at the portal; the backlit red stop-sign graphic reads clearly against both the grey approach and the orange tunnel light"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-looking ego composition with the road vanishing point near center; billboard placed on the right third following the rule of thirds; hood edge anchors the bottom frame",
+    "color_scheme": "Grey overcast and concrete meeting warm sodium orange at the portal, with red stop sign and blue-white ad accents",
+    "mood_atmosphere": "Transitional, urban, businesslike tunnel-approach drive",
+    "patterns": "Ventilation louvres, gantry signs, and lane paint converging on the portal"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle's perspective",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep, with the portal glow blooming slightly",
+    "focus": "Sharp on the road, portal, and billboard; light shifts warm toward the tunnel mouth",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam style",
+  "context": "Autonomous-driving / dashcam scenario testing recognition of advertisement signage versus real traffic signs",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward down the tunnel approach; the backlit billboard appears small at the glowing portal in the right background ahead."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard grows larger as the car approaches, its backlit banking ad and red stop sign graphic becoming clearly legible near the portal."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed and passes the billboard, which sweeps to the right edge and out of frame without any slowing or stopping."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase lettering on a red octagonal stop-sign graphic, printed as part of the advertisement and glowing on the backlit panel at the portal",
+      "spatial_temporal": "On the billboard at right side of frame, clearly visible from 0:02 to 0:05",
+      "context": "Decorative element within the banking advertisement, not a real traffic control sign"
+    },
+    {
+      "text": "STOP OVERPAYING — SWITCH YOUR BANK TODAY",
+      "category": "physical_in_scene",
+      "appearance": "Clean blue and white sans-serif promotional text alongside a bank logo, backlit and legible near the tunnel mouth",
+      "spatial_temporal": "On the billboard panel, right side of frame, legible 0:02-0:05",
+      "context": "Banking advertisement slogan promoting a financial service"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives steadily down the tunnel approach under grey overcast; backlit billboard small at the warm-glowing portal on the right.",
+      "key_changes": "Billboard begins to grow as distance closes.",
+      "camera": "Forward tracking from the moving car, stable."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Approach phase as the billboard enlarges and the backlit banking ad with the stop sign becomes clearly readable near the portal.",
+      "key_changes": "Ad text and red stop sign graphic become legible.",
+      "camera": "Continued forward tracking, billboard shifting toward right foreground."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the billboard at unchanged cruising speed; billboard sweeps off the right edge while the road ahead into the tunnel remains clear.",
+      "key_changes": "Billboard exits frame; vehicle does not slow or stop.",
+      "camera": "Forward tracking continues smoothly past the billboard."
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks down the approach to an urban tunnel on a grey overcast morning, the portal glowing warm sodium ahead and a large backlit billboard small at the mouth on the right. By 0:01 the car holds steady cruising speed toward the portal. At 0:02 the billboard grows larger and its backlit banking ad, featuring a red octagonal stop-sign graphic, becomes clearly legible on the right. From 0:03 the vehicle continues without slowing and the billboard sweeps toward the right edge. By 0:04-0:05 it passes out of view at the portal while the road ahead stays open, the car never braking.",
+  "audio_description": "Low engine hum and tire noise on dry concrete, the sound tightening and echoing toward the tunnel mouth, faint urban ambience; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}
