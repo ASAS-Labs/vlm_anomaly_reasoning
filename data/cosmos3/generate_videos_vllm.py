@@ -43,6 +43,7 @@ from huggingface_hub import HfApi
 # --- Configuration (the only things you should need to change) -----------
 MODEL_ID = "nvidia/Cosmos3-Nano"  # change to "nvidia/Cosmos3-Nano" for Nano
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
+HF_REVISION = "reorg"
 
 TENSOR_PARALLEL_SIZE = 1
 SERVER_PORT = 8000
@@ -190,8 +191,9 @@ def upload_video(api: HfApi, local_path: Path, path_in_repo: str) -> None:
         path_in_repo=path_in_repo,
         repo_id=HF_DATASET_REPO,
         repo_type="dataset",
+        revision=HF_REVISION,
     )
-    print(f"  uploaded -> {HF_DATASET_REPO}:{path_in_repo}")
+    print(f"  uploaded -> {HF_DATASET_REPO}@{HF_REVISION}:{path_in_repo}")
 
 
 def main() -> None:
