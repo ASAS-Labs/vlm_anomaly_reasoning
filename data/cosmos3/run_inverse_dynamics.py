@@ -48,6 +48,7 @@ from pathlib import Path
 
 # --- Configuration (the only things you should need to change) -----------
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
+HF_REVISION = "reorg"
 INIT_VELOCITY_FRAMES = 5  # native-rate frames used to evaluate the initial velocity
 MPS_TO_MPH = 2.2369362921
 FPS = 10                  # model action rate (AV inverse-dynamics is 10 Hz)
@@ -583,15 +584,16 @@ def main() -> None:
         ))
 
     if upload_ops:
-        print(f"\nuploading {len(upload_ops)} file(s) in one commit to {HF_DATASET_REPO}...")
+        print(f"\nuploading {len(upload_ops)} file(s) in one commit to {HF_DATASET_REPO}@{HF_REVISION}...")
         try:
             api.create_commit(
                 repo_id=HF_DATASET_REPO,
                 repo_type="dataset",
+                revision=HF_REVISION,
                 operations=upload_ops,
                 commit_message=f"Add {len(upload_ops)} inverse-dynamics action sequences",
             )
-            print(f"uploaded {len(upload_ops)} file(s) -> {HF_DATASET_REPO}")
+            print(f"uploaded {len(upload_ops)} file(s) -> {HF_DATASET_REPO}@{HF_REVISION}")
         except Exception as exc:  # noqa: BLE001 - surface upload errors
             msg = f"FLAG  batch upload failed: {exc}"
             print(msg)
