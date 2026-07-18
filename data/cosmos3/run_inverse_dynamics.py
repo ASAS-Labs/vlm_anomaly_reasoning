@@ -22,8 +22,8 @@ video under data/cosmos3/generated_vids (next to this script). For each video it
      trimmed) maps to line N (0-based) of that file; mismatches are flagged.
   5. saves the downsampled sequence as <video>.txt and the native-rate sequence
      as <video>_<FPS>fps.txt next to the video, and
-  6. uploads all .txt files to the Hugging Face dataset repo in one commit
-     at the mirrored paths.
+  6. uploads all .txt files plus inverse_dynamics_flags.txt to the Hugging Face
+     dataset repo in one commit at the mirrored paths.
 
 Setup (run once):
 
@@ -39,12 +39,12 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import socket
 import subprocess
 import sys
 from pathlib import Path
 
+from prompt_resolve import prompt_sentence_for
 
 # --- Configuration (the only things you should need to change) -----------
 HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
@@ -318,7 +318,7 @@ def action_to_sequence(action) -> tuple[list[list[float]], list[list[float]], fl
     before downsampling.
     """
     import numpy as np
-    from cosmos_framework.data.generator.action.pose_utils import pose_rel_to_abs
+    from cosmos_framework.data.vfm.action.pose_utils import pose_rel_to_abs
 
     action = np.asarray(action, dtype=np.float64)
     poses_abs = np.asarray(pose_rel_to_abs(
@@ -345,61 +345,8 @@ def action_to_sequence(action) -> tuple[list[list[float]], list[list[float]], fl
 
 # ---------------------------------------------------------------------------
 # Validation against the prompt's last sentence
+# (last_sentence / resolve_prompt_file / prompt_sentence_for: prompt_resolve.py)
 # ---------------------------------------------------------------------------
-def last_sentence(text: str) -> str:
-    text = text.strip()
-    # Drop trailing parenthetical instructions, e.g. "(The last segment should
-    # be at least 2 seconds long)" - validation wants the behavior sentence.
-    while True:
-        trimmed = re.sub(r"\s*\([^()]*\)\s*$", "", text)
-        if trimmed == text or not trimmed:
-            break
-        text = trimmed
-    parts = re.split(r"(?<=[.!?])\s+", text)
-    parts = [p.strip() for p in parts if p.strip()]
-    return parts[-1] if parts else text
-
-
-def resolve_prompt_file(video_dir_rel: Path, prompts_root: Path) -> Path | None:
-    """Nearest prompt file for a video directory mirrored under prompts_root.
-
-    Walks from the mirrored directory up to prompts_root. At each level the
-    directory itself is tried and, for '<name>_variants' folders, the '<name>'
-    sibling (variants share the base folder's prompt file). Within a directory
-    updated_human_prompt.txt wins over prompt.txt.
-    """
-    current = prompts_root / video_dir_rel
-    while True:
-        candidates = [current]
-        base_name = re.sub(r"_variants?$", "", current.name)
-        if base_name != current.name:
-            candidates.append(current.parent / base_name)
-        for directory in candidates:
-            for filename in ("updated_human_prompt.txt", "prompt.txt"):
-                prompt_file = directory / filename
-                if prompt_file.exists():
-                    return prompt_file
-        if current == prompts_root:
-            return None
-        current = current.parent
-
-
-def prompt_sentence_for(rel_path: Path, prompts_root: Path) -> str | None:
-    """Last sentence of line N of the nearest prompt file for a prompt_N video."""
-    stem = re.sub(r"_v\d+$", "", rel_path.stem)  # trim variant suffix (prompt_3_v07)
-    match = re.fullmatch(r"prompt_(\d+)", stem)
-    if match is None:
-        return None
-    idx = int(match.group(1))
-    prompt_file = resolve_prompt_file(rel_path.parent, prompts_root)
-    if prompt_file is None:
-        return None
-    lines = prompt_file.read_text().splitlines()
-    if idx >= len(lines):
-        return None
-    return last_sentence(lines[idx])
-
-
 def classify_expected(sentence: str) -> dict:
     """Heuristic end-behavior expectation from a natural-language sentence."""
     s = sentence.lower()
@@ -583,28 +530,33 @@ def main() -> None:
             path_or_fileobj=str(txt_native_path),
         ))
 
-    if upload_ops:
-        print(f"\nuploading {len(upload_ops)} file(s) in one commit to {HF_DATASET_REPO}@{HF_REVISION}...")
-        try:
-            api.create_commit(
-                repo_id=HF_DATASET_REPO,
-                repo_type="dataset",
-                revision=HF_REVISION,
-                operations=upload_ops,
-                commit_message=f"Add {len(upload_ops)} inverse-dynamics action sequences",
-            )
-            print(f"uploaded {len(upload_ops)} file(s) -> {HF_DATASET_REPO}@{HF_REVISION}")
-        except Exception as exc:  # noqa: BLE001 - surface upload errors
-            msg = f"FLAG  batch upload failed: {exc}"
-            print(msg)
-            flags.append(msg)
-
     summary_path = GENERATED_VIDS_DIR / "inverse_dynamics_flags.txt"
     header = (f"Inverse-dynamics validation flags ({len(flags)} issue(s))\n"
               f"Heuristic, language-based comparison of the action-sequence tail "
               f"vs the last sentence of each prompt.\n\n")
     summary_path.write_text(header + ("\n".join(flags) + "\n" if flags else "(no flags)\n"))
     print(f"\nwrote summary: {summary_path}")
+
+    upload_ops.append(CommitOperationAdd(
+        path_in_repo=summary_path.name,
+        path_or_fileobj=str(summary_path),
+    ))
+    print(f"\nuploading {len(upload_ops)} file(s) in one commit to {HF_DATASET_REPO}@{HF_REVISION}...")
+    try:
+        api.create_commit(
+            repo_id=HF_DATASET_REPO,
+            repo_type="dataset",
+            revision=HF_REVISION,
+            operations=upload_ops,
+            commit_message=f"Add {len(upload_ops)} inverse-dynamics action sequences and flags",
+        )
+        print(f"uploaded {len(upload_ops)} file(s) -> {HF_DATASET_REPO}@{HF_REVISION}")
+    except Exception as exc:  # noqa: BLE001 - surface upload errors
+        msg = f"FLAG  batch upload failed: {exc}"
+        print(msg)
+        flags.append(msg)
+        summary_path.write_text(header + ("\n".join(flags) + "\n" if flags else "(no flags)\n"))
+
     print(f"done. {len(flags)} flag(s).")
 
 
