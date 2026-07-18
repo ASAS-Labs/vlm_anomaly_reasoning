@@ -1,0 +1,10 @@
+"Video filepath relative to ""data/datasets/generated_vids""",Valid/Invalid,Heuristic Validation,Comment
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_0.mp4,Valid,OK,Trajectory Longer than the video
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_4.mp4,Valid,OK,
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_11.mp4,Valid,OK,
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_2.mp4,Invalid,FLAGGED,
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_5.mp4,Valid,OK,
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_6.mp4,Valid,OK,
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_8.mp4,Valid,OK,
+final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_9.mp4,Invalid,FLAGGED,Video stopped too far from wall
+final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v09.mp4,Invalid,FLAGGED,

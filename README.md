@@ -5,6 +5,8 @@
 - [Synthetic Data Generation with Cosmos3](#synthetic-data-generation-with-cosmos3)
   - [Prompt Upsampling](#prompt-upsampling)
   - [Cosmos3 Video Generation](#cosmos3-video-generation)
+  - [Inverse Dynamics](#inverse-dynamics)
+  - [Inverse Dynamics Manual Validation (GUI)](#inverse-dynamics-manual-validation-gui)
 
 ## Installation
 
@@ -111,3 +113,78 @@ GPU per tensor-parallel rank, so the container must expose at least
 
 The first run downloads the gated Cosmos3 weights (tens of GB) into the Hugging
 Face cache, so model load can take several minutes.
+
+### Inverse Dynamics
+
+[`data/cosmos3/run_inverse_dynamics.py`](data/cosmos3/run_inverse_dynamics.py)
+runs Cosmos3-Nano **action inverse-dynamics** over every MP4 under
+`data/datasets/generated_vids/`. For each video it:
+
+1. Predicts an ego-motion action trajectory (`[T-1, 9]` = translation + rot6d).
+2. Converts relative poses to absolute camera-to-world poses (metric meters with
+   the cookbook `translation_scale`).
+3. Derives `[[velocity_mph, heading_deg], ...]` at the native model rate (**10 Hz**)
+   and a downsampled rate (**5 Hz**). Heading is degrees relative to the first
+   frame.
+4. Heuristically checks the trajectory tail against the last sentence of the
+   matching prompt line (mirrored tree under `data/cosmos3/video_gen_prompts/`).
+5. Writes `<video>.txt` (5 Hz) and `<video>_10fps.txt` (10 Hz) next to each MP4,
+   and uploads those text files to the Hugging Face dataset repo (`reorg` branch).
+
+**1. One-time setup** — populates the `packages/cosmos-framework` submodule and
+installs its train/CUDA env (default `cu130-train`):
+```bash
+./setup_inverse_dynamics.sh
+export HF_TOKEN=<write token with gated-model + dataset access>
+```
+Override the CUDA uv group if needed, e.g.
+`COSMOS3_UV_GROUP=cu128-train ./setup_inverse_dynamics.sh`.
+
+**2. Ensure videos are present** under `data/datasets/generated_vids/` (generate
+locally or sync from the HF dataset, revision `reorg`).
+
+**3. Run** (any interpreter; the script re-execs into the framework venv):
+```bash
+python data/cosmos3/run_inverse_dynamics.py
+# optional: override the prompts tree
+PROMPTS_ROOT=/path/to/video_gen_prompts python data/cosmos3/run_inverse_dynamics.py
+```
+
+**Outputs (per video):**
+
+| File | Contents |
+| --- | --- |
+| `<stem>.txt` | Downsampled sequence at 5 Hz: `[[v_mph, heading_deg], ...]` |
+| `<stem>_10fps.txt` | Native-rate sequence at 10 Hz (same format) |
+| `inverse_dynamics_flags.txt` | Heuristic mismatches vs the prompt’s last sentence |
+
+**Example plots** (velocity / heading over time). Drop screenshots into
+`docs/images/` using the filenames below:
+
+![Example: ego velocity (mph) vs time](docs/images/inverse_dynamics_velocity_example.png)
+
+*Placeholder — save a velocity trajectory plot to
+`docs/images/inverse_dynamics_velocity_example.png`.*
+
+![Example: ego heading (deg) vs time](docs/images/inverse_dynamics_heading_example.png)
+
+*Placeholder — save a heading trajectory plot to
+`docs/images/inverse_dynamics_heading_example.png`.*
+
+![Example: video frame alongside synced trajectory cursor](docs/images/inverse_dynamics_synced_plot_example.png)
+
+*Placeholder — save a side-by-side video + real-time plot screenshot to
+`docs/images/inverse_dynamics_synced_plot_example.png`.*
+
+### Inverse Dynamics Manual Validation (GUI)
+
+After running inverse dynamics, validate trajectories manually with the Streamlit
+app under [`data/cosmos3/data_validation/`](data/cosmos3/data_validation/):
+
+```bash
+uv sync --group validation
+uv run --group validation streamlit run data/cosmos3/data_validation/app.py
+```
+
+See [`data/cosmos3/data_validation/README.md`](data/cosmos3/data_validation/README.md)
+for CSV columns and usage details.

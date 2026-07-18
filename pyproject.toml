@@ -36,6 +36,11 @@ link-mode = "copy"
 # install needed); this pin documents the version and lets `uv run ruff` work too.
 [dependency-groups]
 dev = ["ruff==0.15.17"]
+validation = [
+    "streamlit",
+    "plotly",
+    "pandas",
+]
 
 [tool.ruff]
 target-version = "py313"
