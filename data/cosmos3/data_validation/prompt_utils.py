@@ -2,13 +2,20 @@
 
 from __future__ import annotations
 
-import sys
+from importlib.util import module_from_spec, spec_from_file_location
 from pathlib import Path
 
-_COSMOS3_DIR = Path(__file__).resolve().parent.parent
-if str(_COSMOS3_DIR) not in sys.path:
-    sys.path.insert(0, str(_COSMOS3_DIR))
+_SPEC = spec_from_file_location(
+    "prompt_resolve",
+    Path(__file__).resolve().parent.parent / "prompt_resolve.py",
+)
+if _SPEC is None or _SPEC.loader is None:
+    raise ImportError("Could not load data/cosmos3/prompt_resolve.py")
+_MOD = module_from_spec(_SPEC)
+_SPEC.loader.exec_module(_MOD)
 
-from prompt_resolve import last_sentence, prompt_sentence_for, resolve_prompt_file
+last_sentence = _MOD.last_sentence
+prompt_sentence_for = _MOD.prompt_sentence_for
+resolve_prompt_file = _MOD.resolve_prompt_file
 
 __all__ = ["last_sentence", "prompt_sentence_for", "resolve_prompt_file"]
