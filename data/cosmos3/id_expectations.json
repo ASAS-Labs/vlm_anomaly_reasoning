@@ -1,0 +1,1577 @@
+{
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_0.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_2.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_3.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_4.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_5.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_8.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_9.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v01.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v02.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v03.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v04.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v05.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v06.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v07.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v08.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v09.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v10.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v11.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v12.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v13.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v14.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v15.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v16.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v17.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v18.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v19.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v20.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle decelerates to a stop as it approaches the billboard.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v01.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v02.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v03.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v04.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v05.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v06.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v07.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v08.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v09.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v10.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v11.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v12.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v13.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v14.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v15.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v16.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v17.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v18.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v19.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v20.mp4": {
+    "class": "stop",
+    "sentence": "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a \u2018Stop Sign.\u2019 The ego vehicle decelerates to a full stop as it approaches the pedestrian.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v01.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v02.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v03.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v04.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v05.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v06.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v07.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v08.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v09.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v10.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v11.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v12.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v13.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v14.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v15.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v16.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v17.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v18.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v19.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v20.mp4": {
+    "class": "accelerate",
+    "sentence": "The car starts moving when one of the bright green balloons overlaps the RED signal.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v01.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v02.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v03.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v04.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v05.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v07.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v08.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v09.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v10.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v11.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v12.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v13.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v14.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v15.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v17.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v18.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v19.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v20.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the balloons are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v01.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v03.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v04.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v06.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v07.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v08.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v09.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v10.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v11.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v12.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v13.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v14.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v15.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v16.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v17.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v18.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v19.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v20.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle decelerates to a stop as though the polythene bags are obstacles.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle fails to detect the low-profile pedestrian and continues at speed without decelerating as it approaches.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle misinterprets the 2D artwork as a real, continuing roadway and runs into the fake wall with no deceleration.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_0.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_11.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_2.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_4.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_5.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_6.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_8.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_9.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The stop sign is part of the advertisement and not a real traffic sign; the ego vehicle continues driving at its normal cruising speed as it drives past the billboard without slowing or stopping.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v01.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v02.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v03.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v04.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v05.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v06.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v07.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v08.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v09.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v10.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v11.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v12.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v13.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v14.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v15.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v16.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v17.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v18.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v19.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v20.mp4": {
+    "class": "stop",
+    "sentence": "Despite the green balloon overlapping the red lamp, the vehicle comes to a safe, compliant stop at the red light.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle continues driving smoothly past the pedestrian, staying in its lane without slowing down.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle continues driving smoothly along its path, gently maneuvering around the balloons.",
+    "steer": true
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The vehicle maintains its speed and lane position, ignoring the polythene bags.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v01.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v02.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v03.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v04.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v05.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v06.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v07.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v08.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v09.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v10.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v11.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v12.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v13.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v14.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v15.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v16.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v17.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v18.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v19.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v20.mp4": {
+    "class": "maintain",
+    "sentence": "The ego vehicle slows down significantly to manage the impaired visibility, letting the oncoming vehicle pass and the artifacts clear, before resuming its nominal speed.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v01.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v02.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v03.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v04.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v05.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v06.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v07.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v08.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v09.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v10.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v11.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v12.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v13.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v14.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v15.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v16.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v17.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v18.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v19.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v20.mp4": {
+    "class": "stop",
+    "sentence": "The ego vehicle promptly decelerates with firm, controlled braking to a safe and complete stop well before reaching the child, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v01.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v02.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v03.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v04.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v05.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v06.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v07.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v08.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v09.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v10.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v11.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v12.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v13.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v14.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v15.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v16.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v17.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v18.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v19.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  },
+  "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4": {
+    "class": "stop",
+    "sentence": "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped.",
+    "steer": false
+  }
+}

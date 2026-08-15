@@ -220,13 +220,14 @@ def video_name(rel_path: Path) -> str:
     return rel_path.with_suffix("").as_posix().replace("/", "__")
 
 
-def discover_videos() -> list[dict]:
-    videos = sorted(GENERATED_VIDS_DIR.rglob("*.mp4"))
+def discover_videos(videos_root: Path = None) -> list[dict]:
+    root = videos_root or GENERATED_VIDS_DIR
+    videos = sorted(root.rglob("*.mp4"))
     if not videos:
-        raise SystemExit(f"No .mp4 files found under {GENERATED_VIDS_DIR}")
+        raise SystemExit(f"No .mp4 files found under {root}")
     records = []
     for path in videos:
-        rel = path.relative_to(GENERATED_VIDS_DIR)
+        rel = path.relative_to(root)
         records.append({"name": video_name(rel), "video_path": path, "rel_path": rel})
     return records
 
@@ -307,8 +308,8 @@ def _poses_to_sequence(poses, hz: float) -> list[list[float]]:
     return [[round(float(velocity[i]), 4), round(float(heading[i]), 4)] for i in range(len(d))]
 
 
-def action_to_sequence(action) -> tuple[list[list[float]], list[list[float]], float]:
-    """Convert a predicted action [T-1, 9] into native-FPS and TARGET_HZ sequences.
+def action_to_sequence(action, hz=None, n_valid=None):
+    """Convert a predicted action [T-1, 9] into native-rate and 5 Hz sequences.
 
     Returns (downsampled_seq, native_seq, initial_velocity_mph). pose_rel_to_abs
     with translation_scale=1.35 yields camera-to-world poses in meters (per the
@@ -320,110 +321,39 @@ def action_to_sequence(action) -> tuple[list[list[float]], list[list[float]], fl
     import numpy as np
     from cosmos_framework.data.vfm.action.pose_utils import pose_rel_to_abs
 
+    from id_trajectory import derive_10hz, to_5hz
+
     action = np.asarray(action, dtype=np.float64)
     poses_abs = np.asarray(pose_rel_to_abs(
         action,
         rotation_format="rot6d",
         pose_convention="backward_framewise",
         translation_scale=1.35,
-    ), dtype=np.float64)  # [T, 4, 4] camera-to-world (meters) at FPS Hz
+    ), dtype=np.float64)  # [T, 4, 4] camera-to-world (meters)
 
-    # Initial velocity from the first few native-rate frames (ground plane X-Z).
-    pos_native = poses_abs[:, :3, 3]
-    d_native = np.linalg.norm(np.diff(pos_native[:, [0, 2]], axis=0), axis=1)
-    if len(d_native) == 0:
-        return [], [], 0.0
-    initial_velocity = float(d_native[:INIT_VELOCITY_FRAMES].mean() * FPS * MPS_TO_MPH)
+    # hz is the TRUE spacing of the frames the model consumed. Using the FPS constant
+    # here regardless of the video's actual rate is what scaled every published
+    # velocity by 10/24. n_valid drops the frames the framework padded by repeating
+    # the last one, which would otherwise read as a stop that never happened.
+    seq_native = derive_10hz(poses_abs, hz, n_valid)
+    if not seq_native:
+        return [], [], 0.0, poses_abs
 
-    seq_native = _poses_to_sequence(poses_abs, FPS)
-
-    # Downsample poses to TARGET_HZ so all derived values share a 5 Hz step.
-    stride = max(1, round(FPS / TARGET_HZ))
-    seq = _poses_to_sequence(poses_abs[::stride], TARGET_HZ)
-    return seq, seq_native, initial_velocity
+    initial_velocity = float(
+        np.mean([r[0] for r in seq_native[:INIT_VELOCITY_FRAMES]]))
+    seq = to_5hz(seq_native, "decimate")
+    return seq, seq_native, initial_velocity, poses_abs
 
 
 # ---------------------------------------------------------------------------
 # Validation against the prompt's last sentence
 # (last_sentence / resolve_prompt_file / prompt_sentence_for: prompt_resolve.py)
 # ---------------------------------------------------------------------------
-def classify_expected(sentence: str) -> dict:
-    """Heuristic end-behavior expectation from a natural-language sentence."""
-    s = sentence.lower()
-    expected = {"speed": None, "steer": False}
+# These moved to id_semantics.py so every trajectory variant is scored by the
+# same rules; that module also adds an absolute stop test, since the end/start
+# ratio used here can never verify that a vehicle actually reached zero.
+from id_semantics import check_match, classify_expected, evaluate_sequence  # noqa: E402
 
-    steer_kw = ["steer", "maneuver", "manoeuvr", "navigat", "oncoming lane",
-                "into an oncoming", "jagged", "swerv", "changes lane"]
-    accel_kw = ["starts moving", "starts to move", "begins to move",
-                "begins to drive", "accelerat", "starts driving"]
-    # Negations / "keeps going" phrases -> NOT decelerating, treat as maintain.
-    no_decel_kw = ["no deceleration", "without stopping", "without slowing",
-                   "runs into", "fails to detect", "driving through",
-                   "continues to drive", "drive forward"]
-    decel_kw = ["decelerat", "comes to a stop", "to a stop", "slows down",
-                "slow down", "controlled stop", "complete stop", "compliant stop"]
-    maintain_kw = ["maintains", "normal speed", "cruising", "continues driving",
-                   "drives past", "smoothly past", "remains safely stopped",
-                   "remains stopped", "lane position"]
-
-    if any(k in s for k in steer_kw):
-        expected["steer"] = True
-
-    if any(k in s for k in accel_kw):
-        expected["speed"] = "accelerate"
-    elif any(k in s for k in no_decel_kw):
-        expected["speed"] = "maintain"
-    elif "resuming" in s or "nominal speed" in s:
-        # e.g. "slows down ... before resuming nominal speed" -> net maintain
-        expected["speed"] = "maintain"
-    elif any(k in s for k in decel_kw):
-        expected["speed"] = "decelerate"
-    elif any(k in s for k in maintain_kw):
-        expected["speed"] = "maintain"
-    return expected
-
-
-def evaluate_sequence(seq: list[list[float]]) -> tuple[float, float, float]:
-    import numpy as np
-    v = np.array([row[0] for row in seq], dtype=np.float64)
-    h = np.array([row[1] for row in seq], dtype=np.float64)
-    n = len(v)
-    lo, hi = TAIL_RANGE
-    i0 = int(round(n * lo))
-    i1 = max(i0 + 1, int(round(n * hi)))
-    j0 = int(round(n * (1.0 - hi)))
-    j1 = max(j0 + 1, int(round(n * (1.0 - lo))))
-    # Clamp so empty/tiny sequences still yield a defined mean.
-    i0, i1 = max(0, min(i0, n - 1)), max(1, min(i1, n))
-    j0, j1 = max(0, min(j0, n - 1)), max(1, min(j1, n))
-    start_v = float(v[i0:i1].mean()) if n else 0.0
-    end_v = float(v[j0:j1].mean()) if n else 0.0
-    max_abs_heading = float(np.max(np.abs(h))) if n else 0.0
-    return start_v, end_v, max_abs_heading
-
-
-def check_match(expected: dict, start_v: float, end_v: float, max_heading: float) -> tuple[bool, list[str]]:
-    eps = 1e-6
-    ratio = end_v / max(start_v, eps)
-    reasons: list[str] = []
-    ok = True
-    sp = expected["speed"]
-    if sp == "decelerate":
-        if not (ratio < DECEL_RATIO):
-            ok = False
-            reasons.append(f"expected deceleration, end/start velocity={ratio:.2f}")
-    elif sp == "accelerate":
-        if not (ratio > ACCEL_RATIO):
-            ok = False
-            reasons.append(f"expected acceleration, end/start velocity={ratio:.2f}")
-    elif sp == "maintain":
-        if not (MAINTAIN_LO <= ratio <= MAINTAIN_HI):
-            ok = False
-            reasons.append(f"expected ~constant speed, end/start velocity={ratio:.2f}")
-    if expected["steer"] and max_heading < STEER_DEG:
-        ok = False
-        reasons.append(f"expected steering, max|heading|={max_heading:.1f}deg")
-    return ok, reasons
 
 
 # ---------------------------------------------------------------------------
@@ -440,16 +370,58 @@ def main() -> None:
         help="root of the prompts tree mirrored by generated_vids "
              "(default: $PROMPTS_ROOT or video_gen_prompts next to this script)",
     )
+    parser.add_argument(
+        "--videos-root", type=Path, default=GENERATED_VIDS_DIR,
+        help="video tree to run inference over; point this at a resampled tree",
+    )
+    parser.add_argument(
+        "--manifest", type=Path, default=None,
+        help="resample_manifest.json from resample_videos.py. Supplies the true input "
+             "fps and the real (unpadded) frame count per clip - both required for a "
+             "correct trajectory.",
+    )
+    parser.add_argument("--raw-out", type=Path, default=None,
+                        help="persist raw poses/actions to this JSONL so trajectory "
+                             "variants can be derived offline without re-running")
+    parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument(
+        "--write-inplace-txt", action="store_true",
+        help="write <video>.txt next to each video. OFF by default: an experimental "
+             "run would otherwise silently overwrite the released baseline files.",
+    )
+    parser.add_argument(
+        "--upload", action="store_true",
+        help=f"upload results to {HF_DATASET_REPO}. OFF by default.",
+    )
     args = parser.parse_args()
     prompts_root = args.prompts_root.resolve()
+    videos_root = args.videos_root.resolve()
+
+    manifest = {}
+    if args.manifest:
+        for c in json.loads(args.manifest.read_text())["clips"]:
+            manifest[c["rel_path"]] = c
+
+    # An upload may only ever target the released dataset from the released video tree.
+    if args.upload and videos_root != GENERATED_VIDS_DIR.resolve():
+        raise SystemExit(
+            f"refusing to upload: --videos-root is {videos_root}, not the released "
+            f"{GENERATED_VIDS_DIR}. Experimental trajectories must not overwrite the "
+            f"published dataset."
+        )
 
     print(f"repo root:          {REPO_ROOT}")
     print(f"framework:          {COSMOS3_REPO}")
-    print(f"generated_vids:     {GENERATED_VIDS_DIR}")
+    print(f"videos root:        {videos_root}")
     print(f"prompts root:       {prompts_root}")
     print(f"work dir:           {WORK_DIR}")
+    print(f"write in-place txt: {args.write_inplace_txt}    upload: {args.upload}")
 
-    records = discover_videos()
+    records = discover_videos(videos_root)
+    if manifest:
+        records = [r for r in records if r["rel_path"].as_posix() in manifest]
+    if args.limit:
+        records = records[: args.limit]
     print(f"found {len(records)} video(s)")
 
     # Resumable: only run inference for videos lacking a prior prediction.
@@ -460,8 +432,15 @@ def main() -> None:
     else:
         print("all predictions already present; skipping inference")
 
-    api = HfApi(token=os.environ.get("HF_TOKEN") or None)
-    api.create_repo(HF_DATASET_REPO, repo_type="dataset", exist_ok=True)
+    api = None
+    if args.upload:
+        api = HfApi(token=os.environ.get("HF_TOKEN") or None)
+        api.create_repo(HF_DATASET_REPO, repo_type="dataset", exist_ok=True)
+
+    raw_fh = None
+    if args.raw_out:
+        args.raw_out.parent.mkdir(parents=True, exist_ok=True)
+        raw_fh = open(args.raw_out, "w", encoding="utf-8")
 
     flags: list[str] = []
     upload_ops: list[CommitOperationAdd] = []
@@ -476,22 +455,47 @@ def main() -> None:
 
         outputs = json.loads(out_json.read_text())
         action = outputs["outputs"][0]["content"]["action"]  # [T-1, 9]
-        seq, seq_native, init_v = action_to_sequence(action)
+
+        # True input rate and real frame count come from the resample manifest;
+        # without it fall back to the historical (incorrect) assumption.
+        info = manifest.get(rel.as_posix(), {})
+        hz = float(info.get("out_fps", FPS))
+        n_valid = info.get("out_frames")
+        seq, seq_native, init_v, poses = action_to_sequence(action, hz, n_valid)
         if not seq or not seq_native:
             msg = f"FLAG  {rel}: action too short to derive a sequence"
             print(msg)
             flags.append(msg)
             continue
 
-        # Save downsampled (<video>.txt) and native-rate (<video>_<FPS>fps.txt).
+        if raw_fh is not None:
+            # Persisting poses is what makes every other trajectory variant free:
+            # pose_rel_to_abs lives in the framework and is unavailable off this box.
+            raw_fh.write(json.dumps({
+                "rel_path": rel.as_posix(), "name": name,
+                "action": [[round(x, 6) for x in row] for row in action],
+                "poses": [[round(x, 6) for x in r] for r in poses.reshape(len(poses), -1)],
+                "n_valid_steps": (min(len(seq_native), n_valid - 1)
+                                  if n_valid else len(seq_native)),
+                "input_fps": hz,
+                "src_frames": info.get("src_frames"),
+                "out_frames": n_valid,
+                "translation_scale": 1.35,
+                "checkpoint": CHECKPOINT,
+            }) + "\n")
+            raw_fh.flush()
+
         txt_path = video_path.with_suffix(".txt")
-        txt_path.write_text(json.dumps(seq) + "\n")
         txt_native_path = video_path.with_name(f"{video_path.stem}_{FPS}fps.txt")
-        txt_native_path.write_text(json.dumps(seq_native) + "\n")
+        if args.write_inplace_txt:
+            txt_path.write_text(json.dumps(seq) + "\n")
+            txt_native_path.write_text(json.dumps(seq_native) + "\n")
 
         # Validate against the prompt's last sentence.
         sentence = prompt_sentence_for(rel, prompts_root)
-        start_v, end_v, max_heading = evaluate_sequence(seq_native)
+        stats = evaluate_sequence(seq_native)
+        start_v, end_v = stats["start_v"], stats["end_v"]
+        max_heading = stats["max_abs_heading"]
         if sentence is None:
             line = (f"NOTE  {rel}: no matching prompt sentence; "
                     f"init_v={init_v:.1f} start_v={start_v:.1f} end_v={end_v:.1f} "
@@ -505,7 +509,7 @@ def main() -> None:
                         f"max|heading|={max_heading:.1f}deg :: \"{sentence}\"")
                 print(line)
             else:
-                ok, reasons = check_match(expected, start_v, end_v, max_heading)
+                ok, reasons = check_match(expected, stats)
                 tag = "MATCH" if ok else "FLAG "
                 exp_str = expected["speed"] or "-"
                 if expected["steer"]:
@@ -519,23 +523,32 @@ def main() -> None:
                 print(line)
 
         # Queue both .txt files for a single end-of-run commit (mirrored paths).
-        path_in_repo = rel.with_suffix(".txt").as_posix()
-        path_native_in_repo = rel.with_name(f"{rel.stem}_{FPS}fps.txt").as_posix()
-        upload_ops.append(CommitOperationAdd(
-            path_in_repo=path_in_repo,
-            path_or_fileobj=str(txt_path),
-        ))
-        upload_ops.append(CommitOperationAdd(
-            path_in_repo=path_native_in_repo,
-            path_or_fileobj=str(txt_native_path),
-        ))
+        if args.upload:
+            upload_ops.append(CommitOperationAdd(
+                path_in_repo=rel.with_suffix(".txt").as_posix(),
+                path_or_fileobj=str(txt_path),
+            ))
+            upload_ops.append(CommitOperationAdd(
+                path_in_repo=rel.with_name(f"{rel.stem}_{FPS}fps.txt").as_posix(),
+                path_or_fileobj=str(txt_native_path),
+            ))
 
-    summary_path = GENERATED_VIDS_DIR / "inverse_dynamics_flags.txt"
+    if raw_fh is not None:
+        raw_fh.close()
+        print(f"\nwrote raw poses/actions: {args.raw_out}")
+
+    summary_path = (WORK_DIR / "inverse_dynamics_flags.txt" if not args.write_inplace_txt
+                    else GENERATED_VIDS_DIR / "inverse_dynamics_flags.txt")
+    summary_path.parent.mkdir(parents=True, exist_ok=True)
     header = (f"Inverse-dynamics validation flags ({len(flags)} issue(s))\n"
               f"Heuristic, language-based comparison of the action-sequence tail "
               f"vs the last sentence of each prompt.\n\n")
     summary_path.write_text(header + ("\n".join(flags) + "\n" if flags else "(no flags)\n"))
     print(f"\nwrote summary: {summary_path}")
+
+    if not args.upload:
+        print(f"done. {len(flags)} flag(s). (upload disabled; pass --upload to publish)")
+        return
 
     upload_ops.append(CommitOperationAdd(
         path_in_repo=summary_path.name,
