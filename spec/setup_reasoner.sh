@@ -5,15 +5,16 @@
 # Set up the environment to run vllm_cosmos_reasoning.py (Cosmos3 Reasoner anomaly
 # reasoning behind a vLLM OpenAI-compatible server).
 #
-# This mirrors cell 4 of cookbooks/cosmos3/reasoner/run_with_vllm.ipynb: it clones
-# the Cosmos Framework into packages/cosmos3 and installs vLLM + the cosmos3
-# packages (and the openai client used by the script) into a uv-managed virtual
-# environment (.venv at the repo root).
+# This mirrors cell 4 of cookbooks/cosmos3/reasoner/run_with_vllm.ipynb: it uses the
+# vendored Cosmos Framework submodule (packages/cosmos-framework) and installs vLLM +
+# the cosmos3 packages (and the openai client used by the script) into a uv-managed
+# virtual environment (.venv at the repo root).
 #
 # Usage:
-#   ./setup_reasoner.sh
+#   ./spec/setup_reasoner.sh
 #   source .venv/bin/activate
-#   python vllm_cosmos_reasoning.py --dataset generated_vids --exp_name smoke --model nano
+#   cd data/cosmos3 && python cosmos_reasoning_vllm.py \
+#     --dataset ../../data/datasets/generated_vids --exp_name smoke
 #
 # The vLLM wheel and torch backend are paired to the host CUDA driver and are
 # auto-selected, but can be overridden, e.g. for a CUDA 12.8 driver:
@@ -22,12 +23,13 @@
 set -euo pipefail
 
 # Resolve the repo root by walking up from this script until we find the
-# checkout markers (README.md + cookbooks/).
+# checkout markers (README.md + data/cosmos3/). This script lives in spec/, so the
+# marker must exist at the repo root, not beside the script.
 find_repo_root() {
   local dir
   dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
   while [[ "${dir}" != "/" ]]; do
-    if [[ -f "${dir}/README.md" && -d "${dir}/cookbooks" ]]; then
+    if [[ -f "${dir}/README.md" && -d "${dir}/data/cosmos3" ]]; then
       printf '%s\n' "${dir}"
       return 0
     fi
@@ -53,7 +55,7 @@ else
 fi
 
 # Environment variables (existing values win).
-export COSMOS3_REPO="${COSMOS3_REPO:-${COSMOS_ROOT}/packages/cosmos3}"
+export COSMOS3_REPO="${COSMOS3_REPO:-${COSMOS_ROOT}/packages/cosmos-framework}"
 export COSMOS3_GIT_URL="${COSMOS3_GIT_URL:-https://github.com/NVIDIA/cosmos-framework.git}"
 export VENV_DIR="${VENV_DIR:-${COSMOS_ROOT}/.venv}"
 export TORCH_BACKEND="${TORCH_BACKEND:-${DEFAULT_BACKEND}}"
@@ -70,7 +72,7 @@ echo "HF_HOME:         ${HF_HOME}"
 if [[ -n "${HF_TOKEN:-}" ]]; then
   echo "HF_TOKEN: <set>"
 else
-  echo "HF_TOKEN: <unset> (required for gated nvidia/Cosmos3-Nano / Cosmos3-Super download)"
+  echo "HF_TOKEN: <unset> (nvidia/Cosmos3-Nano is ungated, but the dataset repo needs it)"
 fi
 
 if ! command -v uv >/dev/null 2>&1; then
@@ -101,11 +103,16 @@ install_system_libs() {
 
 install_system_libs
 
-# 1. Clone (or reuse) the Cosmos Framework checkout (provides the cosmos3 packages).
+# 1. Populate the Cosmos Framework (provides the cosmos3 packages). It is vendored as
+# a submodule here, so initialise that rather than cloning a second copy.
 export GIT_LFS_SKIP_SMUDGE=1
 mkdir -p "$(dirname "${COSMOS3_REPO}")"
-if [[ -d "${COSMOS3_REPO}/.git" ]]; then
+if [[ -f "${COSMOS3_REPO}/pyproject.toml" ]]; then
   echo "Using existing framework checkout: ${COSMOS3_REPO}"
+elif git -C "${COSMOS_ROOT}" config --file .gitmodules --get-regexp path 2>/dev/null \
+     | grep -q "packages/cosmos-framework"; then
+  echo "Initialising submodule packages/cosmos-framework"
+  git -C "${COSMOS_ROOT}" submodule update --init packages/cosmos-framework
 else
   echo "Cloning ${COSMOS3_GIT_URL} into ${COSMOS3_REPO}"
   git clone "${COSMOS3_GIT_URL}" "${COSMOS3_REPO}"
@@ -125,11 +132,13 @@ uv pip install --python "${VENV_DIR}/bin/python" --torch-backend="${TORCH_BACKEN
   "vllm==${VLLM_VERSION}" \
   "${COSMOS3_REPO}/packages/transformers-cosmos3" \
   "${COSMOS3_REPO}/packages/vllm-cosmos3" \
-  openai
+  openai \
+  "huggingface_hub[hf_transfer]"
 
 echo
-echo "Setup complete. Run the reasoner with:"
-echo "  source ${VENV_DIR}/bin/activate"
-echo "  python ${COSMOS_ROOT}/vllm_cosmos_reasoning.py --dataset generated_vids --exp_name smoke --model nano"
+echo "Setup complete. Fetch the eval subset and run:"
+echo "  ${VENV_DIR}/bin/python ${COSMOS_ROOT}/data/cosmos3/fetch_eval_dataset.py"
+echo "  cd ${COSMOS_ROOT}/data/cosmos3 && ${VENV_DIR}/bin/python cosmos_reasoning_vllm.py \\"
+echo "      --dataset ../../data/datasets/generated_vids --exp_name smoke"
 echo
-echo "(Cosmos3-Nano weights download on first launch; export HF_TOKEN if the model is gated.)"
+echo "(Cosmos3-Nano weights ~35GB download on first launch.)"

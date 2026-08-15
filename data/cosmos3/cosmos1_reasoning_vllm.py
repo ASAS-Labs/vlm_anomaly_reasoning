@@ -261,7 +261,7 @@ def main():
                 prediction = parse_classification(raw)
                 counts[prediction] += 1
                 pred_label = 1 if prediction == "Anomaly" else 0
-                metrics.update([pred_label], [true_label], [inference_time])
+                metrics.add(prediction, true_label, inference_time)
 
                 results.append({
                     "file": str(video_path),
@@ -338,12 +338,15 @@ def main():
         m = metric_results
         print("\nCLASSIFICATION METRICS")
         print("=" * 60)
-        print(f"  TP: {m['TP']}  TN: {m['TN']}  FP: {m['FP']}  FN: {m['FN']}")
-        print(f"  Accuracy:  {m['Accuracy']:.4f}")
-        print(f"  Precision: {m['Precision']:.4f}")
-        print(f"  Recall:    {m['Recall']:.4f}")
-        print(f"  F1-Score:  {m['F1-Score']:.4f}")
-        print(f"  Avg Inference Time: {m['Avg Inference Time']:.3f}s")
+        c = m["resolved"]
+        print(f"  TP: {c['TP']}  TN: {c['TN']}  FP: {c['FP']}  FN: {c['FN']}")
+        print(f"  Accuracy:  {c['accuracy']:.4f}  (over {c['n']} resolved of "
+              f"{m['n_total']}, coverage {m['coverage']:.3f})")
+        print(f"  Precision: {c['precision']:.4f}")
+        print(f"  Recall:    {c['recall']:.4f}")
+        print(f"  F1-Score:  {c['f1']:.4f}")
+        print(f"  Accuracy (unresolved counted wrong): {m['strict_all']['accuracy']:.4f}")
+        print(f"  Avg Inference Time: {m['timing']['mean_s']:.3f}s")
 
     print(f"\nReport saved to: {report_path}")
 

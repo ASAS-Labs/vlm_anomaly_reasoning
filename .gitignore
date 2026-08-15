@@ -6,6 +6,11 @@ __pycache__/
 # Generated artifacts
 data/datasets/
 
+# Eval run logs: keep the result artifacts (results.jsonl, report.json, metrics.json,
+# run_meta_*.json) since they back the paper's numbers; drop only the vLLM server log,
+# which is hundreds of MB and reproducible.
+logs/**/vllm_server.log
+
 .claude/settings.local.json
 .env
 todo.md
