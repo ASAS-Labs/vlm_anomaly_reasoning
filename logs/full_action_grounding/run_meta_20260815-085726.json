@@ -1,0 +1,1625 @@
+{
+  "run_id": "20260815-085726",
+  "cli_args": {
+    "dataset": "../../data/datasets/generated_vids",
+    "exp_name": "full",
+    "mode": "action_grounding",
+    "out_dir": "/workspace/logs/full_action_grounding",
+    "server_url": "http://127.0.0.1:8000/v1",
+    "fps": 4,
+    "max_tokens": 1024,
+    "temperature": 0.0,
+    "seed": 1234,
+    "retries": 2,
+    "port": 8000,
+    "limit": null,
+    "sample": "balanced",
+    "dry_run": false,
+    "retry_unknown": false,
+    "allow_partial": false
+  },
+  "model": "nvidia/Cosmos3-Nano",
+  "parser_version": 2,
+  "prompts": {
+    "action": "You are an autonomous driving safety expert analyzing this ego vehicle's video for semantic or contextual anomalies, that may impact safe AV operation. The ego vehicle's action (state sequence) given afterwards is in the format [[velocity_in_mph, heading_in_degrees], ...]. Think about the video and the ego vehicle's action, is there any semantic misunderstanding of the autopilot that requires intervention? Reply with exactly one word of the following:\nClassification: Anomaly \u2014 if there is a semantic anomaly\nClassification: Normal \u2014 if there is no semantic anomaly.",
+    "action_sha256": "12c97a09ea3ce61210a42d46e9bd59bfd9fe7d152f22af04ad7f19d3dd95f575",
+    "no_action": "You are an autonomous driving safety expert analyzing this ego vehicle's video for semantic or contextual anomalies, that may impact safe AV operation. Think about the video, is there any semantic misunderstanding of the autopilot that requires intervention? Reply with exactly one word of the following:\nClassification: Anomaly \u2014 if there is a semantic anomaly\nClassification: Normal \u2014 if there is no semantic anomaly.",
+    "no_action_sha256": "1d484230fc67087718dff7915ad536ec13f40b886901c1d6c656020d2daa08fb"
+  },
+  "git": {
+    "sha": null,
+    "dirty": false
+  },
+  "environment": {
+    "hostname": "c9f238e942f0",
+    "python": "3.12.13",
+    "vllm": "0.25.0",
+    "gpu": {
+      "count": 1,
+      "names": [
+        "NVIDIA H200"
+      ]
+    }
+  },
+  "dataset": {
+    "root": "../../data/datasets/generated_vids",
+    "n_videos": 315,
+    "manifest": [
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_0.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_2.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_3.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_4.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_5.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_8.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_9.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v01.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v02.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v03.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v04.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v05.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v06.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v07.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v08.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v09.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v10.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v11.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v12.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v13.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v14.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v15.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v16.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v17.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v18.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v19.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v20.mp4",
+        "true_label": 1,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_0.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_2.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_4.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_5.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_6.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_8.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_filtered/prompt_9.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v01.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v02.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v03.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v04.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v05.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v06.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v07.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v08.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v09.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v10.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v11.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v12.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v13.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v14.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v15.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v16.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v17.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v18.mp4",
+        "true_label": 0,
+        "on_skip_list": true
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v19.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      },
+      {
+        "video": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4",
+        "true_label": 0,
+        "on_skip_list": false
+      }
+    ]
+  }
+}

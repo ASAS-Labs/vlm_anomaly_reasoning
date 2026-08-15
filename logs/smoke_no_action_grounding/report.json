@@ -1,0 +1,109 @@
+{
+  "experiment": {
+    "exp_name": "smoke",
+    "mode": "no_action_grounding",
+    "run_id": "20260815-085133",
+    "start_time": "2026-08-15T08:51:36.181836",
+    "end_time": "2026-08-15T08:51:42.954450",
+    "duration_s": 6.8
+  },
+  "model": "nvidia/Cosmos3-Nano",
+  "parser_version": 2,
+  "cli_args": {
+    "dataset": "../../data/datasets/generated_vids",
+    "exp_name": "smoke",
+    "mode": "no_action_grounding",
+    "out_dir": "/workspace/logs/smoke_no_action_grounding",
+    "server_url": "http://127.0.0.1:8000/v1",
+    "fps": 4,
+    "max_tokens": 1024,
+    "temperature": 0.0,
+    "seed": 1234,
+    "retries": 2,
+    "port": 8000,
+    "limit": 8,
+    "sample": "balanced",
+    "dry_run": false,
+    "retry_unknown": false,
+    "allow_partial": false
+  },
+  "metrics": {
+    "n_total": 8,
+    "n_resolved": 8,
+    "n_unknown": 0,
+    "n_error": 0,
+    "coverage": 1.0,
+    "resolved": {
+      "TP": 1,
+      "FP": 0,
+      "TN": 4,
+      "FN": 3,
+      "accuracy": 0.625,
+      "precision": 1.0,
+      "recall": 0.25,
+      "specificity": 1.0,
+      "f1": 0.4,
+      "balanced_accuracy": 0.625,
+      "n": 8
+    },
+    "strict_all": {
+      "accuracy": 0.625,
+      "recall": 0.25,
+      "specificity": 1.0,
+      "n": 8
+    },
+    "accuracy_bounds": [
+      0.625,
+      0.625
+    ],
+    "unresolved_reasons": {},
+    "timing": {
+      "mean_s": 0.8155,
+      "median_s": 0.727,
+      "p95_s": 1.219,
+      "total_s": 6.524,
+      "n_timed": 8
+    },
+    "true_counts": {
+      "anomaly": 4,
+      "normal": 4
+    },
+    "pred_counts": {
+      "Anomaly": 1,
+      "Normal": 7,
+      "Unknown": 0,
+      "Error": 0
+    },
+    "excluding_skip_list": {
+      "n_total": 8,
+      "n_resolved": 8,
+      "n_unknown": 0,
+      "n_error": 0,
+      "coverage": 1.0,
+      "resolved": {
+        "TP": 1,
+        "FP": 0,
+        "TN": 4,
+        "FN": 3,
+        "accuracy": 0.625,
+        "precision": 1.0,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "f1": 0.4,
+        "balanced_accuracy": 0.625,
+        "n": 8
+      },
+      "strict_all": {
+        "accuracy": 0.625,
+        "recall": 0.25,
+        "specificity": 1.0,
+        "n": 8
+      },
+      "accuracy_bounds": [
+        0.625,
+        0.625
+      ]
+    },
+    "n_on_skip_list": 0
+  }
+}

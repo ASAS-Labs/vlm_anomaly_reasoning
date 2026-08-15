@@ -51,7 +51,7 @@ mkdir -p "${LOG_DIR}"
   --hf-overrides '{"architectures": ["Cosmos3ReasonerForConditionalGeneration"]}' \
   --async-scheduling \
   --allowed-local-media-path / \
-  --media-io-kwargs '{"video": {"num_frames": -1}}' \
+  --media-io-kwargs '{"video": {"fps": 4, "num_frames": -1}}' \
   --tensor-parallel-size 1 \
   --port "${PORT}" > "${LOG_DIR}/vllm_server.log" 2>&1 &
 SERVER_PID=$!

@@ -1,0 +1,109 @@
+{
+  "experiment": {
+    "exp_name": "full",
+    "mode": "action_grounding",
+    "run_id": "20260815-085726",
+    "start_time": "2026-08-15T08:57:29.523011",
+    "end_time": "2026-08-15T09:00:54.901862",
+    "duration_s": 205.4
+  },
+  "model": "nvidia/Cosmos3-Nano",
+  "parser_version": 2,
+  "cli_args": {
+    "dataset": "../../data/datasets/generated_vids",
+    "exp_name": "full",
+    "mode": "action_grounding",
+    "out_dir": "/workspace/logs/full_action_grounding",
+    "server_url": "http://127.0.0.1:8000/v1",
+    "fps": 4,
+    "max_tokens": 1024,
+    "temperature": 0.0,
+    "seed": 1234,
+    "retries": 2,
+    "port": 8000,
+    "limit": null,
+    "sample": "balanced",
+    "dry_run": false,
+    "retry_unknown": false,
+    "allow_partial": false
+  },
+  "metrics": {
+    "n_total": 315,
+    "n_resolved": 315,
+    "n_unknown": 0,
+    "n_error": 0,
+    "coverage": 1.0,
+    "resolved": {
+      "TP": 88,
+      "FP": 70,
+      "TN": 98,
+      "FN": 59,
+      "accuracy": 0.5904761904761905,
+      "precision": 0.5569620253164557,
+      "recall": 0.5986394557823129,
+      "specificity": 0.5833333333333334,
+      "f1": 0.5770491803278688,
+      "balanced_accuracy": 0.5909863945578231,
+      "n": 315
+    },
+    "strict_all": {
+      "accuracy": 0.5904761904761905,
+      "recall": 0.5986394557823129,
+      "specificity": 0.5833333333333334,
+      "n": 315
+    },
+    "accuracy_bounds": [
+      0.5904761904761905,
+      0.5904761904761905
+    ],
+    "unresolved_reasons": {},
+    "timing": {
+      "mean_s": 0.6501904761904762,
+      "median_s": 0.618,
+      "p95_s": 0.948,
+      "total_s": 204.81,
+      "n_timed": 315
+    },
+    "true_counts": {
+      "anomaly": 147,
+      "normal": 168
+    },
+    "pred_counts": {
+      "Anomaly": 158,
+      "Normal": 157,
+      "Unknown": 0,
+      "Error": 0
+    },
+    "excluding_skip_list": {
+      "n_total": 268,
+      "n_resolved": 268,
+      "n_unknown": 0,
+      "n_error": 0,
+      "coverage": 1.0,
+      "resolved": {
+        "TP": 78,
+        "FP": 63,
+        "TN": 74,
+        "FN": 53,
+        "accuracy": 0.5671641791044776,
+        "precision": 0.5531914893617021,
+        "recall": 0.5954198473282443,
+        "specificity": 0.5401459854014599,
+        "f1": 0.573529411764706,
+        "balanced_accuracy": 0.567782916364852,
+        "n": 268
+      },
+      "strict_all": {
+        "accuracy": 0.5671641791044776,
+        "recall": 0.5954198473282443,
+        "specificity": 0.5401459854014599,
+        "n": 268
+      },
+      "accuracy_bounds": [
+        0.5671641791044776,
+        0.5671641791044776
+      ]
+    },
+    "n_on_skip_list": 47
+  }
+}

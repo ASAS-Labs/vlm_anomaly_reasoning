@@ -76,17 +76,20 @@ def vllm_executable() -> str:
     )
 
 
-def launch_server(port: int, log_path: Path):
+def launch_server(port: int, log_path: Path, fps: int):
     """Launch `vllm serve` for Cosmos3-Nano on a single GPU. Returns the Popen."""
     cmd = [
         vllm_executable(), "serve", MODEL_NAME,
         "--hf-overrides", '{"architectures": ["Cosmos3ReasonerForConditionalGeneration"]}',
         "--async-scheduling",
         "--allowed-local-media-path", "/",
-        # Load all video frames and let the processor sample at request `fps`;
-        # without this the default loader pre-truncates to 32 frames while the
-        # metadata still references the full timeline, breaking do_sample_frames.
-        "--media-io-kwargs", '{"video": {"num_frames": -1}}',
+        # Frame sampling happens in the media loader, NOT in the processor. The
+        # loader defaults to fps=2, so this must be set or the model silently sees
+        # half the documented rate. num_frames=-1 lifts the frame cap so `fps`
+        # alone decides. Do not also pass do_sample_frames in the request: the
+        # loader has already sampled, and asking the processor to sample again
+        # fails with "Failed to apply Qwen3VLProcessor".
+        "--media-io-kwargs", json.dumps({"video": {"fps": fps, "num_frames": -1}}),
         "--tensor-parallel-size", "1",
         "--port", str(port),
     ]
@@ -164,7 +167,6 @@ def analyze_video(client, model_id, video_path: Path, prompt: str, args):
         max_tokens=args.max_tokens,
         temperature=args.temperature,
         seed=args.seed,
-        extra_body={"mm_processor_kwargs": {"fps": args.fps, "do_sample_frames": True}},
     )
     choice = response.choices[0]
     usage = response.usage
@@ -380,7 +382,13 @@ def main():
         if not args.dry_run:
             base_url = args.server_url or f"http://localhost:{args.port}/v1"
             if not args.server_url:
-                proc = launch_server(args.port, out_dir / "vllm_server.log")
+                proc = launch_server(args.port, out_dir / "vllm_server.log", args.fps)
+            else:
+                # fps is a server-launch setting, not a per-request one.
+                print(f"note: attached to an existing server; --fps {args.fps} is "
+                      f"recorded but NOT applied. The server must have been started "
+                      f"with --media-io-kwargs '{{\"video\": {{\"fps\": {args.fps}, "
+                      f"\"num_frames\": -1}}}}'.")
             wait_for_health(proc, base_url)
             client = openai.OpenAI(api_key="EMPTY", base_url=base_url)
             model_id = client.models.list().data[0].id
