@@ -57,6 +57,86 @@ BASE_PROMPT_NO_ACTION = (
     "Classification: Normal — if there is no semantic anomaly."
 )
 
+# --- Reasoning ("think") prompt variant -------------------------------------
+# The direct prompts above demand a one-word reply, which suppresses reasoning
+# entirely: Cosmos3-Nano answered them in 2-5 tokens with no <think> block. These
+# variants follow the reasoning format prescribed by the Cosmos3-Reasoner prompt
+# guide (packages/cosmos/cookbooks/cosmos3/reasoner/reasoner_prompt_guide.md):
+# task text, then the <think> format instruction, with the answer format last.
+#
+# Both variants share an identical scene/meaning/match reasoning skeleton so the
+# pair stays a fair comparison — the only difference is whether the ego action is
+# supplied explicitly or must be inferred from the video.
+
+SYSTEM_PROMPT = "You are a helpful assistant."
+
+_ANOMALY_DEF = (
+    "A semantic anomaly is NOT merely an unusual-looking scene. It is a mismatch "
+    "between what the scene actually means and how the ego vehicle responded to it. "
+    "The perception stack may be working exactly as designed — the failure is in the "
+    "interpretation, and it is revealed by the ego vehicle's behaviour."
+)
+
+_SCENE_STEP = (
+    "1. Scene: what objects and context are present? Is any object appearing outside "
+    "the context in which it would normally apply — for example printed on a "
+    "billboard or garment, displayed on a screen, reflected, projected, carried as "
+    "cargo on another vehicle, or otherwise not a live instance? Conversely, is there "
+    "a genuine hazard presenting in an atypical form?"
+)
+
+_MATCH_STEP = (
+    "3. Match: is that behaviour the correct response to what the scene actually means?\n"
+    "   - Responding to something that only resembles a live cue (for example braking "
+    "for a stop sign that is printed on a billboard) is an anomaly.\n"
+    "   - Failing to respond to a real hazard that presents atypically (for example "
+    "driving over a fire hose laid across the lane) is an anomaly.\n"
+    "   - Responding correctly to the real meaning of the scene is normal, even when "
+    "the scene itself is unusual."
+)
+
+_FORMAT_INSTRUCTION = (
+    "Answer the question using the following format:\n"
+    "<think>\n"
+    "Your reasoning.\n"
+    "</think>\n"
+    "Write your final answer immediately after the </think> tag.\n\n"
+    "Your final answer must be exactly one of:\n"
+    "Classification: Anomaly\n"
+    "Classification: Normal"
+)
+
+THINK_PROMPT_NO_ACTION = (
+    "You are an autonomous driving safety expert analyzing this ego vehicle's video "
+    f"for semantic or contextual anomalies that may impact safe AV operation.\n\n{_ANOMALY_DEF}\n\n"
+    f"Reason through the following, in order:\n{_SCENE_STEP}\n"
+    "2. Behaviour: from the ego-motion visible in the video, what does the ego vehicle "
+    "do — hold speed, decelerate, come to a stop, accelerate, or change heading — and "
+    f"when in the clip does it happen?\n{_MATCH_STEP}\n\n{_FORMAT_INSTRUCTION}"
+)
+
+# The action sequence is injected between the reasoning steps and the format
+# instruction so that the output-format directive stays last, as the guide shows.
+THINK_PROMPT_ACTION_HEAD = (
+    "You are an autonomous driving safety expert analyzing this ego vehicle's video "
+    f"for semantic or contextual anomalies that may impact safe AV operation.\n\n{_ANOMALY_DEF}\n\n"
+    "The ego vehicle's own action is given below as [[velocity_in_mph, "
+    "heading_in_degrees], ...] in time order, sampled at 5 Hz. Heading is in degrees "
+    "relative to the first frame, so a change in heading means the vehicle turned."
+)
+
+THINK_PROMPT_ACTION_TAIL = (
+    f"Reason through the following, in order:\n{_SCENE_STEP}\n"
+    "2. Action: read the state sequence above from start to finish. Does the velocity "
+    "hold steady, drop toward zero, or increase? Does the heading change? Where in the "
+    "sequence does that happen, and what does it tell you the vehicle decided to do?\n"
+    f"{_MATCH_STEP}\n\n{_FORMAT_INSTRUCTION}"
+)
+
+# Sampling defaults from the prompt guide's "With reasoning" section.
+THINK_SAMPLING = {"temperature": 0.6, "top_p": 0.95, "top_k": 20,
+                  "presence_penalty": 0.0, "repetition_penalty": 1.0}
+
 
 # ============================================================
 # vLLM server lifecycle
@@ -144,17 +224,42 @@ def shutdown_server(proc):
 # ============================================================
 # Inference
 # ============================================================
-def build_prompt(mode: str, action_text: str | None) -> str:
+def build_prompt(mode: str, action_text: str | None, style: str = "direct") -> str:
+    if style == "think":
+        if mode == "action_grounding":
+            return (f"{THINK_PROMPT_ACTION_HEAD}\n\n"
+                    f"Ego Vehicle State Sequence (5Hz): {action_text}\n\n"
+                    f"{THINK_PROMPT_ACTION_TAIL}")
+        return THINK_PROMPT_NO_ACTION
     if mode == "action_grounding":
         return f"{BASE_PROMPT_ACTION}\nEgo Vehicle State Sequence (5Hz): {action_text}"
     return BASE_PROMPT_NO_ACTION
 
 
-def analyze_video(client, model_id, video_path: Path, prompt: str, args):
+def sampling_for(args) -> dict:
+    """Sampling params. The think variant follows the prompt guide's reasoning
+    settings unless --temperature was given explicitly on the CLI."""
+    if args.prompt_style != "think":
+        # Greedy: the direct prompt yields a 2-5 token verdict, so determinism is
+        # free and worth more than matching the guide's non-reasoning settings.
+        return {"temperature": 0.0 if args.temperature is None else args.temperature,
+                "extra": {}}
+    p = dict(THINK_SAMPLING)
+    temp = args.temperature if args.temperature is not None else p.pop("temperature")
+    p.pop("temperature", None)
+    return {"temperature": temp, "top_p": p.pop("top_p"), "extra": p}
+
+
+def analyze_video(client, model_id, video_path: Path, prompt: str, args, sampling: dict):
     """Send one video+prompt. Returns the full choice so finish_reason survives."""
+    kwargs = {}
+    if "top_p" in sampling:
+        kwargs["top_p"] = sampling["top_p"]
     response = client.chat.completions.create(
         model=model_id,
         messages=[
+            # The guide specifies this system prompt, and media before text.
+            {"role": "system", "content": SYSTEM_PROMPT},
             {
                 "role": "user",
                 "content": [
@@ -162,11 +267,13 @@ def analyze_video(client, model_id, video_path: Path, prompt: str, args):
                      "video_url": {"url": video_path.resolve().as_uri()}},
                     {"type": "text", "text": prompt},
                 ],
-            }
+            },
         ],
         max_tokens=args.max_tokens,
-        temperature=args.temperature,
+        temperature=sampling["temperature"],
         seed=args.seed,
+        extra_body=sampling["extra"] or None,
+        **kwargs,
     )
     choice = response.choices[0]
     usage = response.usage
@@ -315,9 +422,14 @@ def main():
                         "re-running the same command resumes in place.")
     p.add_argument("--server_url", type=str, default=None,
                    help="Attach to an existing vLLM server instead of launching one")
+    p.add_argument("--prompt_style", choices=["direct", "think"], default="direct",
+                   help="direct = one-word verdict (original prompts); think = "
+                        "reasoning format from the Cosmos3-Reasoner prompt guide")
     p.add_argument("--fps", type=int, default=4)
-    p.add_argument("--max_tokens", type=int, default=1024)
-    p.add_argument("--temperature", type=float, default=0.0)
+    p.add_argument("--max_tokens", type=int, default=None,
+                   help="default 1024 for --prompt_style direct, 2048 for think")
+    p.add_argument("--temperature", type=float, default=None,
+                   help="default 0.0 for direct, 0.6 (guide's reasoning setting) for think")
     p.add_argument("--seed", type=int, default=1234)
     p.add_argument("--retries", type=int, default=2)
     p.add_argument("--port", type=int, default=8000)
@@ -330,13 +442,19 @@ def main():
     p.add_argument("--allow_partial", action="store_true",
                    help="Skip the 315/147/168 dataset assertion")
     args = p.parse_args()
+    if args.max_tokens is None:
+        args.max_tokens = 2048 if args.prompt_style == "think" else 1024
+    sampling = sampling_for(args)
+    args.temperature = sampling["temperature"]
 
     items = discover_eval_videos(args.dataset, strict=not args.allow_partial)
     items = select_items(items, args.limit, args.sample)
     if not items:
         sys.exit(f"No videos found under {args.dataset}")
 
-    out_dir = Path(args.out_dir) if args.out_dir else Path("logs") / f"{args.exp_name}_{args.mode}"
+    style_tag = "" if args.prompt_style == "direct" else f"_{args.prompt_style}"
+    out_dir = (Path(args.out_dir) if args.out_dir
+               else Path("logs") / f"{args.exp_name}{style_tag}_{args.mode}")
     out_dir.mkdir(parents=True, exist_ok=True)
     jsonl_path = out_dir / "results.jsonl"
     run_id = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -348,7 +466,9 @@ def main():
             if i["rel_path"] not in done
             or done[i["rel_path"]].get("verdict") in retry_verdicts]
 
-    print(f"{len(items)} videos | model={MODEL_NAME} mode={args.mode}")
+    print(f"{len(items)} videos | model={MODEL_NAME} mode={args.mode} "
+          f"style={args.prompt_style} temp={sampling['temperature']} "
+          f"max_tokens={args.max_tokens}")
     print(f"output: {out_dir}")
     if done:
         print(f"resuming: {len(items) - len(todo)} done, {len(todo)} remaining")
@@ -360,10 +480,18 @@ def main():
         "cli_args": vars(args),
         "model": MODEL_NAME,
         "parser_version": PARSER_VERSION,
+        "prompt_style": args.prompt_style,
+        "sampling": {"temperature": sampling["temperature"],
+                     "top_p": sampling.get("top_p"), **sampling["extra"]},
+        # The exact prompt this run sent (action variant shown without the injected
+        # sequence), plus its hash, so the wording is recoverable from the artifact.
         "prompts": {
-            "action": BASE_PROMPT_ACTION, "action_sha256": sha256(BASE_PROMPT_ACTION),
-            "no_action": BASE_PROMPT_NO_ACTION,
-            "no_action_sha256": sha256(BASE_PROMPT_NO_ACTION),
+            "action": build_prompt("action_grounding", "<SEQUENCE>", args.prompt_style),
+            "action_sha256": sha256(
+                build_prompt("action_grounding", "<SEQUENCE>", args.prompt_style)),
+            "no_action": build_prompt("no_action_grounding", None, args.prompt_style),
+            "no_action_sha256": sha256(
+                build_prompt("no_action_grounding", None, args.prompt_style)),
         },
         "git": git_state(),
         "environment": {"hostname": socket.gethostname(), "python": sys.version.split()[0],
@@ -403,16 +531,18 @@ def main():
                 "true_label": item["true_label"],
                 "on_skip_list": item["on_skip_list"],
                 "model": MODEL_NAME,
+                "prompt_style": args.prompt_style,
                 "fps": args.fps,
                 "max_tokens": args.max_tokens,
-                "temperature": args.temperature,
+                "temperature": sampling["temperature"],
+                "sampling_extra": sampling["extra"],
                 "seed": args.seed,
             }
             action_text = None
             try:
                 if args.mode == "action_grounding":
                     action_text = read_action_sequence(item["abs_path"])
-                prompt = build_prompt(args.mode, action_text)
+                prompt = build_prompt(args.mode, action_text, args.prompt_style)
                 rec["action_sequence"] = action_text
                 rec["prompt_sha256"] = sha256(prompt)
 
@@ -425,7 +555,8 @@ def main():
                     for attempt in range(1, args.retries + 2):
                         try:
                             t0 = time.time()
-                            out = analyze_video(client, model_id, item["abs_path"], prompt, args)
+                            out = analyze_video(client, model_id, item["abs_path"],
+                                                prompt, args, sampling)
                             rec["latency_s"] = round(time.time() - t0, 3)
                             rec["attempts"] = attempt
                             last_err = None
