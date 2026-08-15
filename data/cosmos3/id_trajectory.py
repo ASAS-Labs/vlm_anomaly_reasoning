@@ -99,6 +99,9 @@ def derive_10hz(poses, hz, n_valid=None, *, signed=False, edge_repair=False,
     signed   project displacement onto the heading axis instead of taking |displacement|
     """
     poses = np.asarray(poses, dtype=np.float64)
+    # Accept persisted poses in flattened [T,16] form as well as [T,4,4].
+    if poses.ndim == 2 and poses.shape[1] == 16:
+        poses = poses.reshape(-1, 4, 4)
     if n_valid is not None:
         poses = poses[:max(2, int(n_valid))]
     if len(poses) < 2:

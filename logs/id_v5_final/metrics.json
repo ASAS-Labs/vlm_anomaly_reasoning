@@ -1,0 +1,79 @@
+{
+  "n_total": 120,
+  "n_resolved": 120,
+  "n_unknown": 0,
+  "n_error": 0,
+  "coverage": 1.0,
+  "resolved": {
+    "TP": 36,
+    "FP": 11,
+    "TN": 27,
+    "FN": 46,
+    "accuracy": 0.525,
+    "precision": 0.7659574468085106,
+    "recall": 0.43902439024390244,
+    "specificity": 0.7105263157894737,
+    "f1": 0.558139534883721,
+    "balanced_accuracy": 0.574775353016688,
+    "n": 120
+  },
+  "strict_all": {
+    "accuracy": 0.525,
+    "recall": 0.43902439024390244,
+    "specificity": 0.7105263157894737,
+    "n": 120
+  },
+  "accuracy_bounds": [
+    0.525,
+    0.525
+  ],
+  "unresolved_reasons": {},
+  "timing": {
+    "mean_s": 0.4469416666666667,
+    "median_s": 0.4405,
+    "p95_s": 0.503,
+    "total_s": 53.633,
+    "n_timed": 120
+  },
+  "true_counts": {
+    "anomaly": 82,
+    "normal": 38
+  },
+  "pred_counts": {
+    "Anomaly": 47,
+    "Normal": 73,
+    "Unknown": 0,
+    "Error": 0
+  },
+  "excluding_skip_list": {
+    "n_total": 105,
+    "n_resolved": 105,
+    "n_unknown": 0,
+    "n_error": 0,
+    "coverage": 1.0,
+    "resolved": {
+      "TP": 31,
+      "FP": 11,
+      "TN": 23,
+      "FN": 40,
+      "accuracy": 0.5142857142857142,
+      "precision": 0.7380952380952381,
+      "recall": 0.43661971830985913,
+      "specificity": 0.6764705882352942,
+      "f1": 0.5486725663716815,
+      "balanced_accuracy": 0.5565451532725767,
+      "n": 105
+    },
+    "strict_all": {
+      "accuracy": 0.5142857142857142,
+      "recall": 0.43661971830985913,
+      "specificity": 0.6764705882352942,
+      "n": 105
+    },
+    "accuracy_bounds": [
+      0.5142857142857142,
+      0.5142857142857142
+    ]
+  },
+  "n_on_skip_list": 15
+}
