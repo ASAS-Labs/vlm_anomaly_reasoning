@@ -129,7 +129,7 @@ runs Cosmos3-Nano **action inverse-dynamics** over every MP4 under
 4. Heuristically checks the trajectory tail against the last sentence of the
    matching prompt line (mirrored tree under `data/cosmos3/video_gen_prompts/`).
 5. Writes `<video>.txt` (5 Hz) and `<video>_10fps.txt` (10 Hz) next to each MP4,
-   and uploads those text files to the Hugging Face dataset repo (`reorg` branch).
+   and uploads those text files to the Hugging Face dataset repo (`main` branch).
 
 **1. One-time setup** — populates the `packages/cosmos-framework` submodule and
 installs its train/CUDA env (default `cu130-train`):
@@ -141,7 +141,7 @@ Override the CUDA uv group if needed, e.g.
 `COSMOS3_UV_GROUP=cu128-train ./setup_inverse_dynamics.sh`.
 
 **2. Ensure videos are present** under `data/datasets/generated_vids/` (generate
-locally or sync from the HF dataset, revision `reorg`).
+locally or sync from the HF dataset, revision `main`).
 
 **3. Run** (any interpreter; the script re-execs into the framework venv):
 ```bash

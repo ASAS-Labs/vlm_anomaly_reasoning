@@ -42,8 +42,8 @@ from huggingface_hub import HfApi
 
 # --- Configuration (the only things you should need to change) -----------
 MODEL_ID = "nvidia/Cosmos3-Nano"  # change to "nvidia/Cosmos3-Super" for Super
-HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
-HF_REVISION = "reorg"
+HF_DATASET_REPO = "ASASLab/av_semantic_anomalies"
+HF_REVISION = "main"
 
 TENSOR_PARALLEL_SIZE = 1
 SERVER_PORT = 8000

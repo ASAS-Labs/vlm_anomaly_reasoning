@@ -47,8 +47,8 @@ from pathlib import Path
 from prompt_resolve import prompt_sentence_for
 
 # --- Configuration (the only things you should need to change) -----------
-HF_DATASET_REPO = "danieladejumo/av_semantic_anomalies"
-HF_REVISION = "reorg"
+HF_DATASET_REPO = "ASASLab/av_semantic_anomalies"
+HF_REVISION = "main"
 INIT_VELOCITY_FRAMES = 5  # native-rate frames used to evaluate the initial velocity
 MPS_TO_MPH = 2.2369362921
 FPS = 10                  # model action rate (AV inverse-dynamics is 10 Hz)

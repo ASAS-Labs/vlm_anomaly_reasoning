@@ -11,6 +11,6 @@ Create a 'generate_videos.py' script to perform text to video generation as done
 
 - After each video is generated, as async process should upload the video to huggingface dataset repo
 - The videos should be upload to huggingface with the same folder structure and naming convention as done locally
-- The huggingface dataset repo is 'danieladejumo/av_semantic_anomalies'
+- The huggingface dataset repo is 'ASASLab/av_semantic_anomalies'
 
 - Make the script as simple as possible. (e.g. no need for creating unnecessary payloads and other overheads)
