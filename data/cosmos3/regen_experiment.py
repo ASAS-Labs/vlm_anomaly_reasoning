@@ -148,9 +148,11 @@ def main():
     negative_prompt = json.dumps(
         json.loads((HERE / "text2video_neg_prompt.json").read_text()),
         ensure_ascii=True, separators=(",", ":"))
+    # Must match generate_videos_vllm.py exactly; wrong keys are ignored and the
+    # guardrail then blocks the driving-scenario prompt.
     extra_params = json.dumps(
-        {"disable_guardrails": True, "prompt_template": None,
-         "negative_prompt_template": None}, separators=(",", ":"))
+        {"use_resolution_template": False, "use_duration_template": False,
+         "guardrails": False}, separators=(",", ":"))
 
     jobs = build_prompts(args.out)
     if args.limit:

@@ -263,3 +263,74 @@ python reparse_results.py ../../logs/full_*/results.jsonl --check --histogram
 
 Artifacts: `logs/full_*` (Part 1), `logs/id_v*` and `logs/id_semantic_agreement*.json`
 (Part 2), `outputs/id_raw.jsonl` (raw poses — all variants re-derivable offline).
+
+---
+
+## Part 5 — Why ID agreement stalled at 63%, and what actually fixes it
+
+### 5.1 Decomposition: the ID pipeline is not the bottleneck
+
+An optical-flow ego-motion probe (`video_motion.py`: median flow over the road
+region, robust to moving scene objects, with a measurability gate for
+blur-saturated highway/night clips) provides a model-free witness of what each
+clip depicts. Over the 120-clip sample (`fidelity_report.py`):
+
+| Relationship | Agreement | Meaning |
+|---|---|---|
+| VIDEO <-> ID | **52/53 = 98.1%** | the fixed ID pipeline reports what is on screen |
+| PROMPT <-> VIDEO | **38/53 = 71.7%** | generation does not realize the prompted action |
+| PROMPT <-> ID | 76/120 = 63.3% | the conflated metric |
+
+Supporting evidence: failures concentrate in 3 of 14 scenarios; 7 of the 8 hard
+non-stops were already on the human skip list; near-miss clips (ID final 2-10 mph)
+show sustained pixel motion at clip end — the videos end mid-brake. The single
+ID<->video disagreement is a clip at 3.3 vs a 2.0 mph threshold. 67 clips are
+excluded per-measure where the probe cannot judge (52 blur-saturated at speed,
+15 genuinely ambiguous creeping endings).
+
+**Implication: no ID change can reach 90% agreement against the prompt, because
+~45% of stop-class videos never depict the prompted ending. Measured against the
+video — the only ground truth ID can be accountable to — the pipeline is already
+at 98%.**
+
+Negative results (all free, from persisted poses): heading drift (median 17-20
+deg on straight braking) is identical when derived from displacement direction
+instead of the rot6d column, so the predicted positions genuinely curve; signed
+forward velocity does not change the one velocity-floor case; raising probe
+resolution shrinks flow instead of recovering blur-saturated clips.
+
+### 5.2 Root cause of generation infidelity: physically impossible prompt timing
+
+The failing dense prompts demand a complete stop from cruise inside ~1 second
+(neg_prompt_4: braking 0:01-0:02; pos_prompt_9: 0:02-0:03), contradicting the
+paper's own guidance that a smooth stop takes 2.5-4 s. The generator renders
+sustained braking instead, and the clip ends before zero.
+
+### 5.3 Regeneration experiment (2 scenarios x 2 arms x 3 seeds, 36 s/clip)
+
+`regen_experiment.py` compares the original prompts against a physics-feasible
+rewrite (2 s braking window ending at 0:03/0:03.5 + locked-off stationary hold),
+judged by the flow probe (`logs/regen_flow_profiles.json`):
+
+- **pos_prompt_9** (0/3 dataset clips ever stopped): terminal flow orig
+  {0.21, 0.32, 0.38} vs strong {0.02, 0.17, 0.29} — the strong arm ends lower in
+  8/9 pairwise comparisons, and its best seed is a textbook decel-to-stop
+  (0.17 -> 0.02). Directional, not significant at n=3.
+- **neg_prompt_4**: both arms mostly ended stopped in this batch — unlike the
+  dataset batch where 1/8 stopped — which leads to the more important finding:
+- **Generation is not reproducible.** The same prompt + same seed (1234, the
+  dataset's seed) produced a different video (different hash, different motion
+  profile; the regen pos_prompt_9 clip *accelerates* where the dataset clip
+  cruised). Per-clip motion outcome is effectively stochastic.
+
+### 5.4 Recommended path to 90%+ prompt-level agreement
+
+1. **Fix the prompt timing** (feasible braking windows) — cheap, directionally
+   helpful.
+2. **Closed-loop generation**: because outcomes are stochastic, generate
+   best-of-N seeds per scenario and accept clips with the flow probe (+ ID
+   cross-check at 98% agreement) — an automated acceptance gate at 36 s/clip
+   makes this practical (~$0.04/attempt on an H200).
+3. Exclude or regenerate the 15 clips on `logs/id_regeneration_list.json`
+   (6 already human-flagged).
+4. The ID pipeline itself needs no further work.
