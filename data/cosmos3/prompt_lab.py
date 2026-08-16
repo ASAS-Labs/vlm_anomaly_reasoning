@@ -89,7 +89,8 @@ def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry,
         rec = {"video": rel, "variant": vid, "hypothesis": variant["hypothesis"],
                "mode": variant["mode"], "true_label": it["true_label"],
                "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
-               "sampling": req_kwargs if model_cfg else variant["sampling"],
+               "sampling": ({**req_kwargs, **(req_extra or {})} if model_cfg
+                            else variant["sampling"]),
                "k": k if k > 1 else 1,
                "ts": datetime.now().isoformat(timespec="seconds")}
         if model_cfg:
@@ -155,12 +156,18 @@ def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry,
         return rec
 
     pending = [it for it in items if it["rel_path"] not in done]
-    n = 0
+    n = errors = 0
     # Parallel request issuance; this thread stays the sole writer so the
-    # fsync-per-record and resume-by-video invariants hold.
+    # fsync-per-record and resume-by-video invariants hold. Failed requests are
+    # logged and skipped so completed work persists; re-running resumes them.
     with ThreadPoolExecutor(max_workers=max(1, concurrency)) as pool:
         for fut in as_completed([pool.submit(process, it) for it in pending]):
-            rec = fut.result()
+            try:
+                rec = fut.result()
+            except Exception as e:
+                errors += 1
+                print(f"  [{vid}] request failed: {e}", file=sys.stderr, flush=True)
+                continue
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
             f.flush()
             os.fsync(f.fileno())
@@ -169,6 +176,8 @@ def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry,
                 print(f"  [{vid} {n}] {rec['video'].split('/')[-1]}: {rec['verdict']} "
                       f"({'ok' if rec['correct'] else 'X'})", flush=True)
     f.close()
+    if errors:
+        sys.exit(f"{vid}: {errors} request(s) failed; re-run to resume")
     recs = [json.loads(ln) for ln in path.read_text().splitlines() if ln.strip()]
     real = [r for r in recs if r.get("correct") is not None]
     if real:
@@ -201,6 +210,9 @@ def main():
     for nm in names:
         if nm not in VARIANTS:
             sys.exit(f"unknown variant {nm}")
+        if args.model_config and VARIANTS[nm].get("precall"):
+            sys.exit(f"{nm}: precall variants are not wired for --model-config "
+                     "(precall requests stay Cosmos-tuned)")
 
     items = discover_eval_videos(args.dataset, strict=False)
     wanted = [ln.strip() for ln in args.subset.read_text().splitlines() if ln.strip()]

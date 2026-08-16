@@ -109,7 +109,7 @@ MODELS = {
             "expect": {"think": True, "sampling": _GLM_SAMPLING, "max_tokens": 4096},
             "verdict": {"think": False, "sampling": _GLM_SAMPLING, "max_tokens": 256},
         },
-        "notes": "9B, thinking default on; card leaderboard sampling "
+        "notes": "10B, thinking default on; card leaderboard sampling "
                  "t=0.8/p.6/k2/rep1.1; vLLM>=0.12, parser glm45 per "
                  "https://recipes.vllm.ai/zai-org/GLM-4.6V. "
                  "https://huggingface.co/zai-org/GLM-4.6V-Flash",
@@ -172,7 +172,9 @@ def answer_text(choice):
     msg = choice.message
     content = msg.content or ""
     reasoning = getattr(msg, "reasoning_content", None)
-    if reasoning is None:
+    # `not reasoning` (not `is None`): a misfiring parser can return an empty
+    # reasoning_content while <think> text remains in content.
+    if not reasoning:
         parts = _THINK_BLOCK_RE.findall(content)
         stripped = _THINK_BLOCK_RE.sub(" ", content)
         open_think = _THINK_OPEN_RE.search(stripped)

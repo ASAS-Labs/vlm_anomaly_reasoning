@@ -37,8 +37,9 @@ mapfile -t SERVE_ARGS < <("${PY}" pilot_models.py --serve-args "${KEY}")
 
 echo "=== ${KEY}: ${HFID} (${NEED_GB} GB) ==="
 
+mkdir -p "${HF_HOME}"
 FREE_GB="$(df -BG --output=avail "${HF_HOME}" | tail -1 | tr -dc '0-9')"
-if (( FREE_GB < NEED_GB + 20 )); then
+if [[ ! -d "${HF_HOME}/hub/models--${HFID//\//--}" ]] && (( FREE_GB < NEED_GB + 20 )); then
   echo "ERROR: ${FREE_GB} GB free < ${NEED_GB}+20 GB needed; purge first" >&2
   exit 1
 fi
@@ -47,11 +48,13 @@ echo "--- download ---"
 "${VENV}/bin/hf" download "${HFID}" >/dev/null
 
 echo "--- serve ---"
-"${VENV}/bin/vllm" serve "${HFID}" "${SERVE_ARGS[@]}" \
+# setsid: the server must lead its own process group, or the group-kill at
+# teardown TERMs this script (and the PREFETCH download) along with it.
+setsid "${VENV}/bin/vllm" serve "${HFID}" "${SERVE_ARGS[@]}" --port "${PORT}" \
   > "${LOG_DIR}/pilot_${KEY}_server.log" 2>&1 &
 SERVER_PID=$!
 echo "${SERVER_PID}" > "${LOG_DIR}/pilot_${KEY}_server.pid"
-trap 'echo "stopping server"; kill -TERM -"$(ps -o pgid= ${SERVER_PID} | tr -d " ")" 2>/dev/null || kill ${SERVER_PID} 2>/dev/null || true' EXIT
+trap 'echo "stopping server"; kill -TERM -"${SERVER_PID}" 2>/dev/null || kill "${SERVER_PID}" 2>/dev/null || true' EXIT
 
 for _ in $(seq 1 900); do
   curl -sf "http://127.0.0.1:${PORT}/health" >/dev/null 2>&1 && { echo "server ready"; break; }
@@ -118,7 +121,7 @@ gate "${LOG_DIR}/pilot_${KEY}_verdict_P0/results.jsonl" 4 \
   --concurrency "${CONC}"
 
 echo "--- teardown ---"
-kill -TERM -"$(ps -o pgid= ${SERVER_PID} | tr -d ' ')" 2>/dev/null || kill "${SERVER_PID}" 2>/dev/null || true
+kill -TERM -"${SERVER_PID}" 2>/dev/null || kill "${SERVER_PID}" 2>/dev/null || true
 trap - EXIT
 for _ in $(seq 1 30); do
   USED="$(nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits | head -1)"

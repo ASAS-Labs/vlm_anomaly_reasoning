@@ -101,6 +101,10 @@ def main():
                    help="print resolved request config and exit (no server needed)")
     args = p.parse_args()
 
+    if args.model_config and args.stage == "monitor":
+        sys.exit("--model-config does not support the monitor stage (stage-2 "
+                 "sampling is Cosmos-tuned)")
+
     # Stage-1 request settings: Cosmos default unchanged; a pilot model key
     # swaps in that model's card-recommended 'expect' arm.
     if args.model_config:
@@ -203,13 +207,20 @@ def main():
         return rec
 
     pending = [it for it in items if it["rel_path"] not in done]
-    n = 0
+    n = errors = 0
     # Requests may run in parallel; the main thread stays the sole writer so the
-    # fsync-per-record and resume-by-video invariants are unchanged.
+    # fsync-per-record and resume-by-video invariants are unchanged. A failed
+    # request is logged and skipped so completed work still persists; re-running
+    # resumes the missing clips.
     with ThreadPoolExecutor(max_workers=max(1, args.concurrency)) as pool:
         futures = [pool.submit(process, it) for it in pending]
         for fut in as_completed(futures):
-            rec = fut.result()
+            try:
+                rec = fut.result()
+            except Exception as e:
+                errors += 1
+                print(f"request failed: {e}", file=sys.stderr, flush=True)
+                continue
             out.write(json.dumps(rec, ensure_ascii=False) + "\n")
             out.flush()
             os.fsync(out.fileno())
@@ -218,6 +229,8 @@ def main():
             print(f"[{n}] {rec['video'].split('/')[-1]}: expect={rec['expect']} "
                   f"(gt={rec['gt_expected']}) -> {tail}", flush=True)
     out.close()
+    if errors:
+        sys.exit(f"{errors} request(s) failed; re-run to resume the missing clips")
 
     recs = [json.loads(ln) for ln in out_path.read_text().splitlines() if ln.strip()]
     strict = sum(r["expect_strict"] for r in recs)

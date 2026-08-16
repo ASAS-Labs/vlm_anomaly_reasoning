@@ -3,8 +3,8 @@
 #
 # Unlike setup_reasoner.sh this installs NO Cosmos framework packages: the pilot
 # models (Qwen3.x, Qwen3-VL, GLM-4.6V, InternVL3.5) are served by stock vLLM.
-# Default is the latest stable vLLM (the floor is set by the newest model,
-# Qwen3.8-27B, Aug 2026); pin with PILOT_VLLM_VERSION if needed.
+# Default pin 0.27.1 (Aug 2026 stable): covers Qwen3.8 day-0 (the binding
+# constraint) and GLM-4.6V's >=0.25 floor. Override with PILOT_VLLM_VERSION.
 #
 # Fallback policy: if one model needs a different vLLM than the shared install,
 # build it its own venv instead of mutating this one:
@@ -23,7 +23,7 @@ export UV_LINK_MODE="${UV_LINK_MODE:-copy}"
 export HF_HOME="${HF_HOME:-${HOME}/.cache/huggingface}"
 
 echo "VENV_DIR: ${VENV_DIR}"
-echo "vLLM: ${PILOT_VLLM_VERSION:-latest}"
+echo "vLLM: ${PILOT_VLLM_VERSION:-0.27.1}"
 
 if ! command -v uv >/dev/null 2>&1; then
   echo "uv is not installed: https://docs.astral.sh/uv/getting-started/installation/" >&2
@@ -42,8 +42,7 @@ if [[ ! -x "${VENV_DIR}/bin/python" ]]; then
   uv venv --python 3.13 --seed --managed-python "${VENV_DIR}"
 fi
 
-VLLM_SPEC="vllm"
-[[ -n "${PILOT_VLLM_VERSION:-}" ]] && VLLM_SPEC="vllm==${PILOT_VLLM_VERSION}"
+VLLM_SPEC="vllm==${PILOT_VLLM_VERSION:-0.27.1}"
 uv pip install --python "${VENV_DIR}/bin/python" --torch-backend=auto \
   "${VLLM_SPEC}" openai "huggingface_hub[hf_transfer]"
 
