@@ -184,6 +184,11 @@ def answer_text(choice):
         if parts:
             reasoning = "\n".join(parts)
             content = stripped.strip()
+    # GLM-4.xV wraps its final answer in box tokens the verdict parser's
+    # bare-word matcher cannot see through.
+    if "<|begin_of_box|>" in content:
+        content = (content.replace("<|begin_of_box|>", " ")
+                   .replace("<|end_of_box|>", " ").strip())
     return content, reasoning
 
 

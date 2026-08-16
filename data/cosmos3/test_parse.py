@@ -96,6 +96,12 @@ def test_answer_text():
     assert content == "Slow", content
     assert reasoning == "continue is tempting here", reasoning
 
+    # GLM box tokens around the answer must be stripped for the verdict parser.
+    ch = NS(message=NS(content="<|begin_of_box|>Anomaly<|end_of_box|>",
+                       reasoning_content=None))
+    content, _ = answer_text(ch)
+    assert content == "Anomaly", content
+
     # Unterminated <think>: the whole output is reasoning, content empty.
     ch = NS(message=NS(content="<think>the driver should continue"))
     content, reasoning = answer_text(ch)
