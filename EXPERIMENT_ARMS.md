@@ -170,15 +170,40 @@ n=72 (binomial σ ≈ 4 clips over 12 arms). Best think result anywhere (0.625)
 never approaches the direct champion (0.722-0.750). Reasoning remains a net
 liability for Cosmos3-Nano on this task. Artifacts: `logs/plab_r{3,4}_*`.
 
+## K — Open-VLM pilot (72 clips, 720p↑ @ 8 fps) — Part 11
+
+Six candidates screened in card-default mode via `pilot_models.py` registry;
+arms: expect_early (primary; Cosmos bar 18/72 strict), expect_full, P0 direct
+verdict (Cosmos bar 0.736). Full table `logs/pilot_report.md`; raw `logs/pilot_*`.
+
+| arm | model | early s/l | full s/l | verdict | note |
+|---|---|---|---|---|---|
+| K1 | **Qwen3.8-27B** | **31/46** | 30/44 | 0.597 | winner; adopted |
+| K2 | Qwen3.6-27B | 30/41 | 28/35 | 0.694 | best pilot verdict |
+| K3 | Qwen3.5-27B | 29/42 | 32/38 | 0.639 | gain starts here (Feb 2026) |
+| K4 | Qwen3-VL-32B-Thinking | 19/37 | 20/37 | 0.681 | ≈ Cosmos bar: post-training not the cause |
+| K5 | InternVL3_5-38B | 22/34 | 39/46 | 0.653 | early→full jump = outcome anchoring |
+| K6 | GLM-4.6V-Flash | 11/28 | 13/32 | 0.528 | stop-happy (rec/spec 0.25/0.96) |
+
+Headline: the Qwen 3.5+ generation nearly doubles expect_early strict (+11-13
+clips) with breadth (8/12 scenarios vs Cosmos's 2) and no outcome anchoring;
+same-lineage K4 at the Cosmos bar shows it's generational, not post-training.
+Qwen think arms understated by 4096-token truncations (3-11 clips/arm).
+**Qwen3.8-27B adopted as the working model.**
+
 ## Failure chain (as currently localized)
 
-perception 100% → **policy generation 25–53%** → comparison ~70% → verdict.
+perception 100% → **policy generation 25–53%** (Cosmos; ~43% Qwen3.8) →
+comparison ~70% → verdict.
 
 ## Open / planned
 
+- Two-stage monitor (H3) re-run on Qwen3.8 expectations — first post-pilot step.
+- Verdict-prompt fit for Qwen3.8 (P0 is Cosmos-shaped; family I laws may not
+  transfer across models).
+- Rerun the think-truncated pilot clips at 8192 budget (few clips, cheap).
 - Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
   finalize agreement subset.
 - Closed-loop regeneration (C2 recipe + flow-probe gate) for the 15-clip list.
-- SFT on stage-1 expectation generation (single-word supervised task) — now the
-  primary lever, since neither scale (H4) nor prompting (family I) moves judgment.
+- SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).

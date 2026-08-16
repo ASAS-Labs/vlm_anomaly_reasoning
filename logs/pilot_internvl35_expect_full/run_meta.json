@@ -1,0 +1,38 @@
+{
+  "model_key": "internvl35",
+  "hf_id": "OpenGVLab/InternVL3_5-38B",
+  "served_model_id": "OpenGVLab/InternVL3_5-38B",
+  "arm": "expect",
+  "think": false,
+  "request_kwargs": {
+    "max_tokens": 256,
+    "temperature": 0.0
+  },
+  "extra_body": null,
+  "serve_command": [
+    "vllm",
+    "serve",
+    "OpenGVLab/InternVL3_5-38B",
+    "--allowed-local-media-path",
+    "/",
+    "--media-io-kwargs",
+    "{\"video\": {\"fps\": 8, \"num_frames\": -1}}",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--port",
+    "8000",
+    "--trust-remote-code"
+  ],
+  "vllm_version": "0.27.1",
+  "git_commit": "",
+  "ts": "2026-08-16T21:32:54",
+  "stage": "expect_full",
+  "dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p",
+  "subset": "/root/vlm_anomaly_reasoning/logs/vlm_agreement_subset_admitted.txt",
+  "seed": 1234,
+  "concurrency": 6,
+  "n_clips": 72,
+  "prompt_sha256": "13f8c19eeec4e7b063924f9517c21d19ea409ab21e48084f18488a1efedc8d10"
+}

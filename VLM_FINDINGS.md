@@ -641,3 +641,64 @@ labels (Part 8), dataset expansion (the pending 195-clip ID pass), and
 generation-fidelity repair (Part 5). Think-lab cost: ~$5 across three sessions
 (one interrupted by a host stop; results recomputed).
 
+
+## Part 11 — Open-VLM pilot: the Qwen 3.5+ generation doubles driving judgment
+
+Six open VLMs screened against the Cosmos bars on the 72-clip agreement subset
+(720p↑ @ 8 fps), each in its card-recommended default mode, three arms per model
+(expect_early = primary discriminator, expect_full, P0 direct verdict). Harness:
+`pilot_models.py` registry + `--model-config/--concurrency` extensions of the
+existing runners; full table in `logs/pilot_report.md`, raw per-clip records with
+reasoning traces under `logs/pilot_*`.
+
+| model | early strict/lenient | full strict/lenient | verdict (rec/spec) |
+|---|---|---|---|
+| Cosmos3-Nano (bar) | 18 / 38 | 22 / 40 | **0.736** |
+| **Qwen3.8-27B** | **31 / 46** | 30 / 44 | 0.597 (0.68/0.46) |
+| Qwen3.6-27B | 30 / 41 | 28 / 35 | 0.694 (0.86/0.43) |
+| Qwen3.5-27B | 29 / 42 | 32 / 38 | 0.639 (0.82/0.36) |
+| Qwen3-VL-32B-Thinking | 19 / 37 | 20 / 37 | 0.681 (0.89/0.36) |
+| InternVL3_5-38B | 22 / 34 | 39 / 46 | 0.653 (1.00/0.11) |
+| GLM-4.6V-Flash | 11 / 28 | 13 / 32 | 0.528 (0.25/0.96) |
+
+### 11.1 The headline: a generational capability, not a post-training artifact
+
+The Qwen 3.5/3.6/3.8 generation clusters at 29-31/72 strict on expect_early —
++11 to +13 clips over Cosmos-Nano, on the exact capability Parts 7-9 localized
+as the bottleneck. Qwen3-VL-32B-Thinking (late-2025, the same lineage Cosmos is
+post-trained from) sits at 19/72 ≈ the Cosmos bar: swapping Cosmos post-training
+for general post-training changes nothing. The judgment gain arrived with the
+Qwen 3.5 base generation (Feb 2026, the ERQA-jump release) and holds through 3.8.
+
+Where the gain lives (qwen38 vs Cosmos, expect_early per scenario): Cosmos's 18
+was 14/14 on the trivial red-light "wait" scenario plus 4/6 on one more, zero on
+8 of 12 scenarios, hedging "slow" on 34/72 clips. Qwen3.8 scores on 8/12
+scenarios with a sane answer distribution (17 continue / 22 slow / 16 stop / 14
+wait), including positives Cosmos never got (pos_8 4/5, pos_11 2/3) and 3/19 on
+the stop-shirt depiction trap where Cosmos had 0. The shared residual: the
+depiction-trap negatives (neg_2 3/19, neg_4/5/8 = 0) remain the hard core.
+
+### 11.2 Caveats and secondary findings
+
+- **Truncation understates the Qwens.** 3-11 clips/arm exceeded the 4096-token
+  think budget and score as misses (qwen36 early lost 11). The ranking is
+  unaffected; the leaders' true numbers are a few clips higher.
+- **expect_full anchoring flags InternVL.** Its 22→39 early→full jump is
+  outcome-reading, not judgment (the early window exists to expose this);
+  Qwen 3.5+ is flat early↔full — its expectations come from the scene.
+- **P0 verdicts don't transfer.** No pilot beats Cosmos's 0.736 on the P0
+  wording (best: qwen36 0.694) — P0 is Cosmos's tuned champion on an
+  anomaly-majority subset, and Part 9 says wording ≠ discrimination. The
+  expectation arms, not this, were the pre-registered discriminator.
+- GLM-4.6V-Flash (10B) over-triggers stop/slow everywhere (verdict rec/spec
+  0.25/0.96 — the opposite bias of every other model).
+
+### 11.3 Decision
+
+**Qwen3.8-27B is the working model going forward** (best expect_early, no
+anchoring, newest line), with qwen36/qwen35 as in-family fallbacks. Next steps:
+re-run the two-stage monitor (H3) on Qwen3.8 expectations — the Part-8 ceiling
+says accurate expectations + comparison is the working formulation; revisit
+verdict prompting for Qwen (P0 is Cosmos-shaped); optionally rerun the truncated
+clips at an 8192 budget. Pilot cost ≈ $8 (H200 @ $3.97/hr, ~2h, incl. one
+box-token parse fix caught by the 4-clip verdict gate).
