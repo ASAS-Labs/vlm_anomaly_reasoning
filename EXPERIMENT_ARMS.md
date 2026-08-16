@@ -110,6 +110,35 @@ Mechanical ceiling (GT expectation + perfect compare): **100%** — the
 formulation is sound; the gap is expectation generation.
 Artifacts: `logs/{expect_early,expect_full,monitor}` (+`_super`).
 
+
+## I — Prompt/context lab, direct regime (72 clips, 720p↑ @ 8 fps) — Part 9
+
+720p input adopted as standard from this family onward. Baseline P0 re-run each
+session as gate (0.736 / 0.750 across sessions — stable).
+
+| arm | round | idea | acc | recall/spec | verdict |
+|---|---|---|---|---|---|
+| P0 | 1,2 | released prompt (champion) | **0.736 / 0.750** | 0.89/0.50 | keep |
+| S1 | 1 | guide non-reasoning sampling | 0.722 | 0.93/0.39 | no gain |
+| S2 | 2 | self-consistency k=5 t=0.7 | 0.722 | — | no gain |
+| P4 | 1 | anti-smooth action framing | 0.653 | 0.57/0.79 | best action arm ever; still < P0 |
+| P6 | 1 | abstract definitions | 0.639 | 0.43/0.96 | P0's ROC mirror (balacc 0.698 vs 0.693) |
+| P5 | 1 | narrative action summary | 0.625 | 0.57/0.71 | < P0 |
+| P1 | 1 | crisp decision rule | 0.611 | 0.55/0.71 | < P0 |
+| P9 | 2 | P6 defs + P0 question | 0.667 | 0.64/0.71 | balacc 0.675 < P0 |
+| P8 | 2 | P0 + scenery-vs-response line | 0.528 | 0.43/0.68 | balacc DROPS (0.555) |
+| P3 | 1 | binary correct/incorrect | 0.444 | 0.09/1.00 | Normal collapse |
+| P2 | 1 | CUE/ACTION scaffold | 0.417 | 0.09/0.93 | Normal collapse |
+| P10 | 2 | P8 + 1-line rationale | 0.403 | — | collapse |
+| P7 | 1 | examiner pass/fail | 0.333 | — | 24 unparsed + poor |
+
+**Law of the lab**: 13 wordings, one ROC curve. Direct prompts move the
+operating point (bias), never the discrimination (balanced accuracy ceiling
+~0.70). Best offline 2-prompt ensemble (P0 OR P5) 0.764, exploratory/overfit.
+Declared: prompt engineering alone cannot reach the 0.80 target; champion stays
+the original P0 wording. Artifacts: `logs/plab_r{1,2}_*`,
+`logs/prompt_lab_round{1,2}.md`.
+
 ## Failure chain (as currently localized)
 
 perception 100% → **policy generation 25–53%** → comparison ~70% → verdict.
@@ -119,5 +148,6 @@ perception 100% → **policy generation 25–53%** → comparison ~70% → verdi
 - Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
   finalize agreement subset.
 - Closed-loop regeneration (C2 recipe + flow-probe gate) for the 15-clip list.
-- SFT on stage-1 expectation generation (single-word supervised task).
+- SFT on stage-1 expectation generation (single-word supervised task) — now the
+  primary lever, since neither scale (H4) nor prompting (family I) moves judgment.
 - Native-720p generation (F2 suggests it pays).

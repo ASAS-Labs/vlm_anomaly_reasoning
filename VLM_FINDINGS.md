@@ -568,3 +568,41 @@ actually tests. The missing capability is not general driving knowledge but the
 displaced-context reasoning itself — consistent with SFT on stage-1 labels,
 rather than scale, being the lever. Session cost ~$5.6.
 
+---
+
+## Part 9 — Prompt lab (direct): one ROC curve, no discrimination gains
+
+Thirteen prompt/context variants over two rounds on the 72-clip subset at the
+adopted 720p/8fps input, each targeting a measured failure mode (crisp decision
+rule, forced-commitment scaffold, de-loaded binary, anti-smooth and narrative
+action framings, abstract definitions, persona, hybrid grafts) plus two sampling
+arms (guide non-reasoning settings, self-consistency k=5). Session-P0 gates
+reproduced (0.736, 0.750). Full tables: `logs/prompt_lab_round{1,2}.md`;
+EXPERIMENT_ARMS family I.
+
+**Result: every variant slides along one ROC curve.** P0 is the recall-heavy end
+(0.89/0.50); P6 is its specificity mirror (0.43/0.96) at the same balanced
+accuracy (0.698 vs 0.693); the reframed binary and scaffold collapse to Normal
+(spec 1.00 / recall 0.09). The surgical round-2 test is conclusive: P0's 19
+errors were 14× "scene looks concerning but response correct", and grafting one
+scenery-vs-response sentence onto the otherwise-verbatim champion fixed the
+targeted clips (pos_8 1/5 → 5/5) while losing 9/19 of neg_2 — and dropped
+balanced accuracy to 0.555. The model cannot apply the concept selectively; any
+nudge shifts the global decision boundary. Self-consistency and the guide's
+sampling settings change nothing.
+
+**Declaration (per the pre-registered stopping rule): prompt engineering alone
+cannot reach 0.80 on this task with Cosmos3-Nano.** The champion remains the
+original released wording at 0.736-0.750, which wins largely because its
+anomaly-leaning bias matches the subset's 61% anomaly base rate. Discrimination
+(~0.70 balanced accuracy) is prompt-invariant — consistent with Parts 7-8: the
+deficit is judgment/policy knowledge, which wording cannot inject. Exploratory
+footnote: the best two-prompt ensemble (P0 OR P5) reaches 0.764, i.e. ensembling
+buys threshold tuning, not understanding.
+
+Implications for the think-stage engineering (next): expect the same law; the
+think stage should therefore test *structured evidence composition* (the model's
+own probe answers in context) rather than wording variations, and the real
+levers remain SFT on expectation labels (Part 8) and dataset expansion.
+Lab cost: ~$4 across two sessions.
+
