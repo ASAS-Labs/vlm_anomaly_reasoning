@@ -1,0 +1,272 @@
+{
+ "subset_n": 72,
+ "anomaly": 44,
+ "normal": 28,
+ "majority_baseline": 0.6111111111111112,
+ "metrics": {
+  "direct/no_action_grounding": {
+   "n": 72,
+   "unresolved": 0,
+   "TP": 32,
+   "FP": 14,
+   "TN": 14,
+   "FN": 12,
+   "accuracy": 0.6388888888888888,
+   "acc_ci": [
+    0.5235226614759323,
+    0.740184855243124
+   ],
+   "precision": 0.6956521739130435,
+   "recall": 0.7272727272727273,
+   "specificity": 0.5,
+   "f1": 0.711111111111111,
+   "mean_latency_s": 0.4010972222222222
+  },
+  "direct/action_grounding": {
+   "n": 72,
+   "unresolved": 0,
+   "TP": 24,
+   "FP": 11,
+   "TN": 17,
+   "FN": 20,
+   "accuracy": 0.5694444444444444,
+   "acc_ci": [
+    0.4544309920240597,
+    0.6774227663354686
+   ],
+   "precision": 0.6857142857142857,
+   "recall": 0.5454545454545454,
+   "specificity": 0.6071428571428571,
+   "f1": 0.6075949367088607,
+   "mean_latency_s": 0.07247222222222222
+  },
+  "direct/action_grounding_velocity": {
+   "n": 72,
+   "unresolved": 0,
+   "TP": 12,
+   "FP": 9,
+   "TN": 19,
+   "FN": 32,
+   "accuracy": 0.4305555555555556,
+   "acc_ci": [
+    0.3225772336645315,
+    0.5455690079759403
+   ],
+   "precision": 0.5714285714285714,
+   "recall": 0.2727272727272727,
+   "specificity": 0.6785714285714286,
+   "f1": 0.3692307692307692,
+   "mean_latency_s": 0.05991666666666667
+  },
+  "think/no_action_grounding": {
+   "n": 72,
+   "unresolved": 0,
+   "TP": 22,
+   "FP": 8,
+   "TN": 20,
+   "FN": 22,
+   "accuracy": 0.5833333333333334,
+   "acc_ci": [
+    0.4680748922563983,
+    0.6901496177750356
+   ],
+   "precision": 0.7333333333333333,
+   "recall": 0.5,
+   "specificity": 0.7142857142857143,
+   "f1": 0.5945945945945945,
+   "mean_latency_s": 1.4234305555555555
+  },
+  "think/action_grounding": {
+   "n": 72,
+   "unresolved": 0,
+   "TP": 18,
+   "FP": 13,
+   "TN": 15,
+   "FN": 26,
+   "accuracy": 0.4583333333333333,
+   "acc_ci": [
+    0.3482843869513592,
+    0.5726033580329238
+   ],
+   "precision": 0.5806451612903226,
+   "recall": 0.4090909090909091,
+   "specificity": 0.5357142857142857,
+   "f1": 0.4800000000000001,
+   "mean_latency_s": 1.9709444444444442
+  },
+  "think/action_grounding_velocity": {
+   "n": 72,
+   "unresolved": 0,
+   "TP": 19,
+   "FP": 13,
+   "TN": 15,
+   "FN": 25,
+   "accuracy": 0.4722222222222222,
+   "acc_ci": [
+    0.3612631919907143,
+    0.5859953046654743
+   ],
+   "precision": 0.59375,
+   "recall": 0.4318181818181818,
+   "specificity": 0.5357142857142857,
+   "f1": 0.5,
+   "mean_latency_s": 1.894138888888889
+  }
+ },
+ "comparisons": [
+  {
+   "a": "direct/action_grounding",
+   "b": "direct/no_action_grounding",
+   "gains": 5,
+   "loses": 10,
+   "p": 0.3017578125
+  },
+  {
+   "a": "direct/action_grounding_velocity",
+   "b": "direct/no_action_grounding",
+   "gains": 7,
+   "loses": 22,
+   "p": 0.008130058646202087
+  },
+  {
+   "a": "direct/action_grounding_velocity",
+   "b": "direct/action_grounding",
+   "gains": 5,
+   "loses": 15,
+   "p": 0.04138946533203125
+  },
+  {
+   "a": "think/action_grounding",
+   "b": "think/no_action_grounding",
+   "gains": 10,
+   "loses": 19,
+   "p": 0.13604594767093658
+  },
+  {
+   "a": "think/action_grounding_velocity",
+   "b": "think/no_action_grounding",
+   "gains": 11,
+   "loses": 19,
+   "p": 0.20048842206597328
+  },
+  {
+   "a": "think/action_grounding_velocity",
+   "b": "think/action_grounding",
+   "gains": 17,
+   "loses": 16,
+   "p": 1.0
+  },
+  {
+   "a": "think/no_action_grounding",
+   "b": "direct/no_action_grounding",
+   "gains": 13,
+   "loses": 17,
+   "p": 0.584664711728692
+  },
+  {
+   "a": "think/action_grounding",
+   "b": "direct/action_grounding",
+   "gains": 14,
+   "loses": 22,
+   "p": 0.2429849540349096
+  }
+ ],
+ "per_scenario": {
+  "neg_prompt_2": {
+   "direct/action_grounding": 0.8421052631578947,
+   "direct/action_grounding_velocity": 0.5263157894736842,
+   "direct/no_action_grounding": 0.8947368421052632,
+   "think/action_grounding": 0.42105263157894735,
+   "think/action_grounding_velocity": 0.47368421052631576,
+   "think/no_action_grounding": 0.631578947368421
+  },
+  "neg_prompt_3": {
+   "direct/action_grounding": 0.14285714285714285,
+   "direct/action_grounding_velocity": 0.0,
+   "direct/no_action_grounding": 0.2857142857142857,
+   "think/action_grounding": 0.2857142857142857,
+   "think/action_grounding_velocity": 0.42857142857142855,
+   "think/no_action_grounding": 0.2857142857142857
+  },
+  "neg_prompt_4": {
+   "direct/action_grounding": 0.75,
+   "direct/action_grounding_velocity": 0.25,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 0.5,
+   "think/action_grounding_velocity": 0.75,
+   "think/no_action_grounding": 0.25
+  },
+  "neg_prompt_5": {
+   "direct/action_grounding": 0.5,
+   "direct/action_grounding_velocity": 0.0,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 0.5,
+   "think/action_grounding_velocity": 0.0,
+   "think/no_action_grounding": 0.5
+  },
+  "neg_prompt_8": {
+   "direct/action_grounding": 1.0,
+   "direct/action_grounding_velocity": 0.0,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 1.0,
+   "think/action_grounding_velocity": 0.0,
+   "think/no_action_grounding": 1.0
+  },
+  "neg_prompt_9": {
+   "direct/action_grounding": 0.25,
+   "direct/action_grounding_velocity": 0.25,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 0.5,
+   "think/action_grounding_velocity": 0.25,
+   "think/no_action_grounding": 0.75
+  },
+  "pos_prompt_0": {
+   "direct/action_grounding": 1.0,
+   "direct/action_grounding_velocity": 0.8333333333333334,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 0.16666666666666666,
+   "think/action_grounding_velocity": 0.16666666666666666,
+   "think/no_action_grounding": 0.5
+  },
+  "pos_prompt_11": {
+   "direct/action_grounding": 1.0,
+   "direct/action_grounding_velocity": 0.6666666666666666,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 0.6666666666666666,
+   "think/action_grounding_velocity": 0.6666666666666666,
+   "think/no_action_grounding": 1.0
+  },
+  "pos_prompt_4": {
+   "direct/action_grounding": 0.0,
+   "direct/action_grounding_velocity": 0.0,
+   "direct/no_action_grounding": 0.0,
+   "think/action_grounding": 0.25,
+   "think/action_grounding_velocity": 0.5,
+   "think/no_action_grounding": 0.5
+  },
+  "pos_prompt_5": {
+   "direct/action_grounding": 0.6666666666666666,
+   "direct/action_grounding_velocity": 0.5,
+   "direct/no_action_grounding": 0.16666666666666666,
+   "think/action_grounding": 0.8333333333333334,
+   "think/action_grounding_velocity": 0.5,
+   "think/no_action_grounding": 0.5
+  },
+  "pos_prompt_6": {
+   "direct/action_grounding": 1.0,
+   "direct/action_grounding_velocity": 1.0,
+   "direct/no_action_grounding": 1.0,
+   "think/action_grounding": 0.75,
+   "think/action_grounding_velocity": 0.75,
+   "think/no_action_grounding": 1.0
+  },
+  "pos_prompt_8": {
+   "direct/action_grounding": 0.0,
+   "direct/action_grounding_velocity": 1.0,
+   "direct/no_action_grounding": 0.0,
+   "think/action_grounding": 0.6,
+   "think/action_grounding_velocity": 0.8,
+   "think/no_action_grounding": 1.0
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "parser_version": 2,
+  "n_changes": 0,
+  "changes": [],
+  "metrics": {
+    "n_total": 72,
+    "n_resolved": 72,
+    "n_unknown": 0,
+    "n_error": 0,
+    "coverage": 1.0,
+    "resolved": {
+      "TP": 22,
+      "FP": 8,
+      "TN": 20,
+      "FN": 22,
+      "accuracy": 0.5833333333333334,
+      "precision": 0.7333333333333333,
+      "recall": 0.5,
+      "specificity": 0.7142857142857143,
+      "f1": 0.5945945945945945,
+      "balanced_accuracy": 0.6071428571428572,
+      "n": 72
+    },
+    "strict_all": {
+      "accuracy": 0.5833333333333334,
+      "recall": 0.5,
+      "specificity": 0.7142857142857143,
+      "n": 72
+    },
+    "accuracy_bounds": [
+      0.5833333333333334,
+      0.5833333333333334
+    ],
+    "unresolved_reasons": {},
+    "timing": {
+      "mean_s": 1.4234305555555555,
+      "median_s": 1.3405,
+      "p95_s": 2.925,
+      "total_s": 102.487,
+      "n_timed": 72
+    },
+    "true_counts": {
+      "anomaly": 44,
+      "normal": 28
+    },
+    "pred_counts": {
+      "Anomaly": 30,
+      "Normal": 42,
+      "Unknown": 0,
+      "Error": 0
+    },
+    "excluding_skip_list": {
+      "n_total": 72,
+      "n_resolved": 72,
+      "n_unknown": 0,
+      "n_error": 0,
+      "coverage": 1.0,
+      "resolved": {
+        "TP": 22,
+        "FP": 8,
+        "TN": 20,
+        "FN": 22,
+        "accuracy": 0.5833333333333334,
+        "precision": 0.7333333333333333,
+        "recall": 0.5,
+        "specificity": 0.7142857142857143,
+        "f1": 0.5945945945945945,
+        "balanced_accuracy": 0.6071428571428572,
+        "n": 72
+      },
+      "strict_all": {
+        "accuracy": 0.5833333333333334,
+        "recall": 0.5,
+        "specificity": 0.7142857142857143,
+        "n": 72
+      },
+      "accuracy_bounds": [
+        0.5833333333333334,
+        0.5833333333333334
+      ]
+    },
+    "n_on_skip_list": 0
+  }
+}

@@ -334,3 +334,75 @@ judged by the flow probe (`logs/regen_flow_profiles.json`):
 3. Exclude or regenerate the 15 clips on `logs/id_regeneration_list.json`
    (6 already human-flagged).
 4. The ID pipeline itself needs no further work.
+
+---
+
+## Part 6 — Clean-subset rerun: action grounding hurts, and now we know why
+
+Setup: the 72-clip prompt-video-ID agreement subset (44 anomaly / 28 normal), fixed
+v1_resample trajectories, example-free think prompt (billboard/fire-hose/garment
+wording removed from every step after the leak finding), three arms per style:
+video-only, action (velocity+heading), velocity-only. Majority baseline (always
+Anomaly): 61.1%. Artifacts: `logs/subset_eval_report.{json,md}`,
+`logs/subset_{style}_{mode}/`.
+
+| run | acc | 95% CI | P | R | spec | F1 |
+|---|---|---|---|---|---|---|
+| direct / video-only | **0.639** | [0.524, 0.740] | 0.696 | 0.727 | 0.500 | 0.711 |
+| direct / action (v+h) | 0.569 | [0.454, 0.677] | 0.686 | 0.545 | 0.607 | 0.608 |
+| direct / velocity-only | 0.431 | [0.323, 0.546] | 0.571 | 0.273 | 0.679 | 0.369 |
+| think / video-only | 0.583 | [0.468, 0.690] | 0.733 | 0.500 | 0.714 | 0.595 |
+| think / action (v+h) | 0.458 | [0.348, 0.573] | 0.581 | 0.409 | 0.536 | 0.480 |
+| think / velocity-only | 0.472 | [0.361, 0.586] | 0.594 | 0.432 | 0.536 | 0.500 |
+
+Paired McNemar (within style): action vs video-only −5 (direct, p=0.30) and −9
+(think, p=0.14); **velocity-only vs video-only −15 (direct, p=0.008)**; velocity-only
+vs action −10 (direct, p=0.041). With 8 comparisons, Bonferroni leaves the strongest
+at p≈0.065 — marginal, but every action arm is negative in both styles.
+
+### 6.1 The mechanism: smooth dynamics read as normalcy
+
+The verdict distributions show what the action channel actually does: video-only
+direct says Anomaly 46/72; add the full trajectory and it drops to 35/72; strip
+heading and it drops to 21/72. Recall collapses 0.727 → 0.545 → 0.273 while
+specificity rises. The action channel systematically pushes the model toward
+"Normal".
+
+That is anti-correlated evidence *for this dataset by construction*: 25 of the 44
+anomalies are FP-polarity scenarios whose anomalous behaviour IS a smooth,
+controlled, unnecessary stop (braking for balloons, bags, a stop-sign shirt). A
+clean decel-to-zero profile looks like safe, competent driving in isolation — the
+model reads orderly dynamics as normalcy precisely where the label says the
+orderliness is the anomaly. Heading noise partially masked this in the full-action
+arm; removing it (velocity-only) makes the trajectory look even smoother and the
+bias stronger. The clip-level evidence matches: `pos_prompt_8` (correct stop before
+the wall) goes 0/5 under direct video-only and direct action but **5/5 under
+velocity-only** — the same "smooth stop = normal" heuristic, which happens to be
+right there.
+
+### 6.2 Other observations
+
+- Even the best run (0.639) does not significantly beat the 61.1% majority baseline
+  (CI includes it). On clean data, Cosmos3-Nano still cannot do this task.
+- The example-free think prompt confirms the earlier leak diagnosis in reverse:
+  `pos_prompt_0` (billboard-normal) is 6/6 under direct but **1/6 under example-free
+  think** — with no primed example, reasoning talks itself into false alarms on the
+  billboard scene.
+- `neg_prompt_3` (starts moving when a green balloon overlaps the red light) fails
+  under every arm (0–6/14): temporal causality ("moved *because* the light looked
+  green") appears out of reach regardless of grounding.
+- Thinking never beats direct on the subset (−4 and −8 net, n.s.), consistent with
+  the full-set result once the leak is removed.
+
+### 6.3 Implication for the paper's framing
+
+The hypothesis "the action channel was too corrupted for grounding to help" is now
+tested and rejected: with trajectories verified at 98% fidelity against the pixels,
+grounding still does not help — it hurts, through the smooth-equals-normal prior.
+Making action grounding work here likely requires the prompt to state the *expected*
+action for the scene (so the model compares actual vs expected) rather than
+presenting the raw trajectory and hoping the model infers that smoothness can be
+wrong. n=72 caveat: CIs are ±11 points; treat magnitudes, not exact values.
+
+Run cost: $0.91 (H200, 40 min, all six runs + smoke).
+
