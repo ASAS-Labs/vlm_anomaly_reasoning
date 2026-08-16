@@ -375,8 +375,8 @@ clean decel-to-zero profile looks like safe, competent driving in isolation — 
 model reads orderly dynamics as normalcy precisely where the label says the
 orderliness is the anomaly. Heading noise partially masked this in the full-action
 arm; removing it (velocity-only) makes the trajectory look even smoother and the
-bias stronger. The clip-level evidence matches: `pos_prompt_8` (correct stop before
-the wall) goes 0/5 under direct video-only and direct action but **5/5 under
+bias stronger. The clip-level evidence matches: `pos_prompt_8` (correct stop for a
+child crossing) goes 0/5 under direct video-only and direct action but **5/5 under
 velocity-only** — the same "smooth stop = normal" heuristic, which happens to be
 right there.
 
@@ -405,4 +405,71 @@ presenting the raw trajectory and hoping the model infers that smoothness can be
 wrong. n=72 caveat: CIs are ±11 points; treat magnitudes, not exact values.
 
 Run cost: $0.91 (H200, 40 min, all six runs + smoke).
+
+---
+
+## Part 7 — Perception probes and input-resolution ablation
+
+Two experiments on the 72-clip subset: factual probe questions with no anomaly
+framing (separating cannot-see from cannot-judge), and verdict reruns at higher
+frame rate and resolution. Artifacts: `logs/probe_{4fps,8fps,8fps_hires}/`,
+`logs/subset8_direct_*/`, `logs/subset8hires_direct_*/`. Session cost ~$2.40.
+
+### 7.1 Perception is essentially solved — except start-of-motion
+
+| probe | 4fps | 8fps | 8fps+720p |
+|---|---|---|---|
+| scene (sign real vs shirt/billboard, road objects, signal colour, wall, pedestrian) | **72/72** | 70/72 | 72/72 |
+| action (Stopped / Moving / Started at clip end) | 58/72 | 58/72 | 58/72 |
+
+Scene perception is perfect: the model correctly reports that the stop sign is on
+a shirt (19/19) or a billboard (6/6), identifies balloons vs bags, reads signal
+colour, and recognises the mural wall. **All 14 action-probe misses are the same
+scenario**: `neg_prompt_3` (vehicle starts moving at a red light) — answered
+"moving" 9× and "stopped" 5×, never "started", at every fps/resolution. The model
+cannot perceive the start-of-motion event, which fully explains that scenario's
+verdict failure under every arm (Part 6). Every other scenario: 58/58.
+
+Splitting verdicts (direct video-only, 4fps) by probe correctness:
+
+- perception fully correct → verdict accuracy **42/58 = 72.4%**
+- perception partly wrong → **4/14 = 28.6%**
+
+So the earlier "perception-limited" interpretation is largely wrong: on the 81% of
+clips the model perceives correctly, judgment still errs 28% of the time — the
+dominant failure is the judgment step, plus one specific perceptual blind spot
+(motion onset).
+
+### 7.2 Resolution helps the verdict; frame rate does not
+
+Upscaling 832×480 → 1248×720 (lanczos; no new information, but the Qwen3-VL-style
+processor allocates visual tokens by pixel area: prompt_tokens 7,971 → 11,691):
+
+| config | video-only | action (v+h) | velocity-only |
+|---|---|---|---|
+| 4 fps (baseline) | 0.639 [0.524, 0.740] | 0.569 | 0.431 |
+| 8 fps | 0.611 (net −2, p=0.73) | 0.514 | 0.500 |
+| **8 fps + 720p** | **0.736 [0.624, 0.824]** (net **+8/−1**, p=0.039) | 0.611 | 0.486 |
+
+- **8fps+720p video-only is the first configuration whose CI lower bound (0.624)
+  clears the 61.1% majority baseline**, and the paired gain vs 4 fps is +8/−1
+  (p=0.039, uncorrected among 6 config comparisons — promising, not conclusive).
+- Frame rate alone does nothing (net −2). The gain is resolution, i.e. the
+  encoder's internal token budget — the probes stayed flat because they were
+  already saturated, but the finer-grained representation improves the judgment
+  margin.
+- The action-grounding ordering is unchanged at every config:
+  video-only > action > velocity-only. Better input does not rescue the
+  smooth-equals-normal bias.
+
+### 7.3 Recommendations
+
+1. **Feed the model more visual tokens.** Either upscale as preprocessing (proven
+   here at zero information gain) or regenerate at native 720p, which also adds
+   real detail. This is the single cheapest accuracy lever found so far.
+2. Start-of-motion is a perceptual blind spot; scenarios that hinge on motion
+   onset need either explicit temporal-localization prompting or should be
+   weighted separately in evaluation.
+3. Action grounding remains net-negative in all nine configurations tested;
+   the expected-vs-actual reformulation (Part 6.3) is still the untested path.
 

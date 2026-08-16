@@ -1,0 +1,112 @@
+{
+ "action": {
+  "n": 72,
+  "correct": 58,
+  "accuracy": 0.8055555555555556,
+  "by_scenario": {
+   "neg_prompt_2": {
+    "correct": 19,
+    "n": 19
+   },
+   "neg_prompt_3": {
+    "correct": 0,
+    "n": 14
+   },
+   "neg_prompt_4": {
+    "correct": 4,
+    "n": 4
+   },
+   "neg_prompt_5": {
+    "correct": 2,
+    "n": 2
+   },
+   "neg_prompt_8": {
+    "correct": 1,
+    "n": 1
+   },
+   "neg_prompt_9": {
+    "correct": 4,
+    "n": 4
+   },
+   "pos_prompt_0": {
+    "correct": 6,
+    "n": 6
+   },
+   "pos_prompt_11": {
+    "correct": 3,
+    "n": 3
+   },
+   "pos_prompt_4": {
+    "correct": 4,
+    "n": 4
+   },
+   "pos_prompt_5": {
+    "correct": 6,
+    "n": 6
+   },
+   "pos_prompt_6": {
+    "correct": 4,
+    "n": 4
+   },
+   "pos_prompt_8": {
+    "correct": 5,
+    "n": 5
+   }
+  }
+ },
+ "scene": {
+  "n": 72,
+  "correct": 72,
+  "accuracy": 1.0,
+  "by_scenario": {
+   "neg_prompt_2": {
+    "correct": 19,
+    "n": 19
+   },
+   "neg_prompt_3": {
+    "correct": 14,
+    "n": 14
+   },
+   "neg_prompt_4": {
+    "correct": 4,
+    "n": 4
+   },
+   "neg_prompt_5": {
+    "correct": 2,
+    "n": 2
+   },
+   "neg_prompt_8": {
+    "correct": 1,
+    "n": 1
+   },
+   "neg_prompt_9": {
+    "correct": 4,
+    "n": 4
+   },
+   "pos_prompt_0": {
+    "correct": 6,
+    "n": 6
+   },
+   "pos_prompt_11": {
+    "correct": 3,
+    "n": 3
+   },
+   "pos_prompt_4": {
+    "correct": 4,
+    "n": 4
+   },
+   "pos_prompt_5": {
+    "correct": 6,
+    "n": 6
+   },
+   "pos_prompt_6": {
+    "correct": 4,
+    "n": 4
+   },
+   "pos_prompt_8": {
+    "correct": 5,
+    "n": 5
+   }
+  }
+ }
+}
