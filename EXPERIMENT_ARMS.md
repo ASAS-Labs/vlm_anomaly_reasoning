@@ -103,8 +103,8 @@ positive-twin classes; never enters a prompt).
 | H1 | expect_early (2.5 s window) | Nano | 18/72 | 38/72 | hedges "slow" 34/72; never "stop" |
 | H2 | expect_full (whole clip) | Nano | 22/72 | 40/72 | anchors on outcome (19× "stop" on continue-scenes) |
 | H3 | monitor (2-turn verdict) | Nano | 38/71 correct | — | 70.3% when H1 right, 35.3% when wrong |
-| H4 | expect_early | **Super** | *running* | | does scale buy driving knowledge? |
-| H5 | expect_full | **Super** | *running* | | |
+| H4 | expect_early | **Super** (2×H200, TP=2) | 8/72 (22/72 adj.) | 26/72 (40 adj.) | decisive but not wiser; see 8.4 |
+| H5 | expect_full | **Super** | 12/72 | 27/72 | |
 
 Mechanical ceiling (GT expectation + perfect compare): **100%** — the
 formulation is sound; the gap is expectation generation.

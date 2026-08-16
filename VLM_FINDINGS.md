@@ -541,3 +541,30 @@ hedger, not a driving instructor. That reframes the road ahead:
    "slow" hedge), though the wall result suggests option wording is not the core
    problem.
 
+### 8.4 Cosmos3-Super stage-1 (H4/H5): scale buys decisiveness, not semantics
+
+Super (64B, TP=2 on 2×H200) on the identical early-window protocol: 8/72 strict,
+26/72 lenient — nominally far below Nano (18/72, 38/72). But the aggregate hides
+an option-reading artifact: on `neg_prompt_3` (vehicle already stationary at a
+red light, GT "wait") Super answered "stop" 14/14 where Nano answered "wait"
+14/14 — for an already-stopped vehicle those are the same commitment. Scoring
+{stop, wait} as equivalent there gives **Super 22/72 adjusted vs Nano 18/72**:
+roughly parity.
+
+The interesting differences are structural:
+
+- **Super commits.** 28 "stop" answers vs Nano's 8; the "slow" hedge shrinks in
+  favour of decisions. It gets the rule-based scenes Nano missed: approaching red
+  light 3/3 (Nano 0/3), child crossing 2/5 (Nano 0/5), night-glare slow 2/4
+  (Nano 0/4).
+- **Semantic displacement scenes fail identically at both scales**: stop-sign
+  shirt 0/19, balloons 0/8, bags 0/8, billboard 1/6 (worse than Nano's 4/6) —
+  and the mural wall gets "Continue" 4/4, an answer that would drive into the
+  wall, worse than Nano's "slow".
+
+Conclusion: 4× parameters improves rule-following policy (traffic lights,
+pedestrians) but does not touch the semantic-context judgment the taxonomy
+actually tests. The missing capability is not general driving knowledge but the
+displaced-context reasoning itself — consistent with SFT on stage-1 labels,
+rather than scale, being the lever. Session cost ~$5.6.
+
