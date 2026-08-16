@@ -55,7 +55,7 @@ def main():
 
     lines = [f"# Prompt lab — round {args.round}", "",
              f"n={len(common)} paired clips; baseline={args.baseline} "
-             f"acc={sum(1 for v in common if base[v]['correct'])/len(common):.3f}",
+             f"acc={sum(1 for v in common if base[v]['correct'] is True)/len(common):.3f}",
              "",
              "| variant | acc | 95% CI | vs P0 net (p) | breadth | anomaly-verdicts | hypothesis |",
              "|---|---|---|---|---|---|---|"]
@@ -63,17 +63,17 @@ def main():
     order = sorted(runs, key=lambda k: -sum(1 for v in common if runs[k][v]["correct"]))
     for vid in order:
         recs = runs[vid]
-        k = sum(1 for v in common if recs[v]["correct"])
+        k = sum(1 for v in common if recs[v]["correct"] is True)
         lo, hi = wilson(k, len(common))
         ks = sorted(common)
-        b_ok = [bool(base[v]["correct"]) for v in ks]
-        v_ok = [bool(recs[v]["correct"]) for v in ks]
+        b_ok = [base[v]["correct"] is True for v in ks]
+        v_ok = [recs[v]["correct"] is True for v in ks]
         lost, gained, pv = mcnemar(b_ok, v_ok)
         # breadth: scenarios strictly improved vs baseline
         breadth = 0
         for s in scens:
             clips = [v for v in common if scenario(v) == s]
-            if sum(recs[v]["correct"] for v in clips) > sum(base[v]["correct"] for v in clips):
+            if sum(recs[v]["correct"] is True for v in clips) > sum(base[v]["correct"] is True for v in clips):
                 breadth += 1
         n_anom = sum(1 for v in common if recs[v]["verdict"] == "Anomaly")
         hyp = next(iter(recs.values()))["hypothesis"]
@@ -91,15 +91,15 @@ def main():
         clips = [v for v in common if scenario(v) == s]
         row = [s, str(len(clips))]
         for vid in order:
-            row.append(f"{sum(runs[vid][v]['correct'] for v in clips)}/{len(clips)}")
+            row.append(f"{sum(runs[vid][v]['correct'] is True for v in clips)}/{len(clips)}")
         lines.append("| " + " | ".join(row) + " |")
 
     # error autopsy pointers: clips the top non-baseline variant fixed/broke
     top = next(v for v in order if v != args.baseline)
     fixed = [v for v in sorted(common)
-             if runs[top][v]["correct"] and not base[v]["correct"]]
+             if runs[top][v]["correct"] is True and base[v]["correct"] is not True]
     broke = [v for v in sorted(common)
-             if not runs[top][v]["correct"] and base[v]["correct"]]
+             if runs[top][v]["correct"] is not True and base[v]["correct"] is True]
     lines += ["", f"## {top} vs {args.baseline}: flips",
               "", f"fixed ({len(fixed)}): " + ", ".join(x.split("/")[-1] for x in fixed),
               f"broke ({len(broke)}): " + ", ".join(x.split("/")[-1] for x in broke)]

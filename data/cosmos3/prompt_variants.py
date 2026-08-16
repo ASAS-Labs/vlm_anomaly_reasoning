@@ -215,3 +215,50 @@ def _leak_check():
 
 
 _leak_check()
+
+# --- Round 2: hybrids informed by round-1 autopsy --------------------------
+# Round 1 showed prompts slide along the ROC curve without improving balanced
+# accuracy (P0 0.886/0.500, P6 its mirror 0.432/0.964). P0's 19 errors are 14x
+# "scene looks concerning but the response was correct" + 5x the neg_prompt_3
+# perception blind spot. Hybrids graft P6's scenery-vs-response line onto the
+# champion P0 wording with minimal delta.
+
+_SCENERY_LINE = (
+    "Note: a scene that merely LOOKS unusual is not an anomaly by itself. Judge "
+    "the vehicle's RESPONSE: an anomaly is either a wrong reaction to something "
+    "that required none, or a missing reaction to something real. A correct "
+    "response to a real hazard is Normal, even if the scene is dramatic."
+)
+
+P8_TEXT = BASE_PROMPT_NO_ACTION.replace(
+    "Reply with exactly one word of the following:",
+    _SCENERY_LINE + "\nReply with exactly one word of the following:")
+
+P9_TEXT = P6_TEXT.split("With those definitions")[0] + (
+    "With those definitions in mind: "
+) + BASE_PROMPT_NO_ACTION
+
+P10_TEXT = BASE_PROMPT_NO_ACTION.replace(
+    "Reply with exactly one word of the following:",
+    _SCENERY_LINE + "\nFirst reply in ONE short sentence: what did the vehicle "
+    "do, and was the thing it reacted to (or ignored) real? Then reply with "
+    "exactly one word of the following:")
+
+VARIANTS.update({
+    "P8": {"hypothesis": "champion P0 + one scenery-vs-response line",
+           "mode": "video_only", "text": P8_TEXT,
+           "sampling": GREEDY, "parser": "classification", "max_tokens": 64},
+    "P9": {"hypothesis": "P6 definitions grafted before the verbatim P0 question",
+           "mode": "video_only", "text": P9_TEXT,
+           "sampling": GREEDY, "parser": "classification", "max_tokens": 64},
+    "P10": {"hypothesis": "P8 + one-sentence rationale before the verdict",
+            "mode": "video_only", "text": P10_TEXT,
+            "sampling": GREEDY, "parser": "classification", "max_tokens": 120},
+    "S2": {"hypothesis": "self-consistency: P0 x5 samples at t=0.7, majority",
+           "mode": "video_only", "text": BASE_PROMPT_NO_ACTION,
+           "sampling": {"temperature": 0.7, "top_p": 0.95},
+           "parser": "classification", "max_tokens": 64},
+})
+
+_leak_check()
+
