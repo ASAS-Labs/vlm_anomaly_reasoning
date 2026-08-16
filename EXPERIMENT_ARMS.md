@@ -139,6 +139,37 @@ Declared: prompt engineering alone cannot reach the 0.80 target; champion stays
 the original P0 wording. Artifacts: `logs/plab_r{1,2}_*`,
 `logs/prompt_lab_round{1,2}.md`.
 
+
+## J — Prompt/context lab, think regime (72 clips, 720p↑ @ 8 fps) — Part 10
+
+Guide reasoning sampling (t=0.6/top_p .95/top_k 20) unless noted; P0d = direct
+champion gate (0.736 / 0.722 across the two sessions — reproduces incl. on
+H200 NVL).
+
+| arm | round | idea | acc | verdict |
+|---|---|---|---|---|
+| T0 | 3 | example-free skeleton (control) | 0.500 | think costs ~24 pts vs direct |
+| T1 | 3 | no skeleton | 0.472 | skeleton not the problem |
+| T2 | 3 | behaviour-first order | 0.403 | worst structure |
+| T3 | 3 | checklist enumeration | 0.625 | best think arm (round 3) |
+| T4 | 3 | two-hypothesis debate | 0.458 | — |
+| T5 | 3 | impression-then-verify | 0.514 | — |
+| T6 | 3 | cite timestamps | 0.556 | — |
+| T7 | 3 | normative-rules injection | 0.556 | Part-8 gap not closable in-context |
+| T8 | 3 | self-context (own probe answers) | 0.597 | — |
+| T9 | 3 | think + action + anti-smooth | 0.458 | — |
+| TS1 | 3 | T0 at greedy | 0.597 | t=0.6 costs ~7 clips on T0 |
+| T3g | 4 | checklist × greedy | 0.514 | **composition fails: below both parents** |
+| T3f | 4 | checklist × focus guard | 0.486 | fails |
+| T3gf | 4 | checklist × guard × greedy | 0.542 | fails |
+| T3k5 | 4 | checklist k=5 majority | 0.611 | ≈ single-sample T3 |
+
+**Declared (stopping rule): the think regime is closed.** Round-3 "signals"
+(T3 +9, TS1 +7) do not survive composition — consistent with selection noise at
+n=72 (binomial σ ≈ 4 clips over 12 arms). Best think result anywhere (0.625)
+never approaches the direct champion (0.722-0.750). Reasoning remains a net
+liability for Cosmos3-Nano on this task. Artifacts: `logs/plab_r{3,4}_*`.
+
 ## Failure chain (as currently localized)
 
 perception 100% → **policy generation 25–53%** → comparison ~70% → verdict.

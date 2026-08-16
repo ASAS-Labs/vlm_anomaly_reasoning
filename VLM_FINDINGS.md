@@ -606,3 +606,38 @@ own probe answers in context) rather than wording variations, and the real
 levers remain SFT on expectation labels (Part 8) and dataset expansion.
 Lab cost: ~$4 across two sessions.
 
+---
+
+## Part 10 — Think-regime prompt lab: closed with a null
+
+Sixteen arms over two rounds (12-arm broad screen + 4 compositions) at the
+adopted 720p/8fps input, example-free throughout, leak-guarded, with the direct
+champion re-run as a per-session gate (0.736 → 0.722 across sessions and across
+an H200→H200 NVL hardware change). Tables: `logs/prompt_lab_round{3,4}.md`;
+EXPERIMENT_ARMS family J.
+
+1. **Thinking starts 24 points behind.** The example-free think control scores
+   0.500 vs the direct champion's 0.736 at identical input. No structure
+   (checklist, debate, verify-revise, evidence-citing, reordering), no knowledge
+   injection (normative rules, self-generated probe context), no action framing,
+   and no decoding change closes the gap: the best think arm ever is 0.625.
+2. **Round-3 signals were noise.** Checklist (+9) and greedy decoding (+7) —
+   the only positive deltas in the screen — *both* failed to survive
+   composition: checklist×greedy scored 0.514, below either parent, and k=5
+   majority voting merely reproduced the single-sample checklist. With 12 arms
+   at n=72 (binomial σ≈4 clips), two +7..9 outliers are expected by chance; the
+   composition round existed precisely to catch this, and did.
+3. The trace autopsy explains the mechanism qualitatively: the model often
+   *correctly identifies* the semantic trick (e.g. names the mural illusion)
+   and then reasons past it — enumerating peripheral signage, re-weighing
+   irrelevant details, and landing on the wrong verdict. Deliberation gives the
+   wrong prior more chances to win, exactly as Part 6 first observed.
+
+**Overall prompt-engineering conclusion (families I + J, 29 arms):** the
+released direct prompt at 720p/8fps remains the champion (0.72-0.75). Neither
+regime's wording, structure, context, nor decoding moves discrimination.
+The remaining levers are the ones prompting cannot reach: SFT on expectation
+labels (Part 8), dataset expansion (the pending 195-clip ID pass), and
+generation-fidelity repair (Part 5). Think-lab cost: ~$5 across three sessions
+(one interrupted by a host stop; results recomputed).
+
