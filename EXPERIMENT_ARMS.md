@@ -116,7 +116,6 @@ perception 100% → **policy generation 25–53%** → comparison ~70% → verdi
 
 ## Open / planned
 
-- H4/H5: Cosmos3-Super stage-1 (in progress).
 - Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
   finalize agreement subset.
 - Closed-loop regeneration (C2 recipe + flow-probe gate) for the 15-clip list.
