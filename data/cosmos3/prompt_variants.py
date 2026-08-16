@@ -262,3 +262,151 @@ VARIANTS.update({
 
 _leak_check()
 
+# --- Think-regime slate (rounds 3+) ----------------------------------------
+# Direct-lab law (Part 9): wording moves bias, not discrimination. The think
+# slate therefore varies reasoning STRUCTURE, injects the normative policy the
+# model lacks (Part 8), and composes the model's own reliable probe answers
+# (Part 7) — rather than rephrasing the question.
+
+from cosmos_reasoning_vllm import (  # noqa: E402
+    _ANOMALY_DEF,
+    _FORMAT_INSTRUCTION,
+    _MATCH_STEP,
+    _SCENE_STEP,
+    THINK_PROMPT_ACTION_HEAD,
+    THINK_PROMPT_ACTION_TAIL,
+    THINK_PROMPT_NO_ACTION,
+    THINK_SAMPLING as _TS,
+)
+
+THINK = {k: v for k, v in _TS.items() if k != "repetition_penalty"}
+
+_INTRO = (
+    "You are an autonomous driving safety expert analyzing this ego vehicle's "
+    "video for semantic or contextual anomalies that may impact safe AV "
+    f"operation.\n\n{_ANOMALY_DEF}\n\n"
+)
+
+_BEHAVIOUR_STEP = (
+    "Behaviour: from the ego-motion visible in the video, what does the ego "
+    "vehicle do — hold speed, decelerate, come to a stop, accelerate, or change "
+    "heading — and when in the clip does it happen?"
+)
+
+T1_TEXT = _INTRO + (
+    "Is there any semantic misunderstanding in the vehicle's behaviour that "
+    f"would require intervention?\n\n{_FORMAT_INSTRUCTION}"
+)
+
+T2_TEXT = _INTRO + (
+    f"Reason through the following, in order:\n1. {_BEHAVIOUR_STEP}\n"
+    f"2. Scene: {_SCENE_STEP[9:]}\n{_MATCH_STEP}\n\n{_FORMAT_INSTRUCTION}"
+)
+
+T3_TEXT = _INTRO + (
+    "Work through this checklist in your reasoning:\n"
+    "1. List every apparent traffic command or hazard in the scene.\n"
+    "2. For each one: is it real, or a depiction, look-alike, or reflection?\n"
+    "3. State what the ego vehicle did.\n"
+    "4. Decide: was that response required by something real? Was it triggered "
+    "by something not real? Or was a required response missing?\n\n"
+    + _FORMAT_INSTRUCTION
+)
+
+T4_TEXT = _INTRO + (
+    "In your reasoning, first make the strongest case that the behaviour is "
+    "Normal. Then make the strongest case that it is Anomalous. Then state "
+    f"which case is stronger and why.\n\n{_FORMAT_INSTRUCTION}"
+)
+
+T5_TEXT = _INTRO + (
+    "In your reasoning: first state your immediate impression (Anomaly or "
+    "Normal). Then verify it: (a) is the thing the vehicle reacted to — or "
+    "ignored — actually real? (b) was the vehicle's action necessary, "
+    "forbidden, or appropriate here? If the verification contradicts your "
+    f"impression, revise it.\n\n{_FORMAT_INSTRUCTION}"
+)
+
+T6_TEXT = _INTRO + (
+    "In your reasoning, cite the concrete moments that matter: describe what is "
+    "visible and what the vehicle does at approximate times (for example, "
+    "'around second 2, ...'). Base the verdict only on the evidence you "
+    f"cited.\n\n{_FORMAT_INSTRUCTION}"
+)
+
+_RULES_BLOCK = (
+    "Rules a correct driver follows:\n"
+    "- stop or wait when a real traffic control requires it;\n"
+    "- stop for people or genuine obstructions in the vehicle's path;\n"
+    "- slow down when visibility is impaired;\n"
+    "- otherwise maintain speed;\n"
+    "- and never react to images, depictions, reflections, or look-alikes of "
+    "traffic controls or hazards — those command nothing.\n"
+    "A response is anomalous when it breaks these rules in either direction."
+)
+
+T7_TEXT = _INTRO + _RULES_BLOCK + (
+    f"\n\nReason through the following, in order:\n{_SCENE_STEP}\n"
+    f"2. {_BEHAVIOUR_STEP}\n{_MATCH_STEP}\n\n{_FORMAT_INSTRUCTION}"
+)
+
+T8_TEXT = (
+    "You previously examined this clip and made these observations:\n"
+    "{observations}\n\n" + _INTRO +
+    "Using your observations above together with the video, reason through "
+    "whether the vehicle's behaviour matched what was actually there.\n\n"
+    + _FORMAT_INSTRUCTION
+)
+
+T8_PRECALL = [
+    "Look at this driving scene. Is any apparent traffic command or hazard that "
+    "the ego vehicle might be responding to real, or is it only a depiction, "
+    "image, reflection, or look-alike? Answer in one short sentence.",
+    "By the end of this clip, what did the ego vehicle do — maintain speed, "
+    "slow down, come to a stop, or start moving? Answer in one short sentence.",
+]
+
+T9_TEXT_TEMPLATE = (
+    THINK_PROMPT_ACTION_HEAD
+    + "\n\nEgo Vehicle State Sequence (5Hz): {action}\n\n"
+    + "Judge whether the recorded behaviour was NEEDED for what was actually in "
+    "the scene, not whether it was smoothly executed. A smooth, controlled "
+    "manoeuvre is still an anomaly if the scene did not call for it; keeping a "
+    "steady speed is still an anomaly if the scene required action.\n\n"
+    + THINK_PROMPT_ACTION_TAIL
+)
+
+_THINK_COMMON = {"sampling": THINK, "parser": "classification", "max_tokens": 2048}
+
+VARIANTS.update({
+    "P0d": {"hypothesis": "direct champion, session gate",
+            "mode": "video_only", "text": BASE_PROMPT_NO_ACTION,
+            "sampling": GREEDY, "parser": "classification", "max_tokens": 64},
+    "T0": {"hypothesis": "think control: example-free skeleton at adopted input",
+           "mode": "video_only", "text": THINK_PROMPT_NO_ACTION, **_THINK_COMMON},
+    "T1": {"hypothesis": "minimal think: no skeleton at all",
+           "mode": "video_only", "text": T1_TEXT, **_THINK_COMMON},
+    "T2": {"hypothesis": "behaviour-first skeleton order",
+           "mode": "video_only", "text": T2_TEXT, **_THINK_COMMON},
+    "T3": {"hypothesis": "explicit checklist enumeration",
+           "mode": "video_only", "text": T3_TEXT, **_THINK_COMMON},
+    "T4": {"hypothesis": "two-hypothesis debate then decide",
+           "mode": "video_only", "text": T4_TEXT, **_THINK_COMMON},
+    "T5": {"hypothesis": "impression first, then verification with revise",
+           "mode": "video_only", "text": T5_TEXT, **_THINK_COMMON},
+    "T6": {"hypothesis": "evidence-grounded: cite timestamps before verdict",
+           "mode": "video_only", "text": T6_TEXT, **_THINK_COMMON},
+    "T7": {"hypothesis": "inject normative driving rules (the Part-8 gap)",
+           "mode": "video_only", "text": T7_TEXT, **_THINK_COMMON},
+    "T8": {"hypothesis": "self-context: own probe answers as prior observations",
+           "mode": "video_only", "text": T8_TEXT, "precall": T8_PRECALL,
+           **_THINK_COMMON},
+    "T9": {"hypothesis": "think + action channel + anti-smooth necessity",
+           "mode": "action", "text": T9_TEXT_TEMPLATE, **_THINK_COMMON},
+    "TS1": {"hypothesis": "think control at greedy t=0 (sampling ablation)",
+            "mode": "video_only", "text": THINK_PROMPT_NO_ACTION,
+            "sampling": GREEDY, "parser": "classification", "max_tokens": 2048},
+})
+
+_leak_check()
+

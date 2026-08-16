@@ -52,12 +52,39 @@ def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry):
         action_text = None
         if variant["mode"] != "video_only":
             action_text = read_action_sequence(it["abs_path"])
+        precall_records = []
+        observations = None
+        if variant.get("precall") and not dry:
+            # Self-context: ask the model its own probe questions first (greedy),
+            # then present its answers back as prior observations. All inputs are
+            # deployment-available; nothing external is injected.
+            qa = []
+            for q in variant["precall"]:
+                r = client.chat.completions.create(
+                    model=model_id,
+                    messages=[
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": [
+                            {"type": "video_url",
+                             "video_url": {"url": it["abs_path"].resolve().as_uri()}},
+                            {"type": "text", "text": q},
+                        ]},
+                    ],
+                    max_tokens=60, temperature=0.0, seed=seed)
+                a = r.choices[0].message.content
+                precall_records.append({"q": q, "a": a})
+                qa.append(f"Q: {q}\nA: {a}")
+            observations = "\n".join(qa)
         prompt = build_prompt(variant, action_text)
+        if "{observations}" in prompt:
+            prompt = prompt.replace("{observations}", observations or "(none)")
         rec = {"video": rel, "variant": vid, "hypothesis": variant["hypothesis"],
                "mode": variant["mode"], "true_label": it["true_label"],
                "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
                "sampling": variant["sampling"], "k": k if k > 1 else 1,
                "ts": datetime.now().isoformat(timespec="seconds")}
+        if precall_records:
+            rec["precall"] = precall_records
         if dry:
             rec.update(verdict="DryRun", raw_output=None, correct=None, prompt=prompt)
         else:
