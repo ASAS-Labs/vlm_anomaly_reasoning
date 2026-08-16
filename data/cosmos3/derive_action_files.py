@@ -43,13 +43,17 @@ def published_seqs(src_root: Path, rel_path: str):
 
 
 def write_tree(out_root: Path, src_root: Path, rel_paths, seqs_for):
-    """Write one variant tree. seqs_for(rel_path) -> (seq5, seq10) or None to skip."""
+    """Write one variant tree. seqs_for(rel) -> (seq5, seq_native[, native_tag])."""
     n = 0
     for rel in rel_paths:
         got = seqs_for(rel)
         if got is None:
             continue
-        seq5, seq10 = got
+        native_tag = None
+        if len(got) == 3:
+            seq5, seq10, native_tag = got
+        else:
+            seq5, seq10 = got
         dst = out_root / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
         if dst.is_symlink() or dst.exists():
@@ -57,7 +61,9 @@ def write_tree(out_root: Path, src_root: Path, rel_paths, seqs_for):
         # Symlink the ORIGINAL 24fps video: the VLM must still see the full clip.
         dst.symlink_to((src_root / rel).resolve())
         dst.with_name(dst.stem + ".txt").write_text(json.dumps(seq5) + "\n")
-        dst.with_name(dst.stem + "_10fps.txt").write_text(json.dumps(seq10) + "\n")
+        # Native-rate sibling keeps the historical _10fps name only when it IS 10 fps.
+        tag = "10fps" if native_tag is None else native_tag
+        dst.with_name(f"{dst.stem}_{tag}.txt").write_text(json.dumps(seq10) + "\n")
         n += 1
     return n
 
@@ -103,8 +109,11 @@ def main():
                 r = raw.get(rel)
                 if r is None:
                     return None
-                return derive_variant(r["poses"], r["input_fps"],
-                                      r["n_valid_steps"] + 1, _n)
+                s5, sn = derive_variant(r["poses"], r["input_fps"],
+                                        r["n_valid_steps"] + 1, _n)
+                fps = r["input_fps"]
+                tag = None if abs(fps - 10.0) < 1e-9 else f"{fps:g}fps"
+                return s5, sn, tag
 
         n = write_tree(out_root, args.src, rel_paths, seqs_for)
         # Gate: the tree must be discoverable by the same code the eval uses.

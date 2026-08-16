@@ -150,14 +150,32 @@ def to_5hz(seq10, mode="decimate"):
     return out
 
 
+def resample_to_hz(seq, src_hz, dst_hz=5.0):
+    """Linear-interpolate a [[v, h], ...] sequence onto a dst_hz time grid.
+
+    Needed for clips whose ID input rate is not 10 Hz (the 8.04 s clips run at
+    7.5 fps so the 61-frame chunk covers the whole clip); plain decimation would
+    silently mislabel their rate.
+    """
+    if not seq or abs(src_hz - dst_hz) < 1e-9:
+        return list(seq)
+    t_src = np.arange(len(seq)) / src_hz
+    t_dst = np.arange(0.0, t_src[-1] + 1e-9, 1.0 / dst_hz)
+    v = np.interp(t_dst, t_src, [r[0] for r in seq])
+    h = np.interp(t_dst, t_src, [r[1] for r in seq])
+    return [[round(float(a), 4), round(float(b), 4)] for a, b in zip(v, h)]
+
+
 def derive_variant(poses, hz, n_valid, variant):
-    """(seq_5hz, seq_10hz) for a named raw-sourced variant."""
+    """(seq_5hz, seq_native) for a named raw-sourced variant."""
     cfg = VARIANTS[variant]
     if cfg["source"] != "raw":
         raise ValueError(f"{variant} is not derived from raw poses")
-    seq10 = derive_10hz(poses, hz, n_valid, signed=cfg["signed"],
-                        edge_repair=cfg["edge_repair"], smooth=cfg["smooth"])
-    return to_5hz(seq10, cfg["hz5"]), seq10
+    seq_native = derive_10hz(poses, hz, n_valid, signed=cfg["signed"],
+                             edge_repair=cfg["edge_repair"], smooth=cfg["smooth"])
+    if abs(hz - 10.0) < 1e-9:
+        return to_5hz(seq_native, cfg["hz5"]), seq_native
+    return resample_to_hz(seq_native, hz, 5.0), seq_native
 
 
 def scale_published(seq, factor):

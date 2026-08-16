@@ -68,8 +68,15 @@ def main():
     p.add_argument("--out", type=Path, default=None,
                    help="default <src>_<fps>fps")
     p.add_argument("--fps", type=int, default=10)
+    p.add_argument("--long-fps", type=float, default=7.5,
+                   help="rate for the non-uniform 8.04s clips in --all mode: "
+                        "7.5 fps puts their 61 frames across the whole clip")
     p.add_argument("--sample", type=int, default=120,
                    help="balanced sample size; 0 or negative means all")
+    p.add_argument("--all", action="store_true",
+                   help="resample every eval clip: uniform at --fps, long at --long-fps")
+    p.add_argument("--skip-existing", action="store_true",
+                   help="do not re-encode clips already present in the output tree")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--limit", type=int, default=None, help="smoke-test cap")
     args = p.parse_args()
@@ -84,31 +91,43 @@ def main():
         info = probe(it["abs_path"])
         (uniform if info["frames"] == UNIFORM_FRAMES else long_clips).append(it)
     print(f"{len(items)} eval clips: {len(uniform)} uniform ({UNIFORM_FRAMES} frames), "
-          f"{len(long_clips)} excluded as non-uniform")
+          f"{len(long_clips)} non-uniform"
+          + ("" if args.all else " (excluded; use --all to include)"))
 
-    # --limit goes through the same balanced picker so a smoke run still covers all
-    # four folders rather than taking the first N alphabetically (all one folder).
-    n_pick = args.limit or (args.sample if args.sample > 0 else None)
-    chosen = pick_sample(uniform, n_pick, args.seed)
+    if args.all:
+        # Full-dataset mode: every clip, with a per-clip rate. The long 8.04s clips
+        # get --long-fps so the 61-frame action chunk spans the whole clip instead
+        # of truncating the final seconds where the label-defining behaviour lives.
+        chosen = [(it, float(args.fps)) for it in uniform] + \
+                 [(it, args.long_fps) for it in long_clips]
+        chosen.sort(key=lambda x: x[0]["rel_path"])
+        if args.limit:
+            chosen = chosen[: args.limit]
+    else:
+        # --limit goes through the same balanced picker so a smoke run still covers
+        # all four folders rather than the first N alphabetically (all one folder).
+        n_pick = args.limit or (args.sample if args.sample > 0 else None)
+        chosen = [(it, float(args.fps)) for it in pick_sample(uniform, n_pick, args.seed)]
 
-    n_anom = sum(1 for i in chosen if i["true_label"] == 1)
+    n_anom = sum(1 for i, _ in chosen if i["true_label"] == 1)
     print(f"resampling {len(chosen)} clips ({n_anom} anomaly / {len(chosen) - n_anom} "
-          f"normal) -> {out_root} @ {args.fps}fps")
+          f"normal) -> {out_root}")
 
     manifest = []
-    for n, it in enumerate(chosen, 1):
+    for n, (it, fps) in enumerate(chosen, 1):
         dst = out_root / it["rel_path"]
         dst.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(
-            ["ffmpeg", "-y", "-loglevel", "error", "-i", str(it["abs_path"]),
-             "-vf", f"fps={args.fps}", "-an", "-c:v", "libx264", "-crf", "12",
-             "-preset", "veryfast", str(dst)], check=True)
+        if not (args.skip_existing and dst.exists()):
+            subprocess.run(
+                ["ffmpeg", "-y", "-loglevel", "error", "-i", str(it["abs_path"]),
+                 "-vf", f"fps={fps}", "-an", "-c:v", "libx264", "-crf", "12",
+                 "-preset", "veryfast", str(dst)], check=True)
         src_info, out_info = probe(it["abs_path"]), probe(dst)
         manifest.append({
             "rel_path": it["rel_path"], "true_label": it["true_label"],
             "folder": it["folder"], "on_skip_list": it["on_skip_list"],
             "src_frames": src_info["frames"], "src_fps": src_info["fps"],
-            "out_frames": out_info["frames"], "out_fps": args.fps,
+            "out_frames": out_info["frames"], "out_fps": fps,
             "duration_s": round(out_info["duration_s"], 3),
         })
         if n % 20 == 0 or n == len(chosen):
