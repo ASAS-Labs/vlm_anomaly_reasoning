@@ -36,6 +36,20 @@ _QWEN_OFF = {"chat_template_kwargs": {"enable_thinking": False}}
 _GLM_SAMPLING = {"temperature": 0.8, "top_p": 0.6, "top_k": 2,
                  "repetition_penalty": 1.1}
 
+# InternVL3.5 thinking is opt-in via this system prompt (verbatim from the vLLM
+# recipe; t=0.6/top_p=0.95 recommended with it).
+INTERNVL_THINK_SYSTEM = (
+    "You are an AI assistant that rigorously follows this response protocol:\n\n"
+    "1. First, conduct a detailed analysis of the question. Consider different "
+    "angles, potential solutions, and reason through the problem step-by-step. "
+    "Enclose this entire thinking process within <think> and </think> tags.\n\n"
+    "2. After the thinking section, provide a clear, concise, and direct answer "
+    "to the user's question. Separate the answer from the think section with a "
+    "newline.\n\n"
+    "Ensure that the thinking process is thorough but remains focused on the "
+    "query. The final answer should be standalone and not reference the "
+    "thinking section.")
+
 MODELS = {
     "qwen38": {
         "hf_id": "Qwen/Qwen3.8-27B",
@@ -46,6 +60,8 @@ MODELS = {
         "arms": {
             "expect": {"think": True, "sampling": _QWEN_THINK, "max_tokens": 4096},
             "verdict": {"think": False, "sampling": _QWEN_NONTHINK, "max_tokens": 256},
+            "verdict_think": {"think": True, "sampling": _QWEN_THINK,
+                              "max_tokens": 4096},
         },
         "notes": "Aug 2026 flagship 27B VLM; card: thinking default, think "
                  "t=1.0/p.95/k20/pres0, instruct t=0.7/p.8/k20/pres1.5. "
@@ -60,6 +76,8 @@ MODELS = {
         "arms": {
             "expect": {"think": True, "sampling": _QWEN_THINK, "max_tokens": 4096},
             "verdict": {"think": False, "sampling": _QWEN_NONTHINK, "max_tokens": 256},
+            "verdict_think": {"think": True, "sampling": _QWEN_THINK,
+                              "max_tokens": 4096},
         },
         "notes": "Apr 2026; same family/sampling as 3.8. "
                  "https://huggingface.co/Qwen/Qwen3.6-27B",
@@ -75,6 +93,9 @@ MODELS = {
                        "sampling": {**_QWEN_THINK, "presence_penalty": 1.5},
                        "max_tokens": 4096},
             "verdict": {"think": False, "sampling": _QWEN_NONTHINK, "max_tokens": 256},
+            "verdict_think": {"think": True,
+                              "sampling": {**_QWEN_THINK, "presence_penalty": 1.5},
+                              "max_tokens": 4096},
         },
         "notes": "card: think-general presence_penalty=1.5 (unlike 3.8's 0.0). "
                  "https://huggingface.co/Qwen/Qwen3.5-27B",
@@ -108,6 +129,8 @@ MODELS = {
         "arms": {
             "expect": {"think": True, "sampling": _GLM_SAMPLING, "max_tokens": 4096},
             "verdict": {"think": False, "sampling": _GLM_SAMPLING, "max_tokens": 256},
+            "verdict_think": {"think": True, "sampling": _GLM_SAMPLING,
+                              "max_tokens": 4096},
         },
         "notes": "10B, thinking default on; card leaderboard sampling "
                  "t=0.8/p.6/k2/rep1.1; vLLM>=0.12, parser glm45 per "
@@ -125,6 +148,10 @@ MODELS = {
                        "max_tokens": 256},
             "verdict": {"think": False, "sampling": {"temperature": 0.0},
                         "max_tokens": 256},
+            "verdict_think": {"think": True,
+                              "sampling": {"temperature": 0.6, "top_p": 0.95},
+                              "max_tokens": 4096,
+                              "system": INTERNVL_THINK_SYSTEM},
         },
         "notes": "vLLM recipe: --trust-remote-code, t=0.0 for image/video chat. "
                  "https://docs.vllm.ai/projects/recipes/en/latest/InternVL/InternVL3_5.html",
@@ -223,17 +250,21 @@ def _print_config(key: str):
     from expectation_experiment import EXPECT_QUESTION
     from prompt_variants import VARIANTS
     m = MODELS[key]
-    prompts = {"expect": EXPECT_QUESTION, "verdict": VARIANTS["P0"]["text"]}
     dump = {"key": key, "hf_id": m["hf_id"], "weights_gb": m["weights_gb"],
             "serve_command": " ".join(serve_command(key)), "notes": m["notes"],
             "arms": {}}
     for arm in m["arms"]:
         kwargs, extra = request_kwargs(key, arm)
+        prompt = (EXPECT_QUESTION if arm.startswith("expect")
+                  else VARIANTS["P0"]["text"])
         dump["arms"][arm] = {
             "think": m["arms"][arm]["think"], "request_kwargs": kwargs,
             "extra_body": extra,
-            "prompt_sha256": hashlib.sha256(prompts[arm].encode()).hexdigest(),
+            "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
         }
+        if m["arms"][arm].get("system"):
+            dump["arms"][arm]["system_sha256"] = hashlib.sha256(
+                m["arms"][arm]["system"].encode()).hexdigest()
     print(json.dumps(dump, indent=2))
 
 

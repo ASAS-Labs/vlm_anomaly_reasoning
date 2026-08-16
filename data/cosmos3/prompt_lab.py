@@ -38,7 +38,7 @@ def parse_for(variant: dict, raw: str, finish_reason):
 
 
 def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry,
-                model_cfg=None, concurrency=1):
+                model_cfg=None, model_arm="verdict", concurrency=1):
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / "results.jsonl"
     done = set()
@@ -49,11 +49,15 @@ def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry,
     f = open(path, "a", encoding="utf-8")
 
     # A pilot model key replaces the variant's sampling/max_tokens with that
-    # model's card-recommended 'verdict' arm (incl. its think-off switch).
+    # model's card-recommended arm (incl. its think switch and, for opt-in
+    # thinkers like InternVL, a custom system prompt).
     if model_cfg:
-        req_kwargs, req_extra = pilot_models.request_kwargs(model_cfg, "verdict")
+        req_kwargs, req_extra = pilot_models.request_kwargs(model_cfg, model_arm)
+        sys_prompt = pilot_models.MODELS[model_cfg]["arms"][model_arm].get(
+            "system", SYSTEM_PROMPT)
     else:
         req_kwargs = req_extra = None
+        sys_prompt = SYSTEM_PROMPT
 
     def process(it):
         rel = it["rel_path"]
@@ -115,7 +119,7 @@ def run_variant(vid, variant, items, client, model_id, out_dir, seed, k, dry,
                 r = client.chat.completions.create(
                     model=model_id,
                     messages=[
-                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "system", "content": sys_prompt},
                         {"role": "user", "content": [
                             {"type": "video_url",
                              "video_url": {"url": it["abs_path"].resolve().as_uri()}},
@@ -199,7 +203,9 @@ def main():
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--dry_run", action="store_true")
     p.add_argument("--model-config", default=None, choices=list(pilot_models.MODELS),
-                   help="pilot model key: its 'verdict' arm replaces variant sampling")
+                   help="pilot model key: its --model-arm replaces variant sampling")
+    p.add_argument("--model-arm", default="verdict",
+                   help="which arm of the model config to use (verdict, verdict_think)")
     p.add_argument("--out_prefix", default=None,
                    help="output dir prefix (default plab_r<round>)")
     p.add_argument("--concurrency", type=int, default=1,
@@ -235,13 +241,15 @@ def main():
         print(f"=== {nm}: {VARIANTS[nm]['hypothesis']} ===")
         if args.model_config and not args.dry_run:
             pilot_models.write_run_meta(
-                out_dir, args.model_config, "verdict", args.server_url, model_id,
+                out_dir, args.model_config, args.model_arm, args.server_url,
+                model_id,
                 {"variant": nm, "dataset": args.dataset,
                  "subset": str(args.subset), "seed": args.seed, "k": args.k,
                  "concurrency": args.concurrency, "n_clips": len(items)})
         run_variant(nm, VARIANTS[nm], items, client, model_id, out_dir,
                     args.seed, args.k, args.dry_run,
-                    model_cfg=args.model_config, concurrency=args.concurrency)
+                    model_cfg=args.model_config, model_arm=args.model_arm,
+                    concurrency=args.concurrency)
 
 
 if __name__ == "__main__":

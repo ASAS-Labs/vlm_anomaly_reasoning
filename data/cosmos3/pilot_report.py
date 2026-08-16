@@ -14,10 +14,12 @@ from pathlib import Path
 
 from pilot_models import MODELS
 
-# Reference rows (EXPERIMENT_ARMS.md families H/I; same subset & input standard).
+# Reference rows (EXPERIMENT_ARMS.md families H/I/J; same subset & input
+# standard). Cosmos think verdict = T0 (example-free think control, Part 10).
 COSMOS_BARS = [
-    ("Cosmos3-Nano (bar)", "18/72", "38/72", "22/72", "40/72", "0.736", "—"),
-    ("Cosmos3-Super", "8/72", "26/72", "12/72", "27/72", "—", "—"),
+    ("Cosmos3-Nano (bar)", "18/72", "38/72", "22/72", "40/72", "0.736", "—",
+     "0.500", "—"),
+    ("Cosmos3-Super", "8/72", "26/72", "12/72", "27/72", "—", "—", "—", "—"),
 ]
 
 
@@ -70,15 +72,18 @@ def main():
         ee = read_jsonl(args.logs / f"pilot_{key}_expect_early" / "results.jsonl")
         ef = read_jsonl(args.logs / f"pilot_{key}_expect_full" / "results.jsonl")
         vd = read_jsonl(args.logs / f"pilot_{key}_verdict_P0" / "results.jsonl")
-        if not any((ee, ef, vd)):
+        vt = read_jsonl(args.logs / f"pilot_{key}_verdict_think_P0" / "results.jsonl")
+        if not any((ee, ef, vd, vt)):
             continue
         ee_s, ee_l, ee_x = expect_cell(ee)
         ef_s, ef_l, ef_x = expect_cell(ef)
         vd_a, vd_x = verdict_cell(vd)
+        vt_a, vt_x = verdict_cell(vt)
         rows.append((m["hf_id"].split("/")[-1], ee_s, ee_l, ef_s, ef_l, vd_a,
-                     vd_x.get("recall_spec", "—")))
+                     vd_x.get("recall_spec", "—"), vt_a,
+                     vt_x.get("recall_spec", "—")))
         for arm, x in (("expect_early", ee_x), ("expect_full", ef_x),
-                       ("verdict", vd_x)):
+                       ("verdict", vd_x), ("verdict_think", vt_x)):
             if x and (x["unknown"] or x["truncated"]):
                 notes.append(f"- {key} {arm}: {x['unknown']} unknown, "
                              f"{x['truncated']} truncated, "
@@ -86,10 +91,13 @@ def main():
 
     lines = ["# Open-VLM pilot report", "",
              "72-clip agreement subset, 720p↑ @ 8 fps. Primary discriminator: "
-             "expect_early strict (Cosmos-Nano bar 18/72).", "",
+             "expect_early strict (Cosmos-Nano bar 18/72). qwen3vl32t's plain "
+             "verdict IS its think verdict (always-think model, no off-switch).",
+             "",
              "| model | early strict | early lenient | full strict | "
-             "full lenient | verdict acc | rec/spec |",
-             "|---|---|---|---|---|---|---|"]
+             "full lenient | verdict acc | rec/spec | verdict think | "
+             "think rec/spec |",
+             "|---|---|---|---|---|---|---|---|---|"]
     for r in COSMOS_BARS + rows:
         lines.append("| " + " | ".join(r) + " |")
     if notes:

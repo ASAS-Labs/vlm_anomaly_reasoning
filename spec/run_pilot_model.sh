@@ -11,6 +11,8 @@
 #   CONC=6            request concurrency per arm
 #   PREFETCH=<key>    background-download the next model once serving is healthy
 #   KEEP_WEIGHTS=1    skip the HF-cache purge at teardown
+#   PILOT_ARMS="..."  arms to run (default "expect_early expect_full verdict";
+#                     verdict* tokens map to prompt_lab --model-arm <token>)
 
 set -euo pipefail
 
@@ -23,6 +25,7 @@ PY="${VENV}/bin/python"
 PORT="${PORT:-8000}"
 URL="http://127.0.0.1:${PORT}/v1"
 CONC="${CONC:-6}"
+ARMS="${PILOT_ARMS:-expect_early expect_full verdict}"
 SUBSET="${REPO_ROOT}/logs/vlm_agreement_subset_admitted.txt"
 TREE="${REPO_ROOT}/data/datasets/generated_vids_720p"
 TREE_EARLY="${REPO_ROOT}/data/datasets/generated_vids_720p_early"
@@ -82,43 +85,56 @@ sys.exit(0 if len(recs) and unk <= 2 and trunc <= 1 else 1)
 EOF
 }
 
-echo "--- smoke: expect_early, 8 clips ---"
-"${PY}" expectation_experiment.py --stage expect_early --dataset "${TREE_EARLY}" \
-  --subset "${SUBSET}" --server_url "${URL}" \
-  --out_dir "${LOG_DIR}/pilot_${KEY}_expect_early" \
-  --model-config "${KEY}" --concurrency 4 --limit 8
-gate "${LOG_DIR}/pilot_${KEY}_expect_early/results.jsonl" 8 \
-  || { echo "SMOKE GATE FAILED; server log tail:"; tail -30 "${LOG_DIR}/pilot_${KEY}_server.log"; exit 1; }
+if [[ " ${ARMS} " == *" expect_early "* ]]; then
+  echo "--- smoke: expect_early, 8 clips ---"
+  "${PY}" expectation_experiment.py --stage expect_early --dataset "${TREE_EARLY}" \
+    --subset "${SUBSET}" --server_url "${URL}" \
+    --out_dir "${LOG_DIR}/pilot_${KEY}_expect_early" \
+    --model-config "${KEY}" --concurrency 4 --limit 8
+  gate "${LOG_DIR}/pilot_${KEY}_expect_early/results.jsonl" 8 \
+    || { echo "SMOKE GATE FAILED; server log tail:"; tail -30 "${LOG_DIR}/pilot_${KEY}_server.log"; exit 1; }
+fi
 
 if [[ "${SMOKE_ONLY}" == "1" ]]; then
   echo "smoke-only: done (results resume on the next full run)"
   exit 0
 fi
 
-echo "--- arm 1/3: expect_early ---"
-"${PY}" expectation_experiment.py --stage expect_early --dataset "${TREE_EARLY}" \
-  --subset "${SUBSET}" --server_url "${URL}" \
-  --out_dir "${LOG_DIR}/pilot_${KEY}_expect_early" \
-  --model-config "${KEY}" --concurrency "${CONC}"
-
-echo "--- arm 2/3: expect_full ---"
-"${PY}" expectation_experiment.py --stage expect_full --dataset "${TREE}" \
-  --subset "${SUBSET}" --server_url "${URL}" \
-  --out_dir "${LOG_DIR}/pilot_${KEY}_expect_full" \
-  --model-config "${KEY}" --concurrency "${CONC}"
-
-echo "--- arm 3/3: verdict (P0), 4-clip gate then full ---"
-"${PY}" prompt_lab.py --round 0 --variants P0 --dataset "${TREE}" \
-  --subset "${SUBSET}" --server_url "${URL}" \
-  --out_prefix "pilot_${KEY}_verdict" --model-config "${KEY}" \
-  --concurrency 4 --limit 4
-gate "${LOG_DIR}/pilot_${KEY}_verdict_P0/results.jsonl" 4 \
-  || { echo "VERDICT GATE FAILED (think-off switch inert? see reasoning_content)"; \
-       tail -5 "${LOG_DIR}/pilot_${KEY}_verdict_P0/results.jsonl"; exit 1; }
-"${PY}" prompt_lab.py --round 0 --variants P0 --dataset "${TREE}" \
-  --subset "${SUBSET}" --server_url "${URL}" \
-  --out_prefix "pilot_${KEY}_verdict" --model-config "${KEY}" \
-  --concurrency "${CONC}"
+for ARM in ${ARMS}; do
+  case "${ARM}" in
+    expect_early)
+      echo "--- arm: expect_early ---"
+      "${PY}" expectation_experiment.py --stage expect_early --dataset "${TREE_EARLY}" \
+        --subset "${SUBSET}" --server_url "${URL}" \
+        --out_dir "${LOG_DIR}/pilot_${KEY}_expect_early" \
+        --model-config "${KEY}" --concurrency "${CONC}"
+      ;;
+    expect_full)
+      echo "--- arm: expect_full ---"
+      "${PY}" expectation_experiment.py --stage expect_full --dataset "${TREE}" \
+        --subset "${SUBSET}" --server_url "${URL}" \
+        --out_dir "${LOG_DIR}/pilot_${KEY}_expect_full" \
+        --model-config "${KEY}" --concurrency "${CONC}"
+      ;;
+    verdict*)
+      echo "--- arm: ${ARM} (P0), 4-clip gate then full ---"
+      "${PY}" prompt_lab.py --round 0 --variants P0 --dataset "${TREE}" \
+        --subset "${SUBSET}" --server_url "${URL}" \
+        --out_prefix "pilot_${KEY}_${ARM}" --model-config "${KEY}" \
+        --model-arm "${ARM}" --concurrency 4 --limit 4
+      gate "${LOG_DIR}/pilot_${KEY}_${ARM}_P0/results.jsonl" 4 \
+        || { echo "VERDICT GATE FAILED (think switch/parse? see reasoning_content)"; \
+             tail -5 "${LOG_DIR}/pilot_${KEY}_${ARM}_P0/results.jsonl"; exit 1; }
+      "${PY}" prompt_lab.py --round 0 --variants P0 --dataset "${TREE}" \
+        --subset "${SUBSET}" --server_url "${URL}" \
+        --out_prefix "pilot_${KEY}_${ARM}" --model-config "${KEY}" \
+        --model-arm "${ARM}" --concurrency "${CONC}"
+      ;;
+    *)
+      echo "unknown arm ${ARM}" >&2; exit 1
+      ;;
+  esac
+done
 
 echo "--- teardown ---"
 kill -TERM -"${SERVER_PID}" 2>/dev/null || kill "${SERVER_PID}" 2>/dev/null || true
