@@ -473,3 +473,71 @@ processor allocates visual tokens by pixel area: prompt_tokens 7,971 → 11,691)
 3. Action grounding remains net-negative in all nine configurations tested;
    the expected-vs-actual reformulation (Part 6.3) is still the untested path.
 
+---
+
+## Part 8 — Two-stage expected-vs-actual monitor: the deficit is policy knowledge
+
+Deployment-legitimate design (no oracle inputs): stage 1 asks what a correct
+driver SHOULD do, from the first 2.5 s only (the polarities of a scenario pair
+share that window, so the expectation cannot anchor on the outcome); stage 2
+supplies the actual recorded trajectory in a second turn and asks for a match
+verdict. Stage-1 ground truth (`expected_action_gt.json`, framework field 4) was
+validated against each scene's positive-twin frozen class (12/13 mechanical,
+neg_prompt_3 textual) and never enters a prompt. Artifacts:
+`logs/{expect_early,expect_full,monitor}/`. Session ~$1.20.
+
+### 8.1 Stage 1 fails: 25% strict / 53% lenient
+
+| GT \ answer | continue | slow | stop | wait |
+|---|---|---|---|---|
+| continue (n=41) | 4 | **29** | 8 | 0 |
+| slow (n=4) | 4 | 0 | 0 | 0 |
+| stop (n=13) | 5 | 5 | **0** | 3 |
+| wait (n=14) | 0 | 0 | 0 | **14** |
+
+Three patterns:
+
+- **A hedging prior**: "slow" is the answer 34/72 times — the safe-sounding middle
+  option, used for balloons, bags, the shirt pedestrian, and even the mural wall.
+- **Zero commitment to "stop"** on the early window: not for the child stepping
+  into the road (0/6), not for the wall dead ahead (0/4). With the FULL clip
+  visible, the wall scene still never gets "stop" — this is absent normative
+  knowledge, not hidden evidence.
+- "wait" is perfect (14/14) — trivial, since the vehicle is visibly stationary.
+
+The `expect_full` arm exposes anchoring instead of fixing policy: with the whole
+clip visible, continue-scenes are answered "stop" 19× (vs 8 early) because the
+anomalous vehicles actually stop — the "expectation" follows the observed
+behaviour. The early-window design is therefore necessary, and clip-end
+contamination explains part of why single-pass verdicts read smooth stops as
+normal.
+
+### 8.2 The pipeline is sound; the model link is not
+
+- Monitor verdict accuracy: 38/71 = 53.5% overall — but **70.3% when stage 1 was
+  (leniently) correct vs 35.3% when it was wrong**. The comparison step works
+  about as well as the best single-pass run once given a correct expectation.
+- **Mechanical ceiling: GT expectation + perfect comparison = 72/72 = 100%** on
+  this subset. The formulation separates the classes perfectly; the entire gap is
+  the model's inability to generate the expectation.
+
+### 8.3 The failure chain, fully localized
+
+perception (100%) → **policy: what should a correct driver do (25-53%)** →
+comparison given a correct expectation (~70%) → verdict.
+
+Cosmos3-Nano sees the scene, and can compare behaviours, but does not know (or
+will not commit to) what correct driving requires — it answers like a cautious
+hedger, not a driving instructor. That reframes the road ahead:
+
+1. **Inject the expectation from deployment-available sources where possible** —
+   traffic-light state, map topology, and detected-object class already imply
+   rules ("red → wait", "pedestrian in path → stop") without any oracle; the VLM
+   then only arbitrates the residual semantic cases (shirt vs real sign).
+2. **Fine-tune stage 1** on normative driving data (the framework ships SFT
+   recipes); stage-1 accuracy is a supervised, single-word task with cheap labels
+   — far easier to train than end-to-end verdicts.
+3. Re-examine answer-option design (a forced binary stop/no-stop may cut the
+   "slow" hedge), though the wall result suggests option wording is not the core
+   problem.
+
