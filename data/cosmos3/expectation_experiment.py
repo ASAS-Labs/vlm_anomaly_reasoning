@@ -21,16 +21,19 @@ positive-polarity twin class; it never enters any prompt.
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
 import openai
 
+import pilot_models
 from utils import discover_eval_videos, parse_verdict, read_action_sequence
 
 SYSTEM_PROMPT = "You are a helpful assistant."
@@ -88,7 +91,32 @@ def main():
     p.add_argument("--out_dir", type=Path, required=True)
     p.add_argument("--seed", type=int, default=1234)
     p.add_argument("--limit", type=int, default=None)
+    p.add_argument("--model-config", default=None, choices=list(pilot_models.MODELS),
+                   help="pilot model key: use its 'expect' arm sampling + parsing")
+    p.add_argument("--max_tokens", type=int, default=None,
+                   help="override the resolved max_tokens")
+    p.add_argument("--concurrency", type=int, default=1,
+                   help="parallel in-flight requests (single writer preserved)")
+    p.add_argument("--dry_run", action="store_true",
+                   help="print resolved request config and exit (no server needed)")
     args = p.parse_args()
+
+    # Stage-1 request settings: Cosmos default unchanged; a pilot model key
+    # swaps in that model's card-recommended 'expect' arm.
+    if args.model_config:
+        req_kwargs, extra_body = pilot_models.request_kwargs(args.model_config,
+                                                             "expect")
+    else:
+        req_kwargs, extra_body = {"max_tokens": 30, "temperature": 0.0}, None
+    if args.max_tokens:
+        req_kwargs["max_tokens"] = args.max_tokens
+
+    if args.dry_run:
+        print(json.dumps({"model_config": args.model_config, "stage": args.stage,
+                          "request_kwargs": req_kwargs, "extra_body": extra_body,
+                          "seed": args.seed, "concurrency": args.concurrency,
+                          "prompt": EXPECT_QUESTION}, indent=2))
+        return
 
     gt = json.loads((Path(__file__).parent / "expected_action_gt.json").read_text())
     gt.pop("_doc", None)
@@ -115,11 +143,16 @@ def main():
     client = openai.OpenAI(api_key="EMPTY", base_url=args.server_url)
     model_id = client.models.list().data[0].id
 
-    n = 0
-    for it in items:
+    if args.model_config:
+        pilot_models.write_run_meta(
+            args.out_dir, args.model_config, "expect", args.server_url, model_id,
+            {"stage": args.stage, "dataset": args.dataset,
+             "subset": str(args.subset), "seed": args.seed,
+             "concurrency": args.concurrency, "n_clips": len(items),
+             "prompt_sha256": hashlib.sha256(EXPECT_QUESTION.encode()).hexdigest()})
+
+    def process(it):
         rel = it["rel_path"]
-        if rel in done:
-            continue
         scen = scenario_of(rel)
         g = gt[scen]
         uri = it["abs_path"].resolve().as_uri()
@@ -132,23 +165,27 @@ def main():
         ]
         t0 = time.time()
         r1 = client.chat.completions.create(model=model_id, messages=messages,
-                                            max_tokens=30, temperature=0.0,
-                                            seed=args.seed)
-        a1_raw = r1.choices[0].message.content
-        expect = parse_option(a1_raw)
+                                            seed=args.seed, extra_body=extra_body,
+                                            **req_kwargs)
+        ch = r1.choices[0]
+        content, reasoning = pilot_models.answer_text(ch)
+        expect = parse_option(content)
         rec = {"video": rel, "scenario": scen, "stage": args.stage,
                "true_label": it["true_label"],
                "gt_expected": g["expected"], "gt_acceptable": g["acceptable"],
-               "expect_raw": a1_raw, "expect": expect,
+               "expect_raw": ch.message.content, "expect": expect,
                "expect_strict": expect == g["expected"],
                "expect_lenient": expect in g["acceptable"],
+               "finish_reason": ch.finish_reason,
                "ts": datetime.now().isoformat(timespec="seconds")}
+        if reasoning is not None:
+            rec["reasoning_content"] = reasoning
 
         if args.stage == "monitor":
             full_tree = Path(args.full_dataset)
             seq_text = read_action_sequence(full_tree / rel)
             messages += [
-                {"role": "assistant", "content": a1_raw},
+                {"role": "assistant", "content": content},
                 {"role": "user", "content": MONITOR_FOLLOWUP.format(seq=seq_text)},
             ]
             r2 = client.chat.completions.create(model=model_id, messages=messages,
@@ -163,13 +200,23 @@ def main():
                        action_sequence=seq_text)
 
         rec["latency_s"] = round(time.time() - t0, 3)
-        out.write(json.dumps(rec, ensure_ascii=False) + "\n")
-        out.flush()
-        os.fsync(out.fileno())
-        n += 1
-        tail = rec.get("verdict", rec["expect"])
-        print(f"[{n}] {rel.split('/')[-1]}: expect={expect} "
-              f"(gt={g['expected']}) -> {tail}", flush=True)
+        return rec
+
+    pending = [it for it in items if it["rel_path"] not in done]
+    n = 0
+    # Requests may run in parallel; the main thread stays the sole writer so the
+    # fsync-per-record and resume-by-video invariants are unchanged.
+    with ThreadPoolExecutor(max_workers=max(1, args.concurrency)) as pool:
+        futures = [pool.submit(process, it) for it in pending]
+        for fut in as_completed(futures):
+            rec = fut.result()
+            out.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            out.flush()
+            os.fsync(out.fileno())
+            n += 1
+            tail = rec.get("verdict", rec["expect"])
+            print(f"[{n}] {rec['video'].split('/')[-1]}: expect={rec['expect']} "
+                  f"(gt={rec['gt_expected']}) -> {tail}", flush=True)
     out.close()
 
     recs = [json.loads(ln) for ln in out_path.read_text().splitlines() if ln.strip()]

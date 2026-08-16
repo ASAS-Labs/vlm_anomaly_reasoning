@@ -79,6 +79,46 @@ def test_parser():
     print(f"  parser: {len(CASES)} cases + 3 audit checks passed")
 
 
+def test_answer_text():
+    from types import SimpleNamespace as NS
+
+    from pilot_models import answer_text
+
+    # Reasoning-parser server: trace arrives separately; content passes through.
+    ch = NS(message=NS(content="Stop", reasoning_content="continue seems fine, "
+                       "but the light is red, so stop"))
+    content, reasoning = answer_text(ch)
+    assert content == "Stop" and "continue" in reasoning, (content, reasoning)
+
+    # No parser: <think> block is stripped into reasoning.
+    ch = NS(message=NS(content="<think>continue is tempting here</think>\nSlow"))
+    content, reasoning = answer_text(ch)
+    assert content == "Slow", content
+    assert reasoning == "continue is tempting here", reasoning
+
+    # Unterminated <think>: the whole output is reasoning, content empty.
+    ch = NS(message=NS(content="<think>the driver should continue"))
+    content, reasoning = answer_text(ch)
+    assert content == "" and "continue" in reasoning, (content, reasoning)
+
+    # The rfind-last hazard this exists to fix: parse only the answer content.
+    try:
+        from expectation_experiment import parse_option
+    except ImportError:
+        print("  answer_text: 3 cases passed (parse_option skipped, no openai)")
+        return
+    assert parse_option("Stop") == "stop"
+    assert parse_option("") == "unknown"
+    # The real hazard: a truncated trace whose last option word is wrong. Raw
+    # parsing answers "continue"; content-only parsing correctly says unknown.
+    raw = "<think>stop? or is the sign printed — then keep going, continue"
+    ch = NS(message=NS(content=raw))
+    content, _ = answer_text(ch)
+    assert parse_option(raw) == "continue"  # documents the old failure mode
+    assert parse_option(content) == "unknown", content
+    print("  answer_text: reasoning split + content-only option parsing passed")
+
+
 def test_metrics():
     m = Metrics()
     # 3 true anomalies: 2 correct, 1 called Normal.
@@ -138,6 +178,7 @@ def test_discovery():
 if __name__ == "__main__":
     print("running checks...")
     test_parser()
+    test_answer_text()
     test_metrics()
     test_discovery()
     print("all checks passed")
