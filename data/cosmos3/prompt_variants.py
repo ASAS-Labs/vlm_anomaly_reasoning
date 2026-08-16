@@ -410,3 +410,35 @@ VARIANTS.update({
 
 _leak_check()
 
+# --- Think round 2 (round 4): compose T1-round winners --------------------
+# T3 (checklist, +9) and greedy decoding (TS1, +7) were the only signals; the
+# T3 autopsy shows enumeration drifting into peripheral signage and harmless
+# objects. T3f adds a focus guard; combinations test additivity.
+
+_FOCUS_GUARD = (
+    "Only items that the ego vehicle visibly responded to — or clearly should "
+    "have responded to — matter. Ignore incidental scenery, signs, and road "
+    "markings that played no role in the vehicle's behaviour. Listing something "
+    "in the scene does not make it a hazard: judge only the match between what "
+    "was real and what the vehicle did."
+)
+
+T3F_TEXT = T3_TEXT.replace(
+    "Work through this checklist in your reasoning:",
+    _FOCUS_GUARD + "\nWork through this checklist in your reasoning:")
+
+VARIANTS.update({
+    "T3g": {"hypothesis": "checklist at greedy decoding (winners composed)",
+            "mode": "video_only", "text": T3_TEXT,
+            "sampling": GREEDY, "parser": "classification", "max_tokens": 2048},
+    "T3f": {"hypothesis": "checklist + focus guard, guide sampling",
+            "mode": "video_only", "text": T3F_TEXT, **_THINK_COMMON},
+    "T3gf": {"hypothesis": "checklist + focus guard + greedy (full compose)",
+             "mode": "video_only", "text": T3F_TEXT,
+             "sampling": GREEDY, "parser": "classification", "max_tokens": 2048},
+    "T3k5": {"hypothesis": "checklist self-consistency k=5 at t=0.6",
+             "mode": "video_only", "text": T3_TEXT, **_THINK_COMMON},
+})
+
+_leak_check()
+
