@@ -79,18 +79,21 @@ _ANOMALY_DEF = (
 
 _SCENE_STEP = (
     "1. Scene: what objects and context are present? Is any object appearing outside "
-    "the context in which it would normally apply — for example printed on a "
-    "billboard or garment, displayed on a screen, reflected, projected, carried as "
-    "cargo on another vehicle, or otherwise not a live instance? Conversely, is there "
+    "the context in which it would normally apply — depicted in printed or displayed "
+    "media, reflected, projected, carried as cargo, or otherwise not a live "
+    "instance? Conversely, is there "
     "a genuine hazard presenting in an atypical form?"
 )
 
+# Example-free by design: an earlier variant illustrated the two polarities with a
+# billboard stop sign and a fire hose, and the billboard example primed the exact
+# scenario present in the dataset (accuracy 0.048 -> 0.762 on that scenario alone).
 _MATCH_STEP = (
     "3. Match: is that behaviour the correct response to what the scene actually means?\n"
-    "   - Responding to something that only resembles a live cue (for example braking "
-    "for a stop sign that is printed on a billboard) is an anomaly.\n"
-    "   - Failing to respond to a real hazard that presents atypically (for example "
-    "driving over a fire hose laid across the lane) is an anomaly.\n"
+    "   - Responding to a depiction or look-alike as if it were the real cue "
+    "is an anomaly.\n"
+    "   - Failing to respond to a real hazard because it presents in an unfamiliar "
+    "form is an anomaly.\n"
     "   - Responding correctly to the real meaning of the scene is normal, even when "
     "the scene itself is unusual."
 )
@@ -132,6 +135,36 @@ THINK_PROMPT_ACTION_TAIL = (
     "sequence does that happen, and what does it tell you the vehicle decided to do?\n"
     f"{_MATCH_STEP}\n\n{_FORMAT_INSTRUCTION}"
 )
+
+# Velocity-only variants: identical wording except the heading channel is absent,
+# so the three arms differ only in what action information is supplied.
+THINK_PROMPT_VELOCITY_HEAD = (
+    "You are an autonomous driving safety expert analyzing this ego vehicle's video "
+    f"for semantic or contextual anomalies that may impact safe AV operation.\n\n{_ANOMALY_DEF}\n\n"
+    "The ego vehicle's own speed is given below as [velocity_in_mph, ...] in time "
+    "order, sampled at 5 Hz."
+)
+
+THINK_PROMPT_VELOCITY_TAIL = (
+    f"Reason through the following, in order:\n{_SCENE_STEP}\n"
+    "2. Action: read the speed sequence above from start to finish. Does the velocity "
+    "hold steady, drop toward zero, or increase? Where in the sequence does that "
+    "happen, and what does it tell you the vehicle decided to do?\n"
+    f"{_MATCH_STEP}\n\n{_FORMAT_INSTRUCTION}"
+)
+
+BASE_PROMPT_VELOCITY = (
+    "You are an autonomous driving safety expert analyzing this ego vehicle's video "
+    "for semantic or contextual anomalies, that may impact safe AV operation. The ego "
+    "vehicle's speed (state sequence) given afterwards is in the format "
+    "[velocity_in_mph, ...]. Think about the video and the ego "
+    "vehicle's speed, is there any semantic misunderstanding of the autopilot that "
+    "requires intervention? Reply with exactly one word of the following:\n"
+    "Classification: Anomaly — if there is a semantic anomaly\n"
+    "Classification: Normal — if there is no semantic anomaly."
+)
+
+ACTION_MODES = ("action_grounding", "action_grounding_velocity")
 
 # Sampling defaults from the prompt guide's "With reasoning" section.
 THINK_SAMPLING = {"temperature": 0.6, "top_p": 0.95, "top_k": 20,
@@ -230,10 +263,22 @@ def build_prompt(mode: str, action_text: str | None, style: str = "direct") -> s
             return (f"{THINK_PROMPT_ACTION_HEAD}\n\n"
                     f"Ego Vehicle State Sequence (5Hz): {action_text}\n\n"
                     f"{THINK_PROMPT_ACTION_TAIL}")
+        if mode == "action_grounding_velocity":
+            return (f"{THINK_PROMPT_VELOCITY_HEAD}\n\n"
+                    f"Ego Vehicle Speed Sequence (5Hz): {action_text}\n\n"
+                    f"{THINK_PROMPT_VELOCITY_TAIL}")
         return THINK_PROMPT_NO_ACTION
     if mode == "action_grounding":
         return f"{BASE_PROMPT_ACTION}\nEgo Vehicle State Sequence (5Hz): {action_text}"
+    if mode == "action_grounding_velocity":
+        return f"{BASE_PROMPT_VELOCITY}\nEgo Vehicle Speed Sequence (5Hz): {action_text}"
     return BASE_PROMPT_NO_ACTION
+
+
+def velocity_only(action_text: str) -> str:
+    """Strip the heading channel: [[v, h], ...] -> [v, ...]."""
+    seq = json.loads(action_text)
+    return json.dumps([row[0] for row in seq])
 
 
 def sampling_for(args) -> dict:
@@ -415,8 +460,12 @@ def main():
     p = argparse.ArgumentParser(description="Cosmos3-Nano anomaly reasoning over driving videos")
     p.add_argument("--dataset", type=str, required=True, help="Dataset root (generated_vids)")
     p.add_argument("--exp_name", type=str, required=True, help="Experiment name")
-    p.add_argument("--mode", choices=["action_grounding", "no_action_grounding"],
+    p.add_argument("--mode", choices=["action_grounding", "action_grounding_velocity",
+                                      "no_action_grounding"],
                    default="no_action_grounding")
+    p.add_argument("--subset", type=Path, default=None,
+                   help="file of dataset-relative mp4 paths; restrict the run to "
+                        "exactly these clips (every line must resolve, or the run aborts)")
     p.add_argument("--out_dir", type=str, default=None,
                    help="Output dir (default logs/<exp_name>_<mode>). No timestamp: "
                         "re-running the same command resumes in place.")
@@ -448,6 +497,16 @@ def main():
     args.temperature = sampling["temperature"]
 
     items = discover_eval_videos(args.dataset, strict=not args.allow_partial)
+    if args.subset:
+        wanted = [ln.strip() for ln in args.subset.read_text().splitlines() if ln.strip()]
+        by_rel = {i["rel_path"]: i for i in items}
+        missing = [w for w in wanted if w not in by_rel]
+        if missing:
+            # A silently shrunken subset would corrupt every paired comparison.
+            sys.exit(f"--subset: {len(missing)} clip(s) not in {args.dataset}, "
+                     f"e.g. {missing[:3]}")
+        items = [by_rel[w] for w in wanted]
+        print(f"subset: {len(items)} clips from {args.subset}")
     items = select_items(items, args.limit, args.sample)
     if not items:
         sys.exit(f"No videos found under {args.dataset}")
@@ -483,8 +542,13 @@ def main():
         "prompt_style": args.prompt_style,
         "sampling": {"temperature": sampling["temperature"],
                      "top_p": sampling.get("top_p"), **sampling["extra"]},
-        # The exact prompt this run sent (action variant shown without the injected
+        "subset": {"file": str(args.subset),
+                   "sha256": sha256(args.subset.read_text())} if args.subset else None,
+        # The exact prompt THIS run sends (action variants shown without the injected
         # sequence), plus its hash, so the wording is recoverable from the artifact.
+        "prompt_this_mode": build_prompt(args.mode, "<SEQUENCE>", args.prompt_style),
+        "prompt_this_mode_sha256": sha256(
+            build_prompt(args.mode, "<SEQUENCE>", args.prompt_style)),
         "prompts": {
             "action": build_prompt("action_grounding", "<SEQUENCE>", args.prompt_style),
             "action_sha256": sha256(
@@ -499,7 +563,7 @@ def main():
         "dataset": {"root": str(args.dataset), "n_videos": len(items),
                     "manifest": [{"video": i["rel_path"], "true_label": i["true_label"],
                                   "on_skip_list": i["on_skip_list"]} for i in items]},
-    }, indent=2))
+    }, indent=2, default=str))
 
     proc = None
     writer = ResultWriter(jsonl_path)
@@ -540,8 +604,10 @@ def main():
             }
             action_text = None
             try:
-                if args.mode == "action_grounding":
+                if args.mode in ACTION_MODES:
                     action_text = read_action_sequence(item["abs_path"])
+                    if args.mode == "action_grounding_velocity":
+                        action_text = velocity_only(action_text)
                 prompt = build_prompt(args.mode, action_text, args.prompt_style)
                 rec["action_sequence"] = action_text
                 rec["prompt_sha256"] = sha256(prompt)
