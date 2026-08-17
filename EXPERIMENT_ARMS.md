@@ -185,11 +185,23 @@ verdict (Cosmos bar 0.736). Full table `logs/pilot_report.md`; raw `logs/pilot_*
 | K5 | InternVL3_5-38B | 22/34 | 39/46 | 0.653 | early→full jump = outcome anchoring |
 | K6 | GLM-4.6V-Flash | 11/28 | 13/32 | 0.528 | stop-happy (rec/spec 0.25/0.96) |
 
+Think-verdict arms (Part 11.4; resolved acc, rec/spec):
+
+| arm | model | direct verdict | think verdict | note |
+|---|---|---|---|---|
+| K1t | **Qwen3.8-27B** | 0.597 | **0.815** res. 54/72 (0.97/0.53) | **balacc 0.749 — breaks the 0.70 ceiling**; 18 truncations (9/9 by class) |
+| K2t | Qwen3.6-27B | 0.694 | 0.698 res. (1.00/0.10) | discrimination collapses |
+| K3t | Qwen3.5-27B | 0.639 | 0.647 res. (1.00/0.04) | all-anomaly collapse |
+| K6t | GLM-4.6V-Flash | 0.528 | 0.597 (0.50/0.75) | mild help |
+| K5t | InternVL3_5-38B | 0.653 | 0.528 (0.61/0.39) | thinking hurts |
+
 Headline: the Qwen 3.5+ generation nearly doubles expect_early strict (+11-13
 clips) with breadth (8/12 scenarios vs Cosmos's 2) and no outcome anchoring;
 same-lineage K4 at the Cosmos bar shows it's generational, not post-training.
-Qwen think arms understated by 4096-token truncations (3-11 clips/arm).
-**Qwen3.8-27B adopted as the working model.**
+Thinking helps exactly one model — Qwen3.8, whose think verdict is the first
+config above the 0.70 balacc ceiling. Qwen think arms understated by 4096-token
+truncations (3-18 clips/arm). **Winner declared: Qwen3.8-27B, think mode for
+verdicts (budget ≥8192).**
 
 ## Failure chain (as currently localized)
 
@@ -198,10 +210,11 @@ comparison ~70% → verdict.
 
 ## Open / planned
 
-- Two-stage monitor (H3) re-run on Qwen3.8 expectations — first post-pilot step.
+- Qwen3.8 verdict_think re-run at 8192 budget — converts the censored 25% into
+  a clean full-set number for the winning config; first post-pilot step.
+- Two-stage monitor (H3) re-run on Qwen3.8 expectations.
 - Verdict-prompt fit for Qwen3.8 (P0 is Cosmos-shaped; family I laws may not
   transfer across models).
-- Rerun the think-truncated pilot clips at 8192 budget (few clips, cheap).
 - Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
   finalize agreement subset.
 - Closed-loop regeneration (C2 recipe + flow-probe gate) for the 15-clip list.

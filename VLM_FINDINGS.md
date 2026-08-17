@@ -702,3 +702,33 @@ says accurate expectations + comparison is the working formulation; revisit
 verdict prompting for Qwen (P0 is Cosmos-shaped); optionally rerun the truncated
 clips at an 8192 budget. Pilot cost ≈ $8 (H200 @ $3.97/hr, ~2h, incl. one
 box-token parse fix caught by the 4-clip verdict gate).
+
+### 11.4 Think-verdict arms: thinking helps exactly one model — the winner
+
+P0 verdict re-run in think mode for the slate (qwen3vl32t's original verdict
+already was think mode). Resolved-accuracy / recall/spec, with strict-all in
+parentheses where truncation cost coverage (4096-token budget):
+
+| model | direct verdict | think verdict | think effect |
+|---|---|---|---|
+| **Qwen3.8-27B** | 0.597 (0.68/0.46) | **0.815 resolved, 54/72** (0.97/0.53; 0.611 all) | **balacc 0.749 — first config above the 0.70 ceiling** |
+| Qwen3.6-27B | 0.694 (0.86/0.43) | 0.698 resolved (1.00/0.10) | discrimination collapses (balacc 0.645→0.55) |
+| Qwen3.5-27B | 0.639 (0.82/0.36) | 0.647 resolved (1.00/0.04) | all-anomaly collapse |
+| Qwen3-VL-32B-T | — | 0.681 (0.89/0.36) | (always-think) |
+| GLM-4.6V-Flash | 0.528 (0.25/0.96) | 0.597 (0.50/0.75) | mild help |
+| InternVL3_5-38B | 0.653 (1.00/0.11) | 0.528 (0.61/0.39) | thinking hurts |
+
+Qwen3.8 + thinking is the only configuration in the entire program (13 direct
+wordings, 16 think arms on Cosmos, 6 pilot models) to break the ~0.70
+balanced-accuracy ceiling: 0.749 on 54 resolved clips, recall 34/35 with
+specificity 10/19. Its 18 truncations are class-balanced (9/9), so the resolved
+subset is not skewed; the obvious cheap follow-up is an 8192-budget re-run to
+convert the censored 25% into a clean full-set number. For every other Qwen,
+thinking inflates anomaly-recall to 1.00 while destroying specificity — the
+regime that was a pure liability for Cosmos (T0 0.500) is a liability for them
+too. Cost: ~$6 (5 downloads + runs, ~1.5 h).
+
+**Winner declared: Qwen3.8-27B** — best expect_early (31/72, the pre-registered
+discriminator), no outcome anchoring, and the only above-ceiling verdict
+configuration (think mode). Working configuration going forward: Qwen3.8-27B,
+think mode for verdicts (budget ≥8192), card think sampling.

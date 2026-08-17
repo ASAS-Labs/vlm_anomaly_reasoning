@@ -1,0 +1,45 @@
+{
+  "model_key": "glm46vf",
+  "hf_id": "zai-org/GLM-4.6V-Flash",
+  "served_model_id": "zai-org/GLM-4.6V-Flash",
+  "arm": "verdict_think",
+  "think": true,
+  "request_kwargs": {
+    "max_tokens": 4096,
+    "temperature": 0.8,
+    "top_p": 0.6
+  },
+  "extra_body": {
+    "top_k": 2,
+    "repetition_penalty": 1.1
+  },
+  "serve_command": [
+    "vllm",
+    "serve",
+    "zai-org/GLM-4.6V-Flash",
+    "--allowed-local-media-path",
+    "/",
+    "--media-io-kwargs",
+    "{\"video\": {\"fps\": 8, \"num_frames\": -1}}",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--port",
+    "8000",
+    "--reasoning-parser",
+    "glm45",
+    "--mm-processor-cache-type",
+    "shm"
+  ],
+  "vllm_version": "0.27.1",
+  "git_commit": "",
+  "ts": "2026-08-17T00:08:20",
+  "variant": "P0",
+  "dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p",
+  "subset": "/root/vlm_anomaly_reasoning/logs/vlm_agreement_subset_admitted.txt",
+  "seed": 1234,
+  "k": 1,
+  "concurrency": 6,
+  "n_clips": 72
+}
