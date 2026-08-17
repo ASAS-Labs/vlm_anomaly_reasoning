@@ -62,6 +62,9 @@ MODELS = {
             "verdict": {"think": False, "sampling": _QWEN_NONTHINK, "max_tokens": 256},
             "verdict_think": {"think": True, "sampling": _QWEN_THINK,
                               "max_tokens": 4096},
+            # 8k budget re-run: 18/72 truncated at 4096 (Part 11.4)
+            "verdict_think8k": {"think": True, "sampling": _QWEN_THINK,
+                                "max_tokens": 8192},
         },
         "notes": "Aug 2026 flagship 27B VLM; card: thinking default, think "
                  "t=1.0/p.95/k20/pres0, instruct t=0.7/p.8/k20/pres1.5. "

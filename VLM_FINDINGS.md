@@ -732,3 +732,30 @@ too. Cost: ~$6 (5 downloads + runs, ~1.5 h).
 discriminator), no outcome anchoring, and the only above-ceiling verdict
 configuration (think mode). Working configuration going forward: Qwen3.8-27B,
 think mode for verdicts (budget ≥8192), card think sampling.
+
+### 11.5 8192-budget re-run: the 0.749 balacc was a censoring artifact — retracted
+
+Re-running qwen38 verdict_think at max_tokens 8192 resolved all 18 previously
+truncated clips: **7/18 correct**. Full-set: 49/71 resolved (0.690; 0.681
+strict-all), recall 0.91 / specificity 0.36, **balanced accuracy 0.632**. The
+run is otherwise highly stable (of 53 clips resolved in both runs: 43 correct at
+4096, 42 at 8192, one flip — t=1.0 sampling noise is negligible).
+
+Section 11.4's "first configuration above the 0.70 ceiling" claim is therefore
+**retracted**: thinking length correlates with difficulty, and the model is
+wrong on most of the clips it deliberates longest about, so truncation censored
+exactly the failures. Corrected think-verdict picture for Qwen3.8: 0.681 acc /
+0.632 balacc — better than its own direct verdict (0.597 / 0.57 balacc) but
+below the Cosmos P0 champion (0.736 / ~0.693 balacc).
+
+Corrected conclusions:
+- **No pilot configuration beats Cosmos's P0 verdict yet.** P0 is Cosmos's own
+  tuned wording; a Qwen-fitted verdict prompt is untested (family-I laws were
+  measured on Cosmos only).
+- **The winner call is unchanged**: it rests on the pre-registered stage-1
+  discriminator (expect_early 31/72 vs 18/72, essentially uncensored — only 3
+  truncations), where Qwen3.8's lead is real, not on verdict wording.
+- Working config amended: Qwen3.8-27B; verdicts in think mode at 8192 (0.681 >
+  direct 0.597), with verdict-prompt fitting as the open lever. The path Part 8
+  identified — expectation + comparison — is where the model's measured
+  advantage actually lives.

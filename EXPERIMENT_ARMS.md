@@ -189,7 +189,8 @@ Think-verdict arms (Part 11.4; resolved acc, rec/spec):
 
 | arm | model | direct verdict | think verdict | note |
 |---|---|---|---|---|
-| K1t | **Qwen3.8-27B** | 0.597 | **0.815** res. 54/72 (0.97/0.53) | **balacc 0.749 — breaks the 0.70 ceiling**; 18 truncations (9/9 by class) |
+| K1t | **Qwen3.8-27B** | 0.597 | 0.815 res. 54/72 (0.97/0.53) | 18 truncations; see K1t8k — the 0.749 balacc was censoring |
+| K1t8k | Qwen3.8-27B @8192 | — | **0.681 all-72** (0.91/0.36) | balacc 0.632; truncated clips resolve 7/18 — 11.4 ceiling claim retracted |
 | K2t | Qwen3.6-27B | 0.694 | 0.698 res. (1.00/0.10) | discrimination collapses |
 | K3t | Qwen3.5-27B | 0.639 | 0.647 res. (1.00/0.04) | all-anomaly collapse |
 | K6t | GLM-4.6V-Flash | 0.528 | 0.597 (0.50/0.75) | mild help |
@@ -198,10 +199,10 @@ Think-verdict arms (Part 11.4; resolved acc, rec/spec):
 Headline: the Qwen 3.5+ generation nearly doubles expect_early strict (+11-13
 clips) with breadth (8/12 scenarios vs Cosmos's 2) and no outcome anchoring;
 same-lineage K4 at the Cosmos bar shows it's generational, not post-training.
-Thinking helps exactly one model — Qwen3.8, whose think verdict is the first
-config above the 0.70 balacc ceiling. Qwen think arms understated by 4096-token
-truncations (3-18 clips/arm). **Winner declared: Qwen3.8-27B, think mode for
-verdicts (budget ≥8192).**
+Verdicts: no pilot config beats Cosmos's P0 champion (P0 is Cosmos-tuned);
+thinking helps only Qwen3.8 (0.597→0.681 @8192) and its apparent 0.749 balacc
+at 4096 was truncation censoring (Part 11.5). **Winner declared: Qwen3.8-27B**
+on the stage-1 discriminator; verdict-prompt fitting is the open lever.
 
 ## Failure chain (as currently localized)
 
@@ -210,9 +211,7 @@ comparison ~70% → verdict.
 
 ## Open / planned
 
-- Qwen3.8 verdict_think re-run at 8192 budget — converts the censored 25% into
-  a clean full-set number for the winning config; first post-pilot step.
-- Two-stage monitor (H3) re-run on Qwen3.8 expectations.
+- Two-stage monitor (H3) re-run on Qwen3.8 expectations — first post-pilot step.
 - Verdict-prompt fit for Qwen3.8 (P0 is Cosmos-shaped; family I laws may not
   transfer across models).
 - Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
