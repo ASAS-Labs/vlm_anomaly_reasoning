@@ -65,6 +65,15 @@ MODELS = {
             # 8k budget re-run: 18/72 truncated at 4096 (Part 11.4)
             "verdict_think8k": {"think": True, "sampling": _QWEN_THINK,
                                 "max_tokens": 8192},
+            # Q-lab decoding axis: 3.8's chat template accepts reasoning_effort;
+            # over-rumination correlates with errors (Part 11.5), so try "low".
+            # chat_template_kwargs rides extra_body via request_kwargs, like
+            # _QWEN_OFF does.
+            "verdict_think8k_low": {
+                "think": True,
+                "sampling": {**_QWEN_THINK,
+                             "chat_template_kwargs": {"reasoning_effort": "low"}},
+                "max_tokens": 8192},
         },
         "notes": "Aug 2026 flagship 27B VLM; card: thinking default, think "
                  "t=1.0/p.95/k20/pres0, instruct t=0.7/p.8/k20/pres1.5. "

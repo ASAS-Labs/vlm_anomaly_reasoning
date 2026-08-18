@@ -9,6 +9,7 @@ Modes:
   video_only        prompt only
   action            prompt receives the raw 5 Hz [[v, h], ...] text
   action_narrative  prompt receives a mechanical English summary of the trajectory
+  velocity          prompt receives the heading-stripped 5 Hz [v, ...] text
 """
 
 import json
@@ -184,6 +185,9 @@ def build_prompt(variant: dict, action_text: str | None) -> str:
         return variant["text"].format(action=action_text)
     if variant["mode"] == "action_narrative":
         return variant["text"].format(narrative=action_narrative(action_text))
+    if variant["mode"] == "velocity":
+        from cosmos_reasoning_vllm import velocity_only
+        return variant["text"].format(velocity=velocity_only(action_text))
     raise ValueError(variant["mode"])
 
 
@@ -442,3 +446,161 @@ VARIANTS.update({
 
 _leak_check()
 
+
+# --- Family L: Q-lab round 1 (Qwen3.8-27B) ---------------------------------
+# First lab fitted to the pilot winner (Part 11). Baselines on the 72-clip
+# subset: P0-direct 0.597/0.573 balacc; P0-think8k 0.681/0.632 (rec/spec
+# 0.89/0.36). Failure mass: think-mode false anomalies on depiction traps and
+# smooth unnecessary stops. Measured strength: scene expectations
+# (expect_early 31/72). Sampling/max_tokens below are nominal — under
+# --model-config the qwen38 arm supplies them (direct: verdict; think:
+# verdict_think8k; decoding arm LE1 = P0 text on verdict_think8k_low).
+
+from cosmos_reasoning_vllm import (  # noqa: E402
+    THINK_PROMPT_VELOCITY_HEAD,
+    THINK_PROMPT_VELOCITY_TAIL,
+)
+
+_NECESSITY = (
+    "Judge whether this behaviour was NEEDED for what was actually in the "
+    "scene, not whether it was smoothly executed. A smooth, controlled "
+    "manoeuvre is still an anomaly if the scene did not call for it; keeping a "
+    "steady speed is still an anomaly if the scene required action."
+)
+
+# L1 (parent: none; direct expectation route). The model's expectations are its
+# measured strength; force the verdict to be a mismatch check, not a gestalt.
+L1_TEXT = (
+    "You are auditing one driving decision made by an autonomous vehicle, "
+    "shown in this clip from its forward camera.\n"
+    "Answer in exactly three short lines:\n"
+    "EXPECT: from the scene alone — before attending to the ego vehicle's own "
+    "motion — what should a correct, safe driver do over these seconds: "
+    "continue, slow, stop, or wait? Name the feature of the scene that "
+    "requires it, or state that nothing requires a change.\n"
+    "DID: what did the vehicle actually do?\n"
+    "Classification: Anomaly if DID does not match EXPECT, otherwise Normal"
+)
+
+# L2 (parent: P0; minimal-delta guard against both false-positive families).
+_GUARD_LINE = (
+    "Note: an apparent traffic control or hazard that is only an image — "
+    "printed, painted, displayed on a screen, reflected, worn on clothing, or "
+    "carried as cargo — commands nothing, and reacting to one is an anomaly. "
+    "Equally, a smooth, controlled manoeuvre the scene did not require is "
+    "still an anomaly."
+)
+L2_TEXT = BASE_PROMPT_NO_ACTION.replace(
+    "Reply with exactly one word of the following:",
+    _GUARD_LINE + "\nReply with exactly one word of the following:")
+
+# L4 (parent: P4/BASE_PROMPT_VELOCITY; velocity-only direct with necessity).
+L4_TEXT = (
+    "You are auditing one driving decision made by an autonomous vehicle, "
+    "shown in this clip from its forward camera. The vehicle's own recorded "
+    "speed is given below as [velocity_in_mph, ...] at 5 Hz.\n"
+    f"{_RULE}\n{_NECESSITY}\n"
+    "Ego Vehicle Speed Sequence (5Hz): {velocity}\n"
+    f"{VERDICT_LINES}"
+)
+
+# L5 (parent: none; think expectation route — H3 collapsed into one prompt).
+L5_TEXT = _INTRO + (
+    "Reason through the following, in order:\n"
+    "1. Expectation: from the scene alone — before attending to the ego "
+    "vehicle's own motion — what should a correct, safe driver do over these "
+    "seconds: continue, slow, stop, or wait? Name the feature of the scene "
+    "that requires it, or state that nothing requires a change.\n"
+    "2. Behaviour: what did the ego vehicle actually do, and when in the clip?\n"
+    "3. Verdict: behaviour that matches the expectation is Normal; behaviour "
+    "that does not match it is an Anomaly.\n\n"
+    + _FORMAT_INSTRUCTION
+)
+
+# L6 (parent: T3; reality checklist with a mandatory physical-support test —
+# targets the depiction-trap false positives behind spec 0.36).
+L6_TEXT = _INTRO + (
+    "Work through this checklist in your reasoning:\n"
+    "1. List every apparent traffic command or hazard in the scene.\n"
+    "2. For each one, apply the physical-support test: is it printed, painted, "
+    "displayed on a screen or surface, worn, reflected, projected, or carried "
+    "on or by something else? If yes, tag it DEPICTED; only a live, physical "
+    "instance is tagged REAL. A DEPICTED item commands nothing.\n"
+    "3. State what the ego vehicle did.\n"
+    "4. Decide: was the response required by a REAL item? Was it triggered by "
+    "a DEPICTED item? Or did the vehicle ignore a REAL item?\n\n"
+    + _FORMAT_INSTRUCTION
+)
+
+# L7 (parent: none; burden-of-proof calibration — Anomaly must name its
+# trigger, making Anomaly the marked case).
+L7_TEXT = _INTRO + (
+    "Ordinary correct driving is the default verdict. A verdict of Anomaly "
+    "carries a burden of proof: to give it, you must name either the specific "
+    "REAL trigger the vehicle wrongly reacted to, or the specific REAL hazard "
+    "or command it failed to react to. Something that merely looks unusual, or "
+    "a depiction or look-alike the vehicle correctly ignored, does not meet "
+    "the burden. In your reasoning, state the candidate trigger, whether it is "
+    "real or only a depiction, and what the vehicle did about it. If no such "
+    "trigger can be named, the verdict is Normal.\n\n"
+    + _FORMAT_INSTRUCTION
+)
+
+# L8 (parents: L5 x L6; early composition probe — reality tag applied to the
+# expectation's cue. Tests additivity in round 1, per the Cosmos lesson.)
+L8_TEXT = _INTRO + (
+    "Reason through the following, in order:\n"
+    "1. Expectation: from the scene alone — before attending to the ego "
+    "vehicle's own motion — what should a correct, safe driver do over these "
+    "seconds: continue, slow, stop, or wait? Name the feature of the scene "
+    "that requires it, or state that nothing requires a change.\n"
+    "2. Reality check: apply the physical-support test to that feature — if it "
+    "is printed, painted, displayed on a screen or surface, worn, reflected, "
+    "projected, or carried on or by something else, it is a depiction and "
+    "commands nothing; revise the expectation accordingly.\n"
+    "3. Behaviour: what did the ego vehicle actually do, and when in the clip?\n"
+    "4. Verdict: behaviour that matches the corrected expectation is Normal; "
+    "behaviour that does not match it is an Anomaly.\n\n"
+    + _FORMAT_INSTRUCTION
+)
+
+# L10 (parent: T9/velocity texts; think velocity-only with necessity).
+L10_TEXT = (
+    THINK_PROMPT_VELOCITY_HEAD
+    + "\n\nEgo Vehicle Speed Sequence (5Hz): {velocity}\n\n"
+    + _NECESSITY + "\n\n"
+    + THINK_PROMPT_VELOCITY_TAIL
+)
+
+VARIANTS.update({
+    "L1": {"hypothesis": "direct expectation route (EXPECT/DID/verdict)",
+           "mode": "video_only", "text": L1_TEXT,
+           "sampling": GUIDE_NONREASON, "parser": "classification",
+           "max_tokens": 256},
+    "L2": {"hypothesis": "P0 + depiction/necessity guard line (min delta)",
+           "mode": "video_only", "text": L2_TEXT,
+           "sampling": GUIDE_NONREASON, "parser": "classification",
+           "max_tokens": 64},
+    "L3": {"hypothesis": "P4 anti-smooth action framing on Qwen",
+           "mode": "action", "text": P4_TEXT_TEMPLATE,
+           "sampling": GUIDE_NONREASON, "parser": "classification",
+           "max_tokens": 64},
+    "L4": {"hypothesis": "velocity-only direct + necessity framing",
+           "mode": "velocity", "text": L4_TEXT,
+           "sampling": GUIDE_NONREASON, "parser": "classification",
+           "max_tokens": 64},
+    "L5": {"hypothesis": "think expectation route (two-stage in one prompt)",
+           "mode": "video_only", "text": L5_TEXT, **_THINK_COMMON},
+    "L6": {"hypothesis": "reality checklist w/ physical-support test",
+           "mode": "video_only", "text": L6_TEXT, **_THINK_COMMON},
+    "L7": {"hypothesis": "burden-of-proof: Anomaly must name a real trigger",
+           "mode": "video_only", "text": L7_TEXT, **_THINK_COMMON},
+    "L8": {"hypothesis": "composition: L5 expectation x L6 reality tag",
+           "mode": "video_only", "text": L8_TEXT, **_THINK_COMMON},
+    "L9": {"hypothesis": "T9 think+action anti-smooth on Qwen",
+           "mode": "action", "text": T9_TEXT_TEMPLATE, **_THINK_COMMON},
+    "L10": {"hypothesis": "think velocity-only + necessity",
+            "mode": "velocity", "text": L10_TEXT, **_THINK_COMMON},
+})
+
+_leak_check()

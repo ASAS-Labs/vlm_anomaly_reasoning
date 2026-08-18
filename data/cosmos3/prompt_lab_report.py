@@ -36,11 +36,14 @@ def main():
     p.add_argument("--round", type=int, required=True)
     p.add_argument("--logs", type=Path, default=REPO / "logs")
     p.add_argument("--baseline", default="P0")
+    p.add_argument("--prefix", default=None,
+                   help="results-dir prefix (default plab_r<round>)")
     args = p.parse_args()
 
+    prefix = args.prefix or f"plab_r{args.round}"
     runs = {}
-    for d in sorted(args.logs.glob(f"plab_r{args.round}_*")):
-        vid = d.name.split("_", 2)[2]
+    for d in sorted(args.logs.glob(f"{prefix}_*")):
+        vid = d.name[len(prefix) + 1:]
         recs = {}
         for ln in (d / "results.jsonl").read_text().splitlines():
             if ln.strip():
@@ -53,12 +56,13 @@ def main():
     common = set.intersection(*(set(r) for r in runs.values()))
     scens = sorted({scenario(v) for v in common})
 
-    lines = [f"# Prompt lab — round {args.round}", "",
+    lines = [f"# Prompt lab — round {args.round} ({prefix})", "",
              f"n={len(common)} paired clips; baseline={args.baseline} "
              f"acc={sum(1 for v in common if base[v]['correct'] is True)/len(common):.3f}",
              "",
-             "| variant | acc | 95% CI | vs P0 net (p) | breadth | anomaly-verdicts | hypothesis |",
-             "|---|---|---|---|---|---|---|"]
+             "| variant | acc | 95% CI | balacc | rec/spec | vs base net (p) | "
+             "breadth | anomaly-verdicts | trunc | hypothesis |",
+             "|---|---|---|---|---|---|---|---|---|---|"]
     summary = {}
     order = sorted(runs, key=lambda k: -sum(1 for v in common if runs[k][v]["correct"]))
     for vid in order:
@@ -76,13 +80,23 @@ def main():
             if sum(recs[v]["correct"] is True for v in clips) > sum(base[v]["correct"] is True for v in clips):
                 breadth += 1
         n_anom = sum(1 for v in common if recs[v]["verdict"] == "Anomaly")
+        # strict-all recall/specificity/balanced accuracy (Unknown counts wrong)
+        anom = [v for v in common if recs[v]["true_label"] == 1]
+        norm = [v for v in common if recs[v]["true_label"] == 0]
+        rec_ = sum(recs[v]["correct"] is True for v in anom) / max(1, len(anom))
+        spec = sum(recs[v]["correct"] is True for v in norm) / max(1, len(norm))
+        balacc = (rec_ + spec) / 2
+        trunc = sum(1 for v in common
+                    if recs[v].get("finish_reason") == "length")
         hyp = next(iter(recs.values()))["hypothesis"]
         summary[vid] = {"acc": k / len(common), "ci": [lo, hi], "gained": gained,
                         "lost": lost, "p": pv, "breadth": breadth,
-                        "anomaly_verdicts": n_anom}
+                        "anomaly_verdicts": n_anom, "balacc": balacc,
+                        "recall": rec_, "specificity": spec, "truncated": trunc}
         lines.append(f"| {vid} | {k/len(common):.3f} | [{lo:.3f},{hi:.3f}] | "
+                     f"{balacc:.3f} | {rec_:.2f}/{spec:.2f} | "
                      f"{gained - lost:+d} ({pv:.3f}) | {breadth}/{len(scens)} | "
-                     f"{n_anom}/{len(common)} | {hyp} |")
+                     f"{n_anom}/{len(common)} | {trunc} | {hyp} |")
 
     lines += ["", "## Per-scenario accuracy", "",
               "| scenario | n | " + " | ".join(order) + " |",
@@ -95,7 +109,9 @@ def main():
         lines.append("| " + " | ".join(row) + " |")
 
     # error autopsy pointers: clips the top non-baseline variant fixed/broke
-    top = next(v for v in order if v != args.baseline)
+    top = next((v for v in order if v != args.baseline), None)
+    if top is None:
+        top = args.baseline
     fixed = [v for v in sorted(common)
              if runs[top][v]["correct"] is True and base[v]["correct"] is not True]
     broke = [v for v in sorted(common)
@@ -104,8 +120,9 @@ def main():
               "", f"fixed ({len(fixed)}): " + ", ".join(x.split("/")[-1] for x in fixed),
               f"broke ({len(broke)}): " + ", ".join(x.split("/")[-1] for x in broke)]
 
-    out_md = args.logs / f"prompt_lab_round{args.round}.md"
-    out_json = args.logs / f"prompt_lab_round{args.round}.json"
+    stem = f"prompt_lab_{prefix}" if args.prefix else f"prompt_lab_round{args.round}"
+    out_md = args.logs / f"{stem}.md"
+    out_json = args.logs / f"{stem}.json"
     out_md.write_text("\n".join(lines) + "\n")
     out_json.write_text(json.dumps(
         {"round": args.round, "n": len(common), "summary": summary}, indent=1))
