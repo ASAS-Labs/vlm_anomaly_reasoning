@@ -114,7 +114,7 @@ run_group() {  # run_group <suffix> <model_arm> <variants...>
     --model-config qwen38 --model-arm "${arm}" \
     --out_prefix "${PREFIX}${sfx}" --seed "${SEED}" --concurrency "${CONC}"
   "${PY}" prompt_lab_report.py --round "${ROUND}" --prefix "${PREFIX}${sfx}" \
-    --baseline P0 || true
+    --baseline P0
 }
 
 run_group d verdict ${QLAB_DIRECT}
@@ -132,6 +132,8 @@ if [[ -n "${QLAB_THINK_LOW// /}" ]]; then
     --out_prefix "${PREFIX}tl" --seed "${SEED}" --concurrency 4 --limit 4
   gate "${LOG_DIR}/${PREFIX}tl_P0" \
     || { echo "GATE FAILED: tl/P0"; exit 1; }
+  [[ -f "${LOG_DIR}/${PREFIX}t_P0/results.jsonl" ]] \
+    || { echo "tl gate needs the think-group P0 anchor; run the think group first" >&2; exit 1; }
   ANCHOR_LEN="$(median_reasoning "${LOG_DIR}/${PREFIX}t_P0")"
   LOW_LEN="$(median_reasoning "${LOG_DIR}/${PREFIX}tl_P0")"
   echo "reasoning length: think anchor ${ANCHOR_LEN} vs low ${LOW_LEN}"

@@ -479,7 +479,8 @@ L1_TEXT = (
     "continue, slow, stop, or wait? Name the feature of the scene that "
     "requires it, or state that nothing requires a change.\n"
     "DID: what did the vehicle actually do?\n"
-    "Classification: Anomaly if DID does not match EXPECT, otherwise Normal"
+    "Classification: <Anomaly or Normal> — Anomaly if DID does not match "
+    "EXPECT, otherwise Normal"
 )
 
 # L2 (parent: P0; minimal-delta guard against both false-positive families).

@@ -52,6 +52,11 @@ def main():
         runs[vid] = recs
     if args.baseline not in runs:
         raise SystemExit(f"baseline {args.baseline} not found in round {args.round}")
+    counts = {vid: len(recs) for vid, recs in runs.items()}
+    if len(set(counts.values())) > 1 or 0 in counts.values():
+        # A stale/partial dir would silently shrink the paired intersection
+        # for every arm; fail loudly instead.
+        raise SystemExit(f"record-count mismatch across {prefix}_* dirs: {counts}")
     base = runs[args.baseline]
     common = set.intersection(*(set(r) for r in runs.values()))
     scens = sorted({scenario(v) for v in common})
