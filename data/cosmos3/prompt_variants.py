@@ -605,3 +605,47 @@ VARIANTS.update({
 })
 
 _leak_check()
+
+# --- Family L round 2: recall recovery for the guard-line winner ------------
+# Round-1 autopsy: L2 (P0 + guard) reached balacc 0.750 with PERFECT
+# specificity (28/28) — the depiction trap is solved — but recall fell to
+# 0.50. The 22 FNs are concentrated: 14x neg_prompt_3 (motion-onset: moving
+# off while a real command still applies), 4x neg_4, 2x neg_5, 2x neg_9;
+# 18/22 are clips P0-think gets right. Children add a recall line to L2
+# without touching the guard. L2 also runs under the think arm in round 2
+# (same registered variant, --model-arm selects); L6 reruns to capture traces.
+
+# L2r (parent: L2): name the FN cluster — transitions of motion.
+_MOTION_LINE = (
+    "Pay particular attention to the moments when the vehicle starts or stops "
+    "moving: beginning to move while a real command still requires waiting, or "
+    "stopping when nothing real requires stopping, are both anomalies."
+)
+L2R_TEXT = L2_TEXT.replace(
+    "Reply with exactly one word of the following:",
+    _MOTION_LINE + "\nReply with exactly one word of the following:")
+
+# L2w (parent: L2): make Normal carry an assertion too (inverse burden),
+# so the guard's specificity is not bought with lazy Normal verdicts.
+_NORMAL_BURDEN = (
+    "A verdict of Normal asserts that the vehicle did everything a correct "
+    "driver should have done — including continuing to wait while a real "
+    "command still applied, and acting when the scene genuinely required "
+    "action."
+)
+L2W_TEXT = L2_TEXT.replace(
+    "Reply with exactly one word of the following:",
+    _NORMAL_BURDEN + "\nReply with exactly one word of the following:")
+
+VARIANTS.update({
+    "L2r": {"hypothesis": "L2 + motion-onset attention line (recall child)",
+            "mode": "video_only", "text": L2R_TEXT,
+            "sampling": GUIDE_NONREASON, "parser": "classification",
+            "max_tokens": 64},
+    "L2w": {"hypothesis": "L2 + Normal-carries-a-burden line (recall child)",
+            "mode": "video_only", "text": L2W_TEXT,
+            "sampling": GUIDE_NONREASON, "parser": "classification",
+            "max_tokens": 64},
+})
+
+_leak_check()
