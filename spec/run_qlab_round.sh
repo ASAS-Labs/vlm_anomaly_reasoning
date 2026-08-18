@@ -25,6 +25,7 @@ PREFIX="${PREFIX:-qlab_r${ROUND}}"
 QLAB_DIRECT="${QLAB_DIRECT-P0 L1 L2 L3 L4}"
 QLAB_THINK="${QLAB_THINK-P0 L5 L6 L7 L8 L9 L10}"
 QLAB_THINK_LOW="${QLAB_THINK_LOW-P0}"
+QLAB_THINK_ARM="${QLAB_THINK_ARM:-verdict_think8k}"
 CONC="${CONC:-6}"
 
 VENV="${VENV_DIR:-${REPO_ROOT}/.venv-pilot}"
@@ -118,7 +119,7 @@ run_group() {  # run_group <suffix> <model_arm> <variants...>
 }
 
 run_group d verdict ${QLAB_DIRECT}
-run_group t verdict_think8k ${QLAB_THINK}
+run_group t "${QLAB_THINK_ARM}" ${QLAB_THINK}
 
 if [[ -n "${QLAB_THINK_LOW// /}" ]]; then
   # Decoding-axis gate: reasoning_effort=low must parse cleanly AND actually
