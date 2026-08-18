@@ -1,0 +1,46 @@
+{
+  "model_key": "qwen38",
+  "hf_id": "Qwen/Qwen3.8-27B",
+  "served_model_id": "Qwen/Qwen3.8-27B",
+  "arm": "verdict",
+  "think": false,
+  "request_kwargs": {
+    "max_tokens": 256,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "presence_penalty": 1.5
+  },
+  "extra_body": {
+    "top_k": 20,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "serve_command": [
+    "vllm",
+    "serve",
+    "Qwen/Qwen3.8-27B",
+    "--allowed-local-media-path",
+    "/",
+    "--media-io-kwargs",
+    "{\"video\": {\"fps\": 8, \"num_frames\": -1}}",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--port",
+    "8000",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "vllm_version": "0.27.1",
+  "git_commit": "",
+  "ts": "2026-08-18T04:18:02",
+  "variant": "P0",
+  "dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p",
+  "subset": "/root/vlm_anomaly_reasoning/logs/vlm_agreement_subset_admitted.txt",
+  "seed": 1234,
+  "k": 1,
+  "concurrency": 6,
+  "n_clips": 72
+}

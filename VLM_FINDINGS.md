@@ -759,3 +759,70 @@ Corrected conclusions:
   direct 0.597), with verdict-prompt fitting as the open lever. The path Part 8
   identified — expectation + comparison — is where the model's measured
   advantage actually lives.
+
+## Part 12 — Q-lab: the guard line breaks the ceiling; champion declared
+
+Formal iterative prompt lab on Qwen3.8-27B (family L), 72-clip subset,
+720p↑ @ 8 fps, pre-registered promotion/kill/repro rules, anchors re-run every
+session. Success bar (user-set): acc > 0.736 AND balacc > 0.70 on screen AND
+reproduction. Artifacts: `logs/qlab_*`, reports `logs/prompt_lab_qlab_*`.
+
+### 12.1 Round 1 (13 arms): one live signal
+
+Direct: P0 0.625; **L2 (P0 + one depiction/necessity guard line) 0.694 with
+balacc 0.750 and PERFECT specificity (28/28)** — the depiction trap solved
+outright. Everything else lost to its anchor: expectation-route prompts (L1
+direct 0.431, L5 think 0.583 — the model's stage-1 skill does NOT survive
+being folded into a verdict prompt), burden-of-proof (L7 0.472, recall
+collapse), action/velocity channels (0.292-0.528 — the video-only law
+transfers to Qwen in both regimes), reasoning_effort=low (0.667, axis dead).
+Think anchor 0.722/0.669.
+
+### 12.2 Round 2: recall child + regime port
+
+L2's 22 FNs were nameable (14× motion-onset). L2r (= L2 + one motion-onset
+attention line): direct 0.736/0.784 (spec 1.00); think@8k 0.750/0.782 — first
+arm past the accuracy bar, with 7 truncations scored as misses. L2 family holds
+spec 0.93-1.00 everywhere. Two beat-downs from the repro machinery: (a) the
+seed-4321 direct repro showed direct-mode verdicts are strongly seed-sensitive
+(L2r rec/spec swung 0.57/1.00 → 0.93/0.61; same-seed round-to-round stability
+had masked it — single-seed direct numbers are not trustworthy); (b) the
+seed-4321 think@8k repro died at the truncation gate (2/4 gate clips) —
+guard-family prompts think past 8k on ~10% of clips.
+
+### 12.3 Round 3 (@16k) + reproduction: declaration
+
+verdict_think16k removes the truncation tax entirely (0 truncations, all runs):
+
+| arm | screen s1234 | repro s4321 |
+|---|---|---|
+| **L2** | **0.806 / balacc 0.841** (0.68/1.00) | **0.889 / balacc 0.909** (0.82/1.00), McNemar +13 p=0.019 |
+| L2r | 0.806 / 0.834 (0.70/0.96) | 0.792 / 0.804 (0.75/0.86) |
+| P0 anchor | 0.694 / 0.646 | 0.708 / 0.657 |
+
+**CHAMPION DECLARED: L2 — the P0 prompt plus one guard line — in think mode at
+16384 tokens.** Both runs clear the bar with margin; specificity is 1.00 in
+both (zero false anomalies across 144 clip-verdicts); pooled acc ≈ 0.85,
+balacc ≈ 0.88. L2r also passes both runs but is dominated by its simpler
+parent at the honest budget — its 8k recall gain was partly truncation rescue.
+
+The guard line (verbatim, in `prompt_variants.py` as `_GUARD_LINE`): "an
+apparent traffic control or hazard that is only an image — printed, painted,
+displayed on a screen, reflected, worn on clothing, or carried as cargo —
+commands nothing, and reacting to one is an anomaly. Equally, a smooth,
+controlled manoeuvre the scene did not require is still an anomaly."
+
+### 12.4 What moved and why
+
+Against Cosmos's champion (0.736 acc / 0.693 balacc): +12-15 points accuracy
+and +15-22 balacc. The entire program's ~0.70 balacc ceiling was a missing
+CONCEPT, not missing capability: Cosmos could not use the depiction rule
+(family I tried; P8's scenery line DROPPED its balacc), while Qwen3.8 applies
+it near-perfectly once stated. One sentence of context did what 29 Cosmos
+arms, model scale (Super), thinking budgets, and channel engineering could
+not. Remaining failure mass: recall on subtle missed-response anomalies (L2 FNs
+now concentrate in neg_3/neg_4 singles at 16k).
+
+Working config going forward: **Qwen3.8-27B, L2 prompt, think mode,
+max_tokens 16384, card think sampling** (t=1.0/top_p 0.95/top_k 20). Lab cost
+≈ $21 across 3 screens + 2 repro sessions.

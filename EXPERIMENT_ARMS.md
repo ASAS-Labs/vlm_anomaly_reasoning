@@ -204,6 +204,28 @@ thinking helps only Qwen3.8 (0.597→0.681 @8192) and its apparent 0.749 balacc
 at 4096 was truncation censoring (Part 11.5). **Winner declared: Qwen3.8-27B**
 on the stage-1 discriminator; verdict-prompt fitting is the open lever.
 
+## L — Q-lab: prompt/context iteration on Qwen3.8-27B (72 clips, 720p↑ @ 8 fps) — Part 12
+
+Pre-registered loop (promote/kill/repro rules); anchors re-run per session.
+Rounds: r1 screen (13 arms) → r2 recall children → r3 @16k + repro.
+
+| arm | config | screen (s1234) | repro (s4321) | verdict |
+|---|---|---|---|---|
+| **L2** | **P0 + guard line, think@16k** | **0.806 / balacc 0.841** (0.68/1.00) | **0.889 / 0.909** (0.82/1.00, +13 p=.019) | **CHAMPION** |
+| L2r | + motion-onset line, think@16k | 0.806 / 0.834 | 0.792 / 0.804 | passes; dominated by L2 |
+| P0 | anchor, think@16k | 0.694 / 0.646 | 0.708 / 0.657 | — |
+| L2 | direct | 0.694-0.708 / 0.75-0.76 (spec 1.00) | — | direct is seed-brittle (12.2) |
+| L1/L5/L8 | expectation-route prompts | 0.431-0.639 | — | killed: stage-1 skill doesn't fold into verdicts |
+| L3/L4/L9/L10 | action/velocity channels | 0.292-0.528 | — | killed: video-only law transfers |
+| L7 / LE1 | burden-of-proof / reasoning_effort=low | 0.472 / 0.667 | — | killed |
+
+**Declared: Qwen3.8-27B + L2 (P0 + one depiction/necessity guard line) +
+think @16384 beats the Cosmos champion 0.736/0.693 by +12-15 acc / +15-22
+balacc with zero false anomalies in 144 verdicts.** The program's 0.70-balacc
+ceiling was a missing concept, not capability: Cosmos couldn't use the same
+rule (P8 dropped its balacc). 8k budgets truncate guard prompts on ~10% of
+clips (12.2); direct-mode single-seed numbers are untrustworthy (12.2).
+
 ## Failure chain (as currently localized)
 
 perception 100% → **policy generation 25–53%** (Cosmos; ~43% Qwen3.8) →
