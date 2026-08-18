@@ -65,6 +65,10 @@ MODELS = {
             # 8k budget re-run: 18/72 truncated at 4096 (Part 11.4)
             "verdict_think8k": {"think": True, "sampling": _QWEN_THINK,
                                 "max_tokens": 8192},
+            # Q-lab round 3: guard-family prompts think past 8k on ~10% of clips
+            # (2/4 gate truncations killed the L2r repro at seed 4321).
+            "verdict_think16k": {"think": True, "sampling": _QWEN_THINK,
+                                 "max_tokens": 16384},
             # Q-lab decoding axis: 3.8's chat template accepts reasoning_effort;
             # over-rumination correlates with errors (Part 11.5), so try "low".
             # chat_template_kwargs rides extra_body via request_kwargs, like
