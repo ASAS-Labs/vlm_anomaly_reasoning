@@ -210,7 +210,9 @@ def answer_text(choice):
     """
     msg = choice.message
     content = msg.content or ""
-    reasoning = getattr(msg, "reasoning_content", None)
+    # vLLM <=0.2x used reasoning_content; 0.27+ returns `reasoning`.
+    reasoning = (getattr(msg, "reasoning_content", None)
+                 or getattr(msg, "reasoning", None))
     # `not reasoning` (not `is None`): a misfiring parser can return an empty
     # reasoning_content while <think> text remains in content.
     if not reasoning:

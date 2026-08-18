@@ -90,6 +90,12 @@ def test_answer_text():
     content, reasoning = answer_text(ch)
     assert content == "Stop" and "continue" in reasoning, (content, reasoning)
 
+    # vLLM 0.27+ renamed the field to `reasoning`.
+    ch = NS(message=NS(content="Stop", reasoning_content=None,
+                       reasoning="the light is red"))
+    content, reasoning = answer_text(ch)
+    assert content == "Stop" and reasoning == "the light is red", (content, reasoning)
+
     # No parser: <think> block is stripped into reasoning.
     ch = NS(message=NS(content="<think>continue is tempting here</think>\nSlow"))
     content, reasoning = answer_text(ch)
