@@ -1,0 +1,542 @@
+[
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v18.mp4",
+  "scenario": "neg_prompt_2",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.494,
+  "source": "list15+sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v02.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.619,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.555,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v08.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.309,
+  "source": "list15+sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v11.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.679,
+  "source": "list15+sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.468,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v19.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.663,
+  "source": "list15+sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v20.mp4",
+  "scenario": "neg_prompt_4",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.602,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.402,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.44,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v06.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 1.444,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v20.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.44,
+  "source": "list15+sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v01.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.45,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v02.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.427,
+  "source": "list15+sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.39,
+  "source": "list15+sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v07.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 1.492,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v11.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.353,
+  "source": "sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v14.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.419,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v16.mp4",
+  "scenario": "neg_prompt_5",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.414,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v12.mp4",
+  "scenario": "pos_prompt_4",
+  "class": "maintain",
+  "steer": true,
+  "tail_flow": 0.083,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v12.mp4",
+  "scenario": "pos_prompt_5",
+  "class": "maintain",
+  "steer": false,
+  "tail_flow": 0.137,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v19.mp4",
+  "scenario": "pos_prompt_5",
+  "class": "maintain",
+  "steer": false,
+  "tail_flow": 0.128,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v12.mp4",
+  "scenario": "pos_prompt_8",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.335,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v16.mp4",
+  "scenario": "pos_prompt_8",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.373,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v19.mp4",
+  "scenario": "pos_prompt_8",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.677,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v03.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.324,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v07.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.516,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v08.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.87,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v09.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.593,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v10.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.693,
+  "source": "sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v11.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.537,
+  "source": "sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v13.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.363,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v14.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.338,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v15.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.448,
+  "source": "sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v17.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.649,
+  "source": "sweep",
+  "human_flagged": false,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ },
+ {
+  "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v18.mp4",
+  "scenario": "pos_prompt_9",
+  "class": "stop",
+  "steer": false,
+  "tail_flow": 0.528,
+  "source": "sweep",
+  "human_flagged": true,
+  "geometry": {
+   "width": 832,
+   "height": 480,
+   "frames": 121,
+   "fps": 24.0
+  }
+ }
+]

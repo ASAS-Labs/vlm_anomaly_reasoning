@@ -55,7 +55,7 @@
     "patterns": "Repeating orange cones and barriers, patched road seams, a few parked cars and a work truck, drifting dust"
   },
   "cinematography": {
-    "camera_motion": "Forward-moving ego dashcam motion that decelerates and comes to a complete stop",
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
     "framing": "Wide shot from the driver's viewpoint",
     "camera_angle": "Eye-level, driver's perspective",
     "depth_of_field": "Deep",
@@ -67,20 +67,20 @@
   "context": "Autonomous driving or ADAS demonstration of pedestrian detection and emergency braking in a residential setting",
   "actions": [
     {
-      "time": "0:00-0:01",
+      "time": "0:00-0:00",
       "description": "The ego vehicle travels forward at a moderate speed down the dusty suburban residential street beside the roadworks at midday."
     },
     {
-      "time": "0:01-0:02",
+      "time": "0:00-0:01.5",
       "description": "A small child in a red jacket steps off the right sidewalk and begins crossing into the vehicle's path."
     },
     {
-      "time": "0:02-0:03",
-      "description": "The ego vehicle promptly applies firm, controlled braking on the gritty patched asphalt, decelerating as the nose dips slightly."
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
     },
     {
-      "time": "0:03-0:05",
-      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped while the child continues across."
+      "time": "0:03.5-0:05",
+      "description": "The vehicle reaches a complete stop well before the child and remains fully stopped while the child continues across; the vehicle is parked and perfectly stationary and the camera does not move at all."
     }
   ],
   "text_and_signage_elements": [
@@ -103,20 +103,20 @@
     {
       "segment_index": 1,
       "time_range": "0:01-0:03",
-      "description": "A child steps off the sidewalk into the road; the vehicle begins firm, controlled braking and decelerates rapidly on the gritty surface.",
-      "key_changes": "Hazard appears; speed drops sharply, nose dips under braking",
-      "camera": "Forward motion slowing, slight forward pitch from deceleration"
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely amid the dust and cones.",
-      "key_changes": "Vehicle fully stopped and held stationary",
-      "camera": "Static, fully stopped viewpoint"
+      "description": "The vehicle comes to a complete stop well before the child and holds stationary as the child crosses safely amid the dust and cones. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the dashcam moves forward down a suburban residential street beside dusty roadworks at bright midday, orange cones and an idle excavator lining the patched asphalt. By 0:01 a small child in a bright red jacket steps off the right sidewalk and begins crossing directly ahead. From 0:01 to 0:03 the ego vehicle applies firm, controlled braking on the gritty patched road, slowing with a slight forward pitch. By 0:03 the vehicle has stopped completely well before the child, and from 0:03 to 0:05 it holds stationary in the dust haze while the child crosses safely.",
+  "temporal_caption": "At 0:00, the ego vehicle travels forward at a moderate speed down the dusty suburban residential street beside the roadworks at midday. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
   "audio_description": "Bright summer-worksite sounds of an idling excavator and distant hammering, the hum of the vehicle over patched asphalt, then firm tire and brake friction on the gritty surface as it decelerates, settling into an idle amid faint machinery noise.",
   "resolution": {
     "H": 720,
@@ -124,5 +124,21 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-08-20T22:13:41",
+    "old_times": [
+      "0:00-0:01",
+      "0:01-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
 }

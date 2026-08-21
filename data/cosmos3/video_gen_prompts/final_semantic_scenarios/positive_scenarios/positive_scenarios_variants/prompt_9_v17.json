@@ -55,7 +55,7 @@
     "patterns": "Repeating frosted windows and slush-tracked ruts on the road"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking dolly (ego vehicle motion) decelerating to static",
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
     "framing": "Wide shot",
     "camera_angle": "Eye-level, dashboard height",
     "depth_of_field": "Moderate",
@@ -67,44 +67,44 @@
   "context": "Autonomous vehicle perception test demonstrating correct recognition of a deceptive mural wall and safe stopping behavior",
   "actions": [
     {
-      "time": "0:00-0:02",
+      "time": "0:00-0:01.5",
       "description": "The ego vehicle travels steadily forward down the slushy city street toward the mural wall at the far end."
     },
     {
-      "time": "0:02-0:03",
-      "description": "The vehicle begins a smooth, controlled deceleration as it recognizes the solid wall painted to look like an open road."
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
     },
     {
-      "time": "0:03-0:05",
-      "description": "The vehicle comes to a complete stop before the wall and remains stationary, holding the view of the sleet-spattered mural."
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop before the wall and remains stationary, holding the view of the sleet-spattered mural; the vehicle is parked and perfectly stationary and the camera does not move at all."
     }
   ],
   "text_and_signage_elements": [],
   "segments": [
     {
       "segment_index": 0,
-      "time_range": "0:00-0:02",
+      "time_range": "0:00-0:01.5",
       "description": "Ego vehicle drives forward down the straight, slushy city street, the mural wall growing larger ahead while austere buildings and slush-caked cars pass on either side in the sleet.",
       "key_changes": "Steady approach; wall increases in apparent size under murky grey light.",
       "camera": "Forward tracking motion at constant speed, eye-level."
     },
     {
       "segment_index": 1,
-      "time_range": "0:02-0:03",
-      "description": "The vehicle decelerates smoothly as it recognizes the wall as a solid barrier rather than open road.",
-      "key_changes": "Forward speed decreases; the sleet-spattered mural fills more of the frame.",
-      "camera": "Forward motion slowing to a halt."
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
     },
     {
       "segment_index": 2,
-      "time_range": "0:03-0:05",
-      "description": "The vehicle is fully stopped before the wall and remains stationary, holding a steady view of the sleet-wet trompe-l'oeil mural.",
-      "key_changes": "No motion; the scene is held static for over two seconds.",
-      "camera": "Static, locked off at eye-level."
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped before the wall and remains stationary, holding a steady view of the sleet-wet trompe-l'oeil mural. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward down a sleety, sign-free Scandinavian city street on a dim winter day, the slushy road appearing to continue into a painted open sky at the far end. Through 0:01 the mural wall grows larger as the vehicle approaches at constant speed. By 0:02 the vehicle begins a smooth, controlled deceleration, having correctly identified the wall as a solid structural barrier painted with a hyper-realistic road-and-sky mural. From 0:03 onward the vehicle has come to a complete stop a safe distance before the wall, and it remains stationary through 0:05, holding the view of the deceptive painted surface spattered with sleet.",
+  "temporal_caption": "At 0:00, the ego vehicle travels steadily forward down the slushy city street toward the mural wall at the far end. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
   "audio_description": "Ambient sleety city sounds: the low hum of the vehicle's electric motor and tires slushing through wet meltwater, sleet ticking against surfaces and muffled cold-street noise. As the vehicle slows, a soft regenerative braking whir is audible, followed by the quiet of the stationary vehicle. No speech or music.",
   "resolution": {
     "H": 720,
@@ -112,5 +112,19 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-08-20T22:13:41",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
 }

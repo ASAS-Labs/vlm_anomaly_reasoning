@@ -55,7 +55,7 @@
     "patterns": "Repeating slush-streaked lane markings and bridge cables into the grey"
   },
   "cinematography": {
-    "camera_motion": "Forward dashcam motion at a brisk approach speed that decelerates sharply and abruptly to a complete stop, then holds completely static with no further movement",
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
     "framing": "Wide shot from the driver's viewpoint",
     "camera_angle": "Eye-level, mounted at windshield height",
     "depth_of_field": "Deep, degraded by sleet at distance",
@@ -67,16 +67,16 @@
   "context": "Autonomous driving / driver-assistance scenario demonstrating deceleration and stopping in response to a stop-sign visual cue.",
   "actions": [
     {
-      "time": "0:00-0:02",
+      "time": "0:00-0:01.5",
       "description": "The ego vehicle cruises forward across the sleet-swept bridge deck at a brisk, elevated speed, quickly approaching the pedestrian standing on the right walkway."
     },
     {
-      "time": "0:02-0:03",
-      "description": "The vehicle brakes sharply and firmly over a short braking distance on the slushy deck as it nears the pedestrian whose shirt shows the red STOP graphic through the sleet, coming to a complete full stop by the end of this segment."
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
     },
     {
-      "time": "0:03-0:05",
-      "description": "The vehicle remains completely stopped and motionless beside the pedestrian as sleet streaks the windshield on the exposed span for the final two seconds."
+      "time": "0:03.5-0:05",
+      "description": "The vehicle remains completely stopped and motionless beside the pedestrian as sleet streaks the windshield on the exposed span for the final 1.5 seconds; the vehicle is parked and perfectly stationary and the camera does not move at all."
     }
   ],
   "text_and_signage_elements": [
@@ -91,28 +91,28 @@
   "segments": [
     {
       "segment_index": 0,
-      "time_range": "0:00-0:02",
+      "time_range": "0:00-0:01.5",
       "description": "The ego vehicle drives forward in its lane across the sleet-swept bridge deck at a brisk speed, the stop-sign-shirted pedestrian on the right walkway ahead.",
       "key_changes": "Brisk forward motion; pedestrian grows larger in frame quickly.",
       "camera": "Forward-moving dashcam at brisk speed, maintaining lane center."
     },
     {
       "segment_index": 1,
-      "time_range": "0:02-0:03",
-      "description": "The vehicle brakes sharply and firmly on the slushy deck as it closes the distance to the pedestrian, coming to a complete stop by the end of the segment.",
-      "key_changes": "Speed drops rapidly to zero within about one second; a hard, abrupt halt.",
-      "camera": "Forward dashcam motion decelerating sharply with a pronounced forward pitch, settling quickly to stationary."
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
     },
     {
       "segment_index": 2,
-      "time_range": "0:03-0:05",
-      "description": "The vehicle is fully stopped beside the pedestrian as sleet streaks the windshield and remains completely motionless for the final two seconds.",
-      "key_changes": "Complete halt held; absolutely no forward motion; the vehicle never starts moving again; pedestrian remains standing facing the vehicle.",
-      "camera": "Static dashcam, no forward motion whatsoever, vehicle held stationary in lane."
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped beside the pedestrian as sleet streaks the windshield and remains completely motionless for the final 1.5 seconds. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
     }
   ],
   "transitions": [],
-  "temporal_caption": "From 0:00 to 0:02 the dashcam view cruises forward across a bridge deck in cold winter sleet at a brisk speed, grey water below and steel towers looming as gusty wind drives sleet across the slushy road while a young male pedestrian in a t-shirt bearing a red STOP graphic stands on the right walkway. From 0:02 to 0:03 the vehicle brakes sharply and firmly on the slushy deck as it approaches him, coming to a complete stop by 0:03. From 0:03 to 0:05 it sits fully stationary beside the pedestrian as sleet streaks the windshield on the exposed span, remaining completely motionless.",
+  "temporal_caption": "At 0:00, the ego vehicle cruises forward across the sleet-swept bridge deck at a brisk, elevated speed, quickly approaching the pedestrian standing on the right walkway. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
   "audio_description": "Bleak exposed-bridge soundscape with gusting wind, sleet ticking on the glass and slushy tire roll that drop with a brief firm brake sound from 0:02. Wind and ticking sleet settle into an idle beneath the gusts at the full stop by 0:03 and stay through the end. No speech or music.",
   "resolution": {
     "H": 720,
@@ -120,5 +120,19 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-08-20T22:13:41",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
 }
