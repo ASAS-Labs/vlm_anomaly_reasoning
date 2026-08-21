@@ -346,12 +346,14 @@ def _next_candidate(rec):
     """Next candidate for the ID cross-check: probe-confirmed first, else an
     unmeasurable-but-stopped-level candidate (low-texture scenes) for stop class."""
     cand = next((a for a in rec["attempts"] if a["probe_ok"] and a["id_ok"] is None), None)
-    if cand is None:
-        cand = next((a for a in rec["attempts"]
-                     if a["probe_ok"] is None and a["id_ok"] is None
-                     and rec["class"] == "stop"
-                     and a["probe"]["end_state"] == "unmeasurable"
-                     and a["probe"]["tail_flow"] < 0.15), None)
+    if cand is None and rec["class"] == "stop":
+        # Probe could not decide (ambiguous band or low-texture unmeasurable);
+        # let the ID cross-check adjudicate the most-stopped-looking candidate.
+        pool = [a for a in rec["attempts"]
+                if a["probe_ok"] is None and a["id_ok"] is None
+                and a["probe"]["end_state"] in ("ambiguous", "unmeasurable")
+                and a["probe"]["tail_flow"] < 0.30]
+        cand = min(pool, key=lambda a: a["probe"]["tail_flow"]) if pool else None
     return cand
 
 
