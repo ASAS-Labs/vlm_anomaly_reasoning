@@ -54,8 +54,9 @@ while IFS= read -r rel; do
   fi
 done < "${SUBSET}"
 N_TXT="$(find "${TREE}" -name '*.txt' | wc -l)"
-if [[ "${N_TXT}" != "72" ]]; then
-  echo "ERROR: 720p tree has ${N_TXT} txts, expected 72" >&2
+N_SUB="$(grep -c . "${SUBSET}")"
+if (( N_TXT < N_SUB )); then
+  echo "ERROR: 720p tree has ${N_TXT} txts, subset needs ${N_SUB}" >&2
   exit 1
 fi
 
