@@ -55,7 +55,7 @@
     "patterns": "Crossing stripes and lane markings faint through slush, heaped curbside mush"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth; the vehicle never brakes or slows, holding a constant speed through the final frame",
     "framing": "Wide shot capturing the road ahead",
     "camera_angle": "Eye-level dashboard perspective",
     "depth_of_field": "Deep",
@@ -68,15 +68,15 @@
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The ego vehicle drives forward steadily across the slushy intersection; two stray polythene bags appear ahead, sodden and sleet-heavy as they drag and flutter."
+      "description": "The ego vehicle drives forward steadily across the slushy intersection; two stray polythene bags appear ahead, sodden and sleet-heavy as they drag and flutter. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:02-0:03",
-      "description": "The vehicle continues at constant speed; the heavy wet bags tumble and slide across the slushy road as the gap closes."
+      "description": "The vehicle continues at constant speed; the heavy wet bags tumble and slide across the slushy road as the gap closes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside through the slush."
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside through the slush. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     }
   ],
   "text_and_signage_elements": [],
@@ -84,27 +84,27 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:02",
-      "description": "Ego vehicle drives forward across the Scandinavian intersection under dim overcast sleet; two sodden polythene bags become visible ahead, dragging in the wind.",
+      "description": "Ego vehicle drives forward across the Scandinavian intersection under dim overcast sleet; two sodden polythene bags become visible ahead, dragging in the wind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags appear in the central foreground, grey and sleet-heavy, and begin to flutter limply.",
-      "camera": "Smooth forward tracking from dashboard view."
+      "camera": "Smooth forward tracking from dashboard view; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 1,
       "time_range": "0:02-0:03",
-      "description": "The vehicle holds speed and lane as the heavy wet bags tumble and slide across the slushy road.",
+      "description": "The vehicle holds speed and lane as the heavy wet bags tumble and slide across the slushy road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags shift and lift sluggishly, weighed down by sleet.",
-      "camera": "Continuous forward tracking, steady."
+      "camera": "Continuous forward tracking, steady; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags pass out of central frame; the slushy road ahead stays clear.",
-      "camera": "Steady forward tracking, unchanged."
+      "camera": "Steady forward tracking, unchanged; forward motion continues at constant speed with no deceleration"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward across a broad Scandinavian urban intersection under dim overcast, sleet falling into grey slush on the murky wet road. Within the first two seconds, two translucent polythene bags come into view in the central foreground, sodden and sleet-heavy as they drag and flutter limply. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the heavy wet bags tumble and slide across the slushy road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the intersection ahead remaining murky but clear through the falling sleet.",
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward across a broad Scandinavian urban intersection under dim overcast, sleet falling into grey slush on the murky wet road. Within the first two seconds, two translucent polythene bags come into view in the central foreground, sodden and sleet-heavy as they drag and flutter limply. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the heavy wet bags tumble and slide across the slushy road. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the intersection ahead remaining murky but clear through the falling sleet. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
   "audio_description": "Ambient cold-city intersection sounds: the hum of the engine and the wet slushy hiss of tires through mush, sleet ticking on the glass and wipers dragging, distant muffled traffic. No speech or music; the sodden wet slap of heavy plastic bags in the slush.",
   "resolution": {
     "H": 720,
@@ -112,5 +112,9 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-08-21T12:21:26"
+  }
 }

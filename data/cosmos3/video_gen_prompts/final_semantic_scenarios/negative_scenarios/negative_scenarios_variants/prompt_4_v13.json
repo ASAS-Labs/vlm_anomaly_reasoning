@@ -35,7 +35,7 @@
     "patterns": "Dashed lane markings and blossoming tree rows repeating in soft light"
   },
   "cinematography": {
-    "camera_motion": "Forward-moving dashcam perspective that decelerates sharply and abruptly to a complete stop early in the clip, with slight natural vibration consistent with a vehicle on asphalt; after halting it holds completely static with no further movement",
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03, then holds completely static and locked off with no movement of any kind",
     "framing": "Wide shot from windshield level, capturing the full width of the road and the flanking roadside",
     "camera_angle": "Eye-level from driver's perspective, slightly above the road surface",
     "depth_of_field": "Deep",
@@ -51,12 +51,12 @@
       "description": "The ego vehicle travels forward along the blossoming residential street at a moderate speed; two small balloons are visible ahead resting still on the road in the calm air."
     },
     {
-      "time": "0:01-0:02",
-      "description": "The vehicle decelerates sharply and abruptly, braking hard and coming to a complete stop by 0:02, treating the small resting balloons as obstacles."
+      "time": "0:01-0:03",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03, treating the small resting balloons as obstacles."
     },
     {
-      "time": "0:02-0:05",
-      "description": "The vehicle is fully stopped from the very start of this segment and remains completely stationary for the final three seconds; the small balloons stay still on the dappled road just a few meters ahead."
+      "time": "0:03-0:05",
+      "description": "The vehicle is fully stopped from the very start of this segment and remains completely stationary for the final 2 seconds; the small balloons stay still on the dappled road just a few meters ahead; the vehicle is parked and perfectly stationary and the camera does not move at all."
     }
   ],
   "text_and_signage_elements": [
@@ -78,21 +78,21 @@
     },
     {
       "segment_index": 1,
-      "time_range": "0:01-0:02",
-      "description": "The vehicle brakes sharply and abruptly, decelerating hard and coming to a complete stop by 0:02. The small balloons remain still on the road ahead.",
-      "key_changes": "Speed drops rapidly to zero within this one second; a hard, abrupt halt completed by 0:02",
-      "camera": "Forward dashcam motion decelerating sharply with a pronounced forward pitch, settling quickly to stationary"
+      "time_range": "0:01-0:03",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03, treating the small resting balloons as obstacles.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03"
     },
     {
       "segment_index": 2,
-      "time_range": "0:02-0:05",
-      "description": "The vehicle is already fully stopped at the very start of this segment and remains completely motionless for the final three seconds, a few meters behind the balloons amid blossoming trees, treating the harmless small balloons as road obstacles.",
-      "key_changes": "Vehicle held at a full stop from the beginning of the segment; camera stationary with only idle engine vibration; balloons stay motionless on the road",
-      "camera": "Stationary dashcam perspective with minimal idle vibration; deep focus on the balloons and road ahead"
+      "time_range": "0:03-0:05",
+      "description": "The vehicle is already fully stopped at the very start of this segment and remains completely motionless for the final 2 seconds, a few meters behind the balloons amid blossoming trees, treating the harmless small balloons as road obstacles. The camera does not translate at all: the framing is identical from 0:03 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00, the view from inside a vehicle shows a residential street in soft late-afternoon light, blossoming spring trees and lawns around it as the vehicle moves forward at a moderate pace in calm, still air; two small colorful balloons—one red, one yellow—rest still on the dappled road ahead. Around 0:01, the vehicle begins a sharp, abrupt deceleration, braking hard as the small balloons sit motionless on the asphalt. By 0:02, the vehicle has come to a complete stop. From 0:02 to 0:05, the vehicle stays fully halted and motionless a few meters behind the two small stray balloons, which remain still on the dappled road.",
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the blossoming residential street at a moderate speed; two small balloons are visible ahead resting still on the road in the calm air. From 0:01 the vehicle brakes smoothly and continuously, its speed falling steadily, treating the small resting balloons as obstacles. By 0:03 the vehicle has reached a complete standstill. From 0:03 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
   "audio_description": "Ambient gentle suburban audio begins with the engine hum and tire drone, birdsong and a soft breeze that does not stir the road. Around 0:01 the engine note drops sharply and a brief hard-braking sound is audible as the vehicle decelerates abruptly. The air is calm. By 0:02 the tire noise falls to near silence and, from 0:02 to 0:05, a low idle rumble dominates in the gentle afternoon while the balloons rest silently on the road.",
   "resolution": {
     "H": 480,
@@ -100,5 +100,19 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-08-21T12:21:26",
+    "old_times": [
+      "0:00-0:01",
+      "0:01-0:02",
+      "0:02-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01",
+      "0:01-0:03",
+      "0:03-0:05"
+    ]
+  }
 }

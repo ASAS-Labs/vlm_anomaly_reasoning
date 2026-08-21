@@ -55,7 +55,7 @@
     "patterns": "Repetitive houses, parked cars and streetlight pools; wet reflections on the road"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking at constant vehicle speed; slight natural vibration consistent with a dashboard-mounted camera in a moving vehicle",
+    "camera_motion": "Forward tracking at constant vehicle speed; slight natural vibration consistent with a dashboard-mounted camera in a moving vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
     "framing": "Wide shot from ego/dashboard perspective, encompassing the full road ahead and both sidewalks",
     "camera_angle": "Eye-level from driver's seated position, approximately 1.2 meters above road surface",
     "depth_of_field": "Deep, with soft rain-blur at the edges",
@@ -68,19 +68,19 @@
   "actions": [
     {
       "time": "0:00-0:01",
-      "description": "The ego vehicle travels forward through the wet evening residential street; the road ahead is clear, houses and parked cars line both sides, and a small child is barely visible near the right sidewalk in the distance."
+      "description": "The ego vehicle travels forward through the wet evening residential street; the road ahead is clear, houses and parked cars line both sides, and a small child is barely visible near the right sidewalk in the distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:01-0:02",
-      "description": "The vehicle continues at constant speed. The child steps off the wet curb on the right and begins walking into the street. The child's small stature and the dim wet light make them difficult to distinguish against the parked cars."
+      "description": "The vehicle continues at constant speed. The child steps off the wet curb on the right and begins walking into the street. The child's small stature and the dim wet light make them difficult to distinguish against the parked cars. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:02-0:03",
-      "description": "The child is now in the right portion of the vehicle's lane, walking steadily across the wet road. The vehicle shows no signs of deceleration—no pitch forward, no speed change. The distance is closing noticeably."
+      "description": "The child is now in the right portion of the vehicle's lane, walking steadily across the wet road. The vehicle shows no signs of deceleration—no pitch forward, no speed change. The distance is closing noticeably. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:03-0:05",
-      "description": "The child continues toward the center of the lane. The vehicle maintains its constant speed, rapidly closing the gap; the child grows larger in frame, the bright red shirt vivid against the wet street. The scene ends with the child near the center of the path and the vehicle dangerously close, before any contact."
+      "description": "The child continues toward the center of the lane. The vehicle maintains its constant speed, rapidly closing the gap; the child grows larger in frame, the bright red shirt vivid against the wet street. The scene ends with the child near the center of the path and the vehicle dangerously close, before any contact. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     }
   ],
   "text_and_signage_elements": [
@@ -103,27 +103,27 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:01",
-      "description": "Establishing ego view: the vehicle cruises through the wet evening street, houses and parked cars on both sides. In the distance on the right sidewalk, a tiny figure—the child—stands near the curb edge.",
+      "description": "Establishing ego view: the vehicle cruises through the wet evening street, houses and parked cars on both sides. In the distance on the right sidewalk, a tiny figure—the child—stands near the curb edge. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Scene establishes the calm residential environment; the child is a barely perceptible figure in the distance near the right curb.",
-      "camera": "Forward-moving dashcam perspective at constant speed with slight road vibration; wide shot of the road ahead."
+      "camera": "Forward-moving dashcam perspective at constant speed with slight road vibration; wide shot of the road ahead; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 1,
       "time_range": "0:01-0:03",
-      "description": "The child steps off the wet curb and begins crossing from right to left into the vehicle's lane. The vehicle does not slow down. The speed limit sign passes on the right. The gap between the vehicle and the child visibly decreases.",
+      "description": "The child steps off the wet curb and begins crossing from right to left into the vehicle's lane. The vehicle does not slow down. The speed limit sign passes on the right. The gap between the vehicle and the child visibly decreases. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Child transitions from sidewalk to roadway; vehicle maintains constant velocity; distance closes significantly.",
-      "camera": "Continuous forward tracking at constant speed; no panning or adjustment to follow the child — the camera stays fixed forward as a dashcam would."
+      "camera": "Continuous forward tracking at constant speed; no panning or adjustment to follow the child — the camera stays fixed forward as a dashcam would; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The child is now clearly in the vehicle's direct path, walking across the lane, the red shirt vivid against the wet asphalt. The vehicle continues without any braking or steering, rapidly closing the remaining distance. The segment ends with the child near center-frame and the vehicle dangerously close, before any contact.",
+      "description": "The child is now clearly in the vehicle's direct path, walking across the lane, the red shirt vivid against the wet asphalt. The vehicle continues without any braking or steering, rapidly closing the remaining distance. The segment ends with the child near center-frame and the vehicle dangerously close, before any contact. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Child becomes prominently visible in the lane; tension peaks as distance shrinks rapidly; no vehicle response (no brake lights, no deceleration pitch). The video cuts before any impact.",
-      "camera": "Steady forward dashcam motion at unchanged speed; the child fills an increasingly larger portion of the center frame."
+      "camera": "Steady forward dashcam motion at unchanged speed; the child fills an increasingly larger portion of the center frame; forward motion continues at constant speed with no deceleration"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00, the ego vehicle moves steadily down a wet residential street in the early evening under light rain; houses, parked cars and a speed limit sign are visible, and a tiny figure stands on the right sidewalk far ahead. By 0:01, the vehicle passes the speed limit sign, and the small child—in a bright red shirt—steps off the wet curb and begins walking into the street from right to left. At 0:02, the child is partway into the lane, their short stature and the dim wet light keeping them barely above the hood line, and the vehicle shows no sign of slowing. At 0:03, the child is fully in the lane, walking steadily, and the vehicle continues at the same speed, the gap narrowing rapidly. By 0:04, the child is near the center of the lane, the red shirt vivid against the wet asphalt, and the vehicle is dangerously close with no deceleration. At 0:05, the video ends with the child still in the path and the vehicle mere meters away, before any contact.",
+  "temporal_caption": "At 0:00, the ego vehicle moves steadily down a wet residential street in the early evening under light rain; houses, parked cars and a speed limit sign are visible, and a tiny figure stands on the right sidewalk far ahead. By 0:01, the vehicle passes the speed limit sign, and the small child—in a bright red shirt—steps off the wet curb and begins walking into the street from right to left. At 0:02, the child is partway into the lane, their short stature and the dim wet light keeping them barely above the hood line, and the vehicle shows no sign of slowing. At 0:03, the child is fully in the lane, walking steadily, and the vehicle continues at the same speed, the gap narrowing rapidly. By 0:04, the child is near the center of the lane, the red shirt vivid against the wet asphalt, and the vehicle is dangerously close with no deceleration. At 0:05, the video ends with the child still in the path and the vehicle mere meters away, before any contact. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
   "audio_description": "Low-frequency road noise and wet tire hiss on rain-soaked asphalt with the light patter of rain. Faint evening-neighborhood ambience—distant traffic, a dog barking. No engine revving changes, no brake squeal, no horn—reinforcing the absence of any driver or system response. No music. The wet quiet contrasts disturbingly with the closing distance.",
   "resolution": {
     "H": 480,
@@ -131,5 +131,9 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-08-21T12:21:26"
+  }
 }

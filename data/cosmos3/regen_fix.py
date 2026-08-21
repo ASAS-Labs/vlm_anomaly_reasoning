@@ -49,12 +49,23 @@ GEN_VIDS = REPO / "data" / "datasets" / "generated_vids"
 CANDIDATES = REPO / "data" / "datasets" / "regen_candidates"
 SUPERSEDED = REPO / "data" / "datasets" / "_superseded"
 TARGETS = REPO / "logs" / "regen_targets.json"
+SUBSET_JSON = REPO / "logs" / "vlm_agreement_subset.json"
 EXPECTATIONS = HERE / "id_expectations.json"
 FLOW_ALL = REPO / "logs" / "id_flow_verdicts_all315.json"
 FLOW_120 = REPO / "logs" / "id_flow_verdicts.json"
 REGEN_LIST = REPO / "logs" / "id_regeneration_list.json"
 MANIFEST = CANDIDATES / "manifest.json"
 HF_REPO, HF_REV = "ASASLab/av_semantic_anomalies", "main"
+
+
+def set_tag(tag: str | None):
+    """Give a sweep its own targets/candidates/manifest (e.g. --tag s2)."""
+    global CANDIDATES, TARGETS, MANIFEST, TAG
+    TAG = tag
+    if tag:
+        CANDIDATES = REPO / "data" / "datasets" / f"regen_candidates_{tag}"
+        TARGETS = REPO / "logs" / f"regen_targets_{tag}.json"
+        MANIFEST = CANDIDATES / "manifest.json"
 
 # Generation settings: identical to generate_videos_vllm.py (the dataset's).
 NUM_STEPS, GUIDANCE, SHIFT = 35, 6.0, 10.0
@@ -111,6 +122,33 @@ def cmd_targets(args):
     flow = json.loads(FLOW_ALL.read_text())
     neg_rej, pos_rej, invalid_rel = human_reject_sets()
     rows = {}
+    if args.id_disagree:
+        # Sweep 2: clips the agreement builder excluded because the fixed-ID
+        # trajectory contradicts the prompt class (generation-side defects the
+        # flow probe cannot see, e.g. maintain clips that decelerate).
+        d = json.loads(SUBSET_JSON.read_text())
+        srows = d["clips"] if isinstance(d, dict) and "clips" in d else d
+        for r in (srows.values() if isinstance(srows, dict) else srows):
+            if r.get("status") != "excluded" or not r.get("reasons"):
+                continue
+            if not r["reasons"][0].startswith("id_disagrees"):
+                continue
+            rel = r["rel_path"]
+            rows[rel] = {"rel_path": rel, "scenario": scenario_of(rel), "class": r["class"],
+                         "steer": bool(exp[rel].get("steer")),
+                         "tail_flow": flow.get(rel, {}).get("tail_flow"),
+                         "id_reason": r["reasons"][0], "source": "id_disagree"}
+        for rel, r in rows.items():
+            name = rel.split("/")[-1]
+            r["human_flagged"] = (name in (neg_rej if "negative" in rel else pos_rej)
+                                  or rel in invalid_rel)
+            r["geometry"] = ffprobe_geometry(GEN_VIDS / rel)
+        ordered = sorted(rows.values(), key=lambda r: (r["class"], r["rel_path"]))
+        TARGETS.write_text(json.dumps(ordered, indent=1))
+        from collections import Counter
+        print(f"{len(ordered)} ID-disagreement targets -> {TARGETS}")
+        print("by class:", dict(Counter(r["class"] for r in ordered)))
+        return
     for rel, e in exp.items():
         cls = e.get("class")
         fv = flow.get(rel)
@@ -249,6 +287,26 @@ _NO_BRAKE = (" The vehicle never brakes or slows at any point: its speed is cons
              "end of the clip.")
 
 
+_PULL_AWAY = (" The vehicle, stationary at first, then pulls away and keeps accelerating "
+              "smoothly through the final frame; once moving it does not slow or stop "
+              "again before the clip ends.")
+
+
+def accelerate_reinforce(prompt: dict) -> dict:
+    """Start-from-stop scenarios whose clips never really get going: state the
+    pull-away and the sustained motion explicitly in every motion field."""
+    p = copy.deepcopy(prompt)
+    for a in p["actions"]:
+        a["description"] = a["description"].rstrip(".") + "." + _PULL_AWAY
+    for sg in p["segments"]:
+        sg["description"] = sg["description"].rstrip(".") + "." + _PULL_AWAY
+    p["cinematography"]["camera_motion"] = (
+        p["cinematography"]["camera_motion"].rstrip(".") + "; after pulling away the "
+        "forward motion keeps building and never slows before the final frame")
+    p["temporal_caption"] = p["temporal_caption"].rstrip(".") + "." + _PULL_AWAY
+    return p
+
+
 def maintain_reinforce(prompt: dict) -> dict:
     """For maintain-class prompts the generator still brakes for objects in the
     lane; state the no-braking constraint explicitly in every motion field."""
@@ -272,12 +330,13 @@ def cmd_prompts(args):
     for t in targets:
         jpath = PROMPTS / t["rel_path"].replace(".mp4", ".json")
         before = json.loads(jpath.read_text())
-        if t["class"] == "maintain":
+        if t["class"] in ("maintain", "accelerate"):
             if before.get("_regen_fix"):
                 changes.append({"rel_path": t["rel_path"], "action": "already_fixed"})
                 continue
-            after = maintain_reinforce(before)
-            after["_regen_fix"] = {"maintain_reinforce": True,
+            fn = maintain_reinforce if t["class"] == "maintain" else accelerate_reinforce
+            after = fn(before)
+            after["_regen_fix"] = {f"{t['class']}_reinforce": True,
                                    "ts": datetime.now().isoformat(timespec="seconds")}
             if not args.dry_run:
                 jpath.write_text(json.dumps(after, indent=2, ensure_ascii=False) + "\n")
@@ -370,9 +429,13 @@ def cmd_generate(args):
 
 
 # ------------------------------------------------------------ stage/idcheck --
+TAG = None
+
+
 def _pass_dirs(k):
-    root = REPO / "data" / "datasets" / f"regen_pass{k}"
-    return root, root.parent / f"regen_pass{k}_10fps"
+    base = f"regen_{TAG}_pass{k}" if TAG else f"regen_pass{k}"
+    root = REPO / "data" / "datasets" / base
+    return root, root.parent / f"{base}_10fps"
 
 
 def _next_candidate(rec):
@@ -419,9 +482,10 @@ def cmd_stage(args):
     (root10 / "resample_manifest.json").write_text(json.dumps(
         {"fps": 10, "src": str(root), "clips": clips}, indent=1))
     print(f"staged {len(clips)} candidate(s) in {root10}")
+    base = f"regen_{TAG}_pass{args.pass_no}" if TAG else f"regen_pass{args.pass_no}"
     print("next:\n  python data/cosmos3/run_inverse_dynamics.py "
           f"--videos-root {root10} --manifest {root10}/resample_manifest.json "
-          f"--raw-out outputs/regen_pass{args.pass_no}_raw.jsonl")
+          f"--raw-out outputs/{base}_raw.jsonl")
 
 
 def cmd_idcheck(args):
@@ -538,8 +602,13 @@ def cmd_install(args):
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--tag", default=None,
+                   help="sweep tag: separate targets/candidates/manifest (e.g. s2)")
     sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("targets")
+    st = sub.add_parser("targets")
+    st.add_argument("--id-disagree", action="store_true",
+                    help="targets = agreement-subset exclusions whose first reason is "
+                         "id_disagrees (sweep 2)")
     sp = sub.add_parser("prompts")
     sp.add_argument("--dry-run", action="store_true")
     sg = sub.add_parser("generate")
@@ -556,8 +625,10 @@ def main():
     sn.add_argument("--dry-run", action="store_true")
     sn.add_argument("--no-upload", action="store_true")
     args = p.parse_args()
+    set_tag(args.tag)
     if args.cmd == "idcheck" and args.raw is None:
-        args.raw = str(REPO / "outputs" / f"regen_pass{args.pass_no}_raw.jsonl")
+        base = f"regen_{args.tag}_pass{args.pass_no}" if args.tag else f"regen_pass{args.pass_no}"
+        args.raw = str(REPO / "outputs" / f"{base}_raw.jsonl")
     {"targets": cmd_targets, "prompts": cmd_prompts, "generate": cmd_generate,
      "stage": cmd_stage, "idcheck": cmd_idcheck, "install": cmd_install}[args.cmd](args)
 

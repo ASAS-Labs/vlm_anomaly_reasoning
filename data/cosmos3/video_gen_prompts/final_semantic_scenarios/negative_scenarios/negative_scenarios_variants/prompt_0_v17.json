@@ -55,7 +55,7 @@
     "patterns": "Repeating streetlight pools and lane markings receding along the dark avenue"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking shot from ego vehicle perspective, decelerating to static",
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
     "framing": "Wide shot",
     "camera_angle": "Eye-level, driver's first-person viewpoint",
     "depth_of_field": "Deep, darker beyond the streetlight pools",
@@ -67,16 +67,16 @@
   "context": "Automotive perception / advertising scenario demonstrating an ego vehicle responding to a stop sign displayed on an overhead billboard",
   "actions": [
     {
-      "time": "0:00-0:02",
+      "time": "0:00-0:01.5",
       "description": "The ego vehicle travels at steady speed along the sodium-lit night avenue, the illuminated overhead billboard glowing above the plaza edge ahead."
     },
     {
-      "time": "0:02-0:06",
-      "description": "The billboard grows and its lit face resolves; the bank advertisement on the left and the prominent red STOP graphic on the right become clearly legible in the glow as the vehicle brakes and decelerates over a long, smooth stop, coming to a complete halt directly before the billboard by the end of this segment."
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
     },
     {
-      "time": "0:06-0:08",
-      "description": "The vehicle remains fully stopped beneath the glowing billboard under the sodium lights for the final two seconds."
+      "time": "0:03.5-0:05",
+      "description": "The vehicle remains fully stopped beneath the glowing billboard under the sodium lights for the final 1.5 seconds; the vehicle is parked and perfectly stationary and the camera does not move at all."
     }
   ],
   "text_and_signage_elements": [
@@ -98,28 +98,28 @@
   "segments": [
     {
       "segment_index": 0,
-      "time_range": "0:00-0:02",
+      "time_range": "0:00-0:01.5",
       "description": "Ego vehicle cruises on the sodium-lit night avenue with the lit billboard glowing small above the plaza edge ahead.",
       "key_changes": "Billboard begins to grow in size; steady forward motion",
       "camera": "Forward tracking at constant speed"
     },
     {
       "segment_index": 1,
-      "time_range": "0:02-0:06",
-      "description": "Billboard becomes large and legible in its glow; bank ad on left and STOP on right clearly visible as the vehicle brakes and decelerates over a long, smooth stop, reaching a full stop before the billboard by 0:06.",
-      "key_changes": "Progressive deceleration over four seconds; vehicle slows continuously and reaches a full stop by 0:06; billboard graphics become sharp",
-      "camera": "Forward tracking decelerating steadily to static"
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
     },
     {
       "segment_index": 2,
-      "time_range": "0:06-0:08",
-      "description": "Vehicle remains fully stationary beneath the glowing billboard under the sodium lights for the final two seconds.",
-      "key_changes": "No motion; scene is held static",
-      "camera": "Static, vehicle fully stopped"
+      "time_range": "0:03.5-0:05",
+      "description": "Vehicle remains fully stationary beneath the glowing billboard under the sodium lights for the final 1.5 seconds. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At second 0 the ego car drives forward along a wide urban avenue at night under clear skies, warm sodium streetlights pooling on the dry asphalt past a dark plaza and the illuminated overhead billboard glowing small ahead. By second 2 the billboard grows and its lit layout resolves. Between seconds 2 and 6 the bank advertisement on the left and the prominent red STOP graphic on the right become fully legible in the glow while the car brakes and decelerates over a long, smooth stop, coming to a complete halt directly before the billboard by second 6. From second 6 onward the vehicle remains fully stopped through seconds 7 and 8 under the sodium lights.",
+  "temporal_caption": "At 0:00, the ego vehicle travels at steady speed along the sodium-lit night avenue, the illuminated overhead billboard glowing above the plaza edge ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
   "audio_description": "Steady tire roll on dry asphalt and faint night-city hum dominate at speed, with distant traffic and quiet. The engine note lowers and brakes engage with a soft whir during deceleration. In the final segment the audio settles to a quiet idle in the calm night air. No speech or music.",
   "resolution": {
     "H": 720,
@@ -127,5 +127,19 @@
   },
   "aspect_ratio": "16,9",
   "duration": "8s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-08-21T12:21:26",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:06",
+      "0:06-0:08"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
 }

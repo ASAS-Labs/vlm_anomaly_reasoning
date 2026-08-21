@@ -55,7 +55,7 @@
     "patterns": "Rhythmic streetlight pools alternating with dark gaps, rows of parked cars"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth; the vehicle never brakes or slows, holding a constant speed through the final frame",
     "framing": "Wide shot capturing the road ahead",
     "camera_angle": "Eye-level dashboard perspective",
     "depth_of_field": "Deep, darkness swallowing the far background between lamps",
@@ -68,15 +68,15 @@
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The ego vehicle drives forward steadily along the dark suburban street; two stray polythene bags appear ahead, glowing as they pass through a streetlight pool while fluttering."
+      "description": "The ego vehicle drives forward steadily along the dark suburban street; two stray polythene bags appear ahead, glowing as they pass through a streetlight pool while fluttering. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:02-0:03",
-      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the dry road, brightening and dimming between lamps, as the gap closes."
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the dry road, brightening and dimming between lamps, as the gap closes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside into the dark."
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside into the dark. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     }
   ],
   "text_and_signage_elements": [],
@@ -84,27 +84,27 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:02",
-      "description": "Ego vehicle drives forward on the dark suburban street under scattered streetlights; two polythene bags become visible ahead in a lamp pool, tossed by the cool wind.",
+      "description": "Ego vehicle drives forward on the dark suburban street under scattered streetlights; two polythene bags become visible ahead in a lamp pool, tossed by the cool wind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags appear in the central foreground, glowing under a streetlight, and begin to flutter.",
-      "camera": "Smooth forward tracking from dashboard view."
+      "camera": "Smooth forward tracking from dashboard view; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 1,
       "time_range": "0:02-0:03",
-      "description": "The vehicle holds speed and lane as the bags tumble across the dry road, brightening and dimming between lamps.",
+      "description": "The vehicle holds speed and lane as the bags tumble across the dry road, brightening and dimming between lamps. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags shift and lift, catching and losing the streetlight glow.",
-      "camera": "Continuous forward tracking, steady."
+      "camera": "Continuous forward tracking, steady; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside into the dark.",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside into the dark. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags pass out of central frame; the dark road ahead stays clear.",
-      "camera": "Steady forward tracking, unchanged."
+      "camera": "Steady forward tracking, unchanged; forward motion continues at constant speed with no deceleration"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a quiet suburban residential street at night, cool streetlight pools spaced along the dark asphalt under a clear sky. Within the first two seconds, two translucent polythene bags come into view in the central foreground, glowing softly as they pass through a lamp pool while lifting and fluttering. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the dry road, brightening and dimming between the lamps. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside into the dark, the road ahead remaining clear between the streetlights.",
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a quiet suburban residential street at night, cool streetlight pools spaced along the dark asphalt under a clear sky. Within the first two seconds, two translucent polythene bags come into view in the central foreground, glowing softly as they pass through a lamp pool while lifting and fluttering. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the dry road, brightening and dimming between the lamps. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside into the dark, the road ahead remaining clear between the streetlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
   "audio_description": "Ambient quiet suburban night sounds: the low hum of the engine and tires on dry asphalt, a cool breeze, faint distant traffic and crickets, otherwise stillness. No speech or music; the soft rustle of plastic bags in the wind.",
   "resolution": {
     "H": 720,
@@ -112,5 +112,9 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-08-21T12:21:26"
+  }
 }

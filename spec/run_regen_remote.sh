@@ -11,6 +11,9 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PORT="${PORT:-8000}"
 PASS="${PASS:-1}"
+TAG="${TAG:-}"
+TAGOPT=""; [[ -n "${TAG}" ]] && TAGOPT="--tag ${TAG}"
+BASE="regen${TAG:+_${TAG}}_pass${PASS}"
 SKIP_GEN="${SKIP_GEN:-0}"
 LOG_DIR="${REPO_ROOT}/logs"
 VENV="${REPO_ROOT}/.venv-regen"
@@ -40,9 +43,9 @@ if [[ "${SKIP_GEN}" != "1" ]]; then
   done
   echo "--- generate (best-of-N, flow-probe gate) ---"
   if [[ "${PASS}" == "1" ]]; then
-    "${PY}" regen_fix.py generate --server-url "http://127.0.0.1:${PORT}"
+    "${PY}" regen_fix.py ${TAGOPT} generate --server-url "http://127.0.0.1:${PORT}"
   else
-    "${PY}" regen_fix.py generate --server-url "http://127.0.0.1:${PORT}" --more --max-seeds 8
+    "${PY}" regen_fix.py ${TAGOPT} generate --server-url "http://127.0.0.1:${PORT}" --more --max-seeds 8
   fi
   kill -TERM -"${SERVER_PID}" 2>/dev/null || true
   trap - EXIT
@@ -53,17 +56,17 @@ if [[ "${SKIP_GEN}" != "1" ]]; then
 fi
 
 echo "--- ID cross-check pass ${PASS} ---"
-"${PY}" regen_fix.py stage --pass "${PASS}"
+"${PY}" regen_fix.py ${TAGOPT} stage --pass "${PASS}"
 if [[ ! -x "${REPO_ROOT}/packages/cosmos-framework/.venv/bin/python" ]]; then
   (cd "${REPO_ROOT}" && bash setup_inverse_dynamics.sh)
 fi
-ROOT10="${REPO_ROOT}/data/datasets/regen_pass${PASS}_10fps"
+ROOT10="${REPO_ROOT}/data/datasets/${BASE}_10fps"
 # Per-pass prediction cache: the ID runner keys outputs by clip rel-path, and
 # every pass stages its candidate at the original rel-path, so a shared cache
 # would silently reuse pass-1 poses for pass-2 candidates.
-export COSMOS3_ID_WORK_DIR="${REPO_ROOT}/outputs/inverse_dynamics_pass${PASS}"
+export COSMOS3_ID_WORK_DIR="${REPO_ROOT}/outputs/inverse_dynamics_${BASE}"
 python3 run_inverse_dynamics.py --videos-root "${ROOT10}" \
   --manifest "${ROOT10}/resample_manifest.json" \
-  --raw-out "${REPO_ROOT}/outputs/regen_pass${PASS}_raw.jsonl"
-"${PY}" regen_fix.py idcheck --pass "${PASS}"
+  --raw-out "${REPO_ROOT}/outputs/${BASE}_raw.jsonl"
+"${PY}" regen_fix.py ${TAGOPT} idcheck --pass "${PASS}"
 echo "=== regen pass ${PASS} done ==="

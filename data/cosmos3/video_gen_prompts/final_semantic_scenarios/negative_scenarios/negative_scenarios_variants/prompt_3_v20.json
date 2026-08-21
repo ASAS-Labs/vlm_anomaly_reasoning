@@ -75,7 +75,7 @@
     "patterns": "Repeating crosswalk stripes, orange cones and barrier lines"
   },
   "cinematography": {
-    "camera_motion": "Static while stopped, then a slow forward dolly as the vehicle begins to move",
+    "camera_motion": "Static while stopped, then a slow forward dolly as the vehicle begins to move; after pulling away the forward motion keeps building and never slows before the final frame",
     "framing": "Wide shot from the driver's seat",
     "camera_angle": "Eye-level ego perspective",
     "depth_of_field": "Deep",
@@ -88,11 +88,11 @@
   "actions": [
     {
       "time": "0:00-0:03",
-      "description": "The vehicle remains stationary at the steady red light (top lamp only; the green lamp stays off the whole time) while pedestrians carrying balloons cross the coned work-zone crossing on the right, passing directly in front of the temporary traffic signal pole and clearing the crosswalk by 0:03."
+      "description": "The vehicle remains stationary at the steady red light (top lamp only; the green lamp stays off the whole time) while pedestrians carrying balloons cross the coned work-zone crossing on the right, passing directly in front of the temporary traffic signal pole and clearing the crosswalk by 0:03. The vehicle, stationary at first, then pulls away and keeps accelerating smoothly through the final frame; once moving it does not slow or stop again before the clip ends."
     },
     {
       "time": "0:03-0:05",
-      "description": "With the crosswalk now clear of pedestrians, the single bright green balloon drifts on the gentle breeze until it overlaps the lit red lamp (the green signal lamp still off), and the vehicle erroneously begins to move forward through the empty crosswalk on the patched damp road."
+      "description": "With the crosswalk now clear of pedestrians, the single bright green balloon drifts on the gentle breeze until it overlaps the lit red lamp (the green signal lamp still off), and the vehicle erroneously begins to move forward through the empty crosswalk on the patched damp road. The vehicle, stationary at first, then pulls away and keeps accelerating smoothly through the final frame; once moving it does not slow or stop again before the clip ends."
     }
   ],
   "text_and_signage_elements": [
@@ -108,20 +108,20 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:03",
-      "description": "The ego vehicle is stopped at the steady red traffic signal on the right (only the top red lamp lit; the green lamp dark) at the construction-zone crossing while a group of pedestrians carrying a single bright green balloon and assorted balloons crosses on the right amid the cones, passing directly in front of the signal pole and clearing the crosswalk by the end of the segment.",
+      "description": "The ego vehicle is stopped at the steady red traffic signal on the right (only the top red lamp lit; the green lamp dark) at the construction-zone crossing while a group of pedestrians carrying a single bright green balloon and assorted balloons crosses on the right amid the cones, passing directly in front of the signal pole and clearing the crosswalk by the end of the segment. The vehicle, stationary at first, then pulls away and keeps accelerating smoothly through the final frame; once moving it does not slow or stop again before the clip ends.",
       "key_changes": "Pedestrians cross in front of the signal pole and clear the crosswalk by 0:03; the green balloon drifts toward the signal head on the right.",
       "camera": "Static driver's-eye view, no movement"
     },
     {
       "segment_index": 1,
       "time_range": "0:03-0:05",
-      "description": "With the pedestrians clear, the single bright green balloon drifts up and across until it overlaps the glowing red lamp (the green signal lamp remaining off the entire time); at that cue the vehicle erroneously starts to roll forward through the now-empty crosswalk on the patched damp road amid the cones, the signal still showing only red.",
+      "description": "With the pedestrians clear, the single bright green balloon drifts up and across until it overlaps the glowing red lamp (the green signal lamp remaining off the entire time); at that cue the vehicle erroneously starts to roll forward through the now-empty crosswalk on the patched damp road amid the cones, the signal still showing only red. The vehicle, stationary at first, then pulls away and keeps accelerating smoothly through the final frame; once moving it does not slow or stop again before the clip ends.",
       "key_changes": "Balloon aligns with the lit red lamp; the scene begins to move forward as the car accelerates gently through the cleared crosswalk. The signal still shows only red.",
       "camera": "Slow forward dolly as the vehicle begins moving"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the camera shows the driver's view of a stopped vehicle at a temporary crossing in a road-construction zone under a flat overcast damp sky, orange cones and barriers narrowing the road and the traffic signal on the right glowing only its top red lamp (amber and green dark), pedestrians stepping onto the crosswalk ahead and crossing on the right in front of the signal pole while carrying colorful balloons. From 0:01 to 0:02 they continue left to right past the pole, a single bright green balloon bobbing above them on the gentle breeze. By 0:03 the pedestrians have cleared the crosswalk, and the green balloon drifts right until it overlaps the lit red lamp; throughout, the green signal lamp never lights and the signal never shows red and green together. From 0:03 onward, cued by this overlap, the vehicle erroneously begins to roll forward through the empty crosswalk on the patched damp road through 0:05, the signal still showing only red.",
+  "temporal_caption": "At 0:00 the camera shows the driver's view of a stopped vehicle at a temporary crossing in a road-construction zone under a flat overcast damp sky, orange cones and barriers narrowing the road and the traffic signal on the right glowing only its top red lamp (amber and green dark), pedestrians stepping onto the crosswalk ahead and crossing on the right in front of the signal pole while carrying colorful balloons. From 0:01 to 0:02 they continue left to right past the pole, a single bright green balloon bobbing above them on the gentle breeze. By 0:03 the pedestrians have cleared the crosswalk, and the green balloon drifts right until it overlaps the lit red lamp; throughout, the green signal lamp never lights and the signal never shows red and green together. From 0:03 onward, cued by this overlap, the vehicle erroneously begins to roll forward through the empty crosswalk on the patched damp road through 0:05, the signal still showing only red. The vehicle, stationary at first, then pulls away and keeps accelerating smoothly through the final frame; once moving it does not slow or stop again before the clip ends.",
   "audio_description": "Ambient workaday construction-zone sounds: distant machinery beeping, patched-road ambience, the muffled idle of the stopped engine, and faint footsteps of crossing pedestrians. As the vehicle starts moving, the engine note rises slightly and damp tire roll fades in. No music or speech.",
   "resolution": {
     "H": 720,
@@ -129,5 +129,9 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "accelerate_reinforce": true,
+    "ts": "2026-08-21T12:21:26"
+  }
 }
