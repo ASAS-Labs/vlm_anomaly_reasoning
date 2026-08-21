@@ -58,6 +58,10 @@ if [[ ! -x "${REPO_ROOT}/packages/cosmos-framework/.venv/bin/python" ]]; then
   (cd "${REPO_ROOT}" && bash setup_inverse_dynamics.sh)
 fi
 ROOT10="${REPO_ROOT}/data/datasets/regen_pass${PASS}_10fps"
+# Per-pass prediction cache: the ID runner keys outputs by clip rel-path, and
+# every pass stages its candidate at the original rel-path, so a shared cache
+# would silently reuse pass-1 poses for pass-2 candidates.
+export COSMOS3_ID_WORK_DIR="${REPO_ROOT}/outputs/inverse_dynamics_pass${PASS}"
 python3 run_inverse_dynamics.py --videos-root "${ROOT10}" \
   --manifest "${ROOT10}/resample_manifest.json" \
   --raw-out "${REPO_ROOT}/outputs/regen_pass${PASS}_raw.jsonl"
