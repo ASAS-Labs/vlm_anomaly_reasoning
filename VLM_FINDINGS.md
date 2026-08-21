@@ -826,3 +826,64 @@ now concentrate in neg_3/neg_4 singles at 16k).
 Working config going forward: **Qwen3.8-27B, L2 prompt, think mode,
 max_tokens 16384, card think sampling** (t=1.0/top_p 0.95/top_k 20). Lab cost
 ≈ $21 across 3 screens + 2 repro sessions.
+
+## Part 13 — Generation-fidelity repair: closed-loop regeneration lands 98%
+
+The Part 5.4 recipe, executed (`data/cosmos3/regen_fix.py`, driver
+`spec/run_regen_remote.sh`; one H200 session ≈ 2.5 h ≈ $9 incl. two passes).
+
+### 13.1 Targets: a full re-sweep, not just the 15-clip list
+
+Joining the frozen prompt expectations with the 315-clip flow verdicts gave
+**36 contradicting clips** (the historical 15 are a strict subset): 33
+stop-class clips that never stop (neg_4 7, neg_5 8, pos_9 14, neg_2 1, pos_4/5/8
+a few) and 3 maintain-class clips that stop. All are 832×480/121-frame variants;
+11 are human-flagged. `logs/regen_targets.json`.
+
+### 13.2 The fix is in the prompt, applied surgically
+
+The 33 stop prompts carried the same impossible beat — a 1 s stop from cruise —
+in every scenery variant (the variation skill preserves the timeline verbatim).
+`feasible_timing()` rewrites only that beat: 2 s smooth braking ending by 0:03
+(or 0:03.5), a locked-off stationary hold, matching camera/caption text; each
+variant's own scenery wording is kept. Maintain-class prompts get an explicit
+no-braking constraint (`maintain_reinforce`). Prompts of record are updated in
+place (`video_gen_prompts/...`, `_regen_fix` stamp; git archives the old text).
+
+### 13.3 Best-of-N with a two-instrument gate
+
+Per target, up to 4 fresh seeds (8 in pass 2); accept the first clip whose flow
+probe matches the class **and** whose fixed-ID trajectory agrees with the frozen
+expectation (`check_match`). Because low-texture/slow-cruise clips read as
+"unmeasurable"/"ambiguous" to the probe even when stopped, the ID instrument
+adjudicates those candidates (lowest tail-flow first). Two lessons from the run:
+the ID runner caches predictions by clip rel-path, so per-pass caches are
+mandatory (`COSMOS3_ID_WORK_DIR`; a shared cache silently re-scored pass-1
+poses); and generation is stochastic enough that the same feasible prompt yields
+a near-static clip on one seed and a textbook stop on the next — the gate, not
+the prompt alone, is what delivers fidelity.
+
+Outcome: 134 clips generated; **32/36 targets repaired** (28 in pass 1, 4 in
+pass 2). Unresolved after 8 seeds: neg_4_v08 (ID 34 mph on a blurred highway
+clip), pos_9_v15 (final 2.0 mph, on the threshold), pos_4_v12 / pos_5_v12
+(maintain class; the generator brakes for objects in the lane regardless).
+Their originals stay in place and remain excluded by the admission filters.
+
+### 13.4 Installed and published
+
+32 mp4s + v1 trajectories (5 Hz + 10 Hz) replaced in `data/datasets/generated_vids`
+(originals under `data/datasets/_superseded/`) and pushed to
+`ASASLab/av_semantic_anomalies@main` (96 files, one commit); raw poses appended
+to `outputs/id_raw.jsonl`; flow/fidelity files refreshed.
+
+- **Generation fidelity (120 sample): PROMPT↔VIDEO 71.7% → 98.0%**; VIDEO↔ID 98.0%;
+  regeneration list 15 → 1.
+- **Agreement subset: 72 → 95 admitted** (54 anomaly / 41 normal);
+  `video_contradicts_prompt` exclusions 36 → 2; remaining exclusions are
+  human-rejected (50) and ID disagreements (21); 147 still pending the full ID
+  pass (next open task). The 72-clip list is archived as
+  `logs/vlm_agreement_subset_admitted_v1_72.txt`; `vlm_agreement_subset_admitted.txt`
+  now holds 95 and the 720p/early trees were rebuilt for it. Every result in
+  Parts 6-12 was measured on the 72 list.
+- Caveat: the HF dataset now mixes v1-style trajectories (these 32 clips) with
+  the published v0 files elsewhere; the full-dataset ID pass will harmonise it.

@@ -1,18 +1,18 @@
 {
  "summary": {
   "video_id": [
-   52,
-   53
+   48,
+   49
   ],
   "prompt_video": [
-   38,
-   53
+   48,
+   49
   ],
   "prompt_id": [
    76,
    120
   ],
-  "ambiguous": 67,
+  "ambiguous": 71,
   "n": 120
  },
  "rows": [
@@ -296,13 +296,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v18.mp4",
    "scenario": "neg_prompt_2",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 15.8227,
-   "tail_flow": 0.494,
-   "head_flow": 0.648
+   "id_v_final": 0.453,
+   "tail_flow": 0.046,
+   "head_flow": 0.252
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v19.mp4",
@@ -584,13 +584,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v02.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 5.1822,
-   "tail_flow": 0.619,
-   "head_flow": 0.048
+   "id_v_final": 0.5279,
+   "tail_flow": 0.106,
+   "head_flow": 0.572
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v03.mp4",
@@ -632,13 +632,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
-   "video_id": true,
+   "video_end": "ambiguous",
+   "prompt_video": null,
+   "video_id": null,
    "prompt_id": false,
-   "id_v_final": 3.9004,
-   "tail_flow": 0.555,
-   "head_flow": 0.871
+   "id_v_final": 0.7101,
+   "tail_flow": 0.197,
+   "head_flow": 0.527
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v07.mp4",
@@ -692,13 +692,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v11.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 21.3277,
-   "tail_flow": 0.679,
-   "head_flow": 0.463
+   "id_v_final": 0.2943,
+   "tail_flow": 0.119,
+   "head_flow": 0.2
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v12.mp4",
@@ -752,13 +752,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
-   "video_id": true,
+   "video_end": "unmeasurable",
+   "prompt_video": null,
+   "video_id": null,
    "prompt_id": false,
-   "id_v_final": 8.9274,
-   "tail_flow": 0.468,
-   "head_flow": 0.394
+   "id_v_final": 0.221,
+   "tail_flow": 0.019,
+   "head_flow": 0.083
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v17.mp4",
@@ -788,37 +788,37 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v19.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
-   "video_id": true,
+   "video_end": "ambiguous",
+   "prompt_video": null,
+   "video_id": null,
    "prompt_id": false,
-   "id_v_final": 15.4868,
-   "tail_flow": 0.663,
-   "head_flow": 0.311
+   "id_v_final": 1.3655,
+   "tail_flow": 0.181,
+   "head_flow": 0.397
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v20.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 6.4303,
-   "tail_flow": 0.602,
-   "head_flow": 0.476
+   "id_v_final": 0.0774,
+   "tail_flow": 0.052,
+   "head_flow": 0.314
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4",
    "scenario": "neg_prompt_5",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 5.632,
-   "tail_flow": 0.402,
-   "head_flow": 0.163
+   "id_v_final": 0.3107,
+   "tail_flow": 0.058,
+   "head_flow": 0.45
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v03.mp4",
@@ -836,25 +836,25 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4",
    "scenario": "neg_prompt_5",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 4.3424,
-   "tail_flow": 0.44,
-   "head_flow": 0.299
+   "id_v_final": 0.6242,
+   "tail_flow": 0.122,
+   "head_flow": 0.364
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v06.mp4",
    "scenario": "neg_prompt_5",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 5.7951,
-   "tail_flow": 1.444,
-   "head_flow": 0.528
+   "id_v_final": 1.3451,
+   "tail_flow": 0.074,
+   "head_flow": 0.181
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v09.mp4",
@@ -896,13 +896,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v20.mp4",
    "scenario": "neg_prompt_5",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 7.1321,
-   "tail_flow": 0.44,
-   "head_flow": 0.643
+   "id_v_final": 0.2609,
+   "tail_flow": 0.032,
+   "head_flow": 0.416
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v11.mp4",
@@ -1412,25 +1412,25 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v01.mp4",
    "scenario": "pos_prompt_9",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 4.023,
-   "tail_flow": 0.45,
-   "head_flow": 0.884
+   "id_v_final": 1.4739,
+   "tail_flow": 0.097,
+   "head_flow": 0.407
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v02.mp4",
    "scenario": "pos_prompt_9",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
+   "video_end": "stopped",
+   "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 13.7349,
-   "tail_flow": 0.427,
-   "head_flow": 0.081
+   "id_v_final": 0.4447,
+   "tail_flow": 0.035,
+   "head_flow": 0.45
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v04.mp4",
@@ -1448,13 +1448,13 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4",
    "scenario": "pos_prompt_9",
    "class": "stop",
-   "video_end": "moving",
-   "prompt_video": false,
-   "video_id": true,
+   "video_end": "unmeasurable",
+   "prompt_video": null,
+   "video_id": null,
    "prompt_id": false,
-   "id_v_final": 6.5837,
-   "tail_flow": 0.39,
-   "head_flow": 0.295
+   "id_v_final": 0.1979,
+   "tail_flow": 0.03,
+   "head_flow": 0.212
   }
  ]
 }

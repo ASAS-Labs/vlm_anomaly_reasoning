@@ -1,0 +1,87 @@
+--- ID cross-check pass 1 ---
+staged 33 candidate(s) in /root/vlm_anomaly_reasoning/data/datasets/regen_pass1_10fps
+next:
+  python data/cosmos3/run_inverse_dynamics.py --videos-root /root/vlm_anomaly_reasoning/data/datasets/regen_pass1_10fps --manifest /root/vlm_anomaly_reasoning/data/datasets/regen_pass1_10fps/resample_manifest.json --raw-out outputs/regen_pass1_raw.jsonl
+repo root:          /root/vlm_anomaly_reasoning
+framework:          /root/vlm_anomaly_reasoning/packages/cosmos-framework
+videos root:        /root/vlm_anomaly_reasoning/data/datasets/regen_pass1_10fps
+prompts root:       /root/vlm_anomaly_reasoning/data/cosmos3/video_gen_prompts
+work dir:           /root/vlm_anomaly_reasoning/outputs/inverse_dynamics
+write in-place txt: False    upload: False
+found 33 video(s)
+all predictions already present; skipping inference
+FLAG  final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v18.mp4: expected=stop init_v=15.2 start_v=14.5 end_v=5.0 max|heading|=3.4deg | expected a stop, end_v=5.0 final=3.5 mph :: "A male pedestrian is standing on the curb next to the road, facing the ego vehicle, and wearing a shirt that clearly shows a ‘Stop Sign.’ The ego vehicle decelerates to a full stop as it approaches the pedestrian."
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v02.mp4: expected=stop init_v=19.5 start_v=17.8 end_v=0.4 max|heading|=11.1deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4: expected=stop init_v=18.8 start_v=17.3 end_v=1.8 max|heading|=6.0deg
+FLAG  final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v08.mp4: expected=stop init_v=36.4 start_v=35.3 end_v=12.5 max|heading|=8.8deg | expected a stop, end_v=12.5 final=7.0 mph :: "The vehicle decelerates to a stop as though the balloons are obstacles."
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v11.mp4: expected=stop init_v=33.9 start_v=31.5 end_v=2.8 max|heading|=7.3deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4: expected=stop init_v=26.1 start_v=23.2 end_v=0.7 max|heading|=1.6deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v19.mp4: expected=stop init_v=22.7 start_v=21.2 end_v=2.5 max|heading|=8.8deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v20.mp4: expected=stop init_v=25.4 start_v=24.4 end_v=0.5 max|heading|=5.1deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4: expected=stop init_v=12.1 start_v=10.6 end_v=0.1 max|heading|=7.1deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4: expected=stop init_v=21.6 start_v=19.6 end_v=2.3 max|heading|=14.3deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v06.mp4: expected=stop init_v=19.3 start_v=18.0 end_v=2.3 max|heading|=8.0deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v07.mp4: expected=stop init_v=17.4 start_v=14.5 end_v=0.1 max|heading|=2.1deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v11.mp4: expected=stop init_v=14.1 start_v=12.4 end_v=0.1 max|heading|=1.1deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v14.mp4: expected=stop init_v=11.6 start_v=9.5 end_v=0.1 max|heading|=4.2deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v16.mp4: expected=stop init_v=23.1 start_v=20.1 end_v=0.1 max|heading|=4.8deg
+MATCH final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v20.mp4: expected=stop init_v=18.3 start_v=16.5 end_v=0.2 max|heading|=4.9deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v12.mp4: expected=stop init_v=10.8 start_v=8.9 end_v=0.2 max|heading|=3.3deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v16.mp4: expected=stop init_v=11.9 start_v=9.7 end_v=0.1 max|heading|=4.6deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v19.mp4: expected=stop init_v=15.7 start_v=13.7 end_v=0.2 max|heading|=10.1deg
+FLAG  final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v01.mp4: expected=stop init_v=16.6 start_v=15.8 end_v=4.2 max|heading|=6.7deg | expected a stop, end_v=4.2 final=2.2 mph :: "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped."
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v02.mp4: expected=stop init_v=24.4 start_v=23.7 end_v=1.9 max|heading|=9.0deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v03.mp4: expected=stop init_v=17.4 start_v=16.3 end_v=1.3 max|heading|=1.4deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v07.mp4: expected=stop init_v=15.5 start_v=14.0 end_v=2.1 max|heading|=7.6deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v08.mp4: expected=stop init_v=27.7 start_v=26.1 end_v=3.5 max|heading|=7.7deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v09.mp4: expected=stop init_v=16.4 start_v=15.5 end_v=1.2 max|heading|=4.9deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v10.mp4: expected=stop init_v=26.2 start_v=24.8 end_v=1.0 max|heading|=2.3deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v11.mp4: expected=stop init_v=17.3 start_v=16.2 end_v=0.6 max|heading|=6.1deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v13.mp4: expected=stop init_v=18.6 start_v=17.3 end_v=1.8 max|heading|=1.4deg
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v14.mp4: expected=stop init_v=20.8 start_v=20.0 end_v=2.4 max|heading|=7.5deg
+FLAG  final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v15.mp4: expected=stop init_v=31.5 start_v=30.1 end_v=6.3 max|heading|=1.8deg | expected a stop, end_v=6.3 final=2.4 mph :: "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped."
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v17.mp4: expected=stop init_v=15.2 start_v=15.2 end_v=0.5 max|heading|=4.8deg
+FLAG  final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v18.mp4: expected=stop init_v=32.5 start_v=31.7 end_v=17.1 max|heading|=2.8deg | expected a stop, end_v=17.1 final=10.4 mph :: "The vehicle correctly recognizes the wall and comes to a smooth, controlled stop before reaching it, then remains stopped."
+MATCH final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4: expected=stop init_v=22.6 start_v=21.1 end_v=0.6 max|heading|=7.5deg
+
+wrote raw poses/actions: /root/vlm_anomaly_reasoning/outputs/regen_pass1_raw.jsonl
+
+wrote summary: /root/vlm_anomaly_reasoning/outputs/inverse_dynamics/inverse_dynamics_flags.txt
+done. 5 flag(s). (upload disabled; pass --upload to publish)
+  prompt_2_v18.mp4 s9012: ID DISAGREES (['expected a stop, end_v=5.0 final=3.5 mph'])
+  prompt_4_v02.mp4 s9012: ID agrees ([])
+  prompt_4_v06.mp4 s3456: ID agrees ([])
+  prompt_4_v08.mp4 s3456: ID DISAGREES (['expected a stop, end_v=12.2 final=7.0 mph'])
+  prompt_4_v11.mp4 s5678: ID agrees ([])
+  prompt_4_v16.mp4 s9012: ID agrees ([])
+  prompt_4_v19.mp4 s3456: ID agrees ([])
+  prompt_4_v20.mp4 s5678: ID agrees ([])
+  prompt_5_v02.mp4 s9012: ID agrees ([])
+  prompt_5_v05.mp4 s5678: ID agrees ([])
+  prompt_5_v06.mp4 s5678: ID agrees ([])
+  prompt_5_v20.mp4 s5678: ID agrees ([])
+  prompt_9_v01.mp4 s5678: ID DISAGREES (['expected a stop, end_v=4.1 final=2.2 mph'])
+  prompt_9_v02.mp4 s9012: ID agrees ([])
+  prompt_9_v20.mp4 s7890: ID agrees ([])
+  prompt_5_v07.mp4 s3456: ID agrees ([])
+  prompt_5_v11.mp4 s7890: ID agrees ([])
+  prompt_5_v14.mp4 s9012: ID agrees ([])
+  prompt_5_v16.mp4 s5678: ID agrees ([])
+  prompt_8_v12.mp4 s9012: ID agrees ([])
+  prompt_8_v16.mp4 s9012: ID agrees ([])
+  prompt_8_v19.mp4 s9012: ID agrees ([])
+  prompt_9_v03.mp4 s3456: ID agrees ([])
+  prompt_9_v07.mp4 s9012: ID agrees ([])
+  prompt_9_v08.mp4 s7890: ID agrees ([])
+  prompt_9_v09.mp4 s3456: ID agrees ([])
+  prompt_9_v10.mp4 s7890: ID agrees ([])
+  prompt_9_v11.mp4 s9012: ID agrees ([])
+  prompt_9_v13.mp4 s3456: ID agrees ([])
+  prompt_9_v14.mp4 s3456: ID agrees ([])
+  prompt_9_v15.mp4 s5678: ID DISAGREES (['expected a stop, end_v=6.0 final=2.4 mph'])
+  prompt_9_v17.mp4 s3456: ID agrees ([])
+  prompt_9_v18.mp4 s3456: ID DISAGREES (['expected a stop, end_v=16.9 final=10.4 mph'])
+accepted 28, rejected 5; still unresolved: 8
+next: python regen_fix.py generate --more ... (more seeds), then stage --pass N+1
+=== regen pass 1 done ===
+REGEN_ID_EXIT=0

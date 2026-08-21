@@ -44,15 +44,22 @@ not ID, is the gap. Instruments: flow probe (`video_motion.py`),
 | C2 | physics-feasible timing | 2 × 3 | pos_9: {0.02, 0.17, 0.29} — 8/9 pairwise better |
 
 Same prompt + same seed ≠ same video (generation is stochastic) → best-of-N with
-flow-probe acceptance gate is the production recipe. Paused by decision;
-resume before dataset finalization.
+flow-probe acceptance gate is the production recipe.
+
+| arm | scope | gate | result |
+|---|---|---|---|
+| C3 | 36 sweep targets (33 stop / 3 maintain), feasible-timing + no-brake prompts | flow probe AND fixed-ID `check_match`, ≤4 seeds (8 in pass 2) | **32/36 repaired**; PROMPT↔VIDEO 71.7% → 98.0%; 96 files pushed to HF (Part 13) |
+
+Unresolved: neg_4_v08, pos_9_v15, pos_4_v12, pos_5_v12 (originals kept, excluded).
 
 ## D — Agreement subset construction — (no findings part; `build_agreement_subset.py`)
 
-72/315 admitted (44 anomaly / 28 normal): ID agrees with prompt AND video does
-not contradict AND not human-rejected. 147 pending fixed-ID (deferred GPU pass),
-96 excluded. List: `logs/vlm_agreement_subset_admitted.txt`. Majority baseline
-on subset: 0.611 (anomaly-majority).
+72/315 admitted (44 anomaly / 28 normal) at the time of families E-L: ID agrees
+with prompt AND video does not contradict AND not human-rejected. After the
+Part-13 regeneration: **95 admitted (54/41)**, 147 pending fixed-ID, 73 excluded.
+Lists: `logs/vlm_agreement_subset_admitted.txt` (95, current),
+`logs/vlm_agreement_subset_admitted_v1_72.txt` (the 72 every result in E-L used).
+Majority baseline: 0.611 (72) / 0.568 (95).
 
 ## E — Clean-subset VLM eval (72 clips, v1 trajectories) — Part 6
 
@@ -238,6 +245,6 @@ comparison ~70% → verdict.
   transfer across models).
 - Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
   finalize agreement subset.
-- Closed-loop regeneration (C2 recipe + flow-probe gate) for the 15-clip list.
+- Re-measure the champion (Qwen3.8 + L2 + think@16k) on the 95-clip subset.
 - SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).

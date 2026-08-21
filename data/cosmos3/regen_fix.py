@@ -500,7 +500,10 @@ def cmd_install(args):
             v = video_verdict(str(dst), fps=24.0)
             flow_all[rel] = {**flow_all.get(rel, {}), **v}
             if flow_120 is not None and rel in flow_120:
-                flow_120[rel] = {**flow_120[rel], **v}
+                # fidelity_report reads id_v_final from this file: refresh it
+                # from the new v1 trajectory too, not just the probe fields.
+                flow_120[rel] = {**flow_120[rel], **v,
+                                 "id_v_final": round(cand["seq5"][-1][0], 4)}
             # replace the raw ID record
             raw_recs = [r for r in raw_recs if r["rel_path"] != rel] + [cand["raw_record"]]
         for local, name in ((dst, dst.name), (stem_txt, stem_txt.name), (stem_10, stem_10.name)):
