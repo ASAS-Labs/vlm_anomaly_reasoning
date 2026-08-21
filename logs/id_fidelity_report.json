@@ -1,18 +1,18 @@
 {
  "summary": {
   "video_id": [
-   48,
-   49
+   54,
+   54
   ],
   "prompt_video": [
-   48,
-   49
+   53,
+   54
   ],
   "prompt_id": [
    76,
    120
   ],
-  "ambiguous": 71,
+  "ambiguous": 66,
   "n": 120
  },
  "rows": [
@@ -48,9 +48,9 @@
    "prompt_video": null,
    "video_id": null,
    "prompt_id": false,
-   "id_v_final": 6.7,
-   "tail_flow": 0.115,
-   "head_flow": 0.232
+   "id_v_final": 0.144,
+   "tail_flow": 0.015,
+   "head_flow": 0.083
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_5.mp4",
@@ -524,13 +524,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v17.mp4",
    "scenario": "neg_prompt_3",
    "class": "accelerate",
-   "video_end": "unmeasurable",
-   "prompt_video": null,
-   "video_id": null,
+   "video_end": "moving",
+   "prompt_video": true,
+   "video_id": true,
    "prompt_id": false,
-   "id_v_final": 0.3046,
-   "tail_flow": 0.019,
-   "head_flow": 0.029
+   "id_v_final": 7.8308,
+   "tail_flow": 0.417,
+   "head_flow": 0.022
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_3_v18.mp4",
@@ -600,9 +600,9 @@
    "prompt_video": null,
    "video_id": null,
    "prompt_id": false,
-   "id_v_final": 2.3787,
-   "tail_flow": 0.221,
-   "head_flow": 0.3
+   "id_v_final": 0.1774,
+   "tail_flow": 0.013,
+   "head_flow": 0.124
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v04.mp4",
@@ -612,21 +612,21 @@
    "prompt_video": null,
    "video_id": null,
    "prompt_id": false,
-   "id_v_final": 4.2395,
-   "tail_flow": 0.128,
-   "head_flow": 0.068
+   "id_v_final": 0.765,
+   "tail_flow": 0.011,
+   "head_flow": 0.021
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v05.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "ambiguous",
-   "prompt_video": null,
-   "video_id": null,
+   "video_end": "stopped",
+   "prompt_video": true,
+   "video_id": true,
    "prompt_id": false,
-   "id_v_final": 3.7866,
-   "tail_flow": 0.282,
-   "head_flow": 0.243
+   "id_v_final": 0.6562,
+   "tail_flow": 0.044,
+   "head_flow": 0.62
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4",
@@ -672,9 +672,9 @@
    "prompt_video": null,
    "video_id": null,
    "prompt_id": false,
-   "id_v_final": 4.2099,
-   "tail_flow": 0.124,
-   "head_flow": 0.201
+   "id_v_final": 0.0948,
+   "tail_flow": 0.009,
+   "head_flow": 0.019
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v10.mp4",
@@ -704,49 +704,49 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v12.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "ambiguous",
-   "prompt_video": null,
-   "video_id": null,
+   "video_end": "stopped",
+   "prompt_video": true,
+   "video_id": true,
    "prompt_id": false,
-   "id_v_final": 2.0334,
-   "tail_flow": 0.241,
-   "head_flow": 0.446
+   "id_v_final": 0.115,
+   "tail_flow": 0.027,
+   "head_flow": 0.205
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v13.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "ambiguous",
-   "prompt_video": null,
-   "video_id": null,
+   "video_end": "stopped",
+   "prompt_video": true,
+   "video_id": true,
    "prompt_id": false,
-   "id_v_final": 6.5191,
-   "tail_flow": 0.286,
-   "head_flow": 0.543
+   "id_v_final": 0.3085,
+   "tail_flow": 0.033,
+   "head_flow": 0.085
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v14.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "ambiguous",
-   "prompt_video": null,
-   "video_id": null,
+   "video_end": "stopped",
+   "prompt_video": true,
+   "video_id": true,
    "prompt_id": false,
-   "id_v_final": 6.8235,
-   "tail_flow": 0.238,
-   "head_flow": 0.171
+   "id_v_final": 0.2119,
+   "tail_flow": 0.027,
+   "head_flow": 0.407
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v15.mp4",
    "scenario": "neg_prompt_4",
    "class": "stop",
-   "video_end": "ambiguous",
-   "prompt_video": null,
-   "video_id": null,
+   "video_end": "stopped",
+   "prompt_video": true,
+   "video_id": true,
    "prompt_id": false,
-   "id_v_final": 3.904,
-   "tail_flow": 0.215,
-   "head_flow": 0.347
+   "id_v_final": 0.2653,
+   "tail_flow": 0.02,
+   "head_flow": 0.21
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4",
@@ -828,9 +828,9 @@
    "prompt_video": null,
    "video_id": null,
    "prompt_id": false,
-   "id_v_final": 3.4098,
-   "tail_flow": 0.291,
-   "head_flow": 0.254
+   "id_v_final": 0.1078,
+   "tail_flow": 0.01,
+   "head_flow": 0.064
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4",
@@ -860,13 +860,13 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v09.mp4",
    "scenario": "neg_prompt_5",
    "class": "stop",
-   "video_end": "stopped",
-   "prompt_video": true,
-   "video_id": false,
+   "video_end": "unmeasurable",
+   "prompt_video": null,
+   "video_id": null,
    "prompt_id": false,
-   "id_v_final": 3.3105,
-   "tail_flow": 0.051,
-   "head_flow": 0.089
+   "id_v_final": 0.1792,
+   "tail_flow": 0.01,
+   "head_flow": 0.02
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v15.mp4",
@@ -972,9 +972,9 @@
    "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 8.1115,
-   "tail_flow": 1.285,
-   "head_flow": 0.365
+   "id_v_final": 12.8765,
+   "tail_flow": 0.795,
+   "head_flow": 0.505
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v09.mp4",
@@ -984,9 +984,9 @@
    "prompt_video": true,
    "video_id": true,
    "prompt_id": false,
-   "id_v_final": 7.2034,
-   "tail_flow": 1.631,
-   "head_flow": 0.86
+   "id_v_final": 8.2386,
+   "tail_flow": 0.34,
+   "head_flow": 0.658
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v14.mp4",
@@ -1440,9 +1440,9 @@
    "prompt_video": null,
    "video_id": null,
    "prompt_id": false,
-   "id_v_final": 5.2069,
-   "tail_flow": 0.19,
-   "head_flow": 0.349
+   "id_v_final": 0.1884,
+   "tail_flow": 0.017,
+   "head_flow": 0.116
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4",

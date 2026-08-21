@@ -932,3 +932,31 @@ All 315 clips' v1 trajectories replaced the v0 files on
 native-rate sibling; the 21 long clips publish `_7.5fps.txt` and their stale
 `_10fps.txt` was removed); v0 archived under
 `data/datasets/_superseded/v0_trajectories/`. The release is now uniformly v1.
+
+## Part 15 — Regeneration sweep 2 (ID-disagreement targets): 36/64 reclaimed
+
+Same machinery as Part 13, keyed on the agreement builder's `id_disagrees`
+exclusions (`regen_fix.py --tag s2 targets --id-disagree`): 64 targets — 27
+stop-class (brake but end at 2-7 mph → feasible-timing rewrite), 34
+maintain-class (decelerate → no-braking reinforcement), 3 accelerate-class
+(start-from-stop that never gets going → pull-away reinforcement). Two passes,
+8 seeds max; one H200 session ≈ 2.2 h ≈ $9.
+
+| class | targets | reclaimed | note |
+|---|---|---|---|
+| stop | 27 | **24** | the timing rewrite works almost everywhere |
+| maintain | 34 | 11 | the generator's prior is to slow near a hazard; wording only partly overrides it (rejects still decelerate to 0.26-0.54×) |
+| accelerate | 3 | 1 | |
+| **total** | **64** | **36** | 28 originals kept, still excluded |
+
+Installed and pushed (36 mp4 + v1 trajectories, 108 files) to the HF dataset;
+flow/fidelity/raw refreshed. 120-sample fidelity: VIDEO↔ID 100%, PROMPT↔VIDEO
+98.1%.
+
+**Agreement subset: 199 → 235 admitted (110 anomaly / 125 normal)**, 0
+pending, 80 excluded (28 ID disagrees — mostly the maintain-class residual — 50
+human-rejected, 2 video contradicts). 15 scenarios. Trees rebuilt for the 235.
+The maintain-class residual is the remaining generation limit: the model brakes
+for lane-adjacent hazards regardless of prompt text; fixing it would need
+scene-side changes (hazard placement) rather than motion wording — out of scope
+for a prompt-timing repair, noted for the dataset paper.

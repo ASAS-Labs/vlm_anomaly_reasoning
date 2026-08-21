@@ -50,18 +50,21 @@ flow-probe acceptance gate is the production recipe.
 |---|---|---|---|
 | C3 | 36 sweep targets (33 stop / 3 maintain), feasible-timing + no-brake prompts | flow probe AND fixed-ID `check_match`, ≤4 seeds (8 in pass 2) | **32/36 repaired**; PROMPT↔VIDEO 71.7% → 98.0%; 96 files pushed to HF (Part 13) |
 
-Unresolved: neg_4_v08, pos_9_v15, pos_4_v12, pos_5_v12 (originals kept, excluded).
+| C4 | 64 ID-disagreement targets (27 stop / 34 maintain / 3 accel), class-specific prompt fixes | same gate, ≤8 seeds | **36/64 reclaimed** (stop 24/27, maintain 11/34, accel 1/3); 108 files pushed (Part 15) |
+
+Unresolved: 4 from C3 + 28 from C4 (23 maintain-class: generator brakes near
+hazards regardless of wording; originals kept, excluded).
 
 ## D — Agreement subset construction — (no findings part; `build_agreement_subset.py`)
 
 72/315 admitted (44 anomaly / 28 normal) at the time of families E-L: ID agrees
 with prompt AND video does not contradict AND not human-rejected. After the
-Part-13 regeneration: 95 admitted; after the Part-14 full ID pass: **199
-admitted (79 anomaly / 120 normal)**, 0 pending, 116 excluded (64 ID disagrees,
-50 human-rejected, 2 video contradicts), 15 scenarios. Lists:
+Part-13 regeneration: 95 admitted; after the Part-14 full ID pass: 199; after
+the Part-15 sweep 2: **235 admitted (110 anomaly / 125 normal)**, 0 pending, 80
+excluded (28 ID disagrees, 50 human-rejected, 2 video contradicts), 15 scenarios. Lists:
 `logs/vlm_agreement_subset_admitted.txt` (199, current),
 `logs/vlm_agreement_subset_admitted_v1_72.txt` (the 72 every result in E-L used).
-Majority baseline: 0.611 anomaly (72) / **0.603 normal (199)** — polarity flips.
+Majority baseline: 0.611 anomaly (72) / **0.532 normal (235)** — near-balanced now.
 
 ## E — Clean-subset VLM eval (72 clips, v1 trajectories) — Part 6
 
@@ -245,9 +248,8 @@ comparison ~70% → verdict.
 - Two-stage monitor (H3) re-run on Qwen3.8 expectations — first post-pilot step.
 - Verdict-prompt fit for Qwen3.8 (P0 is Cosmos-shaped; family I laws may not
   transfer across models).
-- Second regeneration sweep on the 64 ID-disagreement clips (stop clips ending
-  at 2-7 mph; maintain clips that decelerate) — `regen_fix.py targets` needs an
-  ID-disagreement criterion; machinery exists (Part 14.2).
-- Re-measure the champion (Qwen3.8 + L2 + think@16k) on the 199-clip subset (normal-majority now).
+- Maintain-class generation residual (23 clips): needs scene-side prompt changes
+  (hazard placement), not motion wording — dataset-paper note.
+- Re-measure the champion (Qwen3.8 + L2 + think@16k) on the 235-clip subset (near-balanced).
 - SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).

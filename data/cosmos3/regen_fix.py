@@ -589,7 +589,7 @@ def cmd_install(args):
                           commit_message=f"Regenerate {len(installed)} clips with "
                                          f"physics-feasible timing (flow-probe + ID gated)")
         print(f"uploaded {len(ops)} files to {HF_REPO}@{HF_REV}")
-    (REPO / "logs" / "regen_installed.json").write_text(json.dumps(
+    (REPO / "logs" / f"regen_installed{'_' + TAG if TAG else ''}.json").write_text(json.dumps(
         {"ts": datetime.now().isoformat(timespec="seconds"), "installed": installed,
          "seeds": {rel: accepted[rel]["accepted"] for rel in installed}}, indent=1))
     print(f"{len(installed)} clip(s) installed. Downstream rebuild:\n"
