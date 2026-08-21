@@ -35,7 +35,7 @@
     "patterns": "Repeating lane markings, guardrail posts, and overhead gantries"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments",
+    "camera_motion": "Forward tracking shot, smooth dashcam-style motion following the vehicle's path with gentle steering adjustments; the vehicle never brakes or slows, holding a constant speed through the final frame",
     "framing": "Wide shot",
     "camera_angle": "Eye-level, mounted at driver/dashboard height",
     "depth_of_field": "Deep",
@@ -48,15 +48,15 @@
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The vehicle drives forward smoothly along the open expressway in golden morning light; two pastel balloons appear ahead, drifting and rolling on the fresh asphalt."
+      "description": "The vehicle drives forward smoothly along the open expressway in golden morning light; two pastel balloons appear ahead, drifting and rolling on the fresh asphalt. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:02-0:03",
-      "description": "The balloons are tossed by the slipstream and morning breeze, rolling toward the center of the lane as the vehicle approaches."
+      "description": "The balloons are tossed by the slipstream and morning breeze, rolling toward the center of the lane as the vehicle approaches. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the highway."
+      "description": "The vehicle gently steers around the balloons, maintaining smooth motion as it continues down the highway. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     }
   ],
   "text_and_signage_elements": [],
@@ -64,20 +64,20 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:03",
-      "description": "Ego vehicle proceeds along the open expressway under warm golden-hour morning light; two medium-sized balloons drift and roll ahead at ground level, pushed around by breeze and passing slipstream.",
+      "description": "Ego vehicle proceeds along the open expressway under warm golden-hour morning light; two medium-sized balloons drift and roll ahead at ground level, pushed around by breeze and passing slipstream. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Balloons enter the path and shift positions due to wind and slipstream gusts",
-      "camera": "Smooth forward tracking from driver's viewpoint"
+      "camera": "Smooth forward tracking from driver's viewpoint; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 1,
       "time_range": "0:03-0:05",
-      "description": "The vehicle gently maneuvers around the balloons, steering slightly within its lane while continuing forward smoothly.",
+      "description": "The vehicle gently maneuvers around the balloons, steering slightly within its lane while continuing forward smoothly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Subtle lateral steering to avoid balloons; expressway continues ahead clear",
-      "camera": "Forward tracking with slight directional shift mirroring the steering"
+      "camera": "Forward tracking with slight directional shift mirroring the steering; forward motion continues at constant speed with no deceleration"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along an open North American expressway in golden-hour morning light with long shadows; two warmly rim-lit pastel party balloons appear ahead on the fresh asphalt. By 0:02 breeze and slipstream toss the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the highway without stopping.",
+  "temporal_caption": "At 0:00 the ego vehicle moves smoothly forward along an open North American expressway in golden-hour morning light with long shadows; two warmly rim-lit pastel party balloons appear ahead on the fresh asphalt. By 0:02 breeze and slipstream toss the balloons, rolling them toward the lane center as the car nears. From 0:03 to 0:05 the vehicle gently steers around the balloons, maintaining its smooth path and continuing down the highway without stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
   "audio_description": "Ambient expressway driving sounds: the steady hum of the engine and the rush of tires on fresh asphalt, wind and passing-vehicle slipstream, and the open drone of highway traffic. No speech or music.",
   "resolution": {
     "H": 720,
@@ -85,5 +85,9 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-08-20T23:35:38"
+  }
 }

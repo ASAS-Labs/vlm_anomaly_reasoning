@@ -1,485 +1,146 @@
 [
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_2_v18.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v02.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v06.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v08.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v11.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v16.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v19.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_4_v20.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v05.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v06.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v20.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v01.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v02.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v07.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v11.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v14.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v16.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01",
-   "0:01-0:03",
-   "0:03-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v12.mp4",
-  "action": "unchanged",
-  "reason": "class maintain: regenerate as-is"
+  "action": "reinforced"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v12.mp4",
-  "action": "unchanged",
-  "reason": "class maintain: regenerate as-is"
+  "action": "reinforced"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v19.mp4",
-  "action": "unchanged",
-  "reason": "class maintain: regenerate as-is"
+  "action": "reinforced"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v12.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:00",
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v16.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:00",
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v19.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:01",
-   "0:01-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:00",
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v03.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v07.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v08.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v09.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v10.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v11.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v13.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v14.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v15.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v17.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  },
  {
   "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v18.mp4",
-  "action": "rewritten",
-  "old_times": [
-   "0:00-0:02",
-   "0:02-0:03",
-   "0:03-0:05"
-  ],
-  "new_times": [
-   "0:00-0:01.5",
-   "0:01.5-0:03.5",
-   "0:03.5-0:05"
-  ]
+  "action": "already_fixed"
  }
 ]

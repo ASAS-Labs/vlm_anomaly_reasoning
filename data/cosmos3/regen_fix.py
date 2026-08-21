@@ -60,7 +60,7 @@ HF_REPO, HF_REV = "ASASLab/av_semantic_anomalies", "main"
 NUM_STEPS, GUIDANCE, SHIFT = 35, 6.0, 10.0
 EXTRA_PARAMS = json.dumps({"use_resolution_template": False,
                            "use_duration_template": False, "guardrails": False})
-SEEDS = [5678, 9012, 3456, 7890]   # fresh seeds; 1234 produced the originals
+SEEDS = [5678, 9012, 3456, 7890, 2468, 1357, 8642, 9753]   # fresh seeds; 1234 = originals
 
 BRAKE_RE = re.compile(r"\bbrak|decelerat|slow", re.I)
 TAIL_RE = re.compile(r"(,?\s*(?:treating|recognizing|mistaking|reacting|as though|"
@@ -244,12 +244,45 @@ def feasible_timing(prompt: dict) -> dict | None:
     return p
 
 
+_NO_BRAKE = (" The vehicle never brakes or slows at any point: its speed is constant "
+             "from the first frame to the last and it keeps moving steadily through the "
+             "end of the clip.")
+
+
+def maintain_reinforce(prompt: dict) -> dict:
+    """For maintain-class prompts the generator still brakes for objects in the
+    lane; state the no-braking constraint explicitly in every motion field."""
+    p = copy.deepcopy(prompt)
+    for a in p["actions"]:
+        a["description"] = a["description"].rstrip(".") + "." + _NO_BRAKE
+    for sg in p["segments"]:
+        sg["description"] = sg["description"].rstrip(".") + "." + _NO_BRAKE
+        sg["camera"] = (sg["camera"].rstrip(".") + "; forward motion continues at constant "
+                        "speed with no deceleration")
+    p["cinematography"]["camera_motion"] = (
+        p["cinematography"]["camera_motion"].rstrip(".") + "; the vehicle never brakes "
+        "or slows, holding a constant speed through the final frame")
+    p["temporal_caption"] = p["temporal_caption"].rstrip(".") + "." + _NO_BRAKE
+    return p
+
+
 def cmd_prompts(args):
     targets = load_targets()
     changes = []
     for t in targets:
         jpath = PROMPTS / t["rel_path"].replace(".mp4", ".json")
         before = json.loads(jpath.read_text())
+        if t["class"] == "maintain":
+            if before.get("_regen_fix"):
+                changes.append({"rel_path": t["rel_path"], "action": "already_fixed"})
+                continue
+            after = maintain_reinforce(before)
+            after["_regen_fix"] = {"maintain_reinforce": True,
+                                   "ts": datetime.now().isoformat(timespec="seconds")}
+            if not args.dry_run:
+                jpath.write_text(json.dumps(after, indent=2, ensure_ascii=False) + "\n")
+            changes.append({"rel_path": t["rel_path"], "action": "reinforced"})
+            continue
         if t["class"] != "stop":
             changes.append({"rel_path": t["rel_path"], "action": "unchanged",
                             "reason": f"class {t['class']}: regenerate as-is"})

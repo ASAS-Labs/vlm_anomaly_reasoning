@@ -39,8 +39,11 @@ if [[ "${SKIP_GEN}" != "1" ]]; then
     sleep 2
   done
   echo "--- generate (best-of-N, flow-probe gate) ---"
-  "${PY}" regen_fix.py generate --server-url "http://127.0.0.1:${PORT}" \
-    $( [[ "${PASS}" != "1" ]] && echo "--more" )
+  if [[ "${PASS}" == "1" ]]; then
+    "${PY}" regen_fix.py generate --server-url "http://127.0.0.1:${PORT}"
+  else
+    "${PY}" regen_fix.py generate --server-url "http://127.0.0.1:${PORT}" --more --max-seeds 8
+  fi
   kill -TERM -"${SERVER_PID}" 2>/dev/null || true
   trap - EXIT
   for _ in $(seq 1 30); do

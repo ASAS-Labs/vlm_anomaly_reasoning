@@ -55,7 +55,7 @@
     "patterns": "Long parallel lane lines, gantries, and barrier posts receding to the sun"
   },
   "cinematography": {
-    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth",
+    "camera_motion": "Forward tracking shot from the moving vehicle, steady and smooth; the vehicle never brakes or slows, holding a constant speed through the final frame",
     "framing": "Wide shot capturing the road ahead",
     "camera_angle": "Eye-level dashboard perspective",
     "depth_of_field": "Deep",
@@ -68,15 +68,15 @@
   "actions": [
     {
       "time": "0:00-0:02",
-      "description": "The ego vehicle drives forward steadily along the golden-lit expressway; two stray polythene bags appear ahead, glowing warm as they flutter in the wind."
+      "description": "The ego vehicle drives forward steadily along the golden-lit expressway; two stray polythene bags appear ahead, glowing warm as they flutter in the wind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:02-0:03",
-      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the fresh asphalt as the gap closes."
+      "description": "The vehicle continues at constant speed; the bags tumble and skitter across the fresh asphalt as the gap closes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     },
     {
       "time": "0:03-0:05",
-      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside in the wind and slipstream."
+      "description": "The vehicle maintains its lane and speed, passing near the bags without deviation as they drift aside in the wind and slipstream. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
     }
   ],
   "text_and_signage_elements": [],
@@ -84,27 +84,27 @@
     {
       "segment_index": 0,
       "time_range": "0:00-0:02",
-      "description": "Ego vehicle drives forward on the expressway in golden-hour morning light; two polythene bags become visible ahead, tossed by the wind.",
+      "description": "Ego vehicle drives forward on the expressway in golden-hour morning light; two polythene bags become visible ahead, tossed by the wind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags appear in the central foreground, glowing warm in the low sun, and begin to flutter.",
-      "camera": "Smooth forward tracking from dashboard view."
+      "camera": "Smooth forward tracking from dashboard view; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 1,
       "time_range": "0:02-0:03",
-      "description": "The vehicle holds speed and lane as the bags tumble across the fresh road surface.",
+      "description": "The vehicle holds speed and lane as the bags tumble across the fresh road surface. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags shift and lift, casting long shadows.",
-      "camera": "Continuous forward tracking, steady."
+      "camera": "Continuous forward tracking, steady; forward motion continues at constant speed with no deceleration"
     },
     {
       "segment_index": 2,
       "time_range": "0:03-0:05",
-      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside.",
+      "description": "The vehicle maintains its course and passes near the bags, ignoring them entirely as they drift aside. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
       "key_changes": "Bags pass out of central frame; the expressway ahead stays clear.",
-      "camera": "Steady forward tracking, unchanged."
+      "camera": "Steady forward tracking, unchanged; forward motion continues at constant speed with no deceleration"
     }
   ],
   "transitions": [],
-  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a multi-lane expressway at golden-hour morning, fresh asphalt and crisp lane lines running toward a low eastern sun. Within the first two seconds, two translucent polythene bags come into view in the central foreground, glowing warm gold as the low sun shines through them while they lift and flutter. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the fresh asphalt. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the expressway ahead remaining clear in the warm morning light.",
+  "temporal_caption": "At 0:00 the ego vehicle moves steadily forward along a multi-lane expressway at golden-hour morning, fresh asphalt and crisp lane lines running toward a low eastern sun. Within the first two seconds, two translucent polythene bags come into view in the central foreground, glowing warm gold as the low sun shines through them while they lift and flutter. From 0:02 to 0:03 the vehicle holds constant speed and lane position as the bags tumble and skitter across the fresh asphalt. From 0:03 to 0:05 the vehicle continues without deviation, passing near the bags and ignoring them as they drift aside, the expressway ahead remaining clear in the warm morning light. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
   "audio_description": "Ambient expressway sounds: the steady hum of the engine and tires on fresh asphalt, wind rush and the whoosh of passing vehicles in adjacent lanes. No speech or music; the light crinkling rustle of plastic bags in the wind and slipstream.",
   "resolution": {
     "H": 720,
@@ -112,5 +112,9 @@
   },
   "aspect_ratio": "16,9",
   "duration": "5s",
-  "fps": 24
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-08-20T23:35:38"
+  }
 }
