@@ -56,10 +56,12 @@ Unresolved: neg_4_v08, pos_9_v15, pos_4_v12, pos_5_v12 (originals kept, excluded
 
 72/315 admitted (44 anomaly / 28 normal) at the time of families E-L: ID agrees
 with prompt AND video does not contradict AND not human-rejected. After the
-Part-13 regeneration: **95 admitted (54/41)**, 147 pending fixed-ID, 73 excluded.
-Lists: `logs/vlm_agreement_subset_admitted.txt` (95, current),
+Part-13 regeneration: 95 admitted; after the Part-14 full ID pass: **199
+admitted (79 anomaly / 120 normal)**, 0 pending, 116 excluded (64 ID disagrees,
+50 human-rejected, 2 video contradicts), 15 scenarios. Lists:
+`logs/vlm_agreement_subset_admitted.txt` (199, current),
 `logs/vlm_agreement_subset_admitted_v1_72.txt` (the 72 every result in E-L used).
-Majority baseline: 0.611 (72) / 0.568 (95).
+Majority baseline: 0.611 anomaly (72) / **0.603 normal (199)** — polarity flips.
 
 ## E — Clean-subset VLM eval (72 clips, v1 trajectories) — Part 6
 
@@ -243,8 +245,9 @@ comparison ~70% → verdict.
 - Two-stage monitor (H3) re-run on Qwen3.8 expectations — first post-pilot step.
 - Verdict-prompt fit for Qwen3.8 (P0 is Cosmos-shaped; family I laws may not
   transfer across models).
-- Full-dataset fixed-ID pass (195 clips, incl. 21 long clips @ 7.5 fps) →
-  finalize agreement subset.
-- Re-measure the champion (Qwen3.8 + L2 + think@16k) on the 95-clip subset.
+- Second regeneration sweep on the 64 ID-disagreement clips (stop clips ending
+  at 2-7 mph; maintain clips that decelerate) — `regen_fix.py targets` needs an
+  ID-disagreement criterion; machinery exists (Part 14.2).
+- Re-measure the champion (Qwen3.8 + L2 + think@16k) on the 199-clip subset (normal-majority now).
 - SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).

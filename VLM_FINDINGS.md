@@ -887,3 +887,48 @@ to `outputs/id_raw.jsonl`; flow/fidelity files refreshed.
   Parts 6-12 was measured on the 72 list.
 - Caveat: the HF dataset now mixes v1-style trajectories (these 32 clips) with
   the published v0 files elsewhere; the full-dataset ID pass will harmonise it.
+
+## Part 14 — Full fixed-ID pass: every clip has a v1 trajectory; subset 72 → 199
+
+The deferred coverage pass (`spec/run_id_full_remote.sh`, `id_publish.py`; one
+H200 session ≈ 35 min ≈ $2.5). The v1 pipeline was unchanged (Part 2/5: 10 fps
+resample, true time base, padding trim; the 21 long 8 s clips at 7.5 fps so the
+61-frame action chunk spans the whole clip). It ran only on the 177 clips that
+lacked a record; the 138 existing records (120 sample + 18 regenerated) were
+kept verbatim so every earlier number stays reproducible. `outputs/id_raw.jsonl`
+now holds all 315.
+
+### 14.1 Agreement subset on the whole dataset
+
+| | before | after |
+|---|---|---|
+| admitted | 95 (54 anomaly / 41 normal) | **199 (79 / 120)** |
+| pending fixed-ID | 147 | **0** |
+| excluded | 73 | 116 (ID disagrees 64, human-rejected 50, video contradicts prompt 2) |
+| scenarios covered | 12 | **15** |
+
+Majority baseline on the 199-clip subset is now *normal*-majority (0.603), the
+opposite polarity of the 72-clip subset (0.611 anomaly) — verdict arms tuned on
+the old subset's bias must be re-measured, not extrapolated. Lists:
+`logs/vlm_agreement_subset_admitted.txt` (199), `_v1_72.txt` archived; 720p and
+early trees rebuilt for the 199.
+
+### 14.2 What the 64 ID disagreements are
+
+Two families, both generation-side, neither ID-side: (a) stop-class clips whose
+ID final speed sits at 2-7 mph — the vehicle brakes hard but the clip ends
+before a full stop (the same infeasible-timing defect the regeneration repaired
+for its 36 targets, now visible in the remaining scenarios, e.g. neg_0); and
+(b) maintain-class clips that decelerate to ~0.5× their initial speed
+(neg_prompt_8 "continues at speed" variants decelerate in every case) — the flow
+probe passes them because they are still moving, so only the ID catches them.
+These are the natural targets for a second regeneration sweep (`regen_fix.py
+targets` extended with an ID-disagreement criterion); the machinery exists.
+
+### 14.3 Published
+
+All 315 clips' v1 trajectories replaced the v0 files on
+`ASASLab/av_semantic_anomalies@main` in one commit (`<stem>.txt` 5 Hz +
+native-rate sibling; the 21 long clips publish `_7.5fps.txt` and their stale
+`_10fps.txt` was removed); v0 archived under
+`data/datasets/_superseded/v0_trajectories/`. The release is now uniformly v1.

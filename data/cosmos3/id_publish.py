@@ -49,16 +49,31 @@ def cmd_publish(args):
     items = discover_eval_videos(GEN_VIDS)
     ops_src = []
     missing = []
+    deletes = []
     for it in items:
         rel = it["rel_path"]
         stem = Path(rel).stem
         src5 = V1 / Path(rel).with_name(stem + ".txt")
-        src10 = V1 / Path(rel).with_name(stem + "_10fps.txt")
-        if not src5.exists() or not src10.exists():
+        # native-rate sibling: _10fps.txt for 5 s clips, _7.5fps.txt for the
+        # 21 long 8 s clips (derive_action_files names it by its true rate)
+        natives = sorted((V1 / Path(rel).parent).glob(f"{stem}_*fps.txt"))
+        if not src5.exists() or not natives:
             missing.append(rel)
             continue
+        src10 = natives[0]
         dst5 = GEN_VIDS / Path(rel).with_name(stem + ".txt")
-        dst10 = GEN_VIDS / Path(rel).with_name(stem + "_10fps.txt")
+        dst10 = GEN_VIDS / Path(rel).with_name(src10.name)
+        stale = GEN_VIDS / Path(rel).with_name(stem + "_10fps.txt")
+        if src10.name != stale.name and stale.exists():
+            # published v0 file at the wrong rate: archive + remove locally,
+            # delete on HF
+            arch = ARCHIVE / Path(rel).parent / stale.name
+            arch.parent.mkdir(parents=True, exist_ok=True)
+            if not arch.exists():
+                shutil.copy2(stale, arch)
+            if not args.dry_run:
+                stale.unlink()
+            deletes.append(str(Path(rel).with_name(stale.name)))
         for src, dst in ((src5, dst5), (src10, dst10)):
             if dst.exists() and src.read_text() != dst.read_text():
                 arch = ARCHIVE / Path(rel).parent / dst.name
@@ -71,12 +86,14 @@ def cmd_publish(args):
     if missing:
         sys.exit(f"{len(missing)} clips lack v1 trajectories (run derive_action_files "
                  f"first), e.g. {missing[:3]}")
-    print(f"{len(items)} clips, {len(ops_src)} trajectory files in place"
+    print(f"{len(items)} clips, {len(ops_src)} trajectory files in place, "
+          f"{len(deletes)} stale _10fps files to delete"
           f"{' (dry run)' if args.dry_run else ''}")
     if args.dry_run or args.no_upload:
         return
-    from huggingface_hub import CommitOperationAdd, HfApi
+    from huggingface_hub import CommitOperationAdd, CommitOperationDelete, HfApi
     ops = [CommitOperationAdd(path_in_repo=p, path_or_fileobj=str(f)) for f, p in ops_src]
+    ops += [CommitOperationDelete(path_in_repo=p) for p in deletes]
     HfApi().create_commit(repo_id=HF_REPO, repo_type="dataset", revision=HF_REV,
                           operations=ops,
                           commit_message="Fixed inverse-dynamics trajectories (v1: 10 fps "

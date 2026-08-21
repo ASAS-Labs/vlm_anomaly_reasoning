@@ -1,19 +1,19 @@
 {
  "criteria": "prompt-video-ID agreement + human review union",
  "counts": {
-  "admitted": 95,
-  "pending_id": 147,
-  "excluded": 73
+  "admitted": 199,
+  "pending_id": 0,
+  "excluded": 116
  },
- "admitted_anomaly": 54,
- "admitted_normal": 41,
+ "admitted_anomaly": 79,
+ "admitted_normal": 120,
  "clips": [
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_0.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -79,8 +79,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v01.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -88,8 +88,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v02.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -97,8 +97,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v03.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -106,44 +106,52 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v04.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=3.8 final=2.1 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v05.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=7.8 final=4.2 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v06.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=8.0 final=4.3 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v07.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=3.9 final=2.8 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v08.mp4",
    "true_label": 1,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -153,17 +161,19 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v09.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=4.4 final=2.7 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v10.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -171,17 +181,19 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v11.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=7.1 final=4.0 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v12.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -189,8 +201,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v13.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -198,8 +210,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v14.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -207,8 +219,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v15.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -216,8 +228,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v16.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -225,26 +237,30 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v17.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "stopped",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=5.1 final=2.8 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v18.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=6.7 final=3.9 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v19.mp4",
    "true_label": 1,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -254,8 +270,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_0_v20.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -852,10 +868,12 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v01.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=4.7 final=5.1 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v02.mp4",
@@ -881,8 +899,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v04.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -918,10 +936,11 @@
    "true_label": 1,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
    "reasons": [
-    "human_rejected"
+    "human_rejected",
+    "id_disagrees: expected a stop, end_v=35.8 final=28.7 mph"
    ]
   },
   {
@@ -939,8 +958,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v10.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -959,19 +978,23 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v12.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=4.4 final=4.8 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v13.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=4.1 final=3.8 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v14.mp4",
@@ -1004,8 +1027,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_5_v17.mp4",
    "true_label": 1,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1026,10 +1049,11 @@
    "true_label": 1,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "disagrees",
    "video_end": "ambiguous",
    "reasons": [
-    "human_rejected"
+    "human_rejected",
+    "id_disagrees: expected a stop, end_v=12.4 final=10.5 mph"
    ]
   },
   {
@@ -1047,91 +1071,111 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v01.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.56"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v02.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.50"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v03.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.51"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v04.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.50"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v05.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.41"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v06.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.57"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v07.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.44"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v08.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "ambiguous",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.52"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v09.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.35"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v10.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.17"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v11.mp4",
@@ -1148,46 +1192,56 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v12.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.45"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v13.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "ambiguous",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.54"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v14.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.39"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v15.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.39"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v16.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.52"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v17.mp4",
@@ -1213,17 +1267,19 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v19.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "ambiguous",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.59"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v20.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1249,8 +1305,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v03.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1258,17 +1314,19 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v04.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.45"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v05.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1276,8 +1334,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v06.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1296,8 +1354,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v08.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1316,35 +1374,41 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v10.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.43"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v11.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.58"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v12.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.44"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v13.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1361,8 +1425,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v15.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1370,17 +1434,19 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v16.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.58"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v17.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1388,8 +1454,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v18.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1397,8 +1463,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v19.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1406,8 +1472,8 @@
    "rel_path": "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_9_v20.mp4",
    "true_label": 1,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1501,8 +1567,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v02.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1511,7 +1577,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -1531,7 +1597,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1542,7 +1608,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1552,8 +1618,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v07.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1561,8 +1627,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v08.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1570,8 +1636,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v09.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1579,8 +1645,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v10.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1588,8 +1654,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v11.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1597,8 +1663,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v12.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1606,8 +1672,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v13.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -1615,8 +1681,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v14.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1624,8 +1690,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v15.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1652,7 +1718,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1671,8 +1737,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_0_v20.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1681,7 +1747,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1691,8 +1757,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v02.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1700,8 +1766,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v03.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1719,7 +1785,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1738,8 +1804,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v07.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1748,7 +1814,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1759,7 +1825,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1770,18 +1836,19 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
    "reasons": [
-    "human_rejected"
+    "human_rejected",
+    "id_disagrees: expected a stop, end_v=3.0 final=3.5 mph"
    ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v11.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -1789,8 +1856,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v12.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1798,8 +1865,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v13.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1807,8 +1874,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v14.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1816,8 +1883,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v15.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1825,8 +1892,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v16.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -1845,8 +1912,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v18.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1855,7 +1922,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1865,8 +1932,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_11_v20.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1874,8 +1941,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v01.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1884,27 +1951,30 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "disagrees",
    "video_end": "moving",
    "reasons": [
-    "human_rejected"
+    "human_rejected",
+    "id_disagrees: expected ~constant speed, end/start velocity=0.58"
    ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v03.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.48"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v04.mp4",
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -1914,8 +1984,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v05.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -1924,7 +1994,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1935,7 +2005,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -1946,7 +2016,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -1967,8 +2037,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v10.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -1976,8 +2046,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v11.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -1985,8 +2055,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v12.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2005,8 +2075,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v14.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2015,7 +2085,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -2025,8 +2095,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v16.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2046,8 +2116,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v18.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2055,17 +2125,19 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v19.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.52"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_2_v20.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2074,7 +2146,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -2102,8 +2174,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v04.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2111,8 +2183,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v05.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2120,8 +2192,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v06.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2138,8 +2210,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v08.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2148,7 +2220,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -2158,8 +2230,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v10.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2167,8 +2239,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v11.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2177,7 +2249,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": [
     "video_contradicts_prompt"
@@ -2187,8 +2259,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v13.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2196,8 +2268,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v14.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2205,8 +2277,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v15.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2214,8 +2286,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v16.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2223,8 +2295,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v17.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2232,8 +2304,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v18.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2241,8 +2313,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v19.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2250,8 +2322,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_4_v20.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2268,8 +2340,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v02.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2277,8 +2349,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v03.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2313,8 +2385,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v07.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2322,8 +2394,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v08.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2332,7 +2404,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": [
     "human_rejected"
@@ -2342,8 +2414,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v10.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2361,7 +2433,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": [
     "video_contradicts_prompt"
@@ -2371,17 +2443,19 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v13.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=2.17"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v14.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2389,8 +2463,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v15.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2398,8 +2472,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v16.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2407,17 +2481,19 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v17.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=216.49"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v18.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2434,8 +2510,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_5_v20.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2444,7 +2520,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -2454,8 +2530,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v02.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2472,17 +2548,19 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v04.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "ambiguous",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.59"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v05.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2490,8 +2568,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v06.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2499,8 +2577,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v07.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2508,8 +2586,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v08.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2517,17 +2595,19 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v09.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.43"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v10.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2535,10 +2615,12 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v11.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected ~constant speed, end/start velocity=0.58"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v12.mp4",
@@ -2553,8 +2635,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v13.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2571,8 +2653,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v15.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2580,8 +2662,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v16.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2590,7 +2672,7 @@
    "true_label": 0,
    "class": "maintain",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected"
@@ -2600,8 +2682,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v18.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2609,8 +2691,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v19.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2618,8 +2700,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_6_v20.mp4",
    "true_label": 0,
    "class": "maintain",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "moving",
    "reasons": []
   },
@@ -2636,8 +2718,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v02.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2654,8 +2736,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v04.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2664,7 +2746,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": [
     "human_rejected"
@@ -2674,8 +2756,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v06.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -2692,8 +2774,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v08.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -2701,8 +2783,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v09.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -2711,7 +2793,7 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": [
     "human_rejected"
@@ -2721,8 +2803,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v11.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -2739,8 +2821,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v13.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -2757,8 +2839,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v15.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2775,8 +2857,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v17.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2784,8 +2866,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v18.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "unmeasurable",
    "reasons": []
   },
@@ -2802,8 +2884,8 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_8_v20.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "stopped",
    "reasons": []
   },
@@ -2851,19 +2933,23 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v05.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=13.7 final=8.3 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v06.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "moving",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=10.8 final=5.6 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v07.mp4",
@@ -2918,10 +3004,12 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v12.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "unmeasurable",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=12.3 final=7.9 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v13.mp4",
@@ -2946,19 +3034,20 @@
    "true_label": 0,
    "class": "stop",
    "status": "excluded",
-   "id_status": "missing",
+   "id_status": "disagrees",
    "video_end": "moving",
    "reasons": [
     "human_rejected",
-    "video_contradicts_prompt"
+    "video_contradicts_prompt",
+    "id_disagrees: expected a stop, end_v=16.1 final=10.9 mph"
    ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v16.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "admitted",
+   "id_status": "agrees",
    "video_end": "ambiguous",
    "reasons": []
   },
@@ -2986,10 +3075,12 @@
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v19.mp4",
    "true_label": 0,
    "class": "stop",
-   "status": "pending_id",
-   "id_status": "missing",
+   "status": "excluded",
+   "id_status": "disagrees",
    "video_end": "ambiguous",
-   "reasons": []
+   "reasons": [
+    "id_disagrees: expected a stop, end_v=6.7 final=3.2 mph"
+   ]
   },
   {
    "rel_path": "final_semantic_scenarios/positive_scenarios/positive_scenarios_variants/prompt_9_v20.mp4",
