@@ -342,6 +342,19 @@ def _pass_dirs(k):
     return root, root.parent / f"regen_pass{k}_10fps"
 
 
+def _next_candidate(rec):
+    """Next candidate for the ID cross-check: probe-confirmed first, else an
+    unmeasurable-but-stopped-level candidate (low-texture scenes) for stop class."""
+    cand = next((a for a in rec["attempts"] if a["probe_ok"] and a["id_ok"] is None), None)
+    if cand is None:
+        cand = next((a for a in rec["attempts"]
+                     if a["probe_ok"] is None and a["id_ok"] is None
+                     and rec["class"] == "stop"
+                     and a["probe"]["end_state"] == "unmeasurable"
+                     and a["probe"]["tail_flow"] < 0.15), None)
+    return cand
+
+
 def cmd_stage(args):
     m = load_manifest()
     root, root10 = _pass_dirs(args.pass_no)
@@ -349,7 +362,7 @@ def cmd_stage(args):
     for rel, rec in m.items():
         if rec["accepted"]:
             continue
-        cand = next((a for a in rec["attempts"] if a["probe_ok"] and a["id_ok"] is None), None)
+        cand = _next_candidate(rec)
         if cand is None:
             continue
         src = REPO / cand["path"]
@@ -390,7 +403,7 @@ def cmd_idcheck(args):
     for rel, rec in m.items():
         if rec.get("staged_pass") != args.pass_no or rec["accepted"]:
             continue
-        cand = next((a for a in rec["attempts"] if a["probe_ok"] and a["id_ok"] is None), None)
+        cand = _next_candidate(rec)
         r = raw.get(rel)
         if cand is None or r is None:
             print(f"  {rel}: no raw ID record in pass {args.pass_no}")
