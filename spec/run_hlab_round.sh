@@ -16,6 +16,7 @@
 #   CONC=6
 #   HLAB_SUBSET=logs/hlab_subset_80.txt   clip list (e.g. the 235-clip admitted list)
 #   BASELINE=$ANCHOR               report baseline when the anchor is not re-run
+#   HLAB_GATE=logs/hlab_gate_4.txt  4-clip gate list (must be inside HLAB_SUBSET)
 set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ROUND="${ROUND:?set ROUND=<n>}"
@@ -30,7 +31,7 @@ PY="${VENV}/bin/python"
 PORT="${PORT:-8000}"
 URL="http://127.0.0.1:${PORT}/v1"
 SUBSET="${HLAB_SUBSET:-${REPO_ROOT}/logs/hlab_subset_80.txt}"
-GATE="${REPO_ROOT}/logs/hlab_gate_4.txt"
+GATE="${HLAB_GATE:-${REPO_ROOT}/logs/hlab_gate_4.txt}"
 DS="${REPO_ROOT}/data/datasets"
 TREE="${DS}/generated_vids_720p"
 LOG_DIR="${REPO_ROOT}/logs"
@@ -52,6 +53,8 @@ build_tree() {  # build_tree <mode> <secs> <dir>
   [[ "$(find "${d}" -name '*.txt' | wc -l)" == "0" ]] || { echo "ERROR: ${d} must be video-only" >&2; exit 1; }
 }
 build_tree t_minus 2.5 "${DS}/generated_vids_720p_tminus2.5"
+build_tree t_minus 1.5 "${DS}/generated_vids_720p_tminus1.5"
+build_tree t_minus 1.0 "${DS}/generated_vids_720p_tminus1.0"
 build_tree fixed 1.5 "${DS}/generated_vids_720p_early1.5s"
 build_tree fixed 1.0 "${DS}/generated_vids_720p_early1.0s"
 N_TXT="$(find "${TREE}" -name '*.txt' | wc -l)"; N_SUB="$(grep -c . "${SUBSET}")"

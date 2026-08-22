@@ -18,6 +18,8 @@ from expectation_experiment import EXPECT_QUESTION, MONITOR_FOLLOWUP
 from prompt_variants import BANNED_WORDS, _GUARD_LINE, action_narrative
 
 WINDOWS = {"tminus2.5": "generated_vids_720p_tminus2.5",
+           "tminus1.5": "generated_vids_720p_tminus1.5",
+           "tminus1.0": "generated_vids_720p_tminus1.0",
            "1.5s": "generated_vids_720p_early1.5s",
            "1.0s": "generated_vids_720p_early1.0s"}
 
@@ -131,6 +133,16 @@ H_VARIANTS.update({
 H_VARIANTS.update({
     "M11": {**H_VARIANTS["M8"], "parent": "M8", "stage1_k": 3,
             "hypothesis": "M8 with stage-1 majority-of-3 self-consistency"},
+})
+
+# --- Post-235 autopsy: longer stage-1 windows on M8's failures ------------
+# 7/40 failures (neg_8) are the label-defining event happening after T-2.5;
+# M8 unchanged except the stage-1 window = clip duration - 1.5 s / - 1.0 s.
+H_VARIANTS.update({
+    "M8w15": {**H_VARIANTS["M8"], "parent": "M8", "stage1_window": "tminus1.5",
+              "hypothesis": "M8 with the stage-1 window at T-1.5 (sees later events)"},
+    "M8w10": {**H_VARIANTS["M8"], "parent": "M8", "stage1_window": "tminus1.0",
+              "hypothesis": "M8 with the stage-1 window at T-1.0 (sees later events)"},
 })
 
 
