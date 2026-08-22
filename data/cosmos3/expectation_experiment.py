@@ -67,8 +67,16 @@ def scenario_of(rel: str) -> str:
 
 
 def parse_option(raw: str) -> str:
+    """The answer is the option word that LEADS a line, taking the last such line
+    (prompts ask for the answer on the final line; a gloss like "... no need to
+    stop" or a trailing parenthetical must not override it). Fallback: rightmost
+    option word anywhere."""
     if not raw:
         return "unknown"
+    for ln in reversed([ln.strip() for ln in raw.splitlines() if ln.strip()]):
+        m = re.match(r"\W*([a-z]+)", ln.lower())
+        if m and m.group(1) in EXPECT_OPTIONS:
+            return m.group(1)
     text = raw.lower()
     best, pos = "unknown", -1
     for opt in EXPECT_OPTIONS:
@@ -235,7 +243,14 @@ def main():
         if reasoning is not None:
             rec["reasoning_content"] = reasoning
 
-        if args.stage == "monitor":
+        if args.stage == "monitor" and not content.strip():
+            # stage 1 produced no answer (e.g. unterminated think): there is no
+            # expectation to compare against; record an Unknown verdict.
+            rec["expect_finish_reason"] = rec.pop("finish_reason")
+            rec.update(monitor_raw=None, verdict="Unknown", parse_reason="stage1_empty",
+                       finish_reason=None, correct=None, action_sequence=None,
+                       action_render=render, stage2_prompt_sha256=s2_sha)
+        elif args.stage == "monitor":
             full_tree = Path(args.full_dataset)
             seq_text = read_action_sequence(full_tree / rel)
             prompt2 = stage2_for(seq_text)

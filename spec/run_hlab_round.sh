@@ -69,11 +69,13 @@ for _ in $(seq 1 900); do
 done
 curl -sf "http://127.0.0.1:${PORT}/health" >/dev/null || { echo "server never became healthy" >&2; exit 1; }
 
-gate_verdict() {  # <results.jsonl> <n_expected>
-  "${PY}" - "$1" "$2" <<'PYEOF'
+gate_verdict() {  # <results.jsonl> <n_expected> <clip list file>
+  "${PY}" - "$1" "$2" "$3" <<'PYEOF'
 import json, sys
-recs = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
 n = int(sys.argv[2])
+want = [l.strip() for l in open(sys.argv[3]) if l.strip()][:n]
+recs = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
+recs = [r for r in recs if r["video"] in want]   # judge only the gate clips (resume-safe)
 unk = sum(1 for r in recs if r.get("verdict") == "Unknown")
 t2 = sum(1 for r in recs if r.get("finish_reason") == "length")
 s1u = sum(1 for r in recs if r.get("expect") == "unknown")
@@ -87,7 +89,7 @@ if [[ -n "${ANCHOR// /}" ]]; then
   "${PY}" prompt_lab.py --round "${ROUND}" --variants "${ANCHOR}" --dataset "${TREE}" \
     --subset "${SUBSET}" --server_url "${URL}" --model-config qwen38 --model-arm "${HLAB_ARM}" \
     --out_prefix "${PREFIX}t" --seed "${SEED}" --concurrency 4 --limit 4
-  gate_verdict "${LOG_DIR}/${PREFIX}t_${ANCHOR}/results.jsonl" 4 || { echo "GATE FAILED: ${ANCHOR}"; exit 1; }
+  gate_verdict "${LOG_DIR}/${PREFIX}t_${ANCHOR}/results.jsonl" 4 "${SUBSET}" || { echo "GATE FAILED: ${ANCHOR}"; exit 1; }
   "${PY}" prompt_lab.py --round "${ROUND}" --variants "${ANCHOR}" --dataset "${TREE}" \
     --subset "${SUBSET}" --server_url "${URL}" --model-config qwen38 --model-arm "${HLAB_ARM}" \
     --out_prefix "${PREFIX}t" --seed "${SEED}" --concurrency "${CONC}"
@@ -102,7 +104,7 @@ for ARM in ${HLAB_ARMS}; do
     --dataset "${EARLY}" --full-dataset "${TREE}" --subset "${GATE}" \
     --server_url "${URL}" --out_dir "${OUT}" --model-config qwen38 --model-arm "${HLAB_ARM}" \
     --seed "${SEED}" --concurrency 4
-  gate_verdict "${OUT}/results.jsonl" 4 || { echo "GATE FAILED: ${ARM}"; tail -2 "${OUT}/results.jsonl" | cut -c1-300; exit 1; }
+  gate_verdict "${OUT}/results.jsonl" 4 "${GATE}" || { echo "GATE FAILED: ${ARM}"; tail -2 "${OUT}/results.jsonl" | cut -c1-300; exit 1; }
   "${PY}" expectation_experiment.py --stage monitor --hvariant "${ARM}" \
     --dataset "${EARLY}" --full-dataset "${TREE}" --subset "${SUBSET}" \
     --server_url "${URL}" --out_dir "${OUT}" --model-config qwen38 --model-arm "${HLAB_ARM}" \

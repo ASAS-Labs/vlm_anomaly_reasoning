@@ -88,7 +88,7 @@ def main():
             parts = ", ".join(f"{s} +{f}/-{b}" for s, (f, b) in sorted(fb.items()) if f or b)
             lines.append(f"- {vid}: net {net:+d} — {parts or 'no flips'}")
     text = "\n".join(lines) + "\n"
-    out = a.logs / f"{a.prefix}_diag.md"
+    out = a.logs / f"hlab_diag_{a.prefix}.md"   # outside prompt_lab_report's {prefix}_* glob
     out.write_text(text)
     print(text)
     print(f"wrote {out}")
