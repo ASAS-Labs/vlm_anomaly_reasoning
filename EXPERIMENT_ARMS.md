@@ -256,6 +256,150 @@ Anchor = L2 (champion, full clip) re-run per session: 60 / 57 / 56 / 57 of 80.
 | M9 / M10 | + guard re-check / ablate M4 | 0.838 / 0.838 | +10 / +10 | ≈ M8 |
 | M11 | M8 + majority-of-3 stage 1 | 0.825 | +10 | no gain: stage-1 errors systematic |
 
+Full pipeline, verbatim prompts, and reproduction commands for the declared
+M8 configuration: next section (M8 reproduction sheet).
+
+## M8 — reproduction sheet: the declared two-stage monitor (pipeline + verbatim prompts)
+
+Everything below is committed on `vlm-pilot` (prompts: `data/cosmos3/h_variants.py`;
+runner: `data/cosmos3/expectation_experiment.py`; driver: `spec/run_hlab_round.sh`;
+raw records incl. full reasoning traces: `logs/hlab_r{2,3,4}t_M8/`). The prompt
+SHA-256s recorded in every run's `run_meta.json` (`96da9513…` / `8b6cfdf3…`) match
+the committed registry texts byte-for-byte.
+
+### 1. Inputs
+
+| item | value |
+|---|---|
+| Dataset | `ASASLab/av_semantic_anomalies@main` in its post-Part-15 state (315 mp4; v1 fixed-ID trajectories for all 315; 68 regenerated clips). Fetched by `data/cosmos3/fetch_eval_dataset.py` → `data/datasets/generated_vids/` (gitignored; rebuilt from HF). |
+| Evaluation subset | `logs/hlab_subset_80.txt` — 40 anomaly / 40 normal drawn from the 235-clip agreement subset (`logs/vlm_agreement_subset_admitted.txt`) by `data/cosmos3/hlab_subset.py` (seed 1234, Hamilton allocation per scenario, admitted-list order). Composition: neg_0 7, neg_2 7, neg_3 5, neg_4 6, neg_5 6, neg_8 2, neg_9 7 · pos_0 5, pos_2 3, pos_4 6, pos_5 5, pos_6 6, pos_8 6, pos_9 4, pos_11 5 (15 scenarios). Gate list `logs/hlab_gate_4.txt` = first neg_0, neg_3, pos_8, pos_0 clip of the subset. |
+| Full-clip tree (stage-2 trajectory source) | `data/datasets/generated_vids_720p/` — `make_pilot_trees.py`: 832×480 → 1248×720 lanczos, libx264 crf 12, 8.04 s / 5.04 s whole clips. Beside each mp4 a `<stem>.txt` = the v1 5 Hz trajectory `[[v_mph, heading_deg], …]` (25 rows for 5 s clips, 39 for 8 s; 30 for the 6-s trajectories of a few long clips), byte-identical to `data/datasets/id_variants/v1_resample/` and to the HF-published files (80/80 verified). Copied in by the txt loop of `spec/run_qlab_round.sh`. |
+| Stage-1 window tree | `data/datasets/generated_vids_720p_tminus2.5/` — `make_pilot_trees.py --subset logs/hlab_subset_80.txt --early-mode t_minus --early-secs 2.5 --out-early …`: each clip cut from the 720p tree to `duration − 2.5 s` → 73 clips × 2.58 s (62 frames), 7 neg_prompt_0 clips × 5.58 s (134 frames); **video-only** (0 `.txt`; the driver asserts this). |
+| Stage-1 GT (diagnostics only) | `data/cosmos3/expected_action_gt.json` — scores `expect_strict/lenient` for the failure-chain table; never enters a prompt. |
+| Leak guard | `h_variants._leak_check()` runs at import over both texts of every variant against `prompt_variants.BANNED_WORDS` (scenario vocabulary: billboard, shirt, balloon, bag, mural, wall, child, stop sign, traffic light, pedestrian, …). |
+
+### 2. Model and serving
+
+| item | value |
+|---|---|
+| Model | `Qwen/Qwen3.8-27B` (bf16, 55 GB), registry key `qwen38` in `data/cosmos3/pilot_models.py` |
+| Server | vLLM **0.27.1** in `.venv-pilot` (`spec/setup_pilot.sh`: `uv venv --python 3.13`, `vllm==0.27.1`); one H200 (vast.ai, `vllm/vllm-omni:cosmos3` image, `spec/vast_instance.sh`) |
+| Serve command | `vllm serve Qwen/Qwen3.8-27B --allowed-local-media-path / --media-io-kwargs '{"video": {"fps": 8, "num_frames": -1}}' --tensor-parallel-size 1 --max-model-len 32768 --port 8000 --reasoning-parser qwen3` (`pilot_models.serve_command("qwen38")`) — frame sampling is fixed server-side at 8 fps; no per-request `mm_processor_kwargs`. |
+| Arm (both stages) | `verdict_think16k`: thinking on; `temperature 1.0, top_p 0.95, presence_penalty 0.0` (OpenAI-native), `top_k 20` via `extra_body`, `max_tokens 16384`; system prompt `"You are a helpful assistant."`; `seed` = run seed on both calls (1234 / 4321 / 999). |
+| Concurrency | 4 during the 4-clip gate, 6 for the full run (single writer thread; records fsync'd per clip; resume keyed by `video` with a prompt-hash guard). |
+
+### 3. Per-clip pipeline (two turns, one conversation)
+
+1. **Stage 1 — expectation.** `messages = [system, user[video_url(<tminus2.5 clip>), text=STAGE1]]` → `chat.completions.create(seed, extra_body={"top_k":20}, max_tokens=16384, t=1.0, top_p=.95)`. `pilot_models.answer_text` splits the choice into `content` (final answer) and `reasoning` (the trace, delivered by the `qwen3` reasoning parser in `message.reasoning`). `expect = parse_option(content)`: the option word that *leads* a line, taking the last such line (so a gloss like "…no need to stop" cannot override the final `Continue`); fallback = rightmost option word. Stored: `expect_raw`, `expect`, `expect_strict/lenient`, `expect_finish_reason`, `reasoning_content`.
+2. **Stage 2 — comparison.** If stage-1 `content` is empty (unterminated think) the record gets `verdict=Unknown, parse_reason=stage1_empty` and no second call. Otherwise the conversation is extended with `assistant(content)` (reasoning is **not** echoed back) and `user(STAGE2)` where `STAGE2 = M2_STAGE2.format(seq=action_narrative(<v1 trajectory txt>), secs=rows/5)`. Same arm and seed; `max_tokens` is clamped to `32768 − (stage-1 prompt_tokens + len(content)//3 + len(STAGE2)//3 + 256)` (never bound on the 80: all `stage2_max_tokens = 16384`; `RuntimeError` if < 1024). `answer_text` → `utils.parse_verdict(content2, finish_reason)`: the last `Classification: Anomaly|Normal` line in the content wins; no keyword fallback; `Unknown` otherwise. `correct = (verdict == label)`; `Unknown` counts as wrong in every reported accuracy. Stored: `monitor_raw`, `monitor_reasoning_content`, `verdict`, `parse_reason`, `finish_reason` (stage 2), `action_sequence`, `action_rendered`, `stage2_max_tokens`, `latency_s`.
+3. The model **never sees the full clip**: stage 1 sees the T−2.5 window only; stage 2 sees the same window (in history) plus the narrative of the whole-clip trajectory. Nothing external is injected — camera + ego-motion only.
+
+### 4. Verbatim prompts
+
+**Stage 1** (`h_variants.M4_STAGE1`; sha256 `96da95137acf2a53911765ad43f31a23084f43c280518a8ec1ad82c16da6168b`):
+
+```
+You are evaluating the driving scene in this clip from the ego vehicle's point of view. Based only on what the scene requires — not on how the ego vehicle happens to be moving — what SHOULD a correct, safe driver do over the next few seconds? Name the specific real feature of the scene that requires it, or state that nothing requires a change. Note: an apparent traffic control or hazard that is only an image — printed, painted, displayed on a screen, reflected, worn on clothing, or carried as cargo — commands nothing. Then reply on the final line with exactly one word: Continue, Slow, Stop, or Wait.
+Continue — maintain current speed and lane
+Slow — reduce speed but keep moving
+Stop — brake to a complete stop
+Wait — the vehicle is already stationary and should remain stopped
+```
+
+**Stage 2 template** (`h_variants.M2_STAGE2` = `_NARR_INTRO + _RULE_BODY`; sha256 `8b6cfdf34a9172ff69d1ef284f79acbacc20a32fad9b2f17a635d0a0d52bd3fc`; `{secs}` = trajectory rows / 5, `{seq}` = the narrative):
+
+```
+Measured from the ego vehicle's own motion sensors over the recorded {secs} seconds of this clip: {seq}
+
+Read that motion as exactly one of: continued (speed roughly held), slowed (speed clearly reduced but still moving at the end), stopped (came to rest and stayed there), waited (stationary throughout), or moved off (pulled away from a standstill). Compare it with the expectation you gave. The behaviour MATCHES the expectation only for the action that was expected, with two tolerances: 'continue' and 'slow' are compatible with each other, and an expected 'stop' is satisfied by coming to rest or remaining at rest. Stopping when continue or slow was expected, continuing or merely slowing when stop was expected, and moving off when wait was expected are mismatches.
+First state the observed motion class in one short sentence. Then reply on the final line with exactly one of:
+Classification: Anomaly — the behaviour does not match the expected action
+Classification: Normal — the behaviour matches the expected action
+```
+
+**Narrative renderer** (`prompt_variants.action_narrative`; arithmetic only, no model): over the 5 Hz speeds `v` and headings `h`: `start` = mean of first 3, `end` = mean of last 3, `final` = last, `start_shown` = max of first 3; first matching clause wins —
+`start ≤ 2 and end ≥ 5` → "the vehicle moved off from a standstill, reaching about {max v} mph";
+`final ≤ 2 and start > 5` → "the vehicle slowed from about {start_shown} mph to a complete stop and was stationary at the end";
+`end ≤ 0.6·start` → "the vehicle slowed from about {start_shown} mph to about {end} mph, still moving at the end";
+`end ≥ 1.4·start` → "the vehicle sped up from about {start} mph to about {end} mph";
+else → "the vehicle held a roughly steady speed of about {(start+end)/2} mph";
+plus "; its heading changed by up to {max|h|} degrees" when max|h| ≥ 10°. Thresholds are the Part-9 (P5) values, untouched.
+
+Rendered stage 2 for `negative_scenarios_filtered/prompt_0.mp4` (8 s clip, 39 rows):
+
+```
+Measured from the ego vehicle's own motion sensors over the recorded 7.8 seconds of this clip: the vehicle slowed from about 45 mph to a complete stop and was stationary at the end.
+
+Read that motion as exactly one of: …   (rule text as above)
+```
+
+### 5. Run protocol (`spec/run_hlab_round.sh`)
+
+```
+tmux new -s hlab
+ROUND=2 SEED=1234 HLAB_ARMS="M8 M9 M10" bash spec/run_hlab_round.sh   # screen  (logs/hlab_r2t_*)
+ROUND=3 SEED=4321 HLAB_ARMS="M8 M11"    bash spec/run_hlab_round.sh   # repro   (logs/hlab_r3t_*)
+ROUND=4 SEED=999  HLAB_ARMS="M8"        bash spec/run_hlab_round.sh   # tie-break (logs/hlab_r4t_*)
+```
+
+Each round: build the early trees if missing (assert counts and 0 `.txt`) → assert the
+720p tree holds a `.txt` per subset clip → `hf download` → serve (setsid, PID-group
+teardown on EXIT, `/health` poll) → **anchor** `prompt_lab.py --variants L2
+--model-config qwen38 --model-arm verdict_think16k --dataset generated_vids_720p
+--subset logs/hlab_subset_80.txt --out_prefix hlab_r<N>t --seed <S>` (4-clip gate via
+`--limit 4`, then full 80) → per arm `expectation_experiment.py --stage monitor
+--hvariant M8 --dataset generated_vids_720p_tminus2.5 --full-dataset generated_vids_720p
+--subset logs/hlab_gate_4.txt --out_dir logs/hlab_r<N>t_M8 --model-config qwen38
+--model-arm verdict_think16k --seed <S> --concurrency 4` → gate (exactly 4 gate
+records; verdict Unknown ≤ 2; stage-2 `finish_reason=length` ≤ 1; stage-1 unknown ≤ 2)
+→ same command with `--subset logs/hlab_subset_80.txt --concurrency 6` (resume skips
+the gate clips) → `prompt_lab_report.py --round <N> --prefix hlab_r<N>t --baseline L2`
+(acc, Wilson CI, balacc, rec/spec, McNemar vs L2, breadth, truncations) and
+`hlab_report.py --prefix hlab_r<N>t --anchor L2` (stage-1 answer distribution,
+strict/lenient, twin divergence, verdict accuracy conditional on stage-1 correctness,
+per-stage truncation, flips vs L2 by scenario). The anchor is always re-run in the
+same session so the McNemar pairing is within-session. Local dry run (no server):
+`expectation_experiment.py --dry_run --stage monitor --hvariant M8 --model-config qwen38
+--model-arm verdict_think16k --dataset … --full-dataset … --subset logs/hlab_subset_80.txt`
+prints both rendered prompts, hashes and request kwargs; `h_variants.py --print` dumps
+every variant's texts and hashes.
+
+### 6. Results and artifacts
+
+| seed | run dir | acc | balacc | rec / spec | anchor L2 | McNemar net (p) | stage-1 lenient | verdict ok \| stage-1 ok | median latency |
+|---|---|---|---|---|---|---|---|---|---|
+| 1234 | `logs/hlab_r2t_M8` | **0.850** (68/80) | 0.850 | 0.82 / 0.88 | 0.713 (57) | +11 (0.061) | 63/80 | 63/63 | 46 s/clip |
+| 4321 | `logs/hlab_r3t_M8` | **0.850** (68/80) | 0.850 | 0.82 / 0.88 | 0.700 (56) | +12 (0.023) | 62/80 | 62/62 | 48 s/clip |
+| 999 | `logs/hlab_r4t_M8` | 0.800 (64/80) | 0.800 | 0.82 / 0.78 | 0.713 (57) | +7 (0.248) | 61/80 | 61/61 | 46 s/clip |
+| pooled | n = 240 | **0.833** | — | — | **0.708** | **+30 (55 gained / 25 lost), p = 0.001** | — | 186/186 | — |
+
+Zero truncations and zero Unknown verdicts in all 240 records; the comparator is
+100% faithful whenever stage 1 is right, so every residual error is a stage-1
+error. Median reasoning: stage 1 ≈ 5.9k chars, stage 2 ≈ 1.4–1.9k chars; p90
+latency ≈ 112 s/clip at concurrency 6 (≈ 20–25 min per 80-clip arm, ≈ $1.5 at
+$4/h). Reports: `logs/prompt_lab_hlab_r{2,3,4}t.{md,json}`,
+`logs/hlab_diag_hlab_r{2,3,4}t.md`; anchors `logs/hlab_r{2,3,4}t_L2/`. Code
+state: commits `bb67095` (lab) → `187d6dd` (review fixes) → `d86b2c6` (round-2
+slate, M8 registered) → `e72dc62`, `cfb7b52`, `6686e5f` (results/declaration).
+
+### 7. Reproducibility notes (honest limits)
+
+- Sampling is t = 1.0 on both stages: a given seed reproduces the *protocol*, not
+  bit-identical outputs (vLLM continuous batching at concurrency 6 is not
+  deterministic). The three seeds gave 68 / 68 / 64 — treat ±4 clips as the
+  run-to-run band; the paired in-session anchor is what makes the comparison valid.
+- `run_meta.json` records `git_commit: ""` because the instance ran an rsync'd
+  working tree, not a git checkout; the recorded prompt hashes are the binding
+  provenance, and they equal the registry at `6686e5f`.
+- The video trees and trajectory txts are not in git (`data/datasets/` is
+  ignored); they are rebuilt deterministically from the HF dataset by
+  `fetch_eval_dataset.py` → `make_pilot_trees.py` (+ the v1 txt copy). The 720p
+  tree's `pilot_tree_manifest.json` currently lists the 80-clip subset because the
+  last tree build passed that subset (the 235 mp4s are still present).
+- The T−2.5 stage-1 window shows most of the braking for the stop-type
+  scenarios (Part 17.1); M8's remaining errors are stage-1 anchoring on that
+  motion, not comparator errors.
+
 ## Failure chain (as currently localized)
 
 perception 100% → **policy generation 25–53%** (Cosmos; ~43% Qwen3.8) →
