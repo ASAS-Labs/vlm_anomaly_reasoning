@@ -960,3 +960,33 @@ The maintain-class residual is the remaining generation limit: the model brakes
 for lane-adjacent hazards regardless of prompt text; fixing it would need
 scene-side changes (hazard placement) rather than motion wording — out of scope
 for a prompt-timing repair, noted for the dataset paper.
+
+## Part 16 — Champion re-measured on the 235-clip subset: holds, with a smaller margin
+
+The Part-12 declaration was made on the 72-clip anomaly-majority subset; after
+Parts 13-15 the admitted set is 235 clips (110 anomaly / 125 normal, majority
+0.532 normal, 15 scenarios). Same configuration, same session-paired protocol
+(`qlab_r5`, seed 1234, 720p↑ @ 8 fps, trees rebuilt for the 235).
+
+| arm | acc | 95% CI | balacc | rec/spec | McNemar vs P0 |
+|---|---|---|---|---|---|
+| **L2, think@16k (champion)** | **0.745** | [0.685, 0.796] | **0.732** | 0.54 / 0.93 | **+29 (p=0.012)**, breadth 8/15 |
+| P0, think@16k (anchor) | 0.621 | [0.558, 0.681] | 0.641 | 0.95 / 0.34 | — |
+| L2, direct | 0.621 | | 0.604 | 0.33 / 0.88 | +14 (p=0.22) |
+| P0, direct | 0.562 | | 0.574 | 0.76 / 0.38 | — |
+
+The champion **still clears the pre-registered bar** (acc > 0.736, balacc >
+0.70) on the near-balanced set, now with a significant paired margin over its
+anchor (+29 clips, p=0.012) and the same signature — near-perfect specificity
+(0.93), recall the constraint (0.54). The absolute numbers are lower than on the
+72 (0.806-0.889 / 0.84-0.91): part of that is the honest-set correction
+(the 72 was anomaly-majority and the guard prompt's strength is specificity),
+part is that the new clips include scenarios (neg_0, pos_2, pos_6, neg_9 …)
+the lab never saw during design. P0's own number also drops (0.694-0.708 → 0.621),
+so the structure of the result is unchanged: the guard line buys ~+0.09-0.12
+balanced accuracy over the Cosmos-tuned wording wherever it is measured.
+
+Single-seed so far; the 72-clip declaration had a seed-4321 reproduction. A
+reproduction on the 235 (~$4) is the remaining formality before quoting these
+as the paper's headline numbers. Session cost ≈ $6 (interrupted once by credit
+exhaustion at 226/235 clips; resumed from the synced records).

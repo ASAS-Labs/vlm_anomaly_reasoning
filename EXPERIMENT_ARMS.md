@@ -231,9 +231,13 @@ Rounds: r1 screen (13 arms) → r2 recall children → r3 @16k + repro.
 | L3/L4/L9/L10 | action/velocity channels | 0.292-0.528 | — | killed: video-only law transfers |
 | L7 / LE1 | burden-of-proof / reasoning_effort=low | 0.472 / 0.667 | — | killed |
 
+| L2 (235) | P0 + guard line, think@16k, 235-clip subset | 0.745 / balacc 0.732 (0.54/0.93), +29 vs P0 p=.012 | (single seed) | **holds the bar on the near-balanced set (Part 16)** |
+| P0 (235) | anchor, think@16k, 235-clip subset | 0.621 / 0.641 (0.95/0.34) | — | — |
+
 **Declared: Qwen3.8-27B + L2 (P0 + one depiction/necessity guard line) +
 think @16384 beats the Cosmos champion 0.736/0.693 by +12-15 acc / +15-22
-balacc with zero false anomalies in 144 verdicts.** The program's 0.70-balacc
+balacc with zero false anomalies in 144 verdicts (72-clip set); re-measured on
+the 235-clip set it still clears acc > 0.736 / balacc > 0.70 (Part 16).** The program's 0.70-balacc
 ceiling was a missing concept, not capability: Cosmos couldn't use the same
 rule (P8 dropped its balacc). 8k budgets truncate guard prompts on ~10% of
 clips (12.2); direct-mode single-seed numbers are untrustworthy (12.2).
@@ -250,6 +254,7 @@ comparison ~70% → verdict.
   transfer across models).
 - Maintain-class generation residual (23 clips): needs scene-side prompt changes
   (hazard placement), not motion wording — dataset-paper note.
-- Re-measure the champion (Qwen3.8 + L2 + think@16k) on the 235-clip subset (near-balanced).
+- Seed-4321 reproduction of the champion on the 235-clip subset (~$4) before
+  quoting Part-16 numbers as headline.
 - SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).
