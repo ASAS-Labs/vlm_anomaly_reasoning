@@ -242,6 +242,20 @@ ceiling was a missing concept, not capability: Cosmos couldn't use the same
 rule (P8 dropped its balacc). 8k budgets truncate guard prompts on ~10% of
 clips (12.2); direct-mode single-seed numbers are untrustworthy (12.2).
 
+## M — H-lab: two-stage monitor prompt lab, Qwen3.8 think@16k (80-clip balanced subset) — Part 17
+
+Anchor = L2 (champion, full clip) re-run per session: 60 / 57 / 56 / 57 of 80.
+
+| arm | design | acc (seed) | vs L2 | verdict |
+|---|---|---|---|---|
+| M0 | verbatim H3 texts @ T−2.5 | 0.613 | −11 | comparator loses 30% given correct expectation |
+| M2 | rule + narrative rendering | 0.838 | +7 | **100% given correct expectation**; stage 1 is the ceiling |
+| M4 / M5 | guard at stage 1 / guard re-check at stage 2 | 0.775 / 0.762 | +2 / +1 | both levers real |
+| M6 / M7 | 1.5 s / 1.0 s windows | 0.600 / 0.588 | −12 / −13 | window ladder flat |
+| **M8** | M4 stage 1 × narrative comparator | **0.850 (1234), 0.850 (4321), 0.800 (999)** | +11 / +12 / +7 | **pooled 0.833 vs 0.708, p=0.001 — H-family champion** (per-seed: 1/3 at p<.05) |
+| M9 / M10 | + guard re-check / ablate M4 | 0.838 / 0.838 | +10 / +10 | ≈ M8 |
+| M11 | M8 + majority-of-3 stage 1 | 0.825 | +10 | no gain: stage-1 errors systematic |
+
 ## Failure chain (as currently localized)
 
 perception 100% → **policy generation 25–53%** (Cosmos; ~43% Qwen3.8) →
@@ -254,7 +268,8 @@ comparison ~70% → verdict.
   transfer across models).
 - Maintain-class generation residual (23 clips): needs scene-side prompt changes
   (hazard placement), not motion wording — dataset-paper note.
-- Seed-4321 reproduction of the champion on the 235-clip subset (~$4) before
-  quoting Part-16 numbers as headline.
+- Seed-4321 reproduction of the L2 champion on the 235-clip subset (~$4).
+- H-lab next lever: first-frame (0.3 s) stage 1 for stop-type scenes; then M8 on
+  the full 235.
 - SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).

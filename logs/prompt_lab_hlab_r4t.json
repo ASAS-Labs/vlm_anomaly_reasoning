@@ -1,0 +1,38 @@
+{
+ "round": 4,
+ "n": 80,
+ "summary": {
+  "M8": {
+   "acc": 0.8,
+   "ci": [
+    0.6995355220341885,
+    0.8729726362070666
+   ],
+   "gained": 17,
+   "lost": 10,
+   "p": 0.24778856337070465,
+   "breadth": 5,
+   "anomaly_verdicts": 42,
+   "balacc": 0.8,
+   "recall": 0.825,
+   "specificity": 0.775,
+   "truncated": 0
+  },
+  "L2": {
+   "acc": 0.7125,
+   "ci": [
+    0.6053944721715182,
+    0.8001321399160374
+   ],
+   "gained": 0,
+   "lost": 0,
+   "p": 1.0,
+   "breadth": 0,
+   "anomaly_verdicts": 23,
+   "balacc": 0.7125,
+   "recall": 0.5,
+   "specificity": 0.925,
+   "truncated": 0
+  }
+ }
+}
