@@ -256,6 +256,7 @@ Anchor = L2 (champion, full clip) re-run per session: 60 / 57 / 56 / 57 of 80.
 | M9 / M10 | + guard re-check / ablate M4 | 0.838 / 0.838 | +10 / +10 | ≈ M8 |
 | M11 | M8 + majority-of-3 stage 1 | 0.825 | +10 | no gain: stage-1 errors systematic |
 | **M8 (235)** | same config, full 235-clip subset, in-session L2 anchor | **0.830 / balacc 0.826** (0.77/0.88) | **+27 (p=0.002)** vs L2 0.715; +20 (p=0.024) vs the Part-16 L2 0.745 | **headline numbers; holds on the honest set (Part 17.4)** |
+| M8 / M8w15 / M8w10 (40 fails) | stage-1 window T−2.5 (control) / T−1.5 / T−1.0 on M8's 40 failed clips | recovered 3 / 12 / 14 of 40 | — | longer window fixes pos_8 (4/4), partial on the mural family, ~none on neg_8; needs a paired 235 run before adoption (17.5) |
 
 Full pipeline, verbatim prompts, and reproduction commands for the declared
 M8 configuration: next section (M8 reproduction sheet).

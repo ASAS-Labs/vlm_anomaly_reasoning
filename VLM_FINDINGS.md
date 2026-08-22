@@ -1091,3 +1091,33 @@ M8 = 0.830 acc / 0.826 balacc (recall 0.77, specificity 0.88) vs the
 single-call champion L2 = 0.715–0.745 / 0.70–0.73, +20 to +27 paired clips,
 p ≤ 0.024 on either pairing.** Single seed on the 235; a seed-4321
 reproduction (~$5) is the remaining formality before quoting it as final.
+
+### 17.5 Longer stage-1 windows on M8's 40 failures (T−1.5 / T−1.0)
+
+Round 6 (`logs/hlab_r6t_*`, seed 1234, instance re-provisioned): the 40 clips M8
+got wrong on the 235 (`logs/hlab_m8fail_40.txt`), run with M8 unchanged except the
+stage-1 window — T−2.5 again (same-window re-run = sampling-noise control), T−1.5
+(3.6 s windows) and T−1.0 (4.1 s). All 5-s clips; 0 truncations / Unknowns.
+
+| arm | stage-1 window | stage-1 correct | verdicts recovered / 40 |
+|---|---|---|---|
+| M8 (control re-run) | T−2.5 (2.6 s) | 2 | **3** — the chance-flip floor; the failures are systematic |
+| M8w15 | T−1.5 (3.6 s) | 11 | **12** |
+| M8w10 | T−1.0 (4.1 s) | 12 | **14** |
+
+Recovered by both longer windows 8, by either 18. By mechanism (ctrl / T−1.5 / T−1.0):
+pos_8 under-commitment **0 / 4 / 4** (all four: the child steps off inside the longer
+window → "stop"); mural blindness neg_9 1 / 3 / 5 and pos_9 1 / 3 / 2 (stochastic —
+different clips flip at each window; the wall is read as a wall only sometimes);
+neg_8 window blindness 0 / 0 / **1** (the step-off is still mostly after T−1.0, and the
+one recovery says "stop" at 4.1 s — the rest remain "slow"); neg_2 1 / 1 / 2 (noise);
+pos_11 renderer artifact 0 / 1 / 0 (unchanged by design — stage 1 still says "wait").
+
+Reading: a longer window recovers the **under-committed hazard** cases fully (pos_8:
+the model needs to see the child move before it says "stop") but is only a partial,
+noisy lever on the mural family, and leaves neg_8 (the label event is at ~3–4.5 s)
+and the renderer artifact untouched. It also cannot be adopted blindly — a longer
+window re-exposes the anchoring risk on the unnecessary-stop scenarios that M8 now
+solves (at T−1.0 the braking is complete and visible). The proper test is M8w10 on
+the full 235 with a paired anchor (~$5); expected net: +14 recoveries here against an
+unknown number of new losses on neg_0/2/4/5.

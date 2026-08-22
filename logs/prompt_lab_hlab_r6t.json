@@ -1,0 +1,54 @@
+{
+ "round": 6,
+ "n": 40,
+ "summary": {
+  "M8w10": {
+   "acc": 0.35,
+   "ci": [
+    0.2213433317104915,
+    0.5049440300646263
+   ],
+   "gained": 11,
+   "lost": 0,
+   "p": 0.0009765625,
+   "breadth": 5,
+   "anomaly_verdicts": 17,
+   "balacc": 0.36,
+   "recall": 0.32,
+   "specificity": 0.4,
+   "truncated": 0
+  },
+  "M8w15": {
+   "acc": 0.3,
+   "ci": [
+    0.18074670915695296,
+    0.454303106543204
+   ],
+   "gained": 9,
+   "lost": 0,
+   "p": 0.00390625,
+   "breadth": 4,
+   "anomaly_verdicts": 11,
+   "balacc": 0.3466666666666667,
+   "recall": 0.16,
+   "specificity": 0.5333333333333333,
+   "truncated": 0
+  },
+  "M8": {
+   "acc": 0.075,
+   "ci": [
+    0.025835556771858226,
+    0.19864530159097524
+   ],
+   "gained": 0,
+   "lost": 0,
+   "p": 1.0,
+   "breadth": 0,
+   "anomaly_verdicts": 16,
+   "balacc": 0.07333333333333333,
+   "recall": 0.08,
+   "specificity": 0.06666666666666667,
+   "truncated": 0
+  }
+ }
+}
