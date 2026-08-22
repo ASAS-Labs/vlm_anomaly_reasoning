@@ -103,6 +103,29 @@ H_VARIANTS = {
 }
 
 
+# --- Round 2: compose the round-1 levers (registered before spend) ----------
+# Round 1: M2 (narrative + rule) is 100% correct given a correct expectation
+# (63/63) -> the ceiling is stage 1; M4's guard+feature stage 1 had the best
+# stage-1 numbers (64/80 lenient) and M5's stage-2 guard re-check rescued 67% of
+# stage-1-wrong clips. Window ladder flat -> stay at T-2.5.
+M9_STAGE2 = (_NARR_INTRO
+             + "Before comparing, re-check the expectation you gave. " + _GUARD_LINE
+             + " If your expectation rested on such an item, correct it to what the "
+               "scene actually requires.\n\n" + _RULE_BODY)
+
+H_VARIANTS.update({
+    "M8": {"stage1": M4_STAGE1, "stage2": M2_STAGE2, "action_render": "narrative",
+           "stage1_window": "tminus2.5", "parent": "M4 x M2",
+           "hypothesis": "compose: guard+feature stage 1 x narrative comparator"},
+    "M9": {"stage1": M4_STAGE1, "stage2": M9_STAGE2, "action_render": "narrative",
+           "stage1_window": "tminus2.5", "parent": "M4 x M2 x M5",
+           "hypothesis": "compose: guard stage 1 x narrative x guard re-check"},
+    "M10": {"stage1": EXPECT_QUESTION, "stage2": M9_STAGE2, "action_render": "narrative",
+            "stage1_window": "tminus2.5", "parent": "M2 x M5",
+            "hypothesis": "compose: M0 stage 1 x narrative x guard re-check (ablates M4)"},
+})
+
+
 def render_action(render: str, seq_text: str) -> str:
     if render == "raw":
         return seq_text

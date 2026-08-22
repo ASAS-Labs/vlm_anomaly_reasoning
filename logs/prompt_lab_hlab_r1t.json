@@ -1,0 +1,150 @@
+{
+ "round": 1,
+ "n": 80,
+ "summary": {
+  "M2": {
+   "acc": 0.8375,
+   "ci": [
+    0.7415689513651669,
+    0.9025027266562451
+   ],
+   "gained": 16,
+   "lost": 9,
+   "p": 0.2295229434967041,
+   "breadth": 5,
+   "anomaly_verdicts": 39,
+   "balacc": 0.8374999999999999,
+   "recall": 0.825,
+   "specificity": 0.85,
+   "truncated": 0
+  },
+  "M4": {
+   "acc": 0.775,
+   "ci": [
+    0.6721300467523076,
+    0.8526690983021762
+   ],
+   "gained": 14,
+   "lost": 12,
+   "p": 0.8450189828872681,
+   "breadth": 4,
+   "anomaly_verdicts": 30,
+   "balacc": 0.775,
+   "recall": 0.65,
+   "specificity": 0.9,
+   "truncated": 0
+  },
+  "M5": {
+   "acc": 0.7625,
+   "ci": [
+    0.6585901502919855,
+    0.8423544881691125
+   ],
+   "gained": 12,
+   "lost": 11,
+   "p": 1.0,
+   "breadth": 3,
+   "anomaly_verdicts": 33,
+   "balacc": 0.7625,
+   "recall": 0.675,
+   "specificity": 0.85,
+   "truncated": 0
+  },
+  "L2": {
+   "acc": 0.75,
+   "ci": [
+    0.6451511899886556,
+    0.8319389418790569
+   ],
+   "gained": 0,
+   "lost": 0,
+   "p": 1.0,
+   "breadth": 0,
+   "anomaly_verdicts": 22,
+   "balacc": 0.75,
+   "recall": 0.525,
+   "specificity": 0.975,
+   "truncated": 0
+  },
+  "M1": {
+   "acc": 0.675,
+   "ci": [
+    0.5664032172496735,
+    0.7675598750577254
+   ],
+   "gained": 9,
+   "lost": 15,
+   "p": 0.30745625495910645,
+   "breadth": 3,
+   "anomaly_verdicts": 28,
+   "balacc": 0.675,
+   "recall": 0.525,
+   "specificity": 0.825,
+   "truncated": 0
+  },
+  "M3": {
+   "acc": 0.6625,
+   "ci": [
+    0.5535631838362329,
+    0.7565454018777802
+   ],
+   "gained": 10,
+   "lost": 17,
+   "p": 0.24778856337070465,
+   "breadth": 2,
+   "anomaly_verdicts": 29,
+   "balacc": 0.6625000000000001,
+   "recall": 0.525,
+   "specificity": 0.8,
+   "truncated": 0
+  },
+  "M0": {
+   "acc": 0.6125,
+   "ci": [
+    0.5029345562232477,
+    0.711756003117223
+   ],
+   "gained": 11,
+   "lost": 22,
+   "p": 0.08014331245794892,
+   "breadth": 5,
+   "anomaly_verdicts": 35,
+   "balacc": 0.6125,
+   "recall": 0.55,
+   "specificity": 0.675,
+   "truncated": 0
+  },
+  "M6": {
+   "acc": 0.6,
+   "ci": [
+    0.49045264548149986,
+    0.700383407265585
+   ],
+   "gained": 12,
+   "lost": 24,
+   "p": 0.06524533522315323,
+   "breadth": 5,
+   "anomaly_verdicts": 38,
+   "balacc": 0.6,
+   "recall": 0.575,
+   "specificity": 0.625,
+   "truncated": 0
+  },
+  "M7": {
+   "acc": 0.5875,
+   "ci": [
+    0.4780384112688303,
+    0.6889431348848691
+   ],
+   "gained": 9,
+   "lost": 22,
+   "p": 0.029449373483657837,
+   "breadth": 4,
+   "anomaly_verdicts": 37,
+   "balacc": 0.5875,
+   "recall": 0.55,
+   "specificity": 0.625,
+   "truncated": 0
+  }
+ }
+}

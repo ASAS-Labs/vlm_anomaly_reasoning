@@ -1,0 +1,50 @@
+{
+  "model_key": "qwen38",
+  "hf_id": "Qwen/Qwen3.8-27B",
+  "served_model_id": "Qwen/Qwen3.8-27B",
+  "arm": "verdict_think16k",
+  "think": true,
+  "request_kwargs": {
+    "max_tokens": 16384,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "presence_penalty": 0.0
+  },
+  "extra_body": {
+    "top_k": 20
+  },
+  "serve_command": [
+    "vllm",
+    "serve",
+    "Qwen/Qwen3.8-27B",
+    "--allowed-local-media-path",
+    "/",
+    "--media-io-kwargs",
+    "{\"video\": {\"fps\": 8, \"num_frames\": -1}}",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--port",
+    "8000",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "vllm_version": "0.27.1",
+  "git_commit": "",
+  "ts": "2026-08-22T06:38:06",
+  "stage": "monitor",
+  "variant": "M3",
+  "hypothesis": "heading channel is noise for speed-class matching",
+  "dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p_tminus2.5",
+  "full_dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p",
+  "stage1_window": "tminus2.5",
+  "action_render": "velocity",
+  "subset": "/root/vlm_anomaly_reasoning/logs/hlab_subset_80.txt",
+  "seed": 1234,
+  "concurrency": 6,
+  "n_clips": 80,
+  "prompt_sha256": "13f8c19eeec4e7b063924f9517c21d19ea409ab21e48084f18488a1efedc8d10",
+  "stage1_prompt_sha256": "13f8c19eeec4e7b063924f9517c21d19ea409ab21e48084f18488a1efedc8d10",
+  "stage2_prompt_sha256": "56fbbe7a93c1e4df30b787d1429cd8b955c0d9211759e0ee04a2545c3748a90d"
+}

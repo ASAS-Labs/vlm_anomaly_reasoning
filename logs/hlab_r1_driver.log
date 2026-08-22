@@ -1,0 +1,854 @@
+=== hlab round 1 (prefix hlab_r1, seed 1234) ===
+--- early trees (video-only) ---
+--- download (cached after round 1) ---
+[90mHint: The `hf-cli` skill is not installed. Run `hf skills add -g --claude` to teach your AI agents how to use the `hf` CLI.[0m
+Fetching 32 files:   0%|          | 0/32 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 32 files:  25%|██▌       | 8/32 [00:00<00:00, 64.12it/s]Fetching 32 files:  25%|██▌       | 8/32 [00:20<00:00, 64.12it/s]Fetching 32 files:  28%|██▊       | 9/32 [02:36<09:06, 23.77s/it]Fetching 32 files:  31%|███▏      | 10/32 [02:38<07:15, 19.79s/it]Fetching 32 files:  31%|███▏      | 10/32 [02:50<07:15, 19.79s/it]Fetching 32 files:  34%|███▍      | 11/32 [03:04<07:22, 21.08s/it]Fetching 32 files:  38%|███▊      | 12/32 [03:31<07:30, 22.51s/it]Fetching 32 files:  41%|████      | 13/32 [03:55<07:11, 22.74s/it]Fetching 32 files:  44%|████▍     | 14/32 [04:33<08:01, 26.74s/it]Fetching 32 files:  47%|████▋     | 15/32 [04:39<05:58, 21.08s/it]Fetching 32 files:  50%|█████     | 16/32 [04:50<05:37, 21.08s/it]Fetching 32 files:  53%|█████▎    | 17/32 [04:56<03:55, 15.69s/it]Fetching 32 files:  56%|█████▋    | 18/32 [05:33<04:48, 20.62s/it]Fetching 32 files:  59%|█████▉    | 19/32 [06:40<07:00, 32.36s/it]Fetching 32 files:  66%|██████▌   | 21/32 [06:40<03:27, 18.82s/it]Fetching 32 files:  72%|███████▏  | 23/32 [06:41<01:47, 12.00s/it]Fetching 32 files:  78%|███████▊  | 25/32 [06:42<00:55,  7.95s/it]Fetching 32 files:  81%|████████▏ | 26/32 [07:08<01:09, 11.59s/it]Fetching 32 files:  84%|████████▍ | 27/32 [07:21<00:59, 11.86s/it]Fetching 32 files:  88%|████████▊ | 28/32 [07:23<00:37,  9.48s/it]Fetching 32 files:  91%|█████████ | 29/32 [07:26<00:23,  7.94s/it]Fetching 32 files:  94%|█████████▍| 30/32 [07:33<00:15,  7.60s/it]Fetching 32 files:  97%|█████████▋| 31/32 [07:39<00:07,  7.19s/it]Fetching 32 files: 100%|██████████| 32/32 [07:40<00:00,  5.30s/it]Fetching 32 files: 100%|██████████| 32/32 [07:40<00:00, 14.38s/it]
+--- serve ---
+server ready
+--- anchor L2 (verdict_think16k) ---
+=== L2: P0 + depiction/necessity guard line (min delta) ===
+  [L2 1] prompt_0.mp4: Normal (X)
+  [L2 2] prompt_2.mp4: Anomaly (ok)
+  [L2 3] prompt_3.mp4: Normal (X)
+  [L2 4] prompt_5.mp4: Normal (X)
+L2: 1/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+=== L2: P0 + depiction/necessity guard line (min delta) ===
+  [L2 1] prompt_0_v16.mp4: Anomaly (ok)
+  [L2 2] prompt_0_v13.mp4: Anomaly (ok)
+  [L2 3] prompt_0_v01.mp4: Normal (X)
+  [L2 4] prompt_0_v10.mp4: Normal (X)
+  [L2 5] prompt_0_v15.mp4: Anomaly (ok)
+  [L2 6] prompt_0_v03.mp4: Anomaly (ok)
+  [L2 7] prompt_2_v07.mp4: Anomaly (ok)
+  [L2 8] prompt_2_v02.mp4: Normal (X)
+  [L2 9] prompt_2_v15.mp4: Anomaly (ok)
+  [L2 10] prompt_2_v13.mp4: Anomaly (ok)
+  [L2 11] prompt_2_v03.mp4: Anomaly (ok)
+  [L2 12] prompt_2_v12.mp4: Anomaly (ok)
+  [L2 13] prompt_3_v07.mp4: Normal (X)
+  [L2 14] prompt_3_v11.mp4: Normal (X)
+  [L2 15] prompt_3_v14.mp4: Anomaly (ok)
+  [L2 16] prompt_4_v02.mp4: Anomaly (ok)
+  [L2 17] prompt_3_v13.mp4: Anomaly (ok)
+  [L2 18] prompt_4_v13.mp4: Anomaly (ok)
+  [L2 19] prompt_4_v04.mp4: Anomaly (ok)
+  [L2 20] prompt_4_v01.mp4: Anomaly (ok)
+  [L2 21] prompt_5_v03.mp4: Normal (X)
+  [L2 22] prompt_4_v16.mp4: Anomaly (ok)
+  [L2 23] prompt_5_v09.mp4: Normal (X)
+  [L2 24] prompt_4_v20.mp4: Normal (X)
+  [L2 25] prompt_5_v12.mp4: Normal (X)
+  [L2 26] prompt_8_v12.mp4: Normal (X)
+  [L2 27] prompt_5_v07.mp4: Normal (X)
+  [L2 28] prompt_9_v02.mp4: Anomaly (ok)
+  [L2 29] prompt_5_v01.mp4: Normal (X)
+  [L2 30] prompt_9_v01.mp4: Normal (X)
+  [L2 31] prompt_9_v18.mp4: Normal (X)
+  [L2 32] prompt_9_v09.mp4: Anomaly (ok)
+  [L2 33] prompt_8_v08.mp4: Normal (X)
+  [L2 34] prompt_9_v05.mp4: Anomaly (ok)
+  [L2 35] prompt_6.mp4: Normal (ok)
+  [L2 36] prompt_0_v08.mp4: Normal (ok)
+  [L2 37] prompt_0_v07.mp4: Normal (ok)
+  [L2 38] prompt_0_v12.mp4: Normal (ok)
+  [L2 39] prompt_9_v15.mp4: Anomaly (ok)
+  [L2 40] prompt_0_v19.mp4: Normal (ok)
+  [L2 41] prompt_9_v20.mp4: Normal (X)
+  [L2 42] prompt_11_v13.mp4: Normal (ok)
+  [L2 43] prompt_0_v16.mp4: Normal (ok)
+  [L2 44] prompt_11_v04.mp4: Normal (ok)
+  [L2 45] prompt_8.mp4: Normal (ok)
+  [L2 46] prompt_11_v15.mp4: Normal (ok)
+  [L2 47] prompt_11_v20.mp4: Normal (ok)
+  [L2 48] prompt_11_v12.mp4: Normal (ok)
+  [L2 49] prompt_2_v20.mp4: Normal (ok)
+  [L2 50] prompt_2_v05.mp4: Normal (ok)
+  [L2 51] prompt_4_v05.mp4: Normal (ok)
+  [L2 52] prompt_2_v01.mp4: Normal (ok)
+  [L2 53] prompt_4_v18.mp4: Normal (ok)
+  [L2 54] prompt_4_v07.mp4: Normal (ok)
+  [L2 55] prompt_4_v20.mp4: Normal (ok)
+  [L2 56] prompt_5_v01.mp4: Normal (ok)
+  [L2 57] prompt_5_v07.mp4: Normal (ok)
+  [L2 58] prompt_4_v03.mp4: Normal (ok)
+  [L2 59] prompt_5_v02.mp4: Normal (ok)
+  [L2 60] prompt_5_v10.mp4: Normal (ok)
+  [L2 61] prompt_5_v19.mp4: Normal (ok)
+  [L2 62] prompt_6_v06.mp4: Normal (ok)
+  [L2 63] prompt_6_v05.mp4: Normal (ok)
+  [L2 64] prompt_6_v03.mp4: Normal (ok)
+  [L2 65] prompt_6_v07.mp4: Normal (ok)
+  [L2 66] prompt_6_v14.mp4: Normal (ok)
+  [L2 67] prompt_8_v03.mp4: Normal (ok)
+  [L2 68] prompt_4_v13.mp4: Normal (ok)
+  [L2 69] prompt_8_v04.mp4: Normal (ok)
+  [L2 70] prompt_8_v11.mp4: Normal (ok)
+  [L2 71] prompt_8_v18.mp4: Normal (ok)
+  [L2 72] prompt_9_v01.mp4: Normal (ok)
+  [L2 73] prompt_8_v08.mp4: Normal (ok)
+  [L2 74] prompt_9_v06.mp4: Normal (ok)
+  [L2 75] prompt_9_v08.mp4: Normal (ok)
+  [L2 76] prompt_9_v16.mp4: Anomaly (X)
+L2: 60/80
+--- arm M0 (window generated_vids_720p_tminus2.5) ---
+[1] prompt_0.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_8.mp4: expect=stop (gt=stop) -> Normal
+[3] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+[4] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+stage1 strict 4/4  lenient 4/4
+monitor verdict accuracy 4/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_0_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[3] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_2.mp4: expect=slow (gt=continue) -> Normal
+[6] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[7] prompt_2_v03.mp4: expect=slow (gt=continue) -> Normal
+[8] prompt_0_v10.mp4: expect=continue (gt=continue) -> Anomaly
+[9] prompt_2_v02.mp4: expect=stop (gt=continue) -> Normal
+[10] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[11] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[12] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[13] prompt_2_v12.mp4: expect=slow (gt=continue) -> Normal
+[14] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[15] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[16] prompt_2_v13.mp4: expect=slow (gt=continue) -> Normal
+[17] prompt_2_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[18] prompt_4_v02.mp4: expect=slow (gt=continue) -> Normal
+[19] prompt_4_v01.mp4: expect=slow (gt=continue) -> Normal
+[20] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[21] prompt_4_v16.mp4: expect=slow (gt=continue) -> Normal
+[22] prompt_4_v04.mp4: expect=slow (gt=continue) -> Normal
+[23] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[24] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[25] prompt_5_v03.mp4: expect=slow (gt=continue) -> Normal
+[26] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[27] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[28] prompt_5_v09.mp4: expect=slow (gt=continue) -> Normal
+[29] prompt_9_v01.mp4: expect=slow (gt=stop) -> Normal
+[30] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[31] prompt_9_v02.mp4: expect=continue (gt=stop) -> Anomaly
+[32] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[33] prompt_5_v12.mp4: expect=slow (gt=continue) -> Normal
+[34] prompt_8_v12.mp4: expect=continue (gt=stop) -> Anomaly
+[35] prompt_9_v15.mp4: expect=stop (gt=stop) -> Anomaly
+[36] prompt_0_v08.mp4: expect=continue (gt=continue) -> Anomaly
+[37] prompt_9_v18.mp4: expect=stop (gt=stop) -> Anomaly
+[38] prompt_6.mp4: expect=continue (gt=slow) -> Anomaly
+[39] prompt_9_v09.mp4: expect=continue (gt=stop) -> Anomaly
+[40] prompt_0_v12.mp4: expect=continue (gt=continue) -> Anomaly
+[41] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[42] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[43] prompt_11_v12.mp4: expect=wait (gt=stop) -> Normal
+[44] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[45] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[46] prompt_11_v04.mp4: expect=stop (gt=stop) -> Normal
+[47] prompt_2_v05.mp4: expect=stop (gt=continue) -> Anomaly
+[48] prompt_0_v19.mp4: expect=continue (gt=continue) -> Anomaly
+[49] prompt_9_v20.mp4: expect=slow (gt=stop) -> Normal
+[50] prompt_2_v01.mp4: expect=stop (gt=continue) -> Anomaly
+[51] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[52] prompt_2_v20.mp4: expect=stop (gt=continue) -> Anomaly
+[53] prompt_4_v07.mp4: expect=slow (gt=continue) -> Anomaly
+[54] prompt_4_v18.mp4: expect=slow (gt=continue) -> Normal
+[55] prompt_4_v05.mp4: expect=slow (gt=continue) -> Anomaly
+[56] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[57] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[58] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[59] prompt_5_v02.mp4: expect=slow (gt=continue) -> Normal
+[60] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[61] prompt_5_v07.mp4: expect=slow (gt=continue) -> Anomaly
+[62] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[63] prompt_8_v03.mp4: expect=stop (gt=stop) -> Normal
+[64] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[65] prompt_8_v08.mp4: expect=stop (gt=stop) -> Normal
+[66] prompt_6_v06.mp4: expect=continue (gt=slow) -> Anomaly
+[67] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+[68] prompt_8_v18.mp4: expect=stop (gt=stop) -> Normal
+[69] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[70] prompt_8_v04.mp4: expect=stop (gt=stop) -> Normal
+[71] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[72] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[73] prompt_6_v14.mp4: expect=continue (gt=slow) -> Normal
+[74] prompt_9_v01.mp4: expect=stop (gt=stop) -> Normal
+[75] prompt_9_v16.mp4: expect=stop (gt=stop) -> Normal
+[76] prompt_9_v08.mp4: expect=stop (gt=stop) -> Normal
+stage1 strict 40/80  lenient 63/80
+monitor verdict accuracy 49/80
+--- arm M1 (window generated_vids_720p_tminus2.5) ---
+[1] prompt_8.mp4: expect=slow (gt=stop) -> Normal
+[2] prompt_0.mp4: expect=continue (gt=continue) -> Normal
+[3] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+[4] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+stage1 strict 3/4  lenient 3/4
+monitor verdict accuracy 3/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v01.mp4: expect=continue (gt=continue) -> Normal
+[2] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[3] prompt_0_v10.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[5] prompt_2.mp4: expect=slow (gt=continue) -> Anomaly
+[6] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[7] prompt_2_v03.mp4: expect=slow (gt=continue) -> Normal
+[8] prompt_2_v12.mp4: expect=slow (gt=continue) -> Normal
+[9] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[10] prompt_2_v02.mp4: expect=stop (gt=continue) -> Normal
+[11] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[12] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[13] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[14] prompt_2_v13.mp4: expect=stop (gt=continue) -> Normal
+[15] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[16] prompt_2_v15.mp4: expect=slow (gt=continue) -> Normal
+[17] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[18] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[19] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[20] prompt_4_v01.mp4: expect=slow (gt=continue) -> Normal
+[21] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[22] prompt_4_v16.mp4: expect=slow (gt=continue) -> Anomaly
+[23] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[24] prompt_5_v03.mp4: expect=stop (gt=continue) -> Normal
+[25] prompt_4_v02.mp4: expect=slow (gt=continue) -> Normal
+[26] prompt_5_v09.mp4: expect=slow (gt=continue) -> Anomaly
+[27] prompt_8_v12.mp4: expect=continue (gt=stop) -> Normal
+[28] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[29] prompt_5_v01.mp4: expect=slow (gt=continue) -> Anomaly
+[30] prompt_4_v04.mp4: expect=slow (gt=continue) -> Normal
+[31] prompt_9_v01.mp4: expect=slow (gt=stop) -> Normal
+[32] prompt_9_v02.mp4: expect=continue (gt=stop) -> Normal
+[33] prompt_5_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[34] prompt_6.mp4: expect=continue (gt=slow) -> Normal
+[35] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[36] prompt_9_v15.mp4: expect=stop (gt=stop) -> Anomaly
+[37] prompt_0_v08.mp4: expect=continue (gt=continue) -> Normal
+[38] prompt_9_v20.mp4: expect=slow (gt=stop) -> Normal
+[39] prompt_0_v12.mp4: expect=continue (gt=continue) -> Normal
+[40] prompt_11_v04.mp4: expect=stop (gt=stop) -> Anomaly
+[41] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[42] prompt_9_v09.mp4: expect=stop (gt=stop) -> Anomaly
+[43] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[44] prompt_0_v19.mp4: expect=continue (gt=continue) -> Normal
+[45] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[46] prompt_11_v12.mp4: expect=wait (gt=stop) -> Anomaly
+[47] prompt_2_v05.mp4: expect=stop (gt=continue) -> Anomaly
+[48] prompt_9_v18.mp4: expect=slow (gt=stop) -> Normal
+[49] prompt_2_v01.mp4: expect=slow (gt=continue) -> Normal
+[50] prompt_4_v05.mp4: expect=slow (gt=continue) -> Normal
+[51] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[52] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[53] prompt_4_v07.mp4: expect=slow (gt=continue) -> Normal
+[54] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[55] prompt_4_v18.mp4: expect=continue (gt=continue) -> Normal
+[56] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[57] prompt_4_v13.mp4: expect=slow (gt=continue) -> Normal
+[58] prompt_5_v02.mp4: expect=continue (gt=continue) -> Normal
+[59] prompt_4_v20.mp4: expect=slow (gt=continue) -> Normal
+[60] prompt_5_v07.mp4: expect=slow (gt=continue) -> Normal
+[61] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[62] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[63] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[64] prompt_6_v06.mp4: expect=continue (gt=slow) -> Normal
+[65] prompt_8_v08.mp4: expect=stop (gt=stop) -> Normal
+[66] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[67] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[68] prompt_6_v14.mp4: expect=continue (gt=slow) -> Normal
+[69] prompt_8_v03.mp4: expect=stop (gt=stop) -> Anomaly
+[70] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[71] prompt_9_v01.mp4: expect=stop (gt=stop) -> Anomaly
+[72] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+[73] prompt_8_v04.mp4: expect=slow (gt=stop) -> Normal
+[74] prompt_9_v08.mp4: expect=stop (gt=stop) -> Normal
+[75] prompt_8_v18.mp4: expect=slow (gt=stop) -> Anomaly
+[76] prompt_9_v16.mp4: expect=stop (gt=stop) -> Anomaly
+stage1 strict 37/80  lenient 58/80
+monitor verdict accuracy 54/80
+--- arm M2 (window generated_vids_720p_tminus2.5) ---
+[1] prompt_0.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+[3] prompt_8.mp4: expect=slow (gt=stop) -> Anomaly
+[4] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+stage1 strict 3/4  lenient 3/4
+monitor verdict accuracy 3/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v10.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_2.mp4: expect=slow (gt=continue) -> Anomaly
+[3] prompt_0_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_5.mp4: expect=slow (gt=continue) -> Anomaly
+[6] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[7] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[8] prompt_2_v02.mp4: expect=stop (gt=continue) -> Normal
+[9] prompt_2_v13.mp4: expect=stop (gt=continue) -> Normal
+[10] prompt_2_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[11] prompt_2_v03.mp4: expect=slow (gt=continue) -> Anomaly
+[12] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[13] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[14] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[15] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[16] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[17] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[18] prompt_4_v04.mp4: expect=slow (gt=continue) -> Anomaly
+[19] prompt_2_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[20] prompt_4_v01.mp4: expect=slow (gt=continue) -> Anomaly
+[21] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[22] prompt_4_v02.mp4: expect=slow (gt=continue) -> Anomaly
+[23] prompt_5_v01.mp4: expect=slow (gt=continue) -> Anomaly
+[24] prompt_5_v03.mp4: expect=slow (gt=continue) -> Anomaly
+[25] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[26] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[27] prompt_5_v09.mp4: expect=slow (gt=continue) -> Anomaly
+[28] prompt_4_v16.mp4: expect=slow (gt=continue) -> Anomaly
+[29] prompt_9_v02.mp4: expect=continue (gt=stop) -> Normal
+[30] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[31] prompt_8_v12.mp4: expect=slow (gt=stop) -> Normal
+[32] prompt_9_v01.mp4: expect=slow (gt=stop) -> Normal
+[33] prompt_5_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[34] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[35] prompt_0_v08.mp4: expect=continue (gt=continue) -> Normal
+[36] prompt_6.mp4: expect=continue (gt=slow) -> Normal
+[37] prompt_9_v15.mp4: expect=stop (gt=stop) -> Anomaly
+[38] prompt_0_v12.mp4: expect=continue (gt=continue) -> Normal
+[39] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[40] prompt_9_v18.mp4: expect=stop (gt=stop) -> Anomaly
+[41] prompt_0_v19.mp4: expect=continue (gt=continue) -> Normal
+[42] prompt_9_v20.mp4: expect=stop (gt=stop) -> Anomaly
+[43] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[44] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[45] prompt_11_v04.mp4: expect=stop (gt=stop) -> Normal
+[46] prompt_2_v05.mp4: expect=stop (gt=continue) -> Anomaly
+[47] prompt_9_v09.mp4: expect=stop (gt=stop) -> Anomaly
+[48] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[49] prompt_2_v01.mp4: expect=stop (gt=continue) -> Anomaly
+[50] prompt_4_v07.mp4: expect=slow (gt=continue) -> Normal
+[51] prompt_4_v05.mp4: expect=slow (gt=continue) -> Normal
+[52] prompt_11_v12.mp4: expect=wait (gt=stop) -> Anomaly
+[53] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[54] prompt_4_v18.mp4: expect=continue (gt=continue) -> Normal
+[55] prompt_11_v20.mp4: expect=wait (gt=stop) -> Anomaly
+[56] prompt_4_v13.mp4: expect=slow (gt=continue) -> Normal
+[57] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[58] prompt_4_v20.mp4: expect=continue (gt=continue) -> Normal
+[59] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[60] prompt_5_v07.mp4: expect=slow (gt=continue) -> Normal
+[61] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[62] prompt_6_v06.mp4: expect=continue (gt=slow) -> Normal
+[63] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[64] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[65] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[66] prompt_5_v02.mp4: expect=continue (gt=continue) -> Normal
+[67] prompt_8_v08.mp4: expect=stop (gt=stop) -> Normal
+[68] prompt_8_v03.mp4: expect=stop (gt=stop) -> Normal
+[69] prompt_6_v14.mp4: expect=continue (gt=slow) -> Normal
+[70] prompt_8_v04.mp4: expect=stop (gt=stop) -> Normal
+[71] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+[72] prompt_9_v01.mp4: expect=stop (gt=stop) -> Normal
+[73] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[74] prompt_8_v18.mp4: expect=slow (gt=stop) -> Anomaly
+[75] prompt_9_v16.mp4: expect=stop (gt=stop) -> Normal
+[76] prompt_9_v08.mp4: expect=stop (gt=stop) -> Normal
+stage1 strict 42/80  lenient 63/80
+monitor verdict accuracy 67/80
+--- arm M3 (window generated_vids_720p_tminus2.5) ---
+[1] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+[2] prompt_0.mp4: expect=continue (gt=continue) -> Normal
+[3] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+[4] prompt_8.mp4: expect=stop (gt=stop) -> Anomaly
+stage1 strict 4/4  lenient 4/4
+monitor verdict accuracy 2/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_0_v10.mp4: expect=continue (gt=continue) -> Normal
+[3] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[4] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[6] prompt_0_v01.mp4: expect=continue (gt=continue) -> Normal
+[7] prompt_2_v02.mp4: expect=stop (gt=continue) -> Normal
+[8] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[9] prompt_2_v13.mp4: expect=stop (gt=continue) -> Normal
+[10] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[11] prompt_2_v07.mp4: expect=slow (gt=continue) -> Anomaly
+[12] prompt_2_v12.mp4: expect=slow (gt=continue) -> Normal
+[13] prompt_2.mp4: expect=stop (gt=continue) -> Normal
+[14] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[15] prompt_2_v03.mp4: expect=slow (gt=continue) -> Normal
+[16] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[17] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[18] prompt_4_v02.mp4: expect=slow (gt=continue) -> Normal
+[19] prompt_2_v15.mp4: expect=slow (gt=continue) -> Normal
+[20] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[21] prompt_4_v04.mp4: expect=slow (gt=continue) -> Anomaly
+[22] prompt_4_v01.mp4: expect=slow (gt=continue) -> Normal
+[23] prompt_4_v16.mp4: expect=slow (gt=continue) -> Anomaly
+[24] prompt_5_v01.mp4: expect=slow (gt=continue) -> Anomaly
+[25] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[26] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[27] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[28] prompt_5_v09.mp4: expect=slow (gt=continue) -> Anomaly
+[29] prompt_5_v03.mp4: expect=stop (gt=continue) -> Normal
+[30] prompt_9_v01.mp4: expect=slow (gt=stop) -> Normal
+[31] prompt_9_v02.mp4: expect=continue (gt=stop) -> Normal
+[32] prompt_8_v12.mp4: expect=continue (gt=stop) -> Normal
+[33] prompt_5_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[34] prompt_9_v18.mp4: expect=stop (gt=stop) -> Anomaly
+[35] prompt_9_v09.mp4: expect=slow (gt=stop) -> Normal
+[36] prompt_6.mp4: expect=continue (gt=slow) -> Normal
+[37] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[38] prompt_0_v08.mp4: expect=continue (gt=continue) -> Normal
+[39] prompt_9_v20.mp4: expect=stop (gt=stop) -> Anomaly
+[40] prompt_0_v12.mp4: expect=continue (gt=continue) -> Normal
+[41] prompt_0_v19.mp4: expect=continue (gt=continue) -> Normal
+[42] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[43] prompt_11_v12.mp4: expect=wait (gt=stop) -> Normal
+[44] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[45] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[46] prompt_2_v05.mp4: expect=stop (gt=continue) -> Anomaly
+[47] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[48] prompt_11_v04.mp4: expect=stop (gt=stop) -> Anomaly
+[49] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[50] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[51] prompt_4_v05.mp4: expect=slow (gt=continue) -> Normal
+[52] prompt_9_v15.mp4: expect=stop (gt=stop) -> Anomaly
+[53] prompt_4_v07.mp4: expect=slow (gt=continue) -> Normal
+[54] prompt_4_v13.mp4: expect=slow (gt=continue) -> Normal
+[55] prompt_4_v18.mp4: expect=slow (gt=continue) -> Normal
+[56] prompt_4_v20.mp4: expect=continue (gt=continue) -> Normal
+[57] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[58] prompt_5_v02.mp4: expect=continue (gt=continue) -> Normal
+[59] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[60] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[61] prompt_5_v07.mp4: expect=slow (gt=continue) -> Normal
+[62] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[63] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[64] prompt_6_v06.mp4: expect=continue (gt=slow) -> Normal
+[65] prompt_2_v01.mp4: expect=stop (gt=continue) -> Anomaly
+[66] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[67] prompt_8_v03.mp4: expect=stop (gt=stop) -> Anomaly
+[68] prompt_8_v08.mp4: expect=stop (gt=stop) -> Normal
+[69] prompt_6_v14.mp4: expect=continue (gt=slow) -> Normal
+[70] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+[71] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[72] prompt_8_v04.mp4: expect=stop (gt=stop) -> Normal
+[73] prompt_9_v01.mp4: expect=stop (gt=stop) -> Anomaly
+[74] prompt_9_v08.mp4: expect=stop (gt=stop) -> Normal
+[75] prompt_9_v16.mp4: expect=stop (gt=stop) -> Anomaly
+[76] prompt_8_v18.mp4: expect=slow (gt=stop) -> Anomaly
+stage1 strict 39/80  lenient 60/80
+monitor verdict accuracy 53/80
+--- arm M4 (window generated_vids_720p_tminus2.5) ---
+[1] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+[2] prompt_8.mp4: expect=slow (gt=stop) -> Normal
+[3] prompt_0.mp4: expect=continue (gt=continue) -> Normal
+[4] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+stage1 strict 3/4  lenient 3/4
+monitor verdict accuracy 3/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[3] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[6] prompt_2.mp4: expect=continue (gt=continue) -> Anomaly
+[7] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[8] prompt_0_v01.mp4: expect=continue (gt=continue) -> Normal
+[9] prompt_2_v12.mp4: expect=slow (gt=continue) -> Normal
+[10] prompt_2_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[11] prompt_2_v02.mp4: expect=slow (gt=continue) -> Anomaly
+[12] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[13] prompt_2_v03.mp4: expect=continue (gt=continue) -> Normal
+[14] prompt_2_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[15] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[16] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[17] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[18] prompt_0_v10.mp4: expect=continue (gt=continue) -> Anomaly
+[19] prompt_4_v01.mp4: expect=slow (gt=continue) -> Normal
+[20] prompt_4_v02.mp4: expect=slow (gt=continue) -> Anomaly
+[21] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[22] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[23] prompt_4_v04.mp4: expect=slow (gt=continue) -> Anomaly
+[24] prompt_5_v03.mp4: expect=slow (gt=continue) -> Anomaly
+[25] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[26] prompt_4_v16.mp4: expect=slow (gt=continue) -> Normal
+[27] prompt_8_v12.mp4: expect=slow (gt=stop) -> Normal
+[28] prompt_5_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[29] prompt_5_v09.mp4: expect=slow (gt=continue) -> Anomaly
+[30] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[31] prompt_9_v02.mp4: expect=continue (gt=stop) -> Normal
+[32] prompt_9_v15.mp4: expect=continue (gt=stop) -> Normal
+[33] prompt_5_v01.mp4: expect=slow (gt=continue) -> Anomaly
+[34] prompt_9_v05.mp4: expect=continue (gt=stop) -> Normal
+[35] prompt_9_v01.mp4: expect=stop (gt=stop) -> Anomaly
+[36] prompt_9_v18.mp4: expect=continue (gt=stop) -> Normal
+[37] prompt_9_v09.mp4: expect=continue (gt=stop) -> Normal
+[38] prompt_6.mp4: expect=continue (gt=slow) -> Normal
+[39] prompt_0_v08.mp4: expect=continue (gt=continue) -> Normal
+[40] prompt_0_v19.mp4: expect=continue (gt=continue) -> Normal
+[41] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[42] prompt_0_v12.mp4: expect=continue (gt=continue) -> Normal
+[43] prompt_11_v04.mp4: expect=stop (gt=stop) -> Anomaly
+[44] prompt_2_v01.mp4: expect=continue (gt=continue) -> Normal
+[45] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[46] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[47] prompt_11_v12.mp4: expect=wait (gt=stop) -> Anomaly
+[48] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[49] prompt_9_v20.mp4: expect=stop (gt=stop) -> Anomaly
+[50] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[51] prompt_2_v05.mp4: expect=slow (gt=continue) -> Normal
+[52] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[53] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[54] prompt_4_v07.mp4: expect=slow (gt=continue) -> Normal
+[55] prompt_4_v18.mp4: expect=continue (gt=continue) -> Normal
+[56] prompt_4_v05.mp4: expect=slow (gt=continue) -> Normal
+[57] prompt_5_v07.mp4: expect=slow (gt=continue) -> Normal
+[58] prompt_4_v20.mp4: expect=continue (gt=continue) -> Normal
+[59] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[60] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[61] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[62] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[63] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[64] prompt_4_v13.mp4: expect=continue (gt=continue) -> Normal
+[65] prompt_6_v06.mp4: expect=continue (gt=slow) -> Normal
+[66] prompt_6_v14.mp4: expect=continue (gt=slow) -> Normal
+[67] prompt_8_v03.mp4: expect=stop (gt=stop) -> Anomaly
+[68] prompt_5_v02.mp4: expect=slow (gt=continue) -> Normal
+[69] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+[70] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[71] prompt_8_v04.mp4: expect=stop (gt=stop) -> Anomaly
+[72] prompt_9_v16.mp4: expect=continue (gt=stop) -> Normal
+[73] prompt_8_v18.mp4: expect=stop (gt=stop) -> Normal
+[74] prompt_8_v08.mp4: expect=stop (gt=stop) -> Normal
+[75] prompt_9_v01.mp4: expect=continue (gt=stop) -> Normal
+[76] prompt_9_v08.mp4: expect=stop (gt=stop) -> Normal
+stage1 strict 43/80  lenient 64/80
+monitor verdict accuracy 62/80
+--- arm M5 (window generated_vids_720p_tminus2.5) ---
+[1] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+[2] prompt_8.mp4: expect=slow (gt=stop) -> Normal
+[3] prompt_0.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+stage1 strict 3/4  lenient 3/4
+monitor verdict accuracy 4/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[3] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[6] prompt_2.mp4: expect=slow (gt=continue) -> Anomaly
+[7] prompt_0_v10.mp4: expect=continue (gt=continue) -> Anomaly
+[8] prompt_0_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[9] prompt_2_v13.mp4: expect=stop (gt=continue) -> Anomaly
+[10] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[11] prompt_2_v03.mp4: expect=slow (gt=continue) -> Normal
+[12] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[13] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[14] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[15] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[16] prompt_4_v01.mp4: expect=slow (gt=continue) -> Normal
+[17] prompt_2_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[18] prompt_2_v15.mp4: expect=slow (gt=continue) -> Anomaly
+[19] prompt_2_v02.mp4: expect=stop (gt=continue) -> Anomaly
+[20] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[21] prompt_4_v04.mp4: expect=slow (gt=continue) -> Anomaly
+[22] prompt_4_v02.mp4: expect=slow (gt=continue) -> Normal
+[23] prompt_5_v03.mp4: expect=slow (gt=continue) -> Anomaly
+[24] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[25] prompt_4_v20.mp4: expect=continue (gt=continue) -> Normal
+[26] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[27] prompt_5_v09.mp4: expect=slow (gt=continue) -> Normal
+[28] prompt_4_v16.mp4: expect=slow (gt=continue) -> Normal
+[29] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[30] prompt_8_v12.mp4: expect=slow (gt=stop) -> Normal
+[31] prompt_5_v12.mp4: expect=slow (gt=continue) -> Anomaly
+[32] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[33] prompt_9_v01.mp4: expect=slow (gt=stop) -> Normal
+[34] prompt_6.mp4: expect=continue (gt=slow) -> Normal
+[35] prompt_9_v02.mp4: expect=continue (gt=stop) -> Normal
+[36] prompt_0_v12.mp4: expect=continue (gt=continue) -> Normal
+[37] prompt_9_v15.mp4: expect=continue (gt=stop) -> Anomaly
+[38] prompt_9_v09.mp4: expect=stop (gt=stop) -> Anomaly
+[39] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[40] prompt_0_v19.mp4: expect=continue (gt=continue) -> Normal
+[41] prompt_0_v08.mp4: expect=continue (gt=continue) -> Anomaly
+[42] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[43] prompt_9_v18.mp4: expect=stop (gt=stop) -> Anomaly
+[44] prompt_9_v20.mp4: expect=stop (gt=stop) -> Anomaly
+[45] prompt_11_v04.mp4: expect=stop (gt=stop) -> Anomaly
+[46] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[47] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[48] prompt_2_v01.mp4: expect=stop (gt=continue) -> Normal
+[49] prompt_2_v05.mp4: expect=stop (gt=continue) -> Normal
+[50] prompt_11_v12.mp4: expect=wait (gt=stop) -> Normal
+[51] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[52] prompt_4_v05.mp4: expect=slow (gt=continue) -> Normal
+[53] prompt_4_v07.mp4: expect=slow (gt=continue) -> Normal
+[54] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[55] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[56] prompt_4_v13.mp4: expect=slow (gt=continue) -> Normal
+[57] prompt_5_v07.mp4: expect=slow (gt=continue) -> Normal
+[58] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[59] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[60] prompt_4_v18.mp4: expect=slow (gt=continue) -> Normal
+[61] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[62] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[63] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[64] prompt_6_v14.mp4: expect=continue (gt=slow) -> Normal
+[65] prompt_4_v20.mp4: expect=continue (gt=continue) -> Normal
+[66] prompt_5_v02.mp4: expect=continue (gt=continue) -> Normal
+[67] prompt_6_v06.mp4: expect=continue (gt=slow) -> Normal
+[68] prompt_8_v03.mp4: expect=stop (gt=stop) -> Anomaly
+[69] prompt_8_v08.mp4: expect=stop (gt=stop) -> Normal
+[70] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[71] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+[72] prompt_8_v18.mp4: expect=stop (gt=stop) -> Normal
+[73] prompt_8_v04.mp4: expect=stop (gt=stop) -> Anomaly
+[74] prompt_9_v01.mp4: expect=stop (gt=stop) -> Normal
+[75] prompt_9_v08.mp4: expect=stop (gt=stop) -> Anomaly
+[76] prompt_9_v16.mp4: expect=stop (gt=stop) -> Anomaly
+stage1 strict 40/80  lenient 62/80
+monitor verdict accuracy 61/80
+--- arm M6 (window generated_vids_720p_early1.5s) ---
+[1] prompt_0.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+[3] prompt_8.mp4: expect=slow (gt=stop) -> Normal
+[4] prompt_0_v07.mp4: expect=continue (gt=continue) -> Normal
+stage1 strict 3/4  lenient 3/4
+monitor verdict accuracy 4/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_0_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[3] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[6] prompt_2.mp4: expect=slow (gt=continue) -> Normal
+[7] prompt_2_v02.mp4: expect=slow (gt=continue) -> Normal
+[8] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[9] prompt_2_v03.mp4: expect=slow (gt=continue) -> Normal
+[10] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[11] prompt_2_v13.mp4: expect=stop (gt=continue) -> Normal
+[12] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[13] prompt_2_v15.mp4: expect=slow (gt=continue) -> Normal
+[14] prompt_2_v12.mp4: expect=slow (gt=continue) -> Normal
+[15] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[16] prompt_0_v10.mp4: expect=continue (gt=continue) -> Normal
+[17] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[18] prompt_4_v04.mp4: expect=slow (gt=continue) -> Normal
+[19] prompt_4_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[20] prompt_4_v01.mp4: expect=slow (gt=continue) -> Normal
+[21] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[22] prompt_5_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[23] prompt_4_v02.mp4: expect=slow (gt=continue) -> Anomaly
+[24] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[25] prompt_4_v16.mp4: expect=slow (gt=continue) -> Normal
+[26] prompt_5_v09.mp4: expect=slow (gt=continue) -> Normal
+[27] prompt_4_v20.mp4: expect=continue (gt=continue) -> Anomaly
+[28] prompt_5_v03.mp4: expect=slow (gt=continue) -> Normal
+[29] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[30] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[31] prompt_9_v02.mp4: expect=continue (gt=stop) -> Anomaly
+[32] prompt_9_v01.mp4: expect=continue (gt=stop) -> Normal
+[33] prompt_5_v12.mp4: expect=slow (gt=continue) -> Normal
+[34] prompt_9_v15.mp4: expect=continue (gt=stop) -> Anomaly
+[35] prompt_9_v18.mp4: expect=continue (gt=stop) -> Anomaly
+[36] prompt_8_v12.mp4: expect=continue (gt=stop) -> Anomaly
+[37] prompt_6.mp4: expect=continue (gt=slow) -> Anomaly
+[38] prompt_0_v08.mp4: expect=continue (gt=continue) -> Anomaly
+[39] prompt_9_v09.mp4: expect=continue (gt=stop) -> Anomaly
+[40] prompt_9_v20.mp4: expect=stop (gt=stop) -> Anomaly
+[41] prompt_11_v12.mp4: expect=wait (gt=stop) -> Normal
+[42] prompt_0_v12.mp4: expect=continue (gt=continue) -> Anomaly
+[43] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[44] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[45] prompt_0_v19.mp4: expect=continue (gt=continue) -> Anomaly
+[46] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[47] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[48] prompt_2_v01.mp4: expect=stop (gt=continue) -> Anomaly
+[49] prompt_11_v04.mp4: expect=stop (gt=stop) -> Normal
+[50] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[51] prompt_4_v07.mp4: expect=slow (gt=continue) -> Anomaly
+[52] prompt_2_v05.mp4: expect=slow (gt=continue) -> Normal
+[53] prompt_4_v18.mp4: expect=slow (gt=continue) -> Normal
+[54] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[55] prompt_4_v13.mp4: expect=continue (gt=continue) -> Normal
+[56] prompt_4_v05.mp4: expect=slow (gt=continue) -> Anomaly
+[57] prompt_4_v20.mp4: expect=slow (gt=continue) -> Anomaly
+[58] prompt_4_v03.mp4: expect=slow (gt=continue) -> Anomaly
+[59] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[60] prompt_5_v10.mp4: expect=slow (gt=continue) -> Normal
+[61] prompt_5_v07.mp4: expect=slow (gt=continue) -> Anomaly
+[62] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[63] prompt_5_v02.mp4: expect=continue (gt=continue) -> Normal
+[64] prompt_6_v06.mp4: expect=continue (gt=slow) -> Anomaly
+[65] prompt_6_v14.mp4: expect=slow (gt=slow) -> Normal
+[66] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[67] prompt_8_v03.mp4: expect=slow (gt=stop) -> Normal
+[68] prompt_9_v01.mp4: expect=continue (gt=stop) -> Anomaly
+[69] prompt_8_v18.mp4: expect=slow (gt=stop) -> Normal
+[70] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[71] prompt_9_v08.mp4: expect=continue (gt=stop) -> Anomaly
+[72] prompt_9_v06.mp4: expect=stop (gt=stop) -> Normal
+[73] prompt_8_v04.mp4: expect=slow (gt=stop) -> Anomaly
+[74] prompt_8_v08.mp4: expect=continue (gt=stop) -> Anomaly
+[75] prompt_9_v16.mp4: expect=stop (gt=stop) -> Normal
+[76] prompt_8_v11.mp4: expect=stop (gt=stop) -> Normal
+stage1 strict 34/80  lenient 54/80
+monitor verdict accuracy 48/80
+--- arm M7 (window generated_vids_720p_early1.0s) ---
+[1] prompt_0.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_8.mp4: expect=slow (gt=stop) -> Normal
+[3] prompt_3.mp4: expect=wait (gt=wait) -> Anomaly
+[4] prompt_0_v07.mp4: expect=continue (gt=continue) -> Anomaly
+stage1 strict 3/4  lenient 3/4
+monitor verdict accuracy 3/4
+gate: 4/4 recs, unknown=0, stage2-trunc=0, stage1-unknown=0
+[1] prompt_0_v10.mp4: expect=continue (gt=continue) -> Anomaly
+[2] prompt_0_v03.mp4: expect=continue (gt=continue) -> Anomaly
+[3] prompt_0_v13.mp4: expect=continue (gt=continue) -> Anomaly
+[4] prompt_0_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[5] prompt_0_v15.mp4: expect=continue (gt=continue) -> Anomaly
+[6] prompt_0_v16.mp4: expect=continue (gt=continue) -> Anomaly
+[7] prompt_2_v02.mp4: expect=stop (gt=continue) -> Normal
+[8] prompt_2_v03.mp4: expect=slow (gt=continue) -> Normal
+[9] prompt_2_v12.mp4: expect=slow (gt=continue) -> Normal
+[10] prompt_5.mp4: expect=slow (gt=continue) -> Normal
+[11] prompt_2_v13.mp4: expect=stop (gt=continue) -> Normal
+[12] prompt_2_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[13] prompt_3_v07.mp4: expect=wait (gt=wait) -> Anomaly
+[14] prompt_2_v15.mp4: expect=slow (gt=continue) -> Normal
+[15] prompt_3_v13.mp4: expect=wait (gt=wait) -> Anomaly
+[16] prompt_3_v14.mp4: expect=wait (gt=wait) -> Anomaly
+[17] prompt_3_v11.mp4: expect=wait (gt=wait) -> Anomaly
+[18] prompt_2.mp4: expect=slow (gt=continue) -> Normal
+[19] prompt_4_v01.mp4: expect=continue (gt=continue) -> Anomaly
+[20] prompt_4_v16.mp4: expect=slow (gt=continue) -> Normal
+[21] prompt_4_v02.mp4: expect=continue (gt=continue) -> Anomaly
+[22] prompt_4_v04.mp4: expect=slow (gt=continue) -> Anomaly
+[23] prompt_5_v03.mp4: expect=slow (gt=continue) -> Normal
+[24] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[25] prompt_4_v20.mp4: expect=slow (gt=continue) -> Anomaly
+[26] prompt_4_v13.mp4: expect=slow (gt=continue) -> Normal
+[27] prompt_8_v12.mp4: expect=continue (gt=stop) -> Normal
+[28] prompt_5_v09.mp4: expect=slow (gt=continue) -> Normal
+[29] prompt_9_v01.mp4: expect=continue (gt=stop) -> Normal
+[30] prompt_9_v02.mp4: expect=continue (gt=stop) -> Anomaly
+[31] prompt_8_v08.mp4: expect=continue (gt=stop) -> Anomaly
+[32] prompt_9_v15.mp4: expect=continue (gt=stop) -> Anomaly
+[33] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[34] prompt_5_v12.mp4: expect=slow (gt=continue) -> Normal
+[35] prompt_6.mp4: expect=continue (gt=slow) -> Anomaly
+[36] prompt_0_v08.mp4: expect=continue (gt=continue) -> Anomaly
+[37] prompt_9_v09.mp4: expect=continue (gt=stop) -> Anomaly
+[38] prompt_0_v12.mp4: expect=continue (gt=continue) -> Anomaly
+[39] prompt_9_v18.mp4: expect=slow (gt=stop) -> Normal
+[40] prompt_9_v05.mp4: expect=slow (gt=stop) -> Normal
+[41] prompt_0_v16.mp4: expect=continue (gt=continue) -> Normal
+[42] prompt_11_v13.mp4: expect=stop (gt=stop) -> Normal
+[43] prompt_11_v15.mp4: expect=stop (gt=stop) -> Normal
+[44] prompt_0_v19.mp4: expect=continue (gt=continue) -> Anomaly
+[45] prompt_11_v20.mp4: expect=wait (gt=stop) -> Normal
+[46] prompt_11_v04.mp4: expect=stop (gt=stop) -> Normal
+[47] prompt_11_v12.mp4: expect=wait (gt=stop) -> Normal
+[48] prompt_4_v05.mp4: expect=slow (gt=continue) -> Anomaly
+[49] prompt_4_v03.mp4: expect=slow (gt=continue) -> Normal
+[50] prompt_2_v20.mp4: expect=slow (gt=continue) -> Normal
+[51] prompt_9_v20.mp4: expect=slow (gt=stop) -> Normal
+[52] prompt_2_v01.mp4: expect=slow (gt=continue) -> Normal
+[53] prompt_4_v18.mp4: expect=continue (gt=continue) -> Anomaly
+[54] prompt_4_v07.mp4: expect=slow (gt=continue) -> Anomaly
+[55] prompt_4_v20.mp4: expect=slow (gt=continue) -> Anomaly
+[56] prompt_2_v05.mp4: expect=slow (gt=continue) -> Normal
+[57] prompt_5_v02.mp4: expect=slow (gt=continue) -> Normal
+[58] prompt_5_v01.mp4: expect=slow (gt=continue) -> Normal
+[59] prompt_5_v10.mp4: expect=continue (gt=continue) -> Normal
+[60] prompt_6_v03.mp4: expect=continue (gt=slow) -> Normal
+[61] prompt_4_v13.mp4: expect=slow (gt=continue) -> Anomaly
+[62] prompt_6_v06.mp4: expect=continue (gt=slow) -> Anomaly
+[63] prompt_6_v05.mp4: expect=slow (gt=slow) -> Normal
+[64] prompt_8_v03.mp4: expect=slow (gt=stop) -> Normal
+[65] prompt_6_v14.mp4: expect=continue (gt=slow) -> Anomaly
+[66] prompt_6_v07.mp4: expect=slow (gt=slow) -> Normal
+[67] prompt_8_v08.mp4: expect=slow (gt=stop) -> Normal
+[68] prompt_8_v18.mp4: expect=slow (gt=stop) -> Normal
+[69] prompt_8_v04.mp4: expect=slow (gt=stop) -> Normal
+[70] prompt_5_v07.mp4: expect=continue (gt=continue) -> Anomaly
+[71] prompt_9_v16.mp4: expect=continue (gt=stop) -> Anomaly
+[72] prompt_8_v11.mp4: expect=slow (gt=stop) -> Normal
+[73] prompt_9_v08.mp4: expect=continue (gt=stop) -> Anomaly
+[74] prompt_5_v19.mp4: expect=slow (gt=continue) -> Normal
+[75] prompt_9_v01.mp4: expect=stop (gt=stop) -> Normal
+[76] prompt_9_v06.mp4: expect=continue (gt=stop) -> Normal
+stage1 strict 30/80  lenient 51/80
+monitor verdict accuracy 47/80
+--- reports ---
+# Prompt lab — round 1 (hlab_r1t)
+
+n=80 paired clips; baseline=L2 acc=0.750
+
+| variant | acc | 95% CI | balacc | rec/spec | vs base net (p) | breadth | anomaly-verdicts | trunc | hypothesis |
+|---|---|---|---|---|---|---|---|---|---|
+| M2 | 0.838 | [0.742,0.903] | 0.837 | 0.82/0.85 | +7 (0.230) | 5/15 | 39/80 | 0 | narrative rendering removes numeric reading from comparison |
+| M4 | 0.775 | [0.672,0.853] | 0.775 | 0.65/0.90 | +2 (0.845) | 4/15 | 30/80 | 0 | guard concept + named feature at the expectation step |
+| M5 | 0.762 | [0.659,0.842] | 0.762 | 0.68/0.85 | +1 (1.000) | 3/15 | 33/80 | 0 | guard line as a verdict-time expectation re-check |
+| L2 | 0.750 | [0.645,0.832] | 0.750 | 0.53/0.97 | +0 (1.000) | 0/15 | 22/80 | 0 | P0 + depiction/necessity guard line (min delta) |
+| M1 | 0.675 | [0.566,0.768] | 0.675 | 0.53/0.82 | -6 (0.307) | 3/15 | 28/80 | 0 | explicit comparison rule + tolerances fixes the comparator |
+| M3 | 0.662 | [0.554,0.757] | 0.663 | 0.53/0.80 | -7 (0.248) | 2/15 | 29/80 | 0 | heading channel is noise for speed-class matching |
+| M0 | 0.613 | [0.503,0.712] | 0.613 | 0.55/0.68 | -11 (0.080) | 5/15 | 35/80 | 0 | H3 control: verbatim stage-1/stage-2 texts @ T-2.5 |
+| M6 | 0.600 | [0.490,0.700] | 0.600 | 0.57/0.62 | -12 (0.065) | 5/15 | 38/80 | 0 | window ladder: M0 prompts at a 1.5 s stage-1 window |
+| M7 | 0.588 | [0.478,0.689] | 0.588 | 0.55/0.62 | -13 (0.029) | 4/15 | 37/80 | 0 | window ladder: M0 prompts at a 1.0 s stage-1 window |
+
+## Per-scenario accuracy
+
+| scenario | n | M2 | M4 | M5 | L2 | M1 | M3 | M0 | M6 | M7 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| neg_prompt_0 | 7 | 7/7 | 5/7 | 7/7 | 4/7 | 5/7 | 4/7 | 7/7 | 6/7 | 7/7 |
+| neg_prompt_2 | 7 | 5/7 | 5/7 | 6/7 | 6/7 | 2/7 | 1/7 | 2/7 | 1/7 | 1/7 |
+| neg_prompt_3 | 5 | 5/5 | 5/5 | 5/5 | 2/5 | 5/5 | 5/5 | 5/5 | 5/5 | 5/5 |
+| neg_prompt_4 | 6 | 6/6 | 4/6 | 2/6 | 5/6 | 3/6 | 4/6 | 2/6 | 3/6 | 4/6 |
+| neg_prompt_5 | 6 | 6/6 | 5/6 | 3/6 | 0/6 | 4/6 | 4/6 | 1/6 | 2/6 | 1/6 |
+| neg_prompt_8 | 2 | 0/2 | 0/2 | 0/2 | 0/2 | 0/2 | 0/2 | 1/2 | 1/2 | 1/2 |
+| neg_prompt_9 | 7 | 4/7 | 2/7 | 4/7 | 4/7 | 2/7 | 3/7 | 4/7 | 5/7 | 3/7 |
+| pos_prompt_0 | 5 | 5/5 | 5/5 | 4/5 | 5/5 | 5/5 | 5/5 | 2/5 | 2/5 | 1/5 |
+| pos_prompt_11 | 5 | 3/5 | 3/5 | 4/5 | 5/5 | 3/5 | 4/5 | 5/5 | 5/5 | 5/5 |
+| pos_prompt_2 | 3 | 1/3 | 3/3 | 3/3 | 3/3 | 2/3 | 1/3 | 0/3 | 2/3 | 3/3 |
+| pos_prompt_4 | 6 | 6/6 | 6/6 | 6/6 | 6/6 | 6/6 | 6/6 | 2/6 | 2/6 | 1/6 |
+| pos_prompt_5 | 5 | 5/5 | 5/5 | 5/5 | 5/5 | 5/5 | 5/5 | 4/5 | 4/5 | 4/5 |
+| pos_prompt_6 | 6 | 6/6 | 6/6 | 6/6 | 6/6 | 6/6 | 6/6 | 4/6 | 4/6 | 3/6 |
+| pos_prompt_8 | 6 | 4/6 | 4/6 | 4/6 | 6/6 | 4/6 | 3/6 | 6/6 | 4/6 | 6/6 |
+| pos_prompt_9 | 4 | 4/4 | 4/4 | 2/4 | 3/4 | 2/4 | 2/4 | 4/4 | 2/4 | 2/4 |
+
+## M2 vs L2: flips
+
+fixed (16): prompt_0.mp4, prompt_3.mp4, prompt_5.mp4, prompt_0_v01.mp4, prompt_0_v10.mp4, prompt_3_v07.mp4, prompt_3_v11.mp4, prompt_4_v20.mp4, prompt_5_v01.mp4, prompt_5_v03.mp4, prompt_5_v07.mp4, prompt_5_v09.mp4, prompt_5_v12.mp4, prompt_9_v18.mp4, prompt_9_v20.mp4, prompt_9_v16.mp4
+broke (9): prompt_2_v13.mp4, prompt_9_v02.mp4, prompt_9_v05.mp4, prompt_8.mp4, prompt_11_v12.mp4, prompt_11_v20.mp4, prompt_2_v01.mp4, prompt_2_v05.mp4, prompt_8_v18.mp4
+
+wrote /root/vlm_anomaly_reasoning/logs/prompt_lab_hlab_r1t.md
+M2 verdict distribution: {'Normal': 41, 'Anomaly': 39}
+# H-lab diagnostics — hlab_r1t
+
+| arm | n | stage-1 answers (cont/slow/stop/wait/unk) | strict | lenient | twin divergence | verdict acc | acc | stage-1 ok | acc | stage-1 wrong | s1 trunc | s2 trunc | Unknown verdicts |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| M0 | 80 | 25/29/19/7/0 | 40/80 | 63/80 | 0.18 | 0.613 | 0.70 | 63 | 0.29 | 17 | 0 | 0 | 0 |
+| M1 | 80 | 24/33/16/7/0 | 37/80 | 58/80 | 0.17 | 0.675 | 0.83 | 58 | 0.27 | 22 | 0 | 0 | 0 |
+| M2 | 80 | 25/29/19/7/0 | 42/80 | 63/80 | 0.14 | 0.838 | 1.00 | 63 | 0.24 | 17 | 0 | 0 | 0 |
+| M3 | 80 | 23/29/21/7/0 | 39/80 | 60/80 | 0.15 | 0.662 | 0.82 | 60 | 0.20 | 20 | 0 | 0 | 0 |
+| M4 | 80 | 35/26/12/7/0 | 43/80 | 64/80 | 0.16 | 0.775 | 0.86 | 64 | 0.44 | 16 | 0 | 0 | 0 |
+| M5 | 80 | 24/30/19/7/0 | 40/80 | 62/80 | 0.11 | 0.762 | 0.79 | 62 | 0.67 | 18 | 0 | 0 | 0 |
+| M6 | 80 | 31/33/9/7/0 | 34/80 | 54/80 | 0.17 | 0.600 | 0.67 | 54 | 0.46 | 26 | 0 | 0 | 0 |
+| M7 | 80 | 32/35/6/7/0 | 30/80 | 51/80 | 0.29 | 0.588 | 0.61 | 51 | 0.55 | 29 | 0 | 0 | 0 |
+
+## Flips vs L2 by scenario (fixed/broke)
+
+- M0: net -11 — neg_prompt_0 +3/-0, neg_prompt_2 +0/-4, neg_prompt_3 +3/-0, neg_prompt_4 +1/-4, neg_prompt_5 +1/-0, neg_prompt_8 +1/-0, neg_prompt_9 +1/-1, pos_prompt_0 +0/-3, pos_prompt_2 +0/-3, pos_prompt_4 +0/-4, pos_prompt_5 +0/-1, pos_prompt_6 +0/-2, pos_prompt_9 +1/-0
+- M1: net -6 — neg_prompt_0 +1/-0, neg_prompt_2 +0/-4, neg_prompt_3 +3/-0, neg_prompt_4 +1/-3, neg_prompt_5 +4/-0, neg_prompt_9 +0/-2, pos_prompt_11 +0/-2, pos_prompt_2 +0/-1, pos_prompt_8 +0/-2, pos_prompt_9 +0/-1
+- M2: net +7 — neg_prompt_0 +3/-0, neg_prompt_2 +0/-1, neg_prompt_3 +3/-0, neg_prompt_4 +1/-0, neg_prompt_5 +6/-0, neg_prompt_9 +2/-2, pos_prompt_11 +0/-2, pos_prompt_2 +0/-2, pos_prompt_8 +0/-2, pos_prompt_9 +1/-0
+- M3: net -7 — neg_prompt_2 +0/-5, neg_prompt_3 +3/-0, neg_prompt_4 +1/-2, neg_prompt_5 +4/-0, neg_prompt_9 +2/-3, pos_prompt_11 +0/-1, pos_prompt_2 +0/-2, pos_prompt_8 +0/-3, pos_prompt_9 +0/-1
+- M4: net +2 — neg_prompt_0 +1/-0, neg_prompt_2 +1/-2, neg_prompt_3 +3/-0, neg_prompt_4 +1/-2, neg_prompt_5 +5/-0, neg_prompt_9 +2/-4, pos_prompt_11 +0/-2, pos_prompt_8 +0/-2, pos_prompt_9 +1/-0
+- M5: net +1 — neg_prompt_0 +3/-0, neg_prompt_2 +1/-1, neg_prompt_3 +3/-0, neg_prompt_4 +0/-3, neg_prompt_5 +3/-0, neg_prompt_9 +2/-2, pos_prompt_0 +0/-1, pos_prompt_11 +0/-1, pos_prompt_8 +0/-2, pos_prompt_9 +0/-1
+- M6: net -12 — neg_prompt_0 +2/-0, neg_prompt_2 +0/-5, neg_prompt_3 +3/-0, neg_prompt_4 +1/-3, neg_prompt_5 +2/-0, neg_prompt_8 +1/-0, neg_prompt_9 +2/-1, pos_prompt_0 +0/-3, pos_prompt_2 +0/-1, pos_prompt_4 +0/-4, pos_prompt_5 +0/-1, pos_prompt_6 +0/-2, pos_prompt_8 +0/-2, pos_prompt_9 +1/-2
+- M7: net -13 — neg_prompt_0 +3/-0, neg_prompt_2 +0/-5, neg_prompt_3 +3/-0, neg_prompt_4 +1/-2, neg_prompt_5 +1/-0, neg_prompt_8 +1/-0, neg_prompt_9 +0/-1, pos_prompt_0 +0/-4, pos_prompt_4 +0/-5, pos_prompt_5 +0/-1, pos_prompt_6 +0/-3, pos_prompt_9 +0/-1
+
+wrote /root/vlm_anomaly_reasoning/logs/hlab_diag_hlab_r1t.md
+=== hlab round 1 complete ===
+stopping server
+HLAB_R1_EXIT=0
