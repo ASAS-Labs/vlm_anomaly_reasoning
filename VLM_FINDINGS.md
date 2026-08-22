@@ -1051,3 +1051,43 @@ motion at any window that shows the braking; self-consistency does not help.
 Levers left: a first-frame (0.3 s) stage 1 for stop-type scenes, or SFT on
 stage-1 labels (Part 8.3). The narrative comparator makes the M8 pipeline
 100% faithful to whatever stage 1 says, so stage-1 gains transfer one-to-one.
+
+### 17.4 M8 on the full 235-clip subset: the headline numbers
+
+Same configuration as declared (Qwen3.8 think@16k on both stages, T−2.5 stage-1
+window, narrative comparator), seed 1234, run on all 235 admitted clips
+(110 anomaly / 125 normal) with the L2 champion re-run in-session as the paired
+anchor (`logs/hlab_r5t_{M8,L2}`; the earlier L2-on-235 run from Part 16 is kept
+alongside as `hlab_r5t_L2q` for a second pairing). Report
+`logs/prompt_lab_hlab_r5t.md`, diagnostics `logs/hlab_diag_hlab_r5t.md`.
+
+| arm | acc | 95% CI | balacc | recall / spec | vs L2 (in-session) | vs L2q (Part 16) |
+|---|---|---|---|---|---|---|
+| **M8** | **0.830** (195/235) | [0.777, 0.872] | **0.826** | 0.77 / 0.88 | **+27 net (48/21), p = 0.002** | +20 net (35/15), p = 0.024 |
+| L2 in-session | 0.715 (168/235) | [0.654, 0.769] | 0.701 | 0.49 / 0.91 | — | |
+| L2q (Part 16 run) | 0.745 (175/235) | [0.685, 0.796] | 0.732 | 0.54 / 0.93 | +7, n.s. | — |
+
+Zero truncations and Unknowns for M8; stage 1 strict 128/235, lenient 184/235
+(78%, the same rate as on the 80); the comparator is again 100% faithful
+(184/184 correct given a lenient-correct expectation; 11/51 when stage 1 is
+wrong). The two L2 sessions differ by 7 clips on the same seed — the
+run-to-run band at t = 1.0 — so the paired in-session comparison is the number
+to quote; both pairings clear p < 0.05.
+
+Where the gain sits (M8 − L2, per scenario): the unnecessary-stop family is
+almost solved — neg_0 18/18 (+8), neg_3 15/15 (+7), neg_4 17/17 (+6), **neg_5
+16/16 (+14)** — which was exactly the recall mass the single-call champion
+lacked. The costs are the **missed-reaction anomalies** (neg_9 3/18, −8;
+neg_8 0/7, −2: stage 1 answers continue/slow because the real hazard is not
+recognised from the early window, so "continued" matches) and the **real-stop
+normals** pos_8 / pos_9 / pos_11 (−3 / −2 / −3: stage 1 says *slow* where
+*stop* is expected, and slow-vs-stop is a mismatch under the rule). The
+continue-normals are unchanged (pos_0/4/6 at 17/18/18). So M8 and L2 have
+complementary failure modes on the honest set, and every residual M8 error is
+a stage-1 error — consistent with 17.3's reading that stage 1 is the ceiling.
+
+**Headline for the paper (235-clip, near-balanced subset): two-stage monitor
+M8 = 0.830 acc / 0.826 balacc (recall 0.77, specificity 0.88) vs the
+single-call champion L2 = 0.715–0.745 / 0.70–0.73, +20 to +27 paired clips,
+p ≤ 0.024 on either pairing.** Single seed on the 235; a seed-4321
+reproduction (~$5) is the remaining formality before quoting it as final.

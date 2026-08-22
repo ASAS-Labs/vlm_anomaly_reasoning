@@ -1,0 +1,50 @@
+{
+  "model_key": "qwen38",
+  "hf_id": "Qwen/Qwen3.8-27B",
+  "served_model_id": "Qwen/Qwen3.8-27B",
+  "arm": "verdict_think16k",
+  "think": true,
+  "request_kwargs": {
+    "max_tokens": 16384,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "presence_penalty": 0.0
+  },
+  "extra_body": {
+    "top_k": 20
+  },
+  "serve_command": [
+    "vllm",
+    "serve",
+    "Qwen/Qwen3.8-27B",
+    "--allowed-local-media-path",
+    "/",
+    "--media-io-kwargs",
+    "{\"video\": {\"fps\": 8, \"num_frames\": -1}}",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--port",
+    "8000",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "vllm_version": "0.27.1",
+  "git_commit": "0d78399d2b2c472c85a6e72a11cd6dd04336ca35",
+  "ts": "2026-08-22T16:06:03",
+  "stage": "monitor",
+  "variant": "M8",
+  "hypothesis": "compose: guard+feature stage 1 x narrative comparator",
+  "dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p_tminus2.5",
+  "full_dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p",
+  "stage1_window": "tminus2.5",
+  "action_render": "narrative",
+  "subset": "/root/vlm_anomaly_reasoning/logs/vlm_agreement_subset_admitted.txt",
+  "seed": 1234,
+  "concurrency": 6,
+  "n_clips": 235,
+  "prompt_sha256": "96da95137acf2a53911765ad43f31a23084f43c280518a8ec1ad82c16da6168b",
+  "stage1_prompt_sha256": "96da95137acf2a53911765ad43f31a23084f43c280518a8ec1ad82c16da6168b",
+  "stage2_prompt_sha256": "8b6cfdf34a9172ff69d1ef284f79acbacc20a32fad9b2f17a635d0a0d52bd3fc"
+}

@@ -255,6 +255,7 @@ Anchor = L2 (champion, full clip) re-run per session: 60 / 57 / 56 / 57 of 80.
 | **M8** | M4 stage 1 × narrative comparator | **0.850 (1234), 0.850 (4321), 0.800 (999)** | +11 / +12 / +7 | **pooled 0.833 vs 0.708, p=0.001 — H-family champion** (per-seed: 1/3 at p<.05) |
 | M9 / M10 | + guard re-check / ablate M4 | 0.838 / 0.838 | +10 / +10 | ≈ M8 |
 | M11 | M8 + majority-of-3 stage 1 | 0.825 | +10 | no gain: stage-1 errors systematic |
+| **M8 (235)** | same config, full 235-clip subset, in-session L2 anchor | **0.830 / balacc 0.826** (0.77/0.88) | **+27 (p=0.002)** vs L2 0.715; +20 (p=0.024) vs the Part-16 L2 0.745 | **headline numbers; holds on the honest set (Part 17.4)** |
 
 Full pipeline, verbatim prompts, and reproduction commands for the declared
 M8 configuration: next section (M8 reproduction sheet).
@@ -340,6 +341,11 @@ tmux new -s hlab
 ROUND=2 SEED=1234 HLAB_ARMS="M8 M9 M10" bash spec/run_hlab_round.sh   # screen  (logs/hlab_r2t_*)
 ROUND=3 SEED=4321 HLAB_ARMS="M8 M11"    bash spec/run_hlab_round.sh   # repro   (logs/hlab_r3t_*)
 ROUND=4 SEED=999  HLAB_ARMS="M8"        bash spec/run_hlab_round.sh   # tie-break (logs/hlab_r4t_*)
+# full 235-clip subset (Part 17.4): M8 first, then the in-session anchor
+ROUND=5 PREFIX=hlab_r5 HLAB_ARMS="M8" ANCHOR= BASELINE=L2q \
+  HLAB_SUBSET=logs/vlm_agreement_subset_admitted.txt bash spec/run_hlab_round.sh
+ROUND=5 PREFIX=hlab_r5 HLAB_ARMS=     ANCHOR=L2 BASELINE=L2 \
+  HLAB_SUBSET=logs/vlm_agreement_subset_admitted.txt bash spec/run_hlab_round.sh
 ```
 
 Each round: build the early trees if missing (assert counts and 0 `.txt`) → assert the
@@ -372,6 +378,7 @@ every variant's texts and hashes.
 | 4321 | `logs/hlab_r3t_M8` | **0.850** (68/80) | 0.850 | 0.82 / 0.88 | 0.700 (56) | +12 (0.023) | 62/80 | 62/62 | 48 s/clip |
 | 999 | `logs/hlab_r4t_M8` | 0.800 (64/80) | 0.800 | 0.82 / 0.78 | 0.713 (57) | +7 (0.248) | 61/80 | 61/61 | 46 s/clip |
 | pooled | n = 240 | **0.833** | — | — | **0.708** | **+30 (55 gained / 25 lost), p = 0.001** | — | 186/186 | — |
+| 1234, **full 235** | `logs/hlab_r5t_M8` | **0.830** (195/235) | 0.826 | 0.77 / 0.88 | 0.715 (168; `hlab_r5t_L2`) | +27 (0.002); vs Part-16 L2 0.745 (`hlab_r5t_L2q`): +20 (0.024) | 184/235 | 184/184 | ~60 s/clip |
 
 Zero truncations and zero Unknown verdicts in all 240 records; the comparator is
 100% faithful whenever stage 1 is right, so every residual error is a stage-1
@@ -413,7 +420,7 @@ comparison ~70% → verdict.
 - Maintain-class generation residual (23 clips): needs scene-side prompt changes
   (hazard placement), not motion wording — dataset-paper note.
 - Seed-4321 reproduction of the L2 champion on the 235-clip subset (~$4).
-- H-lab next lever: first-frame (0.3 s) stage 1 for stop-type scenes; then M8 on
-  the full 235.
+- H-lab next lever: first-frame (0.3 s) stage 1 for stop-type scenes; seed-4321
+  reproduction of M8 on the full 235 (~$5) before quoting 0.830 as final.
 - SFT on expectation generation — now on Qwen3.8 if zero-shot plateaus.
 - Native-720p generation (F2 suggests it pays).
