@@ -1,0 +1,70 @@
+{
+ "round": 2,
+ "n": 80,
+ "summary": {
+  "M8": {
+   "acc": 0.85,
+   "ci": [
+    0.7558657249889396,
+    0.9120604596258579
+   ],
+   "gained": 20,
+   "lost": 9,
+   "p": 0.06142834573984146,
+   "breadth": 6,
+   "anomaly_verdicts": 38,
+   "balacc": 0.85,
+   "recall": 0.825,
+   "specificity": 0.875,
+   "truncated": 0
+  },
+  "M10": {
+   "acc": 0.8375,
+   "ci": [
+    0.7415689513651669,
+    0.9025027266562451
+   ],
+   "gained": 18,
+   "lost": 8,
+   "p": 0.07551869750022888,
+   "breadth": 5,
+   "anomaly_verdicts": 33,
+   "balacc": 0.8375,
+   "recall": 0.75,
+   "specificity": 0.925,
+   "truncated": 0
+  },
+  "M9": {
+   "acc": 0.8375,
+   "ci": [
+    0.7415689513651669,
+    0.9025027266562451
+   ],
+   "gained": 19,
+   "lost": 9,
+   "p": 0.08715855330228806,
+   "breadth": 5,
+   "anomaly_verdicts": 37,
+   "balacc": 0.8375,
+   "recall": 0.8,
+   "specificity": 0.875,
+   "truncated": 0
+  },
+  "L2": {
+   "acc": 0.7125,
+   "ci": [
+    0.6053944721715182,
+    0.8001321399160374
+   ],
+   "gained": 0,
+   "lost": 0,
+   "p": 1.0,
+   "breadth": 0,
+   "anomaly_verdicts": 25,
+   "balacc": 0.7125,
+   "recall": 0.525,
+   "specificity": 0.9,
+   "truncated": 0
+  }
+ }
+}

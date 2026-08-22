@@ -125,6 +125,14 @@ H_VARIANTS.update({
             "hypothesis": "compose: M0 stage 1 x narrative x guard re-check (ablates M4)"},
 })
 
+# --- Round 3: stage-1 self-consistency on the round-2 leader --------------
+# M8's comparator is 63/63 given a correct expectation; stage 1 (63/80
+# lenient) is the ceiling. Majority of 3 stage-1 samples (seeds s, s+1, s+2).
+H_VARIANTS.update({
+    "M11": {**H_VARIANTS["M8"], "parent": "M8", "stage1_k": 3,
+            "hypothesis": "M8 with stage-1 majority-of-3 self-consistency"},
+})
+
 
 def render_action(render: str, seq_text: str) -> str:
     if render == "raw":

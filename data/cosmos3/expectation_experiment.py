@@ -221,20 +221,37 @@ def main():
             ]},
         ]
         t0 = time.time()
-        r1 = client.chat.completions.create(model=model_id, messages=messages,
-                                            seed=args.seed, extra_body=extra_body,
-                                            **req_kwargs)
-        ch = r1.choices[0]
-        content, reasoning = pilot_models.answer_text(ch)
-        expect = parse_option(content)
+        k1 = (hv or {}).get("stage1_k", 1)
+        s1_samples = []
+        for i in range(max(1, k1)):
+            r1 = client.chat.completions.create(model=model_id, messages=messages,
+                                                seed=args.seed + i, extra_body=extra_body,
+                                                **req_kwargs)
+            ch = r1.choices[0]
+            c_i, rs_i = pilot_models.answer_text(ch)
+            s1_samples.append({"content": c_i, "reasoning": rs_i, "expect": parse_option(c_i),
+                               "finish_reason": ch.finish_reason, "raw": ch.message.content})
+        if k1 > 1:
+            # majority vote over parsed options; the assistant turn carries the
+            # content of the first sample that voted with the majority
+            from collections import Counter
+            votes = Counter(x["expect"] for x in s1_samples if x["expect"] != "unknown")
+            expect = votes.most_common(1)[0][0] if votes else "unknown"
+            pick = next((x for x in s1_samples if x["expect"] == expect), s1_samples[0])
+            content, reasoning = pick["content"], pick["reasoning"]
+            ch_finish, ch_raw = pick["finish_reason"], pick["raw"]
+        else:
+            content, reasoning = s1_samples[0]["content"], s1_samples[0]["reasoning"]
+            expect = s1_samples[0]["expect"]
+            ch_finish, ch_raw = s1_samples[0]["finish_reason"], s1_samples[0]["raw"]
         rec = {"video": rel, "scenario": scen, "stage": args.stage,
                "variant": variant_id, "hypothesis": hyp,
                "true_label": it["true_label"],
                "gt_expected": g["expected"], "gt_acceptable": g["acceptable"],
-               "expect_raw": ch.message.content, "expect": expect,
+               "expect_raw": ch_raw, "expect": expect,
                "expect_strict": expect == g["expected"],
                "expect_lenient": expect in g["acceptable"],
-               "finish_reason": ch.finish_reason,
+               "finish_reason": ch_finish,
                "stage1_prompt_sha256": s1_sha,
                "ts": datetime.now().isoformat(timespec="seconds")}
         if args.model_config:
@@ -242,6 +259,9 @@ def main():
                        stage1_window=hv["stage1_window"] if hv else None)
         if reasoning is not None:
             rec["reasoning_content"] = reasoning
+        if k1 > 1:
+            rec["stage1_k"] = k1
+            rec["stage1_votes"] = [x["expect"] for x in s1_samples]
 
         if args.stage == "monitor" and not content.strip():
             # stage 1 produced no answer (e.g. unterminated think): there is no
