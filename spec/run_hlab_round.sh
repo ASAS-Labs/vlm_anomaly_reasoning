@@ -14,6 +14,8 @@
 #   HLAB_ARM=verdict_think16k      pilot arm for both stages (and the anchor)
 #   ANCHOR=L2                      prompt_lab variant re-run in-session ("" to skip)
 #   CONC=6
+#   HLAB_SUBSET=logs/hlab_subset_80.txt   clip list (e.g. the 235-clip admitted list)
+#   BASELINE=$ANCHOR               report baseline when the anchor is not re-run
 set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ROUND="${ROUND:?set ROUND=<n>}"
@@ -27,7 +29,7 @@ VENV="${VENV_DIR:-${REPO_ROOT}/.venv-pilot}"
 PY="${VENV}/bin/python"
 PORT="${PORT:-8000}"
 URL="http://127.0.0.1:${PORT}/v1"
-SUBSET="${REPO_ROOT}/logs/hlab_subset_80.txt"
+SUBSET="${HLAB_SUBSET:-${REPO_ROOT}/logs/hlab_subset_80.txt}"
 GATE="${REPO_ROOT}/logs/hlab_gate_4.txt"
 DS="${REPO_ROOT}/data/datasets"
 TREE="${DS}/generated_vids_720p"
@@ -112,6 +114,7 @@ for ARM in ${HLAB_ARMS}; do
 done
 
 echo "--- reports ---"
-"${PY}" prompt_lab_report.py --round "${ROUND}" --prefix "${PREFIX}t" --baseline "${ANCHOR:-M0}"
-"${PY}" hlab_report.py --prefix "${PREFIX}t" --anchor "${ANCHOR:-M0}"
+BASELINE="${BASELINE:-${ANCHOR:-M0}}"
+"${PY}" prompt_lab_report.py --round "${ROUND}" --prefix "${PREFIX}t" --baseline "${BASELINE}"
+"${PY}" hlab_report.py --prefix "${PREFIX}t" --anchor "${BASELINE}"
 echo "=== hlab round ${ROUND} complete ==="
