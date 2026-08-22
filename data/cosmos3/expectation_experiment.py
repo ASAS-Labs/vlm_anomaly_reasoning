@@ -92,7 +92,12 @@ def main():
     p.add_argument("--seed", type=int, default=1234)
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--model-config", default=None, choices=list(pilot_models.MODELS),
-                   help="pilot model key: use its 'expect' arm sampling + parsing")
+                   help="pilot model key: use its arm sampling + parsing")
+    p.add_argument("--model-arm", default="expect",
+                   help="pilot model arm for BOTH stages (H-lab: verdict_think16k)")
+    p.add_argument("--hvariant", default=None,
+                   help="H-lab registry id (h_variants.py): stage-1/stage-2 texts, "
+                        "window and action rendering; default = legacy H3 texts")
     p.add_argument("--max_tokens", type=int, default=None,
                    help="override the resolved max_tokens")
     p.add_argument("--concurrency", type=int, default=1,
@@ -101,29 +106,55 @@ def main():
                    help="print resolved request config and exit (no server needed)")
     args = p.parse_args()
 
-    if args.model_config and args.stage == "monitor":
-        sys.exit("--model-config does not support the monitor stage (stage-2 "
-                 "sampling is Cosmos-tuned)")
+    # H-lab variant: texts/window/rendering from the registry; legacy texts otherwise.
+    if args.hvariant:
+        import h_variants
+        hv = h_variants.H_VARIANTS[args.hvariant]
+        stage1_text, stage2_tmpl = hv["stage1"], hv["stage2"]
+        render = hv["action_render"]
+        stage2_for = lambda seq: h_variants.stage2_prompt(hv, seq)  # noqa: E731
+        hyp = hv["hypothesis"]
+    else:
+        hv = None
+        stage1_text, stage2_tmpl, render = EXPECT_QUESTION, MONITOR_FOLLOWUP, "raw"
+        stage2_for = lambda seq: MONITOR_FOLLOWUP.format(seq=seq)  # noqa: E731
+        hyp = ("H3 two-stage monitor (legacy texts)" if args.stage == "monitor"
+               else "stage-1 expectation (legacy text)")
+    variant_id = args.hvariant or ("H3" if args.stage == "monitor" else args.stage)
 
     # Stage-1 request settings: Cosmos default unchanged; a pilot model key
-    # swaps in that model's card-recommended 'expect' arm.
+    # swaps in that model's card-recommended arm (both stages under --hvariant).
     if args.model_config:
         req_kwargs, extra_body = pilot_models.request_kwargs(args.model_config,
-                                                             "expect")
+                                                             args.model_arm)
     else:
         req_kwargs, extra_body = {"max_tokens": 30, "temperature": 0.0}, None
     if args.max_tokens:
         req_kwargs["max_tokens"] = args.max_tokens
-
-    if args.dry_run:
-        print(json.dumps({"model_config": args.model_config, "stage": args.stage,
-                          "request_kwargs": req_kwargs, "extra_body": extra_body,
-                          "seed": args.seed, "concurrency": args.concurrency,
-                          "prompt": EXPECT_QUESTION}, indent=2))
-        return
+    max_model_len = (pilot_models.MODELS[args.model_config]["max_model_len"]
+                     if args.model_config else None)
 
     gt = json.loads((Path(__file__).parent / "expected_action_gt.json").read_text())
     gt.pop("_doc", None)
+
+    if args.dry_run:
+        info = {"model_config": args.model_config, "model_arm": args.model_arm,
+                "stage": args.stage, "variant": variant_id, "hypothesis": hyp,
+                "stage1_window": hv["stage1_window"] if hv else "(dataset)",
+                "action_render": render, "request_kwargs": req_kwargs,
+                "extra_body": extra_body, "seed": args.seed,
+                "stage1_prompt_sha256": hashlib.sha256(stage1_text.encode()).hexdigest(),
+                "stage2_prompt_sha256": hashlib.sha256(stage2_tmpl.encode()).hexdigest(),
+                "stage1_prompt": stage1_text}
+        if args.full_dataset and args.subset.exists():
+            first = next((ln.strip() for ln in args.subset.read_text().splitlines()
+                          if ln.strip()), None)
+            if first:
+                seq = read_action_sequence(Path(args.full_dataset) / first)
+                info["stage2_prompt_rendered_for"] = first
+                info["stage2_prompt"] = stage2_for(seq)
+        print(json.dumps(info, indent=2, ensure_ascii=False))
+        return
 
     items = discover_eval_videos(args.dataset, strict=False)
     wanted = [ln.strip() for ln in args.subset.read_text().splitlines() if ln.strip()]
@@ -134,14 +165,24 @@ def main():
     items = [by_rel[w] for w in wanted]
     if args.limit:
         items = items[: args.limit]
+    no_gt = sorted({scenario_of(i["rel_path"]) for i in items} - set(gt))
+    if no_gt:
+        sys.exit(f"expected_action_gt.json lacks scenarios {no_gt}")
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
     out_path = args.out_dir / "results.jsonl"
+    s1_sha = hashlib.sha256(stage1_text.encode()).hexdigest()
+    s2_sha = hashlib.sha256(stage2_tmpl.encode()).hexdigest()
     done = set()
     if out_path.exists():
         for ln in out_path.read_text().splitlines():
             if ln.strip():
-                done.add(json.loads(ln)["video"])
+                r0 = json.loads(ln)
+                done.add(r0["video"])
+                if r0.get("stage1_prompt_sha256", s1_sha) != s1_sha or \
+                        r0.get("stage2_prompt_sha256", s2_sha) != s2_sha:
+                    sys.exit(f"{out_path} holds records from different prompt texts; "
+                             "use a fresh --out_dir")
     out = open(out_path, "a", encoding="utf-8")
 
     client = openai.OpenAI(api_key="EMPTY", base_url=args.server_url)
@@ -149,11 +190,15 @@ def main():
 
     if args.model_config:
         pilot_models.write_run_meta(
-            args.out_dir, args.model_config, "expect", args.server_url, model_id,
-            {"stage": args.stage, "dataset": args.dataset,
+            args.out_dir, args.model_config, args.model_arm, args.server_url, model_id,
+            {"stage": args.stage, "variant": variant_id, "hypothesis": hyp,
+             "dataset": args.dataset, "full_dataset": args.full_dataset,
+             "stage1_window": hv["stage1_window"] if hv else None,
+             "action_render": render,
              "subset": str(args.subset), "seed": args.seed,
              "concurrency": args.concurrency, "n_clips": len(items),
-             "prompt_sha256": hashlib.sha256(EXPECT_QUESTION.encode()).hexdigest()})
+             "prompt_sha256": s1_sha, "stage1_prompt_sha256": s1_sha,
+             "stage2_prompt_sha256": s2_sha})
 
     def process(it):
         rel = it["rel_path"]
@@ -164,7 +209,7 @@ def main():
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": [
                 {"type": "video_url", "video_url": {"url": uri}},
-                {"type": "text", "text": EXPECT_QUESTION},
+                {"type": "text", "text": stage1_text},
             ]},
         ]
         t0 = time.time()
@@ -175,33 +220,64 @@ def main():
         content, reasoning = pilot_models.answer_text(ch)
         expect = parse_option(content)
         rec = {"video": rel, "scenario": scen, "stage": args.stage,
+               "variant": variant_id, "hypothesis": hyp,
                "true_label": it["true_label"],
                "gt_expected": g["expected"], "gt_acceptable": g["acceptable"],
                "expect_raw": ch.message.content, "expect": expect,
                "expect_strict": expect == g["expected"],
                "expect_lenient": expect in g["acceptable"],
                "finish_reason": ch.finish_reason,
+               "stage1_prompt_sha256": s1_sha,
                "ts": datetime.now().isoformat(timespec="seconds")}
+        if args.model_config:
+            rec.update(model_config=args.model_config, model_arm=args.model_arm,
+                       stage1_window=hv["stage1_window"] if hv else None)
         if reasoning is not None:
             rec["reasoning_content"] = reasoning
 
         if args.stage == "monitor":
             full_tree = Path(args.full_dataset)
             seq_text = read_action_sequence(full_tree / rel)
+            prompt2 = stage2_for(seq_text)
             messages += [
                 {"role": "assistant", "content": content},
-                {"role": "user", "content": MONITOR_FOLLOWUP.format(seq=seq_text)},
+                {"role": "user", "content": prompt2},
             ]
-            r2 = client.chat.completions.create(model=model_id, messages=messages,
-                                                max_tokens=200, temperature=0.0,
-                                                seed=args.seed)
-            raw2 = r2.choices[0].message.content
-            parsed = parse_verdict(raw2, r2.choices[0].finish_reason)
+            if args.model_config:
+                # Same arm as stage 1; clamp the budget to the context window
+                # (stage-1 prompt incl. video tokens + answer + follow-up).
+                kw2 = dict(req_kwargs)
+                used = ((r1.usage.prompt_tokens if r1.usage else 0)
+                        + len(content) // 3 + len(prompt2) // 3 + 256)
+                room = max_model_len - used
+                if room < 1024:
+                    raise RuntimeError(f"{rel}: stage-2 context room {room} < 1024")
+                kw2["max_tokens"] = min(kw2["max_tokens"], room)
+                r2 = client.chat.completions.create(model=model_id, messages=messages,
+                                                    seed=args.seed,
+                                                    extra_body=extra_body, **kw2)
+                ch2 = r2.choices[0]
+                content2, reasoning2 = pilot_models.answer_text(ch2)
+                rec["stage2_max_tokens"] = kw2["max_tokens"]
+                if reasoning2 is not None:
+                    rec["monitor_reasoning_content"] = reasoning2
+            else:
+                r2 = client.chat.completions.create(model=model_id, messages=messages,
+                                                    max_tokens=200, temperature=0.0,
+                                                    seed=args.seed)
+                ch2 = r2.choices[0]
+                content2 = ch2.message.content
+            parsed = parse_verdict(content2, ch2.finish_reason)
             pred = {"Anomaly": 1, "Normal": 0}.get(parsed["verdict"])
-            rec.update(monitor_raw=raw2, verdict=parsed["verdict"],
-                       parse_reason=parsed["reason"],
+            # monitor records report the stage-2 finish_reason at top level
+            rec["expect_finish_reason"] = rec.pop("finish_reason")
+            rec.update(monitor_raw=ch2.message.content, verdict=parsed["verdict"],
+                       parse_reason=parsed["reason"], finish_reason=ch2.finish_reason,
                        correct=None if pred is None else pred == it["true_label"],
-                       action_sequence=seq_text)
+                       action_sequence=seq_text, action_render=render,
+                       stage2_prompt_sha256=s2_sha)
+            if render != "raw":
+                rec["action_rendered"] = h_variants.render_action(render, seq_text)
 
         rec["latency_s"] = round(time.time() - t0, 3)
         return rec

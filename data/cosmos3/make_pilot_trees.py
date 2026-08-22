@@ -37,11 +37,16 @@ def main():
                    help="default <src parent>/generated_vids_720p")
     p.add_argument("--out-early", type=Path, default=None,
                    help="default <src parent>/generated_vids_720p_early")
-    p.add_argument("--early-secs", type=float, default=2.5)
+    p.add_argument("--early-secs", type=float, default=2.5,
+                   help="fixed mode: window length; t_minus mode: seconds hidden "
+                        "at the end (window = duration - early-secs)")
+    p.add_argument("--early-mode", choices=["fixed", "t_minus"], default="fixed")
     p.add_argument("--skip-existing", action="store_true")
     args = p.parse_args()
 
     hires_root = args.out_hires or args.src.parent / "generated_vids_720p"
+    if args.early_mode == "t_minus" and args.out_early is None:
+        sys.exit("--early-mode t_minus requires an explicit --out-early")
     early_root = args.out_early or args.src.parent / "generated_vids_720p_early"
 
     items = discover_eval_videos(args.src, strict=False)
@@ -58,14 +63,17 @@ def main():
         early = early_root / rel
         if not (args.skip_existing and hires.exists()):
             encode(src, hires, [], ["-vf", "scale=1248:720:flags=lanczos"])
+        h = probe(hires)
+        want = (args.early_secs if args.early_mode == "fixed"
+                else h["duration_s"] - args.early_secs)
         if not (args.skip_existing and early.exists()):
-            encode(hires, early, ["-t", str(args.early_secs)], [])
-        h, e = probe(hires), probe(early)
+            encode(hires, early, ["-t", f"{want:.3f}"], [])
+        e = probe(early)
         manifests[hires_root].append({"rel_path": rel, **h})
-        manifests[early_root].append({"rel_path": rel, **e})
-        if abs(e["duration_s"] - args.early_secs) > 0.3:
+        manifests[early_root].append({"rel_path": rel, **e, "early_secs": round(want, 3)})
+        if abs(e["duration_s"] - want) > 0.3:
             sys.exit(f"{rel}: early duration {e['duration_s']:.2f}s, "
-                     f"expected ~{args.early_secs}s")
+                     f"expected ~{want:.2f}s")
         if n % 10 == 0 or n == len(wanted):
             print(f"  [{n}/{len(wanted)}] {rel.split('/')[-1]}: "
                   f"hires {h['frames']}f / early {e['frames']}f", flush=True)
@@ -83,6 +91,7 @@ def main():
         mpath.write_text(json.dumps(
             {"src": str(args.src), "subset": str(args.subset),
              "early_secs": args.early_secs if root is early_root else None,
+             "early_mode": args.early_mode if root is early_root else None,
              "clips": clips}, indent=2))
         print(f"{root}: {len(clips)} clips, {w}x{hgt}, manifest {mpath.name}")
 
