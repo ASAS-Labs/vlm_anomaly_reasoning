@@ -109,6 +109,9 @@ import json, sys
 n = int(sys.argv[2]); want = [l.strip() for l in open(sys.argv[3]) if l.strip()][:n]; mode = sys.argv[4]
 recs = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
 recs = [r for r in recs if r["video"] in want]
+if mode == "plumbing":   # requests completed and records were written; no quality/format claim
+    print(f"gate(plumbing): {len(recs)}/{n} recs")
+    sys.exit(0 if len(recs) >= n else 1)
 unk = sum(1 for r in recs if r.get("verdict") == "Unknown")
 t2 = sum(1 for r in recs if r.get("finish_reason") == "length")
 s1u = sum(1 for r in recs if r.get("expect") == "unknown")
@@ -166,6 +169,12 @@ DATA_ARGS=(--rationales "${RATIONALES}" --video-root "${EARLY}" --out "${SFT}" -
 GATE_MODE="sft"
 if [[ "${TARGET_FORMAT}" == "think" ]]; then
   THINK_BUDGET="$("${PYP}" -c "import json,sys; print(json.load(open(sys.argv[1]))['think_budget'])" "${SFT}/manifest.json")"
+  # Floor the budget well above the training targets (p99 ~320 tok): a partially trained
+  # model can fall back to base-style rumination, and truncation would silently convert
+  # that into Unknown verdicts rather than showing up as long traces in the report.
+  THINK_BUDGET_MIN="${THINK_BUDGET_MIN:-4096}"
+  (( THINK_BUDGET < THINK_BUDGET_MIN )) && THINK_BUDGET="${THINK_BUDGET_MIN}"
+  THINK_BUDGET="${THINK_BUDGET_OVERRIDE:-${THINK_BUDGET}}"
   STAGE1_EXTRA=(--max_tokens "${THINK_BUDGET}"); GATE_MODE="sft_think"
   echo "stage-1 think budget from training targets: ${THINK_BUDGET} tokens"
 fi
@@ -234,7 +243,9 @@ if [[ "${SMOKE}" == "1" ]]; then
   merge_ckpt "${CKPT}" "${SW}/merged"
   serve "${SW}/merged" "qwen38-sft-smoke" "${LOG_DIR}/${PREFIX}_server_smoke.log"
   run_monitor "${SFT}/f1/held_out.txt" "${LOG_DIR}/${PREFIX}_smoke" "${STAGE1_ARM}" 4 --limit 4
-  gate_check "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" 4 "${SFT}/f1/held_out.txt" "${GATE_MODE}" || { echo "SMOKE GATE FAILED"; tail -2 "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" | cut -c1-400; exit 1; }
+  # plumbing-only gate: the smoke model saw 5 optimizer steps, so it cannot yet emit the
+  # target format; format/truncation are gated per fold, where the model is actually trained.
+  gate_check "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" 4 "${SFT}/f1/held_out.txt" plumbing || { echo "SMOKE GATE FAILED"; tail -2 "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" | cut -c1-400; exit 1; }
   stop_server; rm -rf "${SW}/merged"
   echo "=== SMOKE OK (elapsed $(elapsed_min) min) ==="
   exit 0
