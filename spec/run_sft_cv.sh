@@ -16,6 +16,7 @@
 #   SWIFT_MODEL_TYPE=qwen3_5 SWIFT_TEMPLATE=qwen3_8   (Qwen3.8-27B is registered under model_type qwen3_5 in ms-swift 4.x)
 #   SFT_VIDEO_ENV="FPS=8 FPS_MIN_FRAMES=4 FPS_MAX_FRAMES=64 VIDEO_MAX_TOKEN_NUM=2048"
 #   SMOKE runs rationalize (needed for the dataset) but NOT the anchor; the anchor runs on the real launch.
+#   SFT_DIR=logs/sft  SFT_SCHEME=logo5|within5  RATIONALES=logs/sft/rationales.jsonl  ANCHOR=<dir under logs/ for the report when RUN_ANCHOR=0>
 # Layout: logs/${PREFIX}_anchor/, logs/${PREFIX}_f<k>/ (results.jsonl, run_meta.json,
 #   fold_meta.json, trainer_state.json, train.log); adapters/merged under tmp/sft/
 #   (gitignored; merged dirs deleted after eval); driver log is this script's stdout.
@@ -35,7 +36,9 @@ URL="http://127.0.0.1:${PORT}/v1"
 DS="${REPO_ROOT}/data/datasets"; TREE="${DS}/generated_vids_720p"; EARLY="${DS}/generated_vids_720p_early_gt"
 SUBSET="${REPO_ROOT}/logs/vlm_agreement_subset_admitted.txt"
 GATE="${REPO_ROOT}/logs/hlab_gate_4.txt"
-SFT="${REPO_ROOT}/logs/sft"; LOG_DIR="${REPO_ROOT}/logs"; WORK="${REPO_ROOT}/tmp/sft/${PREFIX}"
+SFT="${SFT_DIR:-${REPO_ROOT}/logs/sft}"; SFT_SCHEME="${SFT_SCHEME:-logo5}"
+RATIONALES="${RATIONALES:-${REPO_ROOT}/logs/sft/rationales.jsonl}"
+LOG_DIR="${REPO_ROOT}/logs"; WORK="${REPO_ROOT}/tmp/sft/${PREFIX}"
 export HF_HOME="${HF_HOME:-${HOME}/.cache/huggingface}"; export HF_HUB_DISABLE_XET=1
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 T_START=$(date +%s)
@@ -118,7 +121,7 @@ run_monitor() {  # run_monitor <subset file> <out dir> <stage1 arm> <concurrency
 
 # ---------------------------------------------------------------- base model phase
 NEED_BASE=0
-[[ "${RUN_RATIONALIZE}" == "1" && "$(wc -l < "${SFT}/rationales.jsonl" 2>/dev/null || echo 0)" -lt "${N_SUB}" ]] && NEED_BASE=1
+[[ "${RUN_RATIONALIZE}" == "1" && "$(wc -l < "${RATIONALES}" 2>/dev/null || echo 0)" -lt "${N_SUB}" ]] && NEED_BASE=1
 [[ "${RUN_ANCHOR}" == "1" && "${SMOKE}" != "1" && "$(wc -l < "${LOG_DIR}/${PREFIX}_anchor/results.jsonl" 2>/dev/null || echo 0)" -lt "${N_SUB}" ]] && NEED_BASE=1
 [[ "${SMOKE}" == "1" ]] && NEED_BASE=1
 FIRST_CLIP="${EARLY}/$(head -1 "${SUBSET}")"
@@ -130,11 +133,11 @@ if [[ "${NEED_BASE}" == "1" ]]; then
   if [[ "${RUN_RATIONALIZE}" == "1" ]]; then
     echo "--- rationalize (self-distilled targets) ---"
     "${PYP}" sft_rationalize.py --server_url "${URL}" --dataset "${EARLY}" --subset "${SUBSET}" \
-      --out "${SFT}/rationales.jsonl" --seed "${SEED}" --concurrency "${CONC}"
+      --out "${RATIONALES}" --seed "${SEED}" --concurrency "${CONC}"
   fi
 fi
 echo "--- dataset ---"
-"${PYP}" sft_data.py --rationales "${SFT}/rationales.jsonl" --video-root "${EARLY}" --out "${SFT}"
+"${PYP}" sft_data.py --rationales "${RATIONALES}" --video-root "${EARLY}" --out "${SFT}" --scheme "${SFT_SCHEME}"
 if [[ "${NEED_BASE}" == "1" && "${RUN_ANCHOR}" == "1" && "${SMOKE}" != "1" ]]; then
   echo "--- anchor: zero-shot M8gt think@16k on all ${N_SUB} ---"
   run_monitor "${SUBSET}" "${LOG_DIR}/${PREFIX}_anchor" verdict_think16k 4 --limit 4
@@ -266,5 +269,5 @@ done
 
 echo "--- report ---"
 if [[ -f "${LOG_DIR}/${PREFIX}_anchor/results.jsonl" ]]; then ANCHOR="${PREFIX}_anchor"; else ANCHOR="${ANCHOR:-sft_r1_anchor}"; fi
-"${PYP}" sft_report.py --prefix "${PREFIX}" --anchor "${ANCHOR}" || echo "report: incomplete folds (resume the driver)"
+"${PYP}" sft_report.py --prefix "${PREFIX}" --anchor "${ANCHOR}" --folds "${SFT}/folds.json" --out "${SFT}/report_${PREFIX}.md" || echo "report: incomplete folds (resume the driver)"
 echo "=== SFT CV ${PREFIX} complete (elapsed $(elapsed_min) min) ==="

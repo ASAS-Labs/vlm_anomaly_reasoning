@@ -1,0 +1,146 @@
+{
+ "scheme": "logo5",
+ "n_clips": 235,
+ "n_scenarios": 15,
+ "system_prompt_sha256": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+ "stage1_prompt_sha256": "96da95137acf2a53911765ad43f31a23084f43c280518a8ec1ad82c16da6168b",
+ "stage1_prompt_sha256_matches_m8_run": true,
+ "user_text_sha256": "4835dea689414944d9fc637914130116cb74494ac6e912922d95ffa4d7b88c55",
+ "video_root": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p_early_gt",
+ "rationales": "/root/vlm_anomaly_reasoning/logs/sft/rationales.jsonl",
+ "target_sources": {
+  "t1": 235
+ },
+ "target_words": {
+  "min": 47,
+  "median": 71,
+  "max": 108
+ },
+ "folds": {
+  "f1": {
+   "groups": [
+    9,
+    6
+   ],
+   "n_train": 186,
+   "n_held_out": 49,
+   "held_out_labels": {
+    "anomaly": 18,
+    "normal": 31
+   },
+   "held_out_gt": {
+    "stop": 31,
+    "slow": 18
+   },
+   "train_gt": {
+    "continue": 131,
+    "wait": 15,
+    "stop": 40
+   },
+   "target_sources_train": {
+    "t1": 186
+   }
+  },
+  "f2": {
+   "groups": [
+    5,
+    3
+   ],
+   "n_train": 187,
+   "n_held_out": 48,
+   "held_out_labels": {
+    "anomaly": 31,
+    "normal": 17
+   },
+   "held_out_gt": {
+    "wait": 15,
+    "continue": 33
+   },
+   "train_gt": {
+    "continue": 98,
+    "stop": 71,
+    "slow": 18
+   },
+   "target_sources_train": {
+    "t1": 187
+   }
+  },
+  "f3": {
+   "groups": [
+    0,
+    11
+   ],
+   "n_train": 186,
+   "n_held_out": 49,
+   "held_out_labels": {
+    "anomaly": 18,
+    "normal": 31
+   },
+   "held_out_gt": {
+    "continue": 35,
+    "stop": 14
+   },
+   "train_gt": {
+    "continue": 96,
+    "wait": 15,
+    "stop": 57,
+    "slow": 18
+   },
+   "target_sources_train": {
+    "t1": 186
+   }
+  },
+  "f4": {
+   "groups": [
+    4
+   ],
+   "n_train": 200,
+   "n_held_out": 35,
+   "held_out_labels": {
+    "anomaly": 17,
+    "normal": 18
+   },
+   "held_out_gt": {
+    "continue": 35
+   },
+   "train_gt": {
+    "continue": 96,
+    "wait": 15,
+    "stop": 71,
+    "slow": 18
+   },
+   "target_sources_train": {
+    "t1": 200
+   }
+  },
+  "f5": {
+   "groups": [
+    2,
+    8
+   ],
+   "n_train": 181,
+   "n_held_out": 54,
+   "held_out_labels": {
+    "anomaly": 26,
+    "normal": 28
+   },
+   "held_out_gt": {
+    "continue": 28,
+    "stop": 26
+   },
+   "train_gt": {
+    "continue": 103,
+    "wait": 15,
+    "stop": 45,
+    "slow": 18
+   },
+   "target_sources_train": {
+    "t1": 181
+   }
+  }
+ },
+ "smoke_rows": 10,
+ "shuffle_seed": 1234,
+ "dry_run": false,
+ "git_commit": "0d78399d2b2c472c85a6e72a11cd6dd04336ca35"
+}
