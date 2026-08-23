@@ -1190,4 +1190,33 @@ for the paper: zero-shot M8 remains the best deployable configuration; SFT on th
 dataset cannot be claimed to generalise to unseen scenes. The second training seed
 is moot for a FAIL and was not run.
 
-### 18.4 Within-scenario split (learnability diagnostic) — pending
+### 18.4 Within-scenario split (learnability diagnostic): the concepts are learnable
+
+Same pipeline, same rationales and the same seed-1 anchor, but the 5 folds are a
+per-scenario round-robin (every scene appears in training; clips of the held-out
+fold are unseen variants of seen scenes) — `logs/sft_within/`, `logs/sft_w1_f*`.
+
+| arm | acc | 95% CI | balacc | recall / spec | stage-1 strict / lenient |
+|---|---|---|---|---|---|
+| SFT stage 1 in M8, within-scenario CV | **0.936** (220/235) | [0.897, 0.961] | **0.936** | 0.93 / 0.94 | 206 / 222 |
+| zero-shot M8gt anchor | 0.821 (193/235) | [0.767, 0.865] | 0.818 | 0.76 / 0.87 | 127 / 181 |
+
+Paired McNemar +32 / −5 (net +27), p < 10⁻⁴; zero truncations/Unknowns; per fold
+0.94 / 0.89 / 0.98 / 0.98 / 0.90 vs anchor 0.77–0.86. The gains are exactly the
+zero-shot failure buckets: mural neg_9 **3 → 18/18** and pos_9 7 → 11/13 (the model
+now says "stop" for the painted wall), child pos_8 14 → 19/19 (commits to stop),
+neg_8 1 → 4/7 (the annotated windows now pay off once the concept is learned; the
+other 3 still answer continue/slow), neg_2 stage-1 lenient 7 → 17 (verdict unchanged
+at 16/19). Residual 15 errors: pos_11 5 (the near-zero-speed renderer artifact,
+not SFT-addressable), neg_8 3, neg_2 3, and singles.
+
+Reading, with 18.2: the stage-1 concepts this dataset needs ("a painted wall is a
+wall", "commit to stop for a child at the curb") are **learnable from a few clips
+per scene** (+11.5 points, balanced 0.94) but **do not transfer to an unseen scene**
+(−8.5 points under leave-scene-out). 18.4 is therefore a learnability ceiling and a
+within-distribution result, not a generalisation claim; it says the lever is real
+and that the missing ingredient is scene diversity per concept (more scenes, not
+more variants), which is a dataset-design item. Headline claims for the paper stay
+with zero-shot M8 (0.830 / 0.821) unless the evaluation is explicitly
+within-distribution. Second training seed not run (credit); adapters for both
+campaigns are kept locally under `tmp/sft/`.

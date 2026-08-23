@@ -1,0 +1,60 @@
+{
+  "model_key": "qwen38",
+  "hf_id": "Qwen/Qwen3.8-27B",
+  "served_model_id": "qwen38-sft-sft_w1-f4",
+  "arm": "verdict_think16k",
+  "think": true,
+  "request_kwargs": {
+    "max_tokens": 16384,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "presence_penalty": 0.0
+  },
+  "extra_body": {
+    "top_k": 20
+  },
+  "serve_command": [
+    "vllm",
+    "serve",
+    "Qwen/Qwen3.8-27B",
+    "--allowed-local-media-path",
+    "/",
+    "--media-io-kwargs",
+    "{\"video\": {\"fps\": 8, \"num_frames\": -1}}",
+    "--tensor-parallel-size",
+    "1",
+    "--max-model-len",
+    "32768",
+    "--port",
+    "8000",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "vllm_version": "0.27.1",
+  "git_commit": "0d78399d2b2c472c85a6e72a11cd6dd04336ca35",
+  "ts": "2026-08-23T15:57:27",
+  "stage": "monitor",
+  "variant": "M8gt",
+  "hypothesis": "M8 with the per-clip annotated decision-time window",
+  "stage1_arm": "expect_sft",
+  "stage1_request_kwargs": {
+    "max_tokens": 512,
+    "temperature": 0.0
+  },
+  "stage1_extra_body": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p_early_gt",
+  "full_dataset": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p",
+  "stage1_window": "gt",
+  "action_render": "narrative",
+  "subset": "/root/vlm_anomaly_reasoning/logs/sft_within/f4/held_out.txt",
+  "seed": 1234,
+  "concurrency": 6,
+  "n_clips": 43,
+  "prompt_sha256": "96da95137acf2a53911765ad43f31a23084f43c280518a8ec1ad82c16da6168b",
+  "stage1_prompt_sha256": "96da95137acf2a53911765ad43f31a23084f43c280518a8ec1ad82c16da6168b",
+  "stage2_prompt_sha256": "8b6cfdf34a9172ff69d1ef284f79acbacc20a32fad9b2f17a635d0a0d52bd3fc"
+}

@@ -419,7 +419,7 @@ LoRA r16 ms-swift 4.5.2, 2 epochs, 5 s/sample, ~$2.5/fold; video-token parity 0.
 |---|---|---|---|---|---|---|
 | anchor M8gt zero-shot (early_gt tree) | — | 0.821 (193/235) | 0.818 | 0.76/0.87 | — | paired baseline |
 | **N1 SFT stage 1, leave-scene-group-out 5-fold** | f1 mural+pos_6, f2 bags+neg_3, f3 billboard+pos_11, f4 balloons, f5 shirt+child | **0.736** (173/235) | 0.731 | 0.65/0.81 | **−20 (+7/−27), p=0.0008** | **FAIL** — commits the sibling scene's rule onto the unseen scene (mural → continue, bags → stop); only balloons (bags in train) transfer (35/35) |
-| N2 SFT stage 1, within-scenario 5-fold (diagnostic) | every scene in train | pending | | | | learnability ceiling, reported separately |
+| N2 SFT stage 1, within-scenario 5-fold (diagnostic) | every scene in train; held-out = unseen variants | **0.936** (220/235) | 0.936 | 0.93/0.94 | **+27 (+32/−5), p<1e-4** | learnable: mural 18/18, pos_8 19/19, neg_8 4/7; **within-distribution ceiling, not a generalisation claim** |
 
 ## Failure chain (as currently localized)
 
@@ -436,6 +436,7 @@ comparison ~70% → verdict.
 - Seed-4321 reproduction of the L2 champion on the 235-clip subset (~$4).
 - H-lab next lever: first-frame (0.3 s) stage 1 for stop-type scenes; seed-4321
   reproduction of M8 on the full 235 (~$5) before quoting 0.830 as final.
-- SFT on expectation generation: leave-scene-out FAILED (Part 18); within-scenario
-  diagnostic pending; any further SFT needs more scenes per concept, not more clips.
+- SFT on expectation generation: leave-scene-out FAILED, within-scenario 0.936 (Part 18)
+  — the concepts are learnable but do not transfer across scenes; further SFT needs
+  more scenes per concept (dataset design), not more variants.
 - Native-720p generation (F2 suggests it pays).
