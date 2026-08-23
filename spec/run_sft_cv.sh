@@ -17,6 +17,8 @@
 #   SFT_VIDEO_ENV="FPS=8 FPS_MIN_FRAMES=4 FPS_MAX_FRAMES=64 VIDEO_MAX_TOKEN_NUM=2048"
 #   SMOKE runs rationalize (needed for the dataset) but NOT the anchor; the anchor runs on the real launch.
 #   SFT_DIR=logs/sft  SFT_SCHEME=logo5|within5  RATIONALES=logs/sft/rationales.jsonl  ANCHOR=<dir under logs/ for the report when RUN_ANCHOR=0>
+#   TARGET_FORMAT=answer|think  (think: checklist <think> targets, LOSS_SCALE=default, STAGE1_ARM=expect_sft_think,
+#     RATIONALIZE_MODE=think, stage-1 max_tokens = manifest think_budget)  FOLDS_FROM=<folds.json to reuse>
 # Layout: logs/${PREFIX}_anchor/, logs/${PREFIX}_f<k>/ (results.jsonl, run_meta.json,
 #   fold_meta.json, trainer_state.json, train.log); adapters/merged under tmp/sft/
 #   (gitignored; merged dirs deleted after eval); driver log is this script's stdout.
@@ -38,6 +40,12 @@ SUBSET="${REPO_ROOT}/logs/vlm_agreement_subset_admitted.txt"
 GATE="${REPO_ROOT}/logs/hlab_gate_4.txt"
 SFT="${SFT_DIR:-${REPO_ROOT}/logs/sft}"; SFT_SCHEME="${SFT_SCHEME:-logo5}"
 RATIONALES="${RATIONALES:-${REPO_ROOT}/logs/sft/rationales.jsonl}"
+TARGET_FORMAT="${TARGET_FORMAT:-answer}"; FOLDS_FROM="${FOLDS_FROM:-}"
+if [[ "${TARGET_FORMAT}" == "think" ]]; then
+  LOSS_SCALE="${LOSS_SCALE:-default}"; STAGE1_ARM="${STAGE1_ARM:-expect_sft_think}"; RATIONALIZE_MODE="${RATIONALIZE_MODE:-think}"
+else
+  LOSS_SCALE="${LOSS_SCALE:-ignore_empty_think}"; STAGE1_ARM="${STAGE1_ARM:-expect_sft}"; RATIONALIZE_MODE="${RATIONALIZE_MODE:-answer}"
+fi
 LOG_DIR="${REPO_ROOT}/logs"; WORK="${REPO_ROOT}/tmp/sft/${PREFIX}"
 export HF_HOME="${HF_HOME:-${HOME}/.cache/huggingface}"; export HF_HUB_DISABLE_XET=1
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
@@ -90,33 +98,40 @@ serve() {  # serve <model path or id> <served name> <log file>
 }
 elapsed_min() { echo $(( ($(date +%s) - T_START) / 60 )); }
 
-gate_check() {  # gate_check <results.jsonl> <n> <clip list> [sft]  (verdict + stage-1 format gate)
+gate_check() {  # gate_check <results.jsonl> <n> <clip list> [sft|sft_think]  (verdict + stage-1 format gate)
   "${PYP}" - "$1" "$2" "$3" "${4:-}" <<'PYEOF'
 import json, sys
-n = int(sys.argv[2]); want = [l.strip() for l in open(sys.argv[3]) if l.strip()][:n]; sft = sys.argv[4] == "sft"
+n = int(sys.argv[2]); want = [l.strip() for l in open(sys.argv[3]) if l.strip()][:n]; mode = sys.argv[4]
 recs = [json.loads(l) for l in open(sys.argv[1]) if l.strip()]
 recs = [r for r in recs if r["video"] in want]
 unk = sum(1 for r in recs if r.get("verdict") == "Unknown")
 t2 = sum(1 for r in recs if r.get("finish_reason") == "length")
 s1u = sum(1 for r in recs if r.get("expect") == "unknown")
+s1t = sum(1 for r in recs if r.get("expect_finish_reason") == "length")
 fmt_bad = 0
-if sft:
+if mode in ("sft", "sft_think"):
     for r in recs:
         raw = (r.get("expect_raw") or "").strip()
         last = [l for l in raw.splitlines() if l.strip()][-1].strip().lower() if raw else ""
-        if (not raw) or (r.get("reasoning_content") or "") or last.strip(".!* ") not in ("continue", "slow", "stop", "wait"):
+        rc = (r.get("reasoning_content") or "")
+        # answer mode: no reasoning; think mode: reasoning present and contains the checklist
+        think_ok = ("STEP 1" in rc and "STEP 4" in rc) if mode == "sft_think" else (not rc)
+        if (not raw) or (not think_ok) or last.strip(".!* ") not in ("continue", "slow", "stop", "wait"):
             fmt_bad += 1
-print(f"gate: {len(recs)}/{n} recs, unknown={unk}, stage2-trunc={t2}, stage1-unknown={s1u}, sft-format-bad={fmt_bad}")
-sys.exit(0 if len(recs) >= n and unk <= 2 and t2 <= 1 and s1u <= 2 and fmt_bad <= 1 else 1)
+print(f"gate: {len(recs)}/{n} recs, unknown={unk}, stage2-trunc={t2}, stage1-unknown={s1u}, stage1-trunc={s1t}, sft-format-bad={fmt_bad}")
+sys.exit(0 if len(recs) >= n and unk <= 2 and t2 <= 1 and s1u <= 2 and s1t <= 1 and fmt_bad <= 1 else 1)
 PYEOF
 }
 
+STAGE1_EXTRA=()   # e.g. (--max_tokens <think budget>) — set after the dataset step
 run_monitor() {  # run_monitor <subset file> <out dir> <stage1 arm> <concurrency> [--limit N]
   local sub="$1" out="$2" s1arm="$3" conc="$4"; shift 4
+  local extra=()
+  [[ "${s1arm}" == "${STAGE1_ARM}" ]] && extra=("${STAGE1_EXTRA[@]}")
   "${PYP}" expectation_experiment.py --stage monitor --hvariant M8gt \
     --dataset "${EARLY}" --full-dataset "${TREE}" --subset "${sub}" --server_url "${URL}" \
     --out_dir "${out}" --model-config qwen38 --model-arm verdict_think16k --stage1-arm "${s1arm}" \
-    --seed "${SEED}" --concurrency "${conc}" "$@"
+    --seed "${SEED}" --concurrency "${conc}" "${extra[@]}" "$@"
 }
 
 # ---------------------------------------------------------------- base model phase
@@ -133,11 +148,19 @@ if [[ "${NEED_BASE}" == "1" ]]; then
   if [[ "${RUN_RATIONALIZE}" == "1" ]]; then
     echo "--- rationalize (self-distilled targets) ---"
     "${PYP}" sft_rationalize.py --server_url "${URL}" --dataset "${EARLY}" --subset "${SUBSET}" \
-      --out "${RATIONALES}" --seed "${SEED}" --concurrency "${CONC}"
+      --out "${RATIONALES}" --seed "${SEED}" --concurrency "${CONC}" --mode "${RATIONALIZE_MODE}"
   fi
 fi
 echo "--- dataset ---"
-"${PYP}" sft_data.py --rationales "${RATIONALES}" --video-root "${EARLY}" --out "${SFT}" --scheme "${SFT_SCHEME}"
+DATA_ARGS=(--rationales "${RATIONALES}" --video-root "${EARLY}" --out "${SFT}" --scheme "${SFT_SCHEME}" --target-format "${TARGET_FORMAT}" --tokenizer "${BASE}")
+[[ -n "${FOLDS_FROM}" ]] && DATA_ARGS+=(--folds-from "${FOLDS_FROM}")
+"${PYP}" sft_data.py "${DATA_ARGS[@]}"
+GATE_MODE="sft"
+if [[ "${TARGET_FORMAT}" == "think" ]]; then
+  THINK_BUDGET="$("${PYP}" -c "import json,sys; print(json.load(open(sys.argv[1]))['think_budget'])" "${SFT}/manifest.json")"
+  STAGE1_EXTRA=(--max_tokens "${THINK_BUDGET}"); GATE_MODE="sft_think"
+  echo "stage-1 think budget from training targets: ${THINK_BUDGET} tokens"
+fi
 if [[ "${NEED_BASE}" == "1" && "${RUN_ANCHOR}" == "1" && "${SMOKE}" != "1" ]]; then
   echo "--- anchor: zero-shot M8gt think@16k on all ${N_SUB} ---"
   run_monitor "${SUBSET}" "${LOG_DIR}/${PREFIX}_anchor" verdict_think16k 4 --limit 4
@@ -156,7 +179,7 @@ train_fold() {  # train_fold <name> <train.jsonl> <out dir> [extra swift args...
     --freeze_vit true --freeze_aligner true --learning_rate "${LR}" --num_train_epochs "${EPOCHS}" \
     --per_device_train_batch_size 1 --gradient_accumulation_steps "${GRAD_ACC}" --torch_dtype bfloat16 \
     --gradient_checkpointing true --attn_impl sdpa --max_length "${MAXLEN}" \
-    --add_non_thinking_prefix true --loss_scale ignore_empty_think \
+    --add_non_thinking_prefix true --loss_scale "${LOSS_SCALE}" \
     --lr_scheduler_type cosine --warmup_ratio 0.05 --weight_decay 0 --seed "${TRAIN_SEED}" --data_seed "${TRAIN_SEED}" \
     --dataloader_num_workers 2 --logging_steps 1 --save_strategy epoch --save_total_limit 1 --report_to tensorboard \
     --output_dir "${out}" "$@"
@@ -196,14 +219,14 @@ if [[ "${SMOKE}" == "1" ]]; then
   echo "--- parity (swift side) ---"
   # shellcheck disable=SC2086
   env ${SFT_VIDEO_ENV} "${PYS}" sft_parity.py --side swift --model "${BASE}" --model-type "${SWIFT_MODEL_TYPE}" \
-    --template "${SWIFT_TEMPLATE}" --clip "${FIRST_CLIP}" --out "${SFT}/parity_${PREFIX}.json"
+    --template "${SWIFT_TEMPLATE}" --clip "${FIRST_CLIP}" --out "${SFT}/parity_${PREFIX}.json" --target-format "${TARGET_FORMAT}"
   train_fold smoke "${SFT}/smoke/train.jsonl" "${SW}/ckpt" --max_steps 5 --save_steps 5 2>&1 | tee "${SW}/train.log"
   CKPT="$(latest_ckpt "${SW}/ckpt")"; [[ -n "${CKPT}" ]] || { echo "no checkpoint"; exit 1; }
   loss_ok "${CKPT}/trainer_state.json" 0
   merge_ckpt "${CKPT}" "${SW}/merged"
   serve "${SW}/merged" "qwen38-sft-smoke" "${LOG_DIR}/${PREFIX}_server_smoke.log"
-  run_monitor "${SFT}/f1/held_out.txt" "${LOG_DIR}/${PREFIX}_smoke" expect_sft 4 --limit 4
-  gate_check "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" 4 "${SFT}/f1/held_out.txt" sft || { echo "SMOKE GATE FAILED"; tail -2 "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" | cut -c1-400; exit 1; }
+  run_monitor "${SFT}/f1/held_out.txt" "${LOG_DIR}/${PREFIX}_smoke" "${STAGE1_ARM}" 4 --limit 4
+  gate_check "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" 4 "${SFT}/f1/held_out.txt" "${GATE_MODE}" || { echo "SMOKE GATE FAILED"; tail -2 "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" | cut -c1-400; exit 1; }
   stop_server; rm -rf "${SW}/merged"
   echo "=== SMOKE OK (elapsed $(elapsed_min) min) ==="
   exit 0
@@ -236,15 +259,17 @@ for K in ${FOLDS}; do
   serve "${FW}/merged" "qwen38-sft-${PREFIX}-${K}" "${LOG_DIR}/${PREFIX}_server_${K}.log"
   T2=$(date +%s)
   echo "--- ${K}: gate + eval on held-out ---"
-  run_monitor "${HELD}" "${OUT}" expect_sft 4 --limit 4
-  gate_check "${OUT}/results.jsonl" 4 "${HELD}" sft || { echo "GATE FAILED: ${K}"; tail -2 "${OUT}/results.jsonl" | cut -c1-400; exit 1; }
-  run_monitor "${HELD}" "${OUT}" expect_sft "${CONC}"
+  run_monitor "${HELD}" "${OUT}" "${STAGE1_ARM}" 4 --limit 4
+  gate_check "${OUT}/results.jsonl" 4 "${HELD}" "${GATE_MODE}" || { echo "GATE FAILED: ${K}"; tail -2 "${OUT}/results.jsonl" | cut -c1-400; exit 1; }
+  run_monitor "${HELD}" "${OUT}" "${STAGE1_ARM}" "${CONC}"
   T3=$(date +%s)
   stop_server
   "${PYP}" - "${OUT}/fold_meta.json" "${OUT}/trainer_state.json" "${K}" "${CKPT}" "${BASE}" "${SFT}/${K}/train.jsonl" \
-      "$((T1-T0))" "$((T2-T1))" "$((T3-T2))" "${GIT_COMMIT}" "${TRAIN_SEED}" "${SEED}" "${EPOCHS}" "${LR}" "${RANK}" "${ALPHA}" "${MAXLEN}" "${GRAD_ACC}" "${SFT_VIDEO_ENV}" <<'PYEOF'
+      "$((T1-T0))" "$((T2-T1))" "$((T3-T2))" "${GIT_COMMIT}" "${TRAIN_SEED}" "${SEED}" "${EPOCHS}" "${LR}" "${RANK}" "${ALPHA}" "${MAXLEN}" "${GRAD_ACC}" "${SFT_VIDEO_ENV}" "${TARGET_FORMAT}" "${LOSS_SCALE}" "${STAGE1_ARM}" "${THINK_BUDGET:-}" "${OUT}/results.jsonl" <<'PYEOF'
 import hashlib, json, sys
-(out, state, k, ckpt, base, train, t_train, t_merge, t_eval, git, tseed, eseed, ep, lr, rank, alpha, maxlen, ga, venv) = sys.argv[1:]
+(out, state, k, ckpt, base, train, t_train, t_merge, t_eval, git, tseed, eseed, ep, lr, rank, alpha, maxlen, ga, venv, tfmt, lscale, s1arm, tbudget, results) = sys.argv[1:]
+recs = [json.loads(l) for l in open(results) if l.strip()]
+s1_trunc = sum(1 for r in recs if r.get("expect_finish_reason") == "length")
 train_sha = hashlib.sha256(open(train, "rb").read()).hexdigest()
 st = json.load(open(state)); hist = st.get("log_history", [])
 losses = [h["loss"] for h in hist if "loss" in h]
@@ -258,7 +283,8 @@ meta = {"fold": k, "ckpt": ckpt, "base": base, "train_n": n_train, "steps": st.g
         "train_runtime_s": rt.get("train_runtime"), "train_samples_per_second": rt.get("train_samples_per_second"),
         "sec_per_sample": (round(1 / rt["train_samples_per_second"], 2) if rt.get("train_samples_per_second")
                            else round(int(t_train) / max(1, n_train * float(ep)), 2)),
-        "train_jsonl_sha256": train_sha,
+        "train_jsonl_sha256": train_sha, "target_format": tfmt, "loss_scale": lscale, "stage1_arm": s1arm,
+        "think_budget": int(tbudget) if tbudget else None, "stage1_truncations": s1_trunc,
         "train_wall_min": round(int(t_train) / 60, 1), "merge_serve_min": round(int(t_merge) / 60, 1),
         "eval_min": round(int(t_eval) / 60, 1), "usd": usd, "git_commit": git}
 json.dump(meta, open(out, "w"), indent=1); print(json.dumps(meta))

@@ -81,15 +81,19 @@ def main():
     dist_s = dict(collections.Counter(sft[k]["expect"] for k in keys))
     unk_s = sum(1 for k in keys if sft[k]["verdict"] == "Unknown")
     trunc_s = sum(1 for k in keys if sft[k].get("finish_reason") == "length")
+    s1_trunc = sum(1 for k in keys if sft[k].get("expect_finish_reason") == "length")
+    tr_lens = sorted(len(sft[k].get("reasoning_content") or "") for k in keys)
+    med_trace = tr_lens[len(tr_lens) // 2] if tr_lens else 0
+    anc_trace = sorted(len(anchor[k].get("reasoning_content") or "") for k in keys)[n // 2]
     verdict = "PASS" if (p < 0.05 and cs["balacc"] > ca["balacc"]) else "FAIL"
 
     out = [f"# Family N — SFT stage 1 inside M8 ({args.prefix}) vs zero-shot anchor ({args.anchor})\n",
            f"n = {n} clips (CV-concatenated: each clip scored by the fold model that never saw its scene); "
            f"anchor = in-session zero-shot M8gt, same early_gt tree, same stage 2.\n",
-           "| arm | acc | 95% CI | balacc | recall / spec | stage-1 strict / lenient | stage-1 answers | Unknown / trunc |",
-           "|---|---|---|---|---|---|---|---|",
-           f"| **SFT (M8 + expect_sft)** | **{acc_s:.3f}** ({sum(s_ok)}/{n}) | [{lo_s:.3f}, {hi_s:.3f}] | **{cs['balacc']:.3f}** | {cs['recall']:.2f} / {cs['spec']:.2f} | {s1s_st} / {s1s} | {dist_s} | {unk_s} / {trunc_s} |",
-           f"| anchor (M8gt zero-shot) | {acc_a:.3f} ({sum(a_ok)}/{n}) | [{lo_a:.3f}, {hi_a:.3f}] | {ca['balacc']:.3f} | {ca['recall']:.2f} / {ca['spec']:.2f} | {s1a_st} / {s1a} | {dist_a} | — |",
+           "| arm | acc | 95% CI | balacc | recall / spec | stage-1 strict / lenient | stage-1 answers | Unknown / s2-trunc / s1-trunc | median s1 trace chars |",
+           "|---|---|---|---|---|---|---|---|---|",
+           f"| **SFT (M8 + {sft[keys[0]].get('stage1_arm', 'expect_sft')})** | **{acc_s:.3f}** ({sum(s_ok)}/{n}) | [{lo_s:.3f}, {hi_s:.3f}] | **{cs['balacc']:.3f}** | {cs['recall']:.2f} / {cs['spec']:.2f} | {s1s_st} / {s1s} | {dist_s} | {unk_s} / {trunc_s} / {s1_trunc} | {med_trace} |",
+           f"| anchor (M8gt zero-shot) | {acc_a:.3f} ({sum(a_ok)}/{n}) | [{lo_a:.3f}, {hi_a:.3f}] | {ca['balacc']:.3f} | {ca['recall']:.2f} / {ca['spec']:.2f} | {s1a_st} / {s1a} | {dist_a} | — | {anc_trace} |",
            "",
            f"Paired McNemar SFT vs anchor: +{gained} gained / −{lost} lost (net {gained - lost:+d}), p = {p:.4f}.",
            f"**Pre-registered verdict: {verdict}** (PASS iff p < 0.05 AND balacc_SFT > balacc_anchor; declare only when a second training seed also passes).\n"]

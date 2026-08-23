@@ -82,6 +82,11 @@ MODELS = {
             # targets; served greedy with thinking off (short answers).
             "expect_sft": {"think": False, "sampling": {"temperature": 0.0},
                            "max_tokens": 512},
+            # SFT'd stage 1 with checklist <think> targets (N3): thinking on, card
+            # think sampling; max_tokens is overridden per run from the training-
+            # target budget (sft manifest think_budget) via --max_tokens.
+            "expect_sft_think": {"think": True, "sampling": _QWEN_THINK,
+                                 "max_tokens": 4096},
             # Rationale self-distillation (sft_rationalize.py): think on, content
             # kept as the training target, trace stored for audit.
             "rationalize": {"think": True, "sampling": _QWEN_THINK,
