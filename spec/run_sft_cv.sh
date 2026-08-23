@@ -148,7 +148,7 @@ train_fold() {  # train_fold <name> <train.jsonl> <out dir> [extra swift args...
   mkdir -p "${out}"
   # shellcheck disable=SC2086
   env ${SFT_VIDEO_ENV} timeout 70m "${VS}/bin/swift" sft --model "${BASE}" --model_type "${SWIFT_MODEL_TYPE}" \
-    --template "${SWIFT_TEMPLATE}" --train_type lora --dataset "${data}" --split_dataset_ratio 0 \
+    --template "${SWIFT_TEMPLATE}" --tuner_type lora --dataset "${data}" --split_dataset_ratio 0 \
     --lora_rank "${RANK}" --lora_alpha "${ALPHA}" --target_modules all-linear \
     --freeze_vit true --freeze_aligner true --learning_rate "${LR}" --num_train_epochs "${EPOCHS}" \
     --per_device_train_batch_size 1 --gradient_accumulation_steps "${GRAD_ACC}" --torch_dtype bfloat16 \
