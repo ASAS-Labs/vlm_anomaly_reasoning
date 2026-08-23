@@ -1121,3 +1121,73 @@ window re-exposes the anchoring risk on the unnecessary-stop scenarios that M8 n
 solves (at T−1.0 the braking is complete and visible). The proper test is M8w10 on
 the full 235 with a paired anchor (~$5); expected net: +14 recoveries here against an
 unknown number of new losses on neg_0/2/4/5.
+
+## Part 18 — Family N: supervised fine-tuning of M8's stage 1 (leave-scene-out)
+
+Goal (pre-registered): fine-tune the stage-1 expectation of the declared M8 monitor
+and beat zero-shot M8 on the same clips — CV-concatenated predictions vs an
+in-session zero-shot anchor on the 235, McNemar p<0.05 AND higher balanced accuracy,
+reproduced with a second training seed. Comparator (stage 2) unchanged.
+
+### 18.1 Pipeline
+
+- **Context**: the annotated decision-time tree (`generated_vids_720p_early_gt`: one
+  2.5 s rolling window per clip ending at the annotated decision time, T−2.5 where
+  unannotated; 7 neg_8 clips annotated 2.5–4.0 s; the 18 long neg_0 clips at
+  [T−5, T−2.5]). Prompt = the served stage-1 request byte-for-byte (system "You are a
+  helpful assistant." + `M4_STAGE1`, sha `96da9513…`); video tokens verified equal to
+  serving (8,849 for the probe clip, ms-swift encoding vs vLLM `prompt_tokens`, 0.0 %
+  delta; text format asserted).
+- **Targets**: self-distilled rationale + final word (`sft_rationalize.py`): the base
+  model answers the stage-1 question with the GT action given as a calibration hint,
+  thinking on, content kept; accepted only if the final word equals GT, no hint
+  echo, no outcome/ego-motion narration (Wait excepted), 12–120 words. All 235 were
+  accepted at tier 1 (231 on the first sample; 47–108 words, median 71); no
+  fallbacks. Spot-checked: each scenario's defining feature is named
+  (`logs/sft/rationales_review.md`).
+- **Training**: ms-swift 4.5.2 LoRA (r 16 / α 32, all-linear on the LLM, ViT+aligner
+  frozen), non-thinking targets (empty `<think>` prefix, loss-masked), lr 1e-4,
+  2 epochs, grad-accum 8, bf16, grad checkpointing, 5.0 s/sample on one H200,
+  ~31 min per fold (≈ 46–50 optimizer steps); merged with `swift export` and served
+  by the same vLLM command; stage 1 evaluated greedy with thinking off
+  (`expect_sft`), stage 2 unchanged (think@16k). Leave-scene-group-out, 5 folds
+  (scene pairs co-located): f1 = mural pair + pos_6, f2 = bags pair + neg_3,
+  f3 = billboard pair + pos_11, f4 = balloons pair, f5 = shirt pair + child pair.
+  Full provenance: `logs/sft/{folds,manifest}.json`, `logs/sft_r1_f*/fold_meta.json`,
+  `logs/sft/env_pins.txt`, `spec/run_sft_cv.sh`.
+
+### 18.2 Result (seed 1): FAIL
+
+| arm | acc | 95% CI | balacc | recall / spec | stage-1 strict / lenient | stage-1 answers |
+|---|---|---|---|---|---|---|
+| SFT stage 1 in M8 (CV-concatenated) | **0.736** (173/235) | [0.676, 0.788] | 0.731 | 0.65 / 0.81 | 130 / 151 | continue 156, slow 17, stop 39, wait 23 |
+| zero-shot M8gt anchor (in-session) | **0.821** (193/235) | [0.767, 0.865] | 0.818 | 0.76 / 0.87 | 127 / 181 | continue 106, slow 71, stop 37, wait 21 |
+
+Paired McNemar: +7 gained / −27 lost (net −20), **p = 0.0008** — the wrong direction.
+Per fold (SFT / anchor): f1 0.39 / 0.57, f2 0.79 / 0.98, f3 0.88 / 0.90, f4 **1.00 / 0.97**,
+f5 0.70 / 0.74. Zero truncations/Unknowns; the SFT stage 1 answers in 65 words
+(vs 145) and 15 s/clip (vs 47 s) — format and speed are exactly as intended.
+
+### 18.3 Reading: the model learned *rules* that do not transfer to an unseen scene
+
+The fine-tune does what the targets say — it stops hedging (slow 71 → 17) and
+commits — and on a held-out scene that commitment lands on the wrong side wherever
+the scene's own concept was absent from training:
+- **mural pair (f1)**: 30/31 "continue" — the sibling depiction scenes in train
+  (billboard, shirt) teach "a painted image commands nothing → Continue", which
+  the fold model applies to a painted *wall* (pos_9 7 → 0, neg_9 3 → 1);
+- **bags (f2)**: "stop" 9/16 — soft debris read as an obstacle (neg_5 15 → 7);
+- **pos_11 (f3)**: "wait" 14/14 — learned from neg_3's red light in train (stop≡wait
+  saved 8 of them, the rule's wait-vs-stop edge cost 2);
+- the only clean transfer is **balloons (f4)**, whose sibling concept (bags) is in
+  train: 35/35.
+Losses by stage-1 transition: slow → stop 13, stop → continue 9, stop → slow 2.
+So with 15 scenes, leave-scene-out SFT measures concept transfer between scene
+families, and there is essentially none to transfer — the data contain one
+instance of each concept. This is the outcome the plan flagged as the main risk,
+not a pipeline defect (parity, format, loss curves, gates all clean). Consequence
+for the paper: zero-shot M8 remains the best deployable configuration; SFT on this
+dataset cannot be claimed to generalise to unseen scenes. The second training seed
+is moot for a FAIL and was not run.
+
+### 18.4 Within-scenario split (learnability diagnostic) — pending
