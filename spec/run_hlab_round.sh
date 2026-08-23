@@ -53,6 +53,7 @@ build_tree() {  # build_tree <mode> <secs> <dir>
   [[ "$(find "${d}" -name '*.txt' | wc -l)" == "0" ]] || { echo "ERROR: ${d} must be video-only" >&2; exit 1; }
 }
 build_tree t_minus 2.5 "${DS}/generated_vids_720p_tminus2.5"
+build_tree gt 0 "${DS}/generated_vids_720p_early_gt"
 build_tree t_minus 1.5 "${DS}/generated_vids_720p_tminus1.5"
 build_tree t_minus 1.0 "${DS}/generated_vids_720p_tminus1.0"
 build_tree fixed 1.5 "${DS}/generated_vids_720p_early1.5s"

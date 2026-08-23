@@ -20,6 +20,7 @@ from prompt_variants import BANNED_WORDS, _GUARD_LINE, action_narrative
 WINDOWS = {"tminus2.5": "generated_vids_720p_tminus2.5",
            "tminus1.5": "generated_vids_720p_tminus1.5",
            "tminus1.0": "generated_vids_720p_tminus1.0",
+           "gt": "generated_vids_720p_early_gt",
            "1.5s": "generated_vids_720p_early1.5s",
            "1.0s": "generated_vids_720p_early1.0s"}
 
@@ -189,3 +190,15 @@ if __name__ == "__main__":
         if a.print:
             print("  --- stage 1 ---\n" + v["stage1"])
             print("  --- stage 2 (template) ---\n" + v["stage2"] + "\n")
+
+# --- Annotated decision-time window (GT metadata; SFT context) ------------
+# expected_action_gt.json carries per-clip early-window END times (when the
+# expected action becomes determinable from the scene); the stage-1 window is
+# the 2.5 s rolling window ending there, [0, T-2.5] where unannotated.
+# Tree: make_pilot_trees.py --early-mode gt. Evaluation on it = "at the
+# annotated decision time", reported separately from the fixed T-2.5 rows.
+H_VARIANTS.update({
+    "M8gt": {**H_VARIANTS["M8"], "parent": "M8", "stage1_window": "gt",
+             "hypothesis": "M8 with the per-clip annotated decision-time window"},
+})
+

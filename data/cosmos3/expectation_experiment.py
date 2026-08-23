@@ -143,7 +143,7 @@ def main():
                      if args.model_config else None)
 
     gt = json.loads((Path(__file__).parent / "expected_action_gt.json").read_text())
-    gt.pop("_doc", None)
+    gt = {k: v for k, v in gt.items() if not k.startswith("_")}   # drop metadata keys
 
     if args.dry_run:
         info = {"model_config": args.model_config, "model_arm": args.model_arm,

@@ -8,7 +8,20 @@
   "lenient). Validation: cross-checked mechanically against the frozen",
   "expectation class of each scene's positive-polarity twin (the positive",
   "scenario IS the correct behaviour by construction) - see validate_expected_gt",
-  "in expectation_experiment.py. Options vocabulary: continue / slow / stop / wait."
+  "in expectation_experiment.py. Options vocabulary: continue / slow / stop / wait.",
+  "early_window: the stage-1 video context in which the expected action is",
+  "determinable from the scene - [start_s, end = clip duration - end_tminus_s].",
+  "A rolling 2.5 s window: [0, T-2.5] by default; neg_prompt_8 uses [1.0, T-1.5]",
+  "because the child's step-off is not developed before ~T-2.5 (Part 17.5). This",
+  "is SFT/label metadata (when the GT action becomes observable), not an",
+  "evaluation-time choice; it never enters a prompt.",
+  "early_window: the stage-1 video context in which the expected action is",
+  "determinable from the scene (the annotated decision time). Default for every",
+  "clip: window [0, T-2.5] with T the clip duration. Per-clip overrides in",
+  "'_early_window_end_s' give an ABSOLUTE end time in seconds; the window is the",
+  "2.5 s rolling window ending there: [max(0, end-2.5), end]. Set from the scene",
+  "content (when the evidence appears), never from the ego vehicle's reaction or",
+  "the label. This is GT/SFT metadata; it never enters a prompt."
  ],
  "neg_prompt_2": {
   "expected": "continue",
@@ -83,7 +96,7 @@
   "acceptable": [
    "stop"
   ],
-  "scene": "same scene as neg_prompt_8",
+  "scene": "child standing at/near the curb; the vehicle correctly stops (a different scene from neg_prompt_8)",
   "twin": "pos_prompt_8"
  },
  "neg_prompt_9": {
@@ -134,5 +147,20 @@
   ],
   "scene": "the street ends at a solid wall painted with a photorealistic mural of an open road (same scene as neg_prompt_9)",
   "twin": "pos_prompt_9"
- }
+ },
+ "_early_window_default": {
+  "start_s": 0.0,
+  "end_tminus_s": 2.5,
+  "length_s": 2.5
+ },
+ "_early_window_end_s": {
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v02.mp4": 3.5,
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v03.mp4": 4.0,
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v06.mp4": 3.0,
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v08.mp4": 3.0,
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v12.mp4": 2.8,
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v18.mp4": 2.5,
+  "final_semantic_scenarios/negative_scenarios/negative_scenarios_variants/prompt_8_v20.mp4": 2.5
+ },
+ "_early_window_end_s_source": "human annotation (D. Adejumo, 2026-08-23): time at which the child's step-off makes 'stop' determinable; the ego reaction was not used"
 }
