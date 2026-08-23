@@ -78,6 +78,14 @@ MODELS = {
                 "sampling": {**_QWEN_THINK,
                              "chat_template_kwargs": {"reasoning_effort": "low"}},
                 "max_tokens": 8192},
+            # SFT'd stage 1 (family N): trained non-thinking on rationale+word
+            # targets; served greedy with thinking off (short answers).
+            "expect_sft": {"think": False, "sampling": {"temperature": 0.0},
+                           "max_tokens": 512},
+            # Rationale self-distillation (sft_rationalize.py): think on, content
+            # kept as the training target, trace stored for audit.
+            "rationalize": {"think": True, "sampling": _QWEN_THINK,
+                            "max_tokens": 8192},
         },
         "notes": "Aug 2026 flagship 27B VLM; card: thinking default, think "
                  "t=1.0/p.95/k20/pres0, instruct t=0.7/p.8/k20/pres1.5. "

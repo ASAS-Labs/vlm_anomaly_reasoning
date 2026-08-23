@@ -103,6 +103,9 @@ def main():
                    help="pilot model key: use its arm sampling + parsing")
     p.add_argument("--model-arm", default="expect",
                    help="pilot model arm for BOTH stages (H-lab: verdict_think16k)")
+    p.add_argument("--stage1-arm", default=None,
+                   help="pilot model arm for stage 1 only (e.g. expect_sft); "
+                        "stage 2 keeps --model-arm. Default: --model-arm")
     p.add_argument("--hvariant", default=None,
                    help="H-lab registry id (h_variants.py): stage-1/stage-2 texts, "
                         "window and action rendering; default = legacy H3 texts")
@@ -132,11 +135,15 @@ def main():
 
     # Stage-1 request settings: Cosmos default unchanged; a pilot model key
     # swaps in that model's card-recommended arm (both stages under --hvariant).
+    stage1_arm = args.stage1_arm or args.model_arm
     if args.model_config:
         req_kwargs, extra_body = pilot_models.request_kwargs(args.model_config,
-                                                             args.model_arm)
+                                                             stage1_arm)
+        req_kwargs2, extra_body2 = pilot_models.request_kwargs(args.model_config,
+                                                               args.model_arm)
     else:
         req_kwargs, extra_body = {"max_tokens": 30, "temperature": 0.0}, None
+        req_kwargs2, extra_body2 = req_kwargs, extra_body
     if args.max_tokens:
         req_kwargs["max_tokens"] = args.max_tokens
     max_model_len = (pilot_models.MODELS[args.model_config]["max_model_len"]
@@ -147,10 +154,12 @@ def main():
 
     if args.dry_run:
         info = {"model_config": args.model_config, "model_arm": args.model_arm,
+                "stage1_arm": stage1_arm,
                 "stage": args.stage, "variant": variant_id, "hypothesis": hyp,
                 "stage1_window": hv["stage1_window"] if hv else "(dataset)",
                 "action_render": render, "request_kwargs": req_kwargs,
-                "extra_body": extra_body, "seed": args.seed,
+                "extra_body": extra_body, "stage2_request_kwargs": req_kwargs2,
+                "stage2_extra_body": extra_body2, "seed": args.seed,
                 "stage1_prompt_sha256": hashlib.sha256(stage1_text.encode()).hexdigest(),
                 "stage2_prompt_sha256": hashlib.sha256(stage2_tmpl.encode()).hexdigest(),
                 "stage1_prompt": stage1_text}
@@ -200,6 +209,8 @@ def main():
         pilot_models.write_run_meta(
             args.out_dir, args.model_config, args.model_arm, args.server_url, model_id,
             {"stage": args.stage, "variant": variant_id, "hypothesis": hyp,
+             "stage1_arm": stage1_arm, "stage1_request_kwargs": req_kwargs,
+             "stage1_extra_body": extra_body,
              "dataset": args.dataset, "full_dataset": args.full_dataset,
              "stage1_window": hv["stage1_window"] if hv else None,
              "action_render": render,
@@ -256,6 +267,7 @@ def main():
                "ts": datetime.now().isoformat(timespec="seconds")}
         if args.model_config:
             rec.update(model_config=args.model_config, model_arm=args.model_arm,
+                       stage1_arm=stage1_arm,
                        stage1_window=hv["stage1_window"] if hv else None)
         if reasoning is not None:
             rec["reasoning_content"] = reasoning
@@ -279,9 +291,9 @@ def main():
                 {"role": "user", "content": prompt2},
             ]
             if args.model_config:
-                # Same arm as stage 1; clamp the budget to the context window
-                # (stage-1 prompt incl. video tokens + answer + follow-up).
-                kw2 = dict(req_kwargs)
+                # Stage-2 arm (--model-arm); clamp the budget to the context
+                # window (stage-1 prompt incl. video tokens + answer + follow-up).
+                kw2 = dict(req_kwargs2)
                 used = ((r1.usage.prompt_tokens if r1.usage else 0)
                         + len(content) // 3 + len(prompt2) // 3 + 256)
                 room = max_model_len - used
@@ -290,7 +302,7 @@ def main():
                 kw2["max_tokens"] = min(kw2["max_tokens"], room)
                 r2 = client.chat.completions.create(model=model_id, messages=messages,
                                                     seed=args.seed,
-                                                    extra_body=extra_body, **kw2)
+                                                    extra_body=extra_body2, **kw2)
                 ch2 = r2.choices[0]
                 content2, reasoning2 = pilot_models.answer_text(ch2)
                 rec["stage2_max_tokens"] = kw2["max_tokens"]
