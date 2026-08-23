@@ -85,14 +85,15 @@ TEMPLATE.update({"pos_prompt_0": TEMPLATE["neg_prompt_0"], "pos_prompt_2": TEMPL
                  "pos_prompt_9": TEMPLATE["neg_prompt_9"]})
 
 FINAL_LINE_RE = re.compile(r"^\W*(continue|slow|stop|wait)\W*$", re.I)
-HINT_ECHO_RE = re.compile(r"\b(told|given|hint|calibration|known to be|correct (final )?answer|"
-                          r"as (instructed|stated)|provided answer)\b", re.I)
+HINT_ECHO_RE = re.compile(r"\b(told|(was|were) given|given (that )?(the )?(answer|hint)|hint|calibration|"
+                          r"known to be|correct (final )?answer|as (instructed|stated)|provided answer)\b", re.I)
 # Outcome / ego-motion narration must not leak into a stage-1 target: the target
 # describes what the scene requires, not what the vehicle went on to do.
 OUTCOME_RE = re.compile(r"\b(later|eventually|at the end of the (clip|video|sequence|footage)|"
-                        r"by the end|ends up|goes on to|comes to a (stop|halt|complete stop)|"
-                        r"(vehicle|car|ego)\S* (is|was|has) (already )?(slow|brak|stopp|decelerat|halt)|"
-                        r"anomal)", re.I)
+                        r"by the end|ends up|goes on to|comes to a (stop|halt|complete stop)|anomal)", re.I)
+# Ego-motion narration ("the vehicle is already braking") is outcome leakage for
+# every class except Wait, whose defining feature IS that the vehicle is stationary.
+EGO_MOTION_RE = re.compile(r"\b(vehicle|car|ego)\S* (is|was|has) (already )?(slow|brak|stopp|decelerat|halt)", re.I)
 
 
 def check(content: str, gt_expected: str):
@@ -117,6 +118,10 @@ def check(content: str, gt_expected: str):
     m = OUTCOME_RE.search(c)
     if m:
         reasons.append(f"outcome:{m.group(0)}")
+    if gt_expected != "wait":
+        m = EGO_MOTION_RE.search(c)
+        if m:
+            reasons.append(f"outcome:{m.group(0)}")
     return reasons
 
 
@@ -241,10 +246,11 @@ def main():
                 break
         if target is None:
             r = m8.get(rel)
+            raw = (r or {}).get("expect_raw") or ""
+            m8_reasons = [x for x in check(raw, gt_exp) if not x.startswith("words=")]
             if (r and r.get("expect_lenient") and rel not in changed
-                    and len((r.get("expect_raw") or "").split()) <= 250
-                    and parse_option(r["expect_raw"]) == gt_exp):
-                target, source = r["expect_raw"].strip(), "m8_expect_raw"
+                    and len(raw.split()) <= 250 and not m8_reasons):
+                target, source = raw.strip(), "m8_expect_raw"
             else:
                 target, source = TEMPLATE[scen], "template"
         win = None

@@ -42,11 +42,11 @@ def vllm_side(args):
 
 def swift_side(args):
     try:
-        from swift.llm import get_model_tokenizer, get_template
+        from swift import get_model_processor, get_template
     except ImportError as exc:
-        sys.exit(f"ms-swift not importable in this interpreter: {exc}")
-    _, processor = get_model_tokenizer(args.model, load_model=False, model_type=args.model_type)
-    template = get_template(args.template, processor)
+        sys.exit(f"ms-swift (>=4.3) not importable in this interpreter: {exc}")
+    _, processor = get_model_processor(args.model, load_model=False, model_type=args.model_type)
+    template = get_template(processor, template_type=args.template, loss_scale="ignore_empty_think")
     template.set_mode("train")
     target = "The road ahead is clear and nothing requires a change.\n\nContinue"
     sample = {"messages": [{"role": "system", "content": SYSTEM_PROMPT},
@@ -62,7 +62,12 @@ def swift_side(args):
     has_empty_think = "<think>\n\n</think>\n\n" in decoded
     tgt_ids = [i for i, x in zip(ids, labels) if x != -100] if labels else []
     decoded_target = tok.decode(tgt_ids, skip_special_tokens=False) if tgt_ids else ""
+    # text-level parity with the served request (count parity alone is too coarse)
+    fmt_ok = (decoded.startswith("<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n")
+              and "<|vision_end|>You are evaluating" in decoded
+              and decoded.rstrip().endswith("<|im_start|>assistant\n<think>\n\n</think>\n\n" + target + "<|im_end|>"))
     return {"swift_total_tokens": len(ids), "swift_prompt_tokens": n_prompt,
+            "swift_format_ok": fmt_ok,
             "swift_target_tokens": len(tgt_ids),
             "swift_empty_think_prefix_present": has_empty_think,
             "swift_decoded_target_tail": decoded_target[-80:],
@@ -75,7 +80,7 @@ def main():
     ap.add_argument("--clip", required=True, help="absolute path to one early_gt clip")
     ap.add_argument("--server_url", default="http://127.0.0.1:8000/v1")
     ap.add_argument("--model", default=None, help="swift side: base model path")
-    ap.add_argument("--model-type", default="qwen3_8")
+    ap.add_argument("--model-type", default="qwen3_5")
     ap.add_argument("--template", default="qwen3_8")
     ap.add_argument("--out", type=Path, default=REPO / "logs" / "sft" / "parity.json")
     ap.add_argument("--tol", type=float, default=0.05)
@@ -95,6 +100,8 @@ def main():
             sys.exit("PARITY FAILED: training video tokens differ from serving")
         if not cur.get("swift_empty_think_prefix_present"):
             sys.exit("PARITY FAILED: empty <think> prefix missing from the encoded assistant turn")
+        if not cur.get("swift_format_ok"):
+            sys.exit("PARITY FAILED: encoded prompt/target text differs from the served format (see swift_decoded_head)")
         print("PARITY OK")
 
 

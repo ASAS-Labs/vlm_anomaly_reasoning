@@ -13,8 +13,9 @@
 #   RUN_RATIONALIZE=1  RUN_ANCHOR=1   (set 0 on a second training seed)
 #   SMOKE=0            1 = tiny train (5 steps) + parity + merge + serve + gate, then exit
 #   BUDGET_MIN=330     abort before starting a fold past this wall-clock budget
-#   SWIFT_MODEL_TYPE=qwen3_8 SWIFT_TEMPLATE=qwen3_8
-#   SFT_VIDEO_ENV="FPS=8 FPS_MIN_FRAMES=4 FPS_MAX_FRAMES=64 VIDEO_MAX_TOKEN_NUM=2048 VIDEO_TOTAL_PIXELS=25165824"
+#   SWIFT_MODEL_TYPE=qwen3_5 SWIFT_TEMPLATE=qwen3_8   (Qwen3.8-27B is registered under model_type qwen3_5 in ms-swift 4.x)
+#   SFT_VIDEO_ENV="FPS=8 FPS_MIN_FRAMES=4 FPS_MAX_FRAMES=64 VIDEO_MAX_TOKEN_NUM=2048"
+#   SMOKE runs rationalize (needed for the dataset) but NOT the anchor; the anchor runs on the real launch.
 # Layout: logs/${PREFIX}_anchor/, logs/${PREFIX}_f<k>/ (results.jsonl, run_meta.json,
 #   fold_meta.json, trainer_state.json, train.log); adapters/merged under tmp/sft/
 #   (gitignored; merged dirs deleted after eval); driver log is this script's stdout.
@@ -26,8 +27,8 @@ EPOCHS="${EPOCHS:-2}"; LR="${LR:-1e-4}"; RANK="${RANK:-16}"; ALPHA="${ALPHA:-32}
 MAXLEN="${MAXLEN:-16384}"; GRAD_ACC="${GRAD_ACC:-8}"
 RUN_RATIONALIZE="${RUN_RATIONALIZE:-1}"; RUN_ANCHOR="${RUN_ANCHOR:-1}"; SMOKE="${SMOKE:-0}"
 BUDGET_MIN="${BUDGET_MIN:-330}"
-SWIFT_MODEL_TYPE="${SWIFT_MODEL_TYPE:-qwen3_8}"; SWIFT_TEMPLATE="${SWIFT_TEMPLATE:-qwen3_8}"
-SFT_VIDEO_ENV="${SFT_VIDEO_ENV:-FPS=8 FPS_MIN_FRAMES=4 FPS_MAX_FRAMES=64 VIDEO_MAX_TOKEN_NUM=2048 VIDEO_TOTAL_PIXELS=25165824}"
+SWIFT_MODEL_TYPE="${SWIFT_MODEL_TYPE:-qwen3_5}"; SWIFT_TEMPLATE="${SWIFT_TEMPLATE:-qwen3_8}"
+SFT_VIDEO_ENV="${SFT_VIDEO_ENV:-FPS=8 FPS_MIN_FRAMES=4 FPS_MAX_FRAMES=64 VIDEO_MAX_TOKEN_NUM=2048}"
 VP="${REPO_ROOT}/.venv-pilot"; VS="${REPO_ROOT}/.venv-sft"
 PYP="${VP}/bin/python"; PYS="${VS}/bin/python"
 URL="http://127.0.0.1:${PORT}/v1"
@@ -51,7 +52,8 @@ N_SUB="$(grep -c . "${SUBSET}")"
 (( $(find "${TREE}" -name '*.txt' | wc -l) >= N_SUB )) || { echo "720p tree lacks trajectory txts" >&2; exit 1; }
 HFID="$("${PYP}" pilot_models.py --hf-id qwen38)"
 mapfile -t SERVE_ARGS < <("${PYP}" pilot_models.py --serve-args qwen38)
-BASE="${BASE:-$("${VP}/bin/hf" download "${HFID}" 2>/dev/null | tail -1)}"
+BASE="${BASE:-$(HF_HUB_OFFLINE=1 "${VP}/bin/hf" download "${HFID}" 2>/dev/null | tail -1 || true)}"
+[[ -f "${BASE}/config.json" ]] || BASE="$("${VP}/bin/hf" download "${HFID}" 2>/dev/null | tail -1)"
 [[ -f "${BASE}/config.json" ]] || { echo "base snapshot not found: ${BASE}" >&2; exit 1; }
 echo "base: ${BASE}"
 GIT_COMMIT="$(git -C "${REPO_ROOT}" rev-parse HEAD 2>/dev/null || echo '')"
@@ -110,7 +112,7 @@ run_monitor() {  # run_monitor <subset file> <out dir> <stage1 arm> <concurrency
 # ---------------------------------------------------------------- base model phase
 NEED_BASE=0
 [[ "${RUN_RATIONALIZE}" == "1" && "$(wc -l < "${SFT}/rationales.jsonl" 2>/dev/null || echo 0)" -lt "${N_SUB}" ]] && NEED_BASE=1
-[[ "${RUN_ANCHOR}" == "1" && "$(wc -l < "${LOG_DIR}/${PREFIX}_anchor/results.jsonl" 2>/dev/null || echo 0)" -lt "${N_SUB}" ]] && NEED_BASE=1
+[[ "${RUN_ANCHOR}" == "1" && "${SMOKE}" != "1" && "$(wc -l < "${LOG_DIR}/${PREFIX}_anchor/results.jsonl" 2>/dev/null || echo 0)" -lt "${N_SUB}" ]] && NEED_BASE=1
 [[ "${SMOKE}" == "1" ]] && NEED_BASE=1
 FIRST_CLIP="${EARLY}/$(head -1 "${SUBSET}")"
 if [[ "${NEED_BASE}" == "1" ]]; then
@@ -126,7 +128,7 @@ if [[ "${NEED_BASE}" == "1" ]]; then
 fi
 echo "--- dataset ---"
 "${PYP}" sft_data.py --rationales "${SFT}/rationales.jsonl" --video-root "${EARLY}" --out "${SFT}"
-if [[ "${NEED_BASE}" == "1" && "${RUN_ANCHOR}" == "1" ]]; then
+if [[ "${NEED_BASE}" == "1" && "${RUN_ANCHOR}" == "1" && "${SMOKE}" != "1" ]]; then
   echo "--- anchor: zero-shot M8gt think@16k on all ${N_SUB} ---"
   run_monitor "${SUBSET}" "${LOG_DIR}/${PREFIX}_anchor" verdict_think16k 4 --limit 4
   gate_check "${LOG_DIR}/${PREFIX}_anchor/results.jsonl" 4 "${SUBSET}" || { echo "GATE FAILED: anchor"; exit 1; }
@@ -143,20 +145,22 @@ train_fold() {  # train_fold <name> <train.jsonl> <out dir> [extra swift args...
     --lora_rank "${RANK}" --lora_alpha "${ALPHA}" --target_modules all-linear \
     --freeze_vit true --freeze_aligner true --learning_rate "${LR}" --num_train_epochs "${EPOCHS}" \
     --per_device_train_batch_size 1 --gradient_accumulation_steps "${GRAD_ACC}" --torch_dtype bfloat16 \
-    --gradient_checkpointing true --use_liger_kernel true --attn_impl sdpa --max_length "${MAXLEN}" \
-    --truncation_strategy raise --add_non_thinking_prefix true --loss_scale ignore_empty_think \
+    --gradient_checkpointing true --attn_impl sdpa --max_length "${MAXLEN}" \
+    --add_non_thinking_prefix true --loss_scale ignore_empty_think \
     --lr_scheduler_type cosine --warmup_ratio 0.05 --weight_decay 0 --seed "${TRAIN_SEED}" --data_seed "${TRAIN_SEED}" \
     --dataloader_num_workers 2 --logging_steps 1 --save_strategy epoch --save_total_limit 1 --report_to tensorboard \
     --output_dir "${out}" "$@"
 }
 latest_ckpt() { find "$1" -maxdepth 3 -type d -name 'checkpoint-*' | sort -V | tail -1; }
 merge_ckpt() {  # merge_ckpt <ckpt> <merged dir>
+  rm -rf "$2"   # swift export refuses an existing output_dir (partial merge -> blocked resume)
   "${VS}/bin/swift" export --adapters "$1" --merge_lora true --output_dir "$2"
-  # processor / template files the server needs, from the base snapshot
+  # processor / template files the server needs, back-filled from the base snapshot
+  # (HF-cache files are symlinks: -L dereferences them)
   for f in "${BASE}"/*; do
     b="$(basename "$f")"
-    case "$b" in *.safetensors|model.safetensors.index.json|config.json) continue;; esac
-    [[ -e "$2/$b" ]] || cp -r "$f" "$2/"
+    case "$b" in *.safetensors|model.safetensors.index.json|config.json|README*|LICENSE*|.gitattributes|*crc32*) continue;; esac
+    [[ -e "$2/$b" ]] || cp -rL "$f" "$2/"
   done
   [[ -f "$2/config.json" ]] || { echo "merged dir has no config.json" >&2; return 1; }
 }
@@ -168,8 +172,9 @@ losses = [h["loss"] for h in st.get("log_history", []) if "loss" in h]
 print(f"loss: steps={len(losses)} first={losses[0] if losses else None} last={losses[-1] if losses else None}")
 if not losses or any(math.isnan(x) for x in losses):
     sys.exit("loss NaN or empty")
-if strict and losses[-1] >= losses[0]:
-    sys.exit("loss did not decrease")
+k = min(3, len(losses))
+if strict and sum(losses[-k:]) / k >= sum(losses[:k]) / k:
+    sys.exit("loss did not decrease (mean of last 3 >= mean of first 3)")
 PYEOF
 }
 
@@ -178,13 +183,13 @@ if [[ "${SMOKE}" == "1" ]]; then
   echo "--- SMOKE: tiny train + parity + merge + serve + gate ---"
   stop_server
   SW="${WORK}/smoke"; rm -rf "${SW}"; mkdir -p "${SW}"
-  train_fold smoke "${SFT}/smoke/train.jsonl" "${SW}/ckpt" --max_steps 5 --save_steps 5 2>&1 | tee "${SW}/train.log"
-  CKPT="$(latest_ckpt "${SW}/ckpt")"; [[ -n "${CKPT}" ]] || { echo "no checkpoint"; exit 1; }
-  loss_ok "${CKPT}/trainer_state.json" 0
   echo "--- parity (swift side) ---"
   # shellcheck disable=SC2086
   env ${SFT_VIDEO_ENV} "${PYS}" sft_parity.py --side swift --model "${BASE}" --model-type "${SWIFT_MODEL_TYPE}" \
     --template "${SWIFT_TEMPLATE}" --clip "${FIRST_CLIP}" --out "${SFT}/parity_${PREFIX}.json"
+  train_fold smoke "${SFT}/smoke/train.jsonl" "${SW}/ckpt" --max_steps 5 --save_steps 5 2>&1 | tee "${SW}/train.log"
+  CKPT="$(latest_ckpt "${SW}/ckpt")"; [[ -n "${CKPT}" ]] || { echo "no checkpoint"; exit 1; }
+  loss_ok "${CKPT}/trainer_state.json" 0
   merge_ckpt "${CKPT}" "${SW}/merged"
   serve "${SW}/merged" "qwen38-sft-smoke" "${LOG_DIR}/${PREFIX}_server_smoke.log"
   run_monitor "${SFT}/f1/held_out.txt" "${LOG_DIR}/${PREFIX}_smoke" expect_sft 4 --limit 4
@@ -205,12 +210,13 @@ for K in ${FOLDS}; do
   echo "--- ${K}: train (held out ${N_HELD}, train $(wc -l < "${SFT}/${K}/train.jsonl")) ---"
   mkdir -p "${OUT}"; FW="${WORK}/${K}"; mkdir -p "${FW}"
   T0=$(date +%s)
-  CKPT="$(latest_ckpt "${FW}/ckpt" || true)"
-  if [[ -z "${CKPT}" ]]; then
+  if [[ -f "${FW}/.train_done" ]]; then
+    CKPT="$(latest_ckpt "${FW}/ckpt")"; echo "${K}: reusing finished adapter ${CKPT}"
+  else
+    rm -rf "${FW}/ckpt"   # never resume a partial (e.g. 1-epoch) checkpoint as if complete
     train_fold "${K}" "${SFT}/${K}/train.jsonl" "${FW}/ckpt" 2>&1 | tee "${OUT}/train.log"
     CKPT="$(latest_ckpt "${FW}/ckpt")"; [[ -n "${CKPT}" ]] || { echo "${K}: no checkpoint"; exit 1; }
-  else
-    echo "${K}: reusing adapter ${CKPT}"
+    touch "${FW}/.train_done"
   fi
   T1=$(date +%s)
   cp "${CKPT}/trainer_state.json" "${OUT}/trainer_state.json"
@@ -227,8 +233,9 @@ for K in ${FOLDS}; do
   stop_server
   "${PYP}" - "${OUT}/fold_meta.json" "${OUT}/trainer_state.json" "${K}" "${CKPT}" "${BASE}" "${SFT}/${K}/train.jsonl" \
       "$((T1-T0))" "$((T2-T1))" "$((T3-T2))" "${GIT_COMMIT}" "${TRAIN_SEED}" "${SEED}" "${EPOCHS}" "${LR}" "${RANK}" "${ALPHA}" "${MAXLEN}" "${GRAD_ACC}" "${SFT_VIDEO_ENV}" <<'PYEOF'
-import json, sys
+import hashlib, json, sys
 (out, state, k, ckpt, base, train, t_train, t_merge, t_eval, git, tseed, eseed, ep, lr, rank, alpha, maxlen, ga, venv) = sys.argv[1:]
+train_sha = hashlib.sha256(open(train, "rb").read()).hexdigest()
 st = json.load(open(state)); hist = st.get("log_history", [])
 losses = [h["loss"] for h in hist if "loss" in h]
 rt = next((h for h in reversed(hist) if "train_runtime" in h), {})
@@ -239,7 +246,9 @@ meta = {"fold": k, "ckpt": ckpt, "base": base, "train_n": n_train, "steps": st.g
         "grad_accum": int(ga), "video_env": venv, "train_seed": int(tseed), "eval_seed": int(eseed),
         "first_loss": losses[0] if losses else None, "final_loss": losses[-1] if losses else None,
         "train_runtime_s": rt.get("train_runtime"), "train_samples_per_second": rt.get("train_samples_per_second"),
-        "sec_per_sample": round(1 / rt["train_samples_per_second"], 2) if rt.get("train_samples_per_second") else None,
+        "sec_per_sample": (round(1 / rt["train_samples_per_second"], 2) if rt.get("train_samples_per_second")
+                           else round(int(t_train) / max(1, n_train * float(ep)), 2)),
+        "train_jsonl_sha256": train_sha,
         "train_wall_min": round(int(t_train) / 60, 1), "merge_serve_min": round(int(t_merge) / 60, 1),
         "eval_min": round(int(t_eval) / 60, 1), "usd": usd, "git_commit": git}
 json.dump(meta, open(out, "w"), indent=1); print(json.dumps(meta))

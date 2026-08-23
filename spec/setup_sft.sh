@@ -12,7 +12,7 @@
 set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 VENV_DIR="${VENV_DIR:-${REPO_ROOT}/.venv-sft}"
-SWIFT_SPEC="${SWIFT_SPEC:-ms-swift[llm]>=4.3.1}"
+SWIFT_SPEC="${SWIFT_SPEC:-ms-swift>=4.3.1}"
 TRANSFORMERS_SPEC="${TRANSFORMERS_SPEC:-transformers>=5.9}"
 export HF_HUB_DISABLE_XET=1
 cd "${REPO_ROOT}"

@@ -15,3 +15,5 @@ logs/**/vllm_server.log
 .env
 todo.md
 tmp/
+.venv-pilot/
+.venv-sft/
