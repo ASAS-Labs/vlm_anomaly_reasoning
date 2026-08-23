@@ -52,8 +52,15 @@ N_SUB="$(grep -c . "${SUBSET}")"
 (( $(find "${TREE}" -name '*.txt' | wc -l) >= N_SUB )) || { echo "720p tree lacks trajectory txts" >&2; exit 1; }
 HFID="$("${PYP}" pilot_models.py --hf-id qwen38)"
 mapfile -t SERVE_ARGS < <("${PYP}" pilot_models.py --serve-args qwen38)
-BASE="${BASE:-$(HF_HUB_OFFLINE=1 "${VP}/bin/hf" download "${HFID}" 2>/dev/null | tail -1 || true)}"
-[[ -f "${BASE}/config.json" ]] || BASE="$("${VP}/bin/hf" download "${HFID}" 2>/dev/null | tail -1)"
+snapshot_path() {  # local snapshot dir of the base model (offline first, then download)
+  "${PYP}" -c 'import sys
+from huggingface_hub import snapshot_download
+try:
+    print(snapshot_download(sys.argv[1], local_files_only=True))
+except Exception:
+    print(snapshot_download(sys.argv[1]))' "${HFID}"
+}
+BASE="${BASE:-$(snapshot_path)}"
 [[ -f "${BASE}/config.json" ]] || { echo "base snapshot not found: ${BASE}" >&2; exit 1; }
 echo "base: ${BASE}"
 GIT_COMMIT="$(git -C "${REPO_ROOT}" rev-parse HEAD 2>/dev/null || echo '')"
