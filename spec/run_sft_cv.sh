@@ -152,7 +152,7 @@ if [[ "${NEED_BASE}" == "1" ]]; then
   echo "--- serve base ---"
   serve "${HFID}" "qwen38-base" "${LOG_DIR}/${PREFIX}_server_base.log"
   echo "--- parity (vllm side) ---"
-  "${PYP}" sft_parity.py --side vllm --server_url "${URL}" --clip "${FIRST_CLIP}" --out "${SFT}/parity_${PREFIX}.json"
+  "${PYP}" sft_parity.py --side vllm --server_url "${URL}" --clip "${FIRST_CLIP}" --out "${SFT}/parity_${PREFIX}.json" --target-format "${TARGET_FORMAT}"
   if [[ "${RUN_RATIONALIZE}" == "1" ]]; then
     echo "--- rationalize (self-distilled targets) ---"
     "${PYP}" sft_rationalize.py --server_url "${URL}" --dataset "${EARLY}" --subset "${SUBSET}" \
