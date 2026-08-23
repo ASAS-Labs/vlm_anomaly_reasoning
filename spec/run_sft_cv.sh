@@ -39,8 +39,13 @@ DS="${REPO_ROOT}/data/datasets"; TREE="${DS}/generated_vids_720p"; EARLY="${DS}/
 SUBSET="${REPO_ROOT}/logs/vlm_agreement_subset_admitted.txt"
 GATE="${REPO_ROOT}/logs/hlab_gate_4.txt"
 SFT="${SFT_DIR:-${REPO_ROOT}/logs/sft}"; SFT_SCHEME="${SFT_SCHEME:-logo5}"
-RATIONALES="${RATIONALES:-${REPO_ROOT}/logs/sft/rationales.jsonl}"
 TARGET_FORMAT="${TARGET_FORMAT:-answer}"; FOLDS_FROM="${FOLDS_FROM:-}"
+# relative paths are taken from the repo root (the driver cd's into data/cosmos3 below)
+[[ "${SFT}" = /* ]] || SFT="${REPO_ROOT}/${SFT}"
+[[ -z "${FOLDS_FROM}" || "${FOLDS_FROM}" = /* ]] || FOLDS_FROM="${REPO_ROOT}/${FOLDS_FROM}"
+if [[ "${TARGET_FORMAT}" == "think" ]]; then RATIONALES="${RATIONALES:-${SFT}/traces.jsonl}"; else RATIONALES="${RATIONALES:-${REPO_ROOT}/logs/sft/rationales.jsonl}"; fi
+[[ "${RATIONALES}" = /* ]] || RATIONALES="${REPO_ROOT}/${RATIONALES}"
+BUDGET_MARGIN="${BUDGET_MARGIN:-1024}"
 if [[ "${TARGET_FORMAT}" == "think" ]]; then
   LOSS_SCALE="${LOSS_SCALE:-default}"; STAGE1_ARM="${STAGE1_ARM:-expect_sft_think}"; RATIONALIZE_MODE="${RATIONALIZE_MODE:-think}"
 else
@@ -115,7 +120,7 @@ if mode in ("sft", "sft_think"):
         last = [l for l in raw.splitlines() if l.strip()][-1].strip().lower() if raw else ""
         rc = (r.get("reasoning_content") or "")
         # answer mode: no reasoning; think mode: reasoning present and contains the checklist
-        think_ok = ("STEP 1" in rc and "STEP 4" in rc) if mode == "sft_think" else (not rc)
+        think_ok = ("step 1" in rc.lower() and "step 4" in rc.lower()) if mode == "sft_think" else (not rc)
         if (not raw) or (not think_ok) or last.strip(".!* ") not in ("continue", "slow", "stop", "wait"):
             fmt_bad += 1
 print(f"gate: {len(recs)}/{n} recs, unknown={unk}, stage2-trunc={t2}, stage1-unknown={s1u}, stage1-trunc={s1t}, sft-format-bad={fmt_bad}")
@@ -124,6 +129,9 @@ PYEOF
 }
 
 STAGE1_EXTRA=()   # e.g. (--max_tokens <think budget>) — set after the dataset step
+# think targets: encode with thinking ENABLED so ms-swift renders the same "Reasoning effort is
+# set to xhigh ..." system prefix the served model sees with thinking on (train/serve parity)
+SWIFT_THINK_ARGS=(); [[ "${TARGET_FORMAT}" == "think" ]] && SWIFT_THINK_ARGS=(--enable_thinking true)
 run_monitor() {  # run_monitor <subset file> <out dir> <stage1 arm> <concurrency> [--limit N]
   local sub="$1" out="$2" s1arm="$3" conc="$4"; shift 4
   local extra=()
@@ -152,7 +160,7 @@ if [[ "${NEED_BASE}" == "1" ]]; then
   fi
 fi
 echo "--- dataset ---"
-DATA_ARGS=(--rationales "${RATIONALES}" --video-root "${EARLY}" --out "${SFT}" --scheme "${SFT_SCHEME}" --target-format "${TARGET_FORMAT}" --tokenizer "${BASE}")
+DATA_ARGS=(--rationales "${RATIONALES}" --video-root "${EARLY}" --out "${SFT}" --scheme "${SFT_SCHEME}" --target-format "${TARGET_FORMAT}" --tokenizer "${BASE}" --budget-margin "${BUDGET_MARGIN}")
 [[ -n "${FOLDS_FROM}" ]] && DATA_ARGS+=(--folds-from "${FOLDS_FROM}")
 "${PYP}" sft_data.py "${DATA_ARGS[@]}"
 GATE_MODE="sft"
@@ -179,7 +187,7 @@ train_fold() {  # train_fold <name> <train.jsonl> <out dir> [extra swift args...
     --freeze_vit true --freeze_aligner true --learning_rate "${LR}" --num_train_epochs "${EPOCHS}" \
     --per_device_train_batch_size 1 --gradient_accumulation_steps "${GRAD_ACC}" --torch_dtype bfloat16 \
     --gradient_checkpointing true --attn_impl sdpa --max_length "${MAXLEN}" \
-    --add_non_thinking_prefix true --loss_scale "${LOSS_SCALE}" \
+    --add_non_thinking_prefix true --loss_scale "${LOSS_SCALE}" "${SWIFT_THINK_ARGS[@]}" \
     --lr_scheduler_type cosine --warmup_ratio 0.05 --weight_decay 0 --seed "${TRAIN_SEED}" --data_seed "${TRAIN_SEED}" \
     --dataloader_num_workers 2 --logging_steps 1 --save_strategy epoch --save_total_limit 1 --report_to tensorboard \
     --output_dir "${out}" "$@"

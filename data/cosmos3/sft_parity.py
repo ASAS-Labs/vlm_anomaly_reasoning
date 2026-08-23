@@ -37,7 +37,8 @@ def vllm_side(args):
     import pilot_models
     client = openai.OpenAI(api_key="EMPTY", base_url=args.server_url)
     model_id = client.models.list().data[0].id
-    req, extra = pilot_models.request_kwargs("qwen38", "expect_sft")
+    arm = "expect_sft_think" if args.target_format == "think" else "expect_sft"
+    req, extra = pilot_models.request_kwargs("qwen38", arm)
     req["max_tokens"] = 1
     messages = [{"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": [
@@ -55,7 +56,9 @@ def swift_side(args):
         sys.exit(f"ms-swift (>=4.3) not importable in this interpreter: {exc}")
     _, processor = get_model_processor(args.model, load_model=False, model_type=args.model_type)
     loss_scale = "default" if args.target_format == "think" else "ignore_empty_think"
-    template = get_template(processor, template_type=args.template, loss_scale=loss_scale)
+    # thinking on for think targets: renders the reasoning-effort system prefix like the server
+    template = get_template(processor, template_type=args.template, loss_scale=loss_scale,
+                            enable_thinking=(args.target_format == "think"))
     template.set_mode("train")
     target = THINK_TARGET if args.target_format == "think" else ANSWER_TARGET
     sample = {"messages": [{"role": "system", "content": SYSTEM_PROMPT},
@@ -70,8 +73,14 @@ def swift_side(args):
     decoded = tok.decode(ids, skip_special_tokens=False)
     tgt_ids = [i for i, x in zip(ids, labels) if x != -100] if labels else []
     decoded_target = tok.decode(tgt_ids, skip_special_tokens=False) if tgt_ids else ""
-    head_ok = (decoded.startswith("<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n")
-               and "<|vision_end|>You are evaluating" in decoded)
+    if args.target_format == "think":
+        # Qwen3.8 chat template with thinking on: "Reasoning effort is set to xhigh. ..." + system
+        head_ok = (decoded.startswith("<|im_start|>system\nReasoning effort is set to xhigh.")
+                   and "You are a helpful assistant.<|im_end|>\n<|im_start|>user\n" in decoded
+                   and "<|vision_end|>You are evaluating" in decoded)
+    else:
+        head_ok = (decoded.startswith("<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n")
+                   and "<|vision_end|>You are evaluating" in decoded)
     if args.target_format == "think":
         tail_ok = decoded.rstrip().endswith("<|im_start|>assistant\n" + target + "<|im_end|>")
         # loss must cover the procedure: the trace tokens are label (not -100)

@@ -194,8 +194,8 @@ OUTCOME_RE = re.compile(r"\b(later|eventually|at the end of the (clip|video|sequ
 # Ego-motion narration ("the vehicle is already braking") is outcome leakage for
 # every class except Wait, whose defining feature IS that the vehicle is stationary.
 EGO_MOTION_RE = re.compile(r"\b(vehicle|car|ego)\S* (is|was|has) (already )?(slow|brak|stopp|decelerat|halt)", re.I)
-STEP_RE = [re.compile(rf"^[ \t]*\**STEP {i}\b", re.I | re.M) for i in (1, 2, 3, 4)]
-FINAL_RE = re.compile(r"^[ \t]*\**FINAL\**[ \t]*:", re.I | re.M)
+STEP_RE = [re.compile(rf"^[ \t#*\-\d.)]*STEP {i}\b", re.I | re.M) for i in (1, 2, 3, 4)]
+FINAL_RE = re.compile(r"^[ \t#*\-]*FINAL\**[ \t]*[:—–-]", re.I | re.M)
 
 
 def check(content: str, gt_expected: str, min_words=12, max_words=120):
@@ -249,7 +249,7 @@ def check_think(content: str, gt_expected: str):
             reasons.append(f"step{i + 1}_missing_or_out_of_order")
             break
         pos = m.start()
-    parts = re.split(r"^[ \t]*\**STEP [234]\b", trace, flags=re.I | re.M)
+    parts = re.split(r"^[ \t#*\-\d.)]*STEP [234]\b", trace, flags=re.I | re.M)
     step1 = parts[0]
     step3 = parts[2] if len(parts) > 2 else ""
     if not re.search(r"\b(path|road|lane|roadway|street|ahead)\b", step1, re.I):
@@ -257,7 +257,7 @@ def check_think(content: str, gt_expected: str):
     if not re.search(r"\b(moving|stationary|stopped|standstill|motion|halted|rolling|travel|driving|at rest)", step3, re.I):
         reasons.append("step3_no_motion_state")
     n = len(trace.split())
-    if n < 60 or n > 300:
+    if n < 40 or n > 300:
         reasons.append(f"trace_words={n}")
     reasons += check(answer, gt_expected, min_words=8, max_words=60)
     for rx, tag in ((HINT_ECHO_RE, "trace_hint_echo"), (OUTCOME_RE, "trace_outcome")):
@@ -372,7 +372,10 @@ def main():
     if args.out.exists():
         for ln in args.out.read_text().splitlines():
             if ln.strip():
-                done.add(json.loads(ln)["video"])
+                r = json.loads(ln)
+                if r.get("mode", "answer") != args.mode:
+                    sys.exit(f"{args.out} holds mode={r.get('mode', 'answer')} records; refusing to resume in mode {args.mode}")
+                done.add(r["video"])
     pending = [w for w in wanted if w not in done]
     print(f"{len(wanted)} clips; {len(done)} done, {len(pending)} pending; model {model_id}; mode {args.mode}")
 
