@@ -5,8 +5,9 @@
    original tree lived only on a destroyed instance, this makes it reproducible).
 2. early: the stage-1 window of each hires clip — fixed length, T-minus, or the
    per-clip decision-time window from expected_action_gt.json (`--early-mode gt`:
-   the 2.5 s rolling window [end-2.5, end] where an end time is annotated, else
-   [0, T-2.5]) — trimmed from the hires output so both arms share identical pixels.
+   the 2.5 s rolling window [max(0, end-2.5), end] for every clip, end = the
+   annotated decision time where present, else T-2.5) — trimmed from the hires
+   output so both arms share identical pixels.
 
     python make_pilot_trees.py --subset ../../logs/vlm_agreement_subset_admitted.txt
 """
@@ -43,8 +44,8 @@ def main():
                    help="fixed mode: window length; t_minus mode: seconds hidden "
                         "at the end (window = duration - early-secs)")
     p.add_argument("--early-mode", choices=["fixed", "t_minus", "gt"], default="fixed",
-                   help="gt: per-clip decision-time window from expected_action_gt.json "
-                        "(_early_window_end_s overrides, else [0, T-2.5])")
+                   help="gt: 2.5 s rolling window ending at the clip's annotated decision "
+                        "time (expected_action_gt.json _early_window_end_s), else at T-2.5")
     p.add_argument("--gt-json", type=Path,
                    default=Path(__file__).resolve().parent / "expected_action_gt.json")
     p.add_argument("--skip-existing", action="store_true")
@@ -81,11 +82,11 @@ def main():
         elif args.early_mode == "t_minus":
             want = h["duration_s"] - args.early_secs
         else:
-            if rel in gt_ends:
-                end = float(gt_ends[rel])
-                start = max(0.0, end - gt_default["length_s"])
-            else:
-                end = h["duration_s"] - gt_default["end_tminus_s"]
+            # one rolling window of length_s for every clip; the annotation only
+            # moves where it ends (default end = duration - end_tminus_s)
+            end = (float(gt_ends[rel]) if rel in gt_ends
+                   else h["duration_s"] - gt_default["end_tminus_s"])
+            start = max(0.0, end - gt_default["length_s"])
             want = end - start
         if not (args.skip_existing and early.exists()):
             encode(hires, early, (["-ss", f"{start:.3f}"] if start else []) + ["-t", f"{want:.3f}"], [])

@@ -194,7 +194,8 @@ if __name__ == "__main__":
 # --- Annotated decision-time window (GT metadata; SFT context) ------------
 # expected_action_gt.json carries per-clip early-window END times (when the
 # expected action becomes determinable from the scene); the stage-1 window is
-# the 2.5 s rolling window ending there, [0, T-2.5] where unannotated.
+# the 2.5 s rolling window ending there for every clip (end = T-2.5 where
+# unannotated, so the 8 s clips get [T-5, T-2.5], not [0, T-2.5]).
 # Tree: make_pilot_trees.py --early-mode gt. Evaluation on it = "at the
 # annotated decision time", reported separately from the fixed T-2.5 rows.
 H_VARIANTS.update({
