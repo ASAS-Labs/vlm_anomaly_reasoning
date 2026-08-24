@@ -1220,3 +1220,77 @@ more variants), which is a dataset-design item. Headline claims for the paper st
 with zero-shot M8 (0.830 / 0.821) unless the evaluation is explicitly
 within-distribution. Second training seed not run (credit); adapters for both
 campaigns are kept locally under `tmp/sft/`.
+
+### 18.5 Thinking-target SFT (N3): the procedure transfers, the judgement does not
+
+N1's failure looked like a target-format problem: short "feature + word" targets are
+nearly label supervision, so the model fitted them as scene rules and applied the
+wrong sibling rule to the held-out scene. N3 tests the obvious remedy — train the
+*procedure* instead of the conclusion. Targets became
+`<think>{4-step checklist}</think>\n\nFINAL: {sentence}\n{word}` with loss on the
+trace, the checklist (PATH → CONTROLS → MOTION → ACTION) executed by the base model
+itself, two-pass: un-hinted first (145/235), the GT conclusion supplied only for
+rejects (89), one hand-written template. Everything else — folds, anchor, comparator,
+windows, subset — is identical to N1.
+
+**Result: FAIL, and statistically indistinguishable from N1.**
+
+| arm | acc | balacc | recall / spec | vs anchor |
+|---|---|---|---|---|
+| anchor M8gt zero-shot | 0.821 (193/235) | 0.818 | 0.76 / 0.87 | — |
+| N1 answer targets | 0.736 (173/235) | 0.731 | 0.65 / 0.81 | −20, p=0.0008 |
+| **N3 think targets** | **0.728** (171/235) | 0.722 | 0.63 / 0.82 | **−22 (+8/−30), p=0.0005** |
+
+Per fold (SFT vs anchor): f1 0.37/0.57, f2 0.83/0.98, f3 0.90/0.90, f4 0.91/0.97,
+f5 0.69/0.74.
+
+**The arm worked mechanically.** Every fold's gate passed with `sft-format-bad=0`;
+the trained models emit `STEP 1…STEP 4` inside `<think>` on every clip; median trace
+1,001 chars against a training distribution of ~1,050; **0 stage-1 truncations** in
+470 evaluations; loss 1.41–1.48 → 0.61–0.79. So this is a result about what
+procedure distillation can teach, not about plumbing.
+
+**Why it still fails — two findings.**
+
+*1. An ungrounded checklist branch is inert, and worse, the checklist routes the
+evidence into the wrong slot.* Fold 1 (mural pair held out) is the clean case. Of its
+186 training targets, every Stop is caused by a person in the path (27) or a real
+signal (13) — **zero** by an inanimate structure ending the road. The trained model
+*sees* the wall (29/31 held-out mural traces mention wall/mural/panel) and answers
+Continue 30/31, because it classifies the wall at STEP 2 (the depiction step:
+"only a painted image and commands nothing" — exactly what billboard, shirt and
+pavement-marking training scenes reward) and therefore never asks at STEP 1 whether
+the surface carrying the depiction is itself the obstacle. Verbatim on `prompt_9.mp4`:
+GT trace "the street **physically terminates at a full-width wall**" vs model
+"**Nothing physically blocks the lane ahead**". The clause I wrote into STEP 1
+("regardless of what is printed or painted on them") has no force because no training
+instance instantiates it. A reasoning step is only as strong as the examples grounding
+each branch.
+
+*2. SFT destroys a protective hedge.* Decomposed against the anchor, stage-1 answers
+move from {continue 106, slow 71, stop 37, wait 21} to {continue 150, slow 22,
+stop 45, wait 18}. That makes stage 1 **more** exactly right (strict 127 → 138) and
+**less** leniently right (lenient 181 → 165), and lenient is what the verdict depends
+on: the comparison rule treats continue and slow as compatible, so a hedged "slow" on
+a continue-scene still yields the correct Normal verdict, while a confident wrong
+commitment is a hard mismatch. The comparator itself stays faithful throughout —
+verdict accuracy given a lenient-correct stage 1 is 180/181 (anchor) and 160/165 (N3);
+given a wrong stage 1 it is 13/54 and 11/70, i.e. chance. **All of the −22 is stage 1.**
+
+Per scenario the losses are where the held-out concept is unsupported: pos_9 7 → 0,
+neg_2 16 → 9, neg_5 15 → 11, neg_9 3 → 1. The single gain is pos_8 14 → **18/19**
+(child at the curb: commitment helps where the concept *is* grounded by neg_8 in
+train). Notably N3 is *worse* than N1 on the one case that transferred for N1
+(balloons 32/35 vs 35/35) — the procedure talks itself into treating soft debris as a
+path object.
+
+**Conclusion for family N.** Three arms, one dataset: concepts are learnable
+in-distribution (N2, 0.936), and neither conclusion-style (N1) nor procedure-style
+(N3) supervision transfers them to an unseen scene. Procedure distillation is not a
+substitute for scene diversity — with one scene per concept, SFT can only redistribute
+which branch fires. The deployable headline stays zero-shot M8 (0.830 on T−2.5,
+0.821 on decision-time windows). The dataset-design recommendation is unchanged and
+now doubly evidenced: **more scenes per concept, not more variants per scene.**
+Second training seed not run (a pre-registered FAIL needs no reproduction).
+Artifacts: `logs/sft_t1_f*`, `logs/sft_think/{traces.jsonl,report_sft_t1.md,
+rationales_review.md}`, adapters in `tmp/sft/sft_t1`.

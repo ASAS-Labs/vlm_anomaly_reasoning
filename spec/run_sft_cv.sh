@@ -245,7 +245,9 @@ if [[ "${SMOKE}" == "1" ]]; then
   run_monitor "${SFT}/f1/held_out.txt" "${LOG_DIR}/${PREFIX}_smoke" "${STAGE1_ARM}" 4 --limit 4
   # plumbing-only gate: the smoke model saw 5 optimizer steps, so it cannot yet emit the
   # target format; format/truncation are gated per fold, where the model is actually trained.
-  gate_check "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" 4 "${SFT}/f1/held_out.txt" plumbing || { echo "SMOKE GATE FAILED"; tail -2 "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" | cut -c1-400; exit 1; }
+  # the merged smoke model is ~50 GB: drop it on the failure path too, or the next
+  # run's merge hits "No space left on device" halfway through writing its shards.
+  gate_check "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" 4 "${SFT}/f1/held_out.txt" plumbing || { echo "SMOKE GATE FAILED"; tail -2 "${LOG_DIR}/${PREFIX}_smoke/results.jsonl" | cut -c1-400; rm -rf "${SW}/merged"; exit 1; }
   stop_server; rm -rf "${SW}/merged"
   echo "=== SMOKE OK (elapsed $(elapsed_min) min) ==="
   exit 0

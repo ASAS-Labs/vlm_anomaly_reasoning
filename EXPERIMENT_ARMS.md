@@ -414,12 +414,17 @@ Pre-registered: CV-concatenated SFT stage 1 inside the unchanged M8 comparator v
 in-session zero-shot M8gt anchor on the same 235 (McNemar p<0.05 AND balacc higher;
 second seed to declare). Targets = self-distilled rationale+word (235/235 tier 1);
 LoRA r16 ms-swift 4.5.2, 2 epochs, 5 s/sample, ~$2.5/fold; video-token parity 0.0 %.
+N3 repeats N1's protocol with `<think>` procedure targets: a fixed 4-step checklist
+(PATH / CONTROLS / MOTION / ACTION) executed by the base model, two-pass (un-hinted,
+then GT-conclusion-hinted for rejects), loss on the trace (`--loss_scale default`,
+`--enable_thinking true`), stage 1 evaluated with thinking on at a 4096 budget.
 
 | arm | split | acc | balacc | rec/spec | vs anchor | verdict |
 |---|---|---|---|---|---|---|
 | anchor M8gt zero-shot (early_gt tree) | — | 0.821 (193/235) | 0.818 | 0.76/0.87 | — | paired baseline |
 | **N1 SFT stage 1, leave-scene-group-out 5-fold** | f1 mural+pos_6, f2 bags+neg_3, f3 billboard+pos_11, f4 balloons, f5 shirt+child | **0.736** (173/235) | 0.731 | 0.65/0.81 | **−20 (+7/−27), p=0.0008** | **FAIL** — commits the sibling scene's rule onto the unseen scene (mural → continue, bags → stop); only balloons (bags in train) transfer (35/35) |
 | N2 SFT stage 1, within-scenario 5-fold (diagnostic) | every scene in train; held-out = unseen variants | **0.936** (220/235) | 0.936 | 0.93/0.94 | **+27 (+32/−5), p<1e-4** | learnable: mural 18/18, pos_8 19/19, neg_8 4/7; **within-distribution ceiling, not a generalisation claim** |
+| **N3 SFT stage 1, `<think>` procedure targets, leave-scene-group-out 5-fold** | same folds/anchor as N1 | **0.728** (171/235) | 0.722 | 0.63/0.82 | **−22 (+8/−30), p=0.0005** | **FAIL** — mechanically perfect (checklist emitted on every clip, 0 stage-1 truncations, median trace 1,001 chars vs training 1,050) and statistically identical to N1: procedure distillation does not substitute for scene diversity |
 
 ## Failure chain (as currently localized)
 

@@ -1,0 +1,14 @@
+{
+ "clip": "/root/vlm_anomaly_reasoning/data/datasets/generated_vids_720p_early_gt/final_semantic_scenarios/negative_scenarios/negative_scenarios_filtered/prompt_0.mp4",
+ "vllm_prompt_tokens": 8849,
+ "vllm_model": "qwen38-base",
+ "swift_total_tokens": 8980,
+ "swift_prompt_tokens": 8883,
+ "swift_target_tokens": 97,
+ "swift_format_ok": true,
+ "swift_loss_on_trace": true,
+ "swift_empty_think_prefix_present": false,
+ "swift_target_format": "think",
+ "swift_decoded_target_tail": "ange, so maintain speed and lane.\n</think>\n\nThe printed sign commands nothing and the lane is clear.\nContinue<|im_end|>\n",
+ "swift_decoded_head": "<|im_start|>system\nReasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.\n\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n<|vision_start|>"
+}
