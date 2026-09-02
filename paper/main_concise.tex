@@ -141,11 +141,18 @@ The output, paired clips with validated 5~Hz and 10~Hz trajectories, is the acti
 
 \subsection{VLM Context and Anomaly Reasoning}\label{sec:vlm}
 
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fig_pipeline_color.pdf}
+\caption{The two-stage expectation--action anomaly monitor (video path in blue, action path in orange). Stage 1 sees only the action-blind window $W$ ending at the clip's decision time $t^*$ and produces the expected action $\hat{e}$; stage 2 compares the deterministic narrative rendering $g(\act)$ of the actual trajectory against the compatibility relation $\Mcal(\hat{e})$, yielding the verdict $\hat{y}$ of~\eqref{eq:label}.}
+\label{fig:pipeline}
+\end{figure*}
+
 \paragraph{Problem formulation} Let $V$ denote an ego-view clip of duration $T$ and $\act = ((v_1, \psi_1), \dots, (v_K, \psi_K))$ its recovered trajectory (Section~\ref{sec:action}) at $f = 5$~Hz, $K = fT$. The prevailing formulation trains or prompts $h(V) \rightarrow \{\text{Normal}, \text{Anomaly}\}$, which Section~\ref{sec:intro} argued is ill-posed. We factor the judgment: with action vocabulary $\Acal = \{\text{Continue}, \text{Slow}, \text{Stop}, \text{Wait}\}$, let $e^* \in \Acal$ be the action a correct driver should take (framework field 4) and $c(\act) \in \Ccal = \{\text{continued}, \text{slowed}, \text{stopped}, \text{waited}, \text{moved off}\}$ the motion class the trajectory realizes. By construction,
 \begin{equation}
 y = \ind\!\left[\, c(\act) \notin \Mcal(e^*) \,\right],\label{eq:label}
 \end{equation}
-where $\Mcal : \Acal \rightarrow 2^{\Ccal}$ is a fixed compatibility relation (defined below). Equation~\eqref{eq:label} splits detection into two strictly simpler subproblems, \emph{expectation generation} and \emph{expectation--action comparison}, each one turn of a single VLM conversation, in the spirit of model-predictive runtime monitors~\cite{b31} with the ``should'' produced zero-shot from VLM world knowledge.
+where $\Mcal : \Acal \rightarrow 2^{\Ccal}$ is a fixed compatibility relation (defined below). Equation~\eqref{eq:label} splits detection into two strictly simpler subproblems, \emph{expectation generation} and \emph{expectation--action comparison}, each one turn of a single VLM conversation (Fig.~\ref{fig:pipeline}), in the spirit of model-predictive runtime monitors~\cite{b31} with the ``should'' produced zero-shot from VLM world knowledge.
 
 \paragraph{Model and serving} Both stages run zero-shot on Qwen3.8-27B~\cite{b32}, an open-weight VLM with native video input and extended reasoning~\cite{b33}, selected over the driving-tuned alternative of~\cite{b11} and five other open VLMs (Section~\ref{sec:ablations}); serving is vLLM~\cite{b34} with reasoning parser, 32{,}768-token context, fixed seed, and identical decoding for both stages (temperature 1.0, top-$p$ 0.95, top-$k$ 20, 16{,}384-token budget).
 
