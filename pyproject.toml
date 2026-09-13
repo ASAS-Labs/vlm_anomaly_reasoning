@@ -41,6 +41,10 @@ validation = [
     "plotly",
     "pandas",
 ]
+taxonomy = [
+    "starlette",
+    "uvicorn[standard]",
+]
 
 [tool.ruff]
 target-version = "py313"

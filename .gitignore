@@ -17,3 +17,7 @@ todo.md
 tmp/
 .venv-pilot/
 .venv-sft/
+
+# taxonomy validation app runtime files
+data/taxonomy_validation/decisions.sqlite*
+data/taxonomy_validation/.secret

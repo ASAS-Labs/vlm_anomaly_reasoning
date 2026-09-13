@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semantic-anomaly taxonomy validation</title>
+<style>
+  body { margin: 0; font: 13px/1.35 system-ui, sans-serif; color: #1a1a1a; background: #fff; }
+  header { position: sticky; top: 0; z-index: 3; background: #f6f6f3; border-bottom: 1px solid #ddd;
+           padding: 10px 18px; display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
+  header h1 { font-size: 16px; margin: 0 14px 0 0; }
+  .who a, header a { color: #155e8d; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #999; margin-right: 5px; }
+  .dot.on { background: #2e7d4f; }
+  section { padding: 14px 18px 4px; }
+  section h2 { font-size: 15px; margin: 8px 0 8px; display: flex; align-items: center; gap: 14px; }
+  .move { padding: 6px 12px; font-size: 13px; border: 1px solid #155e8d; color: #155e8d; background: #fff;
+          border-radius: 6px; cursor: pointer; }
+  .move:hover { background: #e8f0f6; }
+  .hint { color: #666; font-weight: normal; font-size: 12px; }
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  thead th { position: sticky; top: var(--hh, 46px); background: #f0f0ec; z-index: 2; text-align: left; font-weight: 600;
+             padding: 7px 8px; border-bottom: 2px solid #ccc; white-space: nowrap; }
+  td { padding: 6px 8px; border-bottom: 1px solid #e6e6e6; vertical-align: top; }
+  td { overflow-wrap: anywhere; }
+  td.num { color: #666; }
+  td.cat { color: #555; font-size: 12px; }
+  td.dec { color: #444; }
+  td.dec b { font-size: 12.5px; }
+  td.btns { text-align: right; }
+  td.btns button { display: block; width: 100%; margin: 0 0 4px; }
+  .badge { display: inline-block; white-space: nowrap; padding: 1px 7px; border-radius: 10px; font-size: 11.5px; font-weight: 600; }
+  .badge.REAL { background: #e8f0f6; color: #14507a; }
+  .badge.SYNTHETIC { background: #f3e8fd; color: #6b3fa0; }
+  .src { display: block; color: #666; font-size: 11.5px; }
+  .src a { color: #155e8d; }
+  button.b { padding: 5px 6px; white-space: nowrap; font-size: 11.5px; font-weight: 600; border-radius: 6px;
+             cursor: pointer; border: 1.5px solid; background: #fff; }
+  .b.VALID { border-color: #2e7d4f; color: #2e7d4f; }      .b.VALID.active { background: #2e7d4f; color: #fff; }
+  .b.INVALID { border-color: #b3392e; color: #b3392e; }    .b.INVALID.active { background: #b3392e; color: #fff; }
+  .b.REAL { border-color: #14507a; color: #14507a; }       .b.REAL.active { background: #14507a; color: #fff; }
+  .b.SYNTHETIC { border-color: #6b3fa0; color: #6b3fa0; }  .b.SYNTHETIC.active { background: #6b3fa0; color: #fff; }
+  tr.VALID td { background: #e6f4ea; }
+  tr.INVALID td { background: #fce8e6; }
+  tr.REAL td { background: #e8f0f6; }
+  tr.SYNTHETIC td { background: #f3e8fd; }
+  #validated { display: none; }
+  .empty { color: #666; padding: 10px 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Semantic-anomaly taxonomy validation</h1>
+  <span class="who">Validator: <b id="name"></b> (<a href="#" id="rename">change</a>)</span>
+  <span id="ext-count"></span>
+  <span id="seed-count"></span>
+  <a href="/export.csv">Export CSV</a>
+  <span><span class="dot" id="dot"></span><span id="conn">connecting</span></span>
+</header>
+
+<section id="extension">
+  <h2>Extension: 100 additional anomalies
+    <button class="move" id="move">Move Validated</button>
+    <span class="hint">moves every row that has a decision to the Validated section at the bottom (this view only)</span>
+  </h2>
+  <table>
+    <colgroup><col style="width:3%"><col style="width:9%"><col style="width:8%"><col style="width:10%"><col style="width:12%"><col style="width:11%"><col style="width:11%"><col style="width:13%"><col style="width:8%"><col style="width:7%"><col style="width:8%"></colgroup>
+    <thead><tr><th>#</th><th>Category</th><th>Object</th><th>Nominal context</th><th>OOD context</th>
+      <th>Normal action</th><th>Anomalous action</th><th>Example</th><th>Marker</th><th>Decision</th><th></th></tr></thead>
+    <tbody id="ext-body"></tbody>
+  </table>
+</section>
+
+<section id="seed">
+  <h2>Original 12 anomalies <span class="hint">mark each row REAL (documented incident) or SYNTHETIC</span></h2>
+  <table>
+    <colgroup><col style="width:3%"><col style="width:9%"><col style="width:12%"><col style="width:14%"><col style="width:13%"><col style="width:13%"><col style="width:14%"><col style="width:7%"><col style="width:7%"><col style="width:8%"></colgroup>
+    <thead><tr><th>#</th><th>Object</th><th>Nominal context</th><th>OOD context</th>
+      <th>Normal action</th><th>Anomalous action</th><th>Example</th><th>Marker</th><th>Decision</th><th></th></tr></thead>
+    <tbody id="seed-body"></tbody>
+  </table>
+</section>
+
+<section id="validated">
+  <h2>Validated <span class="hint">rows moved here can still be changed; updates stay live</span></h2>
+  <table>
+    <colgroup><col style="width:3%"><col style="width:9%"><col style="width:8%"><col style="width:10%"><col style="width:12%"><col style="width:11%"><col style="width:11%"><col style="width:13%"><col style="width:8%"><col style="width:7%"><col style="width:8%"></colgroup>
+    <thead><tr><th>#</th><th>Category</th><th>Object</th><th>Nominal context</th><th>OOD context</th>
+      <th>Normal action</th><th>Anomalous action</th><th>Example</th><th>Marker</th><th>Decision</th><th></th></tr></thead>
+    <tbody id="val-body"></tbody>
+  </table>
+</section>
+
+<script>
+let rows = [], decisions = {}, moved = new Set(), backoff = 1000;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function getName() {
+  let n = localStorage.getItem('validator_name') || '';
+  while (!n.trim()) n = (prompt('Your name (recorded with each decision):') || '').trim();
+  localStorage.setItem('validator_name', n);
+  document.getElementById('name').textContent = n;
+  return n;
+}
+let name = getName();
+const setHH = () => document.documentElement.style.setProperty('--hh', document.querySelector('header').offsetHeight + 'px');
+setHH(); window.addEventListener('resize', setHH);
+document.getElementById('rename').onclick = e => { e.preventDefault(); localStorage.removeItem('validator_name'); name = getName(); };
+
+function when(ts) {
+  const d = new Date(ts);
+  return isNaN(d) ? '' : d.toLocaleString(undefined, {month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'});
+}
+
+function marker(r) {
+  if (r.section === 'extension') {
+    const src = r.source_note ? `<span class="src">${r.source_url ? `<a href="${esc(r.source_url)}" target="_blank" rel="noopener">${esc(r.source_note)}</a>` : esc(r.source_note)}</span>` : '';
+    return `<span class="badge ${r.tag}">${r.tag}</span>${src}`;
+  }
+  const d = decisions[r.id];
+  return d ? `<span class="badge ${d.value}">${d.value}</span>` : '<span class="hint">not marked</span>';
+}
+
+function rowHtml(r) {
+  const d = decisions[r.id];
+  const opts = r.section === 'extension' ? ['VALID', 'INVALID'] : ['REAL', 'SYNTHETIC'];
+  const btns = opts.map(v => `<button class="b ${v}${d && d.value === v ? ' active' : ''}" data-id="${r.id}" data-value="${v}">${v}</button>`).join('');
+  const dec = d ? `<b>${d.value}</b><br>${esc(d.validator)} · ${when(d.ts)}` : '<span class="hint">not validated</span>';
+  const cat = r.section === 'extension' ? `<td class="cat">${esc(r.category.replace(/^Category \d+ — /, ''))}</td>` : '';
+  return `<tr id="row-${r.id}" class="${d ? d.value : ''}"><td class="num">${r.id}</td>${cat}` +
+    `<td>${esc(r.object)}</td><td>${esc(r.nominal_context)}</td><td>${esc(r.ood_context)}</td>` +
+    `<td>${esc(r.normal_action)}</td><td>${esc(r.anomalous_action)}</td><td class="example">${esc(r.example)}</td>` +
+    `<td class="mark">${marker(r)}</td><td class="dec">${dec}</td><td class="btns">${btns}</td></tr>`;
+}
+
+function renderAll() {
+  const ext = rows.filter(r => r.section === 'extension');
+  document.getElementById('ext-body').innerHTML = ext.filter(r => !moved.has(r.id)).map(rowHtml).join('') ||
+    '<tr><td class="empty" colspan="11">All rows have been moved to the Validated section.</td></tr>';
+  document.getElementById('val-body').innerHTML = ext.filter(r => moved.has(r.id)).map(rowHtml).join('');
+  document.getElementById('validated').style.display = moved.size ? 'block' : 'none';
+  document.getElementById('seed-body').innerHTML = rows.filter(r => r.section === 'seed').map(rowHtml).join('');
+  updateCounters();
+}
+
+function patchRow(id) {
+  const r = rows.find(x => x.id === id), el = document.getElementById('row-' + id);
+  if (r && el) el.outerHTML = rowHtml(r);
+  updateCounters();
+}
+
+function updateCounters() {
+  const ext = rows.filter(r => r.section === 'extension'), seed = rows.filter(r => r.section === 'seed');
+  const dv = v => ext.filter(r => decisions[r.id] && decisions[r.id].value === v).length;
+  const decided = ext.filter(r => decisions[r.id]).length;
+  document.getElementById('ext-count').innerHTML = `Extension validated <b>${decided}/${ext.length}</b> (valid ${dv('VALID')}, invalid ${dv('INVALID')})`;
+  document.getElementById('seed-count').innerHTML = `Seed marked <b>${seed.filter(r => decisions[r.id]).length}/${seed.length}</b>`;
+}
+
+async function load() {
+  const res = await fetch('/state');
+  if (res.status === 401) { location.href = '/login'; return; }
+  const s = await res.json();
+  rows = s.rows; decisions = s.decisions;
+  // convert keys to numbers-as-strings consistently: decisions keyed by string id
+  decisions = Object.fromEntries(Object.entries(s.decisions).map(([k, v]) => [Number(k), v]));
+  renderAll();
+}
+
+async function decide(id, value) {
+  const res = await fetch('/decide', {method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({row_id: id, value, validator: name})});
+  if (res.status === 401) { location.href = '/login'; return; }
+  if (!res.ok) { alert('Could not record decision: ' + (await res.text())); return; }
+  const d = await res.json();
+  decisions[d.row_id] = {kind: d.kind, value: d.value, validator: d.validator, ts: d.ts};
+  patchRow(d.row_id);
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('button.b');
+  if (b) decide(Number(b.dataset.id), b.dataset.value);
+});
+
+document.getElementById('move').onclick = () => {
+  rows.filter(r => r.section === 'extension' && decisions[r.id]).forEach(r => moved.add(r.id));
+  renderAll();
+};
+
+function setConn(on) {
+  document.getElementById('dot').className = 'dot' + (on ? ' on' : '');
+  document.getElementById('conn').textContent = on ? 'live' : 'reconnecting';
+}
+
+function connect() {
+  const ws = new WebSocket((location.protocol === 'https:' ? 'wss' : 'ws') + '://' + location.host + '/ws');
+  ws.onopen = () => { backoff = 1000; setConn(true); load(); };
+  ws.onmessage = ev => {
+    const m = JSON.parse(ev.data);
+    if (m.type !== 'decision') return;
+    decisions[m.row_id] = {kind: m.kind, value: m.value, validator: m.validator, ts: m.ts};
+    patchRow(m.row_id);
+  };
+  ws.onclose = () => { setConn(false); setTimeout(connect, backoff); backoff = Math.min(backoff * 2, 30000); };
+  ws.onerror = () => ws.close();
+}
+connect();
+</script>
+</body>
+</html>
