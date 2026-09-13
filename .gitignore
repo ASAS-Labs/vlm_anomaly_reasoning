@@ -21,3 +21,7 @@ tmp/
 # taxonomy validation app runtime files
 data/taxonomy_validation/decisions.sqlite*
 data/taxonomy_validation/.secret
+
+# extension video validation app runtime files
+data/extension_validation/decisions.sqlite*
+data/extension_validation/.secret

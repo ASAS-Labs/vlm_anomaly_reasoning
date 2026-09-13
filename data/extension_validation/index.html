@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extension video validation</title>
+<style>
+  body { margin: 0; font: 13px/1.35 system-ui, sans-serif; color: #1a1a1a; background: #fff; }
+  header { position: sticky; top: 0; z-index: 3; background: #f6f6f3; border-bottom: 1px solid #ddd;
+           padding: 10px 18px; display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
+  header h1 { font-size: 16px; margin: 0 14px 0 0; }
+  header a { color: #155e8d; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #999; margin-right: 5px; }
+  .dot.on { background: #2e7d4f; }
+  section { padding: 14px 18px 4px; }
+  section h2 { font-size: 15px; margin: 8px 0 8px; display: flex; align-items: center; gap: 14px; }
+  .move { padding: 6px 12px; font-size: 13px; border: 1px solid #155e8d; color: #155e8d; background: #fff; border-radius: 6px; cursor: pointer; }
+  .hint { color: #666; font-weight: normal; font-size: 12px; }
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  thead th { position: sticky; top: var(--hh, 46px); background: #f0f0ec; z-index: 2; text-align: left; font-weight: 600;
+             padding: 7px 8px; border-bottom: 2px solid #ccc; }
+  td { padding: 6px 8px; border-bottom: 1px solid #e6e6e6; vertical-align: top; overflow-wrap: anywhere; }
+  td.num { color: #666; }
+  td.dec { color: #444; }
+  td.btns { text-align: right; }
+  td.btns button { display: block; width: 100%; margin: 0 0 4px; }
+  video { width: 100%; max-width: 320px; background: #000; border-radius: 4px; display: block; }
+  .badge { display: inline-block; white-space: nowrap; padding: 1px 7px; border-radius: 10px; font-size: 11.5px; font-weight: 600; margin: 1px 2px 1px 0; }
+  .badge.pos { background: #e6f4ea; color: #1e5c37; }   .badge.neg { background: #fce8e6; color: #8a2a21; }
+  .badge.ok { background: #e6f4ea; color: #1e5c37; }    .badge.bad { background: #fce8e6; color: #8a2a21; }
+  .badge.na { background: #eee; color: #555; }
+  .sent { font-style: italic; color: #333; }
+  .cls { font-family: ui-monospace, monospace; font-size: 12px; color: #555; }
+  button.b { padding: 5px 6px; white-space: nowrap; font-size: 11.5px; font-weight: 600; border-radius: 6px; cursor: pointer; border: 1.5px solid; background: #fff; }
+  .b.VALID { border-color: #2e7d4f; color: #2e7d4f; }      .b.VALID.active { background: #2e7d4f; color: #fff; }
+  .b.INVALID { border-color: #b3392e; color: #b3392e; }    .b.INVALID.active { background: #b3392e; color: #fff; }
+  tr.VALID td { background: #e6f4ea; }
+  tr.INVALID td { background: #fce8e6; }
+  #validated { display: none; }
+  .empty { color: #666; padding: 10px 8px; }
+  @media (max-width: 900px) {
+    colgroup, thead { display: none; }
+    table, tbody, tr, td { display: block; width: auto; }
+    tr { border-bottom: 3px solid #ccc; padding: 8px 0; }
+    td { border: 0; padding: 3px 8px; }
+    td.num { display: inline-block; }
+    td.btns { text-align: left; }
+    td.btns button { display: inline-block; width: auto; margin-right: 6px; min-width: 100px; }
+    video { max-width: 100%; }
+    .move { white-space: nowrap; }
+    section h2 { flex-wrap: wrap; }
+    table { table-layout: auto; }
+    html, body { max-width: 100vw; overflow-x: hidden; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Extension video validation</h1>
+  <span>Validator: <b id="name"></b> (<a href="#" id="rename">change</a>)</span>
+  <span id="count"></span>
+  <a href="/export.csv">Export CSV</a>
+  <span><span class="dot" id="dot"></span><span id="conn">connecting</span></span>
+</header>
+
+<section id="main">
+  <h2>Generated clips
+    <button class="move" id="move">Move Validated</button>
+    <span class="hint">confirm that the intended object, OOD context and, critically, the ego action are depicted; flag artifacts or scenario drift as INVALID</span>
+  </h2>
+  <table>
+    <colgroup><col style="width:4%"><col style="width:24%"><col style="width:17%"><col style="width:22%"><col style="width:13%"><col style="width:12%"><col style="width:8%"></colgroup>
+    <thead><tr><th>#</th><th>Video</th><th>Scenario</th><th>Expected ego action</th><th>Automatic checks</th><th>Decision</th><th></th></tr></thead>
+    <tbody id="main-body"></tbody>
+  </table>
+</section>
+
+<section id="validated">
+  <h2>Validated <span class="hint">rows moved here can still be changed; updates stay live</span></h2>
+  <table>
+    <colgroup><col style="width:4%"><col style="width:24%"><col style="width:17%"><col style="width:22%"><col style="width:13%"><col style="width:12%"><col style="width:8%"></colgroup>
+    <thead><tr><th>#</th><th>Video</th><th>Scenario</th><th>Expected ego action</th><th>Automatic checks</th><th>Decision</th><th></th></tr></thead>
+    <tbody id="val-body"></tbody>
+  </table>
+</section>
+
+<script>
+let rows = [], decisions = {}, moved = new Set(), backoff = 1000;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function getName() {
+  let n = localStorage.getItem('validator_name') || '';
+  while (!n.trim()) n = (prompt('Your name (recorded with each decision):') || '').trim();
+  localStorage.setItem('validator_name', n);
+  document.getElementById('name').textContent = n;
+  return n;
+}
+let name = getName();
+const setHH = () => document.documentElement.style.setProperty('--hh', document.querySelector('header').offsetHeight + 'px');
+setHH(); window.addEventListener('resize', setHH);
+document.getElementById('rename').onclick = e => { e.preventDefault(); localStorage.removeItem('validator_name'); name = getName(); };
+function when(ts) { const d = new Date(ts); return isNaN(d) ? '' : d.toLocaleString(undefined, {month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'}); }
+
+function autoBadges(r) {
+  const f = r.flow || {}, i = r.id || {};
+  const fb = f.prompt_video === true ? 'ok' : f.prompt_video === false ? 'bad' : 'na';
+  const ib = i.agree === true ? 'ok' : i.agree === false ? 'bad' : 'na';
+  const ab = r.automatic === 'valid' ? 'ok' : 'bad';
+  return `<span class="badge ${fb}">flow: ${esc(f.end_state || '?')}</span>` +
+         `<span class="badge ${ib}">ID: ${i.agree === true ? 'agrees' : i.agree === false ? 'disagrees' : 'n/a'}</span>` +
+         `<span class="badge ${ab}">auto: ${esc(r.automatic)}</span>` +
+         (i.reasons && i.reasons.length ? `<div class="hint">${esc(i.reasons.join('; '))}</div>` : '') +
+         (r.installed_seed && r.installed_seed !== 1234 ? `<div class="hint">regenerated (seed ${r.installed_seed})</div>` : '');
+}
+function rowHtml(r) {
+  const d = decisions[r.rel_path];
+  const btns = ['VALID', 'INVALID'].map(v => `<button class="b ${v}${d && d.value === v ? ' active' : ''}" data-rel="${esc(r.rel_path)}" data-value="${v}">${v}</button>`).join('');
+  const dec = d ? `<b>${d.value}</b><br>${esc(d.validator)} · ${when(d.ts)}` : '<span class="hint">not validated</span>';
+  const pol = r.polarity === 'positive' ? '<span class="badge pos">Normal</span>' : '<span class="badge neg">Anomalous</span>';
+  const cls = (r.expectation || {}).class + ((r.expectation || {}).steer ? ' + steer' : '');
+  return `<tr id="row-${esc(r.rel_path)}" class="${d ? d.value : ''}">` +
+    `<td class="num">${r.k}<br><span class="hint">id ${r.taxonomy_id}</span></td>` +
+    `<td><video preload="none" controls muted src="/media/${esc(r.rel_path)}"></video><div class="hint">${esc(r.rel_path)}</div></td>` +
+    `<td>${pol}<div><b>${esc(r.object)}</b></div><div>${esc(r.ood_context)}</div><div class="hint">${esc((r.category || '').replace(/^Category \d+ — /, ''))}</div></td>` +
+    `<td><div class="sent">${esc(r.prompt_sentence)}</div><div class="cls">class: ${esc(cls)}</div></td>` +
+    `<td>${autoBadges(r)}</td><td class="dec">${dec}</td><td class="btns">${btns}</td></tr>`;
+}
+function renderAll() {
+  document.getElementById('main-body').innerHTML = rows.filter(r => !moved.has(r.rel_path)).map(rowHtml).join('') ||
+    '<tr><td class="empty" colspan="7">All rows have been moved to the Validated section.</td></tr>';
+  document.getElementById('val-body').innerHTML = rows.filter(r => moved.has(r.rel_path)).map(rowHtml).join('');
+  document.getElementById('validated').style.display = moved.size ? 'block' : 'none';
+  updateCounters();
+}
+function patchRow(rel) {
+  const r = rows.find(x => x.rel_path === rel), el = document.getElementById('row-' + rel);
+  if (r && el) el.outerHTML = rowHtml(r);
+  updateCounters();
+}
+function updateCounters() {
+  const dv = v => rows.filter(r => decisions[r.rel_path] && decisions[r.rel_path].value === v).length;
+  document.getElementById('count').innerHTML = `Reviewed <b>${dv('VALID') + dv('INVALID')}/${rows.length}</b> (valid ${dv('VALID')}, invalid ${dv('INVALID')})`;
+}
+async function load() {
+  const res = await fetch('/state');
+  if (res.status === 401) { location.href = '/login'; return; }
+  const s = await res.json();
+  rows = s.rows; decisions = s.decisions; renderAll();
+}
+async function decide(rel, value) {
+  const res = await fetch('/decide', {method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({rel_path: rel, value, validator: name})});
+  if (res.status === 401) { location.href = '/login'; return; }
+  if (!res.ok) { alert('Could not record decision: ' + (await res.text())); return; }
+  const d = await res.json();
+  decisions[d.rel_path] = {value: d.value, validator: d.validator, ts: d.ts};
+  patchRow(d.rel_path);
+}
+document.addEventListener('click', e => { const b = e.target.closest('button.b'); if (b) decide(b.dataset.rel, b.dataset.value); });
+document.getElementById('move').onclick = () => { rows.filter(r => decisions[r.rel_path]).forEach(r => moved.add(r.rel_path)); renderAll(); };
+function setConn(on) { document.getElementById('dot').className = 'dot' + (on ? ' on' : ''); document.getElementById('conn').textContent = on ? 'live' : 'reconnecting'; }
+function connect() {
+  const ws = new WebSocket((location.protocol === 'https:' ? 'wss' : 'ws') + '://' + location.host + '/ws');
+  ws.onopen = () => { backoff = 1000; setConn(true); load(); };
+  ws.onmessage = ev => { const m = JSON.parse(ev.data); if (m.type !== 'decision') return;
+    decisions[m.rel_path] = {value: m.value, validator: m.validator, ts: m.ts}; patchRow(m.rel_path); };
+  ws.onclose = () => { setConn(false); setTimeout(connect, backoff); backoff = Math.min(backoff * 2, 30000); };
+  ws.onerror = () => ws.close();
+}
+connect();
+</script>
+</body>
+</html>
