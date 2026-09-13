@@ -51,13 +51,20 @@ semantic anomaly detection, autonomous vehicles, vision--language models, action
 
 \section{Introduction}\label{sec:intro}
 
-Autonomous vehicles (AVs) now operate at commercial scale, and with that scale has come a steady record of failures in which perception performs exactly as designed and the vehicle still behaves incorrectly: a stop sign correctly detected, but printed on a billboard; brake lights correctly recognized, but part of an advertisement; flat road debris correctly classified, but actually a charged fire hose. These \emph{semantic anomalies}~\cite{b1} arise from objects appearing outside their nominal context. Documented incidents (robotaxis driving over deployed fire hoses, entering flooded roadways, passing stopped school buses, several ending in NHTSA recalls and NTSB investigations) show the failure class is a persistent obstacle to safe autonomy.
+Autonomous vehicles (AVs) now operate at commercial scale, and with that scale has come a steady record of failures in which perception performs exactly as designed and the vehicle still behaves incorrectly: a stop sign correctly detected, but printed on a billboard; brake lights correctly recognized, but part of an advertisement; flat road debris correctly classified, but actually a charged fire hose. These \emph{semantic anomalies}~\cite{b1} arise from objects appearing outside their nominal context (Fig.~\ref{fig:framework}). Documented incidents (robotaxis driving over deployed fire hoses, entering flooded roadways, passing stopped school buses, several ending in NHTSA recalls and NTSB investigations) show the failure class is a persistent obstacle to safe autonomy.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{fig_summary_headline.pdf}
+\caption{Video-only versus action-grounded anomaly reasoning for an autonomous vehicle.}
+\label{fig:summary}
+\end{figure}
 
 Early anomaly detection in driving operated on single images: OOD segmentation benchmarks (Fishyscapes~\cite{b2}, SegmentMeIfYouCan~\cite{b3}), generative resynthesis~\cite{b4}, corner-case detection (CODA~\cite{b5}), physical adversarial examples~\cite{b6}, and lately VLMs judging whether a frame is contextually unusual~\cite{b1}; but many semantic anomalies are defined by dynamics, invisible in a single frame. Video-based work supplies the temporal window: dashcam anomaly datasets (DoTA~\cite{b7}), language-aligned recognition (AnomalyCLIP~\cite{b8}), and driving-tuned multimodal models (DriveGPT4~\cite{b9}, DriveVLM~\cite{b10}, Cosmos-Reason1~\cite{b11}, post-trained by frameworks such as VLM-AutoDrive~\cite{b12}). The classic latency objection is closing: an NVFP4-quantized Cosmos-Reason1-7B reaches ${\sim}500$~ms per inference, a ${\sim}50\times$ speedup sufficient for continuous 1--2~Hz monitoring~\cite{b13}. Multi-view reasoning widens spatial context over standard surround rigs~\cite{b14}: BEV language maps~\cite{b15}, multi-view frameworks~\cite{b16}, spatio-temporal benchmarks~\cite{b17}, and view-grounding studies~\cite{b18} all report gains.
 
 Yet even with full temporal and spatial context, one input remains missing: \emph{what the vehicle is doing}. The omission is definitional. A semantic anomaly is a property of the scene--action pair: the billboard stop sign is benign if the ego vehicle drives past and anomalous if it brakes; the fire-hose scene is handled correctly if the vehicle stops and catastrophically if it proceeds. ``Is there an anomaly?'' is thus ambiguous in principle (the same clip admits both labels depending on the ego response, for human annotators no less than VLMs), and without the ego action the model must guess the vehicle's behavior from subtle visual cues.
 
-We close this gap by grounding VLM anomaly reasoning in the ego action: alongside the video, the model receives the vehicle's velocity-and-heading sequence and judges whether the \emph{behavior in context} reveals a semantic misunderstanding requiring intervention, converting an ill-posed scene-classification problem into a well-posed behavior-evaluation problem. No existing dataset can supervise this reframing: anomaly labels in dashcam corpora~\cite{b7}, corner-case sets~\cite{b5}, and driving QA benchmarks~\cite{b16,b17} attach to scenes or objects, not ego behavior, and standard perception suites~\cite{b14} contain almost no semantic-anomaly content. What is needed is a dataset in which each scenario appears with \emph{both} polarities of ego behavior, each paired with its action trajectory, so the label is unambiguous by construction.
+We close this gap by grounding VLM anomaly reasoning in the ego action (Fig.~\ref{fig:summary}): alongside the video, the model receives the vehicle's velocity-and-heading sequence and judges whether the \emph{behavior in context} reveals a semantic misunderstanding requiring intervention, converting an ill-posed scene-classification problem into a well-posed behavior-evaluation problem. No existing dataset can supervise this reframing: anomaly labels in dashcam corpora~\cite{b7}, corner-case sets~\cite{b5}, and driving QA benchmarks~\cite{b16,b17} attach to scenes or objects, not ego behavior, and standard perception suites~\cite{b14} contain almost no semantic-anomaly content. What is needed is a dataset in which each scenario appears with \emph{both} polarities of ego behavior, each paired with its action trajectory, so the label is unambiguous by construction.
 
 We construct such a dataset. From a six-field generation framework (object, nominal context, OOD context, normal action, anomalous action, example scenario) we develop a taxonomy of 112 scenario pairs spanning both failure polarities, 42 grounded in documented incidents (NHTSA recalls, NTSB investigations, published adversarial-ML attacks), and release \textbf{av\_semantic\_anomalies}: world-model-generated ego-view videos in matched normal/anomalous pairs, each with a per-timestep action trajectory (velocity and heading at 5~Hz and 10~Hz) recovered via inverse dynamics and validated heuristically and manually.
 
@@ -67,11 +74,18 @@ Our contributions are threefold: (i) we identify and formalize the action-ground
 
 \subsection{Semantic Anomalies Definition Framework}\label{sec:framework}
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\columnwidth]{fig_framework.png}
+\caption{Context displacement in the six-field framework, on the stop-sign example. The object (1) and its nominal context (2), where reacting is correct, fan out into out-of-distribution contexts (3) through displacement operators (worn, carried, reprinted, reflected, projected). In the selected billboard context, the normal (4) and anomalous (5) ego actions define a scenario pair whose example prompts (6) seed video generation.}
+\label{fig:framework}
+\end{figure}
+
 We define a \emph{semantic anomaly} as a driving failure in which perception performs as designed yet the vehicle behaves incorrectly because the object appears outside its nominal context~\cite{b1}: the detected stop sign \emph{is} a stop sign, but printed on a billboard, so the mandated response no longer applies. Semantic anomalies are disjoint from the pixel-level unknowns of OOD segmentation~\cite{b2,b3} (the object is in-distribution; its \emph{context} is not) and occupy the ISO~21448 (SOTIF) space of scenarios unsafe without any component fault~\cite{b19}.
 
 To define such scenarios systematically we draw on hazard enumeration in safety engineering: HARA under ISO~26262~\cite{b20}, scenario-based testing~\cite{b21}, and recent LLM automation of these analyses~\cite{b22}, productized in platforms such as General Autonomy's G-Assess~\cite{b23}. Those methods enumerate hazards top-down from vehicle \emph{functions}; our framework instead factors the anomaly bottom-up around a driving entity and its context, and defines the label by the ego action within the scene.
 
-Every scenario decomposes into the six fields of Table~\ref{tab:framework}, each field's output feeding the next. Fields 1--3 build the scene: a semantically loaded object with a mandated response, its nominal context, and a displacement of the object or a look-alike into an OOD context, appearance preserved, via reusable operators (\emph{relocate}, \emph{reprint}, \emph{carry as cargo}, \emph{reflect}, \emph{project}, \emph{natural mimic}). Fields 4--5 give the behavioral contrast: the Normal Action of a context-aware driver versus the Anomalous Action of a pattern-matching stack. Field 6 collapses the row into a one-sentence scenario used as the generation seed.
+Every scenario decomposes into the six fields of Table~\ref{tab:framework}, each field's output feeding the next. Fields 1--3 build the scene: a semantically loaded object with a mandated response, its nominal context, and a displacement of the object or a look-alike into an OOD context, appearance preserved, via reusable operators (Fig.~\ref{fig:framework}; \emph{relocate}, \emph{reprint}, \emph{carry as cargo}, \emph{reflect}, \emph{project}, \emph{natural mimic}). Fields 4--5 give the behavioral contrast: the Normal Action of a context-aware driver versus the Anomalous Action of a pattern-matching stack. Field 6 collapses the row into a one-sentence scenario used as the generation seed.
 
 \begin{table}[htbp]
 \caption{The six-field semantic-anomaly framework}
@@ -309,9 +323,9 @@ $1248\times720\,{\uparrow}$, 8~fps & ${\approx}\,11.7$k & \textbf{0.736} \\
 \caption{Stage-2 action representation (two-stage, 80-clip development subset; stage 1 fixed)}
 \begin{center}
 \footnotesize
-\begin{tabular}{|p{3.6cm}|c|c|}
+\begin{tabular}{|p{3.05cm}|c|c|}
 \hline
-\textbf{Stage-2 formulation} & \textbf{Acc.} & \textbf{Comparator acc. given correct expectation} \\
+\textbf{Stage-2 formulation} & \textbf{Acc.} & \parbox[c]{3.05cm}{\centering\textbf{Comparator acc.}\\\textbf{(correct expectation)}\vspace{1pt}} \\
 \hline
 Raw $[[v, \psi]]$, free-form comparison & 0.613 & ${\approx}\,0.70$ \\
 \hline
