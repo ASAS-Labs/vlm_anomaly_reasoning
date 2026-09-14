@@ -1,0 +1,7096 @@
+{
+ "schema": 1,
+ "clips": {
+  "positive_scenarios/prompt_0.mp4": {
+   "taxonomy_id": 13,
+   "k": 0,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Stop sign",
+   "ood_context": "Red octagonal Burger King logo on a pole atop a hill",
+   "prompt_sentence": "The ego vehicle recognizes the logo as an advertisement and continues driving at its normal cruising speed past the hill without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.144,
+    "tail_flow": 0.114,
+    "peak_flow": 0.236,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 54.39,
+    "end_v": 51.28,
+    "v_final": 38.18,
+    "max_abs_heading": 15.62
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_1.mp4": {
+   "taxonomy_id": 14,
+   "k": 1,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Speed-limit sign",
+   "ood_context": "“35” altered with a 2-inch tape strip extending the middle bar of the 3",
+   "prompt_sentence": "The ego vehicle correctly reads the posted limit, slows down to the lower posted speed as it passes the sign, and keeps rolling at that reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.17,
+    "tail_flow": 0.148,
+    "peak_flow": 0.305,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.92"
+    ],
+    "start_v": 40.51,
+    "end_v": 37.34,
+    "v_final": 29.07,
+    "max_abs_heading": 31.09
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_2.mp4": {
+   "taxonomy_id": 15,
+   "k": 2,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Stop sign",
+   "ood_context": "Stop sign with small black/white adversarial stickers",
+   "prompt_sentence": "The ego vehicle still recognizes the stop sign despite the stickers, brakes smoothly and comes to a complete stop at the marked line, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.321,
+    "tail_flow": 0.013,
+    "peak_flow": 0.374,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 10.77,
+    "end_v": 0.17,
+    "v_final": 0.19,
+    "max_abs_heading": 4.65
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_3.mp4": {
+   "taxonomy_id": 17,
+   "k": 3,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Stop sign",
+   "ood_context": "Miniature decorative stop sign in a front-yard garden",
+   "prompt_sentence": "The ego vehicle ignores the ornamental sign and continues driving at its normal cruising speed past the garden without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.177,
+    "tail_flow": 1.145,
+    "peak_flow": 2.322,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 20.72,
+    "end_v": 19.91,
+    "v_final": 14.62,
+    "max_abs_heading": 55.18
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_4.mp4": {
+   "taxonomy_id": 19,
+   "k": 4,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Speed-limit sign",
+   "ood_context": "Speed number printed on the side of a parked ad trailer",
+   "prompt_sentence": "The ego vehicle recognizes the advertisement, obeys the real posted sign, slows down to the lower town speed, and keeps rolling at that reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.338,
+    "tail_flow": 0.354,
+    "peak_flow": 1.213,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.87"
+    ],
+    "start_v": 21.23,
+    "end_v": 18.56,
+    "v_final": 14.2,
+    "max_abs_heading": 30.36
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_5.mp4": {
+   "taxonomy_id": 21,
+   "k": 5,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Traffic light",
+   "ood_context": "Amber rotating beacon on a parked tow/utility truck",
+   "prompt_sentence": "The ego vehicle treats the beacon as a parked-vehicle hazard light and continues driving at its normal cruising speed past the tow truck without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.156,
+    "tail_flow": 0.125,
+    "peak_flow": 0.484,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 11.71,
+    "end_v": 9.72,
+    "v_final": 8.17,
+    "max_abs_heading": 15.61
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_6.mp4": {
+   "taxonomy_id": 23,
+   "k": 6,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Digital road sign",
+   "ood_context": "Digital billboard flashing a stop sign for a split second",
+   "prompt_sentence": "The ego vehicle ignores the transient billboard frame and continues driving at its normal cruising speed past the billboard without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.19,
+    "tail_flow": 0.125,
+    "peak_flow": 0.298,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 51.31,
+    "end_v": 48.72,
+    "v_final": 40.05,
+    "max_abs_heading": 18.01
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_7.mp4": {
+   "taxonomy_id": 24,
+   "k": 7,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "No-entry sign",
+   "ood_context": "Do-not-enter icon printed on a truck's rear roll-up door",
+   "prompt_sentence": "The ego vehicle recognizes the graphic as a decal and continues driving at its normal cruising speed behind the truck without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.169,
+    "tail_flow": 0.206,
+    "peak_flow": 0.527,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 16.9,
+    "end_v": 12.68,
+    "v_final": 9.51,
+    "max_abs_heading": 21.08
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_8.mp4": {
+   "taxonomy_id": 25,
+   "k": 8,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "School-bus stop-arm",
+   "ood_context": "Stop-arm decal painted on a non-bus delivery van",
+   "prompt_sentence": "The ego vehicle ignores the painted decal and continues driving at its normal cruising speed behind the van without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.103,
+    "tail_flow": 0.042,
+    "peak_flow": 0.133,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.27"
+    ],
+    "start_v": 2.29,
+    "end_v": 0.62,
+    "v_final": 0.8,
+    "max_abs_heading": 4.41
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_9.mp4": {
+   "taxonomy_id": 27,
+   "k": 9,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Traffic light",
+   "ood_context": "Deactivated traffic signals hauled as cargo on a flatbed ahead",
+   "prompt_sentence": "The ego vehicle recognizes the signals as cargo and continues driving at its normal cruising speed a safe distance behind the truck without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.097,
+    "tail_flow": 0.151,
+    "peak_flow": 0.291,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 42.66,
+    "end_v": 39.81,
+    "v_final": 30.8,
+    "max_abs_heading": 6.75
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_10.mp4": {
+   "taxonomy_id": 28,
+   "k": 10,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Life-size cardboard cutout/standee at the roadside",
+   "prompt_sentence": "The ego vehicle recognizes the flat cutout and continues driving at its normal cruising speed past the shop without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.181,
+    "tail_flow": 0.219,
+    "peak_flow": 0.827,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 28.15,
+    "end_v": 25.49,
+    "v_final": 19.06,
+    "max_abs_heading": 23.96
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_11.mp4": {
+   "taxonomy_id": 29,
+   "k": 11,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Child pedestrian",
+   "ood_context": "Child-size mannequin crossing in front of a stopped school bus, stop-arm out",
+   "prompt_sentence": "The ego vehicle detects the child-shaped figure and the bus, brakes smoothly and comes to a complete stop well before the crossing point, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.142,
+    "tail_flow": 0.024,
+    "peak_flow": 0.18,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 10.38,
+    "end_v": 0.11,
+    "v_final": 0.22,
+    "max_abs_heading": 3.75
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_12.mp4": {
+   "taxonomy_id": 30,
+   "k": 12,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Photos of people printed on a bus wrap / truck-side ad",
+   "prompt_sentence": "The ego vehicle recognizes the printed figures and continues driving at its normal cruising speed alongside the bus without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.398,
+    "tail_flow": 0.14,
+    "peak_flow": 1.974,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 28.64,
+    "end_v": 32.49,
+    "v_final": 24.89,
+    "max_abs_heading": 2.44
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_13.mp4": {
+   "taxonomy_id": 31,
+   "k": 13,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Person in a full-body dinosaur/mascot costume near a crosswalk",
+   "prompt_sentence": "The ego vehicle treats the costumed figure as a pedestrian, brakes smoothly and comes to a complete stop before the crosswalk to yield, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.066,
+    "tail_flow": 0.02,
+    "peak_flow": 0.105,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 5.39,
+    "end_v": 0.15,
+    "v_final": 0.33,
+    "max_abs_heading": 9.19
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_14.mp4": {
+   "taxonomy_id": 32,
+   "k": 14,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Person lying prone or doing yoga in the roadway",
+   "prompt_sentence": "The ego vehicle detects the low human shape, brakes smoothly and comes to a complete stop well before the person, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.141,
+    "tail_flow": 0.021,
+    "peak_flow": 0.213,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 16.29,
+    "end_v": 0.13,
+    "v_final": 0.03,
+    "max_abs_heading": 4.77
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_15.mp4": {
+   "taxonomy_id": 33,
+   "k": 15,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Motionless silver “living statue” street performer",
+   "prompt_sentence": "The ego vehicle recognizes the motionless performer as a human, slows down markedly and holds a wide clearance while passing, and keeps rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.403,
+    "tail_flow": 0.305,
+    "peak_flow": 0.562,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.44,
+    "end_v": 4.25,
+    "v_final": 3.48,
+    "max_abs_heading": 16.24
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_16.mp4": {
+   "taxonomy_id": 34,
+   "k": 16,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Store mannequins displayed at the curb",
+   "prompt_sentence": "The ego vehicle recognizes the inanimate mannequins and continues driving at its normal cruising speed past the store without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.303,
+    "tail_flow": 0.27,
+    "peak_flow": 0.608,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 7.06,
+    "end_v": 7.7,
+    "v_final": 6.74,
+    "max_abs_heading": 31.24
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_17.mp4": {
+   "taxonomy_id": 35,
+   "k": 17,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Worker in retroreflective high-vis clothing causing camera bloom at night",
+   "prompt_sentence": "The ego vehicle detects the worker behind the glare, slows down markedly as it passes the cones, and keeps rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.079,
+    "tail_flow": 0.121,
+    "peak_flow": 0.177,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 20.68,
+    "end_v": 11.68,
+    "v_final": 8.73,
+    "max_abs_heading": 3.97
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_18.mp4": {
+   "taxonomy_id": 36,
+   "k": 18,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Person carrying a large mirror/glass pane reflecting the road",
+   "prompt_sentence": "The ego vehicle detects the person and the mirror they carry, brakes smoothly and comes to a complete stop well before them, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.044,
+    "tail_flow": 0.324,
+    "peak_flow": 0.485,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.33,
+    "end_v": 1.06,
+    "v_final": 1.57,
+    "max_abs_heading": 4.27
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_19.mp4": {
+   "taxonomy_id": 38,
+   "k": 19,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Wheelchair user",
+   "ood_context": "Person in a wheelchair/mobility scooter at unusual height and speed",
+   "prompt_sentence": "The ego vehicle detects the scooter user as a pedestrian, brakes smoothly and comes to a complete stop before the crossing to yield, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.016,
+    "tail_flow": 0.085,
+    "peak_flow": 0.275,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 15.28,
+    "end_v": 1.73,
+    "v_final": 0.59,
+    "max_abs_heading": 14.65
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_20.mp4": {
+   "taxonomy_id": 39,
+   "k": 20,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Cyclist/pedestrian",
+   "ood_context": "Person carrying a mattress/door across the road at dusk",
+   "prompt_sentence": "The ego vehicle recognizes the odd silhouette as a person carrying an object, slows down markedly to give them room, and keeps rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.017,
+    "tail_flow": 0.055,
+    "peak_flow": 0.09,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=8.07"
+    ],
+    "start_v": 0.24,
+    "end_v": 1.96,
+    "v_final": 2.54,
+    "max_abs_heading": 3.69
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_21.mp4": {
+   "taxonomy_id": 40,
+   "k": 21,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Dog",
+   "ood_context": "Small off-leash dog darting from behind a parked object into the road",
+   "prompt_sentence": "The ego vehicle detects the dog, brakes hard and comes to a complete stop before reaching it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.022,
+    "tail_flow": 0.07,
+    "peak_flow": 0.165,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 19.75,
+    "end_v": 1.93,
+    "v_final": 1.47,
+    "max_abs_heading": 13.26
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_22.mp4": {
+   "taxonomy_id": 41,
+   "k": 22,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Large animal",
+   "ood_context": "Kangaroo hopping — airborne, then landing",
+   "prompt_sentence": "The ego vehicle judges the kangaroo's distance correctly, brakes firmly and comes to a complete stop before it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.022,
+    "tail_flow": 0.022,
+    "peak_flow": 0.044,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 1.33,
+    "end_v": 0.93,
+    "v_final": 1.2,
+    "max_abs_heading": 1.86
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_23.mp4": {
+   "taxonomy_id": 42,
+   "k": 23,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Bird flock",
+   "ood_context": "Flock of pigeons/geese settled on the roadway",
+   "prompt_sentence": "The ego vehicle slows down gently as it approaches so the birds can scatter, and keeps rolling at the reduced speed as they fly off.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.116,
+    "tail_flow": 0.057,
+    "peak_flow": 3.229,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=1.11"
+    ],
+    "start_v": 9.43,
+    "end_v": 10.42,
+    "v_final": 10.68,
+    "max_abs_heading": 4.28
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_24.mp4": {
+   "taxonomy_id": 43,
+   "k": 24,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Animal",
+   "ood_context": "Plywood deer decoy or deer-crossing sign silhouette",
+   "prompt_sentence": "The ego vehicle recognizes the decoy and sign and continues driving at its normal cruising speed past them without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.813,
+    "tail_flow": 0.805,
+    "peak_flow": 1.418,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 27.98,
+    "end_v": 27.49,
+    "v_final": 20.49,
+    "max_abs_heading": 12.85
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_25.mp4": {
+   "taxonomy_id": 44,
+   "k": 25,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Cat",
+   "ood_context": "Small cat sitting low near a parked car at night",
+   "prompt_sentence": "The ego vehicle detects the low still animal, slows down and steers gently to the left to pass well clear of the cat.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.036,
+    "tail_flow": 0.168,
+    "peak_flow": 0.195,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=4.88"
+    ],
+    "start_v": 1.2,
+    "end_v": 5.86,
+    "v_final": 6.47,
+    "max_abs_heading": 13.95
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_26.mp4": {
+   "taxonomy_id": 46,
+   "k": 26,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Leashed dog",
+   "ood_context": "Large dog on a leash with a jogger crossing together",
+   "prompt_sentence": "The ego vehicle treats the jogger and dog as one linked group, brakes smoothly and comes to a complete stop until both have crossed, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.683,
+    "tail_flow": 0.271,
+    "peak_flow": 0.856,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=2.2 final=3.5 mph"
+    ],
+    "start_v": 14.08,
+    "end_v": 2.21,
+    "v_final": 3.53,
+    "max_abs_heading": 4.18
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_27.mp4": {
+   "taxonomy_id": 47,
+   "k": 27,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Livestock",
+   "ood_context": "Cattle/sheep herd occupying the whole road",
+   "prompt_sentence": "The ego vehicle brakes smoothly and comes to a complete stop well before the herd to wait for it to pass, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.999,
+    "tail_flow": 0.251,
+    "peak_flow": 1.169,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 10.68,
+    "end_v": 0.7,
+    "v_final": 0.93,
+    "max_abs_heading": 5.07
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_28.mp4": {
+   "taxonomy_id": 49,
+   "k": 28,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Sensor occluder",
+   "ood_context": "Bird dropping/leaf/bug splatter blocking a camera",
+   "prompt_sentence": "The ego vehicle recognizes the degraded view, slows down markedly, and keeps rolling at the reduced speed while the lens stays obscured.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.095,
+    "tail_flow": 0.086,
+    "peak_flow": 0.171,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.94"
+    ],
+    "start_v": 66.87,
+    "end_v": 62.84,
+    "v_final": 46.22,
+    "max_abs_heading": 3.29
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_29.mp4": {
+   "taxonomy_id": 50,
+   "k": 29,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Pyrotechnics/smoke",
+   "ood_context": "Lit fireworks and colored smoke in the road on July 4",
+   "prompt_sentence": "The ego vehicle recognizes the lit fireworks as a hazard, brakes and comes to a complete stop well before the smoke and sparks, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.034,
+    "tail_flow": 0.031,
+    "peak_flow": 0.074,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.56,
+    "end_v": 0.53,
+    "v_final": 0.86,
+    "max_abs_heading": 8.14
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_30.mp4": {
+   "taxonomy_id": 51,
+   "k": 30,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Overpass shadow",
+   "ood_context": "Hard dark shadow cast across the lane by an overpass",
+   "prompt_sentence": "The ego vehicle recognizes the shadow as a shadow and continues driving at its normal cruising speed through it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.601,
+    "tail_flow": 0.227,
+    "peak_flow": 7.451,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 71.85,
+    "end_v": 67.51,
+    "v_final": 59.84,
+    "max_abs_heading": 9.75
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_31.mp4": {
+   "taxonomy_id": 52,
+   "k": 31,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Low sun",
+   "ood_context": "Low sun at sunrise/sunset blinding forward cameras",
+   "prompt_sentence": "The ego vehicle recognizes its degraded forward vision, slows down markedly, and keeps rolling at the reduced speed through the glare.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.018,
+    "tail_flow": 0.017,
+    "peak_flow": 0.05,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.92"
+    ],
+    "start_v": 50.7,
+    "end_v": 46.66,
+    "v_final": 34.88,
+    "max_abs_heading": 5.7
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_32.mp4": {
+   "taxonomy_id": 53,
+   "k": 32,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Fog",
+   "ood_context": "Dense fog hiding a stopped obstacle/child ahead",
+   "prompt_sentence": "The ego vehicle picks out the figure in the fog, brakes firmly and comes to a complete stop well before it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.021,
+    "tail_flow": 0.012,
+    "peak_flow": 0.041,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 24.96,
+    "end_v": 0.36,
+    "v_final": 0.47,
+    "max_abs_heading": 8.59
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_33.mp4": {
+   "taxonomy_id": 54,
+   "k": 33,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Rain spray",
+   "ood_context": "Downpour with heavy spray and lane reflections",
+   "prompt_sentence": "The ego vehicle recognizes the poor conditions, slows down markedly to widen its following distance, and keeps rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.147,
+    "tail_flow": 0.26,
+    "peak_flow": 0.4,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.95"
+    ],
+    "start_v": 53.75,
+    "end_v": 50.86,
+    "v_final": 40.74,
+    "max_abs_heading": 7.38
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_34.mp4": {
+   "taxonomy_id": 55,
+   "k": 34,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Steam/exhaust",
+   "ood_context": "Steam from a manhole or cold-weather exhaust plume",
+   "prompt_sentence": "The ego vehicle recognizes the plume as vapor and continues driving at its normal cruising speed straight through the steam without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.038,
+    "tail_flow": 0.074,
+    "peak_flow": 0.098,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=3.28"
+    ],
+    "start_v": 2.77,
+    "end_v": 9.08,
+    "v_final": 7.94,
+    "max_abs_heading": 3.29
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_35.mp4": {
+   "taxonomy_id": 57,
+   "k": 35,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Dust/whiteout",
+   "ood_context": "Blowing dust reducing visibility to near zero",
+   "prompt_sentence": "The ego vehicle slows down sharply as the dust closes in and keeps creeping along at a crawl toward the shoulder.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.12,
+    "tail_flow": 0.032,
+    "peak_flow": 0.244,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.76"
+    ],
+    "start_v": 50.11,
+    "end_v": 38.25,
+    "v_final": 25.55,
+    "max_abs_heading": 27.43
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_36.mp4": {
+   "taxonomy_id": 59,
+   "k": 36,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "LED glare",
+   "ood_context": "Oncoming truck's high-mounted flashing LED light bar",
+   "prompt_sentence": "The ego vehicle ignores the glare, holds its lane, and continues driving at its normal cruising speed past the truck without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.03,
+    "tail_flow": 0.025,
+    "peak_flow": 0.419,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 48.31,
+    "end_v": 45.54,
+    "v_final": 37.16,
+    "max_abs_heading": 8.74
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_37.mp4": {
+   "taxonomy_id": 60,
+   "k": 37,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Falling particulates",
+   "ood_context": "Swirl of leaves, ash, or light hail toward the windshield",
+   "prompt_sentence": "The ego vehicle recognizes the leaves as harmless and continues driving at its normal cruising speed through the swirl without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 1.488,
+    "tail_flow": 0.715,
+    "peak_flow": 2.379,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 21.89,
+    "end_v": 22.28,
+    "v_final": 16.36,
+    "max_abs_heading": 5.2
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_38.mp4": {
+   "taxonomy_id": 61,
+   "k": 38,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Surface marks",
+   "ood_context": "Black tar-sealant “snakes” / long skid marks along the lane",
+   "prompt_sentence": "The ego vehicle ignores the tar marks, holds the true lane, and continues driving at its normal cruising speed without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.573,
+    "tail_flow": 1.697,
+    "peak_flow": 3.372,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 37.01,
+    "end_v": 33.95,
+    "v_final": 26.35,
+    "max_abs_heading": 13.5
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_39.mp4": {
+   "taxonomy_id": 62,
+   "k": 39,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Wet concrete",
+   "ood_context": "Freshly poured wet concrete in a rebuilt lane",
+   "prompt_sentence": "The ego vehicle recognizes the closed surface, brakes and comes to a complete stop before the wet concrete, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 1.08,
+    "tail_flow": 0.012,
+    "peak_flow": 1.227,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 12.44,
+    "end_v": 0.08,
+    "v_final": 0.12,
+    "max_abs_heading": 6.89
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_40.mp4": {
+   "taxonomy_id": 63,
+   "k": 40,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Flooded road",
+   "ood_context": "Deep standing water flooding a 40-mph roadway",
+   "prompt_sentence": "The ego vehicle recognizes the impassable flood, brakes and comes to a complete stop at the edge of the water, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.21,
+    "tail_flow": 0.063,
+    "peak_flow": 0.565,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 25.49,
+    "end_v": 1.66,
+    "v_final": 1.34,
+    "max_abs_heading": 7.93
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_41.mp4": {
+   "taxonomy_id": 65,
+   "k": 41,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Contraflow lane",
+   "ood_context": "Reversed/contraflow lane coned off during roadwork",
+   "prompt_sentence": "The ego vehicle slows down and steers along the coned contraflow, following the temporary yellow markings.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.028,
+    "tail_flow": 0.042,
+    "peak_flow": 1.05,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.96"
+    ],
+    "start_v": 24.88,
+    "end_v": 23.93,
+    "v_final": 18.12,
+    "max_abs_heading": 49.22
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_42.mp4": {
+   "taxonomy_id": 66,
+   "k": 42,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Flush road edge",
+   "ood_context": "Alley with poles flush to the road, only yellow edge lines",
+   "prompt_sentence": "The ego vehicle recognizes the pole, slows down and steers left to keep well clear of it before pulling over.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.021,
+    "tail_flow": 0.381,
+    "peak_flow": 0.606,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 20.58,
+    "end_v": 7.89,
+    "v_final": 6.21,
+    "max_abs_heading": 28.71
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_43.mp4": {
+   "taxonomy_id": 67,
+   "k": 43,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Road debris",
+   "ood_context": "Floor mat or mud tracked across the lane",
+   "prompt_sentence": "The ego vehicle recognizes the mat as minor debris and continues driving at its normal cruising speed straight over it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.082,
+    "tail_flow": 0.071,
+    "peak_flow": 2.301,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 33.41,
+    "end_v": 31.41,
+    "v_final": 22.14,
+    "max_abs_heading": 22.63
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_44.mp4": {
+   "taxonomy_id": 68,
+   "k": 44,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Tumbleweed",
+   "ood_context": "Tumbleweed rolling across the highway",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed through the path of the tumbleweed without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.359,
+    "tail_flow": 0.385,
+    "peak_flow": 6.932,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 48.15,
+    "end_v": 46.57,
+    "v_final": 35.55,
+    "max_abs_heading": 25.2
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_45.mp4": {
+   "taxonomy_id": 69,
+   "k": 45,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Asphalt patch",
+   "ood_context": "Fresh dark asphalt patch over potholes",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed straight over the patch without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.015,
+    "tail_flow": 0.218,
+    "peak_flow": 0.462,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 7.71,
+    "end_v": 7.35,
+    "v_final": 6.73,
+    "max_abs_heading": 5.65
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_46.mp4": {
+   "taxonomy_id": 70,
+   "k": 46,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Sinkhole/manhole",
+   "ood_context": "Sudden sinkhole or uncovered manhole in the lane",
+   "prompt_sentence": "The ego vehicle detects the void, slows down and steers to the left to pass around the open manhole.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.027,
+    "tail_flow": 0.095,
+    "peak_flow": 0.2,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 18.56,
+    "end_v": 10.5,
+    "v_final": 10.99,
+    "max_abs_heading": 51.95
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_47.mp4": {
+   "taxonomy_id": 71,
+   "k": 47,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Towed vehicle",
+   "ood_context": "Pickup towed backwards, persistently angled across a turn lane",
+   "prompt_sentence": "The ego vehicle predicts the angled pickup's path, slows down markedly, and keeps rolling at the reduced speed well behind it.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.377,
+    "tail_flow": 0.183,
+    "peak_flow": 0.684,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 21.18,
+    "end_v": 5.53,
+    "v_final": 3.39,
+    "max_abs_heading": 5.92
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_48.mp4": {
+   "taxonomy_id": 72,
+   "k": 48,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Overhanging cargo",
+   "ood_context": "Truck with a ladder/pipe extending past its tailgate at head height",
+   "prompt_sentence": "The ego vehicle detects the protruding ladder, slows down to drop well back from the truck, and keeps rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.279,
+    "tail_flow": 0.068,
+    "peak_flow": 0.4,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=1.25"
+    ],
+    "start_v": 8.99,
+    "end_v": 11.2,
+    "v_final": 9.18,
+    "max_abs_heading": 3.32
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_49.mp4": {
+   "taxonomy_id": 73,
+   "k": 49,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Vehicle wrap",
+   "ood_context": "Van wrapped with a photo of an open road or another car",
+   "prompt_sentence": "The ego vehicle recognizes the wrapped van as a vehicle and slows down markedly behind it, keeping its distance at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.08,
+    "tail_flow": 0.193,
+    "peak_flow": 0.304,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.92"
+    ],
+    "start_v": 13.24,
+    "end_v": 12.12,
+    "v_final": 10.01,
+    "max_abs_heading": 1.27
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_50.mp4": {
+   "taxonomy_id": 74,
+   "k": 50,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Oversized load",
+   "ood_context": "Wide load (boat, turbine blade) spanning lanes",
+   "prompt_sentence": "The ego vehicle recognizes the blade's extent, slows down markedly and hugs the right edge to keep a wide clearance, rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.258,
+    "tail_flow": 0.596,
+    "peak_flow": 0.854,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.92"
+    ],
+    "start_v": 35.36,
+    "end_v": 32.54,
+    "v_final": 24.2,
+    "max_abs_heading": 38.16
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_51.mp4": {
+   "taxonomy_id": 75,
+   "k": 51,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Ex-emergency vehicle",
+   "ood_context": "Retired police/ambulance replica with a dormant light bar",
+   "prompt_sentence": "The ego vehicle treats it as an ordinary parked vehicle and continues driving at its normal cruising speed past it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.301,
+    "tail_flow": 0.162,
+    "peak_flow": 0.578,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 17.68,
+    "end_v": 17.98,
+    "v_final": 13.81,
+    "max_abs_heading": 17.97
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_52.mp4": {
+   "taxonomy_id": 79,
+   "k": 52,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Articulated trailer",
+   "ood_context": "Trailer swinging wide on a turn",
+   "prompt_sentence": "The ego vehicle anticipates the trailer's swing, stays back with a complete stop held at its position, and remains stationary until the trailer clears.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.051,
+    "tail_flow": 0.073,
+    "peak_flow": 0.133,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.11,
+    "end_v": 0.92,
+    "v_final": 1.25,
+    "max_abs_heading": 3.86
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_53.mp4": {
+   "taxonomy_id": 80,
+   "k": 53,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Glass/mirror cargo",
+   "ood_context": "Truck hauling large mirrors reflecting the road and sky",
+   "prompt_sentence": "The ego vehicle recognizes the reflective cargo as part of the truck and slows down markedly behind it, keeping its distance at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.1,
+    "tail_flow": 0.162,
+    "peak_flow": 0.266,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.96"
+    ],
+    "start_v": 32.55,
+    "end_v": 31.25,
+    "v_final": 24.39,
+    "max_abs_heading": 7.47
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_54.mp4": {
+   "taxonomy_id": 81,
+   "k": 54,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Fire engine",
+   "ood_context": "Fire engine at an active scene needing the lane",
+   "prompt_sentence": "The ego vehicle yields, slows down and steers to the right edge of the street to clear the path.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.132,
+    "tail_flow": 0.492,
+    "peak_flow": 0.673,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.76",
+     "expected steering, max|heading|=1.1deg"
+    ],
+    "start_v": 9.0,
+    "end_v": 6.81,
+    "v_final": 5.96,
+    "max_abs_heading": 1.09
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_55.mp4": {
+   "taxonomy_id": 82,
+   "k": 55,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Fire hose",
+   "ood_context": "Charged fire hose laid across the roadway",
+   "prompt_sentence": "The ego vehicle recognizes the hose, brakes and comes to a complete stop well before it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.325,
+    "tail_flow": 0.028,
+    "peak_flow": 0.378,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 10.81,
+    "end_v": 0.25,
+    "v_final": 0.06,
+    "max_abs_heading": 7.28
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_56.mp4": {
+   "taxonomy_id": 83,
+   "k": 56,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Scene barrier",
+   "ood_context": "Police caution tape and flares marking a closed scene",
+   "prompt_sentence": "The ego vehicle recognizes the closure, brakes and comes to a complete stop before the caution tape, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.146,
+    "tail_flow": 0.025,
+    "peak_flow": 0.205,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 7.65,
+    "end_v": 0.14,
+    "v_final": 0.18,
+    "max_abs_heading": 5.34
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_57.mp4": {
+   "taxonomy_id": 84,
+   "k": 57,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "School bus",
+   "ood_context": "Stopped bus, red lights flashing, stop-arm extended",
+   "prompt_sentence": "The ego vehicle recognizes the active school bus, brakes smoothly and comes to a complete stop well behind it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.246,
+    "tail_flow": 0.038,
+    "peak_flow": 0.497,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.68,
+    "end_v": 0.72,
+    "v_final": 0.73,
+    "max_abs_heading": 9.99
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_58.mp4": {
+   "taxonomy_id": 85,
+   "k": 58,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Emergency lights",
+   "ood_context": "Ambulance/police flashers and flares at a roadside incident",
+   "prompt_sentence": "The ego vehicle detects the incident, slows down and steers into the left lane to move over from the responders.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.068,
+    "tail_flow": 0.285,
+    "peak_flow": 0.521,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.90",
+     "expected steering, max|heading|=1.1deg"
+    ],
+    "start_v": 44.71,
+    "end_v": 40.45,
+    "v_final": 29.58,
+    "max_abs_heading": 1.08
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_59.mp4": {
+   "taxonomy_id": 86,
+   "k": 59,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Post-event crowd",
+   "ood_context": "Post-fireworks gridlock, dense crowds, degraded connectivity",
+   "prompt_sentence": "The ego vehicle slows down to a crawl and keeps creeping forward with the traffic as the crowd flows around it.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.272,
+    "tail_flow": 0.27,
+    "peak_flow": 0.411,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 6.91,
+    "end_v": 3.88,
+    "v_final": 3.03,
+    "max_abs_heading": 8.09
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_60.mp4": {
+   "taxonomy_id": 87,
+   "k": 60,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Funeral procession",
+   "ood_context": "Slow procession legally running a red as a group",
+   "prompt_sentence": "The ego vehicle recognizes the procession and holds a complete stop at the line until the last car passes, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.078,
+    "tail_flow": 0.185,
+    "peak_flow": 0.21,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=3.3 final=3.5 mph"
+    ],
+    "start_v": 0.12,
+    "end_v": 3.31,
+    "v_final": 3.48,
+    "max_abs_heading": 7.98
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_61.mp4": {
+   "taxonomy_id": 88,
+   "k": 61,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Parade/marathon",
+   "ood_context": "Runners or a parade filling a closed street",
+   "prompt_sentence": "The ego vehicle recognizes the closure, brakes and comes to a complete stop before the barricades, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.204,
+    "tail_flow": 0.103,
+    "peak_flow": 0.49,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 15.88,
+    "end_v": 1.4,
+    "v_final": 0.95,
+    "max_abs_heading": 23.52
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_62.mp4": {
+   "taxonomy_id": 89,
+   "k": 62,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Protest cone",
+   "ood_context": "Protester placing a traffic cone on the hood",
+   "prompt_sentence": "The ego vehicle recognizes the cone as harmless, slows down and steers gently around the protester to move on.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.025,
+    "tail_flow": 0.607,
+    "peak_flow": 0.699,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=105.48"
+    ],
+    "start_v": 0.07,
+    "end_v": 7.68,
+    "v_final": 6.92,
+    "max_abs_heading": 14.59
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_63.mp4": {
+   "taxonomy_id": 90,
+   "k": 63,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Active police scene",
+   "ood_context": "Mass-casualty scene with EMS attempting a U-turn",
+   "prompt_sentence": "The ego vehicle yields to the ambulance, slows down and steers to the right curb to clear the road.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.203,
+    "tail_flow": 0.293,
+    "peak_flow": 0.341,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected steering, max|heading|=3.5deg"
+    ],
+    "start_v": 5.43,
+    "end_v": 2.91,
+    "v_final": 3.03,
+    "max_abs_heading": 3.49
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_64.mp4": {
+   "taxonomy_id": 91,
+   "k": 64,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Crossing guard",
+   "ood_context": "Guard holding a handheld STOP paddle",
+   "prompt_sentence": "The ego vehicle recognizes the guard's paddle, brakes smoothly and comes to a complete stop before the crosswalk, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.506,
+    "tail_flow": 0.014,
+    "peak_flow": 0.65,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 12.57,
+    "end_v": 0.15,
+    "v_final": 0.07,
+    "max_abs_heading": 5.69
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_65.mp4": {
+   "taxonomy_id": 92,
+   "k": 65,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Storm debris",
+   "ood_context": "Fallen tree/downed power line across the lane",
+   "prompt_sentence": "The ego vehicle detects the limb and the drooping line, brakes and comes to a complete stop well before them, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.251,
+    "tail_flow": 0.015,
+    "peak_flow": 0.276,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 12.46,
+    "end_v": 0.09,
+    "v_final": 0.14,
+    "max_abs_heading": 4.55
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_66.mp4": {
+   "taxonomy_id": 93,
+   "k": 66,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Projected pedestrian",
+   "ood_context": "Image of a person projected onto the road for a split second",
+   "prompt_sentence": "The ego vehicle ignores the depthless projection and continues driving at its normal cruising speed through the spot without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.093,
+    "tail_flow": 0.114,
+    "peak_flow": 0.254,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 39.76,
+    "end_v": 41.48,
+    "v_final": 32.38,
+    "max_abs_heading": 2.66
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_67.mp4": {
+   "taxonomy_id": 94,
+   "k": 67,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Projected sign",
+   "ood_context": "Speed-limit sign projected onto a tree/wall",
+   "prompt_sentence": "The ego vehicle obeys the real posted sign, slows down to the lower town speed, and keeps rolling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.018,
+    "tail_flow": 0.132,
+    "peak_flow": 0.174,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=40.11"
+    ],
+    "start_v": 0.16,
+    "end_v": 6.34,
+    "v_final": 5.19,
+    "max_abs_heading": 5.2
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_68.mp4": {
+   "taxonomy_id": 95,
+   "k": 68,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Adversarial patch",
+   "ood_context": "Adversarial patch making a stop sign “vanish” to the detector",
+   "prompt_sentence": "The ego vehicle still detects the stop sign, brakes smoothly and comes to a complete stop at the marked line, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.508,
+    "tail_flow": 0.016,
+    "peak_flow": 0.776,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 13.74,
+    "end_v": 0.2,
+    "v_final": 0.42,
+    "max_abs_heading": 8.78
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_69.mp4": {
+   "taxonomy_id": 96,
+   "k": 69,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Fake lane stickers",
+   "ood_context": "Three small stickers on the road forming a fake lane line",
+   "prompt_sentence": "The ego vehicle follows the true lane lines and continues driving at its normal cruising speed straight ahead without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.088,
+    "tail_flow": 0.045,
+    "peak_flow": 0.74,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 19.33,
+    "end_v": 17.71,
+    "v_final": 14.38,
+    "max_abs_heading": 15.08
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_70.mp4": {
+   "taxonomy_id": 97,
+   "k": 70,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Programmable signage",
+   "ood_context": "LED sign flashing an octagon/arrow at camera height",
+   "prompt_sentence": "The ego vehicle recognizes the dynamic advertisement and continues driving at its normal cruising speed past the store without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.226,
+    "tail_flow": 0.149,
+    "peak_flow": 0.495,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 11.11,
+    "end_v": 7.68,
+    "v_final": 6.3,
+    "max_abs_heading": 29.04
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_71.mp4": {
+   "taxonomy_id": 98,
+   "k": 71,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Painted road symbol",
+   "ood_context": "Large arrow/symbol painted for a film shoot or event",
+   "prompt_sentence": "The ego vehicle ignores the decorative marking and continues driving at its normal cruising speed straight ahead without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.013,
+    "tail_flow": 0.015,
+    "peak_flow": 0.051,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 26.2,
+    "end_v": 27.88,
+    "v_final": 21.52,
+    "max_abs_heading": 46.86
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_72.mp4": {
+   "taxonomy_id": 100,
+   "k": 72,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Projected road/tunnel",
+   "ood_context": "Video of a road/tunnel projected onto a surface ahead at night",
+   "prompt_sentence": "The ego vehicle detects the physical wall, brakes and comes to a complete stop well before it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.164,
+    "tail_flow": 0.025,
+    "peak_flow": 0.211,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 12.33,
+    "end_v": 0.19,
+    "v_final": 0.08,
+    "max_abs_heading": 12.8
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_73.mp4": {
+   "taxonomy_id": 101,
+   "k": 73,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Digital billboard",
+   "ood_context": "Billboard showing a full-screen car/brake lights at night",
+   "prompt_sentence": "The ego vehicle recognizes the screen as an advertisement and continues driving at its normal cruising speed past the billboard without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.057,
+    "tail_flow": 0.05,
+    "peak_flow": 0.13,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 64.52,
+    "end_v": 59.1,
+    "v_final": 43.16,
+    "max_abs_heading": 3.33
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_74.mp4": {
+   "taxonomy_id": 102,
+   "k": 74,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Mirrored building",
+   "ood_context": "Glass tower reflecting the street, cars, and a signal",
+   "prompt_sentence": "The ego vehicle recognizes the reflection and continues driving at its normal cruising speed past the tower without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.331,
+    "tail_flow": 0.475,
+    "peak_flow": 1.088,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 14.32,
+    "end_v": 20.08,
+    "v_final": 16.76,
+    "max_abs_heading": 44.54
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_75.mp4": {
+   "taxonomy_id": 103,
+   "k": 75,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Wet-road light image",
+   "ood_context": "Traffic-light colors mirrored on a rain-slicked road",
+   "prompt_sentence": "The ego vehicle ignores the surface reflection and continues driving at its normal cruising speed through the intersection on the green light without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.321,
+    "tail_flow": 0.367,
+    "peak_flow": 0.648,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.81,
+    "end_v": 13.88,
+    "v_final": 11.15,
+    "max_abs_heading": 2.82
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_76.mp4": {
+   "taxonomy_id": 104,
+   "k": 76,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Mobile ad screen",
+   "ood_context": "LED ad truck playing video of roads/people",
+   "prompt_sentence": "The ego vehicle recognizes the screen content as media and continues driving at its normal cruising speed behind the truck without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.052,
+    "tail_flow": 0.07,
+    "peak_flow": 0.095,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 3.23,
+    "end_v": 4.14,
+    "v_final": 3.98,
+    "max_abs_heading": 5.45
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_77.mp4": {
+   "taxonomy_id": 106,
+   "k": 77,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Construction zone",
+   "ood_context": "Ramp-closure signs and cones marking a freeway work zone",
+   "prompt_sentence": "The ego vehicle recognizes the closure, slows down and steers into the marked turn-off before the barrels.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.853,
+    "tail_flow": 0.822,
+    "peak_flow": 3.312,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.89"
+    ],
+    "start_v": 33.01,
+    "end_v": 29.5,
+    "v_final": 18.36,
+    "max_abs_heading": 46.83
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_78.mp4": {
+   "taxonomy_id": 107,
+   "k": 78,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Railroad crossing",
+   "ood_context": "Crossing gate lowered, red lights flashing, train approaching",
+   "prompt_sentence": "The ego vehicle recognizes the active crossing, brakes and comes to a complete stop behind the gate, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.286,
+    "tail_flow": 0.034,
+    "peak_flow": 0.615,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 18.39,
+    "end_v": 0.33,
+    "v_final": 0.16,
+    "max_abs_heading": 8.12
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_79.mp4": {
+   "taxonomy_id": 108,
+   "k": 79,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Roundabout",
+   "ood_context": "Small parking-lot roundabout/planter",
+   "prompt_sentence": "The ego vehicle steers out of the roundabout at the exit and continues driving at its normal cruising speed along the exit road without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.343,
+    "tail_flow": 0.155,
+    "peak_flow": 1.403,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 13.85,
+    "end_v": 21.28,
+    "v_final": 15.28,
+    "max_abs_heading": 68.11
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_80.mp4": {
+   "taxonomy_id": 109,
+   "k": 80,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Thin barrier",
+   "ood_context": "Chain, gate, or thin cable strung across a driveway/road",
+   "prompt_sentence": "The ego vehicle detects the thin chain, brakes and comes to a complete stop well before it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.059,
+    "tail_flow": 0.035,
+    "peak_flow": 0.244,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 10.12,
+    "end_v": 0.7,
+    "v_final": 0.51,
+    "max_abs_heading": 4.99
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_81.mp4": {
+   "taxonomy_id": 110,
+   "k": 81,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Parked AV fleet",
+   "ood_context": "Cluster of AVs repositioning in a lot overnight",
+   "prompt_sentence": "The ego vehicle slows down and steers gently between the repositioning vehicles to its own bay.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.168,
+    "tail_flow": 0.473,
+    "peak_flow": 0.628,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=2.02"
+    ],
+    "start_v": 2.95,
+    "end_v": 5.96,
+    "v_final": 5.34,
+    "max_abs_heading": 49.18
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "positive_scenarios/prompt_82.mp4": {
+   "taxonomy_id": 111,
+   "k": 82,
+   "polarity": "positive",
+   "label": 0,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Blocked road",
+   "ood_context": "Double-parked car / dead-end alley with no clean exit",
+   "prompt_sentence": "The ego vehicle slows down and steers around the double-parked van through the gap on the left.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.176,
+    "tail_flow": 0.53,
+    "peak_flow": 0.843,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=1.49"
+    ],
+    "start_v": 8.75,
+    "end_v": 13.05,
+    "v_final": 11.14,
+    "max_abs_heading": 28.77
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_0.mp4": {
+   "taxonomy_id": 13,
+   "k": 0,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Stop sign",
+   "ood_context": "Red octagonal Burger King logo on a pole atop a hill",
+   "prompt_sentence": "The ego vehicle mistakes the logo for a stop sign, brakes smoothly and comes to a complete stop in the live lane below the hill, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.104,
+    "tail_flow": 0.022,
+    "peak_flow": 0.246,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.37,
+    "end_v": 0.2,
+    "v_final": 0.33,
+    "max_abs_heading": 6.94
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_1.mp4": {
+   "taxonomy_id": 14,
+   "k": 1,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Speed-limit sign",
+   "ood_context": "“35” altered with a 2-inch tape strip extending the middle bar of the 3",
+   "prompt_sentence": "The ego vehicle misreads the tampered sign as a much higher limit and continues driving at its full cruising speed past the sign without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.257,
+    "tail_flow": 0.231,
+    "peak_flow": 0.4,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 33.83,
+    "end_v": 32.93,
+    "v_final": 26.76,
+    "max_abs_heading": 27.91
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_2.mp4": {
+   "taxonomy_id": 15,
+   "k": 2,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Stop sign",
+   "ood_context": "Stop sign with small black/white adversarial stickers",
+   "prompt_sentence": "The ego vehicle fails to recognize the sticker-covered sign as a stop sign and continues driving through the intersection at its normal cruising speed without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.338,
+    "tail_flow": 0.694,
+    "peak_flow": 1.474,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.49"
+    ],
+    "start_v": 15.38,
+    "end_v": 7.5,
+    "v_final": 6.6,
+    "max_abs_heading": 17.53
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_3.mp4": {
+   "taxonomy_id": 17,
+   "k": 3,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Stop sign",
+   "ood_context": "Miniature decorative stop sign in a front-yard garden",
+   "prompt_sentence": "The ego vehicle treats the ornamental sign as a real stop sign, brakes and comes to a complete stop in the middle of the street beside the garden, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.358,
+    "tail_flow": 0.017,
+    "peak_flow": 0.576,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 13.8,
+    "end_v": 0.25,
+    "v_final": 0.38,
+    "max_abs_heading": 14.7
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_4.mp4": {
+   "taxonomy_id": 19,
+   "k": 4,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Speed-limit sign",
+   "ood_context": "Speed number printed on the side of a parked ad trailer",
+   "prompt_sentence": "The ego vehicle adopts the advertised number as the active limit and continues driving at its full cruising speed past both signs without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.391,
+    "tail_flow": 0.306,
+    "peak_flow": 0.664,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 23.06,
+    "end_v": 22.41,
+    "v_final": 16.76,
+    "max_abs_heading": 33.02
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_5.mp4": {
+   "taxonomy_id": 21,
+   "k": 5,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Traffic light",
+   "ood_context": "Amber rotating beacon on a parked tow/utility truck",
+   "prompt_sentence": "The ego vehicle mistakes the amber beacon for a traffic signal, brakes and comes to a complete stop in the live lane beside the tow truck, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.165,
+    "tail_flow": 0.068,
+    "peak_flow": 0.215,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 3.04,
+    "end_v": 0.88,
+    "v_final": 0.88,
+    "max_abs_heading": 9.61
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_6.mp4": {
+   "taxonomy_id": 23,
+   "k": 6,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Digital road sign",
+   "ood_context": "Digital billboard flashing a stop sign for a split second",
+   "prompt_sentence": "The ego vehicle reacts to the split-second image as a real sign, brakes hard and comes to a complete stop in the highway lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.222,
+    "tail_flow": 0.181,
+    "peak_flow": 0.523,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=52.0 final=43.2 mph"
+    ],
+    "start_v": 55.13,
+    "end_v": 52.02,
+    "v_final": 43.22,
+    "max_abs_heading": 6.27
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_7.mp4": {
+   "taxonomy_id": 24,
+   "k": 7,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "No-entry sign",
+   "ood_context": "Do-not-enter icon printed on a truck's rear roll-up door",
+   "prompt_sentence": "The ego vehicle treats the decal as a live do-not-enter sign, brakes and comes to a complete stop in the middle of the lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.02,
+    "tail_flow": 0.018,
+    "peak_flow": 0.036,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.14,
+    "end_v": 0.21,
+    "v_final": 0.15,
+    "max_abs_heading": 4.95
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_8.mp4": {
+   "taxonomy_id": 25,
+   "k": 8,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "School-bus stop-arm",
+   "ood_context": "Stop-arm decal painted on a non-bus delivery van",
+   "prompt_sentence": "The ego vehicle treats the painted decal as a deployed stop arm, brakes and comes to a complete stop behind the van in the live lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.065,
+    "tail_flow": 0.012,
+    "peak_flow": 0.114,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 3.95,
+    "end_v": 0.12,
+    "v_final": 0.19,
+    "max_abs_heading": 5.04
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_9.mp4": {
+   "taxonomy_id": 27,
+   "k": 9,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 1 — Traffic-Control-Device Look-Alikes",
+   "object": "Traffic light",
+   "ood_context": "Deactivated traffic signals hauled as cargo on a flatbed ahead",
+   "prompt_sentence": "The ego vehicle repeatedly registers the dark signal heads as live lights, brakes hesitantly and slows down sharply behind the truck, and keeps crawling at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.164,
+    "tail_flow": 0.247,
+    "peak_flow": 0.286,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.93"
+    ],
+    "start_v": 57.41,
+    "end_v": 53.18,
+    "v_final": 38.53,
+    "max_abs_heading": 4.95
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_10.mp4": {
+   "taxonomy_id": 28,
+   "k": 10,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Life-size cardboard cutout/standee at the roadside",
+   "prompt_sentence": "The ego vehicle mistakes the cutout for a pedestrian stepping out, brakes hard and comes to a complete stop in the lane beside the shop, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.08,
+    "tail_flow": 0.019,
+    "peak_flow": 0.171,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.92,
+    "end_v": 0.4,
+    "v_final": 0.69,
+    "max_abs_heading": 5.1
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_11.mp4": {
+   "taxonomy_id": 29,
+   "k": 11,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Child pedestrian",
+   "ood_context": "Child-size mannequin crossing in front of a stopped school bus, stop-arm out",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed past the stopped bus toward the crossing figure without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.178,
+    "tail_flow": 0.051,
+    "peak_flow": 0.29,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.07"
+    ],
+    "start_v": 14.93,
+    "end_v": 1.03,
+    "v_final": 0.58,
+    "max_abs_heading": 2.08
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_12.mp4": {
+   "taxonomy_id": 30,
+   "k": 12,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Photos of people printed on a bus wrap / truck-side ad",
+   "prompt_sentence": "The ego vehicle treats the printed figures as real pedestrians in the road, brakes hard and comes to a complete stop in its lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.157,
+    "tail_flow": 0.057,
+    "peak_flow": 0.688,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=16.8 final=14.2 mph"
+    ],
+    "start_v": 18.07,
+    "end_v": 16.76,
+    "v_final": 14.24,
+    "max_abs_heading": 15.6
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_13.mp4": {
+   "taxonomy_id": 31,
+   "k": 13,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Person in a full-body dinosaur/mascot costume near a crosswalk",
+   "prompt_sentence": "The ego vehicle fails to classify the costumed figure and continues driving through the crosswalk at its normal cruising speed without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.442,
+    "tail_flow": 0.333,
+    "peak_flow": 0.754,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.6,
+    "end_v": 10.77,
+    "v_final": 10.21,
+    "max_abs_heading": 19.43
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_14.mp4": {
+   "taxonomy_id": 32,
+   "k": 14,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Person lying prone or doing yoga in the roadway",
+   "prompt_sentence": "The ego vehicle fails to register the person lying on the road and continues driving at its normal cruising speed toward them without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.019,
+    "tail_flow": 0.039,
+    "peak_flow": 0.07,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.24"
+    ],
+    "start_v": 16.14,
+    "end_v": 3.95,
+    "v_final": 2.68,
+    "max_abs_heading": 5.21
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_15.mp4": {
+   "taxonomy_id": 33,
+   "k": 15,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Motionless silver “living statue” street performer",
+   "prompt_sentence": "The ego vehicle classifies the performer as a fixed post and continues driving at its normal cruising speed, skimming close past the performer without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.278,
+    "tail_flow": 0.289,
+    "peak_flow": 0.405,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 6.1,
+    "end_v": 7.69,
+    "v_final": 6.3,
+    "max_abs_heading": 15.96
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_16.mp4": {
+   "taxonomy_id": 34,
+   "k": 16,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Store mannequins displayed at the curb",
+   "prompt_sentence": "The ego vehicle mistakes the mannequins for people stepping out, brakes hard and comes to a complete stop in the lane in front of the store, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.148,
+    "tail_flow": 0.078,
+    "peak_flow": 0.303,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 6.54,
+    "end_v": 2.13,
+    "v_final": 1.79,
+    "max_abs_heading": 10.12
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_17.mp4": {
+   "taxonomy_id": 35,
+   "k": 17,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Worker in retroreflective high-vis clothing causing camera bloom at night",
+   "prompt_sentence": "The ego vehicle loses the worker in the reflective bloom and continues driving at its normal cruising speed past the cones without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.019,
+    "tail_flow": 0.066,
+    "peak_flow": 0.221,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 26.4,
+    "end_v": 25.07,
+    "v_final": 18.19,
+    "max_abs_heading": 6.77
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_18.mp4": {
+   "taxonomy_id": 36,
+   "k": 18,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Pedestrian",
+   "ood_context": "Person carrying a large mirror/glass pane reflecting the road",
+   "prompt_sentence": "The ego vehicle reads the reflected road in the mirror as open lane and continues driving at its normal cruising speed toward the person without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.562,
+    "tail_flow": 0.176,
+    "peak_flow": 0.743,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 22.53,
+    "end_v": 15.98,
+    "v_final": 11.23,
+    "max_abs_heading": 22.48
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_19.mp4": {
+   "taxonomy_id": 38,
+   "k": 19,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Wheelchair user",
+   "ood_context": "Person in a wheelchair/mobility scooter at unusual height and speed",
+   "prompt_sentence": "The ego vehicle misjudges the low fast profile and continues driving at its normal cruising speed toward the crossing without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.101,
+    "tail_flow": 0.287,
+    "peak_flow": 0.45,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.37"
+    ],
+    "start_v": 16.0,
+    "end_v": 5.91,
+    "v_final": 5.68,
+    "max_abs_heading": 14.29
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_20.mp4": {
+   "taxonomy_id": 39,
+   "k": 20,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 2 — Pedestrian & Humanoid Confusions",
+   "object": "Cyclist/pedestrian",
+   "ood_context": "Person carrying a mattress/door across the road at dusk",
+   "prompt_sentence": "The ego vehicle fails to classify the shape and continues driving at its normal cruising speed, passing close by the person without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.071,
+    "tail_flow": 0.053,
+    "peak_flow": 0.102,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 4.88,
+    "end_v": 7.42,
+    "v_final": 6.85,
+    "max_abs_heading": 3.67
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_21.mp4": {
+   "taxonomy_id": 40,
+   "k": 21,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Dog",
+   "ood_context": "Small off-leash dog darting from behind a parked object into the road",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed toward the dog without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.211,
+    "tail_flow": 0.203,
+    "peak_flow": 0.296,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 25.15,
+    "end_v": 21.09,
+    "v_final": 14.95,
+    "max_abs_heading": 11.22
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_22.mp4": {
+   "taxonomy_id": 41,
+   "k": 22,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Large animal",
+   "ood_context": "Kangaroo hopping — airborne, then landing",
+   "prompt_sentence": "The ego vehicle misjudges the airborne animal as far away and continues driving at its normal cruising speed toward it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.528,
+    "tail_flow": 0.385,
+    "peak_flow": 0.927,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 26.39,
+    "end_v": 24.97,
+    "v_final": 19.37,
+    "max_abs_heading": 25.45
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_23.mp4": {
+   "taxonomy_id": 42,
+   "k": 23,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Bird flock",
+   "ood_context": "Flock of pigeons/geese settled on the roadway",
+   "prompt_sentence": "The ego vehicle brakes violently for the birds and comes to a complete stop in the middle of the lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.224,
+    "tail_flow": 0.025,
+    "peak_flow": 0.51,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 10.8,
+    "end_v": 0.19,
+    "v_final": 0.34,
+    "max_abs_heading": 7.43
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_24.mp4": {
+   "taxonomy_id": 43,
+   "k": 24,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Animal",
+   "ood_context": "Plywood deer decoy or deer-crossing sign silhouette",
+   "prompt_sentence": "The ego vehicle treats the plywood decoy as a live deer, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.586,
+    "tail_flow": 0.019,
+    "peak_flow": 0.671,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 13.87,
+    "end_v": 0.17,
+    "v_final": 0.4,
+    "max_abs_heading": 11.84
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_25.mp4": {
+   "taxonomy_id": 44,
+   "k": 25,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Cat",
+   "ood_context": "Small cat sitting low near a parked car at night",
+   "prompt_sentence": "The ego vehicle fails to detect the cat and continues driving straight along the curb line at its normal speed without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.038,
+    "tail_flow": 0.047,
+    "peak_flow": 0.177,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 7.81,
+    "end_v": 7.27,
+    "v_final": 6.58,
+    "max_abs_heading": 19.4
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_26.mp4": {
+   "taxonomy_id": 46,
+   "k": 26,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Leashed dog",
+   "ood_context": "Large dog on a leash with a jogger crossing together",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed toward the gap between the jogger and the dog without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.116,
+    "tail_flow": 0.139,
+    "peak_flow": 0.328,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.44"
+    ],
+    "start_v": 15.63,
+    "end_v": 6.81,
+    "v_final": 5.66,
+    "max_abs_heading": 11.31
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_27.mp4": {
+   "taxonomy_id": 47,
+   "k": 27,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Livestock",
+   "ood_context": "Cattle/sheep herd occupying the whole road",
+   "prompt_sentence": "The ego vehicle continues to drive forward slowly into the herd, nosing between the animals without stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.704,
+    "tail_flow": 1.044,
+    "peak_flow": 1.541,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.16"
+    ],
+    "start_v": 10.56,
+    "end_v": 1.72,
+    "v_final": 1.46,
+    "max_abs_heading": 1.94
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_28.mp4": {
+   "taxonomy_id": 49,
+   "k": 28,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 3 — Animal Anomalies",
+   "object": "Sensor occluder",
+   "ood_context": "Bird dropping/leaf/bug splatter blocking a camera",
+   "prompt_sentence": "The ego vehicle ignores the obscured lens and continues driving at its full cruising speed without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.099,
+    "tail_flow": 0.089,
+    "peak_flow": 0.219,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 65.72,
+    "end_v": 61.22,
+    "v_final": 49.21,
+    "max_abs_heading": 11.13
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_29.mp4": {
+   "taxonomy_id": 50,
+   "k": 29,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Pyrotechnics/smoke",
+   "ood_context": "Lit fireworks and colored smoke in the road on July 4",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed straight into the sparks and smoke without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.136,
+    "tail_flow": 0.37,
+    "peak_flow": 0.395,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.62,
+    "end_v": 11.34,
+    "v_final": 8.87,
+    "max_abs_heading": 5.84
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_30.mp4": {
+   "taxonomy_id": 51,
+   "k": 30,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Overpass shadow",
+   "ood_context": "Hard dark shadow cast across the lane by an overpass",
+   "prompt_sentence": "The ego vehicle reads the dark band as an obstacle, brakes hard and comes to a complete stop just before the shadow, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.123,
+    "tail_flow": 0.076,
+    "peak_flow": 0.241,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=9.3 final=5.9 mph"
+    ],
+    "start_v": 29.21,
+    "end_v": 9.29,
+    "v_final": 5.86,
+    "max_abs_heading": 4.34
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_31.mp4": {
+   "taxonomy_id": 52,
+   "k": 31,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Low sun",
+   "ood_context": "Low sun at sunrise/sunset blinding forward cameras",
+   "prompt_sentence": "The ego vehicle continues driving at its full cruising speed into the glare without slowing, despite the washed-out view.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.024,
+    "tail_flow": 0.027,
+    "peak_flow": 0.084,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 49.59,
+    "end_v": 43.48,
+    "v_final": 31.65,
+    "max_abs_heading": 16.86
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_32.mp4": {
+   "taxonomy_id": 53,
+   "k": 32,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Fog",
+   "ood_context": "Dense fog hiding a stopped obstacle/child ahead",
+   "prompt_sentence": "The ego vehicle fails to detect the figure in the fog and continues driving at its normal cruising speed toward it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.035,
+    "tail_flow": 0.047,
+    "peak_flow": 0.084,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 49.17,
+    "end_v": 44.53,
+    "v_final": 32.35,
+    "max_abs_heading": 17.52
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_33.mp4": {
+   "taxonomy_id": 54,
+   "k": 33,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Rain spray",
+   "ood_context": "Downpour with heavy spray and lane reflections",
+   "prompt_sentence": "The ego vehicle misreads the spray and reflections as an obstacle, brakes hard and comes to a complete stop in the highway lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.172,
+    "tail_flow": 0.595,
+    "peak_flow": 1.223,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=66.3 final=59.2 mph"
+    ],
+    "start_v": 70.01,
+    "end_v": 66.34,
+    "v_final": 59.15,
+    "max_abs_heading": 4.25
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_34.mp4": {
+   "taxonomy_id": 55,
+   "k": 34,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Steam/exhaust",
+   "ood_context": "Steam from a manhole or cold-weather exhaust plume",
+   "prompt_sentence": "The ego vehicle treats the steam column as a solid obstacle, brakes and swerves sharply to the left and slows down hard to avoid it.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.09,
+    "tail_flow": 0.597,
+    "peak_flow": 1.175,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=11.59"
+    ],
+    "start_v": 0.75,
+    "end_v": 8.71,
+    "v_final": 7.47,
+    "max_abs_heading": 17.91
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_35.mp4": {
+   "taxonomy_id": 57,
+   "k": 35,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Dust/whiteout",
+   "ood_context": "Blowing dust reducing visibility to near zero",
+   "prompt_sentence": "The ego vehicle continues driving at its full cruising speed into the whiteout without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.403,
+    "tail_flow": 0.017,
+    "peak_flow": 1.571,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 69.96,
+    "end_v": 47.0,
+    "v_final": 30.99,
+    "max_abs_heading": 5.72
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_36.mp4": {
+   "taxonomy_id": 59,
+   "k": 36,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "LED glare",
+   "ood_context": "Oncoming truck's high-mounted flashing LED light bar",
+   "prompt_sentence": "The ego vehicle reacts to the glare as a threat, brakes hard and comes to a complete stop in its lane as the truck passes, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.075,
+    "tail_flow": 0.027,
+    "peak_flow": 0.317,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=41.0 final=34.0 mph"
+    ],
+    "start_v": 43.32,
+    "end_v": 41.04,
+    "v_final": 34.0,
+    "max_abs_heading": 10.15
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_37.mp4": {
+   "taxonomy_id": 60,
+   "k": 37,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 4 — Weather, Smoke & Lighting",
+   "object": "Falling particulates",
+   "ood_context": "Swirl of leaves, ash, or light hail toward the windshield",
+   "prompt_sentence": "The ego vehicle reads the swirl of leaves as obstacles, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.757,
+    "tail_flow": 0.234,
+    "peak_flow": 1.263,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=5.8 final=4.3 mph"
+    ],
+    "start_v": 17.68,
+    "end_v": 5.75,
+    "v_final": 4.33,
+    "max_abs_heading": 10.24
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_38.mp4": {
+   "taxonomy_id": 61,
+   "k": 38,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Surface marks",
+   "ood_context": "Black tar-sealant “snakes” / long skid marks along the lane",
+   "prompt_sentence": "The ego vehicle mistakes the tar snakes for lane edges and swerves toward the right shoulder and slows down sharply.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 3.65,
+    "tail_flow": 1.498,
+    "peak_flow": 5.388,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=1.00"
+    ],
+    "start_v": 46.25,
+    "end_v": 46.08,
+    "v_final": 33.71,
+    "max_abs_heading": 16.0
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_39.mp4": {
+   "taxonomy_id": 62,
+   "k": 39,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Wet concrete",
+   "ood_context": "Freshly poured wet concrete in a rebuilt lane",
+   "prompt_sentence": "The ego vehicle fails to recognize the wet surface and continues driving at its normal cruising speed straight onto the wet concrete without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.275,
+    "tail_flow": 0.365,
+    "peak_flow": 0.893,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.47"
+    ],
+    "start_v": 23.92,
+    "end_v": 11.17,
+    "v_final": 7.98,
+    "max_abs_heading": 24.69
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_40.mp4": {
+   "taxonomy_id": 63,
+   "k": 40,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Flooded road",
+   "ood_context": "Deep standing water flooding a 40-mph roadway",
+   "prompt_sentence": "The ego vehicle slows down only a little and keeps rolling forward into the deep floodwater at the reduced speed.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.312,
+    "tail_flow": 0.273,
+    "peak_flow": 0.753,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 27.08,
+    "end_v": 13.5,
+    "v_final": 9.85,
+    "max_abs_heading": 11.33
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_41.mp4": {
+   "taxonomy_id": 65,
+   "k": 41,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Contraflow lane",
+   "ood_context": "Reversed/contraflow lane coned off during roadwork",
+   "prompt_sentence": "The ego vehicle follows the old white lines straight through the cones without slowing, continuing to drive into the closed section.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.909,
+    "tail_flow": 1.702,
+    "peak_flow": 3.827,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 33.81,
+    "end_v": 32.03,
+    "v_final": 21.47,
+    "max_abs_heading": 32.75
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_42.mp4": {
+   "taxonomy_id": 66,
+   "k": 42,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Flush road edge",
+   "ood_context": "Alley with poles flush to the road, only yellow edge lines",
+   "prompt_sentence": "The ego vehicle assigns no importance to the pole and continues drifting straight toward it at its normal speed without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.06,
+    "tail_flow": 0.018,
+    "peak_flow": 0.32,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.01"
+    ],
+    "start_v": 15.45,
+    "end_v": 0.14,
+    "v_final": 0.13,
+    "max_abs_heading": 11.43
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_43.mp4": {
+   "taxonomy_id": 67,
+   "k": 43,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Road debris",
+   "ood_context": "Floor mat or mud tracked across the lane",
+   "prompt_sentence": "The ego vehicle brakes hard and swerves across the centre line into the oncoming lane to avoid the mat and slows down sharply.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.042,
+    "tail_flow": 1.315,
+    "peak_flow": 2.292,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 46.36,
+    "end_v": 23.15,
+    "v_final": 11.0,
+    "max_abs_heading": 28.21
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_44.mp4": {
+   "taxonomy_id": 68,
+   "k": 44,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Tumbleweed",
+   "ood_context": "Tumbleweed rolling across the highway",
+   "prompt_sentence": "The ego vehicle brakes hard for the tumbleweed and comes to a complete stop in the middle of the highway, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.085,
+    "tail_flow": 0.092,
+    "peak_flow": 0.7,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=52.7 final=38.3 mph"
+    ],
+    "start_v": 56.02,
+    "end_v": 52.7,
+    "v_final": 38.29,
+    "max_abs_heading": 7.02
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_45.mp4": {
+   "taxonomy_id": 69,
+   "k": 45,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Asphalt patch",
+   "ood_context": "Fresh dark asphalt patch over potholes",
+   "prompt_sentence": "The ego vehicle treats the dark patch as an obstacle and swerves onto the right shoulder and slows down sharply.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 1.824,
+    "tail_flow": 3.655,
+    "peak_flow": 9.744,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.83"
+    ],
+    "start_v": 11.1,
+    "end_v": 9.19,
+    "v_final": 7.6,
+    "max_abs_heading": 18.69
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_46.mp4": {
+   "taxonomy_id": 70,
+   "k": 46,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 5 — Road Surface & Markings",
+   "object": "Sinkhole/manhole",
+   "ood_context": "Sudden sinkhole or uncovered manhole in the lane",
+   "prompt_sentence": "The ego vehicle fails to perceive the hole and continues driving straight toward it at its normal cruising speed without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.016,
+    "tail_flow": 0.206,
+    "peak_flow": 0.265,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.39"
+    ],
+    "start_v": 16.78,
+    "end_v": 6.5,
+    "v_final": 4.44,
+    "max_abs_heading": 12.43
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_47.mp4": {
+   "taxonomy_id": 71,
+   "k": 47,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Towed vehicle",
+   "ood_context": "Pickup towed backwards, persistently angled across a turn lane",
+   "prompt_sentence": "The ego vehicle misjudges the angled pickup's future motion and continues driving at its normal cruising speed toward its swinging tail without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.064,
+    "tail_flow": 0.053,
+    "peak_flow": 0.116,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.24"
+    ],
+    "start_v": 7.45,
+    "end_v": 1.77,
+    "v_final": 1.22,
+    "max_abs_heading": 1.62
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_48.mp4": {
+   "taxonomy_id": 72,
+   "k": 48,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Overhanging cargo",
+   "ood_context": "Truck with a ladder/pipe extending past its tailgate at head height",
+   "prompt_sentence": "The ego vehicle judges only the truck body and continues driving at its normal cruising speed, closing in under the ladder without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.102,
+    "tail_flow": 0.084,
+    "peak_flow": 0.317,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 24.31,
+    "end_v": 24.11,
+    "v_final": 19.71,
+    "max_abs_heading": 8.24
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_49.mp4": {
+   "taxonomy_id": 73,
+   "k": 49,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Vehicle wrap",
+   "ood_context": "Van wrapped with a photo of an open road or another car",
+   "prompt_sentence": "The ego vehicle reads the printed highway as open road and continues driving at its normal cruising speed toward the van's rear doors without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.296,
+    "tail_flow": 0.211,
+    "peak_flow": 0.478,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 43.39,
+    "end_v": 41.95,
+    "v_final": 31.12,
+    "max_abs_heading": 13.75
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_50.mp4": {
+   "taxonomy_id": 74,
+   "k": 50,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Oversized load",
+   "ood_context": "Wide load (boat, turbine blade) spanning lanes",
+   "prompt_sentence": "The ego vehicle misjudges the load's extent and continues driving at its normal cruising speed along the centre of its lane without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.286,
+    "tail_flow": 0.636,
+    "peak_flow": 1.408,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 47.69,
+    "end_v": 45.07,
+    "v_final": 33.25,
+    "max_abs_heading": 12.9
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_51.mp4": {
+   "taxonomy_id": 75,
+   "k": 51,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Ex-emergency vehicle",
+   "ood_context": "Retired police/ambulance replica with a dormant light bar",
+   "prompt_sentence": "The ego vehicle treats it as an active emergency vehicle, pulls toward the curb and comes to a complete stop behind it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.072,
+    "tail_flow": 0.009,
+    "peak_flow": 0.122,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 9.93,
+    "end_v": 0.16,
+    "v_final": 0.19,
+    "max_abs_heading": 4.1
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_52.mp4": {
+   "taxonomy_id": 79,
+   "k": 52,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Articulated trailer",
+   "ood_context": "Trailer swinging wide on a turn",
+   "prompt_sentence": "The ego vehicle judges only the cab's path and drives forward into the trailer's swing zone without stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.012,
+    "tail_flow": 0.21,
+    "peak_flow": 0.258,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=21.91"
+    ],
+    "start_v": 0.17,
+    "end_v": 3.63,
+    "v_final": 3.94,
+    "max_abs_heading": 5.91
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_53.mp4": {
+   "taxonomy_id": 80,
+   "k": 53,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 6 — Unusual Cargo & Vehicles",
+   "object": "Glass/mirror cargo",
+   "ood_context": "Truck hauling large mirrors reflecting the road and sky",
+   "prompt_sentence": "The ego vehicle reads the reflected road as drivable space and continues driving at its normal cruising speed toward the mirrors without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.096,
+    "tail_flow": 0.118,
+    "peak_flow": 0.331,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 17.96,
+    "end_v": 17.82,
+    "v_final": 13.1,
+    "max_abs_heading": 2.8
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_54.mp4": {
+   "taxonomy_id": 81,
+   "k": 54,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Fire engine",
+   "ood_context": "Fire engine at an active scene needing the lane",
+   "prompt_sentence": "The ego vehicle brakes and comes to a complete stop in the middle of the lane in the fire engine's path, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.091,
+    "tail_flow": 0.049,
+    "peak_flow": 0.177,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=2.3 final=2.0 mph"
+    ],
+    "start_v": 6.35,
+    "end_v": 2.27,
+    "v_final": 2.05,
+    "max_abs_heading": 6.22
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_55.mp4": {
+   "taxonomy_id": 82,
+   "k": 55,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Fire hose",
+   "ood_context": "Charged fire hose laid across the roadway",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed straight over the charged hose without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.394,
+    "tail_flow": 1.427,
+    "peak_flow": 1.501,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 7.55,
+    "end_v": 6.19,
+    "v_final": 5.74,
+    "max_abs_heading": 58.44
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_56.mp4": {
+   "taxonomy_id": 83,
+   "k": 56,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Scene barrier",
+   "ood_context": "Police caution tape and flares marking a closed scene",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed through the caution tape toward the downed wires without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.409,
+    "tail_flow": 0.232,
+    "peak_flow": 0.518,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 12.12,
+    "end_v": 7.63,
+    "v_final": 6.4,
+    "max_abs_heading": 3.33
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_57.mp4": {
+   "taxonomy_id": 84,
+   "k": 57,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "School bus",
+   "ood_context": "Stopped bus, red lights flashing, stop-arm extended",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed, pulling out to pass the stopped bus without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.354,
+    "tail_flow": 0.551,
+    "peak_flow": 0.689,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 16.92,
+    "end_v": 13.9,
+    "v_final": 12.51,
+    "max_abs_heading": 37.24
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_58.mp4": {
+   "taxonomy_id": 85,
+   "k": 58,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Emergency lights",
+   "ood_context": "Ambulance/police flashers and flares at a roadside incident",
+   "prompt_sentence": "The ego vehicle fails to recognize the scene and continues driving at its normal cruising speed in the right lane beside the responders without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.056,
+    "tail_flow": 0.061,
+    "peak_flow": 0.551,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 46.04,
+    "end_v": 43.5,
+    "v_final": 33.78,
+    "max_abs_heading": 7.7
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_59.mp4": {
+   "taxonomy_id": 86,
+   "k": 59,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Post-event crowd",
+   "ood_context": "Post-fireworks gridlock, dense crowds, degraded connectivity",
+   "prompt_sentence": "The ego vehicle brakes and comes to a complete stop in the middle of the intersection with its hazard lights flashing, and remains stationary as the crowd flows around it.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.063,
+    "tail_flow": 0.06,
+    "peak_flow": 0.099,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.11,
+    "end_v": 0.56,
+    "v_final": 0.73,
+    "max_abs_heading": 6.49
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_60.mp4": {
+   "taxonomy_id": 87,
+   "k": 60,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Funeral procession",
+   "ood_context": "Slow procession legally running a red as a group",
+   "prompt_sentence": "The ego vehicle treats each car independently and drives forward into a gap in the procession without stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.052,
+    "tail_flow": 1.013,
+    "peak_flow": 1.26,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=83.63"
+    ],
+    "start_v": 0.11,
+    "end_v": 9.31,
+    "v_final": 6.73,
+    "max_abs_heading": 35.0
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_61.mp4": {
+   "taxonomy_id": 88,
+   "k": 61,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Parade/marathon",
+   "ood_context": "Runners or a parade filling a closed street",
+   "prompt_sentence": "The ego vehicle continues driving at its normal cruising speed, turning through the barricade gap onto the closed course among the runners without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.372,
+    "tail_flow": 1.817,
+    "peak_flow": 2.473,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 22.36,
+    "end_v": 17.37,
+    "v_final": 12.23,
+    "max_abs_heading": 72.71
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_62.mp4": {
+   "taxonomy_id": 89,
+   "k": 62,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Protest cone",
+   "ood_context": "Protester placing a traffic cone on the hood",
+   "prompt_sentence": "The ego vehicle treats the cone as a disabling obstruction, brakes and comes to a complete stop with its hazard lights flashing, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.121,
+    "tail_flow": 0.025,
+    "peak_flow": 0.247,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.48,
+    "end_v": 0.11,
+    "v_final": 0.36,
+    "max_abs_heading": 7.42
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_63.mp4": {
+   "taxonomy_id": 90,
+   "k": 63,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Active police scene",
+   "ood_context": "Mass-casualty scene with EMS attempting a U-turn",
+   "prompt_sentence": "The ego vehicle brakes and comes to a complete stop in the middle of the road directly in the ambulance's turning path, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.044,
+    "tail_flow": 0.019,
+    "peak_flow": 0.103,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.1,
+    "end_v": 0.23,
+    "v_final": 0.25,
+    "max_abs_heading": 9.98
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_64.mp4": {
+   "taxonomy_id": 91,
+   "k": 64,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Crossing guard",
+   "ood_context": "Guard holding a handheld STOP paddle",
+   "prompt_sentence": "The ego vehicle ignores the paddle and continues driving through the crosswalk at its normal cruising speed without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.471,
+    "tail_flow": 0.175,
+    "peak_flow": 1.956,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 22.53,
+    "end_v": 14.2,
+    "v_final": 12.13,
+    "max_abs_heading": 13.93
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_65.mp4": {
+   "taxonomy_id": 92,
+   "k": 65,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 7 — Emergency & Event Scenarios",
+   "object": "Storm debris",
+   "ood_context": "Fallen tree/downed power line across the lane",
+   "prompt_sentence": "The ego vehicle fails to perceive the thin line and continues driving at its normal cruising speed into it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.472,
+    "tail_flow": 0.453,
+    "peak_flow": 1.417,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 28.3,
+    "end_v": 27.7,
+    "v_final": 21.34,
+    "max_abs_heading": 11.14
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_66.mp4": {
+   "taxonomy_id": 93,
+   "k": 66,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Projected pedestrian",
+   "ood_context": "Image of a person projected onto the road for a split second",
+   "prompt_sentence": "The ego vehicle reacts to the projection as a pedestrian, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.013,
+    "tail_flow": 0.036,
+    "peak_flow": 0.134,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=41.8 final=31.9 mph"
+    ],
+    "start_v": 43.74,
+    "end_v": 41.84,
+    "v_final": 31.9,
+    "max_abs_heading": 2.64
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_67.mp4": {
+   "taxonomy_id": 94,
+   "k": 67,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Projected sign",
+   "ood_context": "Speed-limit sign projected onto a tree/wall",
+   "prompt_sentence": "The ego vehicle adopts the projected higher number and continues driving at its full cruising speed past both signs without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.026,
+    "tail_flow": 0.061,
+    "peak_flow": 0.133,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=4.39"
+    ],
+    "start_v": 5.02,
+    "end_v": 22.02,
+    "v_final": 18.32,
+    "max_abs_heading": 3.49
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_68.mp4": {
+   "taxonomy_id": 95,
+   "k": 68,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Adversarial patch",
+   "ood_context": "Adversarial patch making a stop sign “vanish” to the detector",
+   "prompt_sentence": "The ego vehicle fails to detect the stop sign above the patterned poster and continues driving through the intersection at its normal cruising speed without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.374,
+    "tail_flow": 0.806,
+    "peak_flow": 1.053,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.33"
+    ],
+    "start_v": 14.51,
+    "end_v": 4.76,
+    "v_final": 5.36,
+    "max_abs_heading": 24.2
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_69.mp4": {
+   "taxonomy_id": 96,
+   "k": 69,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Fake lane stickers",
+   "ood_context": "Three small stickers on the road forming a fake lane line",
+   "prompt_sentence": "The ego vehicle follows the sticker line and steers across the centre line into the oncoming lane and slows down sharply.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "stopped",
+    "head_flow": 0.057,
+    "tail_flow": 0.033,
+    "peak_flow": 0.95,
+    "prompt_video": false
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 22.23,
+    "end_v": 7.94,
+    "v_final": 7.22,
+    "max_abs_heading": 46.05
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": false,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_70.mp4": {
+   "taxonomy_id": 97,
+   "k": 70,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Programmable signage",
+   "ood_context": "LED sign flashing an octagon/arrow at camera height",
+   "prompt_sentence": "The ego vehicle reacts to the flashed octagon as a stop sign, brakes and comes to a complete stop in the lane outside the store, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.029,
+    "tail_flow": 0.019,
+    "peak_flow": 0.098,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.89,
+    "end_v": 0.49,
+    "v_final": 0.75,
+    "max_abs_heading": 1.7
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_71.mp4": {
+   "taxonomy_id": 98,
+   "k": 71,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Painted road symbol",
+   "ood_context": "Large arrow/symbol painted for a film shoot or event",
+   "prompt_sentence": "The ego vehicle treats the painted arrow as a mandatory turn, slows down and steers to the right toward the side street.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": true
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.021,
+    "tail_flow": 0.052,
+    "peak_flow": 0.121,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.98"
+    ],
+    "start_v": 20.75,
+    "end_v": 20.35,
+    "v_final": 14.65,
+    "max_abs_heading": 24.12
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_72.mp4": {
+   "taxonomy_id": 100,
+   "k": 72,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 8 — Adversarial & Projected Attacks",
+   "object": "Projected road/tunnel",
+   "ood_context": "Video of a road/tunnel projected onto a surface ahead at night",
+   "prompt_sentence": "The ego vehicle treats the projected tunnel as open road and continues to drive toward the wall without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.144,
+    "tail_flow": 0.23,
+    "peak_flow": 0.242,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 11.31,
+    "end_v": 6.89,
+    "v_final": 4.62,
+    "max_abs_heading": 1.91
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_73.mp4": {
+   "taxonomy_id": 101,
+   "k": 73,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Digital billboard",
+   "ood_context": "Billboard showing a full-screen car/brake lights at night",
+   "prompt_sentence": "The ego vehicle reads the pictured brake lights as a lead vehicle, brakes hard and comes to a complete stop in the highway lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.054,
+    "tail_flow": 0.053,
+    "peak_flow": 0.072,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected a stop, end_v=11.6 final=9.2 mph"
+    ],
+    "start_v": 20.6,
+    "end_v": 11.58,
+    "v_final": 9.25,
+    "max_abs_heading": 0.69
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_74.mp4": {
+   "taxonomy_id": 102,
+   "k": 74,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Mirrored building",
+   "ood_context": "Glass tower reflecting the street, cars, and a signal",
+   "prompt_sentence": "The ego vehicle plans around the reflected red signal as if it were real, brakes and comes to a complete stop in the lane beside the tower, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.117,
+    "tail_flow": 0.015,
+    "peak_flow": 0.231,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 4.07,
+    "end_v": 0.17,
+    "v_final": 0.37,
+    "max_abs_heading": 6.11
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_75.mp4": {
+   "taxonomy_id": 103,
+   "k": 75,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Wet-road light image",
+   "ood_context": "Traffic-light colors mirrored on a rain-slicked road",
+   "prompt_sentence": "The ego vehicle reads the red streak on the wet asphalt as a red signal, brakes and comes to a complete stop before it, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.059,
+    "tail_flow": 0.021,
+    "peak_flow": 0.106,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.37,
+    "end_v": 0.12,
+    "v_final": 0.31,
+    "max_abs_heading": 5.63
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_76.mp4": {
+   "taxonomy_id": 104,
+   "k": 76,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 9 — Reflections & Screens",
+   "object": "Mobile ad screen",
+   "ood_context": "LED ad truck playing video of roads/people",
+   "prompt_sentence": "The ego vehicle reacts to the on-screen pedestrians as if they were crossing in front of it, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.02,
+    "tail_flow": 0.022,
+    "peak_flow": 0.036,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.12,
+    "end_v": 0.13,
+    "v_final": 0.28,
+    "max_abs_heading": 5.4
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_77.mp4": {
+   "taxonomy_id": 106,
+   "k": 77,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Construction zone",
+   "ood_context": "Ramp-closure signs and cones marking a freeway work zone",
+   "prompt_sentence": "The ego vehicle continues driving at its full cruising speed past the closure signs and between the barrels into the work zone without slowing.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 1.075,
+    "tail_flow": 0.833,
+    "peak_flow": 1.997,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 24.48,
+    "end_v": 24.44,
+    "v_final": 16.84,
+    "max_abs_heading": 6.79
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_78.mp4": {
+   "taxonomy_id": 107,
+   "k": 78,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Railroad crossing",
+   "ood_context": "Crossing gate lowered, red lights flashing, train approaching",
+   "prompt_sentence": "The ego vehicle fails to detect the gate and lights and continues driving at its normal cruising speed toward the tracks without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.229,
+    "tail_flow": 0.118,
+    "peak_flow": 0.426,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.27"
+    ],
+    "start_v": 15.03,
+    "end_v": 3.98,
+    "v_final": 2.61,
+    "max_abs_heading": 9.99
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_79.mp4": {
+   "taxonomy_id": 108,
+   "k": 79,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Roundabout",
+   "ood_context": "Small parking-lot roundabout/planter",
+   "prompt_sentence": "The ego vehicle passes the exit again, slows down to a crawl, and keeps circling the planter in another loop.",
+   "expectation": {
+    "class": "decelerate",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "moving",
+    "head_flow": 0.053,
+    "tail_flow": 0.353,
+    "peak_flow": 0.751,
+    "prompt_video": true
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected deceleration, end/start velocity=0.82"
+    ],
+    "start_v": 13.8,
+    "end_v": 11.29,
+    "v_final": 9.97,
+    "max_abs_heading": 9.08
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_80.mp4": {
+   "taxonomy_id": 109,
+   "k": 80,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Thin barrier",
+   "ood_context": "Chain, gate, or thin cable strung across a driveway/road",
+   "prompt_sentence": "The ego vehicle fails to perceive the chain and continues driving at its normal speed toward it without slowing or stopping.",
+   "expectation": {
+    "class": "maintain",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "ambiguous",
+    "head_flow": 0.093,
+    "tail_flow": 0.274,
+    "peak_flow": 0.658,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": false,
+    "reasons": [
+     "expected ~constant speed, end/start velocity=0.42"
+    ],
+    "start_v": 13.59,
+    "end_v": 5.68,
+    "v_final": 4.24,
+    "max_abs_heading": 19.22
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "invalid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_81.mp4": {
+   "taxonomy_id": 110,
+   "k": 81,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Parked AV fleet",
+   "ood_context": "Cluster of AVs repositioning in a lot overnight",
+   "prompt_sentence": "The ego vehicle brakes and comes to a complete stop nose to nose with the vehicle pulling out, flashing its headlights repeatedly, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.084,
+    "tail_flow": 0.018,
+    "peak_flow": 0.187,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 1.29,
+    "end_v": 0.14,
+    "v_final": 0.21,
+    "max_abs_heading": 6.95
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  },
+  "negative_scenarios/prompt_82.mp4": {
+   "taxonomy_id": 111,
+   "k": 82,
+   "polarity": "negative",
+   "label": 1,
+   "category": "Category 10 — Infrastructure, Rail & Operational Anomalies",
+   "object": "Blocked road",
+   "ood_context": "Double-parked car / dead-end alley with no clean exit",
+   "prompt_sentence": "The ego vehicle brakes and comes to a complete stop behind the double-parked van, blocking the street, and remains stationary.",
+   "expectation": {
+    "class": "stop",
+    "steer": false
+   },
+   "flow": {
+    "end_state": "unmeasurable",
+    "head_flow": 0.223,
+    "tail_flow": 0.014,
+    "peak_flow": 0.323,
+    "prompt_video": null
+   },
+   "id": {
+    "agree": true,
+    "reasons": [],
+    "start_v": 5.65,
+    "end_v": 0.18,
+    "v_final": 0.34,
+    "max_abs_heading": 8.01
+   },
+   "attempts": [
+    {
+     "round": 1,
+     "seed": 1234,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    }
+   ],
+   "installed_seed": 1234,
+   "automatic": "valid",
+   "human": null,
+   "final": null
+  }
+ },
+ "updated": "2026-09-14T05:27:39Z"
+}
