@@ -1,0 +1,123 @@
+{
+  "subjects": [
+    {
+      "description": "A small child-sized figure standing motionless in the middle of the ego lane, dressed in a dark hooded jacket and dark trousers, rendered as a faint silhouette that sharpens as the fog thins",
+      "appearance_details": "Hood pulled up, indistinct facial detail obscured by fog, small backpack straps faintly visible over the shoulders, still and unmoving",
+      "relationship": "The unexpected road hazard that the ego vehicle detects and stops for",
+      "location": "center of frame, initially in far background, resolving toward mid-ground",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the camera, turned slightly to reveal a profile",
+      "pose": "Standing upright, arms hanging at sides, feet together, perfectly still",
+      "action": "Standing motionless in the ego lane as the car approaches",
+      "state_changes": "Grows clearer and larger as the vehicle closes distance, then holds still as the car stops.",
+      "clothing": "Dark hooded jacket, dark trousers, small backpack",
+      "expression": "Indistinct, obscured by hood and fog",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Not clearly visible due to fog and hood shadow",
+      "facial_features": "Obscured; only a pale hint of face beneath the hood",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A rural two-lane asphalt road stretching straight ahead, enveloped in dense grey fog that swallows all detail beyond a short distance. Faded white lane markings and a broken centerline are barely discernible on the wet-looking dark pavement. Vague shapes of roadside grass, low hedges, and the ghostly outlines of trees or poles fade into the near-uniform grey murk on either side. The sky and horizon merge into an undifferentiated pale grey wall of moisture under flat, diffuse daylight.",
+  "lighting": {
+    "conditions": "Flat overcast daylight diffused through thick fog",
+    "direction": "Ambient, near-directionless illumination from above and all around",
+    "shadows": "Virtually no cast shadows; soft, near-shadowless flat light",
+    "illumination_effect": "Low contrast, milky visibility that mutes colors and hides distant objects, creating a claustrophobic short viewing range"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road with the vanishing point lost in fog; the child figure emerges near the center of the ego lane, the lane markings guiding the eye forward",
+    "color_scheme": "Desaturated greys and muted greens, dark charcoal asphalt, off-white lane lines, cold and monochromatic",
+    "mood_atmosphere": "Tense, eerie, foreboding, hushed, uncertain",
+    "patterns": "Repeating broken centerline dashes fading into fog"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver eye-level looking down the road",
+    "camera_angle": "Eye-level, mounted at driver position",
+    "depth_of_field": "Deep, though limited by fog obscuring distance",
+    "focus": "Sharp on the road ahead and the emerging figure as it nears",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary style",
+  "context": "Autonomous driving / ADAS hazard-detection scenario demonstrating pedestrian detection and emergency braking in low-visibility fog",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego vehicle travels forward along the foggy two-lane road; a faint shape begins to appear ahead in the ego lane."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "The child-sized figure resolves clearly from the fog, standing motionless in the lane."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Ego vehicle advances along the misty road at cruising speed; visibility is limited to a short distance and a faint dark form is barely perceptible ahead in the center lane.",
+      "key_changes": "Forward motion; a shape begins to emerge from the fog.",
+      "camera": "Forward tracking at steady speed, slight natural vibration of dashcam"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "The distance closes and the child-sized figure becomes clearly recognizable, standing still in the middle of the ego lane.",
+      "key_changes": "Figure sharpens and enlarges as distance decreases.",
+      "camera": "Continued forward tracking, beginning to slow"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the foggy two-lane road; a faint shape begins to appear ahead in the ego lane. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Muffled ambient road and tire noise under the dampening effect of fog, the low hum of the engine, followed by the distinct rising squeal and hiss of firm braking and the settling creak of the suspension as the vehicle stops. No music or speech; a tense, quiet atmosphere dominated by mechanical and environmental sound.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

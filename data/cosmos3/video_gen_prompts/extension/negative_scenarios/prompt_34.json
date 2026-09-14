@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A thick column of white steam rising vertically from a round cast-iron manhole cover set into the asphalt of the ego lane, billowing and drifting across the road surface",
+      "appearance_details": "Semi-transparent white vapor plume with soft, turbulent edges; partly translucent so the road markings and lane beyond remain faintly visible through it; wispy tendrils curling and dispersing in the cold air",
+      "relationship": "The perceived obstacle ahead of the ego vehicle; the object that triggers the braking and swerving behavior",
+      "location": "Center foreground to center-mid frame, directly in the ego lane ahead",
+      "relative_size": "Large within frame",
+      "orientation": "Rising upward and drifting laterally toward the left of the road",
+      "pose": "Vertical rising column diffusing outward near the top",
+      "action": "Steam continuously rises from the manhole and drifts across the lane",
+      "state_changes": "The plume thickens and drifts leftward as the vehicle approaches, momentarily obscuring more of the road before dispersing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior dashboard edge and hood are partly visible at the bottom of the frame, driving on a city street",
+      "appearance_details": "Dark dashboard rim and windshield frame visible at lower edge; hood extends into lower-center; wipers at rest against the base of the windshield",
+      "relationship": "The point-of-view vehicle from which the entire scene is observed; reacts to the steam column",
+      "location": "Bottom foreground, implied first-person perspective",
+      "relative_size": "Small within frame",
+      "orientation": "Facing forward down the street, aligned with the camera view",
+      "pose": "Moving forward in its lane",
+      "action": "Travels forward, then brakes and swerves sharply left, slowing hard",
+      "state_changes": "Transitions from steady forward motion to sudden deceleration and a leftward veer",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A gray urban city street on a cold winter morning under flat overcast daylight. Multi-story buildings with storefronts and dark windows line both sides of the road. Parked cars sit along the curbs, bare-branched street trees and traffic signs punctuate the sidewalks, and painted lane markings run down the wet-looking asphalt. The far end of the street recedes into a hazy, muted horizon. The air is chilly enough to make the manhole steam vividly visible against the drab backdrop.",
+  "lighting": {
+    "conditions": "Overcast daylight, soft and diffuse",
+    "direction": "Ambient top-down light from a uniformly clouded sky, no distinct source",
+    "shadows": "Weak, soft, low-contrast shadows beneath cars and along building bases",
+    "illumination_effect": "Even, shadowless cold illumination that flattens depth and makes the white steam plume stand out sharply against the muted gray surroundings"
+  },
+  "aesthetics": {
+    "composition": "One-point perspective down the street with the vanishing point near the horizon; the steam column dominates the center of the ego lane, hood at the bottom edge anchoring the first-person viewpoint",
+    "color_scheme": "Muted cold palette of grays, desaturated blues, and asphalt black, accented by the bright translucent white of the steam and occasional dull building colors",
+    "mood_atmosphere": "Tense, chilly, cautious urban commute",
+    "patterns": "Repeating lane markings, rows of parked cars, and rhythmic building facades"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking from the ego vehicle, then a sharp leftward swerve with hard deceleration; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's point of view",
+    "camera_angle": "Eye-level, first-person dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the steam column",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving / ADAS perception scenario illustrating a false-positive obstacle response to harmless manhole steam",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives steadily forward down the overcast city street as a thick white steam column rises from a manhole ahead in the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle detects the drifting steam as an obstacle and begins to brake, the view dipping slightly with deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle swerves sharply to the left and slows down hard to avoid the steam plume, the view sweeping left and settling as speed drops. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Steady forward approach along the city street with the white steam column rising and drifting across the ego lane ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steam plume grows larger in frame as the vehicle nears it.",
+      "camera": "Smooth forward tracking at constant speed, eye-level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle begins braking as it treats the steam as a solid obstacle; forward motion visibly slows. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Onset of deceleration, slight forward pitch of the view.",
+      "camera": "Forward motion decelerating, subtle nose dip; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle swerves sharply left and brakes hard to avoid the vapor plume, the view sweeping leftward while speed drops steeply before nearly stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Abrupt leftward lateral movement combined with hard deceleration; steam remains harmlessly translucent as the clear road beyond is briefly visible.",
+      "camera": "Rapid leftward swerve with strong deceleration, settling low and slow; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from the driver's seat down a gray, overcast city street, with a thick translucent column of white steam rising from a manhole directly ahead in the lane and drifting across the road. Over the first two seconds the vehicle rolls forward steadily and the steam plume grows larger in the frame, its wispy edges partly revealing the clear road markings behind it. At 0:02 the vehicle, misreading the harmless vapor as a solid barrier, begins braking and the view dips slightly. From 0:03 to 0:05 the vehicle swerves sharply to the left while braking hard, the whole view sweeping leftward as speed drops steeply and the car nearly comes to a stop, the steam still billowing harmlessly over the empty lane ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient cold-morning city sounds: the low hum of the moving vehicle, faint distant traffic, and a soft hiss of escaping steam. As the maneuver begins, the engine note drops and tires squeal briefly during the hard braking and leftward swerve, followed by the whir of the slowing car settling to near-stop.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

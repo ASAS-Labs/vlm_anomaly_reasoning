@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed truck traveling directly ahead of the ego vehicle, carrying an upright steel rack loaded with large rectangular mirrors oriented to face rearward",
+      "appearance_details": "White or light-gray cab with a steel-framed flatbed; the cargo rack holds several tall plate-glass mirrors bound with straps; the reflective surfaces mirror the road behind, the blue sky, and the ego vehicle's front end, creating a disorienting 'window onto another road' effect. Red rectangular brake lights and amber marker lights flank the rear",
+      "relationship": "The lead vehicle that the ego car is following and reacting to; its reflective cargo is the focal ambiguity the ego vehicle correctly interprets",
+      "location": "center foreground, occupying the middle of the frame ahead",
+      "relative_size": "Large within frame",
+      "orientation": "rear of the truck faces the camera directly",
+      "pose": "traveling forward in the same lane as the ego vehicle, mirrors squared to the camera",
+      "action": "driving ahead, then decelerating with brake lights illuminating",
+      "state_changes": "Brake lights switch from off to bright red as the truck slows; the reflected imagery in the mirrors shifts as relative speed and distance change",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose forward-facing dashcam/ego perspective frames the scene",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame; portions of the ego car's front end are reflected in the truck's mirrored cargo",
+      "relationship": "The observing and reacting vehicle, following the flatbed truck at a controlled distance",
+      "location": "implied at camera position, lower foreground",
+      "relative_size": "Small within frame",
+      "orientation": "facing forward down the road, aligned with travel direction",
+      "pose": "traveling in-lane behind the truck",
+      "action": "following the truck, then slowing markedly to maintain a safe gap",
+      "state_changes": "Transitions from steady following speed to a marked deceleration, increasing distance to the truck",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane rural-to-suburban asphalt road under a clear blue daytime sky. The road stretches ahead with a dashed centerline and solid edge lines, flanked by low grassy shoulders and sparse roadside vegetation. Distant trees and utility poles line the periphery. Consistent, crisp shadows fall from the truck and roadside objects onto the pavement, indicating stable overhead-to-side sunlight. The truck's mirrored cargo creates a striking illusion, reflecting the same road, sky, and the ego vehicle, appearing almost like a second road opening ahead.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly side-lit from the upper left",
+    "shadows": "Sharp, consistent shadows cast by the truck and roadside objects onto the road surface",
+    "illumination_effect": "High contrast and clear visibility, causing bright specular glare on the mirrored cargo and vivid reflections of sky and road"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the road converging toward a vanishing point behind the truck; the truck's mirrored rear dominates the middle of the frame, its reflection creating a surreal recursive depth",
+    "color_scheme": "Dominant blues of the sky and gray asphalt, accented by the white truck, green roadside vegetation, and the sudden red glow of brake lights",
+    "mood_atmosphere": "Calm, alert, subtly uncanny",
+    "patterns": "Repeating dashed centerline markings and the grid of mirror panels reflecting the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the ego vehicle, smoothly decelerating; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road and truck rear",
+    "camera_angle": "Eye-level, driver's forward viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the truck's mirrored cargo and the road ahead",
+    "lens_focal_length": "Standard wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving perception scenario demonstrating correct interpretation of reflective cargo and safe following behavior",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle follows the flatbed truck at steady speed; the mirrored cargo reflects the road, sky, and ego vehicle, creating an illusion of a second road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The truck's brake lights illuminate bright red as it begins to slow ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle recognizes the reflective cargo as part of the truck and decelerates markedly, increasing and maintaining a safe following distance at reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle travels behind the flatbed truck on a clear two-lane road; the rearward-facing mirrors reflect the road and sky, appearing like a moving window onto another road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Reflections in the mirrors subtly shift with movement; steady following speed maintained.",
+      "camera": "Smooth forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The truck's brake lights turn on as it slows ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Red brake lights illuminate; relative closing speed begins to reduce.",
+      "camera": "Forward tracking, beginning to decelerate; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle correctly interprets the reflective cargo as part of the truck and slows markedly, holding a safe distance at the reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to truck increases then stabilizes; ego speed noticeably reduced.",
+      "camera": "Forward tracking with pronounced deceleration, then steady; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle cruises down a sunlit two-lane road directly behind a flatbed truck carrying a rack of large mirrors facing rearward; the mirrors reflect the road, blue sky, and the ego car itself, uncannily resembling a second road ahead. Around 0:02 the truck's red brake lights suddenly illuminate as it begins to slow. From 0:03 to 0:05 the ego vehicle recognizes the reflective panels as the truck's cargo rather than open road, and decelerates markedly, opening up and then holding a safe following distance at the reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient road noise dominates: steady tire hum on asphalt and a low engine drone from the ego vehicle. A faint diesel rumble from the truck ahead. As deceleration begins, a subtle drop in engine pitch and the soft hiss of easing speed. No speech or music; naturalistic environmental sound throughout.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

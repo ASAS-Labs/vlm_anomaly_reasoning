@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "Faint silhouettes of vehicles in slow-moving traffic ahead on the road, their shapes almost entirely dissolved into the bright haze of the setting sun",
+      "appearance_details": "Barely discernible rear ends of cars and possibly a truck, reduced to dark smudges and occasional glints of tail lights piercing the glare",
+      "relationship": "Traffic obstacles ahead of the ego vehicle, forcing it to reduce speed",
+      "location": "center distance, receding along the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Facing away from camera, moving in the same direction",
+      "pose": "N/A",
+      "action": "Rolling slowly forward in congested traffic",
+      "state_changes": "Outlines remain barely visible, slightly shifting as the ego vehicle slows and closes distance",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, present only through its dashboard-forward point of view and the framing of its windshield",
+      "appearance_details": "Interior implied by lower-frame dashboard hints and the wide forward field of view of a forward-facing camera",
+      "relationship": "The observer/protagonist of the scene whose degraded vision drives the narrative",
+      "location": "camera position, unseen except implied edges",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, directly into the sun",
+      "pose": "N/A",
+      "action": "Driving forward then decelerating markedly to a cautious crawl",
+      "state_changes": "Transitions from steady forward travel to a noticeably reduced, sustained slow speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A straight, flat two-lane rural or suburban road stretching directly toward the horizon at sunset. The low sun sits just above the vanishing point of the road, flooding the entire upper and central portion of the frame with intense golden-white glare. Lane markings, road edges, and the shapes of vehicles ahead are washed out into a bright haze. Faint outlines of roadside features - utility poles, sparse trees, and a low horizon line - are dimly perceptible at the frame's edges where the glare is less overwhelming. The asphalt surface is a muted grey-brown, partially bleached by reflected sunlight.",
+  "lighting": {
+    "conditions": "Harsh low-angle sunset light causing severe direct glare and lens flare",
+    "direction": "Front-lit, directly head-on from the low sun above the road ahead",
+    "shadows": "Minimal visible shadows on the road ahead due to backlighting; long faint shadows cast toward the camera from roadside objects",
+    "illumination_effect": "Blinding overexposure across the center of the frame, washing out detail, reducing contrast, and dissolving forward objects into bright haze with veiling glare and lens flare artifacts"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective centered on the road's vanishing point, with the blinding sun positioned just above the horizon at frame center; overexposed core with slightly darker edges",
+    "color_scheme": "Dominant warm golden-white and amber tones fading into pale bleached highlights, with muted grey asphalt and dim blue-grey shadows at the periphery",
+    "mood_atmosphere": "Tense, cautious, disorienting, hazy",
+    "patterns": "Repeating faint dashes of lane markings dissolving into glare"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego-motion), gradually decelerating; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's forward viewpoint",
+    "camera_angle": "Eye-level, forward-facing dashboard perspective",
+    "depth_of_field": "Deep",
+    "focus": "Nominally the road ahead, though obscured by glare and haze",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous or driver-assist ego-vehicle perception scenario demonstrating response to degraded forward visibility from sun glare",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels forward at moderate speed on the straight road, driving directly into the blinding low sun; lane markings and vehicles ahead are washed out by glare. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Recognizing the degraded forward vision, the ego vehicle begins to slow markedly, its forward motion decelerating. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego vehicle continues rolling at the reduced, cautious speed through the persistent glare, faint traffic outlines barely visible ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle moves steadily forward on the straight two-lane road, headed directly into the low sunset sun that floods the frame with glare and washes out lane markings and vehicle shapes ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Glare intensifies as forward vision degrades; faint traffic outlines appear in the haze.",
+      "camera": "Forward ego-motion at steady moderate speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The ego vehicle detects its degraded forward visibility and begins to slow noticeably, forward speed dropping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Perceptible deceleration; the rate of forward motion reduces sharply.",
+      "camera": "Forward ego-motion decelerating; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle keeps rolling at the reduced, cautious speed through the sustained glare, with barely visible slow traffic ahead in the bright haze. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Speed remains low and steady; glare persists throughout.",
+      "camera": "Forward ego-motion at a slow, steady crawl; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks straight down a flat two-lane road toward a low sunset sun sitting just above the horizon, flooding the frame with blinding golden-white glare that washes out the lane markings and dissolves the shapes of vehicles ahead into bright haze. Through 0:01 the ego vehicle rolls forward at a moderate speed, faint dark outlines of slow traffic barely perceptible in the overexposed center. Around 0:02 the vehicle recognizes its degraded forward vision and begins to decelerate noticeably. From 0:03 onward the ego vehicle continues at a markedly reduced, cautious crawl through the persistent glare, holding this slow speed while the faint vehicle silhouettes remain just visible in the haze until 0:05. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient road and cabin noise dominates: the steady low hum of tires on asphalt gradually lowering in pitch and volume as the vehicle slows, faint wind buffeting, and the muffled drone of slow traffic ahead. No speech or music; a subtle change in engine tone accompanies the deceleration.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

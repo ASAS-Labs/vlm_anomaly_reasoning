@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A low, blinding sun sitting just above the horizon at the vanishing point of the road, radiating intense white-gold glare that floods the camera",
+      "appearance_details": "Bright circular halo with elongated lens flare streaks and ghosting artifacts, surrounded by a washed-out orange sky",
+      "relationship": "The primary light source and obstruction, directly ahead of the ego vehicle's path",
+      "location": "center of frame, just above the road horizon",
+      "relative_size": "Large within frame",
+      "orientation": "facing directly toward the camera",
+      "pose": "",
+      "action": "Emitting overwhelming glare that washes out the scene",
+      "state_changes": "Glare intensifies slightly as the vehicle approaches, brightening the frame further.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Faint silhouettes of slow-moving vehicles ahead on the road, barely discernible as dark smudges within the bright haze",
+      "appearance_details": "Vague rectangular and rounded shapes suggesting a car and possibly a truck, edges dissolved by glare",
+      "relationship": "Slow traffic ahead of the ego vehicle, obscured by the sun",
+      "location": "center to left-center, distant on the road ahead",
+      "relative_size": "Small within frame",
+      "orientation": "rear-facing, moving away from camera",
+      "pose": "",
+      "action": "Driving slowly ahead in the same direction",
+      "state_changes": "Grow marginally larger and slightly more defined as the ego vehicle closes distance.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A straight two-lane rural highway at sunset, stretching directly toward a low sun on the horizon. The asphalt road runs flat and unbroken toward the vanishing point, flanked by faint roadside vegetation and utility poles that are barely visible against the overwhelming glare. Lane markings are almost completely washed out. The sky is a saturated wash of amber, orange, and pale white near the sun, fading to warmer dusk tones toward the frame edges.",
+  "lighting": {
+    "conditions": "Harsh low-angle sunset light with intense glare and lens flare",
+    "direction": "Front-lit, directly into the camera from the vanishing point ahead",
+    "shadows": "Minimal visible shadows due to backlit haze; foreground road detail flattened by glare",
+    "illumination_effect": "Overwhelming blinding glare that overexposes the center of frame, washing out lane markings and vehicle shapes into a bright, hazy blur"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective with the road converging toward the centered sun; horizon roughly mid-frame; glare dominating the central region",
+    "color_scheme": "Warm sunset palette of amber, gold, orange, and pale burnt white, with washed-out low-contrast midtones",
+    "mood_atmosphere": "Tense, hazardous, disorienting, dazzling",
+    "patterns": "Repeating utility poles receding along the roadside"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the moving ego vehicle, steady with subtle road vibration; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's point of view through the windshield",
+    "camera_angle": "Eye-level, driver's ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Nominally on the road ahead, though washed out by glare",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam",
+  "context": "Ego-view driving footage illustrating hazardous sun-glare driving conditions",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward on the straight road as the low sun floods the windshield with glare, washing out the view ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Faint silhouettes of slow traffic become momentarily discernible within the bright haze as the vehicle maintains speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at full cruising speed directly into the intensifying glare without slowing, the scene almost entirely washed out. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego car drives forward on a straight two-lane road into the low sunset sun, glare flooding the camera and washing out lane markings while faint vehicle outlines appear ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Glare gradually intensifies; faint traffic silhouettes become slightly visible.",
+      "camera": "Steady forward tracking from the driver's viewpoint with subtle vibration; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains full cruising speed and drives directly into the blinding glare, the view remaining heavily washed out with only ghostly traffic outlines barely visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "No slowing occurs; glare peaks and dominates the frame.",
+      "camera": "Continued steady forward tracking into the sun; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego view opens on a straight two-lane road bathed in intense sunset glare, the low sun sitting just above the vanishing point and flooding the windshield with washed-out light. By 0:01 lane markings are barely visible as the glare dominates the center of the frame. At 0:02 faint dark silhouettes of slow-moving vehicles emerge within the bright haze ahead. From 0:03 to 0:05 the ego vehicle continues at full cruising speed, driving directly into the blinding sun without slowing, the entire scene washed out into bright amber haze with only ghostly outlines of traffic barely perceptible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low hum of the car engine and steady tire noise on smooth asphalt, subtle wind rush against the windshield, faint ambient road drone, and occasional soft cabin vibration; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

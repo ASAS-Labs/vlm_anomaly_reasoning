@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A herd of dairy and beef cattle, predominantly black-and-white Friesians mixed with a few brown cows, filling the full width of the narrow country lane",
+      "appearance_details": "Muddy hooves and lower legs, wet muzzles, ear tags visible on several animals, some with rounded bellies, tails swishing occasionally",
+      "relationship": "Primary obstacle ahead of the ego vehicle, being driven by the farmer behind them",
+      "location": "center and filling the full width of the lane ahead, foreground to midground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing toward the camera as they walk toward and around the ego vehicle",
+      "pose": "Standing and walking on all four legs, heads lowered, slow ambling gait",
+      "action": "Walking slowly toward and past the stationary ego vehicle",
+      "state_changes": "The herd approaches, grows larger in frame, and begins to flow around the vehicle as it stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 18,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "A farmer in weatherproof outdoor clothing walking behind the herd, driving the cattle down the lane",
+      "appearance_details": "Wearing a flat cap or beanie, a waxed green jacket, dark trousers, and wellington boots, possibly holding a stick",
+      "relationship": "Herder controlling and following the cattle behind them",
+      "location": "background, partly obscured behind the herd, center of lane",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the camera, walking behind the cattle",
+      "pose": "Upright, walking, arms occasionally raised to guide the animals",
+      "action": "Following and guiding the herd down the lane",
+      "state_changes": "Remains behind the herd, slowly becoming more visible as cattle pass",
+      "clothing": "Waxed green jacket, dark trousers, wellington boots, flat cap",
+      "expression": "Neutral, focused on the animals",
+      "gender": "Male",
+      "age": "Middle-aged",
+      "skin_tone_and_texture": "Fair, weathered from outdoor work",
+      "facial_features": "Partly obscured by distance and cap; ruddy complexion, short greying hair",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A narrow single-track rural country lane flanked on both sides by tall, dense green hedgerows. The tarmac is slightly wet and patched with mud and cow dung. The lane curves gently ahead into the hedged corridor. Overcast grey sky provides flat, even lighting. Occasional glimpses of farmland and trees rise beyond the hedgerows.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "Diffuse, top-down ambient light from a fully clouded sky",
+    "shadows": "Soft, faint shadows beneath the cattle and hedgerows",
+    "illumination_effect": "Even, muted illumination with low contrast and cool tones, typical of a cloudy day"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-perspective looking straight down the lane, hedgerows framing both sides forming a natural corridor toward the approaching herd",
+    "color_scheme": "Muted greens of hedgerows, grey tarmac and sky, black-and-white and brown of cattle",
+    "mood_atmosphere": "Calm, patient, rural, everyday countryside encounter",
+    "patterns": "Repeating forms of cattle bodies and the linear texture of hedgerows"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "The approaching herd and lane ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam ego-view",
+  "context": "Autonomous driving or dashcam scenario depicting yielding to livestock on a rural road",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the narrow hedgerow-lined lane and spots the herd of cattle filling the lane ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop well before the herd and remains stationary as cattle walk toward and around it, with the farmer following behind; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward down the narrow country lane between hedgerows and encounters a herd of cattle filling the entire width ahead.",
+      "key_changes": "Herd grows larger in frame as vehicle approaches; forward speed begins to reduce.",
+      "camera": "Forward tracking motion along the lane."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle is fully stopped and remains stationary while the herd walks toward and around it, the farmer visible behind the cattle. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the narrow hedgerow-lined lane and spots the herd of cattle filling the lane ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient countryside sounds dominate: the low rumble of the idling engine, the soft squeal and hum of brakes engaging, the shuffling of many hooves on wet tarmac, intermittent low moos and bellows from the cattle, birdsong from the hedgerows, and the occasional distant call of the farmer directing the herd.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

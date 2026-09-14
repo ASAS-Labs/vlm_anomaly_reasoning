@@ -1,0 +1,115 @@
+{
+  "subjects": [
+    {
+      "description": "A cluster of identical white autonomous vehicles, compact sedan-shaped cars with rounded contours, glossy white body panels, and integrated sensor pods on their roofs",
+      "appearance_details": "Roof-mounted spinning LIDAR units, subtle branding decals, glowing white and amber running lights, dark tinted windows reflecting the dim depot lighting",
+      "relationship": "These vehicles are peers to the ego vehicle, sharing the same depot and repositioning simultaneously; one directly obstructs the ego vehicle's path",
+      "location": "center and mid-ground, spread across marked bays ahead of the ego vehicle",
+      "relative_size": "Medium within frame",
+      "orientation": "Varied; several facing away or angled, one turning broadside as it pulls out of a bay directly ahead",
+      "pose": "Vehicles positioned at slight angles within and between marked parking bays",
+      "action": "Slowly repositioning among the bays; one pulls out of its bay directly ahead of the ego vehicle",
+      "state_changes": "The nearest vehicle transitions from stationary in its bay to rolling forward and rotating into the driving lane, then clearing the path",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A large, dimly lit vehicle depot at night, an enclosed industrial parking structure with a smooth concrete floor marked by faded white and yellow bay lines. Support pillars rise at intervals into the shadowed ceiling, where sparse overhead fixtures cast pools of cool light. Painted bay numbers and directional arrows are visible on the floor. The far reaches of the depot fade into darkness, with occasional reflective safety strips and distant charging stalls suggested along the perimeter.",
+  "lighting": {
+    "conditions": "Low-key nighttime artificial lighting from sparse overhead fixtures",
+    "direction": "Top-lit from scattered ceiling lamps, supplemented by the vehicles' own running lights and the ego vehicle's headlights from below-front",
+    "shadows": "Long, soft pooled shadows beneath and beside the vehicles, deepening toward the depot edges",
+    "illumination_effect": "A moody, cavernous ambiance with bright highlights glinting off the white car bodies against enveloping darkness"
+  },
+  "aesthetics": {
+    "composition": "First-person ego perspective centered on the lane ahead, with the pulling-out vehicle framed slightly right of center; parallel bay lines create leading lines converging into the dark depth",
+    "color_scheme": "Cool desaturated palette of concrete grays, glossy whites, deep shadow blacks, punctuated by amber and white light accents",
+    "mood_atmosphere": "Quiet, mechanical, eerily orderly, calm nighttime automation",
+    "patterns": "Repeating rectangular parking bay lines and the uniform rows of identical white vehicles"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward tracking shot with a gentle rightward steering arc, mounted as the ego vehicle's viewpoint; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver perspective, low to the ground",
+    "depth_of_field": "Deep",
+    "focus": "The repositioning vehicles and the bay lanes ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "cinematic realistic",
+  "context": "Autonomous vehicle fleet navigating and parking within a depot at night; simulation or dashcam-style perspective",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle moves slowly forward through the dim depot; a white vehicle ahead begins pulling out of its bay directly in the ego vehicle's path. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle slows down as the repositioning vehicle crosses in front, easing to a near stop. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle steers gently to the right, threading between the repositioning vehicles toward its own marked bay. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "B-07",
+      "category": "scene_sign",
+      "appearance": "White stenciled block characters painted on the concrete floor",
+      "spatial_temporal": "Visible on the floor of a bay in the mid-ground, present throughout",
+      "context": "Bay number marking identifying parking positions"
+    },
+    {
+      "text": "→",
+      "category": "scene_sign",
+      "appearance": "Faded yellow directional arrow painted on the floor",
+      "spatial_temporal": "Lower center of frame on the driving lane, visible as the ego vehicle advances",
+      "context": "Directional guidance for vehicle circulation within the depot"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle rolls slowly forward down the depot lane as a white vehicle ahead begins pulling out of its bay across the path. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Nearest vehicle transitions from static to rolling out, entering the lane",
+      "camera": "Steady slow forward tracking; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Ego vehicle decelerates as the repositioning vehicle crosses in front of it. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Forward speed drops to near stop; the crossing vehicle occupies center frame",
+      "camera": "Forward motion slows markedly; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle steers gently rightward, navigating between the repositioning vehicles toward its own bay. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Camera pans right as the vehicle arcs toward its parking bay; the crossing vehicle clears the path",
+      "camera": "Slow forward motion with a gentle rightward steering arc; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle's viewpoint glides slowly forward down a dimly lit depot lane, headlights spilling across marked bays and glossy white vehicles. By 0:01 a white vehicle directly ahead begins easing out of its bay, its running lights glowing amber. At 0:02 the ego vehicle slows as the crossing vehicle rolls into the lane broadside, nearly filling the center of frame. From 0:03 onward the ego vehicle gently steers to the right, threading carefully between the slowly repositioning white cars, arcing toward its own marked bay through 0:05 as the path clears ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "A quiet, low mechanical hum of electric motors and tire rolling on concrete dominates the ambient soundscape. Faint whirring of roof-mounted sensor units, a soft distant echo characteristic of an enclosed depot, and a subtle proximity alert chime as the vehicle slows. No music or speech; the atmosphere is calm and automated.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

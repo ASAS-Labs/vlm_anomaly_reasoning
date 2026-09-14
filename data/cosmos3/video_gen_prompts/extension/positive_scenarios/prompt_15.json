@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A street performer painted entirely in metallic silver from head to toe, imitating a living statue, standing on a small silver-painted wooden box at the edge of the roadway.",
+      "appearance_details": "Uniform silver body paint covering skin, clothing, hair, and a draped robe; a silver staff or prop held in one hand; face frozen in a neutral statuesque expression with silver-coated eyelashes.",
+      "relationship": "The primary hazard the ego vehicle recognizes and avoids; positioned as a static human on the curb beside a lamp post.",
+      "location": "right foreground, on the curb beside a lamp post at the right edge of the roadway",
+      "relative_size": "Medium within frame",
+      "orientation": "facing slightly toward the camera and street, three-quarter view",
+      "pose": "perfectly motionless statue pose, one arm raised holding a staff, weight balanced on a small box",
+      "action": "standing completely still, imitating a statue",
+      "state_changes": "No significant change; remains motionless throughout as the vehicle passes.",
+      "clothing": "silver-painted flowing robe and tunic, entirely coated to match the statue illusion",
+      "expression": "fixed neutral, statue-like stare",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "obscured entirely by smooth metallic silver body paint",
+      "facial_features": "features flattened by uniform silver paint; visible only as sculpted contours of nose, brow, and lips beneath the metallic coating",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A cast-iron ornamental lamp post at the curbside beside the performer.",
+      "appearance_details": "Dark green weathered metal, decorative fluted column, glass lantern head at the top.",
+      "relationship": "Landmark next to the performer marking the curb edge.",
+      "location": "right edge of frame, foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "vertical, facing camera",
+      "pose": "upright and fixed",
+      "action": "stationary street fixture",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow one-way street in a historic European city center, flanked by aged stone and plaster buildings with shuttered windows, wrought-iron balconies, and worn cobblestone or fine-cobble paving. The street is quiet with no other traffic. Storefronts and doorways line both sides, and the roadway tapers into the distance under bright, clear daytime skies. A cast-iron lamp post stands at the right curb near a silver living statue performer.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, side-lit from the left creating consistent directional shadows",
+    "shadows": "crisp, consistent shadows cast to the right of vertical objects, including the lamp post and performer",
+    "illumination_effect": "even, warm daytime illumination that makes the silver body paint glint and the cobblestones appear textured and sunlit"
+  },
+  "aesthetics": {
+    "composition": "Central vanishing-point perspective down the narrow street with the silver performer prominently placed at the right foreground curb, leading lines from building facades converging ahead.",
+    "color_scheme": "Warm ochre and beige building tones, gray cobblestone, dark green lamp post, and a striking metallic silver accent from the performer against a pale blue sky.",
+    "mood_atmosphere": "calm, curious, cautious, sunny stillness",
+    "patterns": "repeating cobblestone paving texture and rhythmic building windows and shutters"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward dolly (ego vehicle POV) advancing along the lane with a slight rightward clearance shift; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full street and curbside performer",
+    "camera_angle": "Eye-level driver's ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the street scene and the silver performer",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam-style",
+  "context": "Autonomous vehicle perception demonstration showing recognition of a motionless human performer as a pedestrian hazard and appropriate slowing and clearance",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels slowly forward along the narrow one-way street; the silver performer becomes visible at the right curb beside the lamp post. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle recognizes the motionless performer as a human, slows markedly, and begins shifting slightly left to hold a wide clearance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle passes the performer at the reduced speed with a wide gap and continues rolling steadily forward. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle moves slowly down the sunlit historic street, approaching the silver living statue on the right curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Performer grows larger in frame as the vehicle nears.",
+      "camera": "Slow steady forward dolly at reduced speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Vehicle detects the human, reduces speed further and eases toward the left to widen clearance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Noticeable deceleration and slight lateral shift left.",
+      "camera": "Forward motion slows; slight leftward drift; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle passes the motionless performer with a wide gap and keeps rolling at the lowered speed down the street. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Performer moves past on the right and out of the frame edge; continuous slow forward travel.",
+      "camera": "Continued slow forward dolly maintaining reduced speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle rolls slowly along a narrow sunlit one-way street in a historic city center, cobblestones textured under bright side light. By 0:01 a silver-painted living statue performer becomes clearly visible standing motionless on a small box at the right curb beside an ornate lamp post. At 0:02 the vehicle recognizes the still figure as a human, slows markedly, and eases slightly to the left to hold a wide clearance. From 0:03 to 0:05 the vehicle passes the performer at the reduced speed with a generous gap, the silver figure remaining perfectly still on the right, and continues rolling steadily forward down the quiet street. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient quiet of a historic city center: soft tire hum on cobblestones, gentle engine idle at low speed, faint distant birdsong and occasional far-off footsteps. No dialogue and no music; a subtle deceleration in the drivetrain sound accompanies the slowing maneuver.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

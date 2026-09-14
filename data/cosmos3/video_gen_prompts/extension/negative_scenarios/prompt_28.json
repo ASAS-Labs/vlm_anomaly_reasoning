@@ -1,0 +1,140 @@
+{
+  "subjects": [
+    {
+      "description": "The ego vehicle, a modern passenger car seen from the driver's first-person perspective through the windshield, its interior implied but not visible as the camera represents the forward view down the highway",
+      "appearance_details": "Only the forward-facing view through the windshield is visible; the dashboard edge may faintly appear at the very bottom of the frame, with a clean glass surface aside from the contaminant",
+      "relationship": "This is the point-of-view vehicle from which the entire scene is observed; all other traffic is seen relative to it",
+      "location": "center, encompassing the whole frame as the ego perspective",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the highway, away from the camera direction",
+      "pose": "moving steadily forward in its lane",
+      "action": "cruising at full highway speed without slowing",
+      "state_changes": "Maintains constant cruising speed throughout; no deceleration despite the obscured lens.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A milky white and grayish bird dropping splattered directly onto the camera lens or windshield, forming an irregular smear",
+      "appearance_details": "Semi-translucent milky white with darker gray-green streaks, spreading in an amorphous blob with feathered edges, refracting and blurring the light passing through it",
+      "relationship": "The obstruction sits on the lens between the camera and the road scene, partially blotting out the view",
+      "location": "upper center of the frame, extending slightly downward",
+      "relative_size": "Medium within frame",
+      "orientation": "flat against the lens surface facing the camera",
+      "pose": "static splatter adhering to the glass",
+      "action": "impacts and settles onto the lens, then remains fixed",
+      "state_changes": "Appears suddenly early in the video with a splatter impact, then stays static and continues to blur the road ahead.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Light traffic on the two-lane highway, consisting of a few distant vehicles such as sedans and a truck traveling in the same and opposite directions",
+      "appearance_details": "Assorted colors including a white sedan, a dark SUV, and a distant cargo truck; sunlit metallic surfaces reflecting the clear daytime sky",
+      "relationship": "Fellow road users sharing the highway with the ego vehicle",
+      "location": "distributed across the visible portions of the road, some partly hidden by the lens smear",
+      "relative_size": "Small within frame",
+      "orientation": "facing away (same direction) or toward the camera (oncoming lane)",
+      "pose": "driving in their respective lanes at highway speed",
+      "action": "moving along the highway maintaining traffic flow",
+      "state_changes": "Vehicles gradually shift position as the ego car advances and passes or approaches them.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A straight two-lane rural highway under a clear blue daytime sky. Asphalt pavement stretches ahead with painted lane markings, bordered by grassy shoulders, low vegetation, and distant tree lines and gentle hills on the horizon. Utility poles and occasional road signs pass by along the roadside. The environment is bright, open, and calm with only light traffic.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high overhead sun, slightly from the front-left casting consistent shadows",
+    "shadows": "Sharp, consistent shadows cast by vehicles and roadside objects onto the pavement and shoulders",
+    "illumination_effect": "Even, high-contrast natural illumination that makes the milky lens smear glow translucently against the bright sky"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing dashcam composition with the road converging toward a central vanishing point; the upper center partially obscured by the bird dropping smear",
+    "color_scheme": "Dominant blues of the sky, gray asphalt, green roadside vegetation, and the milky off-white smear breaking the upper frame",
+    "mood_atmosphere": "Mundane, uneventful, slightly unsettling due to the obscured view",
+    "patterns": "Repeating lane markings and roadside utility poles receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking motion matching the vehicle's cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot of the road ahead from the driver's perspective",
+    "camera_angle": "Eye-level, mounted at driver height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road and distant traffic where not blocked; blurred and diffused behind the lens smear",
+    "lens_focal_length": "Wide-angle, typical of a dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam footage",
+  "context": "Automotive dashcam / autonomous driving sensor perspective showing a lens obstruction scenario",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle cruises forward on a clear two-lane highway with light traffic ahead under bright daylight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "A large bird dropping suddenly splatters onto the lens, spreading a milky smear over the upper center and blurring the road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at full cruising speed without slowing, the smear remaining fixed while visible portions of the road and passing traffic continue. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Clear forward view of the highway as the ego vehicle cruises with light traffic and consistent daytime shadows. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Establishes the clean, unobstructed driving scene.",
+      "camera": "Forward tracking at cruising speed, steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A bird dropping splatters onto the lens, creating a milky smear that blots out the upper center and blurs the road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sudden appearance of the milky obstruction on the lens.",
+      "camera": "Continues forward tracking, unaffected by the impact; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle ignores the obscured lens and continues driving at full cruising speed; the smear stays static while visible traffic and road advance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "No deceleration; smear remains fixed; traffic positions shift with forward motion.",
+      "camera": "Steady forward tracking at unchanged speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a bright, clear two-lane highway stretching ahead with light traffic and sharp consistent shadows on the asphalt. Around 0:01 a large bird dropping suddenly splatters onto the lens, spreading a milky white smear across the upper center of the frame and blurring the road ahead. From 0:02 to 0:03 the smear settles into a fixed, translucent blot that partially obscures the view of the oncoming and leading vehicles. From 0:03 through 0:05 the ego vehicle continues cruising at full speed without slowing, the smear remaining static as the visible portions of the road and passing traffic advance steadily toward and past the camera. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low hum of road and tire noise at highway speed, faint wind buffeting against the vehicle, and a subtle wet 'splat' sound as the bird dropping strikes the lens; no speech or music, only ambient driving sound.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

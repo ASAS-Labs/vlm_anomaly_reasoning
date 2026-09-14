@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A city transit bus travelling in the lane immediately to the left and slightly ahead of the ego vehicle, its entire side panel wrapped in a full-length advertisement",
+      "appearance_details": "Long articulated municipal bus with tinted upper windows; the side is covered edge-to-edge in a glossy vinyl wrap depicting several life-size photographic figures of people standing and waving; the printed figures are flat, seams of the vinyl visible across window lines",
+      "relationship": "Occupies the adjacent left lane relative to the ego vehicle; its advertisement contains the printed human figures",
+      "location": "Left of center, mid-ground, extending toward the vanishing point",
+      "relative_size": "Large within frame",
+      "orientation": "Rear three-quarter view, moving away and forward, roughly parallel to the ego vehicle",
+      "pose": "Rolling forward on the roadway",
+      "action": "Cruising steadily in the adjacent lane just ahead",
+      "state_changes": "Maintains a slightly leading position; the ego vehicle stays alongside without gaining or dropping back.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A group of printed, life-size photographic human figures on the bus advertisement, shown standing and waving",
+      "appearance_details": "Flat glossy printed images of smiling people in casual bright clothing, arms raised in a waving gesture; clearly two-dimensional graphics on the vinyl wrap, not real bodies, with slight reflectivity and print texture",
+      "relationship": "Printed onto the side of the bus; not real pedestrians and never occupy the road",
+      "location": "Along the left side panel of the bus in the mid-ground",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera as printed advertisement subjects",
+      "pose": "Standing upright with one arm raised in a waving gesture",
+      "action": "Static printed poses that appear to wave",
+      "state_changes": "No significant change; they remain flat printed images throughout.",
+      "clothing": "Casual bright-colored everyday clothing as depicted in the advertisement photograph",
+      "expression": "Cheerful, smiling",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones as printed, with smooth glossy vinyl surface texture",
+      "facial_features": "Smiling faces with varied hair colors and styles rendered photographically on the flat wrap",
+      "number_of_subjects": 4,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A wide multi-lane urban avenue on a clear day, flanked by mid-rise commercial buildings, storefronts, street trees, traffic signals and light poles. Lane markings are crisp and the road surface is dry asphalt. The lane directly ahead of the ego vehicle is clear of obstacles, with distant traffic and cross streets fading toward the horizon under a bright blue sky.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High sun, slightly front-side lit from the upper left",
+    "shadows": "Consistent, well-defined shadows cast by the bus, poles and trees onto the pavement",
+    "illumination_effect": "Even, high-contrast daylight that clearly reveals the flat, glossy nature of the printed figures on the bus"
+  },
+  "aesthetics": {
+    "composition": "Ego-view dash perspective with the road converging toward a central vanishing point, the wrapped bus dominating the left mid-ground and the open clear lane leading forward",
+    "color_scheme": "Neutral grays of asphalt and buildings accented by the vivid printed colors of the bus advertisement and blue sky",
+    "mood_atmosphere": "Calm, routine, orderly city commute",
+    "patterns": "Repeating lane markings, window seams on the bus, and rhythmic street poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot matching vehicle speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the wrapped bus in the adjacent lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam",
+  "context": "Autonomous driving perception test verifying that printed human figures on a bus advertisement are not mistaken for real pedestrians",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises forward along the clear lane as the wrapped bus appears just ahead in the left lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The printed, waving human figures on the bus side become clearly visible; the ego vehicle recognizes them as flat images. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego vehicle continues at normal cruising speed alongside the bus without slowing or stopping, lane ahead remaining clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "CITY TRANSIT",
+      "category": "vehicle_graphic",
+      "appearance": "Bold white sans-serif lettering integrated into the advertisement wrap",
+      "spatial_temporal": "On the lower side panel of the bus, visible throughout",
+      "context": "Identifies the municipal bus operator"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward on the open avenue and draws alongside the advertisement-wrapped bus, whose printed waving figures come into full view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Bus and printed figures grow clearer as the ego approaches its parallel position.",
+      "camera": "Forward tracking at cruising speed, steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Having recognized the figures as flat printed images, the ego vehicle maintains its normal cruising speed alongside the bus with the clear lane continuing ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "No braking or steering deviation; steady continuation for at least two seconds.",
+      "camera": "Continuous forward tracking, unchanged; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle rolls forward along a bright multi-lane city avenue with the lane ahead clear. By 0:01 a wrapped city bus is visible just ahead in the left lane. Around 0:02 the bus advertisement, showing several life-size photographs of people standing and waving, comes into full view; the figures are clearly flat printed images. From 0:03 through 0:05 the ego vehicle recognizes them as printed graphics and continues at its normal cruising speed alongside the bus, neither slowing nor stopping, with consistent daytime shadows on the road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires on dry asphalt and the low hum of the ego engine, with the diesel drone of the adjacent bus and faint distant city traffic; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

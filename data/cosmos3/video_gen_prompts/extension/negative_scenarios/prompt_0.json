@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A tall metal pole rising from a grassy hill beyond the right shoulder, carrying a red octagonal fast-food restaurant logo with bold white lettering",
+      "appearance_details": "The octagonal sign is glossy red with a thin white border and crisp white text at its center; the supporting pole is a slim galvanized-steel column, slightly weathered",
+      "relationship": "Serves as the visual distractor that the ego vehicle mistakes for a stop sign; it is a commercial sign, not a traffic control device",
+      "location": "right side, elevated on the hill in the mid-to-far background",
+      "relative_size": "Medium within frame",
+      "orientation": "The sign face is angled toward the road, partially facing the camera",
+      "pose": "Static, upright, mounted atop the pole",
+      "action": "Standing still, catching direct overhead sunlight",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from its own driver-perspective interior/hood view travelling along the suburban road",
+      "appearance_details": "Only the leading edge of the hood and windshield frame are subtly implied at the bottom of the frame; the car is modern with a clean dashboard reflection",
+      "relationship": "The point-of-view subject whose braking behavior drives the scene",
+      "location": "center foreground, implied as the camera platform",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, aligned with the lane",
+      "pose": "Moving forward then decelerating to a full stop",
+      "action": "Driving, then braking smoothly to a complete stop in the live lane",
+      "state_changes": "Transitions from steady forward motion to smooth deceleration and finally to a full, sustained stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road stretching ahead under a bright, cloudless midday sky. The asphalt is dry, light gray, with faded lane markings down the center. On the right, a grassy green hill rises beyond a modest shoulder, and atop it stands a tall pole bearing a red octagonal fast-food logo. Scattered low trees, trimmed grass, and residential greenery line both sides of the road. There are no intersections, cross streets, real stop signs, pedestrians, or other vehicles visible; the road is open and unobstructed.",
+  "lighting": {
+    "conditions": "Bright daylight",
+    "direction": "Top-lit, sun high overhead",
+    "shadows": "Short, hard shadows fall directly beneath objects such as the pole and trees",
+    "illumination_effect": "Even, high-contrast illumination with vivid colors and clear visibility across the whole scene"
+  },
+  "aesthetics": {
+    "composition": "Centered road leading to a vanishing point, with the red octagonal sign positioned in the upper-right third atop the hill for visual balance",
+    "color_scheme": "Dominant blue sky, green grass, gray asphalt, and a striking red-and-white sign as the focal accent",
+    "mood_atmosphere": "Calm, sunny, everyday suburban stillness with subtle tension from the misread sign",
+    "patterns": "Repeating lane markings and roadside greenery"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's ego perspective",
+    "camera_angle": "Eye-level, driver height",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the red octagonal sign on the hill",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam aesthetic",
+  "context": "Autonomous driving perception edge case: a commercial logo resembling a stop sign causing an erroneous braking response",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward at a steady pace along the open dry road, the red octagonal logo visible atop the hill on the right"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop in the live lane below the hill and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FAST FOOD",
+      "category": "logo",
+      "appearance": "Bold white sans-serif lettering centered on a glossy red octagon with a thin white border",
+      "spatial_temporal": "Upper-right of frame atop the hillside pole, visible throughout the entire clip",
+      "context": "Commercial fast-food restaurant branding that superficially resembles a stop sign"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "The car drives forward along the two-lane suburban road under bright overhead sun, with the red octagonal logo standing on the grassy hill to the right",
+      "key_changes": "Steady forward motion; sign grows slightly larger as the vehicle approaches",
+      "camera": "Forward tracking at constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The car reaches a complete stop in the live lane beneath the hill and stays fully stationary for the remainder of the clip. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward at a steady pace along the open dry road, the red octagonal logo visible atop the hill on the right. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient outdoor road atmosphere with a gentle breeze and faint birdsong. A steady low hum of the car's engine and tire noise gradually fades as the vehicle decelerates, followed by the soft mechanical sound of braking and then near silence with only ambient nature sounds while the car stands still.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

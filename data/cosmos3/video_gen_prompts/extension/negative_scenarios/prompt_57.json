@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A large yellow school bus stopped in the same lane ahead of the ego vehicle, with red warning lights flashing at the rear and a red stop arm extended from its left side",
+      "appearance_details": "Bright school-bus yellow body, black trim and lettering, rear emergency door, flashing red beacon lights at the top rear corners, extended octagonal red STOP sign arm on the driver's side, reflective safety striping",
+      "relationship": "The primary obstacle ahead of the ego vehicle in the same lane; children are disembarking from it",
+      "location": "center to right-center of frame, ahead of ego vehicle",
+      "relative_size": "Large within frame",
+      "orientation": "rear of the bus facing the camera, angled slightly as ego pulls out to pass",
+      "pose": "stationary in the right travel lane",
+      "action": "stopped with red lights flashing and stop arm extended while unloading children",
+      "state_changes": "Grows larger and shifts toward the right edge of frame as the ego vehicle pulls out and passes it.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A small group of school children walking from the bus door toward the sidewalk on the right",
+      "appearance_details": "Children carrying backpacks, wearing casual everyday clothing in mixed bright colors, some with hats or hoodies",
+      "relationship": "Passengers who have just exited the stopped school bus, crossing toward safety on the right",
+      "location": "right side of frame near the bus door and sidewalk",
+      "relative_size": "Small within frame",
+      "orientation": "facing away from and to the right of the camera, moving toward sidewalk",
+      "pose": "upright, walking with backpacks, some looking down or ahead",
+      "action": "walking from the bus door toward the sidewalk",
+      "state_changes": "Continue moving right toward the sidewalk; briefly visible before the ego vehicle passes.",
+      "clothing": "casual children's clothes, backpacks, jackets, sneakers",
+      "expression": "neutral to attentive, focused on walking",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "varied skin tones, smooth youthful skin",
+      "facial_features": "young faces, various hair colors and styles, small features; partially obscured from the rear angle",
+      "number_of_subjects": 3,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban residential road under clear daytime skies. Neatly kept single-family homes with front lawns, driveways, and mailboxes line both sides. Mature trees cast dappled shadows along the pavement, and a concrete sidewalk runs along the right edge. The road has painted center lane markings and gentle curves typical of a low-traffic neighborhood street.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper left, front-side lighting",
+    "shadows": "Consistent, well-defined shadows from trees, the bus, and children falling onto the road and lawns",
+    "illumination_effect": "Crisp, high-contrast, natural illumination emphasizing the bright yellow bus and flashing red lights against the muted road surface"
+  },
+  "aesthetics": {
+    "composition": "First-person ego perspective centered on the road, with the school bus dominating the mid-frame ahead and the sidewalk with children on the right; the road stretches toward a vanishing point ahead-left as the ego pulls out",
+    "color_scheme": "Dominant school-bus yellow and flashing red against grey asphalt, green lawns and trees, and blue sky",
+    "mood_atmosphere": "Tense, cautionary, unsafe driving behavior in a calm neighborhood setting",
+    "patterns": "Repeating road lane markings, sidewalk slabs, and evenly spaced trees and houses"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion, then a lateral drift left as the ego vehicle pulls out to pass; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's-eye ego perspective",
+    "camera_angle": "Eye-level, mounted at driver height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the stopped bus, road ahead, and disembarking children",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Automotive ego-view dashcam footage depicting an illegal and dangerous pass of a stopped school bus with children present",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward at cruising speed on the suburban road, approaching the stopped yellow school bus ahead in the same lane with red lights flashing and stop arm extended; children are visible walking from the bus door toward the sidewalk on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Without slowing, the ego vehicle begins to steer left, pulling out of its lane to overtake the stopped bus. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues past the bus at normal speed, the bus and children sliding toward the right edge of frame as the open road ahead comes into view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SCHOOL BUS",
+      "category": "vehicle_graphic",
+      "appearance": "Bold black uppercase lettering on the yellow rear of the bus",
+      "spatial_temporal": "Rear panel of the bus, visible center-frame from 0:00 until the vehicle passes",
+      "context": "Standard identification marking on the school bus"
+    },
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase letters on a red octagonal stop-arm sign",
+      "spatial_temporal": "Extended from the left side of the bus, visible from 0:00 through the pass",
+      "context": "Legally requires approaching traffic to stop for the loading/unloading school bus"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle approaches the stopped school bus at cruising speed while children exit toward the sidewalk, then begins steering left to pass. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Bus grows larger; ego vehicle initiates lateral movement to the left without decelerating",
+      "camera": "Forward tracking motion transitioning into a leftward drift; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle passes alongside and beyond the stopped bus at normal speed, with the bus and children moving to the right edge of frame and the open road revealed ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Bus exits toward right frame edge; open road ahead becomes dominant",
+      "camera": "Continued forward tracking with the pass completing, camera settling into the adjacent lane; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a suburban two-lane road in bright daylight with a yellow school bus stopped ahead in the same lane, its red lights flashing and red stop arm extended, as children walk from the bus door toward the right sidewalk. Through 0:01 the ego vehicle maintains cruising speed, drawing closer to the bus. By 0:02 the vehicle, instead of stopping, steers left and pulls out of its lane. From 0:03 to 0:05 the ego vehicle continues at normal speed alongside and past the bus, the bus and children sliding to the right edge of frame as the open road ahead opens up, completing the unsafe pass. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady engine hum and tire noise on pavement dominate the audio, with faint ambient neighborhood sounds. No braking or deceleration is heard. Occasionally the muffled beeping or warning tone from the bus and distant children's voices are barely audible beneath the road noise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A flat, painted plywood deer silhouette mounted on a wooden stake, a static lawn decoy in the profile shape of a standing deer with slender legs and antlers",
+      "appearance_details": "Solid brown paint with weathered edges, cut to the outline of a deer, no dimensionality, fixed rigidly to a metal-and-wood stake driven into the grassy verge",
+      "relationship": "A decoy placed near the deer-crossing sign; visually mimics a live deer but is inert and never moves",
+      "location": "right verge, mid-ground moving toward foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "facing left, profile turned toward the road",
+      "pose": "static standing profile, legs planted, head slightly forward",
+      "action": "remaining completely motionless as the car passes",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A yellow diamond-shaped deer-crossing warning sign on a metal post beside the plywood decoy",
+      "appearance_details": "Standard reflective yellow diamond with a black leaping deer pictogram, mounted on a galvanized metal pole at the road edge",
+      "relationship": "Official roadside signage paired with the decoy, warning of potential deer crossings",
+      "location": "right verge, slightly behind and above the decoy",
+      "relative_size": "Small within frame",
+      "orientation": "face angled toward oncoming traffic",
+      "pose": "upright, fixed on post",
+      "action": "static roadside sign passed by the vehicle",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane rural road stretching straight ahead through gently rolling countryside, bordered on both sides by mature deciduous and coniferous trees casting dappled shadows onto the asphalt. Grassy green verges line the shoulders, a faint yellow center line divides the lanes, and the road surface is dry and clear of any vehicles or animals. The sky is bright blue with only wisps of cloud, and the horizon opens onto more forested land.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "high sun from the front-left, slightly overhead",
+    "shadows": "consistent hard-edged shadows of trees and roadside objects falling across the road and verges",
+    "illumination_effect": "crisp, natural high-contrast illumination with vivid greens and clear visibility of the road ahead"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view perspective with the road vanishing point near frame center, trees framing both edges, decoy and sign entering from the right",
+    "color_scheme": "Dominant greens of foliage, gray asphalt, blue sky, with pops of yellow from the sign and center line and brown of the plywood decoy",
+    "mood_atmosphere": "Calm, routine, uneventful drive",
+    "patterns": "Repeating vertical tree trunks and rhythmic roadside shadows along the verge"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted at driver eye level, moving smoothly ahead at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and roadside objects remain in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam style",
+  "context": "Autonomous driving perception demonstration showing correct classification of a static deer decoy and warning sign without unnecessary braking",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle cruises forward along the clear rural road; the plywood deer decoy and yellow crossing sign are visible ahead on the right verge. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The decoy and sign grow larger as the car approaches at steady speed; the system recognizes the decoy as static and non-threatening. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed and passes the decoy and sign on the right without slowing, the road ahead remaining clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "",
+      "category": "scene_sign",
+      "appearance": "Yellow diamond warning sign with black leaping-deer pictogram, reflective standard traffic-sign styling",
+      "spatial_temporal": "Right verge, entering mid-frame around 0:01 and passing out of view by 0:05",
+      "context": "Official deer-crossing warning indicating possible wildlife on the road"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward along the empty two-lane road, approaching the roadside plywood deer decoy and yellow crossing sign on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Decoy and sign progressively enlarge as the vehicle nears them",
+      "camera": "Smooth forward tracking at eye level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle maintains its cruising speed and passes the static decoy and sign on the right without any braking, road ahead staying clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Decoy and sign sweep past the right edge of frame and exit view; road continues onward",
+      "camera": "Continued smooth forward tracking, no speed change; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a clear two-lane rural road lined with sunlit trees, the yellow center line drawing the eye to the vanishing point. By 0:01 a flat brown plywood deer decoy on a stake and a yellow diamond deer-crossing sign become visible on the right verge. From 0:02 the vehicle continues at steady cruising speed, the decoy remaining perfectly still and clearly identified as a static object. At 0:03 the car reaches the roadside markers and, without slowing, glides past them. During 0:03 to 0:05 the decoy and sign slip past the right edge of the frame and disappear behind, while the road ahead remains open and empty, the vehicle carrying on smoothly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires on dry asphalt and a low engine hum at constant cruising speed, with faint wind and occasional birdsong from the roadside trees; no braking sounds, alerts, or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

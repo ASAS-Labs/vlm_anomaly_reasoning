@@ -1,0 +1,150 @@
+{
+  "subjects": [
+    {
+      "description": "A vertical traffic signal head mounted on a pole ahead of the ego vehicle, displaying a bright green lamp for the ego lane against a dark black housing.",
+      "appearance_details": "Standard three-lens signal with weather-worn metal housing, glowing green LED lens with a soft halo diffused by rain, mounted over the ego travel lane.",
+      "relationship": "Governs the ego vehicle's lane; its green permits the ego vehicle to proceed, but the vehicle misreads a separate red reflection instead.",
+      "location": "center background, slightly above horizon",
+      "relative_size": "Small within frame",
+      "orientation": "facing directly toward the camera",
+      "pose": "static overhead mounting",
+      "action": "displaying steady green light for the ego lane",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The cross-street traffic signal showing a red lamp, positioned to the side, whose glow is mirrored as a long streak on the wet road.",
+      "appearance_details": "Red LED lens glowing intensely, angled toward the cross street, its light spilling and reflecting across the rain-slicked asphalt of the ego lane.",
+      "relationship": "Its red lamp creates the deceptive red streak that the ego vehicle interprets as a stop signal.",
+      "location": "right background, elevated",
+      "relative_size": "Small within frame",
+      "orientation": "angled toward the cross street, away from the camera",
+      "pose": "static overhead mounting",
+      "action": "emitting red light that reflects onto the ego lane's wet surface",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A long, bright red streak of reflected light smeared along the rain-slicked asphalt directly in the ego vehicle's lane.",
+      "appearance_details": "Vivid crimson elongated reflection shimmering and rippling on the wet black road surface, stretching toward the camera, glossy and mirror-like.",
+      "relationship": "Misinterpreted by the ego vehicle's perception as a red traffic signal, triggering the braking behavior.",
+      "location": "center foreground, on the road ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "stretching lengthwise toward the camera",
+      "pose": "flat on the road surface",
+      "action": "shimmering and rippling slightly as rain disturbs the water film",
+      "state_changes": "Slight ripple movement as rain hits the surface; remains present throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A city street at night in light rain, viewed from the driver's ego perspective inside a car. Dark wet asphalt gleams with reflected light, lined by curbs, lane markings, and rows of buildings whose windows and storefront signs cast colored reflections. Streetlights and traffic signals punctuate the scene, their glow smeared across the rain-slicked road. Faint mist hangs in the air, and distant taillights and headlights add depth to the urban night.",
+  "lighting": {
+    "conditions": "Nighttime urban lighting in light rain, dominated by artificial sources",
+    "direction": "Mixed; overhead streetlights and forward-facing signal lamps, with the ego headlights front-lighting the road",
+    "shadows": "Soft, diffuse shadows blurred by the wet surface and mist; minimal harsh shadowing",
+    "illumination_effect": "Glossy reflections and light streaks on the rain-slicked asphalt, with a red streak dominating the ego lane and green glow from the ego signal ahead"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego view down the lane, with the green signal in the center background and the deceptive red streak leading toward the foreground center",
+    "color_scheme": "Deep blacks and slate grays of the wet road, punctuated by vivid crimson red reflection, emerald green signal glow, and scattered amber and white city lights",
+    "mood_atmosphere": "Tense, ambiguous, quietly ominous, rain-soaked urban night",
+    "patterns": "Repeating streaks of reflected light across the wet asphalt"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "The red streak on the road and the green signal ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic, automotive dashcam aesthetic",
+  "context": "Autonomous driving perception failure scenario where a reflected red light on wet asphalt is misread as a stop signal",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle moves forward along the wet city street; the green signal glows ahead while a bright red streak reflects on the road in the ego lane."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop before the red streak and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Forward motion along the rain-slicked city street; the green signal is visible center background while a long red reflected streak lies on the ego lane's wet asphalt.",
+      "key_changes": "Steady forward travel; red streak shimmers with rain ripples",
+      "camera": "Smooth forward tracking at moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a full stop just before the red streak and holds position, fully stationary for the remainder. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle moves forward along the wet city street; the green signal glows ahead while a bright red streak reflects on the road in the ego lane. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient wet-night city soundscape: the soft hiss of light rain and tires on wet pavement, the low hum of the idling engine, distant traffic and occasional passing splashes. As the vehicle brakes, a subtle friction and settling sound is heard, followed by the quiet steady idle once fully stopped, with rain patter continuing.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

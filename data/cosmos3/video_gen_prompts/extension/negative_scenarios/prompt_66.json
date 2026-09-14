@@ -1,0 +1,143 @@
+{
+  "subjects": [
+    {
+      "description": "A bright, flat projected image of a standing adult person appearing on the road surface ahead in the ego lane; the figure is slightly transparent, glowing, and lacks physical depth, shadow, or volume",
+      "appearance_details": "Ghostly luminous outline of a full-body human silhouette, edges softly diffused, colors slightly washed out with a faint holographic shimmer, projected directly onto the dark asphalt",
+      "relationship": "The false stimulus that triggers the ego vehicle's braking reaction; not a real subject in the physical scene",
+      "location": "center of frame, in the ego lane on the pavement ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera",
+      "pose": "Upright standing pose, arms at sides, feet together, as if a person is standing in the road",
+      "action": "Appears briefly, remains static as a flat projection, then vanishes",
+      "state_changes": "Materializes suddenly on the pavement, holds for a moment, then abruptly disappears leaving clear road",
+      "clothing": "",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car equipped with an advanced driver-assistance system, seen from a first-person driver perspective through the windshield",
+      "appearance_details": "Interior dashboard edges and hood front barely visible in the dark; headlights illuminate the road ahead with two cones of white light",
+      "relationship": "The camera-carrying vehicle whose behavior is the focus of the scene",
+      "location": "implied ego position, camera mounted at driver eye-level",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road",
+      "pose": "Driving forward then decelerating to a stationary stop",
+      "action": "Travels forward, brakes hard upon detecting the projection, comes to a full stop and remains stationary",
+      "state_changes": "Transitions from steady forward motion to hard deceleration to a complete, sustained stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dark two-lane rural or suburban road at night, flanked by dim, widely spaced streetlights casting isolated pools of amber light. The asphalt is faintly reflective, lane markings visible in the headlight beams. Beyond the road edges lie shadowy shoulders, low vegetation, and darkness. The sky is black with no visible moon. The road ahead is clear of any real pedestrians or obstacles.",
+  "lighting": {
+    "conditions": "Low-light nighttime scene lit by car headlights and sparse streetlights",
+    "direction": "Front-lit from the ego vehicle's headlights; occasional top-down pools from overhead streetlamps",
+    "shadows": "Deep, long shadows in the periphery; notably the projected figure casts NO shadow, revealing its artificial nature",
+    "illumination_effect": "High contrast between the bright headlight cones and the surrounding darkness, creating an eerie, isolated atmosphere"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam framing with the road converging toward a vanishing point; the projected figure placed centrally in the ego lane",
+    "color_scheme": "Predominantly dark blues and blacks with warm amber streetlight accents and cool white headlight beams; the projection adds a pale glowing highlight",
+    "mood_atmosphere": "Tense, uncanny, unsettling, cautionary",
+    "patterns": "Repeating dashed lane markings and evenly spaced streetlight pools"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the projected figure",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of dashcam"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam footage",
+  "context": "Autonomous vehicle / ADAS safety test scenario demonstrating a false-positive pedestrian detection caused by a projected image (adversarial phantom attack)",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego vehicle travels forward at a steady speed along the dark two-lane road under sparse streetlights, road clear ahead."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A bright, flat, semi-transparent projected image of a standing person suddenly appears on the pavement in the ego lane, then vanishes; no real pedestrian is present."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Steady forward driving on the empty night road, headlights illuminating the pavement, streetlights passing on either side.",
+      "key_changes": "Consistent forward motion; road remains clear.",
+      "camera": "Smooth forward tracking motion at driving speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "A luminous, flat, slightly transparent figure of a standing person materializes on the road surface in the ego lane, casting no shadow, then abruptly disappears.",
+      "key_changes": "Projection appears and vanishes; vehicle begins to decelerate.",
+      "camera": "Forward motion continues but noticeably slowing."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward at a steady speed along the dark two-lane road under sparse streetlights, road clear ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient nighttime road noise with the low hum of tires on asphalt and engine, followed by a sudden sharp sound of hard braking, tire friction, and the vehicle settling to a stop; quiet idle hum and faint distant nighttime ambience during the stationary hold.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "subjects": [
+    {
+      "description": "A large fallen tree limb, roughly the diameter of a small trunk, with rough dark-brown bark and a spray of green and wilted leaves at its outer end, lying diagonally across the right side of the lane",
+      "appearance_details": "Splintered break point at the thicker end shows pale raw wood; smaller twigs jut outward; a scattering of leaves and small debris around it on the wet asphalt",
+      "relationship": "Primary road obstruction the ego vehicle detects and stops for, associated with the storm damage",
+      "location": "center-right of frame, in the middle distance across the right lane",
+      "relative_size": "Medium within frame",
+      "orientation": "Lying diagonally, thick end toward the right shoulder, leafy end reaching into the lane center",
+      "pose": "Static, resting on the road surface",
+      "action": "Blocking the right portion of the lane",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A thin black power line pulled down with the fallen limb, drooping in a low catenary curve across the full width of the two-lane road at approximately hood height",
+      "appearance_details": "Insulated dark cable, glistening faintly with rain moisture, sagging low in the middle with the lowest point near the road centerline; one end trails toward a leaning wooden utility pole on the left",
+      "relationship": "Secondary hazard connected to the fallen limb; a hanging obstruction the ego vehicle must avoid",
+      "location": "spanning horizontally across mid-frame at low height",
+      "relative_size": "Small within frame",
+      "orientation": "Horizontal, crossing the frame left to right",
+      "pose": "Suspended and sagging low over the roadway",
+      "action": "Hanging across the road at hood height, swaying almost imperceptibly",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car, seen only from its interior/first-person driving perspective with the hood and dashboard edge visible at the bottom of the frame",
+      "appearance_details": "Dark hood surface reflecting the grey overcast sky, faint wiper streaks and water droplets across the windshield; a portion of the dashboard visible along the lower frame edge",
+      "relationship": "The camera vehicle whose behavior drives the narrative; reacts to the limb and power line",
+      "location": "foreground, implied by the ego perspective",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, away from camera",
+      "pose": "Moving forward then decelerating to a full stop",
+      "action": "Traveling forward, then braking and stopping well before the obstructions",
+      "state_changes": "Transitions from steady forward motion to deceleration and finally a complete, sustained stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road in the aftermath of a storm. The asphalt is dark and wet, sheened with rainwater and dotted with scattered leaves, small branches, and puddles that mirror the grey sky. Residential lots line both sides with mature trees, some with broken branches, low hedges, and modest houses partly obscured by foliage. A leaning wooden utility pole stands on the left shoulder, its wire pulled down by the fallen limb. The horizon is soft and hazy under heavy cloud cover, with no traffic visible ahead.",
+  "lighting": {
+    "conditions": "Overcast daytime, flat and diffuse",
+    "direction": "Even, top-diffuse ambient light with no distinct source",
+    "shadows": "Soft, weak shadows barely visible on the wet pavement",
+    "illumination_effect": "Muted, low-contrast illumination that flattens colors and emphasizes the reflective wet road surface"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving composition with the road receding to a vanishing point; the fallen limb on the right and the drooping wire crossing the mid-frame create clear focal hazards; dashboard edge anchors the bottom",
+    "color_scheme": "Desaturated greys and greens with dark wet-asphalt tones, muted brown of the tree bark, and cool overcast light",
+    "mood_atmosphere": "Tense, cautious, post-storm stillness",
+    "patterns": "Repeating lane markings and roadside tree line receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's first-person perspective",
+    "camera_angle": "Eye-level, slightly above the hood",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead, the fallen limb, and the drooping power line",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS hazard-detection demonstration showing the vehicle detecting a storm obstruction and stopping safely",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the wet two-lane road at moderate speed; the fallen limb and drooping power line become visible ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the limb and wire and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle moving forward on the wet suburban road under overcast light; fallen limb on the right and the low-drooping power line across the road come into clear view.",
+      "key_changes": "Obstructions grow larger in frame as the vehicle approaches",
+      "camera": "Smooth forward tracking motion at steady speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a full stop at a safe distance before the limb and wire and holds completely still for the remainder. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the wet two-lane road at moderate speed; the fallen limb and drooping power line become visible ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient post-storm outdoor sounds: dripping water, a faint breeze, and distant birdsong. The low hum of the moving vehicle and tires rolling over wet pavement, followed by the rising pitch and squeak of braking, then the settling silence of a fully stopped car with only the soft idle and residual environmental sounds remaining.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

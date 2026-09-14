@@ -1,0 +1,178 @@
+{
+  "subjects": [
+    {
+      "description": "A rectangular patch of freshly poured wet grey concrete filling the ego lane, its surface glistening and reflective under the daylight, still uncured and smooth",
+      "appearance_details": "Glossy wet sheen, subtle troweled ridges near the edges, darker grey where water pools, lighter grey where slightly set",
+      "relationship": "The primary obstacle the ego vehicle must stop before; occupies the lane directly ahead",
+      "location": "center foreground, filling the ego lane",
+      "relative_size": "Large within frame",
+      "orientation": "flat on the road surface facing up toward the sky and camera",
+      "pose": "stationary flat rectangular slab",
+      "action": "sitting undisturbed, reflecting light",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A construction worker standing at the edge of the wet concrete holding a trowel, wearing a high-visibility orange safety vest and hard hat",
+      "appearance_details": "Yellow hard hat, orange reflective vest, work gloves, denim trousers, sturdy boots, holding a steel finishing trowel",
+      "relationship": "Attends to the freshly poured concrete; a warning presence for the ego vehicle",
+      "location": "right edge of the concrete rectangle, mid-ground",
+      "relative_size": "Small within frame",
+      "orientation": "angled three-quarters toward the concrete, side to the camera",
+      "pose": "crouched slightly, one arm extended smoothing the surface with the trowel",
+      "action": "smoothing the wet concrete with a trowel",
+      "state_changes": "Continues troweling motion; may glance up as the ego vehicle approaches.",
+      "clothing": "orange high-visibility safety vest, yellow hard hat, work gloves, denim trousers, boots",
+      "expression": "focused and attentive",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "medium tan, weathered from outdoor work",
+      "facial_features": "short dark hair partly hidden under hard hat, light stubble, focused brow",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A row of low wooden forms bordering the poured concrete rectangle, staked into the road",
+      "appearance_details": "Weathered pale timber boards, spattered with grey concrete, held by wooden stakes",
+      "relationship": "Frame and contain the wet concrete pour",
+      "location": "surrounding the concrete rectangle, foreground to mid-ground",
+      "relative_size": "Medium within frame",
+      "orientation": "lying along the perimeter of the slab",
+      "pose": "low linear boards edging the slab",
+      "action": "static, containing the concrete",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Several bright orange traffic cones arranged to mark the closed lane boundary",
+      "appearance_details": "Standard tapered orange cones with reflective white bands, some slightly scuffed",
+      "relationship": "Delineate the construction zone and closed lane",
+      "location": "leading edge of the concrete and along the lane divider, foreground",
+      "relative_size": "Small within frame",
+      "orientation": "upright facing the approaching vehicle",
+      "pose": "standing upright in a line",
+      "action": "marking the closed area",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An urban city street on a clear sunny day, lined with mid-rise buildings, storefronts, and parked cars along the curbs. The ego lane ahead is under reconstruction, blocked by a rectangle of freshly poured wet concrete bordered by wooden forms and orange cones, with a road worker attending to it. The adjacent lane to the left remains open and clear, allowing other traffic to pass. Sidewalks flank both sides, with occasional pedestrians and street trees casting consistent hard shadows.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper right, front-side lit",
+    "shadows": "Consistent hard-edged shadows cast to the left of objects, including cones, worker, and forms",
+    "illumination_effect": "Crisp high-contrast illumination that makes the wet concrete glisten with specular reflections and keeps details sharp"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective centered on the road ahead, with the concrete rectangle dominating the lower-center frame, open lane to the left, and buildings receding toward a vanishing point",
+    "color_scheme": "Neutral greys of concrete and asphalt punctuated by vivid safety orange cones and vest, with muted urban building tones and blue sky",
+    "mood_atmosphere": "Alert, cautious, routine urban driving",
+    "patterns": "Repeating row of orange cones and linear wooden forms along the slab edge"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot ego dashcam view",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the wet concrete and construction zone ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam",
+  "context": "Autonomous vehicle perception scenario recognizing a closed, unsafe road surface and stopping",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward down the city street, approaching the construction zone ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle brakes to a full stop just before the wet concrete and remains completely stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD WORK",
+      "category": "scene_sign",
+      "appearance": "Black text on orange diamond warning sign, bold sans-serif",
+      "spatial_temporal": "Mounted on a stand at the right edge of the closed lane, visible throughout",
+      "context": "Warns drivers of the construction and lane closure ahead"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward on the clear city street toward the visible construction zone.",
+      "key_changes": "Construction zone grows larger in frame as vehicle advances.",
+      "camera": "Smooth forward motion at steady speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Vehicle comes to a complete stop before the wet concrete and holds position. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward down the city street, approaching the construction zone ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban daytime sounds: distant city traffic, the low hum of the ego vehicle's engine tapering off, the soft squeal and settling of brakes as the car stops, faint scraping of the worker's trowel against wet concrete, and occasional distant construction noise. No dialogue or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

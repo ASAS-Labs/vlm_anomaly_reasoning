@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "A white and red emergency ambulance with reflective markings and a boxy patient compartment, positioned directly ahead of the ego vehicle",
+      "appearance_details": "Roof-mounted light bar flashing red and blue, orange and yellow chevron striping on the rear doors, red cross emblem, illuminated interior visible through rear windows",
+      "relationship": "The vehicle the ego car yields to; central obstacle beginning a U-turn",
+      "location": "center foreground, slightly left of center as it turns",
+      "relative_size": "Large within frame",
+      "orientation": "Initially rear-facing toward camera, rotating to broadside as it begins the U-turn",
+      "pose": "Angled across the roadway mid-maneuver",
+      "action": "Beginning a U-turn across the road",
+      "state_changes": "Rotates from facing away to presenting its side profile as it swings across the lanes",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A police officer standing in the roadway in a dark uniform with a high-visibility reflective safety vest",
+      "appearance_details": "Reflective yellow-green vest with silver stripes catching the flashing lights, peaked cap, utility belt, holding one arm raised while gesturing the ego vehicle to move aside",
+      "relationship": "Directs traffic to give the ambulance room; commands the ego vehicle to yield",
+      "location": "center-left midground, standing in the road",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing toward the camera/ego vehicle",
+      "pose": "Standing upright, one arm extended and waving to the side",
+      "action": "Waving the ego vehicle aside toward the curb",
+      "state_changes": "Continues gesturing, sweeping arm to direct the ego car to the right",
+      "clothing": "Dark police uniform, high-visibility reflective vest, peaked cap, utility belt",
+      "expression": "Focused and authoritative",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, partially obscured by night lighting",
+      "facial_features": "Short dark hair under cap, neutral concentrated expression, features backlit by flashing lights",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A city street at night during an active emergency scene. Multi-lane urban roadway flanked by dark storefronts, parked cars along the right curb, streetlights casting pools of warm light, and buildings receding into darkness. Wet reflective asphalt scatters the red and blue emergency lighting. Additional emergency vehicles may be parked nearby just off frame, contributing to the chaotic yet controlled atmosphere.",
+  "lighting": {
+    "conditions": "Night, low ambient light punctuated by pulsing emergency lights",
+    "direction": "Front-lit by emergency vehicle light bars and streetlights above",
+    "shadows": "Long, shifting shadows cast by figures and vehicles, flickering with the rhythm of the flashing lights",
+    "illumination_effect": "Dramatic alternating red and blue washes over the wet street, creating high-contrast, tense visibility with pockets of deep shadow"
+  },
+  "aesthetics": {
+    "composition": "Ambulance dominates center frame as the focal obstacle, police officer offset to the left, right curb open as the escape path; strong leading lines from lane markings",
+    "color_scheme": "Dominant reds and blues from emergency lights against dark asphalt and amber streetlight highlights",
+    "mood_atmosphere": "Tense, urgent, cautious, controlled chaos",
+    "patterns": "Rhythmic pulsing of the red and blue flashing lights"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward creep transitioning to a rightward steer toward the curb, mimicking the ego vehicle's yielding movement; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's ego perspective through the windshield",
+    "camera_angle": "Eye-level, dashboard-mounted point of view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the ambulance and the directing officer",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Autonomous driving / ADAS scenario demonstrating yielding to emergency vehicles and obeying traffic directions from a police officer",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle moves slowly forward toward the ambulance, which begins swinging into a U-turn as the officer starts waving the car aside. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle begins to slow and steer to the right as the ambulance continues its turn across the road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle steers fully toward the right curb, clearing the road and coming to a near stop while the ambulance completes its turn. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "AMBULANCE",
+      "category": "vehicle_graphic",
+      "appearance": "Bold reflective mirrored lettering across the rear doors, silver-white on red",
+      "spatial_temporal": "On the rear of the ambulance, visible in the foreground throughout the first segments",
+      "context": "Identifies the emergency vehicle"
+    },
+    {
+      "text": "911",
+      "category": "vehicle_graphic",
+      "appearance": "White reflective numerals near the rear light bar",
+      "spatial_temporal": "On the ambulance body, visible in center frame early in the clip",
+      "context": "Emergency service identifier"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle creeps forward on the night street; ambulance ahead begins its U-turn and the officer raises his arm to wave the car aside. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ambulance starts rotating; officer begins gesturing",
+      "camera": "Slow forward dolly along the ego path; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Ego vehicle slows and initiates a rightward steer in response to the officer's direction as the ambulance swings broadside. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ego begins turning right; ambulance presents its side",
+      "camera": "Camera pans right, slowing forward motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle steers fully to the right curb, clearing the road for the ambulance and coming to a gentle stop while the ambulance completes its turn. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ego reaches the curb and nearly stops; road cleared",
+      "camera": "Camera settles to the right, motion nearly halted, held for over 2 seconds; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle rolls slowly forward down a dark, rain-slicked city street bathed in pulsing red and blue light, with an ambulance directly ahead beginning to swing into a U-turn. By 0:01 a police officer in a reflective vest stands in the road, arm raised, waving the ego vehicle aside. Around 0:02 the ego car slows and begins steering to the right as the ambulance rotates broadside across the lanes. From 0:03 to 0:05 the ego vehicle continues easing toward the right curb, clearing the roadway, and comes to a near stop while the ambulance completes its turn, holding this cleared position for the final seconds. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous urban night ambience with the low hum of the ego engine idling and creeping forward. The rhythmic warble of the ambulance siren rises and falls, punctuated by the electronic clicks of flashing light relays. The police officer's whistle blows sharply and he shouts brief directions. Faint distant traffic and the wet hiss of tires on damp asphalt complete the tense soundscape.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

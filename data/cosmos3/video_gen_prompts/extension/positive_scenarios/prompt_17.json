@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A road worker standing at the right edge of the traffic lane wearing a bright retroreflective high-visibility safety vest over dark work clothing, illuminated intensely by the approaching vehicle's headlights.",
+      "appearance_details": "Fluorescent yellow-green vest with two horizontal silver retroreflective bands and vertical stripes that flare into an intense bloom when struck by headlights; possibly wearing a hard hat and dark trousers with reflective ankle bands.",
+      "relationship": "The hazard the ego vehicle detects and slows for; positioned beside a row of traffic cones marking a work zone.",
+      "location": "right side of frame, mid-ground at the edge of the lane",
+      "relative_size": "Medium within frame",
+      "orientation": "facing partially toward the camera, body angled toward the passing traffic",
+      "pose": "standing upright, feet planted, arms at sides or holding a tool, alert posture",
+      "action": "standing watch at the roadside work zone as the vehicle approaches and passes",
+      "state_changes": "Grows larger in frame as the vehicle nears, then the vest blazes into a washed-out reflective bloom, then recedes to the right as the car passes.",
+      "clothing": "Fluorescent hi-vis vest with retroreflective silver bands, dark work trousers, hard hat",
+      "expression": "neutral, watchful; largely obscured by glare",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "indeterminate, obscured by headlight glare and darkness",
+      "facial_features": "obscured by intense reflective bloom and low light",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A row of orange traffic cones lined along the right edge of the lane demarcating a nighttime road work zone.",
+      "appearance_details": "Standard conical safety cones, orange body with reflective white collars that catch the headlights and glow.",
+      "relationship": "Marks the boundary of the work zone beside the road worker; a visual cue prompting the vehicle to slow.",
+      "location": "right side of frame, foreground to mid-ground along the lane edge",
+      "relative_size": "Small to medium within frame",
+      "orientation": "arranged in a receding diagonal line along the lane edge",
+      "pose": "",
+      "action": "stationary, catching and reflecting the headlight beams",
+      "state_changes": "Cones sweep past from mid-ground to foreground and out of frame as the vehicle rolls forward.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dark two-lane asphalt road at night, flanked by intermittent streetlights that cast pools of amber light on the pavement. The surroundings are largely black and featureless, suggesting an urban or suburban outskirt with faint outlines of curbs, vegetation, and distant structures. Lane markings glow faintly under headlights. A temporary road work zone occupies the right edge, marked by orange cones and staffed by a single hi-vis-clad worker.",
+  "lighting": {
+    "conditions": "Nighttime, low ambient light punctuated by streetlights and dominated by the ego vehicle's headlights",
+    "direction": "Headlights front-lighting the scene from the camera position; streetlights top-down from overhead poles",
+    "shadows": "Long dark shadows cast forward and sideways by cones and the worker; deep black shadows in the surroundings",
+    "illumination_effect": "The worker's retroreflective vest erupts into an intense white-green bloom that partly washes out the camera image around them, while the rest of the scene remains dim and high-contrast"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective road-centered framing with the vanishing point of the road ahead; cones and worker offset to the right creating asymmetric tension",
+    "color_scheme": "Dominated by deep blacks, amber streetlight glows, cool bluish-white headlight beams, and the searing fluorescent yellow-green and white bloom of the vest",
+    "mood_atmosphere": "Tense, cautionary, alert, nocturnal",
+    "patterns": "Repeating row of traffic cones and evenly spaced streetlight pools"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego-vehicle dashcam), decelerating as it passes the worker; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level, driver seat height",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and the approaching worker and cones",
+    "lens_focal_length": "Wide-angle, roughly 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam / ADAS demonstration footage",
+  "context": "Demonstration of a vehicle's night-time hazard detection and speed reduction near a roadside worker despite intense retroreflective glare",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward along the dark two-lane road under streetlights, approaching a row of cones and a worker at the right edge. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Headlights strike the worker's hi-vis vest, which blazes into an intense reflective bloom that partly washes out the image. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle detects the worker through the glare, slows markedly as it passes the cones, then continues rolling at the reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view driving forward at steady speed on a dark road under scattered streetlights, cones and worker appear ahead on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Worker and cones grow larger as the vehicle approaches",
+      "camera": "Steady forward tracking at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Headlights hit the retroreflective vest, producing an intense bloom that partly washes out the frame around the worker. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sudden bright reflective flare obscuring the worker's details",
+      "camera": "Forward tracking, slight brightness overload in the image; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle detects the worker behind the glare and slows markedly while passing the cones, then keeps rolling at the reduced speed as the worker recedes to the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Marked deceleration, cones and worker sweep past and exit frame right",
+      "camera": "Forward tracking decelerating, then steady slow roll; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera shows an ego-vehicle view moving forward along a dark two-lane road lit by intermittent streetlights, with black surroundings; a row of orange cones and a road worker in a hi-vis vest come into view on the right. By 0:02 the vehicle nears the work zone and its headlights catch the worker's retroreflective vest, which by 0:02-0:03 blazes into an intense white-green bloom that partly washes out the image around the worker. From 0:03 onward the vehicle, having detected the worker behind the glare, slows down markedly as it passes the cones, and through 0:05 it keeps rolling at the reduced speed while the worker and cones slide past and out of the right edge of the frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient nighttime road noise dominated by the low hum of tires on asphalt and the steady drone of the engine. A subtle pitch drop and reduction in tire noise accompanies the deceleration. A soft electronic detection chime or ADAS alert tone sounds as the worker is detected. No speech; faint distant traffic and wind round out the ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

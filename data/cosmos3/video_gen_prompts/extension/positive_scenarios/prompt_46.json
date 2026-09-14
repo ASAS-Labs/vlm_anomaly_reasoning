@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An open, uncovered manhole appearing as a dark circular void in the asphalt of the ego lane, with no safety cone, barrier, or cover surrounding it",
+      "appearance_details": "Perfectly round black opening roughly 60-70 cm in diameter, edges slightly worn with faint concrete rim, interior receding into shadow revealing the hazardous depth below",
+      "relationship": "The primary hazard the ego vehicle must detect and avoid; sits directly in the ego vehicle's path",
+      "location": "Center of frame, middle of the ego lane, gradually approaching from mid-distance",
+      "relative_size": "Small within frame",
+      "orientation": "Flat on the road surface, viewed at an oblique downward angle from the approaching vehicle",
+      "pose": "Static circular void set into the pavement",
+      "action": "Remains stationary as the ego vehicle approaches and steers around it",
+      "state_changes": "Grows larger in frame as the vehicle nears, then shifts to the right side of frame as the ego vehicle steers left to pass it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Parked and passing cars lining the residential street, typical suburban sedans and hatchbacks",
+      "appearance_details": "Assorted colors including silver, white, and dark blue, clean bodywork reflecting daylight, parked along the curb",
+      "relationship": "Environmental traffic context flanking the ego vehicle's route",
+      "location": "Right and left edges of frame along the curbs",
+      "relative_size": "Small within frame",
+      "orientation": "Parked parallel to the curb, facing along the street",
+      "pose": "Stationary parked vehicles",
+      "action": "Remain parked as the ego vehicle drives past",
+      "state_changes": "Slide past the frame edges as the ego vehicle advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family homes, low hedges, neatly trimmed front lawns, and mature trees. The two-lane road has a gray asphalt surface with faded lane markings and a slightly weathered center line. Sidewalks flank both sides, with parked cars along the curbs, mailboxes, and utility poles. The clear blue daytime sky is visible above the rooftops, and the scene conveys an ordinary calm neighborhood atmosphere.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from the upper front-right, casting consistent directional light",
+    "shadows": "Crisp, consistent shadows of trees, poles, and parked cars falling across the road and sidewalk in the same direction",
+    "illumination_effect": "Even, natural illumination with good contrast that makes the dark manhole void stand out sharply against the sunlit gray pavement"
+  },
+  "aesthetics": {
+    "composition": "First-person driver's ego perspective centered on the road ahead, vanishing point down the residential street, hazard positioned in the middle of the ego lane",
+    "color_scheme": "Neutral grays of asphalt, greens of lawns and trees, blue sky, muted car colors, with the stark black of the open manhole as focal contrast",
+    "mood_atmosphere": "Calm neighborhood tranquility punctuated by cautious alertness",
+    "patterns": "Repeating rhythm of parked cars, utility poles, and evenly spaced trees along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion that decelerates then curves gently to the left; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's eye view",
+    "camera_angle": "Eye-level ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the open manhole",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving hazard detection and avoidance demonstration of an open manhole in the roadway",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels forward at steady speed down the clear residential lane; the open manhole becomes visible ahead in the center of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Vehicle detects the dark void and begins to decelerate as the manhole grows larger in frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Vehicle steers to the left, arcing around the open manhole which shifts to the right of frame, safely passing the hazard. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises forward on the sunlit residential street with clear lanes ahead; the uncovered manhole appears as a dark circle in the middle of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Manhole emerges into view and grows slightly larger; speed remains constant.",
+      "camera": "Smooth forward tracking motion at steady speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The system registers the hazard and the vehicle noticeably slows down as it nears the void. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Deceleration begins; manhole enlarges centrally in frame.",
+      "camera": "Forward motion decelerates; slight pitch as vehicle brakes; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle steers left into the clear part of the lane, curving smoothly around the open manhole which drifts to the right side of the frame and passes by. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Trajectory curves left; hazard moves from center to right and out of the path.",
+      "camera": "Camera arcs gently to the left following the steering maneuver, held for over two seconds; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a calm suburban residential street bathed in clear daylight, the ego vehicle rolling forward down its lane with parked cars along the curbs. By 0:01 a dark circular void, an uncovered open manhole with no cone or cover, becomes clearly visible in the middle of the ego lane ahead. Around 0:02 the vehicle detects the hazard and begins to slow, the void growing larger and darker against the gray pavement. From 0:03 onward the vehicle steers to the left, arcing smoothly into the clear portion of the lane; the manhole slides toward the right of the frame. Through 0:04 to 0:05 the vehicle continues its leftward avoidance maneuver, passing safely around the open manhole while the neighborhood scene glides by. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor suburban sound with the low steady hum of the car's engine and tire noise on asphalt. A subtle reduction in engine tone accompanies the deceleration around 0:02, followed by the faint sound of steering adjustment. Distant bird chirps and gentle neighborhood ambience underscore the calm setting; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

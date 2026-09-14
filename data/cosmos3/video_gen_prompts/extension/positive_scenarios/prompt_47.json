@@ -1,0 +1,155 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed tow truck traveling ahead of the ego vehicle, painted in a utilitarian white and orange livery with a boxy rear body and mounted winch equipment",
+      "appearance_details": "Amber warning beacons on the cab roof, reflective safety chevrons on the rear bumper, exposed hydraulic tilt bed, mud-splattered lower panels",
+      "relationship": "The lead vehicle towing the pickup truck that the ego vehicle must react to",
+      "location": "center frame, mid-distance ahead in the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "rear facing the camera, traveling away from ego",
+      "pose": "aligned along the lane, moving forward",
+      "action": "driving ahead while pulling a pickup truck backwards",
+      "state_changes": "gradually pulls further ahead as the ego vehicle slows",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A silver-grey pickup truck being towed backwards, its rear end angled across the turn lane so its tail juts partly into the ego lane",
+      "appearance_details": "Crew cab body, chrome rear bumper, tow straps and lift arm connected at the front, tail lights dusty, slight body dents on the bed side",
+      "relationship": "Being towed by the tow truck; the obstacle whose swinging tail forces the ego vehicle to slow",
+      "location": "center-left frame, angled diagonally between turn lane and ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "angled roughly 30 degrees across the lanes, tail toward the ego lane",
+      "pose": "canted diagonally, being dragged rearward",
+      "action": "swinging its tail into the ego lane as it is pulled",
+      "state_changes": "its tail persistently intrudes into the ego lane while the tow truck advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Surrounding city traffic including sedans and a delivery van in adjacent lanes",
+      "appearance_details": "Assorted colors, everyday commuter vehicles with reflective windshields under bright sun",
+      "relationship": "Contextual traffic sharing the multi-lane road with the ego vehicle",
+      "location": "left and right lanes, mid to far distance",
+      "relative_size": "Small within frame",
+      "orientation": "facing away, traveling in the same direction",
+      "pose": "steady lane travel",
+      "action": "driving forward in adjacent lanes",
+      "state_changes": "flow steadily past as ego slows",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane urban arterial road running through a mid-sized city during a clear daytime. Painted lane markings and a dedicated turn lane are visible on grey asphalt with faded patches. Roadside features include curbs, street signs, traffic light poles, low commercial buildings, and scattered trees casting crisp shadows. The sky is bright and cloudless, and heat shimmer is faintly visible over the distant pavement.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly from the front-right creating consistent shadows",
+    "shadows": "sharp, well-defined shadows cast to the left of vehicles and objects, remaining consistent throughout",
+    "illumination_effect": "high contrast, vivid colors, strong specular glints off vehicle bodies and windshields"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam framing with the tow truck and angled pickup dominating the middle distance, road lines converging toward a vanishing point, adjacent traffic flanking the sides",
+    "color_scheme": "Neutral asphalt greys, bright blue sky, white and orange tow truck, silver pickup, warm sunlit highlights",
+    "mood_atmosphere": "Alert, cautious, routine urban driving",
+    "patterns": "Repeating lane dividers and dashed road markings receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking from the ego vehicle, gradually decelerating; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level dashcam view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the tow truck and angled pickup ahead in the ego lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception and hazard-prediction scenario demonstrating anticipation of an angled towed vehicle intruding into the lane",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels forward at cruising speed on the multi-lane road, approaching the tow truck ahead that is pulling the angled pickup truck. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The pickup's tail swings partly into the ego lane; the ego vehicle predicts its path and begins braking markedly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues rolling at the reduced speed, maintaining a safe following distance well behind the angled pickup as the tow truck moves ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "yellow diamond warning sign with black text, roadside mounted",
+      "spatial_temporal": "right side of the road, mid-distance, visible throughout",
+      "context": "Advises caution near the roadway"
+    },
+    {
+      "text": "EMERGENCY TOWING",
+      "category": "vehicle_graphic",
+      "appearance": "bold black lettering on the white rear panel of the tow truck",
+      "spatial_temporal": "on the back of the tow truck, center frame, visible throughout",
+      "context": "Identifies the tow truck's service"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises forward toward the tow truck pulling the angled pickup, with steady traffic in adjacent lanes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to the tow truck and pickup closes as ego approaches.",
+      "camera": "Forward tracking at cruising speed, steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The pickup's tail visibly swings into the ego lane; the ego vehicle recognizes the intrusion and brakes markedly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sudden deceleration; forward motion slows sharply.",
+      "camera": "Forward tracking with a noticeable dip as braking occurs; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle keeps rolling at the reduced speed, maintaining a safe gap well behind the angled pickup as the tow truck advances. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Speed stabilizes at a low, cautious pace; gap held steady.",
+      "camera": "Slow forward tracking, stable and cautious; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the ego car cruising along a sunlit multi-lane city road with sharp shadows, a white-and-orange tow truck ahead pulling a silver pickup that is canted diagonally across the turn lane. Over the first two seconds the ego closes distance. Around 0:02 the pickup's tail swings partly into the ego lane; the ego vehicle predicts the hazard and brakes markedly, its forward motion slowing sharply. From 0:03 to 0:05 the ego vehicle continues rolling at the reduced speed, holding a safe following distance well behind the angled pickup while the tow truck steadily moves ahead, with surrounding traffic flowing in adjacent lanes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban traffic noise dominates: the low hum of the ego engine, tire rolling on asphalt, and passing vehicles. A subtle rise in braking and engine-load sound accompanies the deceleration around the two-second mark, followed by a steady low idle-cruise tone. Faint distant horns and city background hum persist throughout. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

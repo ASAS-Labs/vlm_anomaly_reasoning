@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An open, uncovered manhole in the pavement appearing as a dark circular void in the middle of the ego lane, with no cone, barrier, or cover surrounding it",
+      "appearance_details": "Round hole roughly 60-70 cm in diameter with a slightly raised rusted metal rim, its interior swallowed in shadow, edges of asphalt visibly worn and cracked around the opening",
+      "relationship": "The primary road hazard directly in the path of the ego vehicle",
+      "location": "center of frame, mid-distance in the ego lane",
+      "relative_size": "Small within frame",
+      "orientation": "flat on the road surface, viewed obliquely from the approaching vehicle",
+      "pose": "static circular opening set into the pavement",
+      "action": "remaining stationary as the vehicle approaches",
+      "state_changes": "Grows progressively larger and more central in frame as the ego vehicle draws nearer.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Parked passenger cars lining both sides of the residential street",
+      "appearance_details": "A mix of sedans and compact SUVs in white, silver, grey, and dark blue, parked parallel to the curb along the roadside",
+      "relationship": "Static roadside environment framing the drivable lanes",
+      "location": "left and right edges of frame along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "parked parallel to the street, side-on to the camera",
+      "pose": "stationary at the curb",
+      "action": "remaining parked",
+      "state_changes": "Slide toward and past the frame edges as the ego vehicle moves forward.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family homes, low garden fences, driveways, and mature trees. The two-lane asphalt road runs straight ahead with a faded center line dividing the ego lane from the clear adjacent lane. Parked cars sit along both curbs, sidewalks flank the road, and green lawns and hedges border the properties. The sky is a clear pale blue and the scene is bathed in bright, even daytime light.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side lit from the upper right",
+    "shadows": "Consistent, crisp shadows cast by trees, cars, and fences leaning toward the lower left, with the manhole's rim casting a small hard shadow",
+    "illumination_effect": "Well-lit, high-contrast scene with good visibility and saturated natural colors, the dark void of the manhole standing out sharply against the sunlit pavement"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road with the vanishing point on the horizon, the manhole positioned along the central axis of the ego lane, parked cars framing the sides",
+    "color_scheme": "Grey asphalt, green foliage, pale blue sky, and muted car colors, with the black manhole void as the darkest focal point",
+    "mood_atmosphere": "Ordinary, calm, deceptively safe suburban drive with an underlying sense of impending hazard",
+    "patterns": "Repeating rhythm of parked cars, curb lines, and roadside trees receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion following the vehicle's straight path; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's ego perspective",
+    "camera_angle": "Eye-level, slightly above the dashboard looking down the road",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the full road scene, from foreground pavement to the distant vanishing point",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving hazard-perception scenario depicting an ego vehicle failing to detect and avoid an open manhole",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward on the residential street; the open manhole is visible ahead in the ego lane as a small dark circle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle maintains speed and continues straight, the manhole growing larger and more centered. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Without any slowing or steering, the ego vehicle drives directly toward the open manhole, which fills more of the central lane as it approaches. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view of the car cruising down a sunlit residential street, parked cars on both sides, the open manhole visible ahead in the middle of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The manhole first appears small and distant, gradually becoming more distinct.",
+      "camera": "Steady forward tracking at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle continues at constant speed, the adjacent lane remaining clear while the hazard grows in the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Manhole enlarges and moves toward frame center; no deceleration or lane change.",
+      "camera": "Continuous forward tracking, no change in speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives straight at the open manhole without slowing, the dark void dominating the near center of the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Manhole reaches its largest size in frame directly ahead as the vehicle bears down on it.",
+      "camera": "Sustained forward tracking straight toward the hazard for at least two seconds; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a bright, clear suburban street stretching ahead with parked cars lining both curbs and an open manhole appearing as a small dark circle in the center of the ego lane. Through 0:01 to 0:02 the vehicle maintains its cruising speed, and the manhole grows steadily larger and more central while the neighboring lane stays clear. From 0:02 to 0:03 there is no braking, slowing, or steering as the hazard becomes more prominent. From 0:03 to the end at 0:05 the ego vehicle continues driving straight toward the uncovered manhole, the dark void enlarging and dominating the middle of the lane as the car bears down on it without any avoidance maneuver. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor road noise dominated by the steady hum of tires on asphalt and the low continuous drone of the engine at cruising speed. Faint suburban background sounds of distant birdsong and a light breeze. No braking, screeching, speech, or music; the audio remains constant, reinforcing that the vehicle never slows.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "subjects": [
+    {
+      "description": "A small child-sized figure standing motionless in the middle of the ego lane, initially a faint silhouette barely distinguishable from the surrounding fog, gradually resolving into the shape of a young child wearing a hooded jacket and dark trousers",
+      "appearance_details": "Blurred outline softened by fog, hood pulled up, arms hanging limply at the sides, small stature suggesting a child around 6-8 years old",
+      "relationship": "The unexpected hazard directly in the ego vehicle's path; the focal point of the scene",
+      "location": "center of frame, in the middle of the ego lane, distant background resolving to mid-ground",
+      "relative_size": "Small within frame",
+      "orientation": "facing toward the camera / oncoming vehicle",
+      "pose": "standing upright and completely still, arms at sides, feet together",
+      "action": "standing motionless in the roadway as the vehicle approaches",
+      "state_changes": "The figure grows progressively larger and clearer as the distance closes, but remains motionless throughout.",
+      "clothing": "hooded jacket (dark, possibly grey or navy), dark trousers, small shoes",
+      "expression": "not clearly visible due to fog and hood shadow",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "not clearly visible due to fog",
+      "facial_features": "obscured by fog and hood; no distinct features discernible",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A rural two-lane asphalt road stretching straight ahead, flanked by faint hints of roadside vegetation and utility poles that dissolve into thick grey fog. Lane markings—a broken centerline and solid edge lines—are visible only for a short distance before fading into the murk. The entire environment is enveloped in dense fog under flat, diffuse daylight, giving a claustrophobic sense of very limited visibility.",
+  "lighting": {
+    "conditions": "Flat overcast daylight diffused through dense fog",
+    "direction": "Ambient, omnidirectional with no clear source",
+    "shadows": "No distinct shadows; fog scatters light evenly, eliminating hard shadows",
+    "illumination_effect": "Uniform, muted illumination that flattens depth and reduces contrast, causing distant objects to fade into a grey wall"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective centered on the vanishing road, with the child figure emerging at the central vanishing point of the ego lane",
+    "color_scheme": "Monochromatic grey palette with muted tones of asphalt grey, pale faded lane markings, and desaturated dark clothing on the figure",
+    "mood_atmosphere": "Ominous, tense, foreboding, dreadful anticipation",
+    "patterns": "Repeating broken centerline dashes receding toward the vanishing point"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot simulating vehicle motion at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's ego perspective through windshield",
+    "camera_angle": "Eye-level, dashboard-mounted forward view",
+    "depth_of_field": "Deep, though limited by fog obscuring distance",
+    "focus": "Sharp on the road immediately ahead, with the emerging figure coming into focus as it nears",
+    "lens_focal_length": "Standard wide-angle, approximating human eye field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Autonomous driving hazard detection failure scenario in low-visibility fog conditions",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward at cruising speed through dense grey fog with only the near road visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "A faint child-sized silhouette begins to emerge from the fog in the middle of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The figure grows clearer and larger as the vehicle continues at unchanged speed directly toward it without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view of the fog-shrouded two-lane road ahead, visibility limited to a short distance, vehicle advancing steadily. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Road markings continuously stream toward the camera indicating forward motion; nothing yet visible ahead.",
+      "camera": "Steady forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The faint outline of a small motionless figure appears in the center of the ego lane, emerging from the grey fog. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ambiguous shape resolves into a recognizable child-sized silhouette.",
+      "camera": "Continued steady forward tracking; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The child figure becomes progressively clearer and larger as the ego vehicle continues at normal cruising speed straight toward it, showing no deceleration or evasive action. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Figure grows in frame; vehicle speed remains constant; closing distance heightens tension.",
+      "camera": "Steady forward tracking maintaining constant speed toward the figure; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the video opens on a driver's-eye view of a grey, fog-choked two-lane road with visibility cut short just ahead; the vehicle cruises steadily forward as broken lane dashes stream toward the camera. Around 0:02 a faint, indistinct shape materializes at the center of the ego lane, ambiguous within the fog. By 0:03 the shape resolves into the unmistakable silhouette of a small, motionless child standing directly in the vehicle's path. From 0:03 to 0:05 the child figure grows steadily larger and clearer while the ego vehicle maintains its unchanged cruising speed, closing the distance without any braking or steering, ending on the tense, unresolved approach. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low hum of the vehicle's engine and tires on wet asphalt, muffled and dampened by the heavy fog. Faint wind noise and the subtle whir of the drivetrain. No music, no alerts, and no braking sounds—an unsettling calm underscores the vehicle's failure to react to the hazard ahead.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

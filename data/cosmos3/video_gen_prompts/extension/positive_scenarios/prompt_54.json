@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "description": "A red fire engine parked at an angle partly across the two-lane street with its emergency lights flashing",
+      "appearance_details": "Glossy red bodywork with white and reflective yellow-green chevron striping along the rear, chrome ladders and equipment on top, flashing red and white beacon lights on the roof and rear",
+      "relationship": "The primary obstruction and reason the ego vehicle must yield; part of an active emergency scene",
+      "location": "center to left foreground, blocking the lane ahead",
+      "relative_size": "Large within frame",
+      "orientation": "angled diagonally facing partly toward the camera from the left",
+      "pose": "stationary, parked across the roadway",
+      "action": "parked at an active scene with red lights flashing",
+      "state_changes": "Remains parked; flashing lights continue to pulse throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A firefighter in full turnout gear stepping forward and waving the ego vehicle back",
+      "appearance_details": "Dark navy and tan bunker jacket with reflective yellow-silver stripes, matching trousers, black boots, and a yellow safety helmet",
+      "relationship": "Directing traffic; instructing the ego vehicle to yield and clear a path",
+      "location": "center-left midground near the parked fire engine",
+      "relative_size": "Medium within frame",
+      "orientation": "facing the camera",
+      "pose": "standing, one arm raised and sweeping in a waving-back gesture",
+      "action": "waving the ego vehicle back out of the lane",
+      "state_changes": "Continues waving and stepping slightly forward as the ego vehicle slows and steers right.",
+      "clothing": "Firefighter turnout gear with reflective striping and yellow helmet",
+      "expression": "focused and assertive",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "medium tone, partly obscured by helmet and distance",
+      "facial_features": "partially shadowed under helmet brim, short visible hair, serious expression",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A second fire engine approaching from behind the parked engine",
+      "appearance_details": "Red fire apparatus with flashing lights, seen advancing toward the scene down the street",
+      "relationship": "The reason the path must be cleared; approaching the active scene",
+      "location": "background beyond the parked fire engine",
+      "relative_size": "Small within frame",
+      "orientation": "front-facing, approaching toward the camera",
+      "pose": "moving forward slowly",
+      "action": "approaching the scene along the cleared path",
+      "state_changes": "Grows slightly larger as it draws nearer.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow two-lane urban city street lined with mid-rise brick and concrete buildings, parked cars along the curb, sidewalks with occasional pedestrians and street furniture, utility poles and overhead wires. The scene is under clear daytime lighting with sharp consistent shadows cast across the pavement. Ahead, an active emergency scene occupies the roadway with fire apparatus and directing personnel.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "sunlight from upper right casting side-lit shadows",
+    "shadows": "sharp, consistent, elongated shadows of vehicles, poles, and figures on the asphalt",
+    "illumination_effect": "high contrast, well-lit scene with clearly readable emergency light flashes against daylight"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view down the street with the parked fire engine dominating the left-center and the firefighter in the midground; converging perspective lines of the road lead the eye forward",
+    "color_scheme": "Vivid fire-engine red against muted grays of pavement and buildings, accented by reflective yellow-green striping and blue sky",
+    "mood_atmosphere": "urgent, cautious, tense but orderly",
+    "patterns": "repeating parked cars and building facades along both sides of the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving then decelerating with a rightward steering drift; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot ego dashcam view",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "the fire engine and firefighter ahead",
+    "lens_focal_length": "wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving / traffic scenario dataset depicting yielding to emergency vehicles at an active scene",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward down the narrow street toward the parked fire engine as the firefighter begins waving it back. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle begins to slow, recognizing the directing firefighter and the blocked lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle steers to the right edge of the street and continues slowing to clear the path for the second fire engine approaching from behind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FIRE DEPT",
+      "category": "vehicle_graphic",
+      "appearance": "white block lettering on the red fire engine body",
+      "spatial_temporal": "on the side of the parked fire engine, visible left-center throughout",
+      "context": "identifies the emergency vehicle as fire department apparatus"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward down the narrow two-lane street toward the angled parked fire engine with flashing lights, while the firefighter steps forward and waves it back. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Fire engine and firefighter grow larger in frame; the ego vehicle begins to decelerate.",
+      "camera": "Forward-moving ego dashcam view, gradually slowing; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle yields, steers to the right edge of the street, and slows to a near stop to open a path for the second fire engine approaching from behind the scene. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Viewpoint drifts rightward; second fire engine becomes more visible advancing forward.",
+      "camera": "Rightward drift with continued deceleration, near stationary at the end; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle rolls forward along a narrow two-lane city street in bright daylight, a red fire engine parked at an angle ahead with red lights flashing. By 0:01 a firefighter in turnout gear steps into view and begins waving the vehicle back. Around 0:02 the ego vehicle starts to slow, acknowledging the directing gesture and the blocked lane. From 0:03 onward the ego vehicle steers toward the right curb, clearing the lane, while a second fire engine can be seen approaching from behind the parked engine. Through 0:05 the ego vehicle continues yielding and nearly comes to a stop at the right edge, path cleared. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient city traffic hum with the low idle of engines, the pulsing electronic wail of fire engine sirens, and the diesel rumble of the approaching apparatus. The firefighter's shouted instruction is faintly audible over the noise. No music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

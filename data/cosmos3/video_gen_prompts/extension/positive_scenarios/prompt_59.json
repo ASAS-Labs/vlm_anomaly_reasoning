@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "Dense crowd of pedestrians in casual evening and light autumn clothing spilling off the sidewalks into the roadway",
+      "appearance_details": "Mix of hoodies, jackets, and t-shirts; some holding phones with glowing screens, a few carrying children on shoulders, others with backpacks and light scarves",
+      "relationship": "The main obstacle and living environment around the ego vehicle, flowing around and between cars",
+      "location": "Filling the mid-ground and both sides of frame, weaving between vehicles ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Varied; many facing away walking forward, some turned sideways crossing between cars",
+      "pose": "Walking, standing, gesturing, some looking up at drifting smoke, others glancing back at the ego vehicle",
+      "action": "Walking slowly through the gridlocked street, crossing between stopped cars",
+      "state_changes": "Crowd continuously shifts and flows around the creeping ego vehicle, occasionally pausing then moving on",
+      "clothing": "Casual autumn evening wear: hoodies, denim jackets, light coats, sneakers",
+      "expression": "Relaxed, festive, some tired, a few chatting and laughing",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones across a diverse urban crowd",
+      "facial_features": "Indistinct at distance and in low light; faces lit intermittently by streetlights and phone screens",
+      "number_of_subjects": 60,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "Line of gridlocked cars ahead with glowing red tail lights",
+      "appearance_details": "Sedans, SUVs, and a taxi; reflective wet-looking asphalt catching red and amber glows, brake lights and hazard lights blinking",
+      "relationship": "The traffic the ego vehicle is stuck behind and creeps forward with",
+      "location": "Center and mid-ground receding into the distance",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear-facing toward the camera",
+      "pose": "Stationary then inching forward",
+      "action": "Sitting bumper-to-bumper, occasionally creeping ahead",
+      "state_changes": "Tail lights brighten as cars brake, dim slightly as they crawl forward",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy downtown city street at night immediately after a fireworks celebration. Multi-story buildings line both sides with lit storefronts and neon signage. Streetlights cast pools of warm sodium-yellow light through a thin haze of drifting firework smoke. The asphalt is dark and faintly reflective, scattered with the glow of red brake lights and colorful signage. The atmosphere is congested and festive, with crowds and vehicles sharing the roadway in a chaotic but calm gridlock.",
+  "lighting": {
+    "conditions": "Night, mixed artificial city lighting with smoky atmospheric haze",
+    "direction": "Multi-directional; overhead streetlights, front glow from tail lights and signage",
+    "shadows": "Soft, diffuse, multiple overlapping shadows from crowd figures cast onto the road",
+    "illumination_effect": "Warm amber pools of streetlight cut through lingering smoke, red tail lights bathe the foreground, creating a cinematic hazy nighttime glow"
+  },
+  "aesthetics": {
+    "composition": "Ego-view centered down the roadway with converging lines of cars and buildings, crowd filling the mid-ground, smoke diffusing light in the upper frame",
+    "color_scheme": "Deep blacks and blues punctuated by warm amber streetlights, vivid red tail lights, and scattered neon accents",
+    "mood_atmosphere": "Festive, congested, hazy, calm-chaotic, immersive",
+    "patterns": "Repeating rows of red tail lights and the rhythmic flow of pedestrian silhouettes"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward creep matching the ego vehicle's crawling motion, subtle micro-adjustments; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's eye view through the windshield",
+    "camera_angle": "Eye-level, dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the crowd and cars in the mid-ground, softening slightly into the smoky distance",
+    "lens_focal_length": "Wide-angle, approx 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Cinematic realistic documentary",
+  "context": "Autonomous vehicle ego-view dataset capturing dense post-event pedestrian and traffic navigation",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle approaches the gridlock, crowds spilling into the road become visible through drifting smoke lit by streetlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Ego vehicle slows to a crawl as pedestrians weave between the stopped cars ahead with glowing red tail lights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego vehicle keeps creeping forward with the traffic while the dense crowd flows around it. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "OPEN",
+      "category": "scene_sign",
+      "appearance": "Glowing red neon storefront sign, cursive style, medium size",
+      "spatial_temporal": "Right side background storefront, visible throughout",
+      "context": "Indicates a shop still open during the night event"
+    },
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White text on red octagonal traffic sign",
+      "spatial_temporal": "Left edge mid-ground, partially obscured by crowd",
+      "context": "Standard roadway traffic control signage"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle rolls toward the congested intersection; dense crowds and gridlocked cars with red tail lights appear through firework smoke. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Traffic and crowd density increase; smoke grows more visible in streetlight beams",
+      "camera": "Slow forward motion at dashboard eye-level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Ego vehicle decelerates to a crawl as pedestrians cross directly between the vehicles ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle speed drops sharply; tail lights brighten as cars brake",
+      "camera": "Forward motion nearly stops, subtle deceleration shift; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle creeps forward inch by inch with the traffic as the crowd continuously flows around it through the haze. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steady crawling motion; crowd streams past on both sides, smoke drifts across streetlights",
+      "camera": "Very slow continuous creep forward; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves forward on a smoky nighttime city street, approaching dense crowds spilling into the road and a line of gridlocked cars glowing with red tail lights. By 0:02 the vehicle slows to a crawl as pedestrians step between the stopped cars ahead and firework smoke drifts through the amber streetlights. From 0:03 to 0:05 the vehicle keeps creeping forward with the traffic at a crawl while the festive crowd flows around it, weaving between vehicles as brake lights flicker and haze softens the distant lights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient city night atmosphere: a dense murmur of crowd chatter and occasional laughter, distant honking horns, the low idle hum of the ego vehicle's engine, faint footsteps and muffled celebratory calls, with a lingering smoky post-fireworks stillness underneath.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

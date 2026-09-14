@@ -1,0 +1,165 @@
+{
+  "subjects": [
+    {
+      "description": "A row of interlocking metal and plastic barricades spanning the mouth of the cross street, forming a solid barrier across the intended turn.",
+      "appearance_details": "Bright orange and white plastic water-filled barricades interlocked with galvanized steel A-frame fencing, a rectangular ROAD CLOSED sign mounted centrally, some scuffs and road dust visible.",
+      "relationship": "Physically blocks the ego vehicle's path into the closed street; managed by the course marshal.",
+      "location": "center to right foreground, spanning across the cross street",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the camera, perpendicular to the ego vehicle's approach",
+      "pose": "Static barrier line arranged in a continuous row",
+      "action": "Blocking access to the closed cross street",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A course marshal in a high-visibility safety vest standing beside the barricades directing traffic and pedestrians.",
+      "appearance_details": "Bright fluorescent yellow-green safety vest with reflective silver stripes, dark cap, dark trousers, holding a clipboard and gesturing.",
+      "relationship": "Official managing the marathon closure; stands guard at the barricade line.",
+      "location": "center-right midground, beside the barricades",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled three-quarters toward the camera",
+      "pose": "Standing upright, one arm raised gesturing to keep vehicles from turning",
+      "action": "Signaling that the road is closed and monitoring traffic",
+      "state_changes": "Slight arm gesture; otherwise remains standing in place.",
+      "clothing": "Fluorescent yellow-green high-visibility vest with reflective stripes, dark cap, dark trousers, sturdy shoes",
+      "expression": "Attentive, neutral, focused",
+      "gender": "Male",
+      "age": "Middle-aged",
+      "skin_tone_and_texture": "Medium tan skin with slight weathering",
+      "facial_features": "Short dark hair under cap, light stubble, brown eyes, focused gaze",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "Hundreds of marathon runners streaming past along the closed cross street beyond the barricades.",
+      "appearance_details": "Diverse crowd in colorful athletic wear, running shorts, tank tops, race bibs pinned to chests, sneakers, some wearing sun visors and headphones.",
+      "relationship": "The reason for the road closure; flowing perpendicular to the ego vehicle's path.",
+      "location": "background across the closed street beyond the barricades",
+      "relative_size": "Small within frame",
+      "orientation": "Moving laterally across frame, left to right",
+      "pose": "Mid-stride running postures, arms pumping",
+      "action": "Running steadily along the marathon course",
+      "state_changes": "Continuous streaming motion across the frame throughout the clip.",
+      "clothing": "Assorted colorful running attire, tank tops, shorts, race bibs, sneakers",
+      "expression": "Focused, determined, some fatigued",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones across the crowd",
+      "facial_features": "Varied; obscured by distance and motion",
+      "number_of_subjects": 200,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A mid-sized city street on a clear, sunny day. The ego vehicle travels along a two-lane road lined with mid-rise buildings, shopfronts, street trees, parked cars, and utility poles. Ahead, a cross street intersects but is fully closed for a marathon event, marked by a line of barricades and a ROAD CLOSED sign. Beyond the barricades, the closed street is filled with a continuous stream of runners passing laterally, flanked by spectators and event signage. Traffic cones and race banners suggest an active event zone.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High front-side sunlight from the upper left",
+    "shadows": "Crisp, consistent shadows cast down and to the right from barricades, marshal, and poles",
+    "illumination_effect": "Even, high-contrast illumination with vivid colors and clear visibility"
+  },
+  "aesthetics": {
+    "composition": "Ego dashcam perspective centered on the road ahead, barricades and marshal filling the mid-to-foreground, runners streaming across the upper-mid background, buildings framing the sides",
+    "color_scheme": "Warm daylight tones with strong pops of fluorescent orange, yellow-green, and multicolored athletic wear against gray asphalt and muted building facades",
+    "mood_atmosphere": "Orderly, event-day energy, cautious anticipation",
+    "patterns": "Repeating barricade segments and the rhythmic stream of running figures"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver ego perspective",
+    "camera_angle": "Eye-level, dashcam-mounted",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road, barricades, marshal, and runners",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous vehicle perception scenario demonstrating recognition of a road closure and safe stopping behavior",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the city street, approaching the closed cross street where barricades and a ROAD CLOSED sign come into view."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop before the barricades and remains fully stationary while runners continue passing; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD CLOSED",
+      "category": "scene_sign",
+      "appearance": "Bold black uppercase lettering on a white rectangular sign with a red or orange border",
+      "spatial_temporal": "Mounted centrally on the barricade line, visible throughout the clip",
+      "context": "Indicates the cross street is closed for the marathon event"
+    },
+    {
+      "text": "DETOUR",
+      "category": "scene_sign",
+      "appearance": "Black text on orange diamond warning sign",
+      "spatial_temporal": "Small sign to the right near the barricades, visible in mid-to-background",
+      "context": "Directs traffic to an alternate route around the closure"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle moves forward along the street; barricades, ROAD CLOSED sign, marshal, and runners come into clear view ahead.",
+      "key_changes": "Approach speed steady; scene details resolve as distance closes",
+      "camera": "Forward motion at moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Vehicle comes to a full stop before the barricades and remains stationary as runners continue streaming past. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the city street, approaching the closed cross street where barricades and a ROAD CLOSED sign come into view. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient city and event soundscape: the low hum of the ego vehicle engine easing off, gentle tire and brake sounds during deceleration, distant cheering and clapping from marathon spectators, the rhythmic patter of many runners' footfalls, occasional whistle from the marshal, and faint event PA announcements in the background.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

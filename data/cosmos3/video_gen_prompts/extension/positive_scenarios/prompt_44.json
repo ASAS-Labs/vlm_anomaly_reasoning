@@ -1,0 +1,104 @@
+{
+  "subjects": [
+    {
+      "description": "A large, dry, spherical tumbleweed composed of tangled brittle branches, pale tan to golden-brown in color, loosely woven and airy in structure",
+      "appearance_details": "Wispy protruding twigs, semi-transparent gaps between branches, small bits of dust and debris shaking loose as it rolls, casting a fragmented shadow on the asphalt",
+      "relationship": "The primary moving obstacle crossing the ego vehicle's path on an otherwise empty highway",
+      "location": "Enters from right midground, crosses toward center then exits toward left verge",
+      "relative_size": "Medium within frame",
+      "orientation": "Rolling and tumbling, no fixed facing direction",
+      "pose": "Rounded, chaotic tangled mass in continuous rotation",
+      "action": "Rolling and bouncing across the highway from right to left ahead of the vehicle",
+      "state_changes": "Bounces lightly as it crosses the ego lane, momentarily lifting off the road surface before continuing toward the left verge",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A straight two-lane desert highway stretching toward a distant flat horizon under a clear blue daytime sky. The asphalt is faded gray with a worn yellow center dividing line and dust accumulated along both shoulders. Flanking the road are arid sandy verges dotted with sparse scrub brush, dry grasses, low desert vegetation, and scattered rocks. Distant low hills and mesas shimmer faintly in the heat haze along the horizon. No other vehicles, structures, or people are present.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-and-side lighting the scene",
+    "shadows": "Short, sharp, consistent shadows cast directly beneath the tumbleweed and roadside brush on the sunlit asphalt",
+    "illumination_effect": "Crisp, high-contrast desert illumination with strong glare off the road surface and vivid sky saturation"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical first-person driving composition with the highway receding to a central vanishing point; horizon placed on upper third; tumbleweed animates across the lower-middle frame",
+    "color_scheme": "Warm sandy tans and beiges of the desert against the cool blue of the clear sky and neutral gray asphalt",
+    "mood_atmosphere": "Quiet, isolated, sun-baked, expansive open-road calm",
+    "patterns": "Repeating dashed center line and rhythmic roadside scrub receding into distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the ego vehicle moving at steady cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's point of view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road ahead, the tumbleweed, and distant horizon",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic, documentary dashcam aesthetic",
+  "context": "Autonomous driving / dashcam perspective demonstrating a vehicle maintaining course through a harmless roadside obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle cruises forward on the empty straight desert highway; road clear ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A large dry tumbleweed enters from the right verge and begins rolling onto the highway. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The tumbleweed bounces lightly across the ego lane ahead of the vehicle, tumbling toward the center. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at cruising speed through the tumbleweed's path without slowing; the tumbleweed rolls off toward the left verge. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Open empty desert highway ahead as the ego vehicle drives forward at steady speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Establishes the clear, empty road and cruising motion.",
+      "camera": "Forward tracking at constant speed, eye-level POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A large tumbleweed rolls in from the right, bouncing lightly across the ego lane ahead of the vehicle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Introduction and light bouncing motion of the tumbleweed across the road.",
+      "camera": "Continued forward tracking; framing steady as the tumbleweed crosses; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle continues through the tumbleweed's path at normal cruising speed without slowing, while the tumbleweed rolls off toward the left verge and the road ahead reopens. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle maintains speed; tumbleweed exits frame left; road clears again.",
+      "camera": "Steady forward tracking, unchanged speed and framing; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera shows a first-person view driving forward on a straight, empty two-lane desert highway under a clear blue sky with sharp midday shadows. By 0:01 a large dry tumbleweed appears at the right edge of the road and begins rolling onto the asphalt. Between 0:02 and 0:03 the tumbleweed tumbles across the ego lane directly ahead of the vehicle, bouncing lightly off the road surface as it moves toward the center. From 0:03 to 0:05 the vehicle continues at its steady cruising speed straight through the tumbleweed's path without slowing or stopping, while the tumbleweed rolls onward and off toward the left verge, leaving the open desert road clear ahead once more. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the vehicle's engine and continuous tire-on-asphalt road noise, with a faint whoosh of wind. A brief soft rustling and scraping sound as the dry tumbleweed bounces across the road. No music, speech, or other traffic.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

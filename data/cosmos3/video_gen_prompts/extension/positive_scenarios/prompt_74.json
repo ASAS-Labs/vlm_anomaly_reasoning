@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "description": "A modern glass-clad office tower with a fully mirrored curtain-wall facade lining the right side of the downtown street",
+      "appearance_details": "Reflective blue-tinted glass panels arranged in a grid, reflecting the opposing street, moving cars, and a red traffic signal from the cross street",
+      "relationship": "The primary object the ego vehicle passes; its reflection creates a potential false traffic-signal cue",
+      "location": "right side of frame, foreground to midground",
+      "relative_size": "Large within frame",
+      "orientation": "facade faces the street, angled toward the passing camera",
+      "pose": "static vertical structure",
+      "action": "reflecting the street scene including a red cross-street signal as the car passes",
+      "state_changes": "Reflections shift and slide across the panels as the ego vehicle moves forward; the reflected red signal drifts across the glass.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The real overhead traffic signal governing the ego vehicle's lane, displaying green",
+      "appearance_details": "Standard three-lens vertical traffic light mounted on a mast arm over the roadway, green lamp illuminated",
+      "relationship": "The authoritative signal the ego vehicle correctly obeys, distinct from the reflected red seen in the tower",
+      "location": "upper center of frame, ahead over the roadway",
+      "relative_size": "Small within frame",
+      "orientation": "facing the ego vehicle directly",
+      "pose": "static mounted fixture",
+      "action": "showing a steady green light indicating go",
+      "state_changes": "Remains green throughout; grows slightly larger as the car approaches.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Several passenger cars traveling along the downtown street ahead and in adjacent lanes",
+      "appearance_details": "Mix of sedans and an SUV in silver, black, and white, with brake lights and daytime reflections on paintwork",
+      "relationship": "Other traffic sharing the roadway with the ego vehicle; some appear again as reflections in the tower glass",
+      "location": "center and left of frame, midground",
+      "relative_size": "Medium within frame",
+      "orientation": "facing away, moving in the same direction as the ego vehicle",
+      "pose": "in-motion driving posture on the roadway",
+      "action": "cruising forward smoothly, keeping lane, moving away from the camera",
+      "state_changes": "Maintain steady spacing and speed; the lane directly ahead of the ego vehicle stays clear.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy downtown urban street under clear daytime skies. Multi-story commercial buildings line both sides, with a tall mirrored glass office tower dominating the right. Painted lane markings, crosswalks, curbs, street trees, sidewalks with a few pedestrians, storefronts, and mast-arm traffic signals fill the scene. The road surface is dry asphalt with clean lane lines. Depth extends toward a bright, open intersection ahead.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side lit from the upper right",
+    "shadows": "Consistent, crisp, medium-length shadows cast by buildings, poles, and cars onto the roadway",
+    "illumination_effect": "High contrast with vivid glare highlights on the glass facade and clean, saturated colors across the scene"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam framing with the roadway vanishing toward a central intersection, the glass tower filling the right third, and the real green signal centered overhead",
+    "color_scheme": "Blues and teals of the glass facade, gray asphalt, warm building tones, with punctuating red (reflected signal) and green (real signal) accents",
+    "mood_atmosphere": "Calm, orderly, routine city commute",
+    "patterns": "Repeating grid of mirrored glass panels and rhythmic lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, smooth and steady; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway, tower facade, and traffic signal ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception scenario testing correct interpretation of a genuine green signal versus a reflected red signal in a building facade",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward toward the intersection; the mirrored tower on the right shows a red cross-street signal in its reflection. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle recognizes the reflection as false and maintains speed as the real overhead green signal for its lane stays clearly visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at normal cruising speed past the glass tower, lane ahead clear, neither slowing nor stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on black rectangular sign with arrow",
+      "spatial_temporal": "Mounted near the intersection, upper left, visible throughout",
+      "context": "Directs traffic flow on the downtown street"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle approaches the glass tower; the mirrored facade reflects moving cars, the street, and a red cross-street signal, while the real overhead signal reads green. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Reflected red signal drifts across the glass; real green signal remains steady; car maintains speed.",
+      "camera": "Smooth forward tracking from driver's viewpoint; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle continues at normal cruising speed past the tower with a clear lane ahead, correctly ignoring the reflected red signal. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Tower slides past on the right; intersection approaches; no braking occurs.",
+      "camera": "Continued steady forward tracking; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the ego vehicle cruising down a sunlit downtown street with a mirrored glass office tower on the right; its facade reflects passing cars and a red traffic signal from the cross street. By 0:02 the real overhead signal governing the ego lane is clearly green and the lane ahead is open, so the vehicle keeps its steady speed. From 0:03 to 0:05 the car continues past the tower at its normal cruising pace without slowing or stopping, the reflected red correctly recognized as an illusion while the genuine green signal permits travel. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient city driving sound: low engine hum, rolling tire noise on dry asphalt, faint passing traffic, and distant urban murmur. No speech or music; occasional soft wind and a distant horn.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

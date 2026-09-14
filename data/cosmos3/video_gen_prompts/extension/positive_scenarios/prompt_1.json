@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A white rectangular regulatory speed limit sign mounted on a galvanized steel post at the right shoulder of the road, displaying black text reading SPEED LIMIT 35",
+      "appearance_details": "Standard MUTCD-style vertical rectangular sign with black border and bold black lettering; a short horizontal strip of matte black tape has been stuck across the middle of the digit 3, giving it a superficial resemblance to an 8; slight weathering and dust on the sign face and post",
+      "relationship": "The primary regulatory object the ego vehicle reads and responds to as it approaches and passes",
+      "location": "right side of frame, mid-ground shoulder, moving from far to near as the vehicle advances",
+      "relative_size": "Small within frame growing to Medium within frame as the vehicle approaches",
+      "orientation": "Sign face angled toward the approaching camera, facing oncoming traffic",
+      "pose": "Upright and stationary on its post",
+      "action": "Remaining fixed while the ego vehicle approaches and passes it on the right",
+      "state_changes": "Grows larger and shifts toward the right edge of frame before exiting frame as the vehicle passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, an ordinary passenger car whose interior dashboard edge and hood are faintly visible at the bottom of the frame",
+      "appearance_details": "Neutral gray dashboard top and a sliver of the car hood; windshield frame subtly bounds the view; no other vehicles present",
+      "relationship": "The camera platform through which the entire scene is observed; it obeys the posted speed limit",
+      "location": "implied at bottom foreground, the point of view of the camera",
+      "relative_size": "Large within frame (only hood and dash edge visible)",
+      "orientation": "Facing forward down the road, aligned with travel direction",
+      "pose": "Traveling in the right lane, centered in its lane",
+      "action": "Driving straight, reading the sign, then decelerating to the posted limit and maintaining it",
+      "state_changes": "Transitions from cruising speed to a lower steady speed as it passes the sign.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet straight two-lane rural road stretching toward a distant vanishing point under a clear blue daytime sky. Flat grassy shoulders line both sides, with scattered low shrubs, dry grass, and a few distant trees. Faint yellow centerline and white edge markings run along the asphalt, which shows mild sun-bleaching and light patchwork. There is no other traffic; the environment feels open, calm, and rural with gentle rolling terrain on the horizon.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from the upper front-right, casting soft directional light",
+    "shadows": "Soft, short shadows from the sign post and roadside shrubs falling toward the left and slightly forward",
+    "illumination_effect": "Even, natural illumination with good visibility, gentle contrast, and clear legibility of the sign face"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam composition with the road leading to a central vanishing point; the speed limit sign occupies the right third as a focal element",
+    "color_scheme": "Blue sky, gray-black asphalt, green-tan grassy shoulders, and the high-contrast white-and-black sign",
+    "mood_atmosphere": "Calm, orderly, everyday rural driving",
+    "patterns": "Repeating lane markings and roadside vegetation receding to the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the moving ego vehicle, smoothly advancing then subtly slowing; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot of the road ahead from the driver's viewpoint",
+    "camera_angle": "Eye-level, slightly above the hood",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road and the speed limit sign",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving perception scenario demonstrating correct reading of a tampered speed limit sign and appropriate deceleration",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the straight rural road; the SPEED LIMIT 35 sign is visible ahead on the right shoulder, small in the distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle approaches the sign; the sign grows larger and the taped digit is clearly visible; the vehicle correctly interprets it as 35 and begins to decelerate. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle passes the sign at a reduced speed and continues rolling straight at the lower posted limit down the empty road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 35",
+      "category": "scene_sign",
+      "appearance": "Bold black uppercase highway-gothic lettering on a white rectangular field with a black border; a strip of black tape across the middle of the 3 makes it faintly resemble an 8",
+      "spatial_temporal": "On a post at the right shoulder, visible throughout, growing from small in the distance to medium as it passes on the right and exits frame near 0:04",
+      "context": "Regulatory posting of the maximum legal speed that the ego vehicle reads and obeys, despite the minor tape tampering"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises at steady speed along the straight two-lane rural road with the speed limit sign visible in the distance ahead on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign grows gradually larger; road markings stream past.",
+      "camera": "Smooth forward tracking at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Vehicle nears the sign; the taped 3 is clearly readable; vehicle correctly reads 35 and begins to slow. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Perceptible reduction in forward speed; sign shifts to the right edge.",
+      "camera": "Forward tracking with a subtle slowdown in apparent motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle passes the sign and continues straight at the reduced posted speed along the open, empty road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign exits frame; steady lower speed maintained.",
+      "camera": "Steady forward tracking at reduced speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks straight down a calm, empty two-lane rural road under a clear blue sky, with a small white speed limit sign on the right shoulder in the distance. Through 0:01 the vehicle cruises forward and the sign gradually enlarges, revealing SPEED LIMIT 35 with a strip of black tape across the middle of the 3. By 0:02 the vehicle draws close and correctly reads the limit as 35, beginning to decelerate. Around 0:03 the sign slides toward the right edge of the frame and passes out of view as the vehicle slows. From 0:03 to 0:05 the vehicle continues straight down the empty road at the reduced posted speed, holding steady as the road stretches to the horizon. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor driving audio: steady tire and road noise, a gentle engine hum that eases slightly as the vehicle decelerates, faint wind against the windshield, and occasional distant birdsong from the rural surroundings. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

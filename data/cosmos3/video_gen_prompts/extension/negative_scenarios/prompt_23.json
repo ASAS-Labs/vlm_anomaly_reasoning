@@ -1,0 +1,110 @@
+{
+  "subjects": [
+    {
+      "description": "A flock of gray urban pigeons settled on the asphalt directly ahead in the ego lane, pecking at the pavement",
+      "appearance_details": "Small rounded bodies with slate-gray plumage, iridescent green-purple neck feathers, orange-red feet, and a few paler mottled individuals scattered among them",
+      "relationship": "The obstacle that triggers the ego vehicle's emergency braking",
+      "location": "center foreground on the road surface ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Various orientations, most facing away or sideways to the camera",
+      "pose": "Standing and crouching, heads bobbing as they peck at the ground",
+      "action": "Pecking at the pavement, some shuffling and flapping",
+      "state_changes": "As the vehicle brakes and approaches, several birds startle and begin to flutter and take flight",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 14,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road under clear daytime skies. The pavement is light gray asphalt with a faded center dividing line. Low residential houses, trimmed hedges, mailboxes, and mature trees line both sides of the road. Green lawns and driveways are visible, and utility poles run parallel to the road. The road ahead is otherwise empty of traffic, creating a calm neighborhood atmosphere.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High front-side sunlight from the upper right",
+    "shadows": "Consistent, well-defined shadows cast by trees, poles, and the pigeons onto the road surface",
+    "illumination_effect": "Even, natural illumination with good contrast and clear visibility of the road and birds"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road, with the ego lane and pigeon flock forming the focal point in the middle of the frame, houses and trees flanking the sides",
+    "color_scheme": "Muted grays of the asphalt, greens of foliage and lawns, warm neutral house tones, and blue sky",
+    "mood_atmosphere": "Calm suburban quiet interrupted by sudden tension",
+    "patterns": "Repeating rhythm of utility poles and roadside trees, scattered clustering of pigeons"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, looking straight down the road",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the pigeon flock",
+    "lens_focal_length": "Wide-angle dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Automotive ego-view driving footage demonstrating emergency braking for an animal road hazard",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward down the suburban lane; pigeons pecking on the road come into view ahead"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop in the middle of the lane and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward along the empty two-lane suburban road, approaching a flock of pigeons pecking on the road surface ahead",
+      "key_changes": "Distance to the pigeon flock decreases steadily",
+      "camera": "Smooth forward motion at steady driving speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped in the middle of the lane and remains completely stationary as some birds take flight. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward down the suburban lane; pigeons pecking on the road come into view ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds with faint birdsong and a light breeze, followed by the steady hum of the moving car, then a sharp screech of tires and brakes during the violent deceleration, the flutter of pigeon wings taking off, and finally quiet idling as the vehicle sits stationary.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

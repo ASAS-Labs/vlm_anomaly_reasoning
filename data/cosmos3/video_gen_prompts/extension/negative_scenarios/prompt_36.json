@@ -1,0 +1,143 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming full-size pickup truck traveling in the opposite lane, dark-colored body barely visible behind an overwhelmingly bright glare, with a high-mounted LED light bar across the top of its cab throwing brilliant white light",
+      "appearance_details": "Roof-mounted horizontal LED light bar emitting intense, near-blinding white illumination; standard low headlights below; boxy silhouette of a pickup with a raised suspension stance",
+      "relationship": "The primary hazard the ego vehicle reacts to; approaching head-on in the adjacent oncoming lane",
+      "location": "center to left-center of frame, receding into distance then closing",
+      "relative_size": "Small within frame growing to Medium within frame as it approaches",
+      "orientation": "Front-facing toward the camera, headed in the opposite direction",
+      "pose": "",
+      "action": "Driving forward in its own lane with its light bar flashing intense white glare toward the ego camera",
+      "state_changes": "Grows larger and brighter as it closes, glare intensifies with lens flare, then sweeps past on the left and shrinks away",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, represented through its first-person dashboard-camera point of view looking forward through the windshield down the road",
+      "appearance_details": "Faint reflection of dashboard edge and interior at bottom of frame; windshield with subtle glare and dust specks catching the oncoming light",
+      "relationship": "The observer/protagonist vehicle reacting defensively to the oncoming glare",
+      "location": "camera-origin, entire frame is its perspective",
+      "relative_size": "Large within frame (implied by POV)",
+      "orientation": "Facing forward along the road",
+      "pose": "",
+      "action": "Driving forward, then braking hard and coming to a complete stop in its lane",
+      "state_changes": "Transitions from steady forward motion to hard deceleration to a full stationary stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dark, unlit two-lane rural road at night with no streetlights. The asphalt stretches ahead with a faded painted center line and worn lane markings. Beyond the reach of the headlights, the surroundings dissolve into near-total blackness suggesting open fields, low brush, and scattered trees along the shoulders. The horizon is barely distinguishable, and the only significant light sources are the ego vehicle's own headlights illuminating a small patch of road and the blinding LED light bar of the approaching pickup truck.",
+  "lighting": {
+    "conditions": "Nighttime, minimal ambient light with a single intense artificial light source (the truck's LED light bar) dominating the scene",
+    "direction": "Frontal glare from the oncoming truck ahead and slightly to the left; ego headlights cast light forward-down onto the road",
+    "shadows": "Deep, pervasive darkness across most of the frame; harsh silhouettes formed against the oncoming glare; long faint shadows thrown backward by the light bar's beam",
+    "illumination_effect": "Overwhelming white glare with pronounced lens flare, halation and starburst artifacts washing out road detail and creating temporary visual blindness in the frame center"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road with the vanishing point aligned to the approaching truck; low ego headlight pool in the lower foreground, engulfing darkness at the edges",
+    "color_scheme": "Predominantly black and deep navy shadows contrasted with searing cool white and pale blue glare, punctuated by warm amber-white from the ego headlights",
+    "mood_atmosphere": "Tense, threatening, disorienting, high-alert",
+    "patterns": "Repeating faded dashes of the road's center line"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide POV shot through the windshield",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep, though obscured by glare and darkness",
+    "focus": "The road ahead and the oncoming truck's light source",
+    "lens_focal_length": "Wide-angle, approximating natural driver field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic dashcam realism",
+  "context": "Automotive driving-hazard scenario depicting a defensive reaction to blinding oncoming glare on an unlit rural road",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "Ego car drives forward along the dark road; a distant oncoming truck with a flashing LED light bar appears ahead in the opposite lane, glare beginning to grow."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "The truck closes rapidly; its LED light bar throws intense white glare and lens flare across the windshield, washing out the view."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Ego vehicle travels forward on the unlit two-lane road; the oncoming pickup with a flashing LED light bar appears in the distance in the opposite lane, growing brighter.",
+      "key_changes": "Truck emerges and enlarges; glare steadily intensifies from a distant point to a bright source",
+      "camera": "Forward-tracking with steady ego motion"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "The truck closes distance quickly; its brilliant white light bar floods the camera with harsh glare, starbursts and lens flare, momentarily washing out the road.",
+      "key_changes": "Peak glare and lens flare; visibility drops dramatically; ego begins reacting",
+      "camera": "Forward motion begins to decelerate; slight instability from onset of braking"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego car drives forward along the dark road; a distant oncoming truck with a flashing LED light bar appears ahead in the opposite lane, glare beginning to grow. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Steady low engine hum and tire noise on asphalt during forward travel; a rising mechanical whir and wind as the truck approaches; a sharp screech and squeal of hard braking with a suspension creak as the car dips and stops; the whoosh of the passing truck fading away; then quiet idling and faint ambient night sounds with the car stationary.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

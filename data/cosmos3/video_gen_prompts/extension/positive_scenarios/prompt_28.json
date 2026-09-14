@@ -1,0 +1,144 @@
+{
+  "subjects": [
+    {
+      "description": "The ego vehicle itself, implied through its first-person dashboard-camera perspective; a passenger car cruising along a two-lane highway",
+      "appearance_details": "Not directly visible except for the faint interior reflection of the windshield frame at the extreme edges of the view; the camera is mounted centrally behind the windshield",
+      "relationship": "The primary observer whose forward view constitutes the entire frame; interacts with surrounding traffic and road",
+      "location": "Camera viewpoint, center of frame",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the highway, aligned with direction of travel",
+      "pose": "N/A; vehicle moving straight ahead",
+      "action": "Driving forward on the highway, then slowing markedly and continuing at reduced speed",
+      "state_changes": "Vehicle recognizes the obscured lens and decelerates noticeably, then maintains a slow steady roll",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A large fresh bird dropping splattered directly onto the camera lens/windshield",
+      "appearance_details": "Milky white and grayish smear with an irregular blotchy edge and a semi-translucent watery halo, partially opaque in the center",
+      "relationship": "Obstruction directly on the camera, degrading the view of the road and traffic",
+      "location": "Upper center of frame, spreading downward",
+      "relative_size": "Large within frame",
+      "orientation": "Flat against the lens plane, facing the camera",
+      "pose": "N/A; static splatter adhering to glass",
+      "action": "Remains fixed on the lens, blurring and blotting out much of the upper-center view",
+      "state_changes": "No significant change; the smear stays obscuring throughout after landing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Light highway traffic consisting of a few distant vehicles ahead in the visible lanes",
+      "appearance_details": "A couple of sedans and a compact SUV in muted colors, spaced apart, some in the oncoming lane",
+      "relationship": "Surrounding traffic the ego vehicle must monitor despite the obscured lens",
+      "location": "Lower center and left of frame, along the visible road surface",
+      "relative_size": "Small within frame",
+      "orientation": "Facing away (leading traffic) and toward camera (oncoming lane)",
+      "pose": "N/A; vehicles in motion",
+      "action": "Driving along the highway at normal highway speeds",
+      "state_changes": "Gradually recede or pass as the ego vehicle slows",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural-to-suburban two-lane highway stretching straight ahead under a clear blue daytime sky. Asphalt road surface with faded lane markings, a broken center line, and solid edge lines. Flanking the road are grassy shoulders, sparse roadside vegetation, occasional utility poles, and low distant hills. The horizon is open and bright with light traffic distributed sparsely across both lanes.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-lit from the upper right",
+    "shadows": "Consistent, crisp shadows cast by vehicles and poles onto the road and shoulder, all falling in the same direction",
+    "illumination_effect": "Even, high-contrast natural illumination that makes the milky bird-dropping smear glow brightly and stand out against the darker road"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving dashcam framing with the road vanishing to the horizon; the milky smear dominates the upper-center, drawing the eye and disrupting the otherwise clean composition",
+    "color_scheme": "Blue sky, gray asphalt, green roadside vegetation, and the intrusive milky white-gray smear",
+    "mood_atmosphere": "Ordinary daytime drive suddenly compromised, cautious, mildly tense",
+    "patterns": "Repeating dashed center-line markings and evenly spaced utility poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, deceleration evident in slowing forward motion; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot / point-of-view dashcam framing",
+    "camera_angle": "Eye-level from the driver's seat height",
+    "depth_of_field": "Deep, though partially spoiled by the smear",
+    "focus": "Sharp on the distant road and traffic where visible; blurred and obscured through the smear",
+    "lens_focal_length": "Wide-angle, roughly 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous or driver-assist vehicle demonstrating degraded-sensor recognition and safe deceleration response",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle travels forward on the clear two-lane highway with light traffic visible ahead under bright daylight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A large bird dropping suddenly splatters onto the lens, spreading a milky smear across the upper-center of the view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle recognizes the degraded, blurred view and begins to slow markedly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues rolling at the reduced speed while the smear remains obscuring the road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Clear forward view of the highway with sparse traffic and consistent daytime shadows. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Normal driving, no obstruction",
+      "camera": "Forward tracking at steady highway speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A bird dropping splatters onto the lens, creating a milky smear that blots the upper-center and blurs the road; the vehicle begins to decelerate. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sudden lens obstruction appears; motion begins to slow",
+      "camera": "Forward tracking with decreasing speed, view partially obscured; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle keeps rolling at the reduced speed while the milky smear stays fixed on the lens, obscuring much of the upper-center view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sustained slow motion; obstruction persists unchanged",
+      "camera": "Slow forward tracking, smear remains on lens; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a bright, clear two-lane highway ahead with faded lane markings and a few distant vehicles in light traffic, sharp consistent shadows falling across the asphalt. Around 0:01 a large bird dropping suddenly splatters onto the lens, spreading an irregular milky white-gray smear across the upper-center of the frame, blurring and blotting out much of the road ahead. From 0:02 the vehicle registers the degraded view and slows markedly, the forward motion visibly reducing. Through 0:03 to 0:05 the vehicle continues rolling at the reduced speed while the smear stays adhered to the lens, keeping the road ahead partly obscured, the remaining visible portions revealing the sparse traffic continuing along the highway. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of tires on asphalt and wind noise at highway speed, gradually lowering in pitch as the vehicle decelerates. A faint soft splat sound accompanies the bird dropping impact. A subtle electronic chime and muffled system tone signal the vehicle's recognition of the degraded sensor view. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

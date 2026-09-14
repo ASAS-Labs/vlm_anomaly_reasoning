@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A weathered wooden telephone pole standing vertically flush with the road surface, positioned exactly on the painted yellow edge line at the right side of the alley",
+      "appearance_details": "Grayish-brown creosote-treated timber with visible grain, metal staples and old wiring hardware bolted near the top, faint remnants of stapled flyers, a slightly rough weathered texture",
+      "relationship": "The primary obstacle directly in the ego vehicle's drifting path; the ego vehicle assigns it no importance",
+      "location": "right side of frame, gradually moving toward center-right foreground",
+      "relative_size": "Medium within frame, growing larger as the vehicle approaches",
+      "orientation": "Vertical, faces camera as a cylindrical column",
+      "pose": "Upright and static, planted at the right edge line",
+      "action": "Standing still directly in the ego vehicle's approaching path",
+      "state_changes": "Remains static but appears to grow larger and shift toward the vehicle's front-right as the ego drifts toward it.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior is implied by the first-person driving viewpoint through the windshield",
+      "appearance_details": "Only the forward road view is visible; dashboard reflections faintly present at the bottom edge of frame, hood barely implied",
+      "relationship": "The point-of-view subject drifting toward the pole at the right edge line",
+      "location": "Camera position, unseen but centered in the driving lane",
+      "relative_size": "Not visible within frame (POV)",
+      "orientation": "Facing forward down the alley",
+      "pose": "Moving forward at a slow, steady speed while drifting right",
+      "action": "Traveling slowly and drifting rightward toward the edge line to pull over",
+      "state_changes": "Maintains normal slow speed without slowing; lateral drift brings it steadily closer to the pole.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow residential alley bathed in clear daytime light. The paved road surface is flat asphalt with no curbs, bordered on the right by a solid painted yellow edge line. Low fences, weathered brick and stucco walls, and the backs of modest buildings line both sides, with scattered utility poles and overhead wires. Vegetation such as shrubs and small trees peeks over some fences. The alley stretches ahead with a slight vanishing perspective, quiet and empty of pedestrians or traffic.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, side-lit from the upper left casting light down the alley",
+    "shadows": "Consistent, sharp-edged shadows cast by the telephone pole and walls, all falling in the same direction",
+    "illumination_effect": "Even, high-contrast natural illumination with well-defined highlights and shadows, giving a crisp mid-day appearance"
+  },
+  "aesthetics": {
+    "composition": "First-person forward-facing composition centered on the alley's vanishing point, with the yellow edge line and telephone pole framed in the right portion of the frame drawing the eye toward the impending collision path",
+    "color_scheme": "Muted urban palette of gray asphalt, brown and beige walls, green vegetation, accented by the bright yellow edge line and the grayish-brown pole",
+    "mood_atmosphere": "Quiet, ordinary, subtly tense",
+    "patterns": "Repeating fence slats and evenly spaced utility poles receding along the alley"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion with gradual rightward drift; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot (ego dashcam view)",
+    "camera_angle": "Eye-level driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the alley and on the telephone pole ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving / ADAS ego-view scenario depicting a vehicle drifting toward a fixed roadside obstacle without slowing",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels slowly forward down the narrow alley, centered in the lane, with the telephone pole visible ahead near the right yellow edge line. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle begins drifting toward the right edge as if intending to pull over, closing distance on the pole. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues drifting straight toward the pole at its normal speed without slowing, the pole looming larger directly ahead of the vehicle's right side. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego car moves slowly forward through the alley under clear daylight, gradually beginning to drift rightward toward the yellow edge line where the telephone pole stands. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Lateral drift initiates; the pole grows larger in the right of frame.",
+      "camera": "Forward tracking with subtle rightward lateral shift; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle continues drifting straight toward the telephone pole at normal speed without any deceleration, the pole dominating the right-front of the frame as collision approaches. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Pole fills more of the frame; no slowing or steering correction occurs.",
+      "camera": "Forward tracking with continued rightward drift, pole approaching frame; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego view shows a quiet narrow alley in bright daylight, the car rolling slowly forward centered in the lane with a wooden telephone pole standing on the yellow right edge line ahead. By 0:01 consistent shadows stretch across the asphalt and the pole is clearly visible to the right. At 0:02 the vehicle begins drifting toward the right edge as if to pull over. Through 0:03 the pole grows larger, positioned directly ahead of the vehicle's right side. From 0:03 to 0:05 the car continues drifting straight toward the pole at its normal speed, showing no deceleration, the weathered timber pole looming ever closer in the frame as the segment ends. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor daytime sounds: the low steady hum of the car engine at slow speed, faint tire noise on asphalt, distant birdsong and light residential quiet. No music, speech, or collision impact sound within the clip.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

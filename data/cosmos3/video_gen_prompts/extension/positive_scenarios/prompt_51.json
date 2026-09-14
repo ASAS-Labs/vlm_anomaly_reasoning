@@ -1,0 +1,101 @@
+{
+  "subjects": [
+    {
+      "description": "A retired ambulance that has been repainted and converted into a private camper, parked along the right curb. It retains the boxy patient-compartment silhouette of an old ambulance but now wears a faded off-white and muted teal repaint with peeling stripe remnants.",
+      "appearance_details": "A dormant roof light bar sits completely dark and unlit atop the cab; the original emergency markings are faded and partially painted over. Curtains are visible in the rear compartment windows, a small camper vent protrudes from the roof, and the tires rest flush against the curb.",
+      "relationship": "A stationary roadside vehicle that the ego car passes; it is unrelated to any active traffic event.",
+      "location": "right side of frame, mid-ground moving toward foreground as the ego car approaches",
+      "relative_size": "Medium within frame",
+      "orientation": "parked parallel to the curb, facing the same direction as ego travel, seen from rear-three-quarter as ego passes",
+      "pose": "stationary, wheels turned slightly toward the curb",
+      "action": "parked and motionless at the curb",
+      "state_changes": "No significant change; remains parked and dark as the ego vehicle drives past.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban residential road under clear daytime skies. Modest single-family homes with driveways, low fences, mature trees, and neatly trimmed lawns line both sides of the street. Sidewalks run parallel to the curbs, with a few parked cars and utility poles scattered along the way. The road surface is dry asphalt with faded lane markings, and the far distance shows the road gently continuing with open, unobstructed lanes ahead.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from the upper left, front-side lighting the scene",
+    "shadows": "Crisp, consistent shadows cast from trees, poles, and the parked camper onto the sidewalk and roadway",
+    "illumination_effect": "Even, natural high-key illumination with good contrast and true color rendition, giving a calm midday appearance"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view perspective with the open lane occupying the middle of the frame, the parked converted ambulance framed to the right, and receding rows of houses and trees creating strong linear perspective toward the vanishing point.",
+    "color_scheme": "Muted suburban palette of gray asphalt, green foliage, warm house tones, and the faded off-white and teal of the parked camper under a pale blue sky",
+    "mood_atmosphere": "Calm, ordinary, routine driving",
+    "patterns": "Repeating rhythm of utility poles, sidewalk seams, and lane dashes receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the ego vehicle's dashcam, moving at a steady cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road, curb, and surroundings",
+    "camera_angle": "Eye-level, driver's forward viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway, the open lane ahead, and the parked camper",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving perception scenario demonstrating correct handling of an unusual-looking but ordinary parked vehicle without unnecessary braking",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the open lane; the converted ambulance-camper is visible parked ahead at the right curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle continues at steady speed and begins to draw alongside the parked camper without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle passes the parked camper on the right at normal cruising speed and continues down the open road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "AMBULANCE",
+      "category": "vehicle_graphic",
+      "appearance": "Faded, partially painted-over block lettering in washed-out red on the side of the converted vehicle, barely legible",
+      "spatial_temporal": "On the right side panel of the parked camper, visible as the ego vehicle approaches and passes (0:02-0:05)",
+      "context": "Remnant of the vehicle's former emergency service life, now faded to indicate its retired, converted status"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward along the suburban two-lane road under clear daylight, approaching the parked converted ambulance-camper at the right curb while the lane ahead remains open. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The parked camper grows larger in the right of frame as the ego vehicle steadily approaches.",
+      "camera": "Forward tracking at constant cruising speed, eye-level dashcam view; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle passes the parked camper on the right without slowing or stopping and continues along the clear open road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The parked camper slides past on the right and recedes; the open road ahead continues unobstructed.",
+      "camera": "Continued forward tracking at steady speed, no braking or swerving; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a quiet suburban two-lane road bathed in bright, clear midday light, with a retired ambulance repainted as a private camper parked at the right curb ahead, its roof light bar completely dark and its faded markings barely legible. Over 0:00-0:02 the ego vehicle cruises forward at a steady pace along the open lane, the parked camper growing larger on the right. From 0:02-0:03 the ego vehicle draws alongside the clearly stationary, ordinary parked vehicle without slowing. Between 0:03 and 0:05 the ego vehicle passes the camper on the right at its normal cruising speed and continues smoothly down the unobstructed road, treating the vehicle as an ordinary parked car throughout. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise from tires on dry asphalt and a consistent engine hum at cruising speed, with faint suburban background sounds such as distant birdsong and a light breeze. No sirens, no braking sounds, no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

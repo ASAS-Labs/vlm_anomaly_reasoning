@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A white pickup truck driving directly ahead of the ego vehicle in the same lane, with an open rear tailgate",
+      "appearance_details": "Dusty white paintwork, dark cargo bed, red brake and tail lights, standard rear license plate, muddy mudflaps",
+      "relationship": "The lead vehicle the ego car is following and closing in on",
+      "location": "center of frame, mid-ground",
+      "relative_size": "Medium within frame",
+      "orientation": "rear facing the camera, moving away in the same direction",
+      "pose": "N/A",
+      "action": "Driving steadily forward at cruising speed in the same lane",
+      "state_changes": "Grows larger in frame as the ego vehicle closes the gap without slowing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A long aluminium extension ladder protruding well past the pickup truck's open tailgate at roughly windshield height",
+      "appearance_details": "Silvery brushed aluminium rungs and rails glinting in sunlight, extended horizontally beyond the tailgate, a small red warning flag tied to the far end fluttering slightly",
+      "relationship": "Cargo overhanging from the lead truck, creating an unseen collision hazard for the ego vehicle",
+      "location": "center of frame, extending toward the camera at windshield height",
+      "relative_size": "Small within frame initially, growing as the gap closes",
+      "orientation": "pointing rearward toward the ego camera, roughly parallel to the road",
+      "pose": "N/A",
+      "action": "Extending steadily from the moving truck, red flag flapping in the wind",
+      "state_changes": "Appears to extend closer to the windshield as the ego vehicle approaches without slowing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane asphalt road under bright clear daytime skies. The road stretches ahead with a faded center line, flanked by dry grassy shoulders, occasional roadside trees and utility poles. Distant low hills and a bright blue sky with a few scattered clouds fill the horizon. Consistent hard shadows from vehicles and roadside objects fall across the tarmac, indicating a high sun.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly front-right of the vehicles",
+    "shadows": "Consistent, sharply defined shadows cast beneath and slightly ahead of the truck and along the roadside",
+    "illumination_effect": "Crisp, high-contrast illumination with glinting reflections off the aluminium ladder and metallic vehicle surfaces"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-perspective composition with the pickup truck framed in the middle of the lane and the ladder pointing directly toward the viewer, road converging at a vanishing point ahead",
+    "color_scheme": "Dominant grey asphalt, white truck body, silvery aluminium, blue sky, muted green and tan roadside vegetation, with a pop of red from the warning flag and tail lights",
+    "mood_atmosphere": "Ordinary daytime drive, latent unseen danger, quiet tension",
+    "patterns": "Repeating ladder rungs and road center-line dashes"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion following the truck along the road; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver ego perspective",
+    "camera_angle": "Eye-level from behind the windshield",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the pickup truck and the protruding ladder",
+    "lens_focal_length": "Wide-angle, approx 28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving scenario illustrating a perception failure where the ego vehicle detects only the truck body and misjudges an overhanging ladder hazard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises at steady speed on the two-lane road behind the white pickup truck, ladder visibly extending past the tailgate. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The gap between the ego vehicle and the truck begins to narrow as the ego vehicle maintains its cruising speed without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues closing in, the ladder and its red flag looming larger at windshield height as the vehicle drives underneath the overhang without decelerating. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establishing the ego view following the pickup truck at cruising speed on a clear-day two-lane road, ladder extending past the open tailgate with a red flag at its tip. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steady following distance, ladder clearly visible, red flag fluttering.",
+      "camera": "Forward tracking dashcam, stable, following the truck; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The ego vehicle begins to close the gap to the truck without any speed reduction, ladder growing slightly larger in frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Following distance decreases, ladder appears nearer.",
+      "camera": "Continued forward tracking, gap visibly shrinking; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle keeps cruising and closes in under the ladder, which now looms prominently near the windshield with its red flag, illustrating the misjudged hazard. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ladder and flag dominate the upper-center frame as the vehicle nears the overhang without slowing.",
+      "camera": "Forward tracking, ladder filling more of the frame at windshield height; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam ego view shows a white pickup truck ahead in the same lane on a bright, clear two-lane road, an aluminium ladder extending well past its open tailgate at windshield height with a small red flag tied to the end. Through 0:01-0:02 the ego vehicle follows at a steady cruising speed with consistent hard shadows on the tarmac. From 0:02 to 0:03 the gap begins to close as the ego vehicle does not slow, the ladder appearing nearer. Between 0:03 and 0:05 the ego vehicle continues closing in under the ladder, which looms larger at windshield height with its red flag fluttering, demonstrating the ego vehicle judging only the truck body and driving toward the overhanging hazard without decelerating. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low engine hum and tire road noise of the ego vehicle, faint wind buffeting, occasional distant ambient road sounds; no speech or music, conveying an ordinary daytime drive with subtle underlying tension.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

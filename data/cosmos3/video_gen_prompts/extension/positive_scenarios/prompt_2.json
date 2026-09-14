@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A regulation red octagonal stop sign mounted on a galvanized metal post at the right corner of a four-way intersection",
+      "appearance_details": "Bright red reflective face with a bold white border and the white word 'STOP' in the center; several small black-and-white rectangular stickers are scattered across the sign's surface without obscuring the octagonal shape or the lettering",
+      "relationship": "The primary regulatory object the ego vehicle must detect and obey",
+      "location": "Right side of frame, at the corner of the intersection",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the oncoming ego vehicle, angled slightly toward the camera",
+      "pose": "Static, upright on its post",
+      "action": "Standing at the intersection corner signaling a required stop",
+      "state_changes": "No significant change; grows larger in frame as the vehicle approaches then holds steady when stopped",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car represented through its first-person dashboard/windshield point of view",
+      "appearance_details": "Interior edges of the windshield frame and a faint reflection of the dashboard may be visible at the lower border; the hood is subtly present at the bottom of frame",
+      "relationship": "The point-of-view vehicle navigating the street and responding to the stop sign",
+      "location": "Camera position; occupies the driver's forward view",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the residential street toward the intersection",
+      "pose": "Moving forward then decelerating to a full stop",
+      "action": "Driving along the street, braking smoothly, stopping at the marked line",
+      "state_changes": "Transitions from steady forward motion to smooth deceleration to a complete, sustained stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family homes, mature trees, trimmed lawns and parked cars along the curbs. The street leads to a four-way intersection with a dry, clean asphalt surface and painted white stop line at the crossing. A cross street is visible running perpendicular and is completely empty of traffic. The sky is clear blue with abundant midday sunlight. A regulation red octagonal stop sign sits on a metal post at the right corner.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High front-side lighting from the upper left, consistent with midday sun",
+    "shadows": "Crisp, consistent shadows cast by trees, the sign post, and parked vehicles onto the pavement and lawns",
+    "illumination_effect": "Even, natural daylight that renders colors vividly and keeps the red of the stop sign highly saturated and clearly legible"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing dashcam framing with the road receding to a central vanishing point, the stop sign offset to the right and the marked stop line approaching along the lower third",
+    "color_scheme": "Dominant blues of the sky, greens of foliage and lawns, neutral grays of asphalt, and the vivid red-and-white of the stop sign as the focal accent",
+    "mood_atmosphere": "Calm, orderly, everyday, safe",
+    "patterns": "Repeating rows of houses, curbside parked cars, and lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's point of view",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead, the stop sign, and the painted stop line",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of dashcam optics"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS demonstration of stop-sign recognition and compliant braking despite sign defacement",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the quiet residential street, approaching the four-way intersection with the sticker-covered stop sign visible growing on the right."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop at the marked line and remains fully stationary for the remaining duration; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold white uppercase sans-serif lettering centered on a red octagonal field with a white border",
+      "spatial_temporal": "On the sign at the right corner of the intersection, visible throughout and increasingly prominent as the vehicle approaches",
+      "context": "Regulatory traffic sign requiring vehicles to come to a full stop; remains legible despite scattered stickers"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Forward approach down the residential street toward the intersection with the stop sign on the right.",
+      "key_changes": "Stop sign and stop line grow larger in frame as the vehicle advances at steady speed.",
+      "camera": "Smooth forward tracking motion at cruising speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a complete stop at the marked line and holds stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the quiet residential street, approaching the four-way intersection with the sticker-covered stop sign visible growing on the right. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds: the low hum of the moving car's engine and tire noise on dry asphalt, which fades as the vehicle decelerates. Faint distant bird calls and a light breeze. A subtle brake sound accompanies the stop, followed by quiet idling once the vehicle is fully stationary. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

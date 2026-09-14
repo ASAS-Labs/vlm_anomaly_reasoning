@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "description": "A line of bright orange traffic cones arranged in a diagonal taper across the road, channeling traffic from the ego lane onto the opposite carriageway",
+      "appearance_details": "Standard reflective orange PVC cones with white retroreflective bands near the top, slightly weathered with road dust, evenly spaced",
+      "relationship": "Roadwork traffic-control devices dictating the intended lane shift that the ego vehicle ignores",
+      "location": "center to right foreground, extending diagonally into mid-ground",
+      "relative_size": "Medium within frame",
+      "orientation": "Row angled from lower-right toward upper-center as it recedes",
+      "pose": "Upright, stationary on the asphalt",
+      "action": "Marking a coned-off closed section and redirecting the lane leftward",
+      "state_changes": "Cones grow larger and pass on the right as the ego vehicle drives straight past them into the closed section",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Temporary yellow lane markings painted over the asphalt guiding the shifted lane to the left onto the opposite carriageway",
+      "appearance_details": "Vivid yellow dashed and solid temporary lines, slightly uneven, laid over the original white markings",
+      "relationship": "Official temporary guidance that conflicts with the old white lines and is disregarded by the ego vehicle",
+      "location": "center foreground curving to the left",
+      "relative_size": "Medium within frame",
+      "orientation": "Curving leftward away from the straight white lines",
+      "pose": "Flat on the road surface",
+      "action": "Directing traffic to merge left onto the opposite lane",
+      "state_changes": "Sweeps under and past the camera as the vehicle continues straight instead of following them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 0,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Old white lane lines running straight ahead into the coned-off section under repair",
+      "appearance_details": "Faded white painted center and edge lines, worn from traffic, continuing straight past the taper into the closed zone",
+      "relationship": "The lines the ego vehicle mistakenly follows into the closed section",
+      "location": "center of frame receding to the horizon",
+      "relative_size": "Small to medium within frame",
+      "orientation": "Straight ahead along the vehicle's path",
+      "pose": "Flat on the road surface",
+      "action": "Leading straight into the coned-off area under repair",
+      "state_changes": "Approach and pass beneath the vehicle as it drives into the closed section",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 0,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural-to-suburban two-lane asphalt road under clear blue daytime sky. The road stretches straight toward a low horizon with sparse trees and low vegetation flanking both shoulders. A roadwork zone occupies the near-to-mid ground: a taper of orange cones and freshly painted temporary yellow markings shift the current lane to the left onto the opposing carriageway, while ahead a coned-off section shows exposed patched asphalt, some construction barriers, and repair equipment. Consistent hard shadows fall from roadside objects, indicating a bright, cloudless afternoon.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side lighting casting shadows toward the camera-left",
+    "shadows": "Sharp, consistent, well-defined shadows from cones and roadside objects onto the asphalt",
+    "illumination_effect": "High contrast, crisp visibility with saturated colors and glare-free road surface"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing ego perspective with the road vanishing point near center, cones tapering diagonally from lower-right, yellow markings curving left, white lines running dead center",
+    "color_scheme": "Grey asphalt, vivid safety orange, saturated yellow markings, faded white lines, clear blue sky and green roadside foliage",
+    "mood_atmosphere": "Ordinary daytime driving, subtle tension of an ignored hazard",
+    "patterns": "Repeating evenly spaced orange cones and dashed lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion at steady speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's ego viewpoint",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road surface, cones, and markings from foreground to horizon",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving / ADAS scenario depicting a lane-keeping failure where the vehicle follows old white lines into a closed roadwork section instead of the shifted lane",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward on the two-lane road under clear daylight, approaching the roadwork taper of orange cones and yellow markings. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The temporary yellow markings curve left onto the opposite carriageway while the old white lines continue straight into the coned-off area. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle follows the old white lines straight through the cones without slowing, continuing into the closed section under repair. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD WORK AHEAD",
+      "category": "scene_sign",
+      "appearance": "Black text on a diamond-shaped orange warning sign, reflective",
+      "spatial_temporal": "Right shoulder, mid-ground, visible from 0:00 to 0:02 as the vehicle approaches",
+      "context": "Warns drivers of the upcoming roadwork zone and lane shift"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward at steady speed toward the roadwork taper, with orange cones and temporary yellow markings shifting the lane left while old white lines continue straight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Cones and yellow markings enter frame and grow closer; the divergence between yellow leftward guidance and straight white lines becomes clear.",
+      "camera": "Steady forward tracking dashcam motion at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle follows the old white lines straight through the row of cones without slowing, driving into the coned-off closed section under repair. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Cones pass on the right, yellow markings curve away to the left, exposed repair surface approaches directly ahead.",
+      "camera": "Continued steady forward tracking, no braking deceleration visible; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a clear straight two-lane road under bright daylight with sharp shadows, a roadwork warning sign visible on the right. By 0:01 a taper of orange cones and vivid yellow temporary markings appears ahead, beginning to shift the lane to the left. At 0:02 the yellow markings curve onto the opposite carriageway while the faded old white lines continue dead straight into a coned-off repair section. From 0:03 onward the vehicle maintains speed and follows the old white lines straight, passing between and past the cones on its right rather than merging left. Through 0:04 and 0:05 the ego vehicle continues driving straight into the closed section, with exposed patched asphalt and repair barriers ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the vehicle's engine and continuous tire-on-asphalt rolling noise, occasional faint wind buffeting, no music or speech; a subtle rhythmic thump as the vehicle rolls over the temporary markings and road seams.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

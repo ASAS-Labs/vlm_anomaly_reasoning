@@ -1,0 +1,101 @@
+{
+  "subjects": [
+    {
+      "description": "A person wearing a full-body inflatable green dinosaur costume, standing upright at the roadside curb. The costume is a bright lime-green T-rex style suit with a rounded inflated belly, stubby arms, a bulbous tail, and a cartoonish dinosaur head with white teeth and small eyes.",
+      "appearance_details": "The inflatable suit bulges outward due to internal air, with visible seams and a small battery-powered fan pouch at the waist. The wearer's face is barely visible through a mesh panel in the dinosaur's neck. The costume sways slightly in the breeze.",
+      "relationship": "A pedestrian intending to cross the road at the zebra crosswalk; the primary object the ego vehicle should detect and yield to.",
+      "location": "right foreground, at the curb beside the crosswalk edge",
+      "relative_size": "Medium within frame",
+      "orientation": "facing the road, turned roughly three-quarters toward the camera",
+      "pose": "standing upright, leaning slightly forward as if about to step onto the crosswalk, stubby costume arms hanging outward",
+      "action": "waiting at the curb, preparing to cross the zebra crosswalk",
+      "state_changes": "Remains standing at the curb throughout; shifts weight slightly forward as the car approaches but does not step off in time.",
+      "clothing": "full-body inflatable green dinosaur costume with rounded belly, tail, small arms, and toothy cartoon head",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet urban city street on a clear day. The road is paved asphalt with faded lane markings and a prominent white-striped zebra crosswalk spanning the width ahead. Low-rise commercial buildings line both sides with shopfronts, glass windows, and parked cars along the curb. Sidewalks with concrete curbs, a few street trees, lamp posts, and traffic signage are visible. No other moving vehicles or pedestrians are present, giving an empty, calm street atmosphere.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side lit from the upper left",
+    "shadows": "Sharp, consistent shadows cast to the lower right of objects, including a clear shadow beneath the dinosaur costume and under parked cars",
+    "illumination_effect": "Even, high-contrast daylight that makes colors vivid and the crosswalk stripes and green costume clearly visible"
+  },
+  "aesthetics": {
+    "composition": "Ego-centric dashcam-style framing with the road receding to a central vanishing point, the zebra crosswalk crossing the lower-middle third, and the green dinosaur figure positioned at the right curb.",
+    "color_scheme": "Neutral grey asphalt and beige buildings dominate, punctuated by the vivid lime-green of the dinosaur costume and the crisp white crosswalk stripes against a clear blue sky.",
+    "mood_atmosphere": "Ordinary, calm, uneventful daytime drive with an undertone of impending failure and risk",
+    "patterns": "Repeating parallel white stripes of the zebra crosswalk; regularly spaced lamp posts and parked cars"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking motion mounted on the vehicle, moving steadily toward and through the crosswalk; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's ego perspective",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road, crosswalk, and the dinosaur figure at the curb",
+    "lens_focal_length": "Wide-angle, approximately 28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous vehicle perception test scenario demonstrating a failure to classify an unusually-dressed pedestrian at a crosswalk",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the city street at cruising speed, the zebra crosswalk ahead and the green dinosaur-costumed pedestrian visible waiting at the right curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching the crosswalk without slowing; the costumed pedestrian leans forward slightly as if ready to cross. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives straight through the zebra crosswalk at normal speed without stopping, passing directly in front of the still-waiting dinosaur pedestrian. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SLOW",
+      "category": "scene_sign",
+      "appearance": "White painted road marking, block letters on the asphalt",
+      "spatial_temporal": "Painted on the road surface ahead of the crosswalk, visible in the first half of the video",
+      "context": "Standard traffic marking advising drivers to reduce speed near the crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle cruises steadily toward the marked zebra crosswalk under clear daylight; the green dinosaur-costumed pedestrian stands at the right curb waiting to cross. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Crosswalk and pedestrian grow larger in frame as the car approaches; no deceleration occurs.",
+      "camera": "Forward tracking at constant speed, eye-level windshield mount; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives directly through the zebra crosswalk at its normal cruising speed without slowing or stopping, passing the still-waiting costumed pedestrian. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The crosswalk stripes pass beneath the vehicle; the dinosaur figure slides past on the right without any yielding behavior.",
+      "camera": "Continued forward tracking at constant speed through and beyond the crosswalk; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle moves forward along an empty, sunlit city street with a white-striped zebra crosswalk ahead and a person in a bright green inflatable dinosaur costume standing at the right curb. By 0:01 the crosswalk and costumed pedestrian are clearly visible, the car maintaining its cruising speed. At 0:02 the vehicle nears the crosswalk without decelerating while the dinosaur figure leans slightly forward, apparently ready to step onto the crossing. From 0:03 to 0:05 the ego vehicle drives straight through the zebra crosswalk at its normal speed, failing to stop or slow, passing directly in front of the still-waiting costumed pedestrian, ending as the crosswalk falls behind the vehicle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban daytime sounds: the steady low hum of the vehicle's engine and tires rolling on asphalt at constant speed, faint distant city noise, and a light breeze. No braking sounds, no horn, and no spoken dialogue, emphasizing the vehicle's uninterrupted, unyielding pass through the crosswalk.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A two-lane desert highway stretching straight ahead, its faded asphalt marked with a worn double-yellow centerline and cracked pale edges bordering dry tan earth.",
+      "appearance_details": "Sun-bleached gray blacktop with patchy repairs and thin sand drifts crossing the surface; the shoulders blend into flat scrubland.",
+      "relationship": "The primary path the ego vehicle travels along; consumed by the incoming dust wall.",
+      "location": "center foreground extending to vanishing point",
+      "relative_size": "Large within frame",
+      "orientation": "receding away from camera toward the horizon",
+      "pose": "flat linear roadway",
+      "action": "streaming beneath and toward the camera as the vehicle moves forward",
+      "state_changes": "Visible and sharp at start, then progressively erased by blowing dust until the road edge and markings vanish into a tan whiteout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A dense wall of wind-driven desert dust sweeping laterally across the highway from the right.",
+      "appearance_details": "Churning tan and ochre particulate clouds with soft turbulent edges, thickening rapidly into an opaque haze.",
+      "relationship": "The atmospheric hazard that overwhelms the road and reduces visibility to near zero.",
+      "location": "entering from right, expanding to fill entire frame",
+      "relative_size": "Large within frame",
+      "orientation": "moving right-to-left and toward the camera",
+      "pose": "billowing, swirling mass",
+      "action": "sweeping across and engulfing the road ahead",
+      "state_changes": "Begins as a low band on the right, grows into a total whiteout obscuring everything ahead.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A flat, arid desert landscape under a bright midday sky. On either side of the highway lie parched tan flats dotted with sparse dry brush and low scrub, with distant hazy ridgelines barely visible before the storm. The horizon is broad and empty. As the dust storm advances, the sky, land, and road merge into a uniform tan void with almost no distinguishable features.",
+  "lighting": {
+    "conditions": "Harsh bright daylight",
+    "direction": "top-lit from high overhead sun, slightly diffused as dust arrives",
+    "shadows": "Short, hard shadows early on, quickly flattening and disappearing as the dust scatters and diffuses the light",
+    "illumination_effect": "Intense glare that becomes an overexposed tan diffusion, flattening all depth cues within the whiteout"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the highway with the road as the leading line to a vanishing point; symmetrical framing that dissolves into featureless haze",
+    "color_scheme": "Dominant tans, ochres, and dusty beige with faded gray asphalt and washed-out pale blue sky quickly overtaken by monochrome tan",
+    "mood_atmosphere": "Tense, disorienting, dangerous, oppressive",
+    "patterns": "Repeating road lane markings and faint drifting sand ripples"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego vehicle POV) at steady cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and horizon, progressively lost to haze",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam aesthetic",
+  "context": "Dashcam / ego-vehicle footage of a car driving into a desert dust storm without slowing",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The car cruises forward on a clear two-lane desert highway under harsh daylight, road and horizon fully visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "A wall of blowing dust sweeps in from the right, rapidly spreading across the road ahead and reducing visibility. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Visibility collapses into a near-total tan whiteout; the road edge and any vehicles ahead vanish, yet the car continues at full cruising speed into the haze. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Clear view down the sun-baked desert highway with markings, shoulders, and distant ridges all visible as the car cruises forward. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Baseline clear conditions; first hint of dust appearing at the right edge",
+      "camera": "Steady forward tracking at cruising speed, eye-level POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "The dust wall sweeps across from the right, thickening and swallowing the road ahead as visibility drops sharply. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Rapid onset of blowing dust; road edge and horizon begin to disappear",
+      "camera": "Continued steady forward tracking, no slowing; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "A near-total tan whiteout fills the frame; the road and anything ahead are invisible while the car keeps driving at full speed into the void. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Total loss of visibility; uniform tan haze; unchanged vehicle speed",
+      "camera": "Steady forward tracking into featureless haze; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle speeds forward on a clear, straight two-lane desert highway beneath harsh overhead sun, the worn asphalt and faded yellow centerline sharp against tan flats and distant ridges. Around 0:01 a wall of blowing dust surges in from the right side of the road. By 0:02 the churning tan cloud spreads across the lanes, blurring the horizon and softening the road edges. From 0:03 onward visibility collapses into a near-total whiteout of swirling tan particulate; the road markings, shoulders, and any vehicles ahead become impossible to see. Through 0:05 the car continues driving at full cruising speed straight into the opaque dust, the frame reduced to a flat, disorienting tan void. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady tire-on-asphalt rumble and constant road hum from the moving vehicle, joined by a rising howl of gusting wind. As the dust hits, a hissing, gritty sound of sand striking the windshield and body panels builds and intensifies. No music or speech; only the escalating natural ambience of the storm and the unchanging drone of the engine at speed.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

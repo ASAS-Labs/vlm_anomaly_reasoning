@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A long articulated semi-trailer truck with a boxy metal cab and a large enclosed white cargo trailer, executing a tight right turn from the adjacent left lane",
+      "appearance_details": "Weathered white trailer body with faint dirt streaks along the lower panels, chrome exhaust stacks, red brake lights glowing, amber turn signal blinking, multiple axles with dual rear wheels",
+      "relationship": "Occupies the lane adjacent to and ahead-left of the ego vehicle; its turning path directly threatens to cross the ego lane",
+      "location": "center to left foreground, sweeping toward center frame",
+      "relative_size": "Large within frame",
+      "orientation": "Cab angled away to the right while the trailer swings broadside toward the camera",
+      "pose": "Mid-turn articulation with cab and trailer forming an acute angle",
+      "action": "Beginning a tight right turn, cab pulling around the corner as the trailer swings wide",
+      "state_changes": "Trailer progressively swings across the front of the ego lane, then straightens and clears out of frame to the right",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car stopped in the right lane at the intersection, represented only by its point of view",
+      "appearance_details": "Interior not visible; hood edge and A-pillars may faintly frame the lower edge of the view",
+      "relationship": "The observing vehicle that yields to and holds position for the turning truck",
+      "location": "camera position, unseen",
+      "relative_size": "Small within frame",
+      "orientation": "Facing forward toward the intersection",
+      "pose": "Stationary at a complete stop",
+      "action": "Holding a full stop, anticipating the trailer's wide swing",
+      "state_changes": "Remains fully stationary throughout; no forward motion",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy urban city intersection under clear daytime skies. Multi-story commercial buildings with glass storefronts line the streets, interspersed with traffic signals, crosswalk markings, street signs, and utility poles. The asphalt is dry and marked with lane divider lines and stop lines. Parked cars and distant traffic populate the periphery, and sidewalks with pedestrians and street furniture flank the roadway.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun casting light from the upper right",
+    "shadows": "Sharp, consistent shadows cast to the lower left of vehicles and poles, indicating midday sun",
+    "illumination_effect": "Even, high-contrast illumination with clean highlights on the truck's white trailer and crisp shadow edges on the roadway"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam framing with the intersection centered, the turning truck dominating the mid-left foreground, and the road stretching ahead",
+    "color_scheme": "Neutral urban palette of grey asphalt, white trailer, muted building tones, punctuated by red brake lights and amber signals against a blue sky",
+    "mood_atmosphere": "Cautious, tense anticipation, everyday urban traffic",
+    "patterns": "Repeating lane markings and building window grids"
+  },
+  "cinematography": {
+    "camera_motion": "Static",
+    "framing": "Wide shot from driver POV",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "The turning semi-trailer truck and the road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving / driver-assistance scenario demonstrating yielding to a wide-turning truck",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The semi-trailer truck's cab begins pulling around the corner to the right, trailer starting to angle across the ego lane."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The trailer swings wide across the front of the ego lane while the ego vehicle holds a complete stop."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The trailer straightens and clears the ego lane to the right; the ego vehicle remains fully stopped and stationary."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase lettering on a red octagonal sign",
+      "spatial_temporal": "Right side of intersection, visible throughout",
+      "context": "Traffic control at the intersection"
+    },
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on black rectangular sign",
+      "spatial_temporal": "Mounted on a pole in the background, visible throughout",
+      "context": "Directs traffic flow at the intersection"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The articulated truck cab pulls around the corner and the trailer begins swinging into the ego lane's path.",
+      "key_changes": "Truck articulation increases; amber signal blinks; trailer angle grows",
+      "camera": "Static POV, no movement"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The trailer swings widest across the front of the ego lane as the ego vehicle holds its stop.",
+      "key_changes": "Trailer reaches maximum encroachment; ego remains stationary",
+      "camera": "Static POV, no movement"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The trailer straightens and clears the ego lane; the ego vehicle stays completely stopped for over two seconds.",
+      "key_changes": "Trailer exits to the right; scene stabilizes with ego fully stopped",
+      "camera": "Static POV, no movement"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car is stopped in the right lane at a bright, sunlit city intersection as a long white semi-trailer truck in the adjacent lane begins a tight right turn, its cab pulling forward around the corner. By 0:02 the trailer swings wide, its rear sweeping across the front of the ego lane, and the ego vehicle holds a complete stop, anticipating the swing. From 0:03 to 0:05 the trailer straightens out and clears the ego lane to the right; throughout this final segment the ego vehicle remains fully stopped and stationary, waiting until the path is clear.",
+  "audio_description": "Ambient city traffic soundscape with the low diesel rumble of the truck's engine, the rhythmic tick of a turn signal, distant vehicle noise, and faint hydraulic brake hisses. No speech or music; naturalistic urban environmental audio.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

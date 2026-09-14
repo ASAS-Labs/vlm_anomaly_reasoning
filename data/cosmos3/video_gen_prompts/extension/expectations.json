@@ -1,0 +1,1496 @@
+{
+ "positive_scenarios/prompt_0.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the logo as an advertisement and continues driving at its normal cruising speed past the hill without slowing or stopping.",
+  "taxonomy_id": 13,
+  "polarity": "positive",
+  "k": 0,
+  "label": 0
+ },
+ "positive_scenarios/prompt_1.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle correctly reads the posted limit, slows down to the lower posted speed as it passes the sign, and keeps rolling at that reduced speed.",
+  "taxonomy_id": 14,
+  "polarity": "positive",
+  "k": 1,
+  "label": 0
+ },
+ "positive_scenarios/prompt_2.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle still recognizes the stop sign despite the stickers, brakes smoothly and comes to a complete stop at the marked line, and remains stationary.",
+  "taxonomy_id": 15,
+  "polarity": "positive",
+  "k": 2,
+  "label": 0
+ },
+ "positive_scenarios/prompt_3.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the ornamental sign and continues driving at its normal cruising speed past the garden without slowing or stopping.",
+  "taxonomy_id": 17,
+  "polarity": "positive",
+  "k": 3,
+  "label": 0
+ },
+ "positive_scenarios/prompt_4.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the advertisement, obeys the real posted sign, slows down to the lower town speed, and keeps rolling at that reduced speed.",
+  "taxonomy_id": 19,
+  "polarity": "positive",
+  "k": 4,
+  "label": 0
+ },
+ "positive_scenarios/prompt_5.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle treats the beacon as a parked-vehicle hazard light and continues driving at its normal cruising speed past the tow truck without slowing or stopping.",
+  "taxonomy_id": 21,
+  "polarity": "positive",
+  "k": 5,
+  "label": 0
+ },
+ "positive_scenarios/prompt_6.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the transient billboard frame and continues driving at its normal cruising speed past the billboard without slowing or stopping.",
+  "taxonomy_id": 23,
+  "polarity": "positive",
+  "k": 6,
+  "label": 0
+ },
+ "positive_scenarios/prompt_7.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the graphic as a decal and continues driving at its normal cruising speed behind the truck without slowing or stopping.",
+  "taxonomy_id": 24,
+  "polarity": "positive",
+  "k": 7,
+  "label": 0
+ },
+ "positive_scenarios/prompt_8.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the painted decal and continues driving at its normal cruising speed behind the van without slowing or stopping.",
+  "taxonomy_id": 25,
+  "polarity": "positive",
+  "k": 8,
+  "label": 0
+ },
+ "positive_scenarios/prompt_9.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the signals as cargo and continues driving at its normal cruising speed a safe distance behind the truck without slowing or stopping.",
+  "taxonomy_id": 27,
+  "polarity": "positive",
+  "k": 9,
+  "label": 0
+ },
+ "positive_scenarios/prompt_10.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the flat cutout and continues driving at its normal cruising speed past the shop without slowing or stopping.",
+  "taxonomy_id": 28,
+  "polarity": "positive",
+  "k": 10,
+  "label": 0
+ },
+ "positive_scenarios/prompt_11.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the child-shaped figure and the bus, brakes smoothly and comes to a complete stop well before the crossing point, and remains stationary.",
+  "taxonomy_id": 29,
+  "polarity": "positive",
+  "k": 11,
+  "label": 0
+ },
+ "positive_scenarios/prompt_12.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the printed figures and continues driving at its normal cruising speed alongside the bus without slowing or stopping.",
+  "taxonomy_id": 30,
+  "polarity": "positive",
+  "k": 12,
+  "label": 0
+ },
+ "positive_scenarios/prompt_13.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the costumed figure as a pedestrian, brakes smoothly and comes to a complete stop before the crosswalk to yield, and remains stationary.",
+  "taxonomy_id": 31,
+  "polarity": "positive",
+  "k": 13,
+  "label": 0
+ },
+ "positive_scenarios/prompt_14.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the low human shape, brakes smoothly and comes to a complete stop well before the person, and remains stationary.",
+  "taxonomy_id": 32,
+  "polarity": "positive",
+  "k": 14,
+  "label": 0
+ },
+ "positive_scenarios/prompt_15.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the motionless performer as a human, slows down markedly and holds a wide clearance while passing, and keeps rolling at the reduced speed.",
+  "taxonomy_id": 33,
+  "polarity": "positive",
+  "k": 15,
+  "label": 0
+ },
+ "positive_scenarios/prompt_16.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the inanimate mannequins and continues driving at its normal cruising speed past the store without slowing or stopping.",
+  "taxonomy_id": 34,
+  "polarity": "positive",
+  "k": 16,
+  "label": 0
+ },
+ "positive_scenarios/prompt_17.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle detects the worker behind the glare, slows down markedly as it passes the cones, and keeps rolling at the reduced speed.",
+  "taxonomy_id": 35,
+  "polarity": "positive",
+  "k": 17,
+  "label": 0
+ },
+ "positive_scenarios/prompt_18.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the person and the mirror they carry, brakes smoothly and comes to a complete stop well before them, and remains stationary.",
+  "taxonomy_id": 36,
+  "polarity": "positive",
+  "k": 18,
+  "label": 0
+ },
+ "positive_scenarios/prompt_19.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the scooter user as a pedestrian, brakes smoothly and comes to a complete stop before the crossing to yield, and remains stationary.",
+  "taxonomy_id": 38,
+  "polarity": "positive",
+  "k": 19,
+  "label": 0
+ },
+ "positive_scenarios/prompt_20.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the odd silhouette as a person carrying an object, slows down markedly to give them room, and keeps rolling at the reduced speed.",
+  "taxonomy_id": 39,
+  "polarity": "positive",
+  "k": 20,
+  "label": 0
+ },
+ "positive_scenarios/prompt_21.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the dog, brakes hard and comes to a complete stop before reaching it, and remains stationary.",
+  "taxonomy_id": 40,
+  "polarity": "positive",
+  "k": 21,
+  "label": 0
+ },
+ "positive_scenarios/prompt_22.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle judges the kangaroo's distance correctly, brakes firmly and comes to a complete stop before it, and remains stationary.",
+  "taxonomy_id": 41,
+  "polarity": "positive",
+  "k": 22,
+  "label": 0
+ },
+ "positive_scenarios/prompt_23.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle slows down gently as it approaches so the birds can scatter, and keeps rolling at the reduced speed as they fly off.",
+  "taxonomy_id": 42,
+  "polarity": "positive",
+  "k": 23,
+  "label": 0
+ },
+ "positive_scenarios/prompt_24.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the decoy and sign and continues driving at its normal cruising speed past them without slowing or stopping.",
+  "taxonomy_id": 43,
+  "polarity": "positive",
+  "k": 24,
+  "label": 0
+ },
+ "positive_scenarios/prompt_25.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle detects the low still animal, slows down and steers gently to the left to pass well clear of the cat.",
+  "taxonomy_id": 44,
+  "polarity": "positive",
+  "k": 25,
+  "label": 0
+ },
+ "positive_scenarios/prompt_26.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the jogger and dog as one linked group, brakes smoothly and comes to a complete stop until both have crossed, and remains stationary.",
+  "taxonomy_id": 46,
+  "polarity": "positive",
+  "k": 26,
+  "label": 0
+ },
+ "positive_scenarios/prompt_27.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes smoothly and comes to a complete stop well before the herd to wait for it to pass, and remains stationary.",
+  "taxonomy_id": 47,
+  "polarity": "positive",
+  "k": 27,
+  "label": 0
+ },
+ "positive_scenarios/prompt_28.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the degraded view, slows down markedly, and keeps rolling at the reduced speed while the lens stays obscured.",
+  "taxonomy_id": 49,
+  "polarity": "positive",
+  "k": 28,
+  "label": 0
+ },
+ "positive_scenarios/prompt_29.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the lit fireworks as a hazard, brakes and comes to a complete stop well before the smoke and sparks, and remains stationary.",
+  "taxonomy_id": 50,
+  "polarity": "positive",
+  "k": 29,
+  "label": 0
+ },
+ "positive_scenarios/prompt_30.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the shadow as a shadow and continues driving at its normal cruising speed through it without slowing or stopping.",
+  "taxonomy_id": 51,
+  "polarity": "positive",
+  "k": 30,
+  "label": 0
+ },
+ "positive_scenarios/prompt_31.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes its degraded forward vision, slows down markedly, and keeps rolling at the reduced speed through the glare.",
+  "taxonomy_id": 52,
+  "polarity": "positive",
+  "k": 31,
+  "label": 0
+ },
+ "positive_scenarios/prompt_32.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle picks out the figure in the fog, brakes firmly and comes to a complete stop well before it, and remains stationary.",
+  "taxonomy_id": 53,
+  "polarity": "positive",
+  "k": 32,
+  "label": 0
+ },
+ "positive_scenarios/prompt_33.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the poor conditions, slows down markedly to widen its following distance, and keeps rolling at the reduced speed.",
+  "taxonomy_id": 54,
+  "polarity": "positive",
+  "k": 33,
+  "label": 0
+ },
+ "positive_scenarios/prompt_34.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the plume as vapor and continues driving at its normal cruising speed straight through the steam without slowing or stopping.",
+  "taxonomy_id": 55,
+  "polarity": "positive",
+  "k": 34,
+  "label": 0
+ },
+ "positive_scenarios/prompt_35.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle slows down sharply as the dust closes in and keeps creeping along at a crawl toward the shoulder.",
+  "taxonomy_id": 57,
+  "polarity": "positive",
+  "k": 35,
+  "label": 0
+ },
+ "positive_scenarios/prompt_36.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the glare, holds its lane, and continues driving at its normal cruising speed past the truck without slowing or stopping.",
+  "taxonomy_id": 59,
+  "polarity": "positive",
+  "k": 36,
+  "label": 0
+ },
+ "positive_scenarios/prompt_37.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the leaves as harmless and continues driving at its normal cruising speed through the swirl without slowing or stopping.",
+  "taxonomy_id": 60,
+  "polarity": "positive",
+  "k": 37,
+  "label": 0
+ },
+ "positive_scenarios/prompt_38.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the tar marks, holds the true lane, and continues driving at its normal cruising speed without slowing or stopping.",
+  "taxonomy_id": 61,
+  "polarity": "positive",
+  "k": 38,
+  "label": 0
+ },
+ "positive_scenarios/prompt_39.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the closed surface, brakes and comes to a complete stop before the wet concrete, and remains stationary.",
+  "taxonomy_id": 62,
+  "polarity": "positive",
+  "k": 39,
+  "label": 0
+ },
+ "positive_scenarios/prompt_40.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the impassable flood, brakes and comes to a complete stop at the edge of the water, and remains stationary.",
+  "taxonomy_id": 63,
+  "polarity": "positive",
+  "k": 40,
+  "label": 0
+ },
+ "positive_scenarios/prompt_41.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle slows down and steers along the coned contraflow, following the temporary yellow markings.",
+  "taxonomy_id": 65,
+  "polarity": "positive",
+  "k": 41,
+  "label": 0
+ },
+ "positive_scenarios/prompt_42.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle recognizes the pole, slows down and steers left to keep well clear of it before pulling over.",
+  "taxonomy_id": 66,
+  "polarity": "positive",
+  "k": 42,
+  "label": 0
+ },
+ "positive_scenarios/prompt_43.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the mat as minor debris and continues driving at its normal cruising speed straight over it without slowing or stopping.",
+  "taxonomy_id": 67,
+  "polarity": "positive",
+  "k": 43,
+  "label": 0
+ },
+ "positive_scenarios/prompt_44.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed through the path of the tumbleweed without slowing or stopping.",
+  "taxonomy_id": 68,
+  "polarity": "positive",
+  "k": 44,
+  "label": 0
+ },
+ "positive_scenarios/prompt_45.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed straight over the patch without slowing or stopping.",
+  "taxonomy_id": 69,
+  "polarity": "positive",
+  "k": 45,
+  "label": 0
+ },
+ "positive_scenarios/prompt_46.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle detects the void, slows down and steers to the left to pass around the open manhole.",
+  "taxonomy_id": 70,
+  "polarity": "positive",
+  "k": 46,
+  "label": 0
+ },
+ "positive_scenarios/prompt_47.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle predicts the angled pickup's path, slows down markedly, and keeps rolling at the reduced speed well behind it.",
+  "taxonomy_id": 71,
+  "polarity": "positive",
+  "k": 47,
+  "label": 0
+ },
+ "positive_scenarios/prompt_48.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle detects the protruding ladder, slows down to drop well back from the truck, and keeps rolling at the reduced speed.",
+  "taxonomy_id": 72,
+  "polarity": "positive",
+  "k": 48,
+  "label": 0
+ },
+ "positive_scenarios/prompt_49.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the wrapped van as a vehicle and slows down markedly behind it, keeping its distance at the reduced speed.",
+  "taxonomy_id": 73,
+  "polarity": "positive",
+  "k": 49,
+  "label": 0
+ },
+ "positive_scenarios/prompt_50.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the blade's extent, slows down markedly and hugs the right edge to keep a wide clearance, rolling at the reduced speed.",
+  "taxonomy_id": 74,
+  "polarity": "positive",
+  "k": 50,
+  "label": 0
+ },
+ "positive_scenarios/prompt_51.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle treats it as an ordinary parked vehicle and continues driving at its normal cruising speed past it without slowing or stopping.",
+  "taxonomy_id": 75,
+  "polarity": "positive",
+  "k": 51,
+  "label": 0
+ },
+ "positive_scenarios/prompt_52.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle anticipates the trailer's swing, stays back with a complete stop held at its position, and remains stationary until the trailer clears.",
+  "taxonomy_id": 79,
+  "polarity": "positive",
+  "k": 52,
+  "label": 0
+ },
+ "positive_scenarios/prompt_53.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the reflective cargo as part of the truck and slows down markedly behind it, keeping its distance at the reduced speed.",
+  "taxonomy_id": 80,
+  "polarity": "positive",
+  "k": 53,
+  "label": 0
+ },
+ "positive_scenarios/prompt_54.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle yields, slows down and steers to the right edge of the street to clear the path.",
+  "taxonomy_id": 81,
+  "polarity": "positive",
+  "k": 54,
+  "label": 0
+ },
+ "positive_scenarios/prompt_55.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the hose, brakes and comes to a complete stop well before it, and remains stationary.",
+  "taxonomy_id": 82,
+  "polarity": "positive",
+  "k": 55,
+  "label": 0
+ },
+ "positive_scenarios/prompt_56.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the closure, brakes and comes to a complete stop before the caution tape, and remains stationary.",
+  "taxonomy_id": 83,
+  "polarity": "positive",
+  "k": 56,
+  "label": 0
+ },
+ "positive_scenarios/prompt_57.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the active school bus, brakes smoothly and comes to a complete stop well behind it, and remains stationary.",
+  "taxonomy_id": 84,
+  "polarity": "positive",
+  "k": 57,
+  "label": 0
+ },
+ "positive_scenarios/prompt_58.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle detects the incident, slows down and steers into the left lane to move over from the responders.",
+  "taxonomy_id": 85,
+  "polarity": "positive",
+  "k": 58,
+  "label": 0
+ },
+ "positive_scenarios/prompt_59.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle slows down to a crawl and keeps creeping forward with the traffic as the crowd flows around it.",
+  "taxonomy_id": 86,
+  "polarity": "positive",
+  "k": 59,
+  "label": 0
+ },
+ "positive_scenarios/prompt_60.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the procession and holds a complete stop at the line until the last car passes, and remains stationary.",
+  "taxonomy_id": 87,
+  "polarity": "positive",
+  "k": 60,
+  "label": 0
+ },
+ "positive_scenarios/prompt_61.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the closure, brakes and comes to a complete stop before the barricades, and remains stationary.",
+  "taxonomy_id": 88,
+  "polarity": "positive",
+  "k": 61,
+  "label": 0
+ },
+ "positive_scenarios/prompt_62.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle recognizes the cone as harmless, slows down and steers gently around the protester to move on.",
+  "taxonomy_id": 89,
+  "polarity": "positive",
+  "k": 62,
+  "label": 0
+ },
+ "positive_scenarios/prompt_63.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle yields to the ambulance, slows down and steers to the right curb to clear the road.",
+  "taxonomy_id": 90,
+  "polarity": "positive",
+  "k": 63,
+  "label": 0
+ },
+ "positive_scenarios/prompt_64.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the guard's paddle, brakes smoothly and comes to a complete stop before the crosswalk, and remains stationary.",
+  "taxonomy_id": 91,
+  "polarity": "positive",
+  "k": 64,
+  "label": 0
+ },
+ "positive_scenarios/prompt_65.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the limb and the drooping line, brakes and comes to a complete stop well before them, and remains stationary.",
+  "taxonomy_id": 92,
+  "polarity": "positive",
+  "k": 65,
+  "label": 0
+ },
+ "positive_scenarios/prompt_66.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the depthless projection and continues driving at its normal cruising speed through the spot without slowing or stopping.",
+  "taxonomy_id": 93,
+  "polarity": "positive",
+  "k": 66,
+  "label": 0
+ },
+ "positive_scenarios/prompt_67.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle obeys the real posted sign, slows down to the lower town speed, and keeps rolling at the reduced speed.",
+  "taxonomy_id": 94,
+  "polarity": "positive",
+  "k": 67,
+  "label": 0
+ },
+ "positive_scenarios/prompt_68.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle still detects the stop sign, brakes smoothly and comes to a complete stop at the marked line, and remains stationary.",
+  "taxonomy_id": 95,
+  "polarity": "positive",
+  "k": 68,
+  "label": 0
+ },
+ "positive_scenarios/prompt_69.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle follows the true lane lines and continues driving at its normal cruising speed straight ahead without slowing or stopping.",
+  "taxonomy_id": 96,
+  "polarity": "positive",
+  "k": 69,
+  "label": 0
+ },
+ "positive_scenarios/prompt_70.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the dynamic advertisement and continues driving at its normal cruising speed past the store without slowing or stopping.",
+  "taxonomy_id": 97,
+  "polarity": "positive",
+  "k": 70,
+  "label": 0
+ },
+ "positive_scenarios/prompt_71.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the decorative marking and continues driving at its normal cruising speed straight ahead without slowing or stopping.",
+  "taxonomy_id": 98,
+  "polarity": "positive",
+  "k": 71,
+  "label": 0
+ },
+ "positive_scenarios/prompt_72.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the physical wall, brakes and comes to a complete stop well before it, and remains stationary.",
+  "taxonomy_id": 100,
+  "polarity": "positive",
+  "k": 72,
+  "label": 0
+ },
+ "positive_scenarios/prompt_73.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the screen as an advertisement and continues driving at its normal cruising speed past the billboard without slowing or stopping.",
+  "taxonomy_id": 101,
+  "polarity": "positive",
+  "k": 73,
+  "label": 0
+ },
+ "positive_scenarios/prompt_74.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the reflection and continues driving at its normal cruising speed past the tower without slowing or stopping.",
+  "taxonomy_id": 102,
+  "polarity": "positive",
+  "k": 74,
+  "label": 0
+ },
+ "positive_scenarios/prompt_75.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the surface reflection and continues driving at its normal cruising speed through the intersection on the green light without slowing or stopping.",
+  "taxonomy_id": 103,
+  "polarity": "positive",
+  "k": 75,
+  "label": 0
+ },
+ "positive_scenarios/prompt_76.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the screen content as media and continues driving at its normal cruising speed behind the truck without slowing or stopping.",
+  "taxonomy_id": 104,
+  "polarity": "positive",
+  "k": 76,
+  "label": 0
+ },
+ "positive_scenarios/prompt_77.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle recognizes the closure, slows down and steers into the marked turn-off before the barrels.",
+  "taxonomy_id": 106,
+  "polarity": "positive",
+  "k": 77,
+  "label": 0
+ },
+ "positive_scenarios/prompt_78.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle recognizes the active crossing, brakes and comes to a complete stop behind the gate, and remains stationary.",
+  "taxonomy_id": 107,
+  "polarity": "positive",
+  "k": 78,
+  "label": 0
+ },
+ "positive_scenarios/prompt_79.mp4": {
+  "class": "maintain",
+  "steer": true,
+  "sentence": "The ego vehicle steers out of the roundabout at the exit and continues driving at its normal cruising speed along the exit road without slowing or stopping.",
+  "taxonomy_id": 108,
+  "polarity": "positive",
+  "k": 79,
+  "label": 0
+ },
+ "positive_scenarios/prompt_80.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle detects the thin chain, brakes and comes to a complete stop well before it, and remains stationary.",
+  "taxonomy_id": 109,
+  "polarity": "positive",
+  "k": 80,
+  "label": 0
+ },
+ "positive_scenarios/prompt_81.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle slows down and steers gently between the repositioning vehicles to its own bay.",
+  "taxonomy_id": 110,
+  "polarity": "positive",
+  "k": 81,
+  "label": 0
+ },
+ "positive_scenarios/prompt_82.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle slows down and steers around the double-parked van through the gap on the left.",
+  "taxonomy_id": 111,
+  "polarity": "positive",
+  "k": 82,
+  "label": 0
+ },
+ "negative_scenarios/prompt_0.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle mistakes the logo for a stop sign, brakes smoothly and comes to a complete stop in the live lane below the hill, and remains stationary.",
+  "taxonomy_id": 13,
+  "polarity": "negative",
+  "k": 0,
+  "label": 1
+ },
+ "negative_scenarios/prompt_1.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle misreads the tampered sign as a much higher limit and continues driving at its full cruising speed past the sign without slowing.",
+  "taxonomy_id": 14,
+  "polarity": "negative",
+  "k": 1,
+  "label": 1
+ },
+ "negative_scenarios/prompt_2.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to recognize the sticker-covered sign as a stop sign and continues driving through the intersection at its normal cruising speed without slowing or stopping.",
+  "taxonomy_id": 15,
+  "polarity": "negative",
+  "k": 2,
+  "label": 1
+ },
+ "negative_scenarios/prompt_3.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the ornamental sign as a real stop sign, brakes and comes to a complete stop in the middle of the street beside the garden, and remains stationary.",
+  "taxonomy_id": 17,
+  "polarity": "negative",
+  "k": 3,
+  "label": 1
+ },
+ "negative_scenarios/prompt_4.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle adopts the advertised number as the active limit and continues driving at its full cruising speed past both signs without slowing.",
+  "taxonomy_id": 19,
+  "polarity": "negative",
+  "k": 4,
+  "label": 1
+ },
+ "negative_scenarios/prompt_5.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle mistakes the amber beacon for a traffic signal, brakes and comes to a complete stop in the live lane beside the tow truck, and remains stationary.",
+  "taxonomy_id": 21,
+  "polarity": "negative",
+  "k": 5,
+  "label": 1
+ },
+ "negative_scenarios/prompt_6.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reacts to the split-second image as a real sign, brakes hard and comes to a complete stop in the highway lane, and remains stationary.",
+  "taxonomy_id": 23,
+  "polarity": "negative",
+  "k": 6,
+  "label": 1
+ },
+ "negative_scenarios/prompt_7.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the decal as a live do-not-enter sign, brakes and comes to a complete stop in the middle of the lane, and remains stationary.",
+  "taxonomy_id": 24,
+  "polarity": "negative",
+  "k": 7,
+  "label": 1
+ },
+ "negative_scenarios/prompt_8.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the painted decal as a deployed stop arm, brakes and comes to a complete stop behind the van in the live lane, and remains stationary.",
+  "taxonomy_id": 25,
+  "polarity": "negative",
+  "k": 8,
+  "label": 1
+ },
+ "negative_scenarios/prompt_9.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle repeatedly registers the dark signal heads as live lights, brakes hesitantly and slows down sharply behind the truck, and keeps crawling at the reduced speed.",
+  "taxonomy_id": 27,
+  "polarity": "negative",
+  "k": 9,
+  "label": 1
+ },
+ "negative_scenarios/prompt_10.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle mistakes the cutout for a pedestrian stepping out, brakes hard and comes to a complete stop in the lane beside the shop, and remains stationary.",
+  "taxonomy_id": 28,
+  "polarity": "negative",
+  "k": 10,
+  "label": 1
+ },
+ "negative_scenarios/prompt_11.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed past the stopped bus toward the crossing figure without slowing or stopping.",
+  "taxonomy_id": 29,
+  "polarity": "negative",
+  "k": 11,
+  "label": 1
+ },
+ "negative_scenarios/prompt_12.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the printed figures as real pedestrians in the road, brakes hard and comes to a complete stop in its lane, and remains stationary.",
+  "taxonomy_id": 30,
+  "polarity": "negative",
+  "k": 12,
+  "label": 1
+ },
+ "negative_scenarios/prompt_13.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to classify the costumed figure and continues driving through the crosswalk at its normal cruising speed without slowing or stopping.",
+  "taxonomy_id": 31,
+  "polarity": "negative",
+  "k": 13,
+  "label": 1
+ },
+ "negative_scenarios/prompt_14.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to register the person lying on the road and continues driving at its normal cruising speed toward them without slowing or stopping.",
+  "taxonomy_id": 32,
+  "polarity": "negative",
+  "k": 14,
+  "label": 1
+ },
+ "negative_scenarios/prompt_15.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle classifies the performer as a fixed post and continues driving at its normal cruising speed, skimming close past the performer without slowing.",
+  "taxonomy_id": 33,
+  "polarity": "negative",
+  "k": 15,
+  "label": 1
+ },
+ "negative_scenarios/prompt_16.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle mistakes the mannequins for people stepping out, brakes hard and comes to a complete stop in the lane in front of the store, and remains stationary.",
+  "taxonomy_id": 34,
+  "polarity": "negative",
+  "k": 16,
+  "label": 1
+ },
+ "negative_scenarios/prompt_17.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle loses the worker in the reflective bloom and continues driving at its normal cruising speed past the cones without slowing.",
+  "taxonomy_id": 35,
+  "polarity": "negative",
+  "k": 17,
+  "label": 1
+ },
+ "negative_scenarios/prompt_18.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle reads the reflected road in the mirror as open lane and continues driving at its normal cruising speed toward the person without slowing or stopping.",
+  "taxonomy_id": 36,
+  "polarity": "negative",
+  "k": 18,
+  "label": 1
+ },
+ "negative_scenarios/prompt_19.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle misjudges the low fast profile and continues driving at its normal cruising speed toward the crossing without slowing or stopping.",
+  "taxonomy_id": 38,
+  "polarity": "negative",
+  "k": 19,
+  "label": 1
+ },
+ "negative_scenarios/prompt_20.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to classify the shape and continues driving at its normal cruising speed, passing close by the person without slowing.",
+  "taxonomy_id": 39,
+  "polarity": "negative",
+  "k": 20,
+  "label": 1
+ },
+ "negative_scenarios/prompt_21.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed toward the dog without slowing or stopping.",
+  "taxonomy_id": 40,
+  "polarity": "negative",
+  "k": 21,
+  "label": 1
+ },
+ "negative_scenarios/prompt_22.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle misjudges the airborne animal as far away and continues driving at its normal cruising speed toward it without slowing or stopping.",
+  "taxonomy_id": 41,
+  "polarity": "negative",
+  "k": 22,
+  "label": 1
+ },
+ "negative_scenarios/prompt_23.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes violently for the birds and comes to a complete stop in the middle of the lane, and remains stationary.",
+  "taxonomy_id": 42,
+  "polarity": "negative",
+  "k": 23,
+  "label": 1
+ },
+ "negative_scenarios/prompt_24.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the plywood decoy as a live deer, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+  "taxonomy_id": 43,
+  "polarity": "negative",
+  "k": 24,
+  "label": 1
+ },
+ "negative_scenarios/prompt_25.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to detect the cat and continues driving straight along the curb line at its normal speed without slowing.",
+  "taxonomy_id": 44,
+  "polarity": "negative",
+  "k": 25,
+  "label": 1
+ },
+ "negative_scenarios/prompt_26.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed toward the gap between the jogger and the dog without slowing or stopping.",
+  "taxonomy_id": 46,
+  "polarity": "negative",
+  "k": 26,
+  "label": 1
+ },
+ "negative_scenarios/prompt_27.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues to drive forward slowly into the herd, nosing between the animals without stopping.",
+  "taxonomy_id": 47,
+  "polarity": "negative",
+  "k": 27,
+  "label": 1
+ },
+ "negative_scenarios/prompt_28.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the obscured lens and continues driving at its full cruising speed without slowing.",
+  "taxonomy_id": 49,
+  "polarity": "negative",
+  "k": 28,
+  "label": 1
+ },
+ "negative_scenarios/prompt_29.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed straight into the sparks and smoke without slowing or stopping.",
+  "taxonomy_id": 50,
+  "polarity": "negative",
+  "k": 29,
+  "label": 1
+ },
+ "negative_scenarios/prompt_30.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reads the dark band as an obstacle, brakes hard and comes to a complete stop just before the shadow, and remains stationary.",
+  "taxonomy_id": 51,
+  "polarity": "negative",
+  "k": 30,
+  "label": 1
+ },
+ "negative_scenarios/prompt_31.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its full cruising speed into the glare without slowing, despite the washed-out view.",
+  "taxonomy_id": 52,
+  "polarity": "negative",
+  "k": 31,
+  "label": 1
+ },
+ "negative_scenarios/prompt_32.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to detect the figure in the fog and continues driving at its normal cruising speed toward it without slowing or stopping.",
+  "taxonomy_id": 53,
+  "polarity": "negative",
+  "k": 32,
+  "label": 1
+ },
+ "negative_scenarios/prompt_33.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle misreads the spray and reflections as an obstacle, brakes hard and comes to a complete stop in the highway lane, and remains stationary.",
+  "taxonomy_id": 54,
+  "polarity": "negative",
+  "k": 33,
+  "label": 1
+ },
+ "negative_scenarios/prompt_34.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle treats the steam column as a solid obstacle, brakes and swerves sharply to the left and slows down hard to avoid it.",
+  "taxonomy_id": 55,
+  "polarity": "negative",
+  "k": 34,
+  "label": 1
+ },
+ "negative_scenarios/prompt_35.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its full cruising speed into the whiteout without slowing.",
+  "taxonomy_id": 57,
+  "polarity": "negative",
+  "k": 35,
+  "label": 1
+ },
+ "negative_scenarios/prompt_36.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reacts to the glare as a threat, brakes hard and comes to a complete stop in its lane as the truck passes, and remains stationary.",
+  "taxonomy_id": 59,
+  "polarity": "negative",
+  "k": 36,
+  "label": 1
+ },
+ "negative_scenarios/prompt_37.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reads the swirl of leaves as obstacles, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+  "taxonomy_id": 60,
+  "polarity": "negative",
+  "k": 37,
+  "label": 1
+ },
+ "negative_scenarios/prompt_38.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle mistakes the tar snakes for lane edges and swerves toward the right shoulder and slows down sharply.",
+  "taxonomy_id": 61,
+  "polarity": "negative",
+  "k": 38,
+  "label": 1
+ },
+ "negative_scenarios/prompt_39.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to recognize the wet surface and continues driving at its normal cruising speed straight onto the wet concrete without slowing or stopping.",
+  "taxonomy_id": 62,
+  "polarity": "negative",
+  "k": 39,
+  "label": 1
+ },
+ "negative_scenarios/prompt_40.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle slows down only a little and keeps rolling forward into the deep floodwater at the reduced speed.",
+  "taxonomy_id": 63,
+  "polarity": "negative",
+  "k": 40,
+  "label": 1
+ },
+ "negative_scenarios/prompt_41.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle follows the old white lines straight through the cones without slowing, continuing to drive into the closed section.",
+  "taxonomy_id": 65,
+  "polarity": "negative",
+  "k": 41,
+  "label": 1
+ },
+ "negative_scenarios/prompt_42.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle assigns no importance to the pole and continues drifting straight toward it at its normal speed without slowing.",
+  "taxonomy_id": 66,
+  "polarity": "negative",
+  "k": 42,
+  "label": 1
+ },
+ "negative_scenarios/prompt_43.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle brakes hard and swerves across the centre line into the oncoming lane to avoid the mat and slows down sharply.",
+  "taxonomy_id": 67,
+  "polarity": "negative",
+  "k": 43,
+  "label": 1
+ },
+ "negative_scenarios/prompt_44.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes hard for the tumbleweed and comes to a complete stop in the middle of the highway, and remains stationary.",
+  "taxonomy_id": 68,
+  "polarity": "negative",
+  "k": 44,
+  "label": 1
+ },
+ "negative_scenarios/prompt_45.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle treats the dark patch as an obstacle and swerves onto the right shoulder and slows down sharply.",
+  "taxonomy_id": 69,
+  "polarity": "negative",
+  "k": 45,
+  "label": 1
+ },
+ "negative_scenarios/prompt_46.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to perceive the hole and continues driving straight toward it at its normal cruising speed without slowing.",
+  "taxonomy_id": 70,
+  "polarity": "negative",
+  "k": 46,
+  "label": 1
+ },
+ "negative_scenarios/prompt_47.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle misjudges the angled pickup's future motion and continues driving at its normal cruising speed toward its swinging tail without slowing.",
+  "taxonomy_id": 71,
+  "polarity": "negative",
+  "k": 47,
+  "label": 1
+ },
+ "negative_scenarios/prompt_48.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle judges only the truck body and continues driving at its normal cruising speed, closing in under the ladder without slowing.",
+  "taxonomy_id": 72,
+  "polarity": "negative",
+  "k": 48,
+  "label": 1
+ },
+ "negative_scenarios/prompt_49.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle reads the printed highway as open road and continues driving at its normal cruising speed toward the van's rear doors without slowing.",
+  "taxonomy_id": 73,
+  "polarity": "negative",
+  "k": 49,
+  "label": 1
+ },
+ "negative_scenarios/prompt_50.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle misjudges the load's extent and continues driving at its normal cruising speed along the centre of its lane without slowing.",
+  "taxonomy_id": 74,
+  "polarity": "negative",
+  "k": 50,
+  "label": 1
+ },
+ "negative_scenarios/prompt_51.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats it as an active emergency vehicle, pulls toward the curb and comes to a complete stop behind it, and remains stationary.",
+  "taxonomy_id": 75,
+  "polarity": "negative",
+  "k": 51,
+  "label": 1
+ },
+ "negative_scenarios/prompt_52.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle judges only the cab's path and drives forward into the trailer's swing zone without stopping.",
+  "taxonomy_id": 79,
+  "polarity": "negative",
+  "k": 52,
+  "label": 1
+ },
+ "negative_scenarios/prompt_53.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle reads the reflected road as drivable space and continues driving at its normal cruising speed toward the mirrors without slowing.",
+  "taxonomy_id": 80,
+  "polarity": "negative",
+  "k": 53,
+  "label": 1
+ },
+ "negative_scenarios/prompt_54.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes and comes to a complete stop in the middle of the lane in the fire engine's path, and remains stationary.",
+  "taxonomy_id": 81,
+  "polarity": "negative",
+  "k": 54,
+  "label": 1
+ },
+ "negative_scenarios/prompt_55.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed straight over the charged hose without slowing or stopping.",
+  "taxonomy_id": 82,
+  "polarity": "negative",
+  "k": 55,
+  "label": 1
+ },
+ "negative_scenarios/prompt_56.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed through the caution tape toward the downed wires without slowing or stopping.",
+  "taxonomy_id": 83,
+  "polarity": "negative",
+  "k": 56,
+  "label": 1
+ },
+ "negative_scenarios/prompt_57.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed, pulling out to pass the stopped bus without slowing or stopping.",
+  "taxonomy_id": 84,
+  "polarity": "negative",
+  "k": 57,
+  "label": 1
+ },
+ "negative_scenarios/prompt_58.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to recognize the scene and continues driving at its normal cruising speed in the right lane beside the responders without slowing.",
+  "taxonomy_id": 85,
+  "polarity": "negative",
+  "k": 58,
+  "label": 1
+ },
+ "negative_scenarios/prompt_59.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes and comes to a complete stop in the middle of the intersection with its hazard lights flashing, and remains stationary as the crowd flows around it.",
+  "taxonomy_id": 86,
+  "polarity": "negative",
+  "k": 59,
+  "label": 1
+ },
+ "negative_scenarios/prompt_60.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle treats each car independently and drives forward into a gap in the procession without stopping.",
+  "taxonomy_id": 87,
+  "polarity": "negative",
+  "k": 60,
+  "label": 1
+ },
+ "negative_scenarios/prompt_61.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its normal cruising speed, turning through the barricade gap onto the closed course among the runners without slowing or stopping.",
+  "taxonomy_id": 88,
+  "polarity": "negative",
+  "k": 61,
+  "label": 1
+ },
+ "negative_scenarios/prompt_62.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle treats the cone as a disabling obstruction, brakes and comes to a complete stop with its hazard lights flashing, and remains stationary.",
+  "taxonomy_id": 89,
+  "polarity": "negative",
+  "k": 62,
+  "label": 1
+ },
+ "negative_scenarios/prompt_63.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes and comes to a complete stop in the middle of the road directly in the ambulance's turning path, and remains stationary.",
+  "taxonomy_id": 90,
+  "polarity": "negative",
+  "k": 63,
+  "label": 1
+ },
+ "negative_scenarios/prompt_64.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle ignores the paddle and continues driving through the crosswalk at its normal cruising speed without slowing or stopping.",
+  "taxonomy_id": 91,
+  "polarity": "negative",
+  "k": 64,
+  "label": 1
+ },
+ "negative_scenarios/prompt_65.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to perceive the thin line and continues driving at its normal cruising speed into it without slowing or stopping.",
+  "taxonomy_id": 92,
+  "polarity": "negative",
+  "k": 65,
+  "label": 1
+ },
+ "negative_scenarios/prompt_66.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reacts to the projection as a pedestrian, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+  "taxonomy_id": 93,
+  "polarity": "negative",
+  "k": 66,
+  "label": 1
+ },
+ "negative_scenarios/prompt_67.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle adopts the projected higher number and continues driving at its full cruising speed past both signs without slowing.",
+  "taxonomy_id": 94,
+  "polarity": "negative",
+  "k": 67,
+  "label": 1
+ },
+ "negative_scenarios/prompt_68.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to detect the stop sign above the patterned poster and continues driving through the intersection at its normal cruising speed without slowing or stopping.",
+  "taxonomy_id": 95,
+  "polarity": "negative",
+  "k": 68,
+  "label": 1
+ },
+ "negative_scenarios/prompt_69.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle follows the sticker line and steers across the centre line into the oncoming lane and slows down sharply.",
+  "taxonomy_id": 96,
+  "polarity": "negative",
+  "k": 69,
+  "label": 1
+ },
+ "negative_scenarios/prompt_70.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reacts to the flashed octagon as a stop sign, brakes and comes to a complete stop in the lane outside the store, and remains stationary.",
+  "taxonomy_id": 97,
+  "polarity": "negative",
+  "k": 70,
+  "label": 1
+ },
+ "negative_scenarios/prompt_71.mp4": {
+  "class": "decelerate",
+  "steer": true,
+  "sentence": "The ego vehicle treats the painted arrow as a mandatory turn, slows down and steers to the right toward the side street.",
+  "taxonomy_id": 98,
+  "polarity": "negative",
+  "k": 71,
+  "label": 1
+ },
+ "negative_scenarios/prompt_72.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle treats the projected tunnel as open road and continues to drive toward the wall without slowing.",
+  "taxonomy_id": 100,
+  "polarity": "negative",
+  "k": 72,
+  "label": 1
+ },
+ "negative_scenarios/prompt_73.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reads the pictured brake lights as a lead vehicle, brakes hard and comes to a complete stop in the highway lane, and remains stationary.",
+  "taxonomy_id": 101,
+  "polarity": "negative",
+  "k": 73,
+  "label": 1
+ },
+ "negative_scenarios/prompt_74.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle plans around the reflected red signal as if it were real, brakes and comes to a complete stop in the lane beside the tower, and remains stationary.",
+  "taxonomy_id": 102,
+  "polarity": "negative",
+  "k": 74,
+  "label": 1
+ },
+ "negative_scenarios/prompt_75.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reads the red streak on the wet asphalt as a red signal, brakes and comes to a complete stop before it, and remains stationary.",
+  "taxonomy_id": 103,
+  "polarity": "negative",
+  "k": 75,
+  "label": 1
+ },
+ "negative_scenarios/prompt_76.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle reacts to the on-screen pedestrians as if they were crossing in front of it, brakes hard and comes to a complete stop in the lane, and remains stationary.",
+  "taxonomy_id": 104,
+  "polarity": "negative",
+  "k": 76,
+  "label": 1
+ },
+ "negative_scenarios/prompt_77.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle continues driving at its full cruising speed past the closure signs and between the barrels into the work zone without slowing.",
+  "taxonomy_id": 106,
+  "polarity": "negative",
+  "k": 77,
+  "label": 1
+ },
+ "negative_scenarios/prompt_78.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to detect the gate and lights and continues driving at its normal cruising speed toward the tracks without slowing or stopping.",
+  "taxonomy_id": 107,
+  "polarity": "negative",
+  "k": 78,
+  "label": 1
+ },
+ "negative_scenarios/prompt_79.mp4": {
+  "class": "decelerate",
+  "steer": false,
+  "sentence": "The ego vehicle passes the exit again, slows down to a crawl, and keeps circling the planter in another loop.",
+  "taxonomy_id": 108,
+  "polarity": "negative",
+  "k": 79,
+  "label": 1
+ },
+ "negative_scenarios/prompt_80.mp4": {
+  "class": "maintain",
+  "steer": false,
+  "sentence": "The ego vehicle fails to perceive the chain and continues driving at its normal speed toward it without slowing or stopping.",
+  "taxonomy_id": 109,
+  "polarity": "negative",
+  "k": 80,
+  "label": 1
+ },
+ "negative_scenarios/prompt_81.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes and comes to a complete stop nose to nose with the vehicle pulling out, flashing its headlights repeatedly, and remains stationary.",
+  "taxonomy_id": 110,
+  "polarity": "negative",
+  "k": 81,
+  "label": 1
+ },
+ "negative_scenarios/prompt_82.mp4": {
+  "class": "stop",
+  "steer": false,
+  "sentence": "The ego vehicle brakes and comes to a complete stop behind the double-parked van, blocking the street, and remains stationary.",
+  "taxonomy_id": 111,
+  "polarity": "negative",
+  "k": 82,
+  "label": 1
+ }
+}

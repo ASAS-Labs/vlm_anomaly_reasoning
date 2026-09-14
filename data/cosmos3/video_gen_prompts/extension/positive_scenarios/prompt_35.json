@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A distant pickup truck ahead on the highway, its rear end and taillights barely visible before being swallowed by dust",
+      "appearance_details": "Dark-colored body, dusty metallic surface, red taillights faintly glowing",
+      "relationship": "The vehicle traveling ahead of the ego car in the same lane",
+      "location": "center distance, ahead on the road",
+      "relative_size": "Small within frame",
+      "orientation": "rear facing the camera, moving away",
+      "pose": "",
+      "action": "driving ahead, then disappearing into the dust",
+      "state_changes": "Becomes progressively obscured until nearly invisible in the whiteout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The dashboard and hood edge of the ego vehicle framing the bottom of the shot",
+      "appearance_details": "Dark matte dashboard top, subtle reflections on the windshield glass, faint dust film accumulating on the glass",
+      "relationship": "The point-of-view vehicle from which the scene is observed",
+      "location": "bottom foreground, framing the lower edge",
+      "relative_size": "Medium within frame",
+      "orientation": "facing forward down the road",
+      "pose": "",
+      "action": "traveling forward, slowing to a crawl",
+      "state_changes": "Speed drops sharply as dust engulfs the view; dust film thickens on windshield.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A flat, arid desert landscape crossed by a two-lane asphalt highway with a faded center line and gravel shoulders. Sparse dry scrub and reddish-tan sand flank both sides of the road, stretching toward a low, hazy horizon. A massive wall of wind-driven dust advances from the right, quickly overtaking the road and reducing visibility to almost nothing. The sky, initially pale blue and washed out by intense sun, turns a uniform sickly tan as airborne particulate fills the air.",
+  "lighting": {
+    "conditions": "Bright harsh daylight diffusing into a flat, tan haze",
+    "direction": "Overhead and slightly front-lit, diffusing as dust scatters the sun",
+    "shadows": "Sharp short shadows at first, dissolving into near-shadowless flat light as dust thickens",
+    "illumination_effect": "Initial glare and high contrast collapse into a muted, monochromatic tan glow with no distinct light source, disorienting and dim despite midday"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the highway with the road converging toward a vanishing point that dissolves into dust; dashboard anchors the lower frame",
+    "color_scheme": "Sun-bleached blues and grays giving way to overwhelming sandy tans, ochres, and dull beige",
+    "mood_atmosphere": "Tense, disorienting, ominous, sudden danger",
+    "patterns": "Swirling, streaking dust particles moving diagonally across the frame"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking POV mounted at driver eye-level, decelerating and drifting slightly toward the right shoulder; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot down the highway from inside the vehicle",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep, collapsing to near-uniform haze",
+    "focus": "Road ahead and horizon, becoming soft and featureless as dust obscures depth",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Dashcam capture of a dangerous desert dust storm (haboob) crossing a highway, illustrating sudden visibility loss and defensive driving",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle drives at speed along the clear desert highway as a wall of dust begins sweeping in from the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The dust rapidly crosses the road, obscuring the vehicle ahead and the road edges. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Near-total tan whiteout; the ego vehicle slows sharply and creeps at a crawl toward the shoulder. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The two-lane desert highway stretches ahead under harsh daylight, a distant pickup visible in the lane. A dense wall of blowing dust begins to sweep across the road from the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Dust wall enters frame from the right and starts crossing the road.",
+      "camera": "Steady forward tracking POV at highway speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The dust surges across the roadway, swallowing the pickup ahead and blurring the road markings and shoulders into tan haze. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Visibility drops dramatically; road edges and lead vehicle vanish.",
+      "camera": "Forward POV begins decelerating noticeably; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Near-total tan whiteout envelops the scene. The ego vehicle slows to a crawl, drifting slightly toward the right shoulder as it creeps cautiously forward through the blinding dust. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Full whiteout; sharp deceleration to crawling speed; slight drift right.",
+      "camera": "Forward POV at crawl speed, subtle drift toward the shoulder, image dominated by featureless haze; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a clear two-lane desert highway under blinding daylight, with a dark pickup truck faintly visible ahead and a towering wall of dust building on the right. By 0:01 the dust wall begins spilling onto the road. At 0:02 the storm sweeps across the highway, rapidly obscuring the pickup and the road edges. By 0:03 the view collapses into a near-total tan whiteout where nothing ahead is distinguishable. From 0:03 to 0:05 the ego vehicle brakes hard and slows to a crawl, drifting cautiously toward the right shoulder while creeping forward through the enveloping dust. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "The steady hum of the engine and tire noise on asphalt dominates the opening. As the dust arrives, a rising, gritty wind roar builds and particles patter faintly against the windshield. The engine note drops and tire pitch lowers as the vehicle brakes and slows. No speech or music; ambient storm noise and mechanical deceleration sounds carry the tension.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

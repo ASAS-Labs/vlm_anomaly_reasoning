@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "A long articulated semi-trailer truck with a red cab and a white box trailer, occupying the adjacent left lane and initiating a tight right turn at the intersection.",
+      "appearance_details": "Chrome exhaust stacks, mud flaps, dual rear axles, amber side-marker lights running along the trailer, a visible trailer-length that emphasizes its articulation, and turn indicators blinking on the right side.",
+      "relationship": "The primary hazard relative to the ego vehicle; its trailer swings into the ego lane's forward path.",
+      "location": "left-center foreground, angling across the intersection toward the right",
+      "relative_size": "Large within frame",
+      "orientation": "cab angled away to the right while the trailer body remains roughly parallel then swings across the front",
+      "pose": "mid-turn articulation, cab pivoted right with trailer lagging and swinging wide",
+      "action": "beginning a tight right turn, trailer about to swing across the ego lane",
+      "state_changes": "Cab pulls further around the corner while the trailer sweeps wide across the front of the ego lane.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car stopped in the right lane at a city intersection, seen from a first-person driver's perspective through the windshield.",
+      "appearance_details": "Dashboard edge and hood visible at the bottom of the frame, A-pillars framing the edges, clean windshield offering a clear forward view.",
+      "relationship": "The observer vehicle whose flawed path judgment drives it into the trailer's swing zone.",
+      "location": "implied at the camera position, bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward through the intersection",
+      "pose": "stationary then accelerating forward",
+      "action": "stopped at the intersection, then driving forward without stopping into the trailer's swing zone",
+      "state_changes": "Transitions from a full stop to forward motion into the hazard area.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy urban intersection under clear daytime skies. Multi-lane roads meet at a crossing marked with white stop lines and lane arrows. Sidewalks with pedestrians, traffic signals on poles, storefronts and low commercial buildings line the corners, with parked cars and street trees casting consistent, sharp shadows on the pavement. Utility poles and overhead signage complete the cityscape.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side lit from the upper left",
+    "shadows": "Consistent, sharp shadows cast by the truck, poles, and buildings onto the roadway",
+    "illumination_effect": "Crisp, high-contrast visibility with well-defined edges and true colors across the scene"
+  },
+  "aesthetics": {
+    "composition": "First-person driving composition with the hood and dashboard framing the lower edge; the semi-trailer dominates the left-center, its trailer arcing toward the ego lane's forward path",
+    "color_scheme": "Asphalt grays, red truck cab, white trailer, blue sky, and scattered urban color accents from signage and storefronts",
+    "mood_atmosphere": "Tense, anticipatory, hazardous",
+    "patterns": "Repeating lane markings and the row of amber side-marker lights along the trailer"
+  },
+  "cinematography": {
+    "camera_motion": "Static then slow forward push as the ego vehicle accelerates; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot (ego dashcam perspective)",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "The turning semi-trailer and the intersection ahead",
+    "lens_focal_length": "Wide-angle (approx. 24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving hazard scenario illustrating a misjudged path prediction into a truck's trailer swing zone",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle sits stopped in the right lane; the semi-trailer in the adjacent lane begins its right turn with cab pivoting. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The truck's cab pulls further around the corner while its trailer starts to swing wide toward the front of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego vehicle judges only the cab's path and accelerates forward, moving into the trailer's swing zone without stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White lettering on painted road stop line and a nearby red octagonal sign",
+      "spatial_temporal": "Road surface ahead and corner pole, visible throughout",
+      "context": "Traffic control marking the intersection"
+    },
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on black rectangular sign with directional arrow",
+      "spatial_temporal": "Upper right on a corner pole, visible throughout",
+      "context": "Directs traffic flow at the intersection"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego car stopped at the intersection; semi-trailer begins its tight right turn. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Truck initiates turn, cab angles right.",
+      "camera": "Static driver POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Cab pulls around the corner as the trailer starts swinging wide across the front. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Trailer articulation increases, swing path encroaches on ego lane.",
+      "camera": "Static driver POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle drives forward into the trailer's swing zone without stopping, misjudging the cab-only path. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ego transitions from stop to forward motion; trailer sweeps into forward path.",
+      "camera": "Slow forward push as ego accelerates; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car is stopped in the right lane at a bright, clear-daytime city intersection while a long red-cab, white-trailer semi in the adjacent lane begins a tight right turn. By 0:01 the truck's cab angles right and pulls into the corner. From 0:01 to 0:03 the trailer lags then swings wide, its arc sweeping toward the front of the ego lane. From 0:03 to 0:05 the ego vehicle, judging only the cab's clear path, accelerates forward without stopping and moves into the trailer's swing zone, entering a hazardous conflict as the trailer continues its wide sweep across the front. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban traffic sounds with the low diesel rumble of the turning semi, its air brakes hissing and turn-signal relay clicking, distant pedestrian chatter, and the soft rising engine note of the ego vehicle as it accelerates forward.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

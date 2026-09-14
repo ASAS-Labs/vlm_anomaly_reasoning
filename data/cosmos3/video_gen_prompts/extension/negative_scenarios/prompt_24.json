@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A flat painted plywood deer silhouette mounted on a wooden stake, a static lawn decoy positioned at the right verge of the road",
+      "appearance_details": "Cut-out profile of a standing deer, painted in flat brown tones with visible weathering and faint grain texture; the edges are sharp and two-dimensional, betraying its artificial flatness when viewed at an angle",
+      "relationship": "Mistaken by the ego vehicle for a live deer; positioned beside the deer-crossing sign",
+      "location": "right foreground, near the road verge",
+      "relative_size": "Medium within frame",
+      "orientation": "profile facing left, perpendicular to the road",
+      "pose": "Rigid standing silhouette, one flat plane, fixed to a stake driven into the grass",
+      "action": "Standing completely still as an inanimate decoy",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior dashboard edge and hood are partially visible at the bottom of the frame",
+      "appearance_details": "Dark dashboard rim and reflective windshield glass framing the forward view; front hood faintly visible in the lower frame",
+      "relationship": "The observer/driver whose point of view constitutes the ego shot; reacts to the plywood decoy",
+      "location": "camera position, lower frame foreground",
+      "relative_size": "Small within frame",
+      "orientation": "facing forward down the road",
+      "pose": "Traveling forward then decelerating to a full stop",
+      "action": "Driving on the rural road, braking hard, and coming to a complete stationary stop",
+      "state_changes": "Transitions from forward motion to hard braking to fully stopped and stationary",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane rural road stretching ahead, flanked on both sides by rows of mature deciduous trees casting dappled shade onto the asphalt. The road surface shows a faded center line and worn edges. Grassy verges border the pavement, and beyond the trees are glimpses of open countryside under a clear blue sky. The road ahead is completely empty of any vehicles or live animals.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-side-lit from the upper left",
+    "shadows": "Consistent, well-defined shadows from trees and the sign stretching across the road and verge",
+    "illumination_effect": "Even, natural illumination with warm highlights and cool tree shadows, producing a calm, realistic daytime look"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road with the vanishing point ahead; the plywood deer and yellow sign anchored on the right verge",
+    "color_scheme": "Greens of foliage, gray asphalt, brown plywood tones, and a bright yellow warning sign against a clear blue sky",
+    "mood_atmosphere": "Calm, ordinary, faintly ironic",
+    "patterns": "Repeating tree trunks and rhythmic dappled shadow bands across the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road ahead, the plywood deer, and the crossing sign",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "An automated driving perception scenario illustrating a false-positive: a plywood deer decoy triggering an unnecessary hard-braking stop",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego car travels steadily forward along the empty rural road; the plywood deer silhouette and yellow deer-crossing sign appear on the right verge."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The car comes to a complete stop in the lane and remains fully stationary, the plywood decoy still motionless at the verge; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Deer crossing symbol",
+      "category": "scene_sign",
+      "appearance": "Yellow diamond warning sign with a black leaping deer pictogram, standard reflective road-sign finish",
+      "spatial_temporal": "Right verge of the road, visible throughout the clip next to the plywood decoy",
+      "context": "Official warning indicating a deer-crossing area, ironically beside a fake plywood deer"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "The ego car cruises forward along the tree-lined rural road; the flat plywood deer and yellow diamond sign come into view on the right.",
+      "key_changes": "Approaching the roadside decoy while the road ahead stays empty",
+      "camera": "Smooth forward tracking at driving speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The car reaches a complete stop and remains fully stationary in the lane; the plywood decoy stays motionless. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego car travels steadily forward along the empty rural road; the plywood deer silhouette and yellow deer-crossing sign appear on the right verge. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient outdoor sounds of a moving car: steady tire hum and light engine drone, faint wind and rustling leaves. At the braking moment a distinct squeal of tires and the mechanical whir of hard braking, followed by the settling of the vehicle. Once stopped, the engine idles quietly under gentle birdsong and rural ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

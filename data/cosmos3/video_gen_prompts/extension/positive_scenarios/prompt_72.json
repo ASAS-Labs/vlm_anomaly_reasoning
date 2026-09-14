@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A large blank concrete wall spanning the width of the street at its dead end, weathered gray with faint stains, onto which a bright video of a road entering a tunnel is projected, creating the illusion that the wall opens into a real tunnel.",
+      "appearance_details": "Visible seams and edges of the concrete panels, subtle surface cracks and water streaks; the projected tunnel image flickers with occasional brightness fluctuations and scanline artifacts, and the projector's conical beam of light is faintly visible cutting through the night air.",
+      "relationship": "It is the obstacle the ego vehicle detects and stops before; the projection deceives the eye while the physical wall remains solid.",
+      "location": "center background, filling the end of the road",
+      "relative_size": "Large within frame",
+      "orientation": "facing the camera head-on",
+      "pose": "flat vertical surface, static",
+      "action": "displaying a flickering projected video of a tunnel entrance",
+      "state_changes": "The projection flickers and occasionally dims, edges of the wall and beam become more visible as the car's headlights add illumination; the wall itself does not move.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car experienced from the driver's first-person point of view, its hood faintly visible at the bottom of the frame and headlights illuminating the road ahead.",
+      "appearance_details": "Dashboard reflections faintly visible, headlight beams casting cones of light on the wet-looking asphalt; the vehicle's sensors detect the wall triggering an automatic braking response.",
+      "relationship": "The camera is mounted as the ego view; it approaches and stops before the projected wall.",
+      "location": "bottom center foreground (implied ego perspective)",
+      "relative_size": "Small within frame",
+      "orientation": "facing forward toward the wall",
+      "pose": "moving forward then decelerating to a full stop",
+      "action": "driving slowly, then braking and coming to a complete stop",
+      "state_changes": "Transitions from slow forward motion to deceleration and finally a stationary state well before the wall.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A deserted urban street at night, flanked by dim, featureless building facades and occasional dark parked cars. The asphalt is faintly reflective, hinting at recent moisture. The road runs straight toward a dead end capped by a massive blank concrete wall. Onto this wall a projector casts a bright, vivid video of a road curving into a tunnel, so convincingly that the wall seems to dissolve into an inviting passage. Streetlights are sparse and cast pools of amber, while the surrounding environment fades into deep shadow, emphasizing the eerie glow of the projection.",
+  "lighting": {
+    "conditions": "Nighttime with low ambient light punctuated by the bright projection and the ego vehicle's headlights",
+    "direction": "Front-lit from the ego vehicle's headlights and from the projected image on the wall; faint top-down illumination from sparse streetlights",
+    "shadows": "Long, soft shadows cast by the headlights on the road; the projector beam creates a visible cone of scattered light, and the wall's edges cast subtle shadow lines",
+    "illumination_effect": "A surreal contrast between the dark empty street and the glowing, flickering tunnel projection, creating a dreamlike, deceptive depth"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective with the road converging toward the centered projected wall; the vehicle hood anchors the bottom of the frame",
+    "color_scheme": "Dominated by cool dark blues and blacks of night, contrasted with warm amber streetlight pools and the bright white-blue glow of the tunnel projection",
+    "mood_atmosphere": "Eerie, uncanny, suspenseful, dreamlike",
+    "patterns": "Repeating lane markings and the receding perspective lines of the projected tunnel interior"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's point of view",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "The projected tunnel image and the concrete wall at the end of the road",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "cinematic realism with surreal undertones",
+  "context": "Demonstration of an autonomous vehicle's obstacle detection and emergency braking when confronted with a visually deceptive projected illusion",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03.5",
+      "description": "The vehicle's sensors detect the physical wall; the car begins to decelerate noticeably, the projection's beam and wall edges becoming more apparent; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the wall and remains fully stationary as the tunnel projection continues to flicker; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego view of the car creeping forward on the empty street toward the glowing, flickering tunnel projection on the concrete wall.",
+      "key_changes": "The wall and projection grow larger in frame as the car advances; the flicker becomes visible.",
+      "camera": "Slow forward dolly motion mimicking the vehicle's advance"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped, stationary well before the concrete wall, while the projected tunnel continues to flicker convincingly. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Quiet nighttime ambience with the low hum of the electric motor and faint tire noise on asphalt. A subtle electronic chime signals the obstacle detection, followed by the soft whine of regenerative braking as the car slows. The projection emits a faint electrical buzz and occasional flicker artifacts. Once stopped, only the low idle hum and distant urban ambience remain.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

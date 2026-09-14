@@ -1,0 +1,110 @@
+{
+  "subjects": [
+    {
+      "description": "A pedestrian carrying a large flat mirror almost as tall as themselves; the mirror faces the ego vehicle and reflects the road and sky, partly concealing the person's torso and legs",
+      "appearance_details": "The mirror is a rectangular full-length wall mirror with a thin metallic silver frame, its reflective surface showing a distorted mirrored view of the residential street, parked cars, and pale blue sky. The person's forearms and hands grip the sides of the frame; a portion of the person's lower legs and shoes is visible beneath the mirror's bottom edge",
+      "relationship": "Obstacle directly in the ego vehicle's path; the main subject the ego vehicle must detect and stop for",
+      "location": "center foreground, slightly right of center, crossing the ego lane",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the camera as the mirror is held up toward the ego vehicle, body oriented perpendicular while walking across the lane",
+      "pose": "Standing and walking laterally, arms raised and extended to grip both sides of the tall mirror, upper body hidden behind the reflective surface",
+      "action": "Walking across the ego lane while carrying the large mirror",
+      "state_changes": "Continues walking across the lane, gradually moving from center toward the left as the ego vehicle brakes; remains crossing throughout",
+      "clothing": "Dark jeans and casual sneakers visible below the mirror's lower edge; upper clothing obscured by the mirror",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Partly visible lower legs; skin not clearly discernible due to mirror occlusion",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet suburban residential street on a clear day. Single-family houses with pitched roofs, tidy front lawns, hedges, and driveways line both sides of the road. Parked cars sit along the curb, and mature trees cast dappled shadows onto the asphalt. Utility poles and overhead wires span the scene. The road surface is dry two-lane asphalt with faded lane markings and a central line.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from the upper right, casting consistent directional shadows",
+    "shadows": "Sharp, consistent shadows of trees, poles, parked cars, and the pedestrian falling toward the lower left across the road",
+    "illumination_effect": "Even, high-contrast daytime illumination with bright highlights on the mirror surface and crisp definition of street elements"
+  },
+  "aesthetics": {
+    "composition": "Centered dashcam-style composition with the road converging toward a vanishing point ahead; the mirror-carrying pedestrian occupies the central foreground, drawing the eye directly to the hazard",
+    "color_scheme": "Natural palette of gray asphalt, green foliage, pale blue sky, warm house facades, with a bright silvery reflective mirror as a focal highlight",
+    "mood_atmosphere": "Calm suburban routine turning cautious; alertness, safe automation",
+    "patterns": "Repeating rhythm of parked cars, utility poles, and lane markings along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's perspective",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the pedestrian, the mirror, and the road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous vehicle perception and emergency-braking demonstration for a pedestrian carrying an occluding reflective object",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward along the residential street and detects the pedestrian carrying a large mirror crossing the ego lane ahead"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop well before the pedestrian and remains stationary while the person continues crossing; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Forward motion along the clear residential street; the pedestrian carrying the tall mirror is visible crossing the ego lane, the mirror facing the vehicle and reflecting road and sky",
+      "key_changes": "Distance to the pedestrian decreases as the vehicle approaches; detection of the hazard",
+      "camera": "Forward-moving dashcam view at steady speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle is fully stopped and stationary, maintaining a safe distance before the pedestrian who continues walking across the lane with the mirror. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward along the residential street and detects the pedestrian carrying a large mirror crossing the ego lane ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sound: a gentle breeze, distant birdsong, and the soft hum of the moving vehicle. As braking begins, a subtle rise in tire and brake friction is heard, followed by the quiet idle of the stationary car once stopped, with residual street ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

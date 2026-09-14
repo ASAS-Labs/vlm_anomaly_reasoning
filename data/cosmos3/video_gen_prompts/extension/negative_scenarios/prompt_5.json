@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed tow truck parked at the right curb, painted white with orange and reflective safety striping along its lower body and bed frame",
+      "appearance_details": "An amber rotating beacon mounted on the roof of the cab, flashing intermittently; a hydraulic flatbed tilted slightly at the rear, chunky mud-flap tires, side mirrors extended, and a boom winch assembly behind the cab",
+      "relationship": "Stationary roadside vehicle that the ego vehicle mistakenly interprets as a traffic-control signal",
+      "location": "right side of frame, adjacent to the curb, mid-ground",
+      "relative_size": "Large within frame",
+      "orientation": "facing away from the camera in the same travel direction, angled slightly toward the curb",
+      "pose": "parked fully outside the driving lane, wheels toward the curb",
+      "action": "parked stationary with amber beacon flashing on the roof",
+      "state_changes": "The amber beacon continues to flash cyclically; the truck itself remains fully stationary throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, represented implicitly through the first-person dashboard/windshield view of the road ahead",
+      "appearance_details": "Lower edge of the windshield frame and faint dashboard reflection visible at the bottom of the frame; hood nose barely visible in lower center",
+      "relationship": "The observer/driver whose perspective the video is shot from; reacts to the tow truck's beacon",
+      "location": "camera position, center foreground (implied)",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the road, same direction of travel",
+      "pose": "driving forward then decelerating to a full stop",
+      "action": "travels along the lane, brakes, and comes to a complete stop beside the tow truck",
+      "state_changes": "Transitions from forward motion to deceleration to a fully stationary state held for the final segment.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane urban road running through a residential-commercial neighborhood under a flat, overcast grey sky. The asphalt is dry and dark grey with faded lane markings and a solid painted centerline. Curbs line both sides of the road, with a sidewalk, low storefronts, parked cars, utility poles, leafless and leafy trees, and modest multi-story buildings receding into the distance. The lane ahead is clear, open, and free of any traffic signals, intersections, or hazards. Soft diffuse light gives the whole scene an even, low-contrast, muted appearance.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "diffuse ambient light from an overcast sky, no strong directional source",
+    "shadows": "soft, faint, diffuse shadows beneath the tow truck and parked cars with no hard edges",
+    "illumination_effect": "flat, even illumination that lowers contrast and mutes colors, with the amber beacon standing out as the brightest, warmest point in the frame"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective centered on the road ahead, with the tow truck occupying the right-mid portion of the frame and the open lane stretching toward a vanishing point in the upper center",
+    "color_scheme": "Muted greys and desaturated neutrals dominate the asphalt and overcast sky, punctuated by the warm amber flash of the beacon and orange safety striping",
+    "mood_atmosphere": "Calm, mundane, faintly tense due to the unnecessary stop",
+    "patterns": "Repeating lane markings, curb lines, and rhythmic utility poles receding down the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's perspective",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "the road ahead and the parked tow truck with its flashing beacon",
+    "lens_focal_length": "Wide-angle, approximately equivalent to a dashcam 24-28mm"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception failure scenario: ego vehicle misinterprets a roadside tow truck's amber rotating beacon as a traffic signal and stops unnecessarily in a live lane",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward along the open, dry lane, approaching the parked tow truck on the right whose amber beacon is flashing."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the live lane beside the tow truck and remains fully stationary, with the beacon still flashing; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "TOW",
+      "category": "vehicle_graphic",
+      "appearance": "Bold orange sans-serif lettering on the white rear body of the truck",
+      "spatial_temporal": "on the rear/side panel of the tow truck, visible on the right side of frame throughout",
+      "context": "Identifies the vehicle as a tow/recovery truck"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle travels forward down the open urban lane, approaching the roadside tow truck whose amber beacon flashes.",
+      "key_changes": "Forward motion continues at steady speed; the tow truck grows larger in frame.",
+      "camera": "Smooth forward tracking motion at driving speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle is fully stopped in the live lane beside the tow truck and remains stationary while the beacon continues to flash. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward along the open, dry lane, approaching the parked tow truck on the right whose amber beacon is flashing. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban road noise with the low hum of the ego engine idling down, faint tire contact sounds fading as the car slows, and a soft mechanical whir. As braking occurs, a subtle brake actuation sound is audible. Once stopped, only quiet idle and distant city ambience remain. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "subjects": [
+    {
+      "description": "A large adult kangaroo with reddish-grey fur, powerful muscular hind legs, a thick tapering tail, upright ears and a compact upper body",
+      "appearance_details": "Sun-warmed rust-brown coat with paler cream underbelly, short forelimbs held close to the chest, alert erect ears, dark nose and eyes catching the low sun",
+      "relationship": "The hazard that the ego vehicle must react to; sole animate subject on the road",
+      "location": "Entering from right verge, moving toward center of the ego lane ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Body angled left across the road, partially side-on to camera",
+      "pose": "Mid-bound crouch-and-extend hopping posture, hind legs coiling and extending, tail counterbalancing",
+      "action": "Bounding in high arcing hops from the right verge into the ego lane and landing ahead of the vehicle",
+      "state_changes": "Transitions from airborne bounds off the verge to landing squarely in the ego lane, then standing braced facing the stopped car",
+      "clothing": "",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A remote two-lane rural bitumen road cutting straight through open Australian scrubland. Flat dry earth, tufts of golden grass, low grey-green saltbush and scattered stunted trees line both verges. Faded painted lane markings run down the centre. The horizon is broad and empty under a clear pale-blue sky, with a low sun casting long shadows across the road surface.",
+  "lighting": {
+    "conditions": "Bright clear daytime with a low sun near the horizon",
+    "direction": "Low side-lighting from the right, slightly behind the scene",
+    "shadows": "Long stretched shadows of the kangaroo, roadside vegetation and posts cast across the tarmac toward the left",
+    "illumination_effect": "Warm golden-hour glow with high contrast, rimming the kangaroo's fur and emphasizing texture on the road and scrub"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view down the road vanishing to the horizon, kangaroo entering from the right third and settling near center foreground of the lane",
+    "color_scheme": "Warm earthy palette of ochre, dry gold, dusty grey-green scrub against a clear pale-blue sky and dark grey asphalt",
+    "mood_atmosphere": "Tense, sudden hazard, alert, remote isolation",
+    "patterns": "Repeating dashed centre-line road markings and evenly spaced roadside vegetation"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot of the road ahead from driver's perspective",
+    "camera_angle": "Eye-level dashboard-mounted view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the bounding kangaroo",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam style",
+  "context": "Autonomous driving hazard-response demonstration of correct distance judgement and emergency braking for wildlife",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "Ego vehicle travels forward at cruising speed along the empty rural road under low sun."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A large kangaroo appears at the right verge and begins bounding toward the road in high hops."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:04",
+      "description": "The vehicle brakes: The vehicle decelerates to a complete stop and remains stationary with the kangaroo standing ahead; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Steady forward travel down the two-lane rural road through open scrubland with long shadows.",
+      "key_changes": "Road ahead is clear; steady speed established.",
+      "camera": "Smooth forward tracking at cruising speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "A large kangaroo bounds from the right verge in high airborne hops and lands in the ego lane ahead.",
+      "key_changes": "Hazard enters from right; kangaroo lands in path; braking initiates.",
+      "camera": "Forward tracking begins to decelerate as brakes engage."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle travels forward at cruising speed along the empty rural road under low sun. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient road and wind noise with tyre hum at cruising speed, a sudden firm brake actuation and tyre scrub as the vehicle decelerates, then near silence with faint outdoor scrubland ambience and light wind once the vehicle is fully stopped.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:01",
+      "0:01-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:04",
+      "0:04-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

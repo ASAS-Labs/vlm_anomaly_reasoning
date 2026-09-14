@@ -1,0 +1,151 @@
+{
+  "subjects": [
+    {
+      "description": "A yellow school bus stopped in the oncoming lane, standard American Type C body with a rectangular front hood and large windshield, red warning lights flashing at the top corners and a red octagonal stop arm extended from the driver's side.",
+      "appearance_details": "Amber and red roof-mounted warning lamps, black lettering and reflective stripes along the body, chrome bumper, dark tinted passenger windows, extended stop sign with white border and 'STOP' text",
+      "relationship": "The obstacle and reason the child crosses; occupies the oncoming lane facing the ego vehicle",
+      "location": "left-center background moving toward mid-frame",
+      "relative_size": "Large within frame",
+      "orientation": "Front three-quarter facing the camera in the opposing lane",
+      "pose": "Stationary vehicle parked at the roadside curb",
+      "action": "Stopped with red lights flashing and stop arm deployed",
+      "state_changes": "Red lights continue flashing throughout; remains stationary the entire clip.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A small child pedestrian stepping off the curb in front of the bus and walking across the road toward the ego vehicle's lane.",
+      "appearance_details": "Wearing a bright backpack, a red hooded jacket, blue jeans and small sneakers; short stature typical of a young child",
+      "relationship": "The vulnerable road user the ego vehicle must yield to; crosses in front of the stopped bus",
+      "location": "center-left of frame, crossing from left toward center road",
+      "relative_size": "Small within frame",
+      "orientation": "Profile view, moving from the bus side toward the ego lane, left to right",
+      "pose": "Upright walking gait, one foot forward mid-stride",
+      "action": "Steps off curb and walks across the road in front of the bus",
+      "state_changes": "Transitions from stepping off curb to walking across the lane, progressing steadily across the road.",
+      "clothing": "Red hooded jacket, blue jeans, sneakers, colorful backpack",
+      "expression": "Focused, looking ahead across the road",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Light-medium, smooth youthful skin",
+      "facial_features": "Small round face, short brown hair partly under the hood, bright eyes; features not clearly detailed at distance",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban residential road under clear daytime skies. Neatly trimmed grass verges, sidewalks and low hedges line both sides, with single-family homes, driveways and mature trees set back from the road. Utility poles and a few parked cars appear in the distance. The asphalt is dry with faded lane markings and a broken center line, and consistent hard shadows fall across the pavement from the overhead sun.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-lit with slight side angle from the right",
+    "shadows": "Crisp, well-defined shadows cast consistently to one side of vehicles, trees and the child",
+    "illumination_effect": "High-contrast, vivid daytime clarity with saturated colors and good visibility"
+  },
+  "aesthetics": {
+    "composition": "Centered road-ahead composition following the lane, bus offset to the left in the oncoming lane, child crossing into the central foreground, vanishing point toward the horizon",
+    "color_scheme": "Yellow bus and red jacket accents against green foliage, gray asphalt and blue sky",
+    "mood_atmosphere": "Calm suburban routine, cautionary, safety-focused tension",
+    "patterns": "Repeating lane markings, roadside trees and evenly spaced utility poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's perspective",
+    "camera_angle": "Eye-level dashboard viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead, the school bus and the crossing child",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam / ADAS documentary",
+  "context": "Autonomous driving safety demonstration of yielding to a stopped school bus and a crossing child pedestrian",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "Ego vehicle travels forward along the suburban road, approaching the yellow school bus stopped in the oncoming lane with red lights flashing and stop arm extended."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A child-sized figure steps off the curb in front of the bus and begins walking across the road toward the ego lane."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the crossing point and remains fully stationary as the child continues across; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase letters on red octagonal sign with white border",
+      "spatial_temporal": "On the extended stop arm of the bus, left-center of frame, visible throughout",
+      "context": "Legally requires vehicles to stop for the school bus"
+    },
+    {
+      "text": "SCHOOL BUS",
+      "category": "vehicle_graphic",
+      "appearance": "Black bold uppercase lettering on the yellow bus body",
+      "spatial_temporal": "Across the front/side of the bus, visible throughout",
+      "context": "Identifies the vehicle as a school bus"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward toward the stopped school bus; child steps off curb and begins crossing in front of the bus.",
+      "key_changes": "Bus grows larger in frame; child appears and starts crossing",
+      "camera": "Forward dolly at steady cruising speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Vehicle reaches a complete stop well before the crossing point and remains fully stationary while the child walks across. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle travels forward along the suburban road, approaching the yellow school bus stopped in the oncoming lane with red lights flashing and stop arm extended. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban road noise with a low engine hum that fades as the car slows, the rhythmic clicking of the school bus warning lights, a soft mechanical whine of smooth braking, faint birdsong, and quiet after the vehicle stops.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:01",
+      "0:01-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "subjects": [
+    {
+      "description": "An adult person lying prone and flat on the road surface in the middle of the ego lane, dressed in dark casual clothing, body fully within the lane boundaries",
+      "appearance_details": "Dark jacket and jeans, sneakers visible, arms tucked partially under the torso, head turned to one side",
+      "relationship": "The hazard that the ego vehicle detects and stops for; the sole human present in the scene",
+      "location": "Center of frame, mid-distance ahead on the road",
+      "relative_size": "Small within frame",
+      "orientation": "Lying horizontally across the road surface, roughly perpendicular to the direction of travel, low to the ground facing away from camera",
+      "pose": "Prone, flat on the pavement, motionless, body pressed against the road surface",
+      "action": "Lying still on the road surface",
+      "state_changes": "No significant change; remains motionless throughout.",
+      "clothing": "Dark casual jacket, blue jeans, light-soled sneakers",
+      "expression": "Not clearly visible; face turned toward the ground",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Partially visible hand and neck showing medium skin tone",
+      "facial_features": "Short dark hair; facial details obscured due to distance and downward-facing orientation",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family homes, low garden fences, and mature trees. Parked cars sit occasionally along the curb, and neat lawns and driveways flank the paved two-lane road. The street is otherwise empty of moving traffic and pedestrians, with a clear blue daytime sky above.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-side lit from the upper right",
+    "shadows": "Consistent, well-defined shadows cast to the lower left of objects, including a distinct shadow under the prone person",
+    "illumination_effect": "Even, natural illumination with good visibility and strong contrast that helps reveal the low human shape on the road"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-lane perspective with the road receding to a vanishing point; the prone figure positioned squarely in the middle of the lane ahead",
+    "color_scheme": "Warm asphalt greys, green lawns and foliage, blue sky, muted house tones",
+    "mood_atmosphere": "Calm, tense, cautionary",
+    "patterns": "Repeating lane markings, curb lines, and evenly spaced trees and fences"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, dashboard-height forward view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the prone person in the lane",
+    "lens_focal_length": "Standard wide (approx. 28mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving hazard-detection demonstration showing the ego vehicle stopping for a person lying in the road",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the quiet residential street at a moderate speed, approaching the prone person in the lane."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the person and remains fully stationary for the remaining duration; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle cruises forward down the empty residential street with the prone person visible ahead in the middle of the lane.",
+      "key_changes": "The prone figure grows slightly larger as the vehicle approaches.",
+      "camera": "Forward motion at steady speed matching the vehicle."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Vehicle reaches a complete stop well before the person and stays fully stationary for at least two seconds. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the quiet residential street at a moderate speed, approaching the prone person in the lane. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds: gentle wind, distant birdsong, and the low hum of the car engine. As braking begins a soft mechanical deceleration and faint brake sound is heard, followed by near-silence and idling engine once the vehicle is fully stopped. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

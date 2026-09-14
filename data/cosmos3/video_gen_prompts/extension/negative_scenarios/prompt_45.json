@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A large irregular patch of fresh, very dark asphalt covering several repaired potholes in the ego lane, appearing as a smooth black expanse against the surrounding faded grey pavement",
+      "appearance_details": "Deep matte-black surface with subtle sheen, slightly raised seams at its edges where new asphalt meets old, no cracks or debris, roughly amoeba-shaped outline",
+      "relationship": "Perceived by the ego vehicle as an obstacle in its path of travel, prompting an evasive maneuver",
+      "location": "Center to center-left of frame, occupying the ego lane on the roadway",
+      "relative_size": "Large within frame",
+      "orientation": "Lying flat on the road surface, facing upward toward the sky and camera",
+      "pose": "Flat and level, flush with the road surface",
+      "action": "Remains stationary on the road as the vehicle approaches",
+      "state_changes": "Grows larger in frame as the vehicle approaches, then shifts to the left of frame as the vehicle swerves right",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior and hood are implied by the first-person driving perspective",
+      "appearance_details": "Only the road ahead is visible; the perspective is that of a driver seated behind the windshield, dashboard implied but out of frame",
+      "relationship": "The point-of-view vehicle whose reactions drive the narrative; it responds to the dark patch",
+      "location": "Camera position, implied at center of frame moving forward",
+      "relative_size": "Not directly visible within frame",
+      "orientation": "Facing forward down the road, camera pointed in the direction of travel",
+      "pose": "Traveling forward along the lane",
+      "action": "Driving forward, then swerving onto the right shoulder and braking sharply",
+      "state_changes": "Transitions from steady forward motion to a rightward swerve and sharp deceleration",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road stretching ahead under a clear blue daytime sky. The pavement is faded grey with visible age and light tire wear, bordered by a modest gravel-and-grass right shoulder. Beyond the shoulders lie neatly trimmed lawns, low residential fencing, mature deciduous trees casting dappled shade, and occasional driveways and mailboxes. A faded centerline divides the two lanes. The scene is calm, orderly, and free of other traffic.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from the upper front-right, casting consistent directional shadows",
+    "shadows": "Crisp, consistent shadows from roadside trees and poles falling across the pavement toward the left, remaining stable throughout the clip",
+    "illumination_effect": "Even, high-contrast illumination that makes the fresh dark asphalt patch stand out sharply against the sun-bleached grey road"
+  },
+  "aesthetics": {
+    "composition": "First-person driver's-eye framing with the road converging toward a vanishing point ahead, the dark asphalt patch positioned prominently in the ego lane, roadside greenery framing both edges",
+    "color_scheme": "Faded grey pavement, deep matte-black asphalt patch, green roadside foliage, blue sky, warm sunlit highlights",
+    "mood_atmosphere": "Calm suburban routine punctuated by sudden cautious tension",
+    "patterns": "Repeating roadside trees, fence posts, and lane markings receding into distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion that swings rightward and decelerates in the final segment; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road and shoulders ahead",
+    "camera_angle": "Eye-level from the driver's seat",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the dark asphalt patch",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving or driver-assist perception scenario illustrating misclassification of a benign dark road patch as an obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels steadily forward along the ego lane, approaching the large dark asphalt patch centered in its path. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The dark patch fills more of the frame; the vehicle begins to react to it as if it were an obstacle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle swerves onto the right shoulder and slows down sharply, the dark patch sliding to the left of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle drives forward at a steady pace on the suburban two-lane road, approaching the irregular fresh-asphalt patch that contrasts strongly with the faded grey pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The dark patch grows steadily larger in frame as distance closes.",
+      "camera": "Smooth forward tracking motion, centered on the lane; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Treating the dark patch as an obstacle, the vehicle swerves right onto the gravel shoulder and brakes sharply, coming to a much slower speed while the patch passes on the left. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Rightward lateral shift of the view, visible deceleration, patch moving out of the direct path.",
+      "camera": "Camera pans and drifts rightward, motion slows noticeably indicating braking; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a calm suburban two-lane road under bright clear daylight, with a large irregular patch of very dark fresh asphalt sitting in the ego lane ahead, sharply contrasting the faded grey pavement. From 0:00 to 0:02 the car glides forward smoothly, the dark patch enlarging in the frame. Around 0:02 to 0:03 the vehicle appears to register the patch as an obstacle. From 0:03 to 0:05 the view swings to the right as the car swerves onto the gravel shoulder and brakes sharply, decelerating hard while the dark asphalt patch drifts to the left of frame; the car remains slowed on the shoulder through the end of the clip. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient suburban daytime sounds dominate: steady tire hum on pavement and light engine noise during the approach. As the swerve begins, the tire sound changes to a crunch of gravel on the shoulder, accompanied by the abrupt whir and slight squeal of hard braking and the pitch of the engine dropping. Faint birdsong and a light breeze fill the background throughout. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

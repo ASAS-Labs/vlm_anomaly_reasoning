@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A concrete highway overpass spanning the roadway ahead, its underside casting a hard, sharply defined black shadow across the full width of the driving lane like a dark band painted on the pavement",
+      "appearance_details": "Weathered grey concrete bridge deck with visible support pillars, expansion joints, and slight staining; the shadow it casts has crisp edges due to strong direct sunlight",
+      "relationship": "The primary environmental obstacle that the ego vehicle misreads as a physical barrier",
+      "location": "Center background, spanning horizontally across the upper-middle of the frame",
+      "relative_size": "Medium within frame",
+      "orientation": "Perpendicular to the direction of travel, facing the camera",
+      "pose": "Static structure elevated above the roadway",
+      "action": "Standing still while casting a moving-relative shadow as the car approaches",
+      "state_changes": "No significant change; the shadow band grows larger in frame as the vehicle nears then stops before it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, a modern passenger car represented through its first-person driver perspective, with the dashboard cowl and hood edge faintly visible at the bottom of the frame",
+      "appearance_details": "Subtle reflection of dashboard on the windshield, clean glass, hood in neutral colour catching sunlight",
+      "relationship": "The observer vehicle whose automated system reacts to the shadow band",
+      "location": "Implied at camera position, hood visible in lower foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the highway lane",
+      "pose": "Moving forward then decelerating to a full stop",
+      "action": "Driving along the highway, braking hard, and coming to a complete stationary stop before the shadow",
+      "state_changes": "Transitions from steady cruising motion to hard braking to a fully stopped, motionless state",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An open multi-lane highway stretching straight ahead under a clear blue daytime sky. Dry grassy verges and sparse low vegetation border the road on both sides. A concrete overpass crosses the highway ahead, its underside throwing a crisp black shadow band across the full width of the lane. Beyond and beneath the overpass, the asphalt is completely clear of any vehicles or obstacles. The low sun on one side creates bright highlights and long defined shadows across the scene.",
+  "lighting": {
+    "conditions": "Bright clear daylight with strong direct sunlight",
+    "direction": "Side-lit from the low sun positioned to one side of the highway",
+    "shadows": "Hard, sharply edged shadows; the overpass casts a distinct dark band across the roadway, and roadside objects cast long crisp shadows",
+    "illumination_effect": "High contrast between sunlit pavement and the deep black shadow band, enhancing the illusion of the shadow as a solid obstacle"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective down the highway lane, vanishing point centered near the overpass, hood edge anchoring the lower frame, shadow band bisecting the road horizontally",
+    "color_scheme": "Warm sunlit greys and beiges of asphalt, deep black shadow, vivid blue sky, muted green-yellow roadside grass",
+    "mood_atmosphere": "Tense, cautionary, quietly dramatic",
+    "patterns": "Repeating lane markings and dashed centerline receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the shadow band across the lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception failure demonstration where a shadow is misinterpreted as an obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle cruises steadily down the sunny open highway toward the overpass, the shadow band visible ahead across the lane"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop just before the shadow and remains fully stationary for the final segment; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle travels forward at steady speed on the clear sunny highway, approaching the overpass and its dark shadow band across the lane",
+      "key_changes": "Shadow band grows larger and nearer in frame as the vehicle advances",
+      "camera": "Smooth forward tracking motion at cruising speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped just before the shadow band and remains completely stationary for over two seconds while the road beyond stays clearly empty. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle cruises steadily down the sunny open highway toward the overpass, the shadow band visible ahead across the lane. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient highway sound of tires on asphalt and steady wind rush during the approach, followed by the sharp mechanical squeal and shudder of hard braking, then near silence with only faint idle engine hum and distant ambient wind while the vehicle sits stationary.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

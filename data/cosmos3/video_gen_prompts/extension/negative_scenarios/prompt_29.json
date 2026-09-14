@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A cluster of lit ground fireworks positioned directly in the ego lane, spitting bright coloured sparks and emitting thick red and green smoke across the roadway",
+      "appearance_details": "Cone and fountain-style pyrotechnic devices scattered on the asphalt, glowing white-hot at their cores with cascading golden, red, and green sparks fanning outward; crackling flashes intermittently burst on the pavement",
+      "relationship": "The primary obstacle directly in the ego vehicle's path; the focal spectacle the car is driving toward",
+      "location": "center foreground, on the road ahead in the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing camera, sparks radiating toward and around the ego view",
+      "pose": "Stationary devices on the ground actively discharging",
+      "action": "Sparking, spitting coloured sparks and billowing thick red and green smoke, with crackling bursts continuing",
+      "state_changes": "Sparks intensify and smoke thickens as the camera approaches; bursts flare brighter and closer as the vehicle drives into them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Spectators gathered on the sidewalks well back from the road, watching the fireworks display on the holiday night",
+      "appearance_details": "Small silhouetted figures in dark seasonal clothing, some holding phones or lights, standing behind the curb line",
+      "relationship": "Bystanders observing the fireworks; positioned safely away from the ego vehicle's path",
+      "location": "left and right background on the sidewalks",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the road and fireworks, partially toward camera",
+      "pose": "Standing upright, some leaning forward or gesturing",
+      "action": "Watching the fireworks, some raising phones to record",
+      "state_changes": "Minor shifting and gesturing; largely stationary as the car passes",
+      "clothing": "Winter jackets, coats, and dark casual holiday attire",
+      "expression": "Excited and attentive, faces mostly obscured by distance and darkness",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Indistinct due to distance and low light",
+      "facial_features": "Not clearly visible from distance in the dark",
+      "number_of_subjects": 8,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A city street at night during a holiday celebration. Rows of streetlights cast warm pools of light along wet-looking asphalt beneath a pitch-dark sky. Buildings, storefronts, and parked vehicles line both sides of the street, their windows glowing faintly. The atmosphere is festive but tense, with pyrotechnic smoke drifting across the roadway and crowds lingering on the sidewalks. The road ahead recedes into darkness punctuated by the glowing fireworks and distant traffic signals.",
+  "lighting": {
+    "conditions": "Low-light night scene illuminated by streetlights and pyrotechnic glow",
+    "direction": "Overhead from streetlights, with strong dynamic front-lighting from the fireworks directly ahead",
+    "shadows": "Long soft shadows from streetlights, sharply flickering shadows cast by the sparking fireworks near the vehicle",
+    "illumination_effect": "Warm amber pools of streetlight contrast against the dark sky, while the fireworks bathe the immediate road in shifting red, green, and gold light, creating a dramatic, glowing haze"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical ego-view perspective centered on the road vanishing point, with the fireworks cluster placed dead center in the ego lane and sidewalks framing both edges",
+    "color_scheme": "Deep blacks and dark blues of the night sky against warm amber streetlights, with vivid red and green fireworks sparks and thick coloured smoke dominating the center",
+    "mood_atmosphere": "Festive, chaotic, tense, surreal",
+    "patterns": "Repeating rhythm of streetlights receding down the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted at driver eye-level, moving steadily straight ahead at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road, sidewalks, and sky",
+    "camera_angle": "Eye-level ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the fireworks and road ahead, softening into the smoke haze",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic dashcam-style footage",
+  "context": "Ego-view driving scene through a holiday street fireworks display at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward under streetlights toward the sparking fireworks cluster ahead, coloured sparks and smoke building on the road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The fireworks intensify with crackling bursts and thick red and green smoke as the car approaches without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives straight into the sparks and smoke at cruising speed, engulfed briefly in the glowing coloured haze while spectators watch from the sidewalks. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle cruises down the dark holiday street under streetlights, approaching the cluster of lit ground fireworks spitting coloured sparks and billowing red and green smoke across the ego lane, with spectators visible on the sidewalks. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Fireworks grow larger and brighter in frame; smoke thickens; crackling bursts intensify as the car nears",
+      "camera": "Steady forward tracking at driver eye-level, constant cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives directly into the sparks and thick coloured smoke without slowing or stopping, momentarily surrounded by the glowing red and green haze and cascading sparks while crackling bursts continue on the pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The view is engulfed in coloured smoke and sparks; visibility briefly drops before the car pushes through",
+      "camera": "Continuous forward tracking at the same cruising speed, no change in motion; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego view shows a dark city street at night lined with warm streetlights, with a cluster of lit ground fireworks sparking directly ahead in the ego lane. By 0:01 coloured sparks fan across the road and thick red and green smoke begins drifting; spectators stand well back on the sidewalks watching. At 0:02 the fireworks intensify with crackling bursts as the car continues forward at cruising speed without slowing. From 0:03 to 0:05 the ego vehicle drives straight into the sparks and thick coloured smoke, briefly engulfed in the glowing red and green haze while bursts continue crackling on the pavement, maintaining its steady speed throughout. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient night city sounds with the steady hum of the moving vehicle's engine and tires on asphalt. Sharp crackling and hissing of ground fireworks builds as the car approaches, with sizzling spark discharges and popping bursts. Distant crowd murmurs and occasional cheers from spectators on the sidewalks. A brief muffled whoosh as the vehicle passes through the smoke cloud.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

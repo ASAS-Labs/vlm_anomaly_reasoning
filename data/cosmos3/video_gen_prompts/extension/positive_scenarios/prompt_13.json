@@ -1,0 +1,118 @@
+{
+  "subjects": [
+    {
+      "description": "A pedestrian wearing a full-body inflatable green dinosaur costume, resembling a T-Rex with a rounded belly, small dangling arms, a tail, and a large open-mouthed head with white teeth",
+      "appearance_details": "The costume is a bright, glossy inflatable material with an internal fan keeping it puffed; the wearer's face is partially visible through a mesh panel in the dinosaur's neck; short human legs in dark shoes are visible beneath the inflatable body",
+      "relationship": "The pedestrian the ego vehicle is yielding to at the crosswalk",
+      "location": "right foreground, at the curb beside the crosswalk",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing toward the road and the camera, angled to step onto the crosswalk",
+      "pose": "Standing upright at the curb edge, leaning slightly forward as if about to step off",
+      "action": "Waiting at the curb, about to cross",
+      "state_changes": "Remains standing and waiting; makes a slight forward shift as the car stops, but does not step into the road within the clip",
+      "clothing": "Full-body inflatable green dinosaur costume with dark shoes",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet urban city street on a clear, sunny day. The road is a two-lane paved street with a freshly painted white zebra crosswalk stretching across it just ahead of the vehicle. Sidewalks flank both sides, lined with low commercial buildings, a few storefronts, street lamps, and a scattering of parked cars along the curb. Trees in leaf cast dappled shade on the pavement. There is no oncoming or crossing traffic; the scene is calm and orderly with a distant intersection and traffic signage visible further down the road.",
+  "lighting": {
+    "conditions": "Bright daylight",
+    "direction": "Overhead and slightly front-left, consistent with midday sun",
+    "shadows": "Sharp, consistent shadows cast to the lower-right of objects; the dinosaur costume and street lamps cast defined shadows on the pavement",
+    "illumination_effect": "Crisp, high-contrast illumination with vivid colors and clear visibility of the road surface and crosswalk markings"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective dashcam framing centered on the road ahead, with the zebra crosswalk occupying the middle-lower third and the dinosaur pedestrian at the right curb; leading lines from lane markings draw the eye toward the crossing point",
+    "color_scheme": "Neutral grays of the asphalt and white crosswalk stripes contrasted with the vivid green of the dinosaur costume, blue sky, and green foliage",
+    "mood_atmosphere": "Calm, orderly, mildly humorous, safety-conscious",
+    "patterns": "Repeating parallel white stripes of the zebra crosswalk"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, mounted at driver height",
+    "depth_of_field": "Deep",
+    "focus": "The crosswalk and the dinosaur-costumed pedestrian at the curb",
+    "lens_focal_length": "Wide-angle, typical of a dashcam"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous or assisted-driving scenario demonstrating pedestrian yielding behavior at a crosswalk, even for an unusually costumed pedestrian",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the city street toward the marked zebra crosswalk, spotting the green dinosaur-costumed pedestrian at the right curb."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop before the crosswalk and remains fully stationary, holding position to let the pedestrian cross; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase lettering on a red octagonal sign, standard traffic size",
+      "spatial_temporal": "Small, on the right side further down the street, visible throughout",
+      "context": "Standard roadway traffic control signage in the urban environment"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "The car moves forward along the clear city street, approaching the zebra crosswalk with the dinosaur-costumed pedestrian visible waiting at the right curb.",
+      "key_changes": "Distance to the crosswalk decreases as the vehicle advances",
+      "camera": "Forward-moving dashcam, steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle comes to a full stop before the crosswalk and holds completely stationary for over two seconds while the dinosaur pedestrian waits at the curb. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the city street toward the marked zebra crosswalk, spotting the green dinosaur-costumed pedestrian at the right curb. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban sounds dominate: the low hum of the car's engine gradually decreasing, the soft sound of tires on pavement fading as the vehicle slows, and a gentle mechanical squeak of brakes as it comes to a stop. Distant city ambience includes faint birdsong and a light breeze. No speech or music is present; the final seconds are quiet with only idle engine hum.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

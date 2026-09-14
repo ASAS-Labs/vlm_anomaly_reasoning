@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A large box truck traveling in the lane adjacent to the ego vehicle, its rear doors and mud flaps visible, coated in road grime and streaked with rainwater",
+      "appearance_details": "Weathered white and grey cargo body, red tail lights glowing through the mist, dense plume of tire spray billowing from its rear wheels",
+      "relationship": "The primary hazard prompting the ego vehicle to slow down and increase following distance",
+      "location": "center-right midground, in the lane to the right of the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear-facing toward the camera, moving away in the same direction of travel",
+      "pose": "",
+      "action": "Rolling forward while throwing up heavy spray from its wheels",
+      "state_changes": "Gradually recedes slightly and its spray remains dense as the ego vehicle slows.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A distant passenger vehicle far ahead in the ego lane, reduced to a small silhouette with glowing red tail lights diffused by rain",
+      "appearance_details": "Blurred dark form, tail lights smeared by water on the windshield and camera lens",
+      "relationship": "The nearest vehicle in the ego lane, well ahead, defining the open path forward",
+      "location": "center background, far up the ego lane",
+      "relative_size": "Small within frame",
+      "orientation": "Rear-facing, moving away in the same direction",
+      "pose": "",
+      "action": "Traveling ahead at highway distance",
+      "state_changes": "Distance to it increases as the ego vehicle slows.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane divided highway during a heavy downpour under dark, overcast skies. The wet asphalt is nearly black and reflective, with sheets of standing water pooling between lanes that mirror the white dashed lane markings and the diffuse light of vehicle tail lights. Guardrails and faint roadside barriers blur along the edges. The horizon is lost in grey mist and rain, and the whole scene is dim, low-contrast, and saturated with moisture.",
+  "lighting": {
+    "conditions": "Dark overcast daylight, heavily diffused by storm clouds and rain",
+    "direction": "Flat, ambient overhead light with no visible sun",
+    "shadows": "Minimal, soft shadows; almost no hard shadows due to the diffuse overcast",
+    "illumination_effect": "Low-contrast, gloomy illumination that flattens depth and emphasizes wet reflective surfaces and glowing tail lights"
+  },
+  "aesthetics": {
+    "composition": "First-person ego perspective centered on the open ego lane, with the truck and its spray offset to the right and lane markings converging toward the misty vanishing point ahead",
+    "color_scheme": "Desaturated palette of dark greys, charcoal asphalt, muted whites of lane markings, and smeared red tail-light accents",
+    "mood_atmosphere": "Tense, cautious, hazardous, gloomy",
+    "patterns": "Repeating dashed white lane markings and rhythmic streaks of rain across the camera"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving tracking shot mounted at driver eye height, decelerating over time; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the road ahead and adjacent lane",
+    "camera_angle": "Eye-level ego (dashcam) perspective",
+    "depth_of_field": "Deep",
+    "focus": "The ego lane ahead and lane markings, with rain streaks and spray partially obscuring the lens",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous or assisted driving demonstration of hazard recognition and speed reduction in poor weather",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward at highway speed in heavy rain, with a box truck throwing dense spray in the adjacent right lane and rain streaking the camera. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle detects the poor visibility and standing water and begins to slow markedly, letting the distant vehicle ahead pull further away. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues rolling at the reduced speed, maintaining a widened following distance while the truck's spray persists to the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises at highway speed on the rain-soaked multi-lane highway, box truck spraying water in the adjacent lane, lane markings reflected in standing water. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Rain streaks intensify on the camera; truck spray remains dense.",
+      "camera": "Forward tracking at steady high speed, eye-level ego view; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The ego vehicle recognizes the hazardous conditions and slows noticeably, increasing the gap to the vehicle far ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Perceptible deceleration; forward motion blur decreases; following distance widens.",
+      "camera": "Forward tracking decelerating, eye-level ego view; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle keeps rolling at the reduced speed, holding a safe widened distance while rain and spray continue. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Speed stabilizes low and steady; truck spray still visible to the right.",
+      "camera": "Forward tracking at slow steady pace, eye-level ego view; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark, rain-lashed multi-lane highway, with the ego vehicle moving at highway speed; a grimy box truck in the right lane throws up a dense plume of spray and lane markings shimmer in sheets of standing water. Around 0:02 the ego vehicle recognizes the poor conditions and begins to slow markedly, the forward blur easing as the distant vehicle ahead pulls further away. From 0:03 through 0:05 the ego vehicle continues rolling steadily at the reduced speed, maintaining a widened following distance while rain streaks the camera and the truck's spray persists to the right under the gloomy overcast sky. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous heavy rain drumming on the roof and windshield, the rhythmic sweep of windshield wipers, tire hiss on wet pavement, the whoosh of spray from the adjacent truck, and a subtle drop in engine and road noise pitch as the vehicle decelerates. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

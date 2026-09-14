@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "description": "A course marshal wearing a bright fluorescent safety vest, positioned beside the barricade line guarding the closed cross street",
+      "appearance_details": "Neon yellow-green high-visibility vest with reflective silver stripes, dark cap, holding a small radio or clipboard",
+      "relationship": "Authority figure controlling access to the closed marathon course, standing near the barricades the ego vehicle passes",
+      "location": "Left-center midground near the barricade gap",
+      "relative_size": "Small within frame",
+      "orientation": "Facing partially toward the camera and toward the oncoming ego vehicle",
+      "pose": "Standing upright, one arm slightly raised as if signaling",
+      "action": "Monitoring the intersection and gesturing near the barricades",
+      "state_changes": "Turns head to track the passing ego vehicle as it approaches and turns through the gap",
+      "clothing": "Fluorescent high-visibility safety vest over dark pants, dark cap",
+      "expression": "Alert, focused",
+      "gender": "Male",
+      "age": "Middle-aged",
+      "skin_tone_and_texture": "Medium tone, weathered adult skin",
+      "facial_features": "Short dark hair under cap, neutral brow, clean-shaven, indistinct at distance",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A large crowd of marathon runners streaming along the closed cross street beyond the barricades",
+      "appearance_details": "Assorted athletic wear, race bibs pinned to shirts, running shoes, some in colorful shirts, hats, and sunglasses",
+      "relationship": "Participants of the marathon occupying the closed course the ego vehicle drives onto",
+      "location": "Center and right midground to background, moving laterally across the closed street",
+      "relative_size": "Medium within frame collectively, small individually",
+      "orientation": "Moving perpendicular to the ego vehicle's path, left to right across the closed street",
+      "pose": "Running strides, arms pumping, forward-leaning postures",
+      "action": "Running steadily past along the closed marathon course",
+      "state_changes": "Continuous flow of runners passing; density remains high throughout",
+      "clothing": "Mixed running apparel: tank tops, tech tees, shorts, bibs, caps",
+      "expression": "Effortful, determined",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones across the crowd",
+      "facial_features": "Indistinct at distance; varied hair colors and styles",
+      "number_of_subjects": 300,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A line of temporary barricades with a ROAD CLOSED sign blocking the cross street",
+      "appearance_details": "Metal or plastic crowd-control barriers, orange-and-white striped, with an official ROAD CLOSED sign mounted on a stand",
+      "relationship": "Physical barrier marking the closed marathon course that the ego vehicle passes through a gap in",
+      "location": "Center midground spanning the cross street",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the ego vehicle across the intersection",
+      "pose": "Static row of interlocked barriers with a visible gap",
+      "action": "Standing in place blocking the turn",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 8,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A mid-sized city street lined with low commercial buildings, storefronts, and street trees under a clear blue daytime sky. The ego vehicle travels along a two-lane road approaching a perpendicular cross street that has been closed for a marathon. Barricades and a course marshal block the intersection, while beyond them the closed street is filled with a dense river of runners moving laterally. Parked cars line the curb, utility poles and traffic signals frame the scene, and long consistent shadows fall across the asphalt.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Front-side lit, sun high and slightly behind-left casting shadows forward-right",
+    "shadows": "Crisp, consistent, well-defined shadows from vehicles, poles, and runners across the pavement",
+    "illumination_effect": "High contrast, vivid colors, clean sunlit clarity emphasizing the bright marshal vest and course details"
+  },
+  "aesthetics": {
+    "composition": "First-person driver POV centered on the road ahead, with the barricades and closed cross street framed centrally and runners flowing across the upper-middle band of frame",
+    "color_scheme": "Blue sky, gray asphalt, warm building tones, punctuated by fluorescent yellow-green vest and colorful runner apparel",
+    "mood_atmosphere": "Busy, energetic, mildly tense event-day traffic scenario",
+    "patterns": "Repeating barricade segments and the rhythmic flow of running figures"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion following the vehicle's path, turning through the barricade gap; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's ego perspective",
+    "camera_angle": "Eye-level from inside the vehicle",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead, barricades, marshal, and runner crowd all in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving / dashcam scenario depicting a vehicle improperly entering a closed marathon course",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the city street toward the cross intersection, revealing barricades, the ROAD CLOSED sign, and the marshal ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle nears the barricade line as runners stream across the closed street beyond; the marshal gestures near the gap. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Without slowing, the ego vehicle turns through the gap in the barricades onto the closed course, moving among the running crowd. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ROAD CLOSED",
+      "category": "scene_sign",
+      "appearance": "Bold black capital letters on a white or orange rectangular sign panel mounted on a stand",
+      "spatial_temporal": "Center midground on the barricade line, visible from 0:00 through 0:04 as the vehicle approaches and turns",
+      "context": "Official notice that the cross street is closed for the marathon event"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward at cruising speed along the city street, approaching the closed cross street with its barricades, ROAD CLOSED sign, marshal in a bright vest, and streaming runners beyond. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Intersection and barricades grow larger; runner crowd and marshal become clearly visible",
+      "camera": "Steady forward dashcam tracking motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle turns through the gap in the barricades onto the closed marathon course, driving among the runners without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle heading rotates as it turns; runners fill the frame as the car enters the closed street",
+      "camera": "Forward tracking motion with a turning arc following the vehicle onto the closed course; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a sunlit city street with clear blue sky and long consistent shadows as the ego vehicle cruises toward a perpendicular cross street. By 0:01 a line of orange-and-white barricades with a ROAD CLOSED sign comes into view, along with a course marshal in a bright fluorescent vest standing near a gap. At 0:02 hundreds of marathon runners are visible streaming laterally across the closed street beyond the barricades. From 0:03 the ego vehicle, maintaining its normal cruising speed, begins turning through the barricade gap. Through 0:04 and 0:05 it continues the turn and drives onto the closed course directly among the running crowd, never slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient city and event soundscape: steady hum of the vehicle's engine and tire noise, distant crowd murmur and cheering, the rhythmic patter of many running footsteps, occasional public-address announcements or a whistle from the marshal, and light wind. No dialogue or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

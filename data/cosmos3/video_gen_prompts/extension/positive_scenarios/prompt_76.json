@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A large advertising box truck directly ahead of the ego vehicle, its rear panel occupied by a full-width, high-brightness LED billboard screen playing dynamic video content",
+      "appearance_details": "Boxy cargo body with a dark matte painted rear frame surrounding the glowing LED panel; rear bumper, red tail lights, reflective safety markers, and a visible license plate mounted low",
+      "relationship": "The lead vehicle that the ego car is following at cruising speed; its LED screen is the focal element the ego vehicle must interpret as media rather than real pedestrians",
+      "location": "Center foreground, filling much of the frame",
+      "relative_size": "Large within frame",
+      "orientation": "Rear facing directly toward the camera, moving away in the same direction of travel",
+      "pose": "Upright cargo truck traveling straight in the center lane",
+      "action": "Driving forward at steady speed while its rear LED screen displays a looping video of pedestrians crossing a street",
+      "state_changes": "Maintains constant distance ahead; the LED content animates continuously while the truck holds its lane.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Video-rendered pedestrians displayed on the truck's rear LED screen, walking across a street within the advertisement footage",
+      "appearance_details": "Silhouetted and lit figures in casual urban attire, rendered at LED-panel resolution with slight pixelation and bright edge bloom, clearly a screen image rather than physical bodies",
+      "relationship": "On-screen media content on the lead truck; not real people in the road, the key distinction the ego vehicle recognizes",
+      "location": "Within the LED screen at center frame",
+      "relative_size": "Small within frame",
+      "orientation": "Walking laterally left-to-right across the displayed scene",
+      "pose": "Mid-stride walking poses of multiple figures",
+      "action": "Crossing the street inside the looping advertisement video",
+      "state_changes": "Figures continuously move across the screen, looping smoothly throughout the shot.",
+      "clothing": "Casual everyday clothing as rendered in the ad footage",
+      "expression": "Not discernible at screen resolution",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane city avenue at night, flanked by illuminated storefronts, glowing billboards, and streetlights. Dark asphalt reflects colorful neon and vehicle lights, with lane markings, traffic signals, and distant tail lights of other cars visible ahead. The urban skyline recedes into darkness with scattered lit windows and overhead cabling.",
+  "lighting": {
+    "conditions": "Nighttime urban lighting, artificial illumination dominant",
+    "direction": "Mixed frontal glow from the truck's bright LED screen and tail lights, ambient overhead from streetlights, side glow from storefronts",
+    "shadows": "Soft, low-contrast shadows on the wet-looking asphalt; strong specular reflections of lights on the road surface",
+    "illumination_effect": "The bright LED screen dominates the scene, casting a shifting colored glow onto the road and surrounding vehicles, creating a cinematic neon-lit night mood"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical ego-view framing centered on the truck's rear LED screen, lane lines converging toward it, city lights framing the sides",
+    "color_scheme": "Deep blacks and blues of the night contrasted with bright white and warm neon accents, red tail lights, and multicolor glow from the LED panel",
+    "mood_atmosphere": "Calm, futuristic, focused urban driving",
+    "patterns": "Repeating lane markings, rows of streetlights and billboards receding into distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the ego vehicle's fixed dashboard viewpoint, gently advancing at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the truck ahead and the surrounding avenue",
+    "camera_angle": "Eye-level from driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the truck's rear LED screen and the road ahead",
+    "lens_focal_length": "Standard wide-angle, approximating natural driver field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic automotive perspective",
+  "context": "Autonomous driving perception scenario demonstrating correct recognition of LED-screen media versus real pedestrians",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle drives forward on the multi-lane avenue at cruising speed, closing a steady following distance behind the advertising truck whose LED screen shows pedestrians walking. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The LED screen content is clearly identifiable as a looping video of pedestrians crossing; no real pedestrians appear in the road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Recognizing the screen as media, the ego vehicle maintains its normal cruising speed and lane, continuing to follow the truck without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "CROSSING",
+      "category": "vehicle_graphic",
+      "appearance": "Bright pixelated white LED lettering overlaid on the pedestrian video",
+      "spatial_temporal": "Lower portion of the truck's rear LED screen, visible throughout",
+      "context": "Advertisement caption accompanying the pedestrian footage on the screen"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels along the night avenue behind the advertising truck; the rear LED screen displays a looping video of pedestrians walking across a street, clearly distinguishable as media. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Following distance stabilizes; screen content continuously animates.",
+      "camera": "Forward tracking at steady cruising speed, centered on the truck; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Having identified the screen content as media rather than real pedestrians, the ego vehicle continues driving at its normal cruising speed behind the truck without any slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Consistent speed and lane maintained; no braking behavior; LED loop continues.",
+      "camera": "Continuous forward tracking with smooth steady motion; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego camera moves forward along a dark multi-lane city avenue, headlights and neon reflecting off the asphalt, with an advertising box truck directly ahead. By 0:01 the truck's large rear LED screen is clearly visible, playing a bright looping video of pedestrians walking across a street. From 0:02 to 0:03 the moving figures are unmistakably on the screen and no real pedestrians occupy the road. From 0:03 onward the ego vehicle, recognizing the content as media, holds its lane and cruising speed, smoothly following the truck without slowing or stopping through 0:05. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the ego vehicle's engine and tire noise on pavement, ambient city night sounds with distant traffic, faint muffled audio possibly emanating from the advertisement, no dialogue or music prominent, an overall calm continuous driving soundscape.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

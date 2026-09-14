@@ -1,0 +1,133 @@
+{
+  "subjects": [
+    {
+      "description": "A large blank concrete wall spanning the full width at the dead-end of a night street, onto which a bright, glowing video of a road entering a tunnel is projected, creating the illusion of an opening into a tunnel",
+      "appearance_details": "Rough grey concrete surface with faint seams and visible rectangular edges where the projected image ends; the projected tunnel image is warm-yellow, luminous, with converging lane markings and a dark tunnel mouth; the image flickers and jitters slightly, revealing it is a projection",
+      "relationship": "the primary obstacle and optical illusion that the ego vehicle mistakes for open road",
+      "location": "center background, at the end of the road",
+      "relative_size": "Large within frame",
+      "orientation": "facing the camera directly, perpendicular to the road",
+      "pose": "static vertical wall",
+      "action": "displaying a flickering projected video of a tunnel entrance",
+      "state_changes": "the projection flickers and grows larger and brighter as the camera approaches; edges of the wall and the projector's beam become increasingly visible",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a car driving slowly down the empty night street toward the wall, seen from the driver's first-person point of view",
+      "appearance_details": "Interior dashboard edge and hood barely visible at the bottom of the frame; headlight beams cast forward onto the road surface",
+      "relationship": "the camera-bearing vehicle that treats the projected tunnel as real open road",
+      "location": "implied at camera position, foreground",
+      "relative_size": "Large within frame",
+      "orientation": "moving away from camera perspective, forward toward the wall",
+      "pose": "in motion, driving straight",
+      "action": "traveling slowly and steadily toward the wall without slowing",
+      "state_changes": "maintains constant slow forward motion; does not decelerate as it nears the wall",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A projector beam emanating from an off-frame source, casting the tunnel video onto the concrete wall",
+      "appearance_details": "A visible cone of light with dust motes and slight haze illuminating the beam's path; subtle flicker synchronized with the projected image",
+      "relationship": "the light source producing the tunnel illusion on the wall",
+      "location": "upper area, angled toward the wall from off-frame right",
+      "relative_size": "Medium within frame",
+      "orientation": "beam directed toward the wall",
+      "pose": "static cone of projected light",
+      "action": "projecting the flickering tunnel image onto the concrete",
+      "state_changes": "beam becomes more distinct and its edges sharper as the camera nears the wall",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An empty urban street at night, flanked by dark, indistinct low buildings and sparse streetlights that cast pools of amber light on wet-looking asphalt. The road runs straight ahead to a dead-end terminated by a large blank concrete wall. There is no traffic, no pedestrians; the atmosphere is deserted and eerily quiet. At the end of the road, the concrete wall glows with a bright projected video depicting a road entering a tunnel, creating a surreal illusion of a passage where a solid wall stands.",
+  "lighting": {
+    "conditions": "Nighttime, low ambient light dominated by artificial sources",
+    "direction": "Front-lit by the ego vehicle's headlights and by the projector beam striking the wall; scattered top-down streetlight pools",
+    "shadows": "Long, soft shadows cast by streetlights; the wall's edges cast subtle shadows against the projected glow",
+    "illumination_effect": "The bright projection dominates the frame as a glowing rectangle, contrasting sharply with the dark surroundings and reinforcing the illusion of an opening"
+  },
+  "aesthetics": {
+    "composition": "Central one-point perspective with the road's vanishing point aligned to the glowing tunnel projection at the end; dark framing edges concentrate the eye on the luminous wall",
+    "color_scheme": "Deep blues and blacks of the night street contrasted with warm amber and yellow tones of the projected tunnel and headlights",
+    "mood_atmosphere": "Surreal, eerie, dreamlike, quietly ominous",
+    "patterns": "Converging perspective lines of the road and lane markings toward the vanishing point"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward dolly (ego-vehicle tracking shot) advancing toward the wall; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's point of view",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "The glowing projected tunnel on the wall and the road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Cinematic, surreal realism",
+  "context": "A conceptual, uncanny scene illustrating an autonomous or oblivious vehicle deceived by a projected optical illusion",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives slowly down the empty dark street; the glowing tunnel projection is visible ahead on the concrete wall, flickering faintly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The car continues advancing; the wall's edges and the projector's beam become more apparent, and the flicker intensifies, revealing the illusion. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Without slowing, the ego vehicle drives closer, the projected tunnel filling more of the frame, treating the illusion as open road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels slowly along the empty night street toward the dead-end wall, headlights illuminating the road, the projected tunnel glowing brightly ahead with subtle flicker. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The wall grows larger in frame; the projector beam and wall edges become visible; flicker of the projection becomes noticeable.",
+      "camera": "Slow forward dolly at steady pace; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The car continues without slowing, driving directly toward the flickering projected tunnel that fills the frame, the illusion of open road maintained until the wall dominates the view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Projection fills most of the frame; flicker and beam edges most prominent; sense of imminent collision heightens.",
+      "camera": "Continued steady forward dolly, no deceleration; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera sits at the driver's eye level, moving slowly down a deserted dark street with headlights spilling onto the asphalt; ahead, a large concrete wall glows with a projected video of a road entering a tunnel. By 0:01 the vehicle advances steadily, the tunnel image flickering faintly. At 0:02 the wall's rectangular edges and the visible cone of the projector beam betray the illusion as the flicker grows. From 0:03 to 0:05 the car continues without slowing, driving straight toward the projected tunnel which fills more and more of the frame, treating the wall as if it were open road, the illusion holding until the glowing image dominates the entire view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Quiet nighttime ambience with the low steady hum of a car engine and faint tire noise on asphalt. A subtle electronic buzz or hum from the projector accompanies the flickering image. No music or speech; the overall soundscape is sparse, eerie, and tense, building a sense of quiet unease.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside digital LED video billboard mounted on a tall single-pole steel monopole structure beyond the right shoulder of the highway",
+      "appearance_details": "Bright emissive LED panel with a glossy black bezel, supported by a galvanized steel column; currently displaying a colorful commercial advertisement that briefly flashes a full-screen red octagonal stop sign for a fraction of a second before reverting",
+      "relationship": "The primary object of interest that the ego vehicle passes; it presents a transient misleading image to the roadway",
+      "location": "Right side of frame, mid to background, elevated above the right shoulder",
+      "relative_size": "Medium within frame",
+      "orientation": "Screen faces angled toward oncoming highway traffic, roughly toward the camera",
+      "pose": "Static, upright on its pole",
+      "action": "Displaying an advertisement, then flashing a red stop sign image for a split second before returning to the ad",
+      "state_changes": "Screen content changes momentarily to a full-screen red stop sign, then reverts to the normal advertisement",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car traveling in a lane of a multi-lane highway (implied, seen only from its interior/hood perspective)",
+      "appearance_details": "Visible dashboard edge and hood front in lower frame, windshield-framed forward view down the highway",
+      "relationship": "The point-of-view vehicle carrying the camera; it interacts with the billboard by ignoring it",
+      "location": "Camera vehicle, occupying the ego perspective",
+      "relative_size": "Large within frame (implied by POV framing)",
+      "orientation": "Facing forward down the highway",
+      "pose": "Cruising steadily in its lane",
+      "action": "Driving forward at normal cruising speed, maintaining velocity as it passes the billboard",
+      "state_changes": "No significant change; continues at constant speed without slowing or stopping",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Sparse ambient highway traffic, a few passenger cars and a distant truck ahead and in adjacent lanes",
+      "appearance_details": "Assorted sedans and an SUV in muted colors, a distant box truck in the right lanes, all moving in the same direction",
+      "relationship": "Background traffic sharing the highway with the ego vehicle",
+      "location": "Scattered across mid and far distance ahead, spanning multiple lanes",
+      "relative_size": "Small within frame",
+      "orientation": "Facing away from camera, traveling in the same forward direction",
+      "pose": "Driving in their lanes",
+      "action": "Cruising forward, maintaining normal highway flow",
+      "state_changes": "Gradually recede and shift position as the ego vehicle advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide, open multi-lane highway under a clear blue midday sky. Multiple asphalt lanes stretch forward with painted white lane markings and a broad right shoulder. Beyond the right shoulder, low grassy embankments, guardrails, and scattered vegetation line the road, with a tall digital video billboard rising above the treeline on a steel monopole. The horizon is clear, with distant overpasses and light traffic. The road surface is dry and light gray, reflecting the bright overhead sun.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "Top-lit from the high overhead sun",
+    "shadows": "Short, hard shadows directly beneath vehicles, the billboard pole, and roadside objects",
+    "illumination_effect": "High-contrast, crisp daylight with strong color saturation; the LED billboard remains visibly bright against the sunlit sky"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam composition with the highway vanishing point centered slightly left, the billboard positioned in the upper-right third; leading lines of lane markings draw the eye down the road",
+    "color_scheme": "Dominant blues of the sky, gray asphalt, green roadside vegetation, with a vivid red accent from the flashed stop sign on the billboard",
+    "mood_atmosphere": "Calm, routine, matter-of-fact driving; brief visual anomaly without alarm",
+    "patterns": "Repeating dashed white lane markings and evenly spaced roadside guardrail posts"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving ego vehicle, smooth and steady; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's-eye viewpoint through the windshield",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the highway ahead and the roadside billboard",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of a dashcam"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario demonstrating a vehicle correctly ignoring a transient misleading traffic-sign image displayed on a roadside advertising billboard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward on the clear multi-lane highway; the digital billboard appears ahead on the right displaying an ordinary advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "As the vehicle approaches, the billboard briefly flashes a full-screen red stop sign for a fraction of a second, then reverts to the advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle ignores the transient frame and continues at its normal cruising speed, passing the billboard on the right without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase sans-serif letters on a full-screen red octagon, briefly rendered on the LED billboard",
+      "spatial_temporal": "Upper-right of frame on the billboard screen, visible only for a fraction of a second around 0:02-0:03",
+      "context": "A misleading transient image resembling a stop sign displayed as part of billboard content, not an actual traffic control device"
+    },
+    {
+      "text": "SALE NOW ON",
+      "category": "physical_in_scene",
+      "appearance": "Bold colorful advertising typography on the LED billboard",
+      "spatial_temporal": "Upper-right of frame on the billboard before and after the stop-sign flash",
+      "context": "Ordinary commercial roadside advertisement content on the digital billboard"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle drives steadily down the open highway with the digital billboard visible ahead on the right showing an advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The billboard grows larger in frame as the vehicle approaches; traffic ahead remains sparse and clear.",
+      "camera": "Smooth forward tracking from the ego vehicle at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The billboard momentarily flashes a full-screen red stop sign then instantly returns to the advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Brief red stop-sign flash appears and disappears within a fraction of a second.",
+      "camera": "Continues smooth forward motion without reaction; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains its cruising speed and passes the billboard on the right, the road ahead remaining clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The billboard recedes to the right and out of frame; no change in vehicle speed.",
+      "camera": "Steady forward tracking, billboard sliding past on the right; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from inside a car cruising down a clear, sunlit multi-lane highway, with a tall digital billboard on a monopole visible ahead on the right showing a normal advertisement. Through 0:01 to 0:02 the vehicle continues steadily, the billboard enlarging as it approaches, sparse traffic ahead. Around 0:02-0:03 the billboard screen briefly flashes a full-screen red stop sign for just a fraction of a second before snapping back to its advertisement. From 0:03 the ego vehicle shows no reaction, holding its normal cruising speed and driving straight past the billboard, which slides off to the right. By 0:05 the highway ahead remains clear and the vehicle continues onward without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low ambient road noise: tire hum on asphalt and steady wind rush against the windshield, consistent with constant highway speed. Faint engine drone and occasional distant traffic. No music, no speech, and no braking or deceleration sounds; the audio remains uniform throughout, reinforcing that the vehicle never slows.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

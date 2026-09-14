@@ -1,0 +1,133 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed truck driving in the same lane directly ahead of the ego vehicle, carrying a load of deactivated traffic signal heads strapped upright as cargo",
+      "appearance_details": "White cab with a long flatbed trailer; the cargo consists of multiple traffic signal housings in dark grey and black, standing upright and secured with orange ratchet straps; red, amber, and green lenses are visible on each signal head but all lamps are dark and unlit",
+      "relationship": "The vehicle the ego car is following at a safe distance; its cargo is recognized as inert freight, not active traffic signals",
+      "location": "center of frame, mid-distance ahead in the same lane",
+      "relative_size": "Medium within frame",
+      "orientation": "rear facing the camera, moving away in the same direction of travel",
+      "pose": "traveling straight along the highway lane",
+      "action": "driving forward at normal cruising speed while carrying strapped-down signal heads",
+      "state_changes": "No significant change; the truck maintains steady speed and lane position; signal lenses remain dark throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Deactivated traffic signal heads loaded as cargo on the flatbed truck",
+      "appearance_details": "Standard three-lens vertical traffic signals in dark grey and black housings, mounted upright and strapped together; red, amber, and green lenses distinctly visible but every lamp is dark and none illuminate",
+      "relationship": "Cargo strapped onto the flatbed truck ahead; misleading in appearance but functionally inert",
+      "location": "center of frame on the truck bed, mid-distance ahead",
+      "relative_size": "Small within frame",
+      "orientation": "facing rearward toward the ego vehicle",
+      "pose": "standing upright, secured with straps",
+      "action": "being transported as freight, remaining completely dark",
+      "state_changes": "No significant change; lenses never light up at any point.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Ambient highway traffic in adjacent lanes",
+      "appearance_details": "A scattering of passenger cars and an occasional light commercial vehicle in various colors, moving smoothly on the divided highway",
+      "relationship": "Surrounding traffic flowing normally alongside the ego vehicle and truck",
+      "location": "left and right adjacent lanes, background",
+      "relative_size": "Small within frame",
+      "orientation": "traveling in the same direction as the ego vehicle",
+      "pose": "cruising in their lanes",
+      "action": "flowing steadily without congestion",
+      "state_changes": "No significant change; traffic remains free-flowing.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane divided highway under clear daytime skies. A central median or barrier separates opposing directions of travel. The asphalt is dry and light grey with painted white lane markings. Roadside features include grassy shoulders, sparse trees, and distant overhead gantries. The horizon is bright and clear with the sun positioned behind the ego vehicle, casting even, glare-free light on the road ahead. Traffic flows freely with plenty of open pavement between vehicles.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Back-lit from behind the ego vehicle, so the road and truck ahead are evenly front-illuminated",
+    "shadows": "Vehicle shadows fall forward and slightly to the side onto the pavement ahead; crisp, well-defined shadows",
+    "illumination_effect": "Clean, high-visibility lighting with vivid colors, no glare into the camera, and clear detail on the truck and its cargo"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the highway lane with the flatbed truck framed dead ahead; converging lane lines lead the eye toward the horizon",
+    "color_scheme": "Grey asphalt, white lane markings, blue sky, green roadside vegetation, with accents of red, amber, and green from the dark signal lenses and orange straps",
+    "mood_atmosphere": "Calm, routine, orderly highway driving",
+    "patterns": "Repeating dashed lane markings and the rhythmic verticals of the strapped signal heads"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot matching the ego vehicle's motion; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's perspective",
+    "camera_angle": "Eye-level from inside the vehicle cabin",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the flatbed truck and its cargo ahead, with the road and surroundings also clear",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic automotive dashcam / autonomous-driving documentary style",
+  "context": "Autonomous driving perception scenario demonstrating correct recognition of inert traffic-signal cargo versus live signals",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises steadily behind the flatbed truck, keeping a safe following distance; dark signal-head cargo is visible on the truck bed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Adjacent traffic flows normally; the road ahead remains clear and the signal lenses stay completely dark. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues at its normal cruising speed without slowing or stopping, correctly treating the signals as cargo. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle follows the flatbed truck at a safe distance on the clear, sunlit divided highway; the strapped-upright traffic signal heads are visible on the truck bed with all lenses dark. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steady following distance established; truck and cargo remain clearly visible; no lamp ever illuminates.",
+      "camera": "Forward tracking, matching the ego vehicle's speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains its normal cruising speed, recognizing the signal heads as cargo and neither slowing nor stopping, while surrounding traffic continues to flow smoothly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Confirmed steady cruising behavior with no braking; consistent gap to the truck; signals remain dark throughout.",
+      "camera": "Continued forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle is cruising on a bright, clear divided highway with the sun behind it, following a white flatbed truck in the same lane. On the truck bed sit several traffic signal heads strapped upright as cargo, their red, amber, and green lenses visible but completely dark. Through 0:01 and 0:02 the ego vehicle keeps a steady, safe following distance while passenger cars flow freely in adjacent lanes and the road ahead stays open. From 0:03 onward the ego vehicle maintains its normal cruising speed, correctly interpreting the signal heads as inert freight rather than active traffic controls, and does not slow or stop. Through 0:05 the drive continues smoothly and steadily, with no signal lamp ever lighting up. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous ambient road noise: steady tire-on-asphalt hum, faint wind rushing past the vehicle, and the low drone of highway traffic. Occasional muffled passing-vehicle sounds from adjacent lanes. No speech, music, or alert chimes; no braking or deceleration sounds.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

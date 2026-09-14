@@ -1,0 +1,158 @@
+{
+  "subjects": [
+    {
+      "description": "A programmable LED advertising sign mounted at camera height outside a storefront on the right side of the street, displaying cycling animated advertisements on a rectangular matrix of colored LEDs.",
+      "appearance_details": "Black rectangular bezel housing a bright dot-matrix LED panel; visible pixel grid, high luminance overpowering ambient daylight, mounted on a short pole or window ledge near the shop entrance.",
+      "relationship": "It is the visual trigger the ego vehicle misinterprets as a real stop sign; a shop display, not a traffic device.",
+      "location": "right foreground, at the edge of the store frontage",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the roadway, angled slightly toward the approaching camera",
+      "pose": "Static mounted display",
+      "action": "Cycling through advertisement graphics and briefly flashing a bright red octagon shape",
+      "state_changes": "Content animates from a text/product ad to a bright red octagon flash, then continues cycling to another advertisement.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose hood is faintly visible at the bottom edge of the frame, traveling down a commercial street.",
+      "appearance_details": "Dashboard-camera ego perspective; subtle reflection of the hood, no other vehicle body visible; smooth suspension motion conveying forward travel then deceleration.",
+      "relationship": "The primary actor whose behavior responds erroneously to the LED sign's red octagon.",
+      "location": "center, implied by ego perspective",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the lane",
+      "pose": "Moving forward along the roadway",
+      "action": "Driving forward, then braking and coming to a full stop outside the store",
+      "state_changes": "Transitions from steady forward motion to gradual deceleration to a complete, sustained stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A commercial urban street lined with small shops and storefronts under clear midday sky. On the right sits a retail store with large display windows and an entrance; a programmable LED advertising sign is positioned outside it near the curb. The asphalt lane runs straight ahead with painted lane markings, parked cars along the curbside, sidewalk pedestrian zones, storefront awnings, and signage typical of a shopping district. There is no intersection, crosswalk, or actual traffic stop sign ahead.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper front-right, producing consistent directional shadows",
+    "shadows": "Crisp, consistent shadows cast to the left of buildings, poles, and parked cars; short shadows indicating near-midday sun",
+    "illumination_effect": "Even, high-contrast daytime illumination that makes the LED sign's red octagon flash appear especially vivid against the natural light"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing ego dashcam framing with the road centered, storefronts and the LED sign occupying the right third, vanishing perspective down the lane",
+    "color_scheme": "Neutral grays of asphalt, warm storefront tones, blue sky, accented by the saturated red of the octagon flash",
+    "mood_atmosphere": "Ordinary daytime driving, subtly tense at the erroneous stop",
+    "patterns": "Repeating storefronts, lane markings, and the LED pixel grid"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the LED sign on the right",
+    "lens_focal_length": "Wide-angle (approximately 24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception test scenario illustrating a false stop-sign trigger from a shop's LED display",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego car travels steadily forward down the commercial street; the LED sign on the right cycles through an ordinary advertisement."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "The LED sign briefly flashes a bright red octagon shape as part of its animation."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SALE 50% OFF",
+      "category": "scene_sign",
+      "appearance": "Bright pixelated LED dot-matrix lettering, likely yellow and white against a dark panel",
+      "spatial_temporal": "On the LED sign at the right foreground, visible from 0:00 before the octagon flash",
+      "context": "Retail advertisement cycling on the store's programmable display"
+    },
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White pixelated letters overlaid on a bright red octagon flashed by the LED matrix",
+      "spatial_temporal": "On the LED sign at the right, briefly visible around 0:02-0:03",
+      "context": "Part of the sign's animation that the vehicle misreads as a real stop sign"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward at a steady pace; the LED shop sign displays a normal advertisement.",
+      "key_changes": "Forward motion, sign showing product ad",
+      "camera": "Smooth forward tracking motion"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:04",
+      "description": "The vehicle brakes: The vehicle brakes fully and comes to a complete stop outside the store, remaining stationary for the rest of the clip. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:04-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego car travels steadily forward down the commercial street; the LED sign on the right cycles through an ordinary advertisement. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban street sounds: distant traffic hum, faint pedestrian chatter, and light wind. The ego vehicle's tire and engine noise steadies then fades as it decelerates, followed by the subtle mechanical sound of braking and the quiet of a stationary car idling. No dialogue or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

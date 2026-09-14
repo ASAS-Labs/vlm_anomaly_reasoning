@@ -1,0 +1,145 @@
+{
+  "subjects": [
+    {
+      "description": "A large city transit bus in the adjacent left lane just ahead of the ego vehicle, wrapped in a full-side vinyl advertisement featuring life-size printed photographs of several people standing and waving.",
+      "appearance_details": "Rectangular bus body with tinted windows partially obscured by the wrap; glossy vinyl advertisement panels displaying flat, printed human figures mid-wave; rear brake lights, license plate, and route number visible; slight motion blur from forward travel.",
+      "relationship": "Travels parallel to and just ahead of the ego vehicle; its printed advertisement is misinterpreted by the ego vehicle as real pedestrians.",
+      "location": "Left foreground to mid-frame, ahead in the adjacent lane",
+      "relative_size": "Large within frame",
+      "orientation": "Rear and left side facing the camera, moving away and forward",
+      "pose": "Upright rectangular vehicle traveling forward",
+      "action": "Cruising forward in its lane displaying its advertising wrap",
+      "state_changes": "Continues moving forward as the ego vehicle brakes and stops behind and to the right.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Several life-size printed photographic figures of people standing and waving, reproduced flat on the bus's side advertisement panels.",
+      "appearance_details": "Photorealistic printed depictions of smiling adults in casual clothing, arms raised in a waving gesture; flatness and slight vinyl sheen reveal they are two-dimensional graphics rather than real people.",
+      "relationship": "Part of the bus advertisement wrap; mistaken by the ego vehicle's perception as pedestrians in the road.",
+      "location": "Left mid-frame, on the side panel of the bus",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera, waving outward",
+      "pose": "Standing upright with arms raised waving",
+      "action": "Static printed images appearing to wave",
+      "state_changes": "No significant change; remain flat printed graphics throughout.",
+      "clothing": "Casual everyday attire in bright colors as printed on the advertisement",
+      "expression": "Friendly smiles, printed",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones as printed, smooth flat vinyl texture",
+      "facial_features": "Printed smiling faces with generic photographic features, no real depth",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane city avenue under clear daytime skies. Lane markings divide the road into several travel lanes, with the ego vehicle's own lane clear of obstacles ahead. Urban buildings, storefronts, and street furniture line both sides of the avenue. Traffic signals, road signs, and light poles are visible in the distance. Consistent hard shadows fall across the pavement from the bright overhead sun. The lane directly ahead of the ego vehicle contains no real pedestrians or obstacles.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-to-side lighting with consistent overhead angle",
+    "shadows": "Sharp, well-defined shadows cast consistently onto the pavement from vehicles and poles",
+    "illumination_effect": "Evenly lit scene with high visibility, glossy highlights on the bus wrap and reflective road markings"
+  },
+  "aesthetics": {
+    "composition": "Ego-view dashcam framing centered on the road ahead, with the advertising-wrapped bus occupying the left portion of the frame and the clear lane extending toward the vanishing point at center",
+    "color_scheme": "Neutral grays of asphalt and buildings accented by the vivid printed colors of the bus advertisement and blue sky",
+    "mood_atmosphere": "Ordinary urban commute, sudden tension from abrupt braking",
+    "patterns": "Repeating lane dividers, road markings, and the row of printed figures along the bus panel"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the adjacent bus",
+    "lens_focal_length": "Wide-angle dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception edge case where a printed advertisement of people is misidentified as real pedestrians, triggering hard braking",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the clear multi-lane avenue with the advertising-wrapped bus cruising ahead in the adjacent left lane."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle decelerates rapidly and comes to a complete stop in its lane, remaining fully stationary while the bus continues onward; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "WAVE HELLO",
+      "category": "vehicle_graphic",
+      "appearance": "Bold sans-serif lettering in bright colors on the bus advertisement wrap",
+      "spatial_temporal": "On the left side panel of the bus, visible throughout the video",
+      "context": "Advertising slogan accompanying the printed waving figures"
+    },
+    {
+      "text": "42",
+      "category": "vehicle_graphic",
+      "appearance": "Illuminated route number display in white on dark background",
+      "spatial_temporal": "Rear of the bus, upper section, visible throughout",
+      "context": "Bus route number indicator"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle cruises forward along the clear avenue with the wrapped bus ahead in the left lane.",
+      "key_changes": "Steady forward motion; bus advertisement figures come into clearer view.",
+      "camera": "Smooth forward tracking at cruising speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Ego vehicle reaches a complete stop and remains stationary while the bus moves ahead. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the clear multi-lane avenue with the advertising-wrapped bus cruising ahead in the adjacent left lane. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient city traffic noise with the low hum of the ego vehicle's engine, followed by the sudden squeal and hiss of hard braking around 0:02. After the stop, the sound settles into idling engine noise and distant urban traffic, with the fading rumble of the departing bus.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

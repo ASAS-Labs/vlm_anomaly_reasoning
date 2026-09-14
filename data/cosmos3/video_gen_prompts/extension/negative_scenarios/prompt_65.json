@@ -1,0 +1,140 @@
+{
+  "subjects": [
+    {
+      "description": "A fallen tree limb, thick and gnarled, with rough dark-brown bark and clusters of green leaves still attached, lying diagonally across the right side of the roadway",
+      "appearance_details": "Splintered break point at the base, scattered twigs and torn foliage around it, wet from recent rain with darkened bark",
+      "relationship": "A road hazard directly in the ego vehicle's path, connected to the downed power line it pulled with it",
+      "location": "Center-right of frame, ahead on the road surface",
+      "relative_size": "Medium within frame",
+      "orientation": "Lying diagonally across the lane, angled from the right shoulder toward the center",
+      "pose": "Sprawled horizontally across the pavement",
+      "action": "Lying motionless across the right lane",
+      "state_changes": "Grows larger and nearer as the vehicle approaches.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A thin black power line, pulled down by the fallen limb, drooping low across the full width of the road at roughly hood height",
+      "appearance_details": "A slender dark cable sagging in a shallow catenary curve, glistening faintly with moisture, nearly blending with the overcast gray background",
+      "relationship": "Connected to and pulled down by the fallen tree limb; the primary unperceived hazard directly in the vehicle's path",
+      "location": "Spanning the full width of frame at mid-height, ahead of the vehicle",
+      "relative_size": "Small within frame",
+      "orientation": "Horizontal, stretched across the road perpendicular to travel direction",
+      "pose": "Sagging low in a gentle downward curve",
+      "action": "Hanging motionless across the road at hood height",
+      "state_changes": "Appears thin and hard to see, growing closer and slightly more visible as the vehicle nears, then rushing toward the camera.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior and hood are implied by the first-person driving perspective",
+      "appearance_details": "Front hood edge faintly visible at the bottom of the frame, wet windshield with occasional water beads, dashboard reflections implied",
+      "relationship": "The point-of-view subject whose perception system fails to detect the thin power line",
+      "location": "Camera position; hood at bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road",
+      "pose": "Driving forward in a straight line",
+      "action": "Cruising forward at normal speed without slowing",
+      "state_changes": "Maintains constant speed throughout, no braking or deceleration.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road in the aftermath of a storm. The asphalt is dark and wet, reflecting the muted gray sky, with shallow puddles and scattered debris. Lined by residential lawns, mailboxes, and rows of leafy trees, some bent and shedding branches. A faded double-yellow centerline runs down the road. Overcast skies hang heavy and colorless overhead, and the atmosphere is damp and still with the storm just passed.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "Diffuse, top-down ambient light with no distinct source",
+    "shadows": "Soft, faint, and diffuse; almost no hard shadows on the wet pavement",
+    "illumination_effect": "Flat, even, desaturated illumination that reduces contrast and makes the thin power line hard to distinguish against the gray backdrop"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road, hood edge anchoring the bottom, fallen limb on the right, and the power line spanning horizontally at mid-frame height",
+    "color_scheme": "Muted grays, wet-asphalt charcoal, dark greens of foliage, and brown bark under a colorless sky",
+    "mood_atmosphere": "Tense, ominous, quietly foreboding",
+    "patterns": "Repeating roadside trees and lane markings receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot following the vehicle's motion, steady dashcam-style; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level, low mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead, the fallen limb, and the road surface",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous vehicle perception failure scenario depicting a car failing to detect a low-hanging downed power line",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the wet suburban road; the fallen tree limb and drooping power line become visible ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed toward the hazards without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle drives straight into the thin power line at cruising speed, the line rushing toward and across the windshield. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle travels forward on the wet two-lane suburban road under overcast light, approaching the storm debris ahead. The fallen tree limb on the right side of the lane and the thin black power line drooping across the road come into view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Hazards appear and grow nearer; wet pavement reflects gray sky.",
+      "camera": "Steady forward tracking at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle maintains its speed with no braking, approaching the sagging power line at hood height. The limb looms on the right and the thin line spans the full road width. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Continued constant approach; no deceleration; line remains hard to perceive.",
+      "camera": "Steady forward tracking, hazards enlarging; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives directly into the thin power line at normal cruising speed. The line rushes toward the windshield and passes across it as the car makes contact without any evasive action. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The power line closes rapidly and strikes across the front of the vehicle; the fallen limb passes on the right.",
+      "camera": "Steady forward tracking through the moment of contact; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the dashcam view shows a wet, overcast two-lane suburban road with a faded centerline and puddle-strewn asphalt reflecting the gray sky. By 0:01, a fallen tree limb becomes visible across the right side of the lane, and a thin black power line droops low across the full width of the road at about hood height. From 0:02 to 0:03, the ego vehicle continues at its normal cruising speed with no braking, the limb looming on the right and the barely visible line stretched ahead. From 0:03 to 0:05, the vehicle drives straight into the thin power line, which rushes toward and across the windshield as the car makes contact without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient post-storm soundscape: the steady hum of tires on wet pavement, occasional water spray, faint wind, and dripping foliage. No music. A soft whoosh and a sharp snapping crack as the vehicle strikes the power line near the end.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

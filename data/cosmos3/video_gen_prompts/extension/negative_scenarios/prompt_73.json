@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A massive roadside digital LED billboard mounted on a steel gantry to the right of the highway, displaying a full-screen video advertisement showing the rear of a car with its bright red brake lights fully illuminated, filling the entire screen surface",
+      "appearance_details": "Rectangular high-brightness LED panel with a thin dark bezel, supported by a tall galvanized steel pole; the glowing red brake-light imagery casts a reddish spill onto the surrounding darkness and road surface",
+      "relationship": "The visual source that the ego vehicle's driver-assist misinterprets as a real lead vehicle braking ahead",
+      "location": "right side of frame, elevated above the road",
+      "relative_size": "Large within frame",
+      "orientation": "Facing toward the oncoming traffic and the camera at a slight angle",
+      "pose": "Static, upright structure",
+      "action": "Displaying a looping video of glowing red brake lights",
+      "state_changes": "Grows larger and brighter in frame as the ego vehicle approaches, then holds steady as the vehicle stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car equipped with a driver-assistance camera system, seen only through its own point of view including the faint reflection of its hood and windshield edges",
+      "appearance_details": "Dark dashboard rim and A-pillars faintly visible at frame edges, subtle interior UI glow reflecting on the windshield",
+      "relationship": "The observer/protagonist whose automated system reacts to the billboard imagery",
+      "location": "implied camera position, foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the highway",
+      "pose": "Traveling forward then decelerating to a stop",
+      "action": "Driving on the highway, braking hard, and coming to a complete stationary stop",
+      "state_changes": "Transitions from steady forward motion to hard deceleration to fully stopped and stationary",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane highway at night, with dark asphalt lanes separated by faded white lane markings and a reflective center barrier. The road ahead is completely clear of traffic. Roadside features include tall streetlights spaced along the shoulder casting pools of amber light, sparse guardrails, and dark silhouettes of trees and distant buildings against a deep navy night sky. The huge digital billboard dominates the right roadside, its red glow reflecting off the wet-looking pavement.",
+  "lighting": {
+    "conditions": "Night, low ambient light dominated by artificial sources",
+    "direction": "Front-right from the glowing billboard and overhead from streetlights",
+    "shadows": "Long soft shadows cast by the vehicle headlights and streetlights across the empty lanes; deep pooled shadows between light sources",
+    "illumination_effect": "The billboard's intense red brake-light imagery bathes the right side of the scene in a warm crimson glow, contrasting with the cool blue night and white headlight beams, creating an eerie, misleading depth cue"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing ego perspective with the vanishing point of the highway centered; the bright billboard offset to the right for tension and imbalance",
+    "color_scheme": "Deep blues and blacks of the night, punctuated by intense reds from the billboard, white and amber highway lights",
+    "mood_atmosphere": "Tense, uncanny, cautionary, technologically ominous",
+    "patterns": "Repeating lane markings and evenly spaced streetlights receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the billboard",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic dashcam-style",
+  "context": "Demonstration of a driver-assistance system misinterpreting a billboard's brake-light imagery as a real lead vehicle, triggering an unnecessary hard stop",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03.5",
+      "description": "The system reads the pictured brake lights as a lead vehicle and initiates a hard brake, forward motion rapidly decelerating; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the lane and remains fully stationary while the billboard continues glowing red; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego view moving forward down the empty highway at night, the red-glowing billboard growing larger on the right",
+      "key_changes": "Billboard enlarges and brightens; forward motion steady",
+      "camera": "Smooth forward tracking motion"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and stationary in the lane, billboard still glowing red ahead-right. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient nighttime highway hum of tires and wind, the steady drone of the engine, followed by a sharp anti-lock braking system whir and the squeal of hard braking around 0:02, then relative quiet with idling engine and faint distant traffic as the car sits stopped; a subtle electronic chime from the driver-assistance system signals the automated braking event.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "subjects": [
+    {
+      "description": "An adult crossing guard standing in the roadway wearing a high-visibility bright yellow safety vest over dark clothing, holding a red handheld STOP paddle raised toward the approaching vehicle",
+      "appearance_details": "Reflective silver stripes across the vest, a peaked cap, and a lanyard whistle around the neck; firm authoritative stance",
+      "relationship": "Authority figure controlling traffic to protect the children waiting to cross",
+      "location": "center foreground, standing in the road near the crosswalk",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera directly",
+      "pose": "Standing upright with feet planted, one arm extended raising the STOP paddle overhead-height toward the ego vehicle",
+      "action": "Holding up the red STOP paddle to halt the car",
+      "state_changes": "Remains steady with paddle raised throughout; no significant change.",
+      "clothing": "Bright yellow high-visibility vest with reflective stripes, dark trousers, peaked cap",
+      "expression": "Alert, serious, focused on the oncoming vehicle",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, mature adult complexion",
+      "facial_features": "Neutral firm expression under cap brim, short dark hair, focused eyes",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A small group of school children waiting at the curb to cross the street, carrying backpacks",
+      "appearance_details": "Colorful backpacks, casual school clothing, some holding straps of bags",
+      "relationship": "Pedestrians being protected by the crossing guard, waiting for the signal to cross",
+      "location": "right side, at the curb near the crosswalk",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the road, side profile to camera",
+      "pose": "Standing at the curb, waiting patiently",
+      "action": "Waiting to cross the crosswalk",
+      "state_changes": "Remain waiting at the curb; no significant change.",
+      "clothing": "Casual school attire, backpacks",
+      "expression": "Attentive, calm",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Varied skin tones, youthful complexion",
+      "facial_features": "Young faces, varied hair colors and styles",
+      "number_of_subjects": 3,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet suburban residential street running alongside a school during daytime. Single-family homes with driveways and neatly trimmed lawns line the left side, while the school building with a fence, playground, and signage sits on the right. A marked pedestrian crosswalk with white striping spans the road ahead. Parked cars, street trees casting consistent shadows, and a clear blue sky complete the environment.",
+  "lighting": {
+    "conditions": "Bright clear daytime lighting",
+    "direction": "Sunlight from upper right, front-side lighting the scene",
+    "shadows": "Crisp, consistent shadows cast by the guard, children, trees, and vehicles onto the pavement",
+    "illumination_effect": "Even, well-lit visibility with vivid colors and clear detail, emphasizing the guard's bright vest and red paddle"
+  },
+  "aesthetics": {
+    "composition": "Ego-view centered on the road ahead, crosswalk and crossing guard framed in the middle distance, children at the curb to the right, homes and school flanking the sides leading the eye toward the vanishing point",
+    "color_scheme": "Dominant blues of the sky, greens of lawns and trees, gray asphalt, with vivid pops of yellow vest and red STOP paddle",
+    "mood_atmosphere": "Calm, safe, orderly, cautious",
+    "patterns": "Repeating crosswalk stripes and evenly spaced street trees and houses"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's perspective through the windshield",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the crossing guard, paddle, crosswalk, and road ahead",
+    "lens_focal_length": "Wide-angle, approximating natural driver field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous vehicle perception and safe stopping demonstration at a school crosswalk",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "Ego vehicle travels forward along the residential street approaching the crosswalk, crossing guard visible ahead holding the red STOP paddle"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "Vehicle comes to a complete stop before the crosswalk and remains fully stationary while the guard holds position and children wait at the curb; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase letters on a red octagonal handheld paddle",
+      "spatial_temporal": "Held aloft by the crossing guard in center foreground, visible throughout",
+      "context": "Signals the vehicle to stop for pedestrians"
+    },
+    {
+      "text": "SCHOOL",
+      "category": "scene_sign",
+      "appearance": "Yellow-green fluorescent pentagon sign with black lettering",
+      "spatial_temporal": "Mounted on a pole on the right roadside near the school, visible in mid-distance",
+      "context": "Warns drivers of a school zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle moves forward along the residential street toward the crosswalk, crossing guard and waiting children come into view",
+      "key_changes": "Scene approaches, crosswalk and guard grow larger in frame",
+      "camera": "Forward motion at moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Vehicle reaches a complete stop before the crosswalk and remains fully stationary for at least two seconds while the guard holds the paddle and children wait. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle travels forward along the residential street approaching the crosswalk, crossing guard visible ahead holding the red STOP paddle. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds: gentle wind, distant birdsong, faint children's voices, the soft hum of the vehicle's engine, and the subtle mechanical sound of brakes engaging as the car slows to a smooth, quiet stop.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed tow truck ahead in the ego lane, painted in industrial white and orange with a hydraulic bed and towing rig at the rear, mounted amber beacon lights on the cab roof",
+      "appearance_details": "Rear-mounted winch and tow boom, reflective safety chevrons across the tailgate, license plate frame, mud-splashed lower body and dusty flatbed surface",
+      "relationship": "Lead vehicle directly ahead of the ego car, physically towing the pickup truck behind it",
+      "location": "center frame, mid-ground",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear of the truck facing the camera, driving away from ego",
+      "pose": "Upright and level on the roadway, moving forward in the lane",
+      "action": "Driving forward while pulling the pickup truck backwards",
+      "state_changes": "Advances steadily ahead, its rig dragging the angled pickup along",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A silver-grey pickup truck being towed backwards, angled diagonally across the turn lane so that its tail protrudes into the ego lane",
+      "appearance_details": "Dented rear bumper, hazard-lit tailgate, dust-covered cargo bed, slight body scuffs suggesting it is a disabled or broken-down vehicle",
+      "relationship": "Attached to and dragged by the tow truck, its swinging tail poses a hazard to the ego vehicle",
+      "location": "center-left frame, mid-ground between tow truck and ego",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled diagonally, front toward the tow truck, tail swinging toward the ego lane",
+      "pose": "Skewed across lane lines, not aligned with traffic flow",
+      "action": "Being pulled backwards, its rear end swinging partly into the ego lane",
+      "state_changes": "Tail progressively encroaches deeper into the ego lane as the tow truck advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior and hood edge are implied by the first-person driving perspective",
+      "appearance_details": "Visible dashboard reflection on windshield, portion of hood at bottom of frame, wiper blade rest position",
+      "relationship": "The observing vehicle from which the entire scene is viewed, on a collision-risk trajectory with the pickup's tail",
+      "location": "camera position, foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, aligned with traffic direction",
+      "pose": "Level and moving straight ahead in its lane",
+      "action": "Cruising forward at normal speed without slowing toward the swinging tail",
+      "state_changes": "Maintains constant speed, closing distance on the angled pickup",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane urban arterial road under clear daytime skies. Lane markings and a dedicated turn lane are painted on grey asphalt. Roadside curbs, sidewalks, low commercial buildings, utility poles, and sparse street trees line both sides. Distant traffic and traffic signals are visible ahead, with parked vehicles along the shoulder and consistent hard shadows cast across the pavement.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High and slightly front-side, sun coming from upper right",
+    "shadows": "Crisp, well-defined shadows cast consistently to the left of vehicles and objects",
+    "illumination_effect": "Even, high-contrast illumination with strong visibility, glinting highlights on vehicle bodywork"
+  },
+  "aesthetics": {
+    "composition": "Centered vanishing-point road composition with the tow truck and angled pickup framed in the mid-ground, ego hood anchoring the lower foreground",
+    "color_scheme": "Neutral greys of asphalt, blue sky, white and orange tow truck, silver-grey pickup, muted urban tones",
+    "mood_atmosphere": "Tense, hazard-anticipating, routine-turned-risky",
+    "patterns": "Repeating lane dividers and roadside utility poles receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion following ego vehicle travel; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level, first-person ego view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the tow truck and angled pickup ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary footage",
+  "context": "Autonomous driving hazard scenario depicting misjudged trajectory prediction of an angled towed vehicle",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego car cruises forward on the multi-lane road, approaching the tow truck ahead that is dragging the angled pickup backwards. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The pickup's tail swings further into the ego lane as the tow truck advances; ego maintains speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego continues at cruising speed directly toward the pickup's protruding tail without slowing, closing the gap dangerously. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "TOW",
+      "category": "vehicle_graphic",
+      "appearance": "Bold black lettering on white panel of the tow truck's rear",
+      "spatial_temporal": "Center mid-ground on tow truck tailgate, visible throughout",
+      "context": "Identifies the lead vehicle as a tow truck"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle drives forward at cruising speed toward the tow truck and its towed pickup, whose tail begins swinging into the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to the lead vehicles decreases; pickup tail encroaches into ego lane",
+      "camera": "Forward tracking with ego motion, steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Ego persists at normal speed without slowing, closing on the pickup's swinging tail as it protrudes across the lane line. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Rapidly narrowing gap, escalating collision risk with the angled pickup tail",
+      "camera": "Continued forward tracking, no deceleration cues; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car travels smoothly down a sunlit multi-lane city road, a white-and-orange tow truck ahead dragging a silver-grey pickup backwards, the pickup angled across the turn lane. By 0:02 the tow truck advances and the pickup's tail swings partly into the ego lane, its rear encroaching over the lane line. From 0:03 to 0:05 the ego vehicle continues at its normal cruising speed straight toward the protruding pickup tail without slowing, the gap closing steadily as shadows remain consistent on the pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient engine hum of the ego car, low rolling tire noise on asphalt, faint diesel rumble from the tow truck ahead, occasional distant city traffic sounds; no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

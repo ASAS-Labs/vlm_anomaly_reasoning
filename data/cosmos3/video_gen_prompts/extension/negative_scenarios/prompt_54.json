@@ -1,0 +1,158 @@
+{
+  "subjects": [
+    {
+      "description": "A red fire engine parked partly across the road at an active emergency scene, with its rear angled into the ego vehicle's lane",
+      "appearance_details": "Bright red bodywork with reflective yellow and white chevron markings on the rear, flashing red emergency lights on the roof and rear panel, chrome ladder rails, and coiled hoses visible on side compartments",
+      "relationship": "Blocking the ego vehicle's forward path; part of the emergency scene the firefighter is managing",
+      "location": "Center to left-center foreground, ahead of the ego vehicle",
+      "relative_size": "Large within frame",
+      "orientation": "Angled diagonally, rear-quarter facing the camera",
+      "pose": "Stationary, parked at an angle across the lane",
+      "action": "Parked with emergency lights flashing at the scene",
+      "state_changes": "Remains stationary; flashing lights pulse throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A firefighter in full protective turnout gear standing in the road and gesturing at the ego vehicle to back out of the lane",
+      "appearance_details": "Yellow-tan turnout coat and trousers with reflective silver-yellow stripes, black fire boots, a yellow helmet with face shield raised, and thick gloves; raised arm waving in a clear back-off motion",
+      "relationship": "Directing traffic to clear a path for a second approaching fire engine",
+      "location": "Center foreground, standing in the road ahead of the ego vehicle",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera, torso turned slightly as arm sweeps",
+      "pose": "Standing upright, one arm raised and waving backward, feet planted apart",
+      "action": "Waving the ego vehicle back to open the lane",
+      "state_changes": "Steps forward and continues waving as the ego vehicle brakes and stops.",
+      "clothing": "Yellow-tan firefighter turnout coat and trousers with reflective stripes, yellow helmet, black boots, protective gloves",
+      "expression": "Focused, urgent, mouth set firmly, eyes on the ego vehicle",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium tone, weathered and slightly sweat-sheened",
+      "facial_features": "Short dark hair partly hidden by helmet, defined jawline, light stubble, alert dark eyes",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A second red fire engine approaching the scene from behind the ego vehicle",
+      "appearance_details": "Red body with reflective markings and flashing lights, seen approaching in the rear-view context and about to pass once the lane is cleared",
+      "relationship": "The vehicle for which the firefighter is clearing a path",
+      "location": "Rear/off-frame approaching from behind",
+      "relative_size": "Small within frame",
+      "orientation": "Approaching toward the ego vehicle from the rear",
+      "pose": "Moving forward toward the scene",
+      "action": "Approaching to reach the emergency scene",
+      "state_changes": "Draws nearer as the ego vehicle stops to yield.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow two-lane city street lined with low mixed-use buildings, parked cars along the curbs, sidewalks with occasional pedestrians, street signs, and overhead utility lines. The road surface is asphalt with painted lane markings. The active fire scene occupies the space ahead, with the parked fire engine partly blocking the roadway. Clear daytime sky above rooftops.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from the upper right casting consistent directional shadows",
+    "shadows": "Sharp, consistent shadows from the fire engine, firefighter, and buildings cast onto the road surface",
+    "illumination_effect": "Crisp, high-contrast daytime illumination with the flashing red emergency lights visible against the bright ambient light"
+  },
+  "aesthetics": {
+    "composition": "Ego-view dashcam framing centered on the road ahead, with the parked fire engine and gesturing firefighter dominating the middle of the frame and buildings flanking the sides",
+    "color_scheme": "Muted grey asphalt and building tones punctuated by the vivid red of the fire engines and pulsing red emergency lights, plus yellow-tan turnout gear",
+    "mood_atmosphere": "Urgent, tense, cautionary",
+    "patterns": "Repeating lane markings and rhythmic flashing of the emergency lights"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's forward perspective",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "The fire engine and firefighter ahead in the road",
+    "lens_focal_length": "Wide-angle, mimicking a dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / driver-assistance scenario depicting yielding to emergency vehicles at an active fire scene",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward down the narrow street toward the parked fire engine; the firefighter steps forward and begins waving the vehicle back."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the middle of the lane and remains fully stationary while the firefighter directs traffic and the second engine nears; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FIRE RESCUE",
+      "category": "vehicle_graphic",
+      "appearance": "Bold white block lettering on the red fire engine body",
+      "spatial_temporal": "On the side/rear of the parked fire engine, visible throughout",
+      "context": "Identifies the emergency vehicle as a fire and rescue unit"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward toward the emergency scene as the firefighter steps out and waves it back.",
+      "key_changes": "Firefighter begins gesturing; distance to fire engine decreases.",
+      "camera": "Forward ego motion at moderate speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Ego vehicle is fully stopped in the middle of the lane and remains stationary while the second fire engine approaches and the firefighter directs. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward down the narrow street toward the parked fire engine; the firefighter steps forward and begins waving the vehicle back. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient city traffic hum and the low idle of engines, punctuated by the intermittent electronic wail of fire engine sirens and the sharp shout of the firefighter calling the vehicle back. The squeal and hiss of the ego vehicle's brakes rises as it decelerates, followed by relative quiet as it stops, with the pulsing emergency scene and distant approaching siren continuing in the background.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

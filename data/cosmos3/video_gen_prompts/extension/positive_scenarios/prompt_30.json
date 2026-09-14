@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A concrete highway overpass structure spanning across the roadway ahead, casting a hard-edged black shadow band across the full width of the lane",
+      "appearance_details": "Weathered gray concrete girders and support pillars, a solid horizontal deck crossing perpendicular to the direction of travel, faint rust streaks and expansion joints visible on the underside",
+      "relationship": "The primary obstacle-like feature the ego vehicle approaches and passes under; its shadow is the key visual element to be interpreted",
+      "location": "Center of frame, receding into the middle distance and then overhead",
+      "relative_size": "Medium within frame, growing to large as the vehicle approaches",
+      "orientation": "Perpendicular to the direction of travel, facing the camera front-on",
+      "pose": "Static rigid structure spanning the highway",
+      "action": "Remains still as the ego vehicle drives toward and beneath it",
+      "state_changes": "Grows larger in frame and passes overhead as the camera advances.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The sharply defined black shadow cast by the overpass lying across the pavement like a dark band",
+      "appearance_details": "Crisp straight edges, deep uniform dark tone contrasting sharply against the sunlit gray asphalt, spanning the full width of the visible lanes",
+      "relationship": "Cast by the overpass; the feature the ego vehicle correctly recognizes as a shadow and drives through",
+      "location": "Across the roadway in the mid-ground, moving toward the bottom of frame as vehicle approaches",
+      "relative_size": "Medium within frame, spanning full lane width",
+      "orientation": "Lying flat across the road surface, perpendicular to travel direction",
+      "pose": "Flat band across the pavement",
+      "action": "Stays fixed on the road as the vehicle drives into and through it",
+      "state_changes": "Approaches, fills the lower frame, then the vehicle passes into and out of it.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide open multi-lane highway on a clear sunny day, stretching straight into the distance beneath a bright blue sky with only a few thin high clouds. Flat scrubland and low green vegetation border both shoulders, with occasional guardrails and distant hills on the horizon. A concrete overpass crosses the highway ahead, and the pavement beneath and beyond it is entirely clear of vehicles and obstacles. The sun sits low to one side, raking golden light across the scene.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Side-lit from the low sun on the right, creating long directional shadows",
+    "shadows": "Hard, sharply edged black shadow from the overpass forming a dark band across the full lane width; long thin shadows from guardrail posts stretching across the shoulder",
+    "illumination_effect": "High-contrast sunlit pavement against the deep dark shadow band, warm golden highlights on surfaces facing the sun"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective centered on the vanishing point of the highway, overpass framing the road ahead, shadow band as a strong horizontal graphic element in the lower third",
+    "color_scheme": "Warm sunlit grays and tans of asphalt, deep black shadow, bright blue sky, muted green roadside vegetation",
+    "mood_atmosphere": "Calm, steady, confident forward motion",
+    "patterns": "Repeating lane markings and evenly spaced guardrail posts receding to the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted at driver eye-level, smooth constant advance; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full lane and horizon",
+    "camera_angle": "Eye-level dashboard ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead, the overpass, and the shadow band",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving perception demonstration showing correct recognition of a shadow as a non-obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises steadily along the sunny open highway, approaching the overpass with its dark shadow band visible ahead on the pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant speed as the overpass and its hard-edged shadow grow larger and closer without any deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle drives smoothly through the shadow band and out the other side, maintaining normal cruising speed under and beyond the clear overpass. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels at cruising speed along the clear highway toward the overpass, whose sharp black shadow lies across the full lane width ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Overpass and shadow band grow progressively larger in frame; road remains completely clear.",
+      "camera": "Smooth forward tracking at constant velocity, centered on the road; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes into the shadow band, drives beneath the overpass, and emerges on the sunlit road beyond, never slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Brief transition of the scene into shadow and back to bright sunlight; speed stays constant throughout.",
+      "camera": "Continuous forward tracking maintaining the same steady pace; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego view shows a bright sunny highway stretching ahead, with a concrete overpass in the middle distance casting a sharply edged black shadow across the full width of the clear lane. Over 0:00 to 0:02 the vehicle advances at a steady cruising speed, the overpass and its dark shadow band growing larger. From 0:02 to 0:03 the vehicle continues without any hesitation, correctly treating the dark band as a harmless shadow rather than an obstacle. From 0:03 to 0:05 the vehicle drives into and through the shadow, passes beneath the overpass, and emerges into full sunlight on the equally clear road beyond, maintaining its normal speed the entire time. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car engine and tires rolling on smooth asphalt, a gentle constant wind noise, no sudden braking sounds or alerts, conveying calm uninterrupted highway cruising.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A large tractor-trailer truck traveling in the lane adjacent to the ego vehicle, throwing up a dense curtain of road spray from its wheels",
+      "appearance_details": "Weathered box trailer with wet, glossy surfaces, rear mud flaps, and glowing red tail lights partially obscured by spray; reflective conspicuity tape faintly visible along the rear",
+      "relationship": "The primary cause of the ego vehicle's misperception; its spray is misread as an obstacle",
+      "location": "center-right midground, in the adjacent lane ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "rear-facing toward the camera, moving away in the same direction of travel",
+      "pose": "",
+      "action": "Driving forward while spraying water backward and to the sides",
+      "state_changes": "Continues moving forward and slightly pulls ahead as the ego vehicle brakes and stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A distant passenger vehicle well ahead in the ego lane, small and hazy through the rain",
+      "appearance_details": "Blurred silhouette with faint red tail lights glowing through the downpour and spray",
+      "relationship": "The nearest vehicle in the ego lane, positioned far ahead leaving the ego lane effectively open",
+      "location": "center background, far up the ego lane",
+      "relative_size": "Small within frame",
+      "orientation": "rear-facing, moving away from the camera",
+      "pose": "",
+      "action": "Driving forward and gradually receding into the rain",
+      "state_changes": "Becomes relatively farther as the ego vehicle stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane highway during a heavy downpour under dark, brooding overcast skies. The asphalt is soaked and reflective, with sheets of standing water pooling across the lanes and mirroring the dashed white lane markings. Guardrails and blurred roadside vegetation flank the highway, dissolving into gray haze. Rainwater streaks and beads across the windshield, distorting the view, while dense spray from the adjacent truck fills the right side of the scene with a swirling mist. The overall visibility is poor, with everything muted and softened by rain.",
+  "lighting": {
+    "conditions": "Dark overcast daylight, dim and diffuse with low contrast",
+    "direction": "Flat, ambient top-down light from a heavily clouded sky",
+    "shadows": "Minimal, soft, diffuse shadows due to lack of direct sunlight",
+    "illumination_effect": "A gloomy, desaturated wash of gray-blue light with glossy wet reflections and glowing red tail lights punctuating the murk"
+  },
+  "aesthetics": {
+    "composition": "First-person ego perspective centered on the highway lanes, with the truck and its spray dominating the right foreground and the open ego lane leading to a vanishing point ahead",
+    "color_scheme": "Muted grays, cold blues, and desaturated greens, accented by glowing red tail lights and streaks of white lane markings",
+    "mood_atmosphere": "Tense, disorienting, hazardous, foreboding",
+    "patterns": "Repeating dashed lane markings mirrored in standing water; streaking rain patterns on the windshield"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's viewpoint through the windshield",
+    "camera_angle": "Eye-level, ego driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "The highway lanes ahead and the truck's spray, with rain streaks on the windshield partially in focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception failure scenario where road spray and reflections are misinterpreted as an obstacle, triggering an unnecessary hard emergency stop",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward on the wet highway; the adjacent truck throws dense spray while the open lane leads ahead"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the highway lane and remains fully stationary as rain continues to fall; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego view moving forward on a rain-soaked multi-lane highway; the truck in the adjacent lane throws up a heavy curtain of spray, and lane markings shimmer in standing water while the ego lane ahead is clear",
+      "key_changes": "Forward motion continues; spray density fluctuates and rain streaks the windshield",
+      "camera": "Steady forward dashcam motion at highway speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the highway lane and remains fully stationary, with rain continuing to fall and the truck pulling ahead. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward on the wet highway; the adjacent truck throws dense spray while the open lane leads ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Heavy, persistent rain drumming on the windshield and roof, the swish of tires cutting through standing water, the low hum of the engine, a rising road-spray hiss as the truck passes, followed by the abrupt squeal and shudder of hard braking and then relative quiet with only the steady rainfall and idling engine as the vehicle sits stationary.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

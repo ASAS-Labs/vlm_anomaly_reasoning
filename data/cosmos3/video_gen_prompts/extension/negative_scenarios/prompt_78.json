@@ -1,0 +1,148 @@
+{
+  "subjects": [
+    {
+      "description": "A red and white striped railroad crossing gate arm lowered horizontally across the ego vehicle's lane, mounted on a black metal post with a pair of round red warning lights at the top.",
+      "appearance_details": "Alternating red and white diagonal reflective stripes on the wooden gate arm, a red flashing signal light unit, a white crossbuck sign reading 'RAILROAD CROSSING', and a small bell housing near the top.",
+      "relationship": "The primary obstacle in the ego vehicle's path that it fails to detect and stop for.",
+      "location": "Center-to-left foreground, spanning across the near lane ahead.",
+      "relative_size": "Large within frame",
+      "orientation": "Gate arm oriented roughly perpendicular to the road, angled slightly toward the camera as the vehicle approaches.",
+      "pose": "Fully lowered, horizontal across the lane blocking passage.",
+      "action": "Standing lowered with warning lights flashing red.",
+      "state_changes": "Grows larger and closer as the ego vehicle continues driving toward it; red lights continue flashing on and off.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A long freight train made up of colored boxcars and container wagons approaching along the railroad tracks from the right side of the crossing.",
+      "appearance_details": "Weathered locomotive at the head pulling rust-brown, grey, and faded blue freight cars with graffiti tags and reporting marks; headlight glowing faintly against the overcast light.",
+      "relationship": "Cross-traffic hazard moving perpendicular to the ego vehicle's path, reinforcing the danger of the ignored crossing.",
+      "location": "Right midground, moving from right to center along the tracks.",
+      "relative_size": "Medium within frame",
+      "orientation": "Traveling leftward across the frame, side profile facing the camera.",
+      "pose": "In motion along the rails.",
+      "action": "Rolling steadily toward the crossing from the right.",
+      "state_changes": "Advances closer to the crossing intersection point as the segments progress.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from the driver's first-person point of view, showing part of the dashboard and hood at the bottom of the frame.",
+      "appearance_details": "Dark grey dashboard, faint reflection on the windshield, hood edge visible at the lower frame; no visible occupants as this is an ego-view.",
+      "relationship": "The camera platform; the vehicle whose failure to detect the gate drives the scene.",
+      "location": "Camera position, hood at bottom foreground.",
+      "relative_size": "Small within frame",
+      "orientation": "Facing forward down the road toward the crossing.",
+      "pose": "Driving forward.",
+      "action": "Traveling at steady cruising speed straight toward the lowered gate without slowing.",
+      "state_changes": "Maintains constant speed; no braking or deceleration occurs as the crossing nears.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane asphalt road running straight toward a level railroad crossing beneath a flat, overcast grey sky. The road has faded yellow center lines and gravel shoulders bordered by dry grass, scattered utility poles, and bare shrubs. Railroad tracks cross the road perpendicularly, with crossing gates, crossbuck signs, and signal masts flanking both sides. On the right, tracks curve off into the distance where a freight train approaches. Distant tree lines and low hills fade into a hazy horizon under the diffuse daylight.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "Diffuse, even overhead light from a fully clouded sky",
+    "shadows": "Soft, faint, low-contrast shadows beneath the gate, poles, and train",
+    "illumination_effect": "Flat, muted illumination that lowers overall contrast and mutes colors while making the flashing red warning lights stand out vividly against the grey scene"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road with the crossing gate and tracks forming a strong horizontal barrier across the middle of the frame; train enters from the right, hood anchors the bottom edge",
+    "color_scheme": "Muted greys and desaturated greens dominate, punctuated by the saturated red and white of the crossing gate and the flashing red signal lights",
+    "mood_atmosphere": "Tense, ominous, impending danger",
+    "patterns": "Repeating red-and-white diagonal stripes on the gate arm and the rhythmic spacing of freight cars and utility poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dolly (ego vehicle motion) advancing steadily toward the crossing; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road, crossing gate, flashing lights, and approaching train",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam style",
+  "context": "Autonomous driving perception failure scenario depicting a vehicle ignoring an active railroad crossing gate",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the two-lane road at cruising speed; the lowered crossing gate with flashing red lights and the freight train on the right come into view ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues without any deceleration, the gate and flashing lights growing larger while the freight train advances closer from the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle maintains its normal speed and drives directly toward the lowered gate and active tracks without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "RAILROAD CROSSING",
+      "category": "scene_sign",
+      "appearance": "White crossbuck sign with black uppercase lettering, reflective surface",
+      "spatial_temporal": "Mounted on the signal mast near the crossing, visible throughout as the vehicle approaches",
+      "context": "Standard warning sign indicating the railroad grade crossing ahead"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view establishes the road ahead; the lowered red-and-white crossing gate, flashing red lights, and the approaching freight train on the right become clearly visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The crossing hazard comes into full view; red lights are seen flashing",
+      "camera": "Steady forward tracking motion at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle continues forward at unchanged speed as the gate looms larger and the train draws nearer to the crossing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Gate and train grow closer; no braking behavior begins",
+      "camera": "Continued steady forward tracking; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle drives directly toward the lowered gate and active tracks at full cruising speed, failing to detect or stop for the crossing while the freight train nears the intersection. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle maintains constant speed toward the barrier; imminent collision danger with no deceleration",
+      "camera": "Steady forward tracking, gate filling more of the frame; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the driver's-eye view shows a straight two-lane road under a flat overcast sky, with a lowered red-and-white railroad crossing gate ahead and its red warning lights flashing; a freight train is visible approaching from the right along the tracks. By 0:01 the vehicle continues forward at cruising speed and the crossing hazard grows more prominent in the frame. At 0:02 the car shows no sign of slowing as the gate looms closer and the train advances toward the crossing. From 0:03 through 0:05 the ego vehicle maintains its normal speed and drives directly toward the lowered gate and active tracks without braking, the flashing red lights and freight train underscoring the ignored danger. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car engine and tire rumble on asphalt, layered with the rhythmic clanging bell of the railroad crossing signal and the deepening rumble and horn of the approaching freight train, all under a flat ambient outdoor wind; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

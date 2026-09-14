@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A weathered wooden telephone pole standing vertically flush with the road surface at the right edge of the alley",
+      "appearance_details": "Grayish-brown creosote-treated timber with visible grain, metal staples, and a few sagging wires attached near the top; a faint painted band near its base",
+      "relationship": "The primary obstacle the ego vehicle must avoid; positioned directly along the painted yellow edge line",
+      "location": "right side of frame, ahead of the ego vehicle's right corner",
+      "relative_size": "Medium within frame",
+      "orientation": "Upright, facing camera as a vertical column",
+      "pose": "Static vertical stance flush with the asphalt",
+      "action": "Standing stationary at the road edge",
+      "state_changes": "Appears to shift toward the right of frame as the ego vehicle steers left and slows; grows slightly larger as the car approaches, then remains clear on the right.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The painted yellow edge line marking the right boundary of the alley road",
+      "appearance_details": "A slightly faded solid yellow stripe painted directly on the asphalt, no curb, with minor chipping and dust",
+      "relationship": "Defines the drivable edge that the ego vehicle drifts toward and the pole sits flush against",
+      "location": "running along the right side of the road from foreground to vanishing point",
+      "relative_size": "Small within frame",
+      "orientation": "Receding diagonally into the distance from lower right toward center",
+      "pose": "Flat linear marking on ground",
+      "action": "Delineating the alley edge",
+      "state_changes": "Remains fixed as a reference while the vehicle's path shifts left relative to it.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow residential alley paved with light gray asphalt, flanked by low walls, fences, and the sides of modest buildings. There are no raised curbs, only a solid yellow painted edge line marking the road boundary. Utility poles and overhead wires punctuate the route, with one wooden telephone pole standing flush with the pavement right at the right edge line ahead. Scattered debris, patches of moss along wall bases, and dappled greenery from small yards add texture. The scene is bathed in clear, bright daytime light casting consistent, sharp shadows across the asphalt.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-left, casting shadows toward the lower right",
+    "shadows": "Sharp, well-defined, consistent shadows of the pole and walls stretching across the road surface",
+    "illumination_effect": "Even, high-contrast illumination with crisp detail on the asphalt and pole, natural warm daylight tone"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective forward view with the alley receding to a central vanishing point; the yellow edge line and telephone pole anchor the right third of the frame",
+    "color_scheme": "Muted grays of asphalt and walls, accented by the yellow edge line, brown wooden pole, and patches of green foliage under a clear blue sky",
+    "mood_atmosphere": "Calm, cautious, everyday, quietly attentive",
+    "patterns": "Repeating utility poles and overhead wires receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward tracking from ego vehicle, gently veering left then easing to a stop as it pulls over; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the alley, with emphasis on the telephone pole and yellow edge line",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam style",
+  "context": "Autonomous driving perception demonstration of obstacle recognition and evasive steering while pulling over",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels slowly forward along the narrow alley, drifting gently toward the right yellow edge line as if preparing to pull over. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The wooden telephone pole flush at the right edge line comes into clear view directly ahead of the vehicle's right side; the ego vehicle recognizes it and begins to slow. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle steers left to keep well clear of the pole, then continues its slow pull-over maneuver while maintaining a safe distance from the obstacle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Slow forward progress along the alley with the vehicle drifting toward the right yellow edge line. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Right edge line and distant pole approach; vehicle path angles rightward.",
+      "camera": "Forward tracking, slight rightward drift, steady low speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The telephone pole flush at the edge line is clearly identified ahead of the right side; braking begins. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Pole grows larger in the right of frame; motion decelerates.",
+      "camera": "Forward motion slowing, pole centered in right third; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle steers left to clear the pole and completes a cautious pull-over at reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Pole shifts toward the right edge of frame as the path corrects left; vehicle eases to a slow controlled stop.",
+      "camera": "Gentle leftward yaw then stabilization, near-stationary at end; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle rolls slowly forward down a narrow, curb-less alley in bright daylight, gently drifting toward the solid yellow edge line on the right as if pulling over. By 0:02 a weathered wooden telephone pole standing flush with the pavement at the right edge line becomes clearly visible directly ahead of the vehicle's right side; the vehicle recognizes it and begins to brake. From 0:03 onward the vehicle steers left to keep well clear of the pole, and over the final two seconds it maintains a safe gap while easing into a cautious, slow pull-over, the pole sliding safely toward the right edge of the frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor daytime sounds: the low hum of the car's engine at slow speed, faint tire rolling on asphalt, distant birdsong, and a soft breeze. A subtle mechanical creak accompanies the steering correction; no music or speech, quiet and naturalistic.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

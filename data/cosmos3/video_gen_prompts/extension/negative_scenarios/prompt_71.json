@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A large bright orange decorative arrow painted on the asphalt pavement, curving sharply to point toward the side street on the right",
+      "appearance_details": "Vivid saturated orange paint with slightly glossy fresh finish, bold thick body with a large triangular arrowhead, clean edges consistent with a professionally painted film-shoot marking",
+      "relationship": "Central navigational cue that the ego vehicle interprets as a mandatory turn direction",
+      "location": "center foreground on the road surface, sweeping toward the right",
+      "relative_size": "Large within frame",
+      "orientation": "flat on the ground, arrowhead angled toward the right side street",
+      "pose": "static painted marking",
+      "action": "indicating a rightward turn toward the side street",
+      "state_changes": "Grows larger and shifts toward the lower right as the vehicle approaches and steers right.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Metal film-crew barriers lining the entrance of the side street on the right",
+      "appearance_details": "Interlocking gray steel crowd-control barriers with horizontal bars and vertical supports, some featuring hanging notice placards",
+      "relationship": "Delineate the film shoot area along the side street the arrow points toward",
+      "location": "right midground along the side street",
+      "relative_size": "Medium within frame",
+      "orientation": "lined up parallel to the side street edge, angled away from camera",
+      "pose": "standing upright in a row",
+      "action": "cordoning off the side street",
+      "state_changes": "Become more visible and closer as the vehicle turns right.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A clear daytime urban city street seen from the driver's perspective (ego view). The main asphalt road runs straight ahead with regular white lane markings and painted crosswalk lines. Low to mid-rise city buildings, storefronts, and street furniture flank both sides. On the right, a side street branches off, its entrance lined with gray metal film-crew barriers, indicating an active film-shoot zone. A large bright orange decorative arrow is painted on the pavement, curving to point toward the side street. The sky is bright and clear with consistent midday sunlight casting sharp, steady shadows on the road.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High and slightly front-right, top-lit",
+    "shadows": "Sharp, well-defined, and consistent shadows cast onto the road surface and along buildings",
+    "illumination_effect": "Crisp, high-contrast daylight that makes the orange arrow pop vividly against the gray asphalt and enhances color saturation"
+  },
+  "aesthetics": {
+    "composition": "First-person driver POV with the road stretching to a central vanishing point; the bright orange arrow dominates the foreground and leads the eye toward the right side street framed by barriers",
+    "color_scheme": "Gray asphalt and buildings dominated by a striking vivid orange accent, white lane markings, blue sky",
+    "mood_atmosphere": "Ordinary yet slightly surreal, decision-making moment, calm urban daylight",
+    "patterns": "Regular white lane markings and repeating barrier segments"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion that decelerates and swings to the right; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot ego POV",
+    "camera_angle": "Eye-level from driver's seat",
+    "depth_of_field": "Deep",
+    "focus": "The painted orange arrow and the road ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / driver perspective scenario testing response to a misleading painted road marking",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the main city street at a steady pace, approaching the large orange arrow painted on the pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle begins to slow down as it interprets the arrow as a mandatory rightward turn. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle steers to the right toward the barrier-lined side street, the arrow sweeping into the lower right of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FILM CREW",
+      "category": "scene_sign",
+      "appearance": "Black bold sans-serif text on a small white placard hung on a barrier",
+      "spatial_temporal": "On the right barriers, visible from mid to late video as the vehicle turns right",
+      "context": "Indicates the side street is a restricted film-shoot area"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle travels forward on the straight main road toward the large orange arrow, with white lane markings and clear daylight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The orange arrow grows larger in the frame as the vehicle approaches.",
+      "camera": "Steady forward tracking dashcam motion at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle begins to decelerate, treating the painted arrow as a mandatory turn cue toward the right side street. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Perceptible slowing of forward motion; slight rightward drift begins.",
+      "camera": "Forward motion slows; camera starts a subtle right rotation; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle steers right toward the barrier-lined side street, following the orange arrow, which sweeps to the lower right of frame while the film-crew barriers come into fuller view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "View rotates rightward, side street and barriers dominate the frame, main road exits to the left.",
+      "camera": "Smooth rightward panning motion of the dashcam as the vehicle turns; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the driver-view camera moves steadily forward along a bright, clear city street with regular white lane markings, a large vivid orange arrow painted on the pavement ahead curving toward a side street on the right. By 0:01 the arrow grows larger and more prominent as the vehicle nears it, with sharp midday shadows on the road. At 0:02 the vehicle begins to slow, interpreting the arrow as a mandatory turn signal. From 0:03 the vehicle steers to the right, the orange arrow sweeping into the lower-right of frame as the barrier-lined side street with 'FILM CREW' placards comes into view. Through 0:05 the vehicle continues turning right toward the side street while the main straight road drifts out of frame to the left. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban daytime sounds: steady low hum of the ego vehicle's engine, faint tire rolling on asphalt, distant traffic and city murmur. As the vehicle slows near 0:02, a subtle deceleration in engine tone and a soft mechanical whir of steering, followed by the gentle sound of tires tracking through the turn. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

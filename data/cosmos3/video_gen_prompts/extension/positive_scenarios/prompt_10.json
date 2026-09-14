@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "A life-size flat cardboard cutout of a smiling person dressed in a business suit, printed in full color and mounted on a rigid stand on the sidewalk outside a shop",
+      "appearance_details": "Visibly two-dimensional and thin when viewed from an angle, with a fold-out triangular support prop behind it; slight glare on the glossy printed surface catches the daylight",
+      "relationship": "Roadside advertising display belonging to the shop; a static obstacle-like object the ego vehicle must recognize as non-threatening",
+      "location": "Right side of frame, on the sidewalk beside a shopfront",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing toward the street and slightly toward the camera",
+      "pose": "Upright standing posture of the depicted figure, one hand raised in a welcoming gesture, printed flat",
+      "action": "Standing motionless on its stand on the sidewalk",
+      "state_changes": "No significant change. Remains entirely on the sidewalk and never enters the road.",
+      "clothing": "Printed dark navy business suit, white dress shirt, red necktie",
+      "expression": "Broad friendly smile with visible teeth",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car traveling along a commercial street, seen from its own forward-facing dashcam perspective",
+      "appearance_details": "Only the leading edge of the hood may be faintly visible at the bottom of frame; interior and windshield frame implied by the dashcam viewpoint",
+      "relationship": "The observer vehicle whose point of view defines the ego perspective; passes the cardboard cutout without altering speed",
+      "location": "Camera/ego position, center of frame looking forward down the road",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the lane, aligned with direction of travel",
+      "pose": "N/A",
+      "action": "Driving forward at a steady cruising speed along the clear lane",
+      "state_changes": "Maintains constant speed throughout; no slowing, braking, or stopping.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy commercial street lined with small shops and storefronts on both sides under a clear blue daytime sky. The right side features a retail shopfront with awnings, glass windows, and the cardboard cutout standing on its sidewalk. Parked cars line the curb, streetlights and utility poles rise along the edges, and pedestrians and signage populate the sidewalks. The asphalt road ahead is clear with painted lane markings, and buildings recede toward a distant vanishing point.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sun high and slightly behind-right, front-side lit scene",
+    "shadows": "Consistent, crisp, short shadows cast by the cutout, poles, and parked cars onto the sidewalk and road",
+    "illumination_effect": "Even, high-visibility illumination with natural warm sunlight, good contrast, and clear separation of objects"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing centered road composition with strong linear perspective; the lane leads the eye toward the vanishing point while the cardboard cutout anchors the right foreground",
+    "color_scheme": "Warm asphalt greys, bright blue sky, colorful shop signage, and the navy-and-red tones of the printed cutout",
+    "mood_atmosphere": "Calm, ordinary, routine urban driving",
+    "patterns": "Repeating storefronts, streetlight poles, and lane markings receding into distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot, smooth ego-vehicle motion following the road; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's forward viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway and the cardboard cutout as the vehicle approaches and passes it",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception scenario demonstrating correct recognition of a flat, static roadside cutout as a non-obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward at cruising speed down a clear commercial street; the cardboard cutout becomes visible ahead on the right sidewalk. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues approaching the shop; the flat, thin cutout is clearly recognized as motionless and on the sidewalk. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle passes the shop and the cardboard cutout without slowing or stopping, maintaining normal cruising speed as the cutout slides past on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SALE",
+      "category": "scene_sign",
+      "appearance": "Bold red uppercase lettering on a white shop banner",
+      "spatial_temporal": "Above the shopfront on the right side, visible from 0:01 onward as the vehicle approaches",
+      "context": "Advertising promotion displayed by the retail shop"
+    },
+    {
+      "text": "WELCOME",
+      "category": "physical_in_scene",
+      "appearance": "Printed white text on the base of the cardboard cutout, small sans-serif",
+      "spatial_temporal": "On the lower portion of the cutout on the right sidewalk, visible during the pass at 0:03-0:05",
+      "context": "Promotional greeting printed on the advertising cutout"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises forward along the clear commercial street; the cardboard cutout appears ahead on the right sidewalk. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Cutout enters and grows in frame as distance closes",
+      "camera": "Smooth forward tracking with the vehicle; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Continued steady approach toward the shop; the flat cutout is clearly seen as thin and static on the sidewalk. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Perspective shift reveals the cutout's two-dimensional profile",
+      "camera": "Continued forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle passes the shop and the cutout at normal cruising speed without slowing or stopping, the cutout sweeping past on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Cutout moves rightward and exits frame; road continues clear ahead",
+      "camera": "Steady forward tracking, no deceleration in motion; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the ego vehicle cruising down a clear commercial street under bright daylight with consistent shadows, a shop and a cardboard cutout appearing ahead on the right sidewalk. By 0:01 the cutout of a smiling suited figure grows larger; the lane ahead remains empty. At 0:02 the vehicle maintains steady speed and the flat, thin, motionless nature of the cutout is evident. From 0:03 to 0:05 the ego vehicle passes the shop at its normal cruising speed without slowing or stopping, and the cardboard cutout, remaining entirely on the sidewalk, slides past on the right and out of frame while the road ahead stays clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of the ego vehicle's tires on asphalt and a low continuous engine hum, with faint distant city sounds and occasional passing traffic; no dialogue, music, or braking sounds, consistent with uninterrupted cruising.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

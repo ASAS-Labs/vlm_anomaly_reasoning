@@ -22,10 +22,15 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from regen_fix import BRAKE_RE, _parse_range, accelerate_reinforce, feasible_timing, maintain_reinforce  # noqa: E402
+from regen_fix import BRAKE_RE, _parse_range, _t, accelerate_reinforce, feasible_timing, maintain_reinforce  # noqa: E402
 
 EXT = HERE / "video_gen_prompts" / "extension"
 STATIONARY_RE = re.compile(r"stationary|standstill|remains stopped|comes to a (complete|full) stop|fully stopped", re.I)
+NEGATED_BRAKE_RE = re.compile(r"\b(without|neither|no|never|not|nor)\s+(\w+\s+){0,2}?(slow\w*|brak\w*|decelerat\w*)"
+                              r"(\s+(or|nor)\s+\w+)?", re.I)
+EGO_BRAKE_RE = re.compile(r"\b(brakes|braking|brake hard|decelerat\w*|slows? down|slowing down|"
+                          r"comes? to a (complete |full )?stop)\b", re.I)
+MIN_HOLD = 1.5  # feasible_timing leaves >= 1.5 s of stationary hold (release recipe)
 
 
 def lint(cls: str, p: dict) -> list[str]:
@@ -41,20 +46,67 @@ def lint(cls: str, p: dict) -> list[str]:
             continue
         try:
             a, b = _parse_range(beats[-1][tkey])
-            if b - a < 2.0 - 1e-6:
-                out.append(f"last {key[:-1]} spans {b - a:.1f} s (< 2 s)")
+            if b - a < MIN_HOLD - 1e-6:
+                out.append(f"last {key[:-1]} spans {b - a:.1f} s (< {MIN_HOLD} s)")
             if abs(b - 5.0) > 1e-6:
                 out.append(f"last {key[:-1]} ends at {b} s, not 5 s")
         except Exception:  # noqa: BLE001
             out.append(f"unparseable {key} time {beats[-1].get(tkey)!r}")
     texts = [a["description"] for a in p.get("actions", [])] + [s["description"] for s in p.get("segments", [])]
-    if cls in ("maintain",) and any(BRAKE_RE.search(t) for t in texts):
+    if cls in ("maintain",) and any(EGO_BRAKE_RE.search(NEGATED_BRAKE_RE.sub("", t)) for t in texts):
         out.append("maintain-class prompt describes braking/slowing")
     if cls == "stop":
         final = (p.get("actions") or [{}])[-1].get("description", "") + " " + (p.get("segments") or [{}])[-1].get("description", "")
         if not STATIONARY_RE.search(final):
             out.append("stop-class final beat does not say the vehicle is stationary")
     return out
+
+
+STOP_PHRASE_RE = re.compile(r"comes? to a (complete |full )?stop|completes? a (smooth |full |complete )?stop|"
+                            r"standstill|fully stopped|remains stationary", re.I)
+
+
+def split_last_beat(p: dict) -> dict | None:
+    """Brake and hold merged into the final beat -> two beats (brake, stationary hold).
+
+    Applied per list (actions / segments) to whichever one ends in a brake-or-stop beat;
+    the brake half is prefixed so feasible_timing recognises it (it rewrites that text anyway).
+    """
+    q = json.loads(json.dumps(p))
+    touched = False
+    for beats, tkey in ((q.get("actions") or [], "time"), (q.get("segments") or [], "time_range")):
+        if not beats:
+            continue
+        last = beats[-1]["description"]
+        if not (BRAKE_RE.search(last) or STOP_PHRASE_RE.search(last)):
+            continue
+        a, b = _parse_range(beats[-1][tkey])
+        if b - a < 1.0 - 1e-6:
+            continue
+        mid = (a + b) / 2
+        hold = json.loads(json.dumps(beats[-1]))
+        beats[-1][tkey] = f"{_t(a)}-{_t(mid)}"
+        beats[-1]["description"] = "The vehicle brakes: " + last
+        hold[tkey] = f"{_t(mid)}-{_t(b)}"
+        hold["description"] = "The vehicle is fully stopped and remains stationary."
+        if "key_changes" in hold:
+            hold["key_changes"] = "No motion; the vehicle is fully stopped"
+        if "camera" in hold:
+            hold["camera"] = "Static"
+        if "segment_index" in hold:
+            hold["segment_index"] = beats[-1]["segment_index"] + 1
+        beats.append(hold)
+        touched = True
+    return q if touched else None
+
+
+def stationary_throughout(p: dict) -> bool:
+    """A stop-class prompt whose vehicle never moves (no brake beat; static camera or stationary final beat)."""
+    acts = p.get("actions") or []
+    if not acts or any(BRAKE_RE.search(a["description"]) for a in acts):
+        return False
+    cam = str((p.get("cinematography") or {}).get("camera_motion", "")).lower()
+    return cam.startswith("static") or bool(STATIONARY_RE.search(acts[-1]["description"]))
 
 
 def main() -> int:
@@ -80,14 +132,23 @@ def main() -> int:
             entry["action"] = "already_fixed"
         elif cls == "stop":
             after = feasible_timing(before)
+            split = None
             if after is None:
+                split = split_last_beat(before)
+                after = feasible_timing(split) if split is not None else None
+            if after is None and stationary_throughout(before):
+                entry["action"] = "stationary_throughout"
+            elif after is None:
                 entry["action"] = "manual"
                 entry["reason"] = "brake/hold beat structure not recognised; split the last beat by hand"
             else:
                 after["_regen_fix"] = {"feasible_timing": True, "ts": ts,
                                        "old_times": [a["time"] for a in before["actions"]],
                                        "new_times": [a["time"] for a in after["actions"]]}
-                entry.update(action="rewritten", old_times=after["_regen_fix"]["old_times"],
+                if split is not None:
+                    after["_regen_fix"]["split_last_beat"] = True
+                entry.update(action="rewritten" if split is None else "split+rewritten",
+                             old_times=after["_regen_fix"]["old_times"],
                              new_times=after["_regen_fix"]["new_times"])
         elif cls in ("maintain", "decelerate"):
             after = maintain_reinforce(before)

@@ -1,0 +1,1908 @@
+[
+ {
+  "rel_path": "positive_scenarios/prompt_0.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_1.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_2.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_3.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_4.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_5.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_6.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_7.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_8.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_9.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_10.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_11.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:01",
+   "0:01-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_12.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_13.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_14.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_15.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_16.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_17.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_18.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_19.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_20.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_21.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:04",
+   "0:04-0:05"
+  ],
+  "lint_after": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_22.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:01",
+   "0:01-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:04",
+   "0:04-0:05"
+  ],
+  "lint_after": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_23.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_24.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_25.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_26.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_27.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_28.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_29.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_30.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_31.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_32.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_33.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_34.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_35.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_36.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_37.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_38.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_39.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_40.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_41.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_42.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_43.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_44.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_45.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_46.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_47.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_48.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_49.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_50.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_51.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_52.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "stationary_throughout"
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_53.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_54.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_55.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_56.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_57.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_58.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_59.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_60.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "stationary_throughout"
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_61.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_62.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_63.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_64.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_65.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_66.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_67.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_68.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_69.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_70.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_71.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_72.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_73.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_74.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_75.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_76.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_77.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_78.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_79.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_80.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_81.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_82.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_0.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_1.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_2.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_3.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_4.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_5.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_6.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_7.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_8.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_9.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_10.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_11.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_12.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_13.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_14.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_15.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_16.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_17.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_18.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_19.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_20.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_21.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_22.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_23.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_24.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_25.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_26.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_27.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_28.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_29.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_30.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_31.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_32.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_33.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_34.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_35.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_36.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_37.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:04",
+   "0:04-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:04",
+   "0:04-0:05"
+  ],
+  "lint_after": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_38.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_39.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_40.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_41.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_42.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_43.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_44.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:01",
+   "0:01-0:02",
+   "0:02-0:03",
+   "0:03-0:04",
+   "0:04-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:04",
+   "0:04-0:05"
+  ],
+  "lint_after": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_45.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_46.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_47.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_48.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_49.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [
+   "maintain-class prompt describes braking/slowing"
+  ],
+  "action": "reinforced",
+  "lint_after": [
+   "maintain-class prompt describes braking/slowing"
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_50.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_51.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_52.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_53.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [
+   "maintain-class prompt describes braking/slowing"
+  ],
+  "action": "reinforced",
+  "lint_after": [
+   "maintain-class prompt describes braking/slowing"
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_54.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_55.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_56.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_57.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_58.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_59.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_60.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_61.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_62.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [
+   "last action spans 1.0 s (< 1.5 s)",
+   "last segment spans 1.0 s (< 1.5 s)"
+  ],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:04",
+   "0:04-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:04",
+   "0:04-0:05"
+  ],
+  "lint_after": [
+   "last action spans 1.0 s (< 1.5 s)"
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_63.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_64.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_65.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_66.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_67.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_68.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_69.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_70.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "split+rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:00",
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": [
+   "last segment spans 1.0 s (< 1.5 s)"
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_71.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_72.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_73.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_74.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_75.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_76.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_77.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_78.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_79.mp4",
+  "class": "decelerate",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_80.mp4",
+  "class": "maintain",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "reinforced",
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_81.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:02",
+   "0:02-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_82.mp4",
+  "class": "stop",
+  "ts": "2026-09-13T20:09:28",
+  "lint": [],
+  "action": "rewritten",
+  "old_times": [
+   "0:00-0:02",
+   "0:02-0:03",
+   "0:03-0:05"
+  ],
+  "new_times": [
+   "0:00-0:01.5",
+   "0:01.5-0:03.5",
+   "0:03.5-0:05"
+  ],
+  "lint_after": []
+ }
+]

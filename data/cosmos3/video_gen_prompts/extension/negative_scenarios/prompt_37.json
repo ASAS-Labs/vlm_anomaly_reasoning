@@ -1,0 +1,149 @@
+{
+  "subjects": [
+    {
+      "description": "A dense swirling cloud of dry autumn leaves, predominantly amber, rust-orange, golden-yellow and brown, lifted from the roadside verge by a sudden gust of wind",
+      "appearance_details": "Individual leaves are curled and desiccated, of varying shapes (maple, oak, birch), tumbling and rotating chaotically, backlit edges catching the sunlight, small and lightweight",
+      "relationship": "The primary transient obstacle-like phenomenon the ego vehicle reacts to; contrasts with the otherwise clear road",
+      "location": "Rising from left verge and sweeping across the ego lane toward the windshield, center to right foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "Drifting diagonally toward the camera and across the road",
+      "pose": "Loose, dispersed cluster in mid-air motion",
+      "action": "Tumbling and swirling across the ego lane toward the windshield",
+      "state_changes": "Begins as a lifted swirl off the verge, thickens into a dense cloud crossing the lane, then partially settles and disperses as the car stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 0,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car seen from the driver's first-person perspective through the windshield",
+      "appearance_details": "Dashboard partially visible at bottom edge, clean windshield, hood faintly visible ahead, subtle interior reflections",
+      "relationship": "The point-of-view subject whose braking behavior drives the narrative",
+      "location": "Camera is mounted at driver eye-level; hood occupies lower frame",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, aligned with travel direction",
+      "pose": "Traveling straight in the right-hand ego lane",
+      "action": "Driving forward, then braking hard and coming to a complete stop",
+      "state_changes": "Transitions from steady forward motion to a rapid deceleration, nose-dip, then fully stationary and remaining stopped",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane rural road in mid-autumn, flanked on both sides by mature deciduous trees in full fall color, their canopies arching over the road. The verges are thick with fallen leaves. The asphalt is dry and clear, marked with a faded center line. Rolling countryside and distant tree lines recede toward the horizon under a clear blue daytime sky. Dappled sunlight filters through the branches onto the road surface.",
+  "lighting": {
+    "conditions": "Bright clear daylight, midday to early afternoon",
+    "direction": "High sun, front-side lit from the upper right, casting light diagonally across the road",
+    "shadows": "Consistent, crisp tree shadows falling across the asphalt, stable in direction throughout the shot",
+    "illumination_effect": "Warm, saturated autumn tones with clear visibility, sunlit leaves glowing against shaded areas"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing road perspective with vanishing point centered slightly right, hood anchoring the lower frame, tree lines framing the sides, swirl of leaves entering from the left toward center",
+    "color_scheme": "Warm autumn palette of amber, orange, gold and russet against a clear blue sky and grey-black asphalt",
+    "mood_atmosphere": "Calm scenic drive interrupted by sudden tension, brief startled caution",
+    "patterns": "Repeating rhythm of roadside tree trunks and overhead branches, scattered leaf textures on the verge"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver POV",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the swirling leaves crossing the lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving / ADAS perception scenario illustrating a false-positive obstacle response to harmless wind-blown leaves",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego vehicle travels smoothly forward along the clear tree-lined autumn road under steady sunlight."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A gust of wind lifts a dense swirl of dry leaves off the left verge, sending them tumbling across the ego lane toward the windshield."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:04",
+      "description": "The vehicle brakes: The car comes to a complete stop in the lane and remains fully stationary as remaining leaves settle and drift by; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Steady forward cruise on the clear two-lane autumn road with tree shadows on the asphalt.",
+      "key_changes": "Constant forward motion, road ahead clear.",
+      "camera": "Smooth forward tracking at cruising speed."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "A gust lifts leaves from the verge into a swirling cloud that sweeps across the lane toward the windshield.",
+      "key_changes": "Leaf swirl appears and thickens, moving into the ego path.",
+      "camera": "Forward motion continues, leaves fill the mid-frame."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels smoothly forward along the clear tree-lined autumn road under steady sunlight. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient wind noise rising with the gust, the soft rustling and scraping of dry leaves against the windshield and body, steady tire hum that quickly diminishes, a sharp brake actuation and tire scrub, followed by near-silence with only faint wind and settling leaves once the vehicle is stopped.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:04",
+      "0:04-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:04",
+      "0:04-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

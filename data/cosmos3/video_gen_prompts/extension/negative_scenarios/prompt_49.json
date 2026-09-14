@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A white delivery van driving directly ahead of the ego vehicle, its rear cargo doors wrapped with a photo-realistic vinyl print of an open highway stretching toward the horizon",
+      "appearance_details": "Boxy commercial van body, slightly dusty white side panels, dual rear doors seamlessly covered by a high-resolution highway mural showing gray asphalt, dashed yellow center lines, and a distant vanishing point beneath a bright blue sky; twin red brake lights flanking the mural at lower corners",
+      "relationship": "The vehicle being followed by the ego car; its printed rear creates an optical illusion that deceives the ego vehicle",
+      "location": "center frame, slightly right of center foreground occupying the lane ahead",
+      "relative_size": "Large within frame",
+      "orientation": "rear-facing toward the camera, moving away in the same direction of travel",
+      "pose": "upright box van traveling in the center of the lane",
+      "action": "slowing down as its brake lights illuminate",
+      "state_changes": "Brake lights transition from off to bright red as the van decelerates; the gap between van and ego vehicle steadily shrinks",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose forward-facing dashcam perspective frames the entire scene",
+      "appearance_details": "Only the faint edge of the hood and interior dashboard reflections are visible at the bottom of the frame; windshield offers a clear unobstructed forward view",
+      "relationship": "The observing and driving vehicle that misreads the printed highway as an open road",
+      "location": "camera origin, unseen except for hood edge at bottom foreground",
+      "relative_size": "Small within frame",
+      "orientation": "facing forward down the road, same direction as the van",
+      "pose": "cruising steadily in its lane",
+      "action": "continuing at cruising speed toward the van's rear without slowing",
+      "state_changes": "Maintains constant speed while the van decelerates, closing the distance rapidly",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A straight two-lane rural highway under a clear blue midday sky. Flat open terrain with low green vegetation, occasional trees, and gentle roadside embankments line both sides. Painted lane markings, a solid outer edge line and dashed center divider, guide traffic. Distant hills fade slightly in atmospheric haze at the horizon. The road surface is dry gray asphalt with subtle tire-worn tracks.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from the upper front-right casting consistent short shadows",
+    "shadows": "Crisp, well-defined shadows beneath the van and roadside objects, all falling in the same consistent direction",
+    "illumination_effect": "Even, high-contrast natural illumination that makes the printed highway mural on the van appear convincingly continuous with the real road"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the road and van converging toward a vanishing point; hood edge anchors the bottom, sky occupies the upper third",
+    "color_scheme": "Dominant grays of asphalt, blue sky, green roadside vegetation, and the sharp red accents of the van's brake lights",
+    "mood_atmosphere": "Deceptive calm, ordinary commute turning subtly ominous",
+    "patterns": "Repeating dashed center-line markings echoed both on the real road and within the van's printed mural"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the ego vehicle, steady dashcam-style motion following the van; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road, van, and surrounding landscape",
+    "camera_angle": "Eye-level driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the van's rear doors and the road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "An illustration of an optical illusion and perception failure in autonomous or human driving, where a printed highway on a van's rear is mistaken for open road",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle follows the van at cruising speed on the open two-lane highway; the van's rear mural blends with the real road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The van begins to slow and its brake lights illuminate bright red, but the printed highway image continues to suggest open road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle maintains its cruising speed without slowing, rapidly closing the gap toward the van's rear doors as the illusion persists. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Steady forward drive behind the van; the photo-realistic highway mural on the rear doors seamlessly extends the real road, and both vehicles move at a comfortable cruising pace. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Slight natural sway of the dashcam as the road passes underneath; gap remains constant.",
+      "camera": "Forward tracking, smooth and steady at driving speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The van's twin brake lights snap on and it begins decelerating, though the printed mural still reads as continuous open highway. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Brake lights transition from off to bright red; van's relative motion slows.",
+      "camera": "Continues steady forward tracking, gap beginning to close; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle keeps cruising at normal speed, unaffected by the braking, and rapidly approaches the van's rear doors as the illusory road fills more of the frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to van shrinks noticeably; the mural and brake lights grow larger in frame, tension builds.",
+      "camera": "Forward tracking that visibly closes distance on the van's rear; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle cruises down a clear two-lane highway following a white van whose rear doors are wrapped in a photo-realistic image of an open highway, making the van's back appear to be a continuation of the road under bright midday sun. Through 0:02 the drive continues smoothly with a steady gap. At 0:02 the van's brake lights suddenly glow red as it begins to slow, yet the printed mural still deceptively reads as open road. From 0:03 to 0:05 the ego vehicle, misinterpreting the illusion, holds its cruising speed and rapidly closes the distance toward the van's rear doors, the mural and glowing brake lights growing steadily larger in the frame as the moment tenses. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous ambient road noise: tires humming on dry asphalt, steady engine drone of the ego vehicle, faint wind rush against the windshield. No music or speech. A subtle rise in tire and engine tone as speed is maintained while the van slows, with no braking sound from the ego vehicle, underscoring the failure to react.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "subjects": [
+    {
+      "description": "A white delivery van double-parked in the ego lane, boxy cargo body with sliding side door, roof-mounted marker lights, and rear roll-up door",
+      "appearance_details": "Amber hazard lights flashing at all four corners, faint dust and road grime on lower panels, side mirror folded out, small ventilation grille on the roof",
+      "relationship": "Primary obstacle the ego vehicle must maneuver around",
+      "location": "center to right foreground, occupying the ego lane ahead",
+      "relative_size": "Large within frame",
+      "orientation": "Rear facing the camera, aligned with the direction of travel",
+      "pose": "Stationary, parked partly along the curb blocking the lane",
+      "action": "Idling with hazard lights blinking while parked",
+      "state_changes": "Grows larger in frame as the ego car approaches, then shifts to the right of frame as the ego passes on the left",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car represented only through its first-person driving viewpoint over the hood and dashboard",
+      "appearance_details": "Subtle reflection of dashboard on the windshield, edge of hood visible at bottom of frame, faint A-pillar edges at frame margins",
+      "relationship": "The camera-bearing vehicle navigating around the van",
+      "location": "camera/point-of-view, bottom foreground hood visible",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the street",
+      "pose": "Driving forward, decelerating and steering left",
+      "action": "Slows and steers around the double-parked van through the gap on the left",
+      "state_changes": "Speed decreases, trajectory curves left into the oncoming lane then back",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Parked cars lining both sides of the narrow city street",
+      "appearance_details": "Assorted sedans and hatchbacks in muted colors, reflections of daylight on windshields, license plates and side mirrors visible",
+      "relationship": "Environmental context narrowing the drivable space",
+      "location": "left and right edges, mid-ground",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel to curb, facing forward and away",
+      "pose": "Stationary along both curbs",
+      "action": "Remaining parked",
+      "state_changes": "Slide past the frame as the ego moves forward",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow two-way city street in a dense urban neighborhood during clear midday. Multi-story brick and rendered facades line both sides, with ground-floor shopfronts, awnings, and residential windows. Cars are parked along both curbs, leaving a tight single-file drivable corridor. A faded center line separates the two directions of travel. Sidewalks hold a few pedestrians, streetlamps, and small trees. The oncoming lane ahead is empty, offering room to slip past the obstruction.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-lit from upper left casting consistent shadows",
+    "shadows": "Sharp, consistent shadows falling to the right of vehicles and pooling beneath the parked cars and van",
+    "illumination_effect": "Crisp, high-contrast daytime illumination with accurate colors and glints off glass and chrome"
+  },
+  "aesthetics": {
+    "composition": "First-person driving viewpoint centered on the street vanishing point, van dominating the right-center foreground with the open oncoming lane on the left providing the escape path",
+    "color_scheme": "Muted urban palette of grey asphalt, warm brick tones, white van body, with amber hazard-light accents",
+    "mood_atmosphere": "Routine, alert, cautious navigation",
+    "patterns": "Repeating rows of parked cars and rhythmic building windows along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion that decelerates and curves left then straightens; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver eye-level POV",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the street scene and the van ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous-driving / ADAS scenario depicting an obstacle-avoidance maneuver around a double-parked delivery van",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego car travels forward down the narrow street and detects the white delivery van double-parked ahead with hazard lights flashing; it begins to slow. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego continues decelerating and initiates a left steering input, checking the empty oncoming lane for a gap. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle steers left into the oncoming lane, passes alongside the double-parked van, and begins straightening back toward its lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SHOP",
+      "category": "scene_sign",
+      "appearance": "Small storefront lettering, dark serif font on a light awning",
+      "spatial_temporal": "Left mid-ground storefront, visible throughout",
+      "context": "Ground-floor retail signage on the street"
+    },
+    {
+      "text": "EXPRESS DELIVERY",
+      "category": "vehicle_graphic",
+      "appearance": "Bold sans-serif blue lettering on the white van rear door",
+      "spatial_temporal": "On the rear of the van, visible as the ego approaches then passes",
+      "context": "Branding on the delivery van"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego car drives forward and spots the hazard-flashing van double-parked in its lane, beginning to reduce speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Van grows in frame; ego decelerates; hazard lights clearly flashing",
+      "camera": "Steady forward tracking with gradual slowing; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Ego continues slowing and begins to angle left toward the open oncoming lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Trajectory begins to curve left; oncoming lane confirmed empty",
+      "camera": "Forward motion with slight leftward drift; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego steers through the gap on the left, passing the double-parked van in the oncoming lane and starting to straighten back. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Van moves to the right side of frame and passes out; view shifts across the center line and back",
+      "camera": "Leftward curving tracking motion, then straightening; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view moves forward down a narrow two-way city street lined with parked cars under bright midday sun with sharp shadows. By 0:01 a white delivery van appears double-parked in the ego lane ahead, its amber hazard lights flashing at all four corners, and the ego car begins to slow. At 0:02 deceleration continues and the viewpoint begins angling left, glancing into the empty oncoming lane. From 0:03 the ego steers into the oncoming lane and eases alongside the van, the vehicle sliding to the right of frame. Through 0:04 and 0:05 the ego passes the van completely and begins straightening back toward its lane, the street opening up ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Low continuous engine hum and tire-on-asphalt rolling noise, briefly rising then dropping as the car decelerates. Faint rhythmic clicking suggestive of the van's hazard flashers, distant city ambience with muffled traffic and occasional pedestrian sounds. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

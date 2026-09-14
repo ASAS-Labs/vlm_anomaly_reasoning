@@ -1,0 +1,152 @@
+{
+  "subjects": [
+    {
+      "description": "A protester in dark casual streetwear, a young adult male wearing a hooded jacket and jeans, holding a bright orange traffic cone",
+      "appearance_details": "Hood partially up over short dark hair, gloves on hands, backpack strap visible over one shoulder, reflective damp jacket surface catching streetlight",
+      "relationship": "Central actor interacting with the ego vehicle by placing the cone on its hood",
+      "location": "center foreground, directly in front of the ego vehicle",
+      "relative_size": "Large within frame",
+      "orientation": "Initially facing away, then turning to face the camera as he approaches and leans over the hood",
+      "pose": "Walking forward, bending slightly to reach the hood, arms extended to set down the cone",
+      "action": "Steps toward the ego vehicle and places an orange traffic cone upright on the hood",
+      "state_changes": "Moves from standing at the curb, to stepping forward, to bending and placing the cone, then straightening and stepping aside",
+      "clothing": "Dark hooded jacket, blue jeans, gloves, sturdy boots",
+      "expression": "Determined, tense, eyes fixed on the vehicle",
+      "gender": "Male",
+      "age": "Young adult",
+      "skin_tone_and_texture": "Medium tone, smooth skin partly shadowed by the hood",
+      "facial_features": "Dark eyes, short dark hair, light stubble along the jawline, focused brow",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A small crowd of protesters standing near the curb along the street at night",
+      "appearance_details": "Mixed group in coats, jackets, and hats, some holding handmade cardboard signs, breath faintly visible in cold air",
+      "relationship": "Bystanders forming the crowd context around the central protester",
+      "location": "left and right sides, mid to background near the curb",
+      "relative_size": "Medium within frame",
+      "orientation": "Various, mostly facing the street and the ego vehicle",
+      "pose": "Standing, some gesturing, a few raising signs",
+      "action": "Standing in a loose cluster, watching and occasionally shifting",
+      "state_changes": "Minor shifting and turning of heads as the vehicle passes; otherwise mostly stationary",
+      "clothing": "Winter coats, jackets, beanies, scarves in muted dark colors",
+      "expression": "Alert, watchful, some frowning",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied tones, mostly in shadow under streetlights",
+      "facial_features": "Indistinct in low light, faces partly obscured by scarves and hoods",
+      "number_of_subjects": 8,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A bright orange traffic cone with a reflective white band",
+      "appearance_details": "Standard PVC cone, slightly scuffed, reflective collar glowing under streetlights",
+      "relationship": "Object placed on the ego vehicle hood by the central protester",
+      "location": "lower center of frame, on the vehicle hood",
+      "relative_size": "Medium within frame",
+      "orientation": "Upright, tip pointing up",
+      "pose": "Standing upright on the hood",
+      "action": "Sits on the hood after being placed there",
+      "state_changes": "Moves from being carried in the protester's hands to resting upright on the hood",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A nighttime urban city street lined with buildings, storefronts, and parked cars. Streetlights cast pools of warm amber light on wet asphalt. A modest crowd of protesters gathers near the curb, some holding signs. The road stretches ahead with faint traffic lights and distant vehicle glows. The atmosphere is cool and slightly hazy, with reflections shimmering on the damp pavement.",
+  "lighting": {
+    "conditions": "Night with artificial streetlighting",
+    "direction": "Overhead and side-lit from streetlamps, mixed with the ego vehicle's headlights from the front",
+    "shadows": "Long, soft shadows cast by figures onto the wet street, headlight beams creating sharp forward shadows",
+    "illumination_effect": "Warm amber pools of light contrast with cool blue night shadows, reflective cone band and wet road surfaces glowing"
+  },
+  "aesthetics": {
+    "composition": "Ego perspective from behind the windshield, road centered, protester and cone in lower-center foreground, crowd flanking the sides",
+    "color_scheme": "Muted dark blues and blacks of night punctuated by warm amber streetlight and vivid orange of the cone",
+    "mood_atmosphere": "Tense, uneasy, cautious, charged",
+    "patterns": "Repeating streetlight pools and rows of parked cars along the curb"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward tracking (ego vehicle motion) with a gentle steer to the side near the end; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, seated driver height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the protester and cone in the foreground, road and crowd in focus throughout",
+    "lens_focal_length": "Wide-angle, approx 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Autonomous vehicle perception scenario demonstrating obstacle recognition and safe maneuvering around a protester and traffic cone",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle travels slowly forward down the night street toward a crowd of protesters at the curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "One protester steps out from the crowd toward the front of the ego vehicle, carrying an orange traffic cone. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The protester bends and places the cone upright on the vehicle hood in the lower part of the view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle recognizes the cone as harmless, slows further, and steers gently around the protester to continue on. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Hand-painted black block letters on white cardboard sign",
+      "spatial_temporal": "Held by a protester on the left side, visible throughout",
+      "context": "Protest signage expressing demonstration message"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives slowly toward the crowd; a protester steps forward carrying an orange cone. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Protester separates from the crowd and approaches the front of the vehicle",
+      "camera": "Slow forward ego tracking, steady heading; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The protester bends over the hood and places the traffic cone upright in the lower frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Cone transitions from being carried to sitting on the hood",
+      "camera": "Slow forward ego motion decelerating to near stop; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle assesses the cone as harmless, slows, then steers gently around the protester and resumes travel. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle heading shifts sideways, protester passes to the side, road ahead opens up",
+      "camera": "Slow forward with a smooth lateral steer, ego viewpoint rotating gently; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera shows an ego-view from a car creeping slowly down a warmly lit night street toward a small cluster of protesters near the curb. By 0:01 a hooded young man in dark clothing steps out from the crowd toward the front of the vehicle, holding a bright orange traffic cone. Around 0:02 he bends over the hood and carefully sets the cone upright, so it stands in the lower center of the view. From 0:03 the vehicle recognizes the cone as harmless, slows nearly to a crawl, and begins a gentle steer to the side. Through 0:04 to 0:05 the ego vehicle smoothly maneuvers around the protester, who slides to the side of the frame, and the open road ahead comes into view as the car continues on its way. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient night city sounds dominate: distant traffic hum, muffled chants and voices from the protest crowd, occasional shouts. The low electric or idling engine whir of the ego vehicle underlies the scene. A soft thud is heard as the cone is set on the hood, followed by the subtle whir of the vehicle slowing and steering. No music, purely diegetic ambient audio.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

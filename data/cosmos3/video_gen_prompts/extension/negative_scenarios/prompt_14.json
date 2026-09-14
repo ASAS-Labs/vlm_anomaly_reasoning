@@ -1,0 +1,93 @@
+{
+  "subjects": [
+    {
+      "description": "An adult person lying prone and completely flat on the road surface in the middle of the ego lane, dressed in dark casual clothing, body oriented lengthwise along the roadway.",
+      "appearance_details": "Dark hooded jacket, grey jeans, dark sneakers; arms partially extended, face turned toward the pavement, hair visible at the crown of the head.",
+      "relationship": "The obstacle directly in the path of the ego vehicle; the sole human figure in the scene.",
+      "location": "Center of frame, mid-distance in the ego lane, growing larger as the vehicle approaches.",
+      "relative_size": "Small within frame",
+      "orientation": "Lying with head pointed away from and slightly toward the camera, body flat and parallel to the road direction.",
+      "pose": "Prone and horizontal, chest and torso flush against the asphalt, limbs slack, clearly a person lying down rather than standing.",
+      "action": "Lying motionless on the road surface.",
+      "state_changes": "No significant change; remains prone and still throughout as the vehicle draws nearer.",
+      "clothing": "Dark hooded jacket, grey jeans, dark sneakers.",
+      "expression": "Not clearly visible; face turned toward the pavement.",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, partially obscured by posture and clothing.",
+      "facial_features": "Dark hair, features largely hidden as the face is turned downward toward the road.",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with modest single-family homes, low hedges, driveways, and parked cars set back from the roadway. Trimmed lawns, sidewalks, and scattered street trees flank both sides. The asphalt is grey with faint lane markings and a centre line. The street stretches ahead vanishing toward a distant intersection, with no traffic, pedestrians, or activity visible other than the person on the road.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from the upper right, slightly behind and to the side of the vehicle.",
+    "shadows": "Consistent, well-defined shadows cast toward the lower left; the prone figure casts a short attached shadow on the asphalt.",
+    "illumination_effect": "Even, high-contrast daylight rendering colors naturally with crisp edges and good visibility across the entire street."
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing dashcam framing with the road receding to a central vanishing point, the prone figure positioned centrally in the ego lane as the focal subject.",
+    "color_scheme": "Muted greys of the asphalt, greens of lawns and trees, warm beige and pastel house facades under a clear blue sky.",
+    "mood_atmosphere": "Ordinary calm turning ominous; quiet suburban stillness with impending danger.",
+    "patterns": "Repeating rhythm of houses, driveways, and street trees along both sides of the road."
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the moving ego vehicle, advancing steadily along the lane; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full width of the street and the road ahead.",
+    "camera_angle": "Eye-level, driver-height dashcam perspective.",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway, with the prone person and the approaching pavement in clear focus.",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent."
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Ego-view driving footage illustrating an autonomous or driver-monitoring failure to detect a person lying prone in the roadway.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises along the empty residential street; the prone person becomes visible in the distance at the center of the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle maintains its cruising speed, closing the gap toward the lying figure without any deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at constant speed directly toward the prone person, showing no braking or steering response over a sustained final approach. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward along the quiet residential street under clear daylight, and the person lying prone in the middle of the ego lane appears in the distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The prone figure grows larger in frame as the vehicle approaches; the rest of the street remains empty.",
+      "camera": "Steady forward tracking from the driver's viewpoint at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle continues driving at normal cruising speed straight toward the lying person, with no slowing or stopping across a sustained final approach of over two seconds. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The prone person fills more of the lane; no braking, deceleration, or evasive maneuver occurs.",
+      "camera": "Continuous forward tracking, unchanged speed, figure looming larger at center frame; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a calm suburban street with homes and lawns on both sides under bright clear daylight; by 0:01 a person lying flat and prone in the middle of the ego lane becomes visible in the distance. From 0:01 to 0:02 the vehicle maintains its cruising speed and the figure grows steadily larger at the center of the frame. Between 0:02 and 0:03 the gap narrows noticeably with no change in speed. From 0:03 to 0:05, over a sustained final approach, the vehicle continues driving straight toward the motionless prone person without any braking, slowing, or steering, the figure looming ever larger in the ego lane as the clip ends. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires rolling on asphalt and a low continuous engine hum at constant throttle. Faint suburban ambience with distant birdsong and light wind. No braking sounds, no alerts, no speech or music, underscoring the vehicle's failure to react.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

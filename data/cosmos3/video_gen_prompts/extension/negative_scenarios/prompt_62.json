@@ -1,0 +1,164 @@
+{
+  "subjects": [
+    {
+      "description": "A protester dressed in dark casual clothing who breaks from the crowd to place an orange traffic cone on the ego vehicle's hood",
+      "appearance_details": "Wears a black hooded jacket, dark jeans, and sneakers; carries a bright orange reflective traffic cone",
+      "relationship": "The active agent interacting with the ego vehicle; part of the larger protest crowd",
+      "location": "center foreground, approaching the front of the ego vehicle",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing toward the camera as they approach, then turning to place the cone",
+      "pose": "Leaning forward, arms extended holding the cone downward toward the hood",
+      "action": "Steps forward and sets an orange traffic cone upright on the hood",
+      "state_changes": "Moves from standing among the crowd to bending forward and placing the cone, then straightening up and stepping back",
+      "clothing": "Black hooded jacket, dark jeans, sneakers",
+      "expression": "Determined, tense, focused",
+      "gender": "Unknown",
+      "age": "Young adult",
+      "skin_tone_and_texture": "Partially obscured by hood and low light; medium tone",
+      "facial_features": "Face partly shadowed by hood, brief glimpse of neutral serious expression",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A small crowd of protesters standing near the curb along the street",
+      "appearance_details": "Mixed group in coats, jackets, hoodies; some hold signs and phones, silhouetted under streetlights",
+      "relationship": "Bystanders and demonstrators surrounding the ego vehicle's path",
+      "location": "left and right background near the curb",
+      "relative_size": "Small within frame",
+      "orientation": "Facing various directions, some toward the vehicle",
+      "pose": "Standing, some gesturing, some holding placards",
+      "action": "Standing and watching, occasionally shifting as the vehicle approaches",
+      "state_changes": "Slight movement and turning as the vehicle slows and the cone is placed",
+      "clothing": "Assorted dark jackets, hoodies, coats",
+      "expression": "Serious, watchful, animated",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied, mostly silhouetted in low light",
+      "facial_features": "Largely obscured by darkness and distance",
+      "number_of_subjects": 8,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "An orange traffic cone placed on the ego vehicle's hood",
+      "appearance_details": "Standard bright orange safety cone with a reflective white band, glowing under streetlight",
+      "relationship": "The obstruction that causes the ego vehicle to stop",
+      "location": "lower center of frame, resting on the hood",
+      "relative_size": "Medium within frame",
+      "orientation": "Upright, base flat on the hood surface",
+      "pose": "Standing vertically",
+      "action": "Sits stationary on the hood after placement",
+      "state_changes": "Transitions from being carried to resting upright on the hood",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A city street at night lined with buildings and storefronts, illuminated by cool white streetlights and scattered warm shop lights. Wet-looking asphalt reflects the lights. A small crowd of protesters is gathered near the curb, some holding signs. Parked cars, curbside barriers, and urban signage frame the scene. The atmosphere is tense and dim, typical of a nighttime demonstration.",
+  "lighting": {
+    "conditions": "Nighttime with artificial streetlighting",
+    "direction": "Top-down from overhead streetlights with mixed side glow from shop windows",
+    "shadows": "Long, soft pooled shadows beneath figures and vehicles cast onto the road",
+    "illumination_effect": "Cool white pools of light interrupted by dark gaps, creating high contrast and a moody, dramatic feel; the cone glows brightly under the light"
+  },
+  "aesthetics": {
+    "composition": "Ego dashcam perspective with the road and hood filling the lower frame; the cone sits prominently in the lower center; the crowd and street recede toward a vanishing point ahead",
+    "color_scheme": "Dominated by dark blues and blacks with bright orange cone accents and warm amber streetlight highlights",
+    "mood_atmosphere": "Tense, uneasy, confrontational, nocturnal",
+    "patterns": "Repeating streetlight pools along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's eye view",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead, the crowd, and the cone on the hood",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary-style dashcam footage",
+  "context": "Autonomous vehicle ego-view scenario demonstrating obstruction detection and safe stop behavior during a nighttime protest",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "One protester steps toward the front of the vehicle carrying an orange traffic cone; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03-0:04",
+      "description": "The protester places the cone upright on the hood in the lower part of the camera view; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "The ego vehicle brakes fully, activates flashing hazard lights, and remains completely stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "PROTEST",
+      "category": "physical_in_scene",
+      "appearance": "Hand-lettered white text on a cardboard placard, uneven and bold",
+      "spatial_temporal": "Held by a protester in the background left, visible throughout",
+      "context": "Demonstration signage indicating the nature of the crowd"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03.5",
+      "description": "A protester breaks from the crowd, steps to the front of the vehicle, and places an orange traffic cone upright on the hood. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle treats the cone as a disabling obstruction, brakes to a full stop, flashes hazard lights, and remains completely stationary. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient nighttime city sounds with a low idle of the vehicle engine, muffled chants and murmurs from the protest crowd, occasional distant traffic. A soft mechanical brake and stop sound accompanies the halt, followed by the rhythmic ticking of hazard indicator relays as the lights flash.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:04",
+      "0:04-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:04",
+      "0:04-0:05"
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "subjects": [
+    {
+      "description": "A round landscaped planter forming the central island of a small parking-lot roundabout, filled with low green shrubs and edged with a concrete curb ring",
+      "appearance_details": "Densely packed rounded evergreen shrubs with fresh green foliage, bordered by a light grey circular concrete kerb, a thin band of mulch or soil visible at the base",
+      "relationship": "The fixed obstacle the ego vehicle circles around before exiting the roundabout",
+      "location": "center of frame, receding to left as the car curves around it",
+      "relative_size": "Medium within frame",
+      "orientation": "faces all directions; presented broadside to the camera as the ego passes",
+      "pose": "static circular mound of vegetation",
+      "action": "remains stationary as the ego vehicle circles it",
+      "state_changes": "Shifts across the frame from center to left then out of view as the car steers toward the exit.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car experienced from the driver's first-person point of view, with the front hood visible at the lower edge of frame",
+      "appearance_details": "Clean painted hood in a neutral tone catching daylight glare, edge of windshield frame and A-pillars faintly visible at frame margins",
+      "relationship": "The camera-carrying vehicle navigating the roundabout and exit road",
+      "location": "camera position, hood at bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "forward-facing driving perspective",
+      "pose": "in motion, steering through a curve",
+      "action": "circles the roundabout then steers out the right exit and cruises down the exit road",
+      "state_changes": "Turning left to follow the roundabout arc, then straightening onto the exit road and continuing at cruising speed.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet outdoor parking lot on a clear day, featuring a compact circular roundabout with a landscaped central planter of shrubs. Grey asphalt surrounds the island, marked with faded lane lines and a directional arrow. Rows of empty parking bays and low kerbs line the perimeter, with a single clear exit lane opening to the right that leads onto the lot's exit road bordered by sparse greenery and light poles. No other vehicles or pedestrians are present.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly front-right of the vehicle",
+    "shadows": "Crisp, consistent shadows cast by the central planter and light poles onto the asphalt, angled uniformly",
+    "illumination_effect": "Even, high-contrast natural illumination with clean highlights on the asphalt and hood, giving a realistic sunny-day appearance"
+  },
+  "aesthetics": {
+    "composition": "First-person driving composition with the hood anchoring the lower frame, the roundabout island dominating the mid-ground and curving away, and the exit road opening toward the right vanishing point",
+    "color_scheme": "Neutral greys of asphalt, green shrubbery, blue sky, with subtle warm sunlight tones",
+    "mood_atmosphere": "Calm, routine, uneventful daytime drive",
+    "patterns": "Repeating parking-bay lines and evenly spaced light poles"
+  },
+  "cinematography": {
+    "camera_motion": "Tracking shot from ego vehicle, curving left then straightening right; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "The roundabout island and exit road ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving / dashcam demonstration of navigating a parking-lot roundabout and exiting onto a road",
+  "actions": [
+    {
+      "time": "0:00-0:03",
+      "description": "The ego vehicle circles the landscaped roundabout, curving left around the central shrub planter under clear daylight with no other traffic. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle steers out of the roundabout through the right exit and continues along the exit road at normal cruising speed without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "First-person view of the car circling the small roundabout, the shrub planter sweeping across the frame from center to left as the vehicle follows the curve. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The central island shifts leftward and the exit lane on the right begins to open into view.",
+      "camera": "Smooth leftward-curving tracking motion following the roundabout arc; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle steers out to the right onto the clear exit lane and drives straight down the exit road at cruising speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steering straightens, roundabout island exits frame left, exit road and surroundings scroll toward the camera as speed remains constant.",
+      "camera": "Transitions from curving to forward straight-ahead tracking; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the driver's POV shows the car already circling the small parking-lot roundabout, with the round shrub planter centered ahead and crisp shadows on the sunny asphalt. Through 0:01 and 0:02 the vehicle curves smoothly left, the green island sliding across the frame and the empty parking bays passing by. By 0:03 the clear exit lane opens on the right and the car begins steering out of the roundabout. From 0:03 to 0:05 the vehicle straightens onto the exit road and continues at its normal cruising speed without slowing or stopping, the road and sparse greenery flowing steadily toward the camera as it heads for the lot's exit. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor driving audio: steady engine hum, tire noise on smooth asphalt, faint wind, and quiet suburban background with no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

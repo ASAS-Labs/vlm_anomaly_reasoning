@@ -1,0 +1,100 @@
+{
+  "subjects": [
+    {
+      "description": "A small off-leash dog, likely a terrier mix, with a short tan-and-white coat, perky ears, and a lively build",
+      "appearance_details": "No collar visible or a thin faded collar, fluffy tail, alert stance, quick movements",
+      "relationship": "The unexpected hazard in the ego vehicle's path; sole moving obstacle in the scene",
+      "location": "Emerges from right side behind a parked car, moves toward center of the ego lane ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Initially facing left across the road, then quartering toward the camera as it enters the lane",
+      "pose": "Running in a low, quick gait with legs extended mid-stride",
+      "action": "Darts out from behind a parked car and runs into the ego lane directly ahead",
+      "state_changes": "Transitions from hidden behind a parked car to fully exposed in the lane, pausing briefly in the center of the road ahead",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A quiet suburban residential street on a clear sunny day. Single-family homes with tidy front lawns, driveways, and low hedges line both sides. A row of cars is parked bumper-to-bumper along the right curb. Mature trees cast dappled shadows across the pavement. The asphalt road is dry and marked with a faded center line. No pedestrians and no other moving vehicles are present, giving the scene a calm, uneventful atmosphere before the dog appears.",
+  "lighting": {
+    "conditions": "Bright daylight, clear sky",
+    "direction": "High sun, slightly behind and to the left of the ego vehicle producing consistent forward-cast shadows",
+    "shadows": "Sharp, well-defined shadows from parked cars, trees, and the dog fall consistently across the road surface",
+    "illumination_effect": "Even, high-contrast natural lighting with vivid colors and clear visibility down the street"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road vanishing toward the horizon; parked cars framing the right edge, homes and lawns flanking both sides, dog entering from right into the central lane",
+    "color_scheme": "Warm daylight palette of gray asphalt, green lawns, muted house tones, blue sky, with the tan-and-white dog standing out against the road",
+    "mood_atmosphere": "Calm suburban routine turning to sudden tension",
+    "patterns": "Repeating parked cars along the curb and rhythmic tree shadows across the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a moving vehicle at steady cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road and street environment ahead",
+    "camera_angle": "Eye-level dashcam perspective from behind the windshield",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the dog in the lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Automotive ego-view driving footage depicting a sudden animal hazard scenario for driver assistance or safety analysis",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises steadily down the residential street with parked cars on the right and no other traffic. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "A small dog darts out from behind a parked car on the right into the ego lane ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues at its normal cruising speed toward the dog without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle drives forward on a sunny residential street lined with parked cars on the right and homes on both sides, no traffic in sight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steady forward progression down the road",
+      "camera": "Forward tracking at constant cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "A small off-leash dog suddenly emerges from behind a parked car on the right and runs into the ego lane directly ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Dog appears and moves into the vehicle's path",
+      "camera": "Continues forward tracking, dog enters frame from right; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains its normal cruising speed, continuing to approach the dog without any braking or slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to the dog decreases as speed remains unchanged",
+      "camera": "Steady forward tracking with no deceleration; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle glides smoothly down a bright, quiet residential street, parked cars lined along the right curb and neat homes flanking both sides under a clear sky. By 0:02 the scene is calm with no other traffic when a small tan-and-white dog suddenly bursts out from behind a parked car on the right. From 0:02 to 0:03 the dog scampers into the ego lane, coming to a stop directly ahead in the vehicle's path. From 0:03 to 0:05 the ego vehicle continues at its steady cruising speed, closing the distance toward the dog without slowing or stopping as the shot holds on the approaching hazard. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient suburban daytime sounds dominate: the steady low hum of the moving vehicle, faint tire noise on dry asphalt, distant birdsong, and light breeze. A brief distant bark may accompany the dog's appearance. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

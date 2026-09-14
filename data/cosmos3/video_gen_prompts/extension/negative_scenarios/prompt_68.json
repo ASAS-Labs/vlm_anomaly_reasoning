@@ -1,0 +1,148 @@
+{
+  "subjects": [
+    {
+      "description": "A red octagonal stop sign mounted on a galvanized metal post at the right-hand corner of a four-way residential intersection.",
+      "appearance_details": "Standard retroreflective red face with white uppercase 'STOP' lettering and a thin white border; the sign is clean and unobstructed, sitting well above the poster below it.",
+      "relationship": "The critical traffic-control device the ego vehicle should detect but fails to; positioned directly above the psychedelic poster on the same post.",
+      "location": "right side of frame, mid-ground at the corner",
+      "relative_size": "Small within frame",
+      "orientation": "Sign face angled toward oncoming ego vehicle, slightly turned to the left",
+      "pose": "Fixed upright on its post",
+      "action": "Standing stationary as the vehicle approaches",
+      "state_changes": "Grows slightly larger and shifts toward the right edge as the vehicle drives past.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A large colourful printed poster taped to the sign post directly beneath the stop sign, featuring a busy psychedelic swirling pattern.",
+      "appearance_details": "Glossy paper with vivid interlocking spirals, fractal-like curls, and clashing neon magenta, cyan, orange, and lime green tones; edges slightly curled where tape holds it to the metal post.",
+      "relationship": "Visual distractor placed beneath the stop sign; intended to confuse the vehicle's perception system though it does not physically block the sign.",
+      "location": "right side of frame, lower on the post beneath the sign",
+      "relative_size": "Small within frame",
+      "orientation": "Flat face toward the approaching camera",
+      "pose": "Affixed flat against the post",
+      "action": "Remaining static, shimmering slightly in daylight",
+      "state_changes": "Enlarges and slides toward the right edge as the vehicle passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, seen only implicitly through its point-of-view dashboard perspective.",
+      "appearance_details": "Interior not visible; a hint of the hood's front edge may appear at the very bottom of the frame, clean grey paint reflecting daylight.",
+      "relationship": "The vehicle whose autonomous or driver-assist perception fails to register the stop sign.",
+      "location": "camera position, first-person ego view",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the street toward the intersection",
+      "pose": "Moving forward at cruising speed",
+      "action": "Driving down the residential street and through the intersection without slowing",
+      "state_changes": "Maintains constant speed throughout; no braking or deceleration.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with modest single-family homes, tidy front lawns, low hedges, and mature trees casting dappled shade on the sidewalk. Parked cars sit intermittently along the curb. The asphalt road is smooth with faint centre markings, leading to a four-way intersection with cross streets branching left and right. Utility poles and mailboxes dot the roadside. The sky above is bright and cloudless.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High sun from the upper left, front-side lighting the scene",
+    "shadows": "Consistent, crisp shadows cast to the lower right from trees, poles, and the sign post onto the road and sidewalk",
+    "illumination_effect": "Even, well-exposed daylight with vivid colour saturation and clear visibility of the stop sign and poster"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego composition with the road vanishing toward the intersection; the stop sign and psychedelic poster framed on the right third at the corner",
+    "color_scheme": "Natural greens of foliage, grey asphalt, warm home facades, punctuated by the intense red of the stop sign and the vivid neon multicolour of the poster",
+    "mood_atmosphere": "Calm suburban routine undercut by subtle unease and impending safety failure",
+    "patterns": "Busy psychedelic swirling fractal pattern on the poster; repeating rhythm of trees and parked cars along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion at steady cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's eye viewpoint",
+    "camera_angle": "Eye-level, first-person ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway, intersection, stop sign, and poster",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous vehicle perception failure demonstration: a stop sign not detected due to a distracting patterned poster beneath it",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives along the quiet residential street approaching the four-way intersection; the stop sign and psychedelic poster become visible ahead on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle nears the intersection; the stop sign remains clearly visible above the busy poster but the vehicle shows no sign of slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at its normal cruising speed straight through the intersection without stopping, the sign and poster sliding off to the right edge of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase bold sans-serif lettering on a red octagonal retroreflective field with a thin white border",
+      "spatial_temporal": "On the right corner of the intersection, mid-ground, visible from 0:00 through 0:05 as the vehicle approaches and passes",
+      "context": "Traffic-control device requiring vehicles to stop at the intersection, which the ego vehicle fails to obey"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises down the residential street, trees and homes gliding past as the intersection and its right-corner stop sign with psychedelic poster come into view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Stop sign and poster grow larger as distance closes; no change in vehicle speed.",
+      "camera": "Steady forward dashcam tracking motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle reaches the approach zone of the intersection; the stop sign is clearly legible above the busy poster yet the vehicle maintains speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Intersection foreground fills more of the frame; no deceleration cues.",
+      "camera": "Continuous forward tracking motion at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle drives straight through the intersection without stopping, cruising past the stop sign and poster as they exit toward the right edge of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign and poster sweep off-screen to the right; road opens up ahead beyond the intersection.",
+      "camera": "Sustained forward tracking motion through and past the intersection; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from inside a car cruising along a sunlit quiet residential street lined with homes and trees, with crisp shadows falling to the right. By 0:01 a four-way intersection appears ahead and a red octagonal stop sign on a metal post becomes visible at the right corner, a large colourful psychedelic poster taped to the post directly below it while the sign stays clearly visible above. At 0:02 the vehicle nears the intersection but shows no sign of braking. By 0:03 it enters the intersection at its normal cruising speed, ignoring the stop sign entirely. From 0:03 to 0:05 the vehicle continues straight through and past the intersection, the stop sign and poster sliding off to the right edge as the open road stretches ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor suburban soundscape: the steady low hum of the car's engine and tires rolling over smooth asphalt, faint wind noise, distant birdsong, and the soft rustle of leaves. No speech, no music, and notably no braking or deceleration sounds, emphasizing that the vehicle never slows for the stop sign.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

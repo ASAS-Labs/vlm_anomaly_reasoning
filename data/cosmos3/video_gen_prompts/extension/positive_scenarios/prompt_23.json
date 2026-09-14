@@ -1,0 +1,100 @@
+{
+  "subjects": [
+    {
+      "description": "A flock of common city pigeons gathered on the asphalt directly ahead in the ego lane, their grey bodies dotted with iridescent green-purple neck sheens and dark wing bars",
+      "appearance_details": "Rounded plump bodies, small red-orange legs, pale grey wings with two dark bars, some birds with white rump patches, beaks pecking at the pavement",
+      "relationship": "Obstacle in the ego vehicle's path prompting it to slow; scatter as the car approaches",
+      "location": "center foreground on the road surface, spread across the ego lane",
+      "relative_size": "Small within frame",
+      "orientation": "Various, mostly facing away and to the sides of the camera",
+      "pose": "Standing, heads bobbing and lowered to peck, some hopping",
+      "action": "Pecking at the pavement, then taking flight and scattering",
+      "state_changes": "Transition from grounded pecking to sudden flapping and dispersal upward and outward as the vehicle nears",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road stretching ahead under clear daytime skies. The asphalt is grey with faint lane markings and a central dividing line. Modest single-family houses, low fences, mature trees, and neatly trimmed hedges line both sides of the road. Parked cars sit intermittently along the curb, and the road is otherwise empty of traffic. Utility poles and overhead wires trace the roadside into the distance.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper front-right, consistent throughout",
+    "shadows": "Crisp, consistent shadows cast by trees, poles, and the pigeons onto the road surface",
+    "illumination_effect": "Even, high-contrast natural lighting that brings out road texture and the iridescent sheen of the pigeons' plumage"
+  },
+  "aesthetics": {
+    "composition": "Centered forward view down the road with a vanishing-point perspective, pigeons clustered mid-frame on the asphalt, houses and greenery framing the sides",
+    "color_scheme": "Muted greys of the asphalt, warm greens of foliage, soft pastel house facades, blue sky, and the grey-iridescent tones of the pigeons",
+    "mood_atmosphere": "Calm, cautious, everyday suburban tranquility",
+    "patterns": "Repeating lane markings and roadside utility poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego vehicle dashcam) decelerating gradually then continuing at reduced speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and the flock of pigeons in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / driver-assistance scenario demonstrating gentle deceleration for small animals on the road",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the suburban road, approaching a flock of pigeons pecking on the pavement ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle slows gently as it nears the birds; the pigeons begin to react and start taking flight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The pigeons scatter and fly off in all directions while the ego vehicle continues rolling forward at the reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view moving forward down the empty two-lane suburban road, spotting the flock of pigeons pecking on the ego lane surface. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to the pigeons decreases as the vehicle advances at cruising speed.",
+      "camera": "Forward tracking at steady speed, eye-level dashcam perspective; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle decelerates smoothly as it closes in on the birds; the pigeons grow alert and begin to lift off. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Noticeable gentle slowdown; first birds start flapping and rising.",
+      "camera": "Forward tracking with reduced speed, slight settling motion from braking; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The pigeons take flight and scatter in every direction, clearing the lane while the ego vehicle keeps rolling forward at the lower speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Road ahead clears of birds; vehicle maintains reduced steady pace for over two seconds.",
+      "camera": "Forward tracking at reduced constant speed, eye-level; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows the car cruising down a sunny, empty two-lane suburban road with houses and trees on either side, and a flock of pigeons pecking on the asphalt directly ahead. Around 0:02 the vehicle begins slowing gently as it approaches, and the pigeons grow restless, some beginning to flap. By 0:03 the birds burst into flight, scattering across and above the road, and from 0:03 to 0:05 the ego vehicle continues rolling forward at the reduced speed as the now-clear road opens ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient suburban daytime sounds: the low steady hum of the car's engine and tires on asphalt, a subtle decrease in engine pitch as the vehicle slows, the sudden fluttering and wing-flapping of pigeons taking off, faint distant birdsong, and a gentle breeze. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

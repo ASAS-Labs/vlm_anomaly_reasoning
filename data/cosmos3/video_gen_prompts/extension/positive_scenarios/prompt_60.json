@@ -1,0 +1,117 @@
+{
+  "subjects": [
+    {
+      "description": "A black hearse with elongated body, chrome trim, tinted rear windows, and a small illuminated interior visible through the side glass, leading the funeral procession",
+      "appearance_details": "Polished black paint reflecting the overcast sky, chrome bumpers, headlights switched on with a soft glow, discreet floral arrangement faintly visible inside",
+      "relationship": "Lead vehicle of the funeral procession crossing in front of the ego car",
+      "location": "center foreground, crossing left to right",
+      "relative_size": "Large within frame",
+      "orientation": "Perpendicular to the camera, passing across the ego vehicle's path",
+      "pose": "N/A",
+      "action": "Driving slowly across the intersection through the red light",
+      "state_changes": "Moves steadily across the frame and exits toward the right",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A line of assorted sedans and SUVs following the hearse, each with headlights on and a small purple flag mounted on the hood",
+      "appearance_details": "Mixed dark-colored vehicles, glowing headlights, small triangular purple funeral flags fluttering slightly, moving bumper-to-bumper as an unbroken group",
+      "relationship": "Mourners' vehicles following the hearse in the procession",
+      "location": "center to right, crossing left to right behind the hearse",
+      "relative_size": "Medium within frame",
+      "orientation": "Perpendicular to the camera, moving across the intersection",
+      "pose": "N/A",
+      "action": "Following the hearse slowly across the intersection in a tight unbroken line",
+      "state_changes": "The last car in the line passes and clears the intersection near the end of the clip",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A city intersection under a flat, overcast daytime sky. Mid-rise buildings with glass and concrete facades line the streets, traffic lights hang overhead, and painted crosswalk lines and a white stop line mark the pavement. Storefronts, street signs, and parked cars fill the periphery. The wet-looking asphalt reflects the muted gray light, and pedestrian signals and a green traffic light for the ego vehicle are visible ahead.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "Diffuse overhead light with no single strong source",
+    "shadows": "Soft, faint shadows beneath the vehicles",
+    "illumination_effect": "Even, low-contrast lighting that mutes colors and gives a somber, subdued atmosphere; vehicle headlights stand out against the gray tones"
+  },
+  "aesthetics": {
+    "composition": "First-person ego-vehicle view centered on the intersection, with the crossing procession filling the mid-ground and the green traffic light and buildings framing the top of the frame",
+    "color_scheme": "Muted grays and blacks dominated by the overcast palette, accented by the warm glow of headlights and the distinct purple funeral flags",
+    "mood_atmosphere": "Solemn, respectful, quiet, patient",
+    "patterns": "Repeating line of vehicles with headlights and matching purple hood flags"
+  },
+  "cinematography": {
+    "camera_motion": "Static",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "The crossing procession and the intersection ahead",
+    "lens_focal_length": "Wide-angle, approximating natural driver field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam",
+  "context": "Autonomous vehicle perception demonstration showing correct yielding behavior to a funeral procession despite a green light",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego car is stopped at the white stop line under a green light; the hearse enters the intersection from the left with headlights on."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The hearse crosses the frame and following mourner cars with purple flags begin passing in an unbroken line."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The last vehicles clear the intersection; the ego car remains fully stationary at the line."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FUNERAL",
+      "category": "vehicle_graphic",
+      "appearance": "Small purple lettering on the triangular hood flags",
+      "spatial_temporal": "On the hoods of the following procession vehicles, visible throughout as they cross",
+      "context": "Marks the vehicles as part of the funeral procession"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle holds a complete stop at the line under a green light as the hearse and leading procession cars cross slowly in front.",
+      "key_changes": "Hearse enters and crosses; mourner cars begin passing in a continuous line.",
+      "camera": "Static ego view"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The final vehicles of the procession pass and clear the intersection while the ego vehicle remains fully stationary at the stop line.",
+      "key_changes": "Last car exits the frame; ego vehicle stays completely still.",
+      "camera": "Static ego view"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car sits stopped at the white stop line, the traffic light glowing green ahead, while a black hearse with headlights on begins entering the intersection from the left. By 0:01 the hearse crosses the center of the frame and the first mourner cars, each bearing a small purple flag on the hood and headlights on, follow closely behind. From 0:01 to 0:03 the unbroken line of vehicles moves steadily left to right across the intersection. Between 0:03 and 0:05 the last cars of the procession clear the pavement and exit to the right, while the ego vehicle remains completely stationary at the line, holding its stop until the final vehicle has passed.",
+  "audio_description": "Ambient city traffic hum and the low idle of the ego vehicle's engine, the soft passing whir of the procession vehicles crossing, faint distant urban sounds, and no music, conveying a quiet, respectful stillness.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24
+}

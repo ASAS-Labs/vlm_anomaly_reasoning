@@ -1,0 +1,158 @@
+{
+  "subjects": [
+    {
+      "description": "A large digital LED video billboard mounted on a tall steel monopole structure beyond the right shoulder of the highway, displaying vivid full-color advertising content.",
+      "appearance_details": "Rectangular high-brightness LED panel with a dark bezel frame, supported by a single tall galvanized steel column with a service ladder; the screen surface shows fine pixel grid texture and emits strong luminance under daylight.",
+      "relationship": "It is the roadside advertising object that triggers the ego vehicle's mistaken braking reaction; positioned as a distant environmental element the driver perceives.",
+      "location": "right background, beyond the right shoulder",
+      "relative_size": "Medium within frame",
+      "orientation": "screen face angled toward the oncoming traffic, facing the camera at a slight leftward tilt",
+      "pose": "static upright mounted structure",
+      "action": "cycling through advertisements, then briefly flashing a full-screen red stop sign image before returning to an ordinary ad",
+      "state_changes": "The screen content changes from an ordinary advertisement to a full-screen red stop sign for a fraction of a second, then reverts to the ordinary advertisement.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car seen from the driver's first-person perspective, with the dashboard and hood edge partially visible at the bottom of the frame.",
+      "appearance_details": "Dark dashboard with subtle reflections on the windshield, hood surface visible in dark metallic paint, interior A-pillars framing the edges of view.",
+      "relationship": "The point-of-view vehicle that reacts to the billboard image and brakes to a stop.",
+      "location": "center foreground, implied by point of view",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the highway, away from an implied camera mounted inside",
+      "pose": "moving forward along the lane, then decelerating",
+      "action": "travelling on the highway, braking hard, and coming to a complete stop",
+      "state_changes": "Transitions from steady forward motion to sharp deceleration and finally to a fully stationary state.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A wide multi-lane highway stretching ahead under a clear bright daytime sky. Painted lane dividers guide traffic across several open lanes with the road surface a light gray asphalt marked by dashed white lines. Beyond the right shoulder rises a tall roadside digital billboard on a steel monopole. Green vegetation, low guardrails, and distant road signage line the edges. The road ahead is clear with no obstacles, and the horizon is flat and open with high overhead sun creating short shadows.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "top-lit from the sun high overhead",
+    "shadows": "short, compact shadows directly beneath vehicles, guardrails, and the billboard pole",
+    "illumination_effect": "Even, high-contrast natural illumination with strong readability of road markings and vivid saturation on the billboard's emissive screen."
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing highway composition with the vanishing point centered ahead, lane lines converging toward the horizon and the billboard offset to the upper right third.",
+    "color_scheme": "Cool gray asphalt, blue sky, green roadside vegetation, punctuated by the vivid red of the flashed stop-sign image on the billboard.",
+    "mood_atmosphere": "Ordinary highway calm interrupted by sudden alarm and abrupt tension.",
+    "patterns": "Repeating dashed lane markings and rhythmic roadside guardrail posts."
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "the highway ahead and the roadside billboard, both in sharp focus",
+    "lens_focal_length": "wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "A driving-scenario clip illustrating a vehicle mistakenly reacting to a roadside digital billboard's momentary display of a stop sign.",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego vehicle travels forward steadily on the clear multi-lane highway, approaching the roadside billboard showing an ordinary advertisement."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "The billboard briefly flashes a full-screen red stop sign for a fraction of a second before reverting to the ordinary advertisement."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "bold white uppercase lettering centered on a red octagonal field filling the full billboard screen",
+      "spatial_temporal": "upper right of frame on the billboard, visible only for a fraction of a second around the 0:02-0:03 mark",
+      "context": "A misleading full-screen advertisement image resembling a real traffic stop sign that the vehicle reacts to."
+    },
+    {
+      "text": "MEGA SALE NOW ON",
+      "category": "scene_sign",
+      "appearance": "colorful sans-serif promotional text over a bright product advertisement background",
+      "spatial_temporal": "upper right of frame on the billboard, visible before and after the stop-sign flash",
+      "context": "The ordinary commercial advertisement displayed by the roadside digital billboard."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Steady forward motion along the open highway with the billboard displaying an ordinary advertisement in the upper right.",
+      "key_changes": "Gradual approach brings the billboard closer and larger in frame.",
+      "camera": "Smooth forward tracking at constant speed from the in-car viewpoint."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "The billboard flashes a full-screen red stop sign momentarily then returns to the ad, prompting the driver's reaction.",
+      "key_changes": "Screen content briefly switches to a red stop sign; vehicle begins abrupt deceleration.",
+      "camera": "Forward tracking with a slight forward pitch as braking begins."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward steadily on the clear multi-lane highway, approaching the roadside billboard showing an ordinary advertisement. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient highway sound of tires on asphalt and steady engine hum in the opening, followed by the sharp squeal and mechanical groan of hard braking around the mid-point, then settling into idling engine noise and faint wind as the vehicle comes to rest. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

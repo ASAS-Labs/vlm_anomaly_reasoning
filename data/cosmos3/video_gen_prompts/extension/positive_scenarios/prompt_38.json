@@ -1,0 +1,133 @@
+{
+  "subjects": [
+    {
+      "description": "Two-lane asphalt highway surface directly ahead of the ego vehicle, dominated by wandering black tar-sealant lines and dark skid marks",
+      "appearance_details": "Long, snaking black tar-sealant repairs meandering along and across the ego lane, overlapping dark tire skid marks, weathered grey asphalt with subtle aggregate texture",
+      "relationship": "Primary road surface the ego vehicle is traveling on; potential distraction that the vehicle correctly ignores",
+      "location": "Center foreground extending to background",
+      "relative_size": "Large within frame",
+      "orientation": "Receding away from camera toward the horizon",
+      "pose": "",
+      "action": "Remaining static as the ego vehicle drives forward over it",
+      "state_changes": "Tar snakes and skid marks stream toward and past the camera as the vehicle advances; new sections continuously enter the frame ahead.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Solid white lane lines running straight along both edges of the ego lane",
+      "appearance_details": "Bright, crisp painted white lines, one on each side of the lane, contrasting sharply with the dark tar marks and grey asphalt",
+      "relationship": "Define the true lane boundaries which the ego vehicle holds despite the distracting tar snakes",
+      "location": "Left and right edges of the ego lane, converging toward vanishing point",
+      "relative_size": "Medium within frame",
+      "orientation": "Running parallel to travel direction, receding to horizon",
+      "pose": "",
+      "action": "Guiding the ego vehicle's straight path",
+      "state_changes": "Streaming steadily past the vehicle, remaining straight and consistent throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Rumble strip along the right shoulder of the highway",
+      "appearance_details": "Series of shallow grooved indentations molded into the pavement at the right edge, casting small consistent shadows under daylight",
+      "relationship": "Safety feature on the right shoulder, indicating the true road edge beyond the white line",
+      "location": "Right side of frame along the shoulder",
+      "relative_size": "Small within frame",
+      "orientation": "Parallel to the direction of travel",
+      "pose": "",
+      "action": "Passing steadily as the vehicle cruises",
+      "state_changes": "Continuously receding past the frame; no change in form.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane highway on a clear, sunny day. The road stretches straight toward a distant horizon flanked by open scrubland and low vegetation. The ego lane is heavily marked with black tar-sealant snakes and dark skid marks that wander erratically, while crisp white lane lines edge both sides of the lane. A grooved rumble strip runs along the right shoulder. The oncoming lane is separated to the left, and the road ahead is clear of traffic. Bright sky with high visibility completes the scene.",
+  "lighting": {
+    "conditions": "Bright daylight, clear sky",
+    "direction": "High overhead sun, slightly front-lit from upper right",
+    "shadows": "Short, consistent, well-defined shadows cast to the lower left of the rumble strip grooves and road texture",
+    "illumination_effect": "Even, high-contrast illumination that makes the dark tar marks and white lane lines highly distinguishable against the grey asphalt"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing dashcam perspective with the road vanishing to a central horizon point; lane lines frame the drive path, tar snakes fill the foreground",
+    "color_scheme": "Muted greys of asphalt, stark black tar marks, bright white lane lines, blue sky, and pale tan roadside terrain",
+    "mood_atmosphere": "Calm, steady, routine highway cruising",
+    "patterns": "Repeating rumble strip grooves and the winding rhythm of tar-sealant snakes"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot moving with the vehicle at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level, dashboard-mounted forward view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road surface, lane lines, and horizon ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving perception scenario demonstrating correct behavior of ignoring distracting road tar marks while maintaining the true lane",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises forward over tar-snake covered ego lane, holding position between the straight white lines. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Tar marks and skid marks stream past; vehicle stays centered, maintaining cruising speed without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Vehicle continues at constant speed, ignoring the wandering tar marks, tracking the true lane toward the clear road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego view driving forward over the tar-snake and skid-mark covered ego lane under bright daylight, white lines steady on both edges, rumble strip visible on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Tar marks and road features stream toward and past the camera; vehicle maintains lane and speed.",
+      "camera": "Forward tracking with the vehicle, steady and smooth; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle continues at normal cruising speed, ignoring the distracting tar marks and holding the true lane toward the clear road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "No slowing or stopping; consistent forward motion sustained for at least two seconds.",
+      "camera": "Continued forward tracking, unchanged perspective; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a two-lane highway ahead, the ego lane heavily marked with winding black tar-sealant snakes and dark skid marks, straight white lines on both edges, and a rumble strip on the right shoulder under bright clear daylight. From 0:01 to 0:02 the vehicle cruises forward at steady speed, tar marks streaming toward and past the camera while the vehicle stays centered in the true lane. Between 0:02 and 0:03 the wandering tar snakes continue to fill the foreground but the vehicle ignores them, holding its heading. From 0:03 to 0:05 the ego vehicle maintains its normal cruising speed without slowing or stopping, tracking the real lane toward the clear road ahead as the horizon remains steady. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous ambient road noise of tires rolling on asphalt at highway speed, a steady low engine hum, and faint wind rush. No speech or music; only the consistent mechanical drone of a car cruising.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

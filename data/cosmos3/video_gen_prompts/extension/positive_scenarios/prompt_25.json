@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A small grey domestic cat with short fur, sitting low and compact on the dark asphalt near the rear wheel of a parked car",
+      "appearance_details": "Reflective eyes glowing bright as they catch the headlights, faint tabby striping visible on the flanks, ears upright and alert, slender tail curled close to the body",
+      "relationship": "The obstacle the ego vehicle detects and avoids; positioned in the ego lane near a parked car",
+      "location": "center-right foreground, low to the ground beside a parked car's rear wheel",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the camera, body angled slightly to the right",
+      "pose": "Crouched low and still, weight settled, front paws together, head slightly raised toward the approaching headlights",
+      "action": "Sitting motionless while the car approaches",
+      "state_changes": "Remains still throughout; eyes flare brighter as headlights sweep closer, subtle ear twitch as the vehicle passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "A row of parked passenger cars lining the right curb of the narrow street",
+      "appearance_details": "Sedans and hatchbacks in dark and muted colors, chrome trim and glass reflecting scattered streetlight, tires close to the curb",
+      "relationship": "Static roadside obstacles defining the right edge of the ego lane; the cat sits near one of their rear wheels",
+      "location": "right side of frame, receding into the background",
+      "relative_size": "Medium within frame",
+      "orientation": "Parked parallel to the curb, facing away and toward the camera in a staggered line",
+      "pose": "Stationary, parked",
+      "action": "Remaining parked and static",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow urban residential street at night, flanked by low buildings and shopfronts with darkened windows. Sparse streetlights cast pools of warm sodium light over wet-looking asphalt, leaving long stretches of shadow between them. Parked cars line the right curb. The street is quiet and deserted, with faint distant illumination from apartment windows and the occasional traffic light glow far ahead.",
+  "lighting": {
+    "conditions": "Nighttime, low ambient light with sparse artificial streetlights",
+    "direction": "Front-lit by the ego vehicle's headlights along the road surface; overhead pools of light from scattered streetlamps",
+    "shadows": "Long, deep shadows stretching across the road from parked cars and poles; the cat casts a small elongated shadow away from the headlights",
+    "illumination_effect": "High contrast between bright headlight cones and surrounding darkness, with warm amber highlights on curbs and cool dark pockets between lights"
+  },
+  "aesthetics": {
+    "composition": "First-person ego perspective centered on the road ahead, vanishing point slightly right of center, parked cars framing the right edge, the cat as a small focal point in the lower-right lane",
+    "color_scheme": "Dominated by dark blues and blacks of night, warm amber sodium highlights, greyscale asphalt, and the sharp white glow of the cat's eyes",
+    "mood_atmosphere": "Quiet, tense, watchful, cautious",
+    "patterns": "Repeating rhythm of streetlight pools and the line of parked cars along the curb"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward tracking (ego vehicle motion) with a gentle leftward drift during the avoidance maneuver; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver eye-level dashboard perspective",
+    "camera_angle": "Eye-level, slightly elevated as from inside a car",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the still cat near the parked car",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic automotive documentary",
+  "context": "Autonomous vehicle perception and obstacle-avoidance demonstration of detecting and steering clear of a low still animal at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels slowly forward down the narrow dark street, headlights revealing parked cars on the right and a small grey cat sitting still near a rear wheel, its eyes glinting. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle detects the low, still animal and begins to slow, headlight beams steadying on the cat. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle steers gently to the left, drifting away from the cat to pass well clear, keeping distance as it moves past the parked cars. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view moving slowly forward on the narrow night street; parked cars line the right curb and a grey cat sits low and still near a rear wheel with glowing eyes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The cat becomes clearly visible as headlights fall on it; forward approach continues.",
+      "camera": "Slow forward tracking, steady centered on the road; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle detects the low still animal and reduces speed, headlights holding on the cat. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Perceptible deceleration; the cat stays motionless with brighter eye reflection.",
+      "camera": "Forward tracking slowing noticeably; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle steers gently left, drifting across to pass well clear of the cat, maintaining a safe gap as it eases past the parked cars. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Leftward lateral shift of the view; the cat moves to the lower-right of frame and passes out of the danger zone.",
+      "camera": "Slow forward motion with smooth leftward drift; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego camera glides slowly down a dark, narrow city street lit by sparse warm streetlights, with parked cars lining the right curb. By 0:01 the headlights sweep over a small grey cat crouched low and motionless beside a parked car's rear wheel, its eyes flaring bright in the beams. At 0:02 the vehicle registers the still animal and begins to slow, the deceleration smooth and deliberate. From 0:03 onward the view drifts gently to the left, the vehicle steering wide to give the cat a clear berth. Through 0:04 and 0:05 the car continues past at reduced speed, the unmoving cat sliding to the lower-right of frame as the vehicle safely clears it and rolls forward into the shadowed street. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Low, steady hum of the car's engine idling and rolling forward, faint tire noise on the asphalt, a subtle mechanical whir of slowing. Quiet night ambience with distant city sounds and a faint breeze. No music or speech; the tone is calm and attentive.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "Three dressed retail store mannequins displayed on the sidewalk directly at the curb in front of a clothing store, standing on chrome disc stands",
+      "appearance_details": "Smooth glossy fiberglass forms in a matte cream and light gray finish; two female-form mannequins and one male-form mannequin, faceless or minimally featured heads, wearing seasonal casual outfits with visible price tags and folded posture arms",
+      "relationship": "Static roadside display objects belonging to the clothing store; potential false-positive pedestrians for the autonomous perception system",
+      "location": "right side of frame, mid-ground on the sidewalk at the curb",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the street and oriented slightly toward the approaching camera",
+      "pose": "Rigid upright mannequin stances, one with a hand on hip, one with arms slightly bent forward, one straight-armed, each fixed on a stand",
+      "action": "Standing completely motionless on display",
+      "state_changes": "No significant change.",
+      "clothing": "Fashion retail outfits: one in a beige trench coat over a striped top, one in a denim jacket and dark trousers, one in a knit sweater and slim jeans, each with visible tags",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car driving down a downtown shopping street, seen from its own forward-facing dashcam perspective",
+      "appearance_details": "Only the front hood edge and windshield frame are faintly visible at the bottom of the frame; clean interior dashboard reflection",
+      "relationship": "The observer vehicle whose perception decisions drive the scene",
+      "location": "center foreground, implied by ego perspective",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, away from viewer",
+      "pose": "Traveling straight along the lane",
+      "action": "Cruising forward at steady speed past the store",
+      "state_changes": "Maintains constant cruising speed; no slowing or stopping throughout",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A bustling downtown shopping street under clear midday sun. Multi-story storefronts line both sides with large glass display windows, awnings, and hanging signage. On the right is a clothing boutique with a wide entrance and mannequins set out on the sidewalk at the curb. Parked cars line portions of the curb, streetlights and slender trees dot the sidewalks, and pedestrians walk in the background. The single lane ahead of the ego vehicle is clear, with fresh lane markings and clean asphalt.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High sun, front-side-lit from the upper left",
+    "shadows": "Crisp, consistent hard shadows cast by mannequins, poles, and buildings onto the sidewalk and road",
+    "illumination_effect": "High-contrast, vivid and evenly lit scene with strong depth cues and accurate color rendition"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving perspective with the open lane leading to a vanishing point; mannequins framed on the right third at the curb as the point of interest",
+    "color_scheme": "Warm daylight tones—gray asphalt, beige and glass storefronts, splashes of color from clothing and signage against a blue sky",
+    "mood_atmosphere": "Calm, routine, confident autonomous driving",
+    "patterns": "Repeating storefront facades, curb-parked vehicles, and evenly spaced streetlights and lane dashes"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot moving smoothly with the vehicle at steady speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver ego perspective",
+    "camera_angle": "Eye-level dashcam view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road ahead and the curbside mannequins",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous vehicle perception demonstration distinguishing inanimate mannequins from real pedestrians",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward down the clear downtown lane, the clothing store and its curbside mannequins coming into view on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle approaches the store; the three motionless mannequins are clearly seen standing rigidly on their stands at the curb, correctly classified as inanimate. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its normal cruising speed and passes the store without slowing or stopping, the mannequins receding toward the right edge as the clear road continues ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FASHION",
+      "category": "scene_sign",
+      "appearance": "Bold sans-serif dark lettering on a light storefront sign board above the boutique entrance",
+      "spatial_temporal": "Mounted above the clothing store on the right, visible from 0:01 through 0:05",
+      "context": "Identifies the clothing retail store fronting the mannequin display"
+    },
+    {
+      "text": "SALE",
+      "category": "physical_in_scene",
+      "appearance": "Red rectangular window poster with white block letters",
+      "spatial_temporal": "In the boutique display window on the right, briefly visible mid-video",
+      "context": "Retail promotion signage in the store window"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego vehicle drives forward along the clear downtown shopping street as the clothing store with three motionless curbside mannequins comes into view and is recognized as inanimate. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Mannequins grow larger in the right of frame; vehicle speed remains constant.",
+      "camera": "Smooth forward tracking at steady cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle continues at its normal cruising speed and passes the store without any slowing or stopping, the mannequins sliding past on the right while the road ahead stays clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Mannequins move toward and out of the right edge; no deceleration occurs.",
+      "camera": "Continuous forward tracking, unchanged speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a bright downtown shopping street with a clear lane ahead. By 0:01 the clothing store appears on the right and its 'FASHION' sign becomes readable. At 0:02 three dressed mannequins are seen standing rigid and motionless on stands right at the curb. From 0:03 to 0:05 the ego vehicle, having recognized the mannequins as inanimate objects, maintains its steady cruising speed and drives past the store without slowing or stopping, the mannequins receding to the right as the open road stretches ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires on asphalt and a smooth engine hum at cruising speed, faint distant city sounds of traffic and pedestrian chatter, no braking or deceleration sounds, no music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

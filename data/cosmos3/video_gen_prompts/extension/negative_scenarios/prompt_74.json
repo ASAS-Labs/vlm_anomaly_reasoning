@@ -1,0 +1,150 @@
+{
+  "subjects": [
+    {
+      "description": "A glass office tower with a mirrored facade rising along the right side of the downtown street, its reflective panels bouncing back the street scene",
+      "appearance_details": "Floor-to-ceiling blue-tinted mirrored glass panels segmented by thin dark mullions; the facade reflects passing cars, the roadway, sky, and a traffic signal from the cross street showing red",
+      "relationship": "Its mirrored surface creates a misleading reflection of a red traffic signal that the ego vehicle mistakenly plans around",
+      "location": "Right side of frame, foreground to midground",
+      "relative_size": "Large within frame",
+      "orientation": "Facade faces the street, angled toward the camera as the car approaches",
+      "pose": "Static vertical structure",
+      "action": "Reflecting the moving street scene and a red cross-street signal on its glass surface",
+      "state_changes": "Reflections shift and slide across the panels as the ego vehicle moves forward, then stabilize as it stops beside the tower.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Several passenger cars traveling and parked along the downtown street, some visible directly and some as reflections in the tower's glass",
+      "appearance_details": "Mid-size sedans and hatchbacks in silver, dark blue, and white with clean daytime highlights on their bodies",
+      "relationship": "Traffic sharing the road with the ego vehicle and appearing in the tower's mirrored reflections",
+      "location": "Ahead and to the left in the driving lanes, plus reflections on the right facade",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing away from the camera in the direction of travel",
+      "pose": "Wheeled vehicles in motion and at rest",
+      "action": "Driving along the clear road ahead and cross traffic passing on the perpendicular street",
+      "state_changes": "Continue moving smoothly through the intersection area while the ego vehicle decelerates and stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 4,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The traffic signal governing the ego vehicle's direction of travel, mounted on a pole ahead",
+      "appearance_details": "Standard three-lamp overhead traffic light in a black housing with a green lamp illuminated",
+      "relationship": "The true authority for the ego vehicle, showing green and permitting travel, contradicting the reflected red signal",
+      "location": "Center-upper frame, ahead over the roadway",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the ego vehicle",
+      "pose": "Static, suspended above the lane",
+      "action": "Displaying a steady green light for the ego direction",
+      "state_changes": "Remains green throughout the clip.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy downtown urban street under clear daytime skies. A tall mirrored glass office tower dominates the right side, its reflective facade mirroring the roadway, moving vehicles, and a cross-street traffic signal glowing red. The multi-lane asphalt road ahead is clear, marked with lane lines and framed by sidewalks, street furniture, and lower commercial buildings. Overhead, the ego vehicle's own traffic signal shows green. Consistent hard shadows fall across the pavement and building bases indicating strong overhead sun.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-left, casting consistent shadows",
+    "shadows": "Crisp, well-defined shadows of the tower, poles, and cars falling consistently across the roadway",
+    "illumination_effect": "High contrast with bright highlights on glass and vehicle bodies and clean readable exposure across the scene"
+  },
+  "aesthetics": {
+    "composition": "Ego-view dashcam framing with the road receding to a central vanishing point, the mirrored tower filling the right third, and the overhead green signal near the top center",
+    "color_scheme": "Cool blues and silvers of the glass facade and asphalt, accented by the red of the reflected signal and green of the true signal",
+    "mood_atmosphere": "Ordinary yet subtly tense, autonomous decision-making, urban routine",
+    "patterns": "Repeating rectangular grid of mirrored glass panels and mullions on the tower facade"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway, tower facade, and signals",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous vehicle perception edge case where a reflected traffic signal in a mirrored building misleads the planning system into stopping despite a green light",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward along the clear lane, approaching the mirrored office tower on the right where a red signal is reflected in the glass."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the lane beside the tower and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Forward driving along the downtown street with the mirrored tower approaching on the right; reflections of cars and a red cross-street signal slide across the glass while the true green signal hangs ahead.",
+      "key_changes": "Reflections shift across the facade; the tower grows larger in frame.",
+      "camera": "Smooth forward tracking at cruising speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a complete stop in the lane directly beside the glass tower and holds fully stationary for the remainder of the clip. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward along the clear lane, approaching the mirrored office tower on the right where a red signal is reflected in the glass. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban soundscape with distant traffic hum, tire noise fading as the vehicle slows, the soft mechanical sound of braking, and a gentle settling as the car stops. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

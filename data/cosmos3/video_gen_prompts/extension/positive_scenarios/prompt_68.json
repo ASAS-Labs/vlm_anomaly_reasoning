@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A red octagonal stop sign mounted on a galvanized metal post at the right corner of a four-way intersection",
+      "appearance_details": "Standard retroreflective red face with bold white 'STOP' lettering and white border, slightly weathered edges, mounted at regulation height on a silver-gray steel post",
+      "relationship": "The primary traffic-control object the ego vehicle must recognize and obey; sits above the taped poster",
+      "location": "right side of frame, mid-ground at the corner",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the ego vehicle, angled slightly toward the camera",
+      "pose": "Static, upright and level on its post",
+      "action": "Standing as a traffic control device",
+      "state_changes": "No significant change; remains clearly visible above the poster throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A large colourful printed poster with a busy psychedelic pattern taped to the sign's post directly beneath the stop sign",
+      "appearance_details": "Vivid swirling concentric rings, spirals, and paisley-like motifs in magenta, orange, teal, purple, and yellow; corners secured with strips of clear packing tape, slightly wrinkled surface catching daylight",
+      "relationship": "A visual distractor attached below the stop sign; does not obscure the sign face",
+      "location": "right side of frame, on the lower portion of the sign post below the sign",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the ego vehicle, roughly flat against the post",
+      "pose": "Flat, adhered to the post",
+      "action": "Displayed on the post, gently reflecting sunlight",
+      "state_changes": "No significant change; edges may flutter almost imperceptibly.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street on a clear, sunny day. Single-family houses with tidy front lawns, driveways, and mature shade trees line both sides of the street. Parked cars sit intermittently along the curb. The asphalt road is in good condition with a faded painted white stop line at the approaching intersection, which is a standard four-way crossing with cross streets extending left and right. Utility poles and street signage dot the corners. The sky is bright blue with few clouds, and consistent hard shadows fall across the pavement.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from the upper right, casting shadows toward the lower left",
+    "shadows": "Crisp, consistent hard-edged shadows from trees, poles, and the sign post stretching across the road surface",
+    "illumination_effect": "High visibility with saturated colors, strong contrast, and gentle glints off the poster and painted stop line"
+  },
+  "aesthetics": {
+    "composition": "First-person driver's ego view centered on the road ahead, with the intersection and stop sign framed toward the right; the stop line and lane markings lead the eye forward",
+    "color_scheme": "Natural greens of lawns and trees, gray asphalt, blue sky, punctuated by the vivid red of the sign and the multicolor psychedelic poster",
+    "mood_atmosphere": "Calm, orderly, everyday, mundane suburban drive",
+    "patterns": "Swirling psychedelic spirals and paisley motifs on the poster; repeated white lane and stop-line markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's viewpoint",
+    "camera_angle": "Eye-level, mounted at typical windshield dashcam height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road, intersection, and stop sign with poster",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving perception demonstration showing correct stop-sign detection and compliant braking despite a visual distractor poster",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward at a steady moderate speed along the residential street, approaching the intersection with the stop sign and psychedelic poster becoming clearer on the right."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop precisely at the marked stop line and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "Bold uppercase white sans-serif lettering with white border on a red octagonal retroreflective field",
+      "spatial_temporal": "On the sign at the right corner, visible throughout the entire clip and increasingly prominent as the vehicle approaches",
+      "context": "Mandatory traffic control instructing vehicles to come to a complete stop"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle approaches the four-way intersection at steady speed; stop sign and psychedelic poster on the post come into clear view on the right.",
+      "key_changes": "Intersection and signage grow larger in frame as the vehicle advances.",
+      "camera": "Smooth forward motion at constant speed, eye-level dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches the stop line, comes to a full stop, and holds stationary for the remaining duration. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward at a steady moderate speed along the residential street, approaching the intersection with the stop sign and psychedelic poster becoming clearer on the right. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds: the low steady hum of the car's engine and tire rumble on asphalt that gradually diminishes as the vehicle slows, a soft brake application sound, distant birdsong, and a gentle breeze. No speech or music; the audio settles into quiet ambience once the vehicle stops.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

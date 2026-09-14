@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A flat black rubber car floor mat lying discarded in the middle of the ego lane, pressed flat against the road surface",
+      "appearance_details": "Rectangular rubber mat with a slightly ribbed or textured surface, matte black, dusty edges, faintly reflecting daylight along raised ridges",
+      "relationship": "The primary road obstacle assessed by the ego vehicle as minor debris",
+      "location": "center foreground, on the pavement in the ego lane ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Lying flat, facing upward toward the sky, oriented lengthwise along the road",
+      "pose": "Flat and motionless against the pavement",
+      "action": "Lies still on the road as the ego vehicle approaches and drives over it",
+      "state_changes": "Grows larger in frame as the vehicle approaches, then passes beneath the car and out of view; otherwise no change in shape.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A two-lane rural asphalt road stretching straight ahead toward the horizon",
+      "appearance_details": "Faded grey asphalt with a dashed yellow or white center line, cracked edges, occasional patches, bordered by gravel shoulders",
+      "relationship": "The driving surface on which the ego vehicle travels and the mat rests",
+      "location": "fills the lower and central portion of the frame, receding to the horizon",
+      "relative_size": "Large within frame",
+      "orientation": "Extends forward away from the camera",
+      "pose": "Static roadway",
+      "action": "Recedes beneath the vehicle as it moves forward",
+      "state_changes": "Road markings and texture flow steadily toward and past the camera as the vehicle advances.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane rural road under clear daytime skies. Green fields, low shrubs, and scattered trees line both sides of the road, with gravel shoulders separating pavement from the grassy verges. The oncoming lane on the left is empty, and the road ahead is clear apart from the black floor mat lying flat in the ego lane. Utility poles and distant hills recede toward a bright horizon. Consistent shadows fall across the pavement indicating stable, midday sunlight.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High and slightly behind-right, consistent overhead sun",
+    "shadows": "Short, crisp, consistent shadows cast from roadside vegetation and utility poles onto the pavement",
+    "illumination_effect": "Even, high-contrast natural illumination with well-defined road textures and clear visibility to the horizon"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the road receding to a vanishing point on the horizon; the floor mat sits near the lower-center of the frame in the ego lane",
+    "color_scheme": "Muted greys of asphalt, green roadside foliage, blue sky, and the matte black of the rubber mat",
+    "mood_atmosphere": "Calm, routine, uneventful daytime drive",
+    "patterns": "Repeating dashed lane markings and evenly spaced roadside utility poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted at driver eye-level, moving steadily with the vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road ahead, the floor mat, and the surrounding rural scenery",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam-style documentary footage",
+  "context": "Autonomous driving perception scenario demonstrating obstacle assessment and drive-over decision for minor debris",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward at steady speed; the black floor mat becomes visible in the ego lane ahead, flat against the pavement, with the oncoming lane clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at the same speed toward the mat, which grows larger in the frame; no braking or steering adjustment occurs. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle drives straight over the mat without slowing, and the mat disappears beneath the car as the road ahead remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view of the rural road with the black floor mat resting flat in the middle of the ego lane ahead; oncoming lane empty and road otherwise clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Mat first appears and is identified as minor debris; vehicle maintains cruising speed.",
+      "camera": "Steady forward tracking at eye-level, no motion changes; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle approaches the mat, which enlarges in the lower-center of the frame; the vehicle continues without any speed or steering change. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to mat decreases; ego vehicle holds course and speed.",
+      "camera": "Continuous forward tracking, stable framing; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes directly over the mat at normal cruising speed; the mat slips beneath the car and the clear road continues to recede ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Mat disappears under the vehicle; road ahead remains open and clear.",
+      "camera": "Steady forward tracking maintained through and past the drive-over; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle drives forward along a straight two-lane rural road under bright clear daylight, with a flat black rubber floor mat visible ahead in the middle of the ego lane and the oncoming lane on the left empty. Through 0:01 to 0:02 the vehicle maintains its steady cruising speed, the mat lying flat against the pavement recognized as minor debris. From 0:02 to 0:03 the mat grows larger in the lower-center of the frame as the car approaches without braking or steering. Between 0:03 and 0:05 the vehicle drives straight over the mat at unchanged speed; the mat passes beneath the car and out of view while the clear road continues to recede toward the horizon. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient engine hum and consistent tire noise on asphalt, with a faint wind rush. A brief low thump or muffled rustle as the tires pass over the rubber mat around the 0:03 to 0:04 mark. No speech or music; only natural driving ambience.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

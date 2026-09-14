@@ -1,0 +1,142 @@
+{
+  "subjects": [
+    {
+      "description": "A large, dry tumbleweed composed of tangled, brittle golden-brown stems and twigs forming a roughly spherical mass",
+      "appearance_details": "Loose, airy structure with wispy protruding branches, sun-bleached tan coloration, small bits of dust shedding as it moves",
+      "relationship": "The sole moving obstacle prompting the ego vehicle to brake; central hazard in the scene",
+      "location": "Enters from right foreground, crosses ego lane center, exits toward left verge",
+      "relative_size": "Medium within frame",
+      "orientation": "Rolling, continuously rotating as it tumbles left across the road",
+      "pose": "Spherical, airborne between light bounces",
+      "action": "Rolling and bouncing across the highway from right to left",
+      "state_changes": "Moves from right edge across the ego lane, bounces lightly a couple times, continues toward left verge and off-frame",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from a first-person driver's viewpoint (only implied via the road and dashboard perspective)",
+      "appearance_details": "Interior/hood not prominently visible; presence conveyed by camera position, forward motion, and braking dynamics",
+      "relationship": "The observer vehicle whose motion drives the scene; reacts to the tumbleweed",
+      "location": "Camera position, center of the two-lane highway",
+      "relative_size": "Large within frame (implied ego perspective)",
+      "orientation": "Facing forward down the highway",
+      "pose": "Traveling forward then decelerating to a stop",
+      "action": "Driving forward, braking hard, coming to a complete stop and remaining stationary",
+      "state_changes": "Transitions from steady forward motion to hard deceleration to a fully stopped state held for the final segment",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A flat, arid desert landscape flanking a straight two-lane asphalt highway that extends to the horizon. The road has faded yellow center lines and weathered edge markings. On both sides lie expanses of sandy tan soil dotted with sparse dry scrub brush, low rocky outcrops, and occasional dead vegetation. The sky is a clear, cloudless pale blue with a bright sun overhead. Distant mountains or mesas shimmer faintly on the horizon under a heat haze, and the desert is empty of any other vehicles or people.",
+  "lighting": {
+    "conditions": "Bright daylight, clear midday sun",
+    "direction": "Top-lit with a slight front-right sun angle",
+    "shadows": "Short, hard-edged consistent shadows cast directly beneath objects; the tumbleweed casts a small moving shadow on the asphalt",
+    "illumination_effect": "High contrast, crisp visibility with strong glare off the road surface and warm sunlit desert tones"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective with the highway converging toward a central vanishing point; open sky occupying the upper half, road and desert the lower half",
+    "color_scheme": "Warm earthy palette of tan, ochre, and gray asphalt contrasted against pale blue sky",
+    "mood_atmosphere": "Isolated, quiet, tense anticipation, sudden alertness",
+    "patterns": "Repeating dashed lane markings and evenly spaced roadside scrub"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's eye-level POV",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the highway ahead and the crossing tumbleweed",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Automotive perception / autonomous driving hazard-reaction scenario demonstrating braking for an unexpected road obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego vehicle travels forward at cruising speed along the empty straight desert highway."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A large dry tumbleweed enters from the right and begins rolling across the road ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:04",
+      "description": "The vehicle decelerates rapidly as the tumbleweed continues toward the left verge; the car comes to a complete stop; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "The vehicle remains fully stationary in the middle of the highway; the tumbleweed exits toward the left; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle cruises forward on the empty straight highway as a tumbleweed appears from the right and starts crossing.",
+      "key_changes": "Introduction of the tumbleweed obstacle from the right edge of frame",
+      "camera": "Smooth forward tracking motion at steady speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop in the middle of the highway and remains fully stationary while the tumbleweed rolls off toward the left verge. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward at cruising speed along the empty straight desert highway. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient desert wind and the steady hum of the vehicle's engine and tire noise at the start, followed by the sharp screech and grind of hard braking as the car decelerates, then near silence with only faint wind and the ticking settle of the stopped vehicle in the final stationary segment.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:01",
+      "0:01-0:02",
+      "0:02-0:03",
+      "0:03-0:04",
+      "0:04-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:04",
+      "0:04-0:05"
+    ]
+  }
+}

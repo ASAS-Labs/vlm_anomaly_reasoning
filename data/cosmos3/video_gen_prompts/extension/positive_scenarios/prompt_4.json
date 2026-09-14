@@ -1,0 +1,155 @@
+{
+  "subjects": [
+    {
+      "description": "A regulation SPEED LIMIT 30 sign mounted on a galvanized metal post at the roadside, a white rectangular board with a black border and bold black numerals reading '30' above the text 'SPEED LIMIT'",
+      "appearance_details": "Clean reflective sign face, slight weathering on the post, standard highway-grade retroreflective sheeting",
+      "relationship": "The authoritative traffic control device the ego vehicle must obey, distinct from the nearby advertisement",
+      "location": "right side of frame, mid-ground on a roadside post",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the oncoming ego vehicle, angled slightly toward the camera",
+      "pose": "Static, upright on a vertical post",
+      "action": "Displaying the posted town speed limit",
+      "state_changes": "Grows larger in frame as the vehicle approaches, then passes to the right edge.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A large advertising trailer parked in an open lot, its side panel dominated by a bold red-and-yellow number '70' as part of a retail store promotion",
+      "appearance_details": "Box-style trailer with a printed vinyl advertisement wrap, promotional graphics, store logo and slogan surrounding the large '70'",
+      "relationship": "A visual distractor that resembles a speed cue but is clearly commercial signage, not a traffic sign",
+      "location": "right background, set back in a parking lot beyond the SPEED LIMIT sign",
+      "relative_size": "Large within frame",
+      "orientation": "Side of trailer facing the road and camera",
+      "pose": "Static, parked",
+      "action": "Displaying the store promotion with the large '70' graphic",
+      "state_changes": "Comes into fuller view as the vehicle nears, then slides past to the right.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car whose interior dashboard edge and hood are faintly visible at the bottom of the frame",
+      "appearance_details": "Clean windshield, subtle reflections of dashboard trim, forward-facing ego perspective",
+      "relationship": "The camera-carrying subject through which the scene is observed; it responds to the traffic sign",
+      "location": "implied at bottom foreground, camera mounted behind windshield",
+      "relative_size": "Small within frame",
+      "orientation": "Facing forward down the road",
+      "pose": "Driving forward along the right lane",
+      "action": "Traveling along the road, then decelerating to the town speed limit",
+      "state_changes": "Transitions from steady cruising speed to a reduced, sustained lower speed.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane road at the edge of a small town under clear daytime skies. The asphalt is dry with faint lane markings and a solid or dashed center line. On the right sits a roadside SPEED LIMIT 30 sign, and behind it an open commercial lot holds a large advertising trailer bearing a bold '70' promotion. Low buildings, storefronts, scattered trees, utility poles, and a few parked vehicles line the periphery. The road ahead is clear and unobstructed, receding toward a bright horizon.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High side-lit from the upper right, consistent with midday sun",
+    "shadows": "Short, crisp, consistent shadows cast to the left of poles, signs, and the trailer",
+    "illumination_effect": "Even, high-visibility illumination with strong contrast and legible signage"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving perspective with the road converging toward the horizon; roadside sign and advertising trailer arranged on the right third to create decision-making tension",
+    "color_scheme": "Gray asphalt, blue sky, green foliage, with punchy red-yellow accents from the '70' advertisement and the white-black regulation sign",
+    "mood_atmosphere": "Calm, orderly, attentive, everyday commute",
+    "patterns": "Repeating utility poles and lane markings receding down the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a fixed windshield mount, moving with the vehicle and slowing near the end; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's forward viewpoint",
+    "camera_angle": "Eye-level, ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead, the SPEED LIMIT 30 sign, and the advertising trailer all in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam style",
+  "context": "Autonomous driving perception demonstration distinguishing a genuine traffic sign from a lookalike advertisement",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the clear two-lane road as the SPEED LIMIT 30 sign and the advertising trailer with the '70' graphic come into view on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle approaches the signage; the system recognizes the '70' as an advertisement and identifies the SPEED LIMIT 30 as the valid posted limit. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle smoothly decelerates to the lower town speed and continues rolling steadily at that reduced speed with the road still clear ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 30",
+      "category": "scene_sign",
+      "appearance": "Bold black numerals and lettering on a white rectangular board with a black border, retroreflective highway font",
+      "spatial_temporal": "Right side mid-ground on a post, visible and growing throughout the clip",
+      "context": "The official posted town speed limit that the ego vehicle obeys"
+    },
+    {
+      "text": "70",
+      "category": "vehicle_graphic",
+      "appearance": "Very large bold red-and-yellow promotional numerals printed across the trailer side",
+      "spatial_temporal": "Right background on the parked advertising trailer, visible for most of the clip",
+      "context": "Part of a store promotion advertisement, deliberately not a traffic sign"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Forward drive along the clear road; the SPEED LIMIT 30 sign and the '70' advertising trailer appear on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Signage grows larger as the vehicle approaches at cruising speed.",
+      "camera": "Steady forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle nears the signage and correctly interprets the '70' as an advertisement while heeding the real 30 limit. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Recognition moment; onset of deceleration begins.",
+      "camera": "Forward tracking beginning to slow; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle decelerates to the town speed and continues rolling steadily at the reduced pace with a clear road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Speed lowers and stabilizes; sustained slow rolling for the final segment.",
+      "camera": "Forward tracking at reduced, steady speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car rolls forward along a clear two-lane road on the edge of a town under bright midday sun, with a SPEED LIMIT 30 sign and a large advertising trailer bearing a bold '70' emerging on the right. By 0:02 the signage fills more of the right frame as the vehicle nears; the system reads the '70' as a store advertisement and confirms the SPEED LIMIT 30 as the true posted limit. From 0:03 to 0:05 the vehicle smoothly slows to the lower town speed and keeps rolling steadily at that reduced pace, the road ahead remaining clear as the sign and trailer slide past on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low tire-on-asphalt hum and gentle wind noise, with a subtle engine tone that eases as the vehicle decelerates. Faint distant town ambience; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

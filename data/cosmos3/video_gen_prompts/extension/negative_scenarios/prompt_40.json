@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "Deep, fast-moving brown floodwater covering the entire road surface from edge to edge across a low dip in the road",
+      "appearance_details": "Muddy, opaque brown surface churned by heavy rain, with ripples, small standing waves, and debris drifting across the current; water reflects the fading dusk sky and any residual light",
+      "relationship": "The primary hazard the ego vehicle is driving into; occupies the road ahead",
+      "location": "Center to lower-center of frame, extending edge to edge across the road",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the camera, flowing laterally left to right across the roadway",
+      "pose": "N/A",
+      "action": "Flowing rapidly across the road, rippling and churning under the rain",
+      "state_changes": "The water fills more of the frame as the vehicle approaches and begins to enter it; ripples and bow waves form near the front of the car.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from its own driver's point of view",
+      "appearance_details": "Visible only through hood edge, windshield wipers sweeping across a rain-streaked windshield, faint dashboard reflections and headlight glow ahead",
+      "relationship": "The camera vehicle; the perspective from which the entire scene is observed",
+      "location": "Implied at the bottom/edge of frame, camera mounted at driver eye-level",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road, moving toward the floodwater",
+      "pose": "N/A",
+      "action": "Slowing slightly then continuing to roll forward into the deep floodwater",
+      "state_changes": "Reduces speed marginally but never stops, pushing forward into the water and creating a bow wave.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane road at dusk in the middle of a heavy rainstorm. The road descends into a low dip where floodwater has pooled and continues to move across the surface. On either side, muddy shoulders, waterlogged grass, and shadowy tree lines fade into a dim, rain-blurred landscape. The far side of the road rises slightly beyond the water but is barely visible through the downpour and dwindling light. Overcast, dark grey clouds hang low, and the horizon glows faintly with the last of the daylight.",
+  "lighting": {
+    "conditions": "Low ambient dusk light under heavy overcast skies, supplemented by the vehicle's headlights",
+    "direction": "Diffuse overhead glow from the fading sky with headlight beams projecting forward from the ego vehicle",
+    "shadows": "Soft, weak, diffuse shadows due to low light; minimal hard shadows",
+    "illumination_effect": "A murky, low-visibility scene where headlights catch falling raindrops and reflect off the moving water surface, creating a tense, dim atmosphere"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing composition with the road and floodwater filling the lower and central frame, sky compressed to a thin dim band at top, windshield wipers framing the edges",
+    "color_scheme": "Muted palette of muddy browns, cold greys, and deep blue-black dusk tones with faint warm headlight highlights",
+    "mood_atmosphere": "Tense, ominous, hazardous, foreboding",
+    "patterns": "Rippling waves across the floodwater and the rhythmic sweep of windshield wipers"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle, slight deceleration then continued advance; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver POV",
+    "camera_angle": "Eye-level, dashboard-mounted perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road and floodwater ahead, softened by rain and windshield streaks",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Dashcam-style ego-view footage depicting a dangerous decision to drive into flooded roadway during a storm",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The car travels forward on the rain-soaked two-lane road at dusk, wipers sweeping, approaching a low dip where brown floodwater spans the road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle slows down only slightly as the expanse of deep, fast-moving floodwater fills the view, its far side barely visible through the rain. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The car keeps rolling forward at the reduced speed and enters the deep floodwater, pushing a bow wave outward as the muddy current surges around the front. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward on the two-lane road at dusk in heavy rain, approaching a low dip where a wide expanse of deep brown floodwater covers the entire road. The vehicle slows only slightly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Floodwater grows to fill the frame; vehicle speed marginally decreases; visibility of the far road side diminishes.",
+      "camera": "Forward tracking POV from dashboard, slight deceleration, wipers sweeping; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Maintaining its reduced speed, the car continues rolling forward and enters the deep, fast-moving floodwater, creating bow waves as the current churns around the vehicle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle transitions from dry road onto flooded surface; water sprays and ripples appear at the front; motion continues without stopping.",
+      "camera": "Continued forward tracking POV, steady advance into the water, rain and spray on windshield; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At second 0, the dashcam POV shows a dim, rain-lashed two-lane road at dusk, windshield wipers sweeping and headlights glowing forward. By second 1, the road dips ahead and a wide expanse of brown floodwater comes into view, spanning edge to edge with the far side barely visible through the downpour. At second 2, the car slows only slightly as the churning muddy water dominates the frame. From second 3 onward, the vehicle keeps rolling forward at the reduced speed and drives into the deep floodwater, its front pushing a bow wave that spreads across the fast-moving current, with rain continuing to streak the windshield through second 5. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Heavy rain drumming on the roof and windshield, the rhythmic thump-swish of windshield wipers, the low hum of the engine at reduced speed, tires transitioning from wet pavement to a splashing, sloshing sound as they enter the floodwater, and the rush of moving water intensifying as the vehicle pushes into the current.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

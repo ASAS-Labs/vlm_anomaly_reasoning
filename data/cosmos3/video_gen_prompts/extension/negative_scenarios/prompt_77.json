@@ -1,0 +1,188 @@
+{
+  "subjects": [
+    {
+      "description": "A large orange diamond-shaped RAMP CLOSED warning sign mounted on a portable metal stand at the edge of the on-ramp",
+      "appearance_details": "Reflective fluorescent-orange background with bold black lettering, slightly weathered with dust, mounted on folding A-frame legs",
+      "relationship": "Primary warning directing traffic away from the closed ramp toward the right turn-off",
+      "location": "center-right foreground, roadside",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera/oncoming ego vehicle",
+      "pose": "Upright, stationary on stand",
+      "action": "Displaying closure warning to approaching traffic",
+      "state_changes": "Grows larger and passes to the right as the ego vehicle drives by",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A staggered row of orange-and-white plastic traffic barrels narrowing the ramp toward the closure",
+      "appearance_details": "Cylindrical drums with reflective white horizontal stripes, weighted rubber bases, some scuffed and dusty",
+      "relationship": "Channelizing devices guiding traffic to the right turn-off, blocking the ramp beyond",
+      "location": "center to right, along roadway",
+      "relative_size": "Medium within frame",
+      "orientation": "Lined along the roadway edge facing traffic flow",
+      "pose": "Standing upright in a line",
+      "action": "Marking the boundary of the closed work zone",
+      "state_changes": "Sweep past on both sides as the ego vehicle drives between them into the zone",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 8,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A trailer-mounted flashing arrow board directing traffic to the right",
+      "appearance_details": "Black rectangular panel with amber LED lamps illuminating in a rightward arrow pattern, mounted on a small trailer with orange striping",
+      "relationship": "Electronic signal reinforcing the detour direction",
+      "location": "center-right midground, roadside",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled toward oncoming traffic",
+      "pose": "Stationary on trailer",
+      "action": "Flashing amber arrow pointing right",
+      "state_changes": "Lamps flash in sequence; passes right as vehicle advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Construction workers in high-visibility gear occupying the ramp beyond the barrels",
+      "appearance_details": "Fluorescent yellow-green safety vests, hard hats, work boots, some holding tools",
+      "relationship": "Personnel working within the closed work zone the ego vehicle enters",
+      "location": "center background, on the closed ramp",
+      "relative_size": "Small within frame",
+      "orientation": "Facing various directions, some turning toward the approaching vehicle",
+      "pose": "Standing and moving around machinery",
+      "action": "Working, some reacting to the encroaching vehicle",
+      "state_changes": "Grow larger and appear to react as the ego vehicle enters the zone",
+      "clothing": "High-visibility yellow-green vests, hard hats, dark work trousers, boots",
+      "expression": "Alert, concerned",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied, weathered from outdoor work",
+      "facial_features": "Partially obscured by hard hats; indistinct at distance",
+      "number_of_subjects": 3,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "Yellow heavy construction machinery parked on the closed ramp",
+      "appearance_details": "Excavator or wheel loader with amber beacon, dusty yellow paintwork, hydraulic arm",
+      "relationship": "Equipment marking active work zone beyond the barrels",
+      "location": "center-left background on the ramp",
+      "relative_size": "Small within frame",
+      "orientation": "Angled across the ramp",
+      "pose": "Parked, arm partially raised",
+      "action": "Idle within work zone",
+      "state_changes": "Grows larger as vehicle approaches",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A curving freeway on-ramp under clear blue daytime sky, flanked by concrete barriers and dry roadside vegetation. The ramp merges upward toward the freeway on the left, while a marked turn-off branches to the right. Ahead lies a construction work zone with orange barrels, signage, an arrow board, parked machinery, and workers. Asphalt shows lane markings, chevron detour arrows, and dusty patches from the work.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from upper right, front-side lit",
+    "shadows": "Crisp, consistent shadows cast to the left of objects, barrels and signs throwing sharp dark shapes on the asphalt",
+    "illumination_effect": "High contrast, vivid saturation of orange safety equipment against blue sky and gray road, strong visibility of reflective surfaces"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving perspective from the driver's seat, road vanishing point offset right toward the detour, barrels framing the frame edges as the vehicle passes",
+    "color_scheme": "Dominant fluorescent orange and white of work zone gear against gray asphalt, blue sky, and yellow machinery",
+    "mood_atmosphere": "Tense, cautionary, urgent, sense of transgression",
+    "patterns": "Repeating staggered barrels and reflective stripes; flashing arrow board sequence"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion following the vehicle's path into the work zone without deceleration; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot ego/POV",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road, signage, barrels, and work zone ahead",
+    "lens_focal_length": "Wide-angle (~24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving / driving behavior scenario depicting a vehicle failing to yield at a closed ramp work zone",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises up the on-ramp at full speed, approaching the orange RAMP CLOSED sign, barrel row, and flashing arrow board directing traffic right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Vehicle continues without slowing, ignoring the detour, passing the closure sign on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Vehicle drives between the barrels into the work zone, passing machinery and workers who occupy the ramp, maintaining cruising speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "RAMP CLOSED",
+      "category": "scene_sign",
+      "appearance": "Bold black uppercase lettering on fluorescent-orange diamond sign",
+      "spatial_temporal": "Center-right foreground throughout first 3 seconds, passing right as vehicle advances",
+      "context": "Warns drivers the ramp ahead is closed and directs them to the detour"
+    },
+    {
+      "text": "→",
+      "category": "scene_sign",
+      "appearance": "Amber LED arrow flashing rightward on black arrow board",
+      "spatial_temporal": "Center-right midground, visible seconds 0-3",
+      "context": "Directs traffic to the right turn-off away from the closure"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives up the on-ramp toward the work zone, with the RAMP CLOSED sign, barrels, and flashing arrow board all directing traffic to the right turn-off. The vehicle does not slow. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Signage and barrels grow larger; detour to right becomes clearly visible but is ignored.",
+      "camera": "Forward dashcam tracking, steady, no deceleration; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle drives between the barrels into the work zone at full cruising speed, passing parked yellow machinery and high-visibility workers who occupy the closed ramp. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Barrels sweep past both sides; workers and machinery loom closer and appear to react.",
+      "camera": "Continued forward tracking through the closure into the work zone; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the vehicle cruising up a curving freeway on-ramp under bright clear daylight with sharp shadows. By 0:01 an orange RAMP CLOSED sign, a staggered row of orange barrels, and a flashing amber arrow board come into view directing traffic to a right turn-off. At 0:02 the vehicle maintains full speed, ignoring the detour and passing the closure sign on the right. From 0:03 to 0:05 the vehicle drives straight between the barrels into the work zone without slowing, sweeping past parked yellow machinery and high-visibility workers who occupy the closed ramp and appear to react to the encroaching car. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady engine hum and tire noise at cruising speed, faint wind. Rhythmic clicking or buzz from the flashing arrow board, distant sounds of machinery and shouting workers growing louder as the vehicle enters the work zone. No music or speech from the vehicle occupant.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

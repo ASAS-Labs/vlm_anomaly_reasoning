@@ -1,0 +1,149 @@
+{
+  "subjects": [
+    {
+      "description": "A small off-leash dog with short tan and white fur, floppy ears, and a compact terrier-mix build",
+      "appearance_details": "No collar or leash visible, alert posture, thin tail held slightly up, small paws moving quickly",
+      "relationship": "The unexpected road hazard that triggers the ego vehicle's emergency braking response",
+      "location": "Emerges from behind a parked car on the right, moves into the center of the ego lane ahead",
+      "relative_size": "Small within frame",
+      "orientation": "Initially facing left across the road, then briefly facing toward the camera as it enters the lane",
+      "pose": "Running at a low, quick gait with legs extended in mid-stride",
+      "action": "Darts out from behind a parked car and runs into the ego lane directly ahead",
+      "state_changes": "Transitions from hidden behind a car, to sprinting across the lane, to slowing and pausing in the center of the road ahead of the stopped vehicle",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "A row of parked passenger cars lined along the right curb of the residential street",
+      "appearance_details": "Mixed sedans and hatchbacks in muted colors such as silver, gray, dark blue, and white, parked bumper to bumper",
+      "relationship": "Line the curb and provide the visual occlusion from which the dog suddenly appears",
+      "location": "Right side of frame along the curb, receding into the background",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel to the roadway, facing away from the camera",
+      "pose": "Stationary, parked parallel to the curb",
+      "action": "Remaining parked and motionless",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street on a clear sunny day. Single-family homes with front lawns, low hedges, and driveways line both sides of the road. Trees cast dappled shade onto the pavement. The asphalt shows faint lane markings and a center line. Parked cars line the right curb, while the left side and the ego lane ahead are clear of traffic. A calm, ordinary neighborhood atmosphere with mailboxes and sidewalks visible.",
+  "lighting": {
+    "conditions": "Bright daylight",
+    "direction": "Sunlight from the upper left casting angled shadows",
+    "shadows": "Consistent, hard-edged shadows from trees, parked cars, and houses fall diagonally across the pavement",
+    "illumination_effect": "Even, high-visibility natural illumination with strong contrast between sunlit road and shaded areas"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view perspective looking straight down the residential street, with the vanishing point along the road ahead, parked cars framing the right edge",
+    "color_scheme": "Warm daylight palette of green lawns, gray asphalt, muted car colors, and blue sky",
+    "mood_atmosphere": "Calm neighborhood turning tense, sudden alertness, cautious relief",
+    "patterns": "Repeating rhythm of parked cars along the curb and evenly spaced trees and houses"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the dog entering the lane",
+    "lens_focal_length": "Wide-angle, typical of a dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Automotive driving footage demonstrating autonomous or driver emergency braking for a road hazard",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "The ego vehicle drives forward at a steady pace down the clear residential street with parked cars on the right."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A small dog darts out from behind a parked car on the right and runs into the ego lane directly ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:04",
+      "description": "The vehicle brakes: The vehicle comes to a complete stop before reaching the dog and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:04-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Ego vehicle travels smoothly forward on the sunlit residential street, cars parked along the right curb, road ahead clear.",
+      "key_changes": "Steady forward motion; scenery approaches uniformly.",
+      "camera": "Forward motion at constant speed, eye-level dashcam perspective."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "A small dog suddenly emerges from behind a parked car on the right and runs into the ego lane ahead.",
+      "key_changes": "Dog appears and enters the driving path; hazard detected.",
+      "camera": "Forward motion begins to slow abruptly as braking initiates."
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward at a steady pace down the clear residential street with parked cars on the right. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient neighborhood sounds of a calm residential street with light wind and distant birdsong, the steady hum of the moving car, followed by the sharp screech of tires and hard braking, then near silence as the vehicle idles stationary.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:04",
+      "0:04-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

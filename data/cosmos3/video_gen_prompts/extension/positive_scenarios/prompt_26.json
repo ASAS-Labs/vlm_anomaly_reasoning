@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "An adult jogger crossing the residential street from left to right, dressed in athletic running attire and moving at a steady jogging pace",
+      "appearance_details": "Wearing a moisture-wicking short-sleeve top, running shorts, athletic shoes, and a fitness watch on the wrist; holds a leash in the right hand",
+      "relationship": "Linked to the large dog ahead of them via a taut leash, forming a single crossing group",
+      "location": "Left-center midground, crossing toward the right",
+      "relative_size": "Medium within frame",
+      "orientation": "Body oriented rightward, roughly perpendicular to the camera's forward direction",
+      "pose": "Upright mid-stride running posture, arms swinging, leash arm extended forward",
+      "action": "Jogging across the road holding the dog's leash",
+      "state_changes": "Advances across the lane from left to right and clears the ego vehicle's path by the video's end",
+      "clothing": "Athletic running top, shorts, running shoes, fitness watch",
+      "expression": "Focused, mildly exerted",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone with a slight sheen from exertion",
+      "facial_features": "Short cropped hair, neutral focused eyes, slight flush from running",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A large dog trotting a couple of metres ahead of the jogger, connected by a taut leash",
+      "appearance_details": "Tan and brown short-haired coat, wearing a fitted harness with a clip attaching the leash, wagging tail",
+      "relationship": "Leading member of the linked jogger-and-dog crossing group, connected by the taut leash spanning part of the lane",
+      "location": "Left-center midground, slightly ahead of and to the right of the jogger",
+      "relative_size": "Small to medium within frame",
+      "orientation": "Facing rightward across the road, moving perpendicular to the camera",
+      "pose": "Trotting on all fours, head forward, tail up",
+      "action": "Trotting across the road ahead of the jogger, pulling the leash taut",
+      "state_changes": "Crosses fully to the right side ahead of the jogger, clearing the lane",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family homes, low fences, driveways, and mature trees casting dappled shadows onto the asphalt. Parked cars line the curb, hedges and manicured lawns border the sidewalks, and an unmarked crossing point cuts across the roadway ahead. The sky is clear blue with strong daylight, and the road surface shows subtle wear and consistent directional shadows.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side lighting from the upper left",
+    "shadows": "Crisp, consistent shadows cast to the lower right from trees, poles, and the crossing figures",
+    "illumination_effect": "Even, high-contrast natural illumination with well-defined edges and warm midday tones"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the road receding to a vanishing point; the jogger and dog occupy the left-to-center midground crossing the lane, framed by parked cars and greenery",
+    "color_scheme": "Warm asphalt greys, green foliage, blue sky, with accents of the jogger's athletic clothing and the dog's tan coat",
+    "mood_atmosphere": "Calm, orderly, safety-conscious, everyday suburban",
+    "patterns": "Repeating parked cars along the curb and rhythmic tree shadows across the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's ego viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "The jogger and dog crossing the lane and the road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic autonomous-driving dashcam documentary",
+  "context": "Autonomous vehicle perception and yielding scenario demonstrating group-linked pedestrian-and-animal detection at an unmarked crossing",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the residential street and detects a jogger with a large dog beginning to cross from the left, treating them as one linked group."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop and remains fully stationary while both the jogger and dog finish crossing to the right; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle moves forward on the sunlit residential street; a jogger holding a large dog on a taut leash enters the lane from the left.",
+      "key_changes": "Crossing group appears and begins moving across the lane; vehicle speed still forward.",
+      "camera": "Forward motion at moderate speed with steady heading."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a complete stop and remains stationary while the jogger and dog fully clear the crossing to the right. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the residential street and detects a jogger with a large dog beginning to cross from the left, treating them as one linked group. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sound: gentle engine idle transitioning to a soft deceleration and brake, faint tire contact on asphalt, distant birdsong, light breeze, the rhythmic footfalls of the jogger, and a brief jingle of the dog's harness. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A white full-size pickup truck driving ahead in the same lane, with its rear tailgate lowered and open",
+      "appearance_details": "Weathered white paint, chrome rear bumper, dust film on the tailgate, red brake lights momentarily inactive, mud flaps behind the rear wheels",
+      "relationship": "The lead vehicle that the ego car is following and reacting to",
+      "location": "center of frame, directly ahead in the same lane",
+      "relative_size": "Medium within frame",
+      "orientation": "rear-facing toward the camera, moving away in the same direction",
+      "pose": "traveling forward at a steady speed on the road",
+      "action": "driving steadily ahead with an overhanging ladder protruding from its open tailgate",
+      "state_changes": "Maintains steady speed while the ego vehicle drops further back, so it appears to shrink slightly in the frame.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A long aluminium extension ladder protruding well past the truck's open tailgate at roughly windshield height",
+      "appearance_details": "Silvery brushed aluminium rungs and rails glinting in sunlight, extended beyond the bed by more than a metre, a small red warning flag tied to its far protruding end fluttering in the airflow",
+      "relationship": "Cargo carried by the pickup truck; the hazard the ego vehicle detects",
+      "location": "center foreground, jutting toward the camera from the truck bed",
+      "relative_size": "Medium within frame",
+      "orientation": "extending horizontally toward the camera, roughly parallel to the road",
+      "pose": "lying flat, protruding rearward past the tailgate",
+      "action": "extends toward the ego vehicle, red flag fluttering as the truck moves",
+      "state_changes": "Recedes gradually as the ego vehicle slows and increases following distance.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane rural highway under clear midday skies, with a single lane in each direction separated by painted center lines. Asphalt shows mild sun-bleaching and lane markings. Low grassy verges and occasional roadside vegetation flank both sides, with scattered utility poles and distant low hills visible near the horizon. Consistent daytime shadows fall across the roadway.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High and slightly front-left, consistent with midday sun",
+    "shadows": "Short, hard-edged, consistent shadows cast beneath the truck and along the road surface",
+    "illumination_effect": "Crisp, high-contrast illumination with bright specular glints off the aluminium ladder and metallic surfaces"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-perspective composition with the road converging toward a vanishing point, the pickup truck and protruding ladder framed dead-center ahead",
+    "color_scheme": "Neutral grays of asphalt, white of the truck, silvery aluminium, muted green verges, and a pale blue sky accented by the small red flag",
+    "mood_atmosphere": "Calm, cautious, routine daytime driving with a subtle sense of vigilance",
+    "patterns": "Repeating lane markings and ladder rungs receding in perspective"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-tracking ego dashcam view moving with the vehicle, decelerating mid-shot; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's viewpoint through the windshield",
+    "camera_angle": "Eye-level, driver seat height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the pickup truck and protruding ladder ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving hazard-detection demonstration of an ego vehicle reacting to protruding cargo",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle follows the pickup truck at a normal distance; the aluminium ladder with red flag is clearly visible protruding past the open tailgate. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Ego vehicle detects the protruding ladder and begins to decelerate, increasing following distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego vehicle continues rolling at the reduced speed, holding a safe distance well back from the truck. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego car travels steadily behind the white pickup truck on the two-lane road, with the aluminium ladder and small red flag protruding past the open tailgate at windshield height. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ladder hazard becomes clearly visible; steady speed maintained.",
+      "camera": "Forward-tracking ego view at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The ego vehicle detects the protruding ladder and begins to slow, dropping back from the truck. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Deceleration begins; gap between vehicles widens; truck appears to move slightly ahead.",
+      "camera": "Forward-tracking ego view decelerating; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle keeps rolling at the reduced speed, maintaining a safe following distance well behind the pickup truck. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Stabilized larger gap; truck and ladder recede slightly in frame.",
+      "camera": "Forward-tracking ego view at steady reduced speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego dashcam view shows the car following a white pickup truck on a sunlit two-lane road, with a long aluminium ladder protruding past the truck's open tailgate at windshield height and a small red flag fluttering on its end. Through 0:02 the vehicles move steadily and the ladder hazard remains prominent. At 0:02 the ego vehicle registers the protruding ladder and begins to decelerate, and by 0:03 the following gap has visibly widened as the truck edges ahead. From 0:03 to 0:05 the ego vehicle continues rolling at the reduced speed, holding a comfortable safe distance well back from the truck under clear daytime lighting. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low ambient hum of the ego vehicle's engine and tyre-on-asphalt road noise, a faint wind rush, and the subtle change in engine tone as the vehicle decelerates around the two-second mark. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

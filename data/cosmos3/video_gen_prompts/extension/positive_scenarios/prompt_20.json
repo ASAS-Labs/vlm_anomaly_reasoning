@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A pedestrian crossing the road while carrying a large mattress held upright directly in front of their body, so only their lower legs and shoes are visible beneath a broad rectangular silhouette",
+      "appearance_details": "The mattress is a pale off-white/beige rectangular slab, edges slightly worn, obscuring the person's torso, arms, and head; only dark-trousered legs and sneakers peek out at the bottom",
+      "relationship": "The obstacle the ego vehicle detects and slows for; the primary hazard in the ego lane",
+      "location": "center to slightly left, mid-ground, crossing the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "moving laterally across the frame from right to left, back of mattress facing camera",
+      "pose": "upright, walking slowly, legs mid-stride carrying a heavy upright load",
+      "action": "walking a mattress across the two-lane road in front of the ego vehicle",
+      "state_changes": "Continues crossing slowly leftward as the ego car slows; legs shift with each careful step, silhouette drifts across the lane",
+      "clothing": "dark trousers and dark low-top sneakers visible below the mattress",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle itself, implied by the first-person driving viewpoint through the windshield",
+      "appearance_details": "Interior windshield frame subtly visible at edges; dashboard reflection faint on the glass; headlights casting forward onto the road",
+      "relationship": "The point-of-view vehicle reacting to the pedestrian by slowing down",
+      "location": "camera position, not directly visible",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the road",
+      "pose": "traveling forward along the ego lane",
+      "action": "driving forward, then decelerating markedly and continuing at reduced speed",
+      "state_changes": "Speed decreases noticeably as the odd silhouette is recognized; then maintains a slow steady roll",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban road at dusk, framed by low residential houses, parked cars along the curb, trimmed hedges and scattered trees. The sky holds a dim bluish twilight, deepening toward the horizon. Streetlights along the road have just flickered on, casting small warm pools of amber onto the asphalt. Sidewalks flank both sides of the road, and driveways with faint porch lights recede into the distance.",
+  "lighting": {
+    "conditions": "Dim bluish twilight at dusk with newly lit streetlights",
+    "direction": "Ambient overhead twilight from above, punctuated by pooled downward light from streetlamps and forward throw from the ego headlights",
+    "shadows": "Soft, long, low-contrast shadows; the pedestrian's legs cast faint elongated shadows across the lane under the streetlight pools",
+    "illumination_effect": "A cool, muted, low-visibility atmosphere where the pale mattress stands out as a bright rectangular shape against the darkening road"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving perspective with the road converging toward a vanishing point; the pale rectangular mattress silhouette anchored mid-frame crossing the ego lane, streetlights framing the sides",
+    "color_scheme": "Cool blues and slate grays of twilight, dark asphalt, offset by warm amber streetlight glows and the pale beige of the mattress",
+    "mood_atmosphere": "Calm, cautious, slightly surreal, quietly tense",
+    "patterns": "Repeating streetlights and lane markings receding down the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego dashcam) that slows in speed as the vehicle decelerates; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver POV through the windshield",
+    "camera_angle": "Eye-level, forward-facing driving perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the pedestrian carrying the mattress",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic automotive dashcam documentary",
+  "context": "Autonomous driving / ADAS demonstration of recognizing an unusual pedestrian silhouette and slowing to yield",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward down the dusky suburban road; a broad pale rectangular silhouette is noticed crossing the ego lane ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The system recognizes the silhouette as a person carrying a mattress; the vehicle begins to decelerate markedly. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues at the reduced speed, rolling slowly to give the pedestrian room as they finish crossing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Forward drive at cruising suburban speed; twilight road with streetlights coming on; pale mattress silhouette appears crossing the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Silhouette enters and moves into the ego lane; only legs visible beneath the rectangle.",
+      "camera": "Steady forward tracking at normal driving speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle recognizes the object as a person carrying a mattress and begins a marked deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Noticeable slowdown; the crossing subject grows larger and drifts leftward.",
+      "camera": "Forward tracking decelerating, motion visibly easing; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains the reduced speed, rolling slowly and continuously to give the pedestrian room as they cross. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Speed held low and steady; pedestrian continues across the lane.",
+      "camera": "Slow steady forward creep; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car drives forward along a dim bluish suburban road at dusk, streetlights just flickering on and casting amber pools on the asphalt. By 0:01 a broad pale rectangular shape is visible ahead, crossing the ego lane, with only a pair of trousered legs showing beneath it. At 0:02 the vehicle recognizes it as a person carrying a mattress upright and begins to slow noticeably. Through 0:03 the deceleration is clear as the mattress silhouette drifts leftward across the lane. From 0:03 to 0:05 the car keeps rolling at the reduced speed, giving the pedestrian room as they continue their slow crossing under the twilight sky. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Low ambient engine hum decreasing in pitch as the vehicle decelerates, faint tire noise on asphalt, distant suburban evening ambience with occasional muffled birdsong and a soft breeze; a subtle interior chime or alert as the system detects the pedestrian; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

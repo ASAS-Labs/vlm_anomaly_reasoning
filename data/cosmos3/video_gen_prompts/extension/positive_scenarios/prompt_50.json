@@ -1,0 +1,148 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming oversize-load semi-truck, a heavy-duty tractor unit hauling a specialized extended flatbed trailer carrying a single enormous glossy white wind-turbine blade",
+      "appearance_details": "The blade is smooth, aerodynamic, tapering from a broad rounded root to a slender tip; it stretches far beyond the trailer and overhangs the highway centre line, its wide root section juting partly into the ego lane. Red warning flags and 'OVERSIZE LOAD' banners are affixed near the trailing edge",
+      "relationship": "The primary hazard the ego vehicle must avoid; escorted by the amber-flashing pilot vehicle ahead of it",
+      "location": "center to left-center, approaching from the distance in the oncoming lane",
+      "relative_size": "Medium within frame, growing to Large as it approaches",
+      "orientation": "Front-facing toward the camera, travelling in the opposite direction",
+      "pose": "Straddling the centre line, blade tip trailing far behind the cab",
+      "action": "Driving steadily toward the ego vehicle with its load overhanging into the ego lane",
+      "state_changes": "Grows larger in frame as distance closes; blade's encroachment into ego lane becomes more apparent",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "An escort pilot vehicle, a pickup truck with a roof-mounted amber light bar and an 'OVERSIZE LOAD' warning sign",
+      "appearance_details": "Bright amber strobe lights flashing rhythmically on the roof, high-visibility markings, bright yellow warning banner across the front",
+      "relationship": "Leads and warns oncoming traffic of the following oversize-load truck",
+      "location": "center-left, ahead of the oversize truck in the oncoming lane",
+      "relative_size": "Small within frame, growing to Medium as it passes",
+      "orientation": "Front-facing toward the camera",
+      "pose": "Driving in lead position ahead of the wide load",
+      "action": "Advancing toward the ego vehicle with amber lights flashing",
+      "state_changes": "Approaches and passes the ego vehicle on the left",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from the driver's ego perspective",
+      "appearance_details": "Only the interior edge of the windshield frame and a hint of the dashboard/hood are visible at the bottom of frame",
+      "relationship": "The observer whose viewpoint the video represents; reacts to the oncoming hazard",
+      "location": "implied camera position, bottom foreground",
+      "relative_size": "Large within frame (implied)",
+      "orientation": "Forward-facing, travelling down the highway",
+      "pose": "Moving forward along the right side of the lane",
+      "action": "Slowing markedly and hugging the right edge to create clearance",
+      "state_changes": "Reduces speed noticeably and drifts toward the right lane edge",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane highway cutting through open countryside on a clear day. Flat to gently rolling fields of dry grass and low shrubs line both sides of the road, with distant tree lines and a wide blue sky. The asphalt shows a faded yellow centre line and white edge markings, with a gravel shoulder to the right. Utility poles and occasional roadside reflector posts recede toward the horizon.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High and slightly front-left, casting consistent directional shadows",
+    "shadows": "Crisp, well-defined shadows of the truck, blade, and roadside poles fall consistently to one side of the road",
+    "illumination_effect": "Even, high-contrast daylight that highlights the glossy white blade and produces good visibility with saturated blues and greens"
+  },
+  "aesthetics": {
+    "composition": "Centered driver's-eye framing with the road converging toward a vanishing point; the oncoming truck and blade dominate the upper-left third, ego lane and right shoulder anchor the lower-right",
+    "color_scheme": "Dominant blue sky, warm tan-green fields, grey asphalt, and the striking bright white of the turbine blade accented by amber escort lights and red warning flags",
+    "mood_atmosphere": "Cautious, tense, alert, everyday-driving vigilance",
+    "patterns": "Repeating roadside utility poles and dashed centre-line markings receding into distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam-style motion that gradually decelerates; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver perspective",
+    "camera_angle": "Eye-level, forward-facing",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the approaching oversize load",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam",
+  "context": "Autonomous-driving / ADAS hazard-recognition scenario demonstrating safe response to an oncoming oversize load encroaching into the ego lane",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego car travels forward at cruising speed; the amber-flashing escort vehicle and oversize-load truck with the white turbine blade appear ahead in the oncoming lane, the blade overhanging the centre line. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Ego vehicle recognizes the blade's extent jutting into its lane, begins to brake and steer toward the right edge. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego car continues at markedly reduced speed hugging the right shoulder as the escort and blade-carrying truck pass by on the left with wide clearance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "OVERSIZE LOAD",
+      "category": "vehicle_graphic",
+      "appearance": "Bold black capital letters on a bright yellow banner",
+      "spatial_temporal": "Mounted across the front of the escort pickup and near the trailing blade section, visible throughout as the vehicles approach",
+      "context": "Warns oncoming traffic that an oversize load is being transported"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego car cruises down the rural highway; escort vehicle with flashing amber lights and the oversize truck carrying the white wind-turbine blade come into view ahead, blade overhanging the centre line into the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Oncoming vehicles grow larger; the blade's encroachment becomes evident",
+      "camera": "Steady forward tracking at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Ego vehicle reacts to the hazard, decelerating and drifting toward the right edge of its lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Noticeable speed reduction and lateral shift right",
+      "camera": "Forward tracking with visible deceleration and slight rightward drift; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego car proceeds slowly along the right shoulder edge while the escort and blade-carrying truck pass safely on the left with wide clearance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicles pass each other; wide clearance maintained; ego holds reduced speed",
+      "camera": "Slow forward tracking hugging the right edge; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car moves forward along a clear rural two-lane highway under bright daylight, and an amber-flashing escort pickup with an oversize-load truck hauling a huge glossy white wind-turbine blade appears in the oncoming lane. By 0:02 the blade is clearly overhanging the centre line and jutting into the ego lane, prompting the ego vehicle to brake and steer toward the right edge. From 0:03 to 0:05 the ego car rolls at a markedly reduced speed, hugging the right shoulder as the escort vehicle and the blade-carrying truck pass by on the left with a safe wide clearance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires on asphalt and engine hum, gradually lowering in pitch as the vehicle decelerates. The passing diesel truck produces a growing low rumble that crescendos and fades. Faint wind rush is present throughout, with no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

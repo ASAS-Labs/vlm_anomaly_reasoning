@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A herd of dairy and beef cattle, predominantly brown, black, and white-patched Friesian and Hereford-type cows filling the full width of the country lane",
+      "appearance_details": "Muddy legs and flanks, wet noses, ear tags visible on some animals, swishing tails, breath faintly misting in the cool damp air",
+      "relationship": "The primary obstacle blocking the ego vehicle's path; the animals surround and flow past the car",
+      "location": "center foreground and mid-ground, spanning the full width of the lane",
+      "relative_size": "Large within frame",
+      "orientation": "Facing toward and moving toward the camera, some turning sideways as they pass",
+      "pose": "Standing and walking slowly, heads lowered, bodies pressed close together",
+      "action": "Walking slowly toward and around the ego vehicle, milling and shuffling forward",
+      "state_changes": "Cattle grow larger in frame as the vehicle noses forward; nearest animals turn and part slightly to squeeze past either side of the car",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 25,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "A farmer in a waterproof jacket and wellington boots walking behind the herd, driving the cattle along the lane",
+      "appearance_details": "Dark green wax jacket, flat cap, holding a long stick, weathered ruddy complexion",
+      "relationship": "Herding the cattle from behind, controlling their movement down the lane",
+      "location": "distant background, center, behind the herd",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the camera, partially obscured by the cattle",
+      "pose": "Upright, walking, arm slightly raised holding a stick",
+      "action": "Following and directing the herd forward",
+      "state_changes": "Remains small and mostly hidden behind the moving cattle throughout",
+      "clothing": "Dark green waxed cotton jacket, muddy blue jeans, black wellington boots, tweed flat cap",
+      "expression": "Calm, focused, weathered",
+      "gender": "Male",
+      "age": "Middle-aged",
+      "skin_tone_and_texture": "Fair, ruddy and weather-worn skin with wind-chapped cheeks",
+      "facial_features": "Squinting eyes under the cap brim, greying stubble, lined forehead",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A narrow single-track British country lane bordered on both sides by tall, dense green hedgerows that press in close to the road, leaving no verge or passing space. The tarmac is damp and slightly muddy with tyre tracks and scattered dung. Beyond the hedges, glimpses of flat farmland and a pale grey overcast sky are visible. The lane curves gently away into the distance where the farmer and the tail of the herd continue.",
+  "lighting": {
+    "conditions": "Overcast daytime, flat diffuse light",
+    "direction": "Top-diffuse, no strong directional source through the cloud cover",
+    "shadows": "Soft, faint shadows directly beneath the cattle and vehicle",
+    "illumination_effect": "Even, muted illumination that softens contrast and mutes colours, giving a damp, cool, naturalistic atmosphere"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical central framing with the lane vanishing point ahead, hedgerows framing left and right, cattle massed across the full width",
+    "color_scheme": "Muted greens of hedges, greys of sky and tarmac, browns, blacks and whites of the cattle",
+    "mood_atmosphere": "Rural, calm yet tense, mildly claustrophobic, everyday countryside obstruction",
+    "patterns": "Repeating forms of cattle bodies and the linear texture of hedgerow foliage"
+  },
+  "cinematography": {
+    "camera_motion": "Slow forward dolly, ego-vehicle mounted, gently advancing into the herd; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver eye-level perspective",
+    "camera_angle": "Eye-level, dashboard-mounted ego view",
+    "depth_of_field": "Deep",
+    "focus": "The cattle in the mid-ground and the lane ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "documentary, naturalistic dashcam realism",
+  "context": "Ego-vehicle drive footage encountering livestock on a rural road, illustrating an unavoidable slow crawl through a moving cattle herd",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The car moves slowly along the narrow lane between hedgerows, revealing the herd of cattle filling the width ahead and walking toward it. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The cattle approach closer; the farmer is visible behind them driving them forward. There is no way past. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues forward slowly, nosing between the animals which part and flow around either side without the car stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives slowly down the hedge-lined country lane. Ahead, a herd of cattle fills the entire width, walking toward the car, with the farmer following behind. It becomes clear there is no way past. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Cattle grow larger in frame as distance closes; farmer becomes visible behind the herd",
+      "camera": "Slow steady forward dolly from ego-vehicle mount; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Without stopping, the ego vehicle continues to creep forward, nosing directly into and between the cattle, which shuffle and part to flow around both sides of the car. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Nearest cows turn and squeeze past left and right of the vehicle as it advances",
+      "camera": "Continued slow forward dolly, cattle passing close on both edges of frame; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego view shows a damp narrow country lane hemmed in by tall green hedgerows under a flat grey overcast sky, the car rolling slowly forward. By 0:01 a dense herd of brown, black and white cattle fills the entire width of the lane ahead, walking toward the vehicle. At 0:02 the animals loom larger and a farmer in a green jacket and flat cap becomes visible behind them, driving the herd forward; there is clearly no way past. From 0:03 to 0:05 the ego vehicle continues to creep forward without stopping, nosing gently between the cattle as the nearest animals turn and part, flowing around both sides of the car while the herd keeps moving slowly onward. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient countryside sounds dominate: the low idling hum of the car engine, wet tyres on damp tarmac, the shuffling hooves and occasional deep mooing of cattle, distant birdsong, and a faint whistle and call from the farmer directing the herd. No music or speech from inside the vehicle.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

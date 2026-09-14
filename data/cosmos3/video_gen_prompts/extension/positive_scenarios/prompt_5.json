@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A flatbed tow truck parked at the right curb, painted in a utilitarian white and orange livery with a boxy cab and a tilting recovery bed at the rear",
+      "appearance_details": "An amber rotating beacon mounted on the roof of the cab flashes rhythmically; the truck has reflective safety striping along its lower body, dual rear wheels, and a hook-and-chain rigging visible near the flatbed",
+      "relationship": "Roadside parked vehicle that the ego car passes; serves as the parked-vehicle hazard reference",
+      "location": "right side of frame, transitioning from mid-distance to right foreground as the ego car passes",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled slightly toward the camera with its rear-left corner facing the approaching ego vehicle, parked parallel to the curb",
+      "pose": "Stationary, fully outside the driving lane at the curb",
+      "action": "Parked at the curb with its amber beacon flashing",
+      "state_changes": "Grows larger in frame as the ego vehicle approaches and passes; the beacon continues flashing throughout. No positional change of the truck itself.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen implicitly through its forward-facing dashcam ego perspective",
+      "appearance_details": "Not directly visible; represented by the hood edge occasionally at the bottom of frame and the forward motion of the road",
+      "relationship": "The observer vehicle whose driving behavior is the focus; it treats the beacon as a parked-vehicle hazard and maintains cruising speed",
+      "location": "camera origin, center of frame",
+      "relative_size": "Small within frame",
+      "orientation": "Facing forward along the road direction",
+      "pose": "Driving forward in the right lane",
+      "action": "Cruising at normal speed down the two-lane urban road and past the parked tow truck",
+      "state_changes": "Maintains constant speed throughout; no braking or stopping. Slight lateral position holding within lane as it passes the truck.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane urban road under overcast daytime skies, flanked by curbs and modest low-rise buildings, streetlamps, and sparse roadside vegetation. The asphalt is dry and light gray, with faded lane markings dividing the two lanes. Parked cars and a tow truck occupy the right curb, and the road ahead is open and clear with no traffic signals, intersections, pedestrians, or lane obstructions. The horizon shows a flat, muted cityscape beneath uniform gray cloud cover.",
+  "lighting": {
+    "conditions": "Overcast daylight",
+    "direction": "Diffuse, top-down ambient light with no strong directional source",
+    "shadows": "Soft, diffuse shadows beneath the tow truck and parked vehicles, with low contrast",
+    "illumination_effect": "Even, flat illumination that mutes colors and reduces glare, giving a calm, neutral daytime appearance"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam framing with the road receding to a central vanishing point; the tow truck positioned to the right, gradually moving toward the right edge as the vehicle passes",
+    "color_scheme": "Muted grays of the road and sky, punctuated by the orange and white of the tow truck and the rhythmic amber flash of its beacon",
+    "mood_atmosphere": "Calm, routine, uneventful urban driving",
+    "patterns": "Repeating lane markings and the periodic flashing rhythm of the amber beacon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a fixed dashcam, moving with the ego vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road width and roadside",
+    "camera_angle": "Eye-level, driver's forward perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the tow truck at the right curb",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving perception scenario demonstrating correct classification of a roadside parked-vehicle hazard light versus an in-lane traffic hazard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward down the open two-lane road; the tow truck with flashing amber beacon appears parked at the right curb in the mid-distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle continues at steady speed, closing the distance to the tow truck without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle passes the parked tow truck on the left while maintaining cruising speed; the truck slides toward and out of the right edge of frame as the open lane ahead continues clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "TOW",
+      "category": "vehicle_graphic",
+      "appearance": "Bold black or dark lettering on the white and orange body panel of the truck",
+      "spatial_temporal": "On the side of the tow truck at the right curb, visible as the ego vehicle approaches and passes (0:02-0:05)",
+      "context": "Identifies the vehicle as a tow/recovery truck"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives forward on the dry two-lane road under overcast light; the parked tow truck with its flashing amber beacon becomes clearly visible at the right curb in the mid-distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The tow truck grows larger in frame as the ego vehicle approaches at constant speed; beacon flashes rhythmically.",
+      "camera": "Forward tracking dashcam moving steadily with the vehicle; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle passes the tow truck without slowing or stopping, treating the amber beacon as a benign parked-vehicle hazard light; the truck exits toward the right edge of frame and the open lane ahead remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Tow truck shifts to the right foreground and out of frame; road ahead stays open and dry; ego speed unchanged.",
+      "camera": "Continuous forward tracking dashcam at constant speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows an open, dry two-lane urban road under flat overcast light, with a tow truck parked at the right curb ahead, its amber roof beacon flashing. Through 0:01-0:02 the ego vehicle maintains its cruising speed, and the tow truck's white-and-orange body and rotating amber beacon come into clearer view at the right curb, fully outside the driving lane. By 0:03 the ego vehicle continues without any braking, closing the gap. From 0:03 to 0:05 the vehicle passes the parked tow truck on its left at unchanged speed, the truck sliding toward and out of the right edge of frame, while the lane ahead remains open, dry, and hazard-free. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires on dry asphalt and the low hum of the engine at cruising speed, with faint distant urban traffic. No braking sounds, no horns, and no announcements; a subtle, consistent wind and road drone dominate throughout.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

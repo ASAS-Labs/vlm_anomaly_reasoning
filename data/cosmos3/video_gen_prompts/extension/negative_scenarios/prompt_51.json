@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A retired ambulance converted into a private camper, boxy white van-body with a squared cab, parked at the right curb of a suburban street",
+      "appearance_details": "Faded emergency markings and stripes barely visible along the side, a roof-mounted light bar that is completely dark and unlit, small curtained windows added to the rear cabin, a small vent and a rooftop solar panel indicating camper conversion",
+      "relationship": "The stationary object ahead that the ego vehicle incorrectly interprets as an active emergency vehicle",
+      "location": "right side of frame, parked along the curb ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "rear and right-side three-quarter facing the camera, pointing away down the road",
+      "pose": "parked and stationary against the curb",
+      "action": "remaining parked at the curb, completely inactive",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from the driver's forward point of view, only its hood and interior framing implied",
+      "appearance_details": "Visible dashboard edge and hood at the bottom of the frame, windshield forming the boundary of the view",
+      "relationship": "The observer whose behavior drives the scene; reacts to the parked camper as if it were an emergency vehicle",
+      "location": "camera position, foreground",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the road",
+      "pose": "driving forward then easing toward the curb and stopping",
+      "action": "travels down the road, decelerates, pulls toward the curb, and comes to a full stop behind the parked camper",
+      "state_changes": "Transitions from steady forward motion to deceleration to a complete stationary stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban residential road under clear midday skies. Modest single-family houses with driveways, low fences, mailboxes, and mature trees line both sides of the street. Green lawns and sidewalks flank the roadway, with a few parked cars along the curbs. The asphalt is dry and marked with faded lane lines, and utility poles with overhead wires recede into the distance.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly front-side lighting",
+    "shadows": "Crisp, consistent shadows cast by trees, poles, and vehicles onto the pavement",
+    "illumination_effect": "Even, natural illumination with good contrast and true colors, typical of a sunny suburban afternoon"
+  },
+  "aesthetics": {
+    "composition": "Centered forward driving perspective with the road vanishing point ahead; the parked camper offset to the right, dashboard edge along the bottom",
+    "color_scheme": "Muted greens of foliage, gray asphalt, warm suburban house tones, and the off-white body of the parked camper against a blue sky",
+    "mood_atmosphere": "Calm, ordinary, everyday suburban drive with an undertone of cautious misjudgment",
+    "patterns": "Repeating lane markings, evenly spaced utility poles, and rows of houses"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's point of view",
+    "camera_angle": "Eye-level, dashboard-mounted forward view",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the parked camper at the curb",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception scenario illustrating a false-positive emergency-vehicle response to an ordinary parked converted ambulance",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward along the open two-lane suburban road, approaching the parked converted ambulance at the right curb."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5, treating the dormant parked vehicle as an active emergency vehicle."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop behind the parked camper and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "AMBULANCE",
+      "category": "vehicle_graphic",
+      "appearance": "Faded block lettering, once bold, now washed-out and partially peeling on the side of the vehicle body",
+      "spatial_temporal": "On the side panel of the parked camper, visible on the right of frame throughout",
+      "context": "Residual marking from the vehicle's former life as an ambulance, now largely obscured"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle travels forward at steady speed on the clear suburban road, parked converted ambulance visible ahead at the right curb with its light bar dark and unlit.",
+      "key_changes": "Forward approach; parked camper grows larger in frame.",
+      "camera": "Smooth forward tracking motion, steady heading."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5, treating the dormant parked vehicle as an active emergency vehicle.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Ego vehicle reaches a complete stop directly behind the parked camper and stays fully stationary for the remaining duration. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward along the open two-lane suburban road, approaching the parked converted ambulance at the right curb. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily, treating the dormant parked vehicle as an active emergency vehicle. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds: the low hum of the ego vehicle's engine gradually easing as it decelerates, faint tire noise on dry asphalt, distant birdsong, and a soft breeze. No speech or music. The engine settles to a quiet idle once the vehicle stops, with subtle brake and suspension sounds at the halt.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

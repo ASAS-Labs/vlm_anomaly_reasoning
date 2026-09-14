@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An adult jogger in athletic wear crossing the road from the left, holding a leash connected to a large dog ahead.",
+      "appearance_details": "Wearing a bright neon-yellow running top, black fitted shorts, white running shoes, and a sports watch on the left wrist.",
+      "relationship": "Owner and handler of the large dog; connected to it by a taut leash spanning part of the lane.",
+      "location": "left-center of frame, crossing the road toward the right",
+      "relative_size": "Medium within frame",
+      "orientation": "profile view, facing right (running from left to right across the road)",
+      "pose": "mid-stride running posture, torso leaning slightly forward, arms swinging, one hand gripping the leash",
+      "action": "jogging across the road while holding the dog's leash",
+      "state_changes": "Continues running across the lane from left toward the right, closing the gap slightly as the vehicle approaches.",
+      "clothing": "neon-yellow running top, black shorts, white trainers, sports watch",
+      "expression": "focused, mildly alert, mouth slightly open from exertion",
+      "gender": "Male",
+      "age": "Young adult",
+      "skin_tone_and_texture": "medium tan skin, slightly flushed and glistening with light sweat",
+      "facial_features": "short dark brown hair, brown eyes, clean-shaven jaw, athletic angular face",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A large dog trotting a couple of metres ahead of the jogger, leading across the road.",
+      "appearance_details": "Golden-brown short coat, pointed ears, wearing a red harness with an attached leash trailing back to the jogger.",
+      "relationship": "Pet of the jogger; leads the leash across the lane a few metres ahead.",
+      "location": "center-right of frame, ahead of the jogger",
+      "relative_size": "Medium within frame",
+      "orientation": "profile view, moving toward the right",
+      "pose": "trotting on all four legs, head up, tail extended",
+      "action": "trotting across the road ahead of the jogger, pulling the leash taut",
+      "state_changes": "Continues trotting rightward across the lane, maintaining a couple of metres of distance from the jogger.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family houses, low fences, trimmed hedges, and mature trees casting dappled shade onto the asphalt. Parked cars sit along the curb, and driveways lead up to garages. The road has faded lane markings and an unmarked, informal crossing point where the pedestrian and dog traverse. Sidewalks, mailboxes, and telephone poles frame both sides under a clear blue sky.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High sun from the upper right, front-side lighting the scene",
+    "shadows": "Crisp, consistent, well-defined shadows cast from trees, poles, and the crossing figures onto the road surface",
+    "illumination_effect": "Even, high-contrast daylight that renders colors vividly and keeps the whole scene clearly visible"
+  },
+  "aesthetics": {
+    "composition": "Ego-centric forward view centered on the road ahead, with the jogger and dog crossing left-to-right across the mid-ground, the taut leash bridging the lane between them",
+    "color_scheme": "Warm asphalt greys, green foliage, blue sky, punctuated by the jogger's neon-yellow top and the dog's golden coat with red harness",
+    "mood_atmosphere": "Calm suburban routine, quiet tension from the unfolding crossing hazard",
+    "patterns": "Repeating rhythm of parked cars, fence posts, and roadside trees along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking, mounted dashcam moving with the vehicle at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road and roadside environment",
+    "camera_angle": "Eye-level, driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead, the jogger, the dog, and the leash between them",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / driver-assistance perception scenario depicting a pedestrian-and-animal road crossing hazard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward at cruising speed along the residential street, approaching the unmarked crossing point. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "A jogger begins running across the road from the left, leading a large dog by a leash that stretches taut across part of the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues at normal speed toward the gap between the jogger and the dog without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view of the car cruising down a sunlit residential street toward the unmarked crossing, with parked cars and trees lining the road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The crossing point grows nearer; the road ahead remains clear.",
+      "camera": "Forward tracking at steady cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "A jogger enters the road from the left with a large dog trotting a couple of metres ahead, the leash stretching taut across the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "New subjects appear crossing left-to-right; leash spans part of the lane.",
+      "camera": "Continues forward tracking without change; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains its cruising speed and drives toward the gap between the jogger and the dog without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle closes distance on the crossing pair at constant speed; the gap between jogger and dog stays visible.",
+      "camera": "Steady forward tracking at unchanged speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam looks forward along a bright, quiet residential street, the car cruising steadily past parked cars and shaded trees toward an unmarked crossing. By 0:02 a jogger in a neon-yellow top darts onto the road from the left, a large golden dog trotting a couple of metres ahead on a leash that pulls taut and spans part of the lane. From 0:03 to 0:05 the ego vehicle holds its normal cruising speed and drives straight toward the gap between the jogger and the dog, neither slowing nor stopping as the pair continue across the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor suburban sound: the steady low hum of the moving car and tires on asphalt, faint birdsong, a light breeze, and the distant rhythmic patter of the jogger's footfalls. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "subjects": [
+    {
+      "description": "A dense crowd of pedestrians of mixed ages and dress spilling off the sidewalks into the road, many carrying phones and glowing light-up novelties from the fireworks show",
+      "appearance_details": "Assorted casual and festive attire, some wearing light jackets, a few holding drinks and small children on shoulders, phone screens glowing",
+      "relationship": "The primary obstacle and moving mass surrounding the ego vehicle",
+      "location": "Center and both sides of frame, filling the road ahead and flanks",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing various directions, many crossing perpendicular to the vehicle, some looking back toward the ego car",
+      "pose": "Standing, walking, weaving between cars, gesturing and chatting",
+      "action": "Streaming across the intersection and flowing around the stationary ego vehicle",
+      "state_changes": "Crowd density increases as the car slows; individuals pass close to the hood and windows near the end",
+      "clothing": "Mixed casual streetwear, autumn jackets, hoodies, festive glowing accessories",
+      "expression": "Excited, relaxed, distracted, some looking at phones",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied skin tones across the crowd, softly lit by streetlights",
+      "facial_features": "Indistinct at distance; nearest faces show varied features lit by warm sodium light and phone glow",
+      "number_of_subjects": 60,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A line of gridlocked cars stopped ahead with glowing red tail lights and brake lights",
+      "appearance_details": "Sedans, SUVs, and a taxi packed bumper to bumper, exhaust and firework smoke drifting between them",
+      "relationship": "The traffic obstruction directly ahead of the ego vehicle",
+      "location": "Center and mid-ground of frame, receding into the distance",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear-facing toward the ego camera",
+      "pose": "Stationary vehicles",
+      "action": "Idling in gridlock, brake lights pulsing occasionally",
+      "state_changes": "Remain largely static; brake lights flicker as the jam holds",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 12,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, a modern car viewed from the driver's first-person perspective",
+      "appearance_details": "Dashboard edge and hood barely visible at bottom of frame, windshield framing the street ahead, hazard indicator glow at frame edges",
+      "relationship": "The camera platform; the subject the crowd flows around",
+      "location": "Full frame, camera positioned at driver eye level",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the street",
+      "pose": "Driving then stationary",
+      "action": "Braking to a full stop in the intersection and activating hazard lights",
+      "state_changes": "Transitions from rolling motion to complete stop; hazard lights begin flashing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy downtown city street at night immediately after a fireworks display. Multi-story buildings with lit windows and neon storefront signs line both sides. Streetlights cast warm pools of light through drifting gray-blue firework smoke. Traffic signals hang over a wide intersection choked with pedestrians and gridlocked vehicles. Wet-looking asphalt reflects red tail lights and colored signage.",
+  "lighting": {
+    "conditions": "Nighttime urban lighting, mixed artificial sources",
+    "direction": "Multi-directional, dominated by overhead streetlights and forward tail-light glow",
+    "shadows": "Long, soft, overlapping shadows cast by pedestrians across the illuminated road surface",
+    "illumination_effect": "Warm sodium streetlight pools mingle with red brake-light glow and cool smoke haze, creating a diffuse, cinematic night ambience with visible light beams cutting through smoke"
+  },
+  "aesthetics": {
+    "composition": "First-person driver POV with the hood and dashboard along the lower edge, the crowded intersection filling the center, and receding traffic drawing the eye to a vanishing point",
+    "color_scheme": "Dominant reds from tail lights, warm amber streetlights, cool gray-blue smoke, and scattered neon accents against deep night blacks",
+    "mood_atmosphere": "Festive yet congested, chaotic, tense, immersive",
+    "patterns": "Repeating rows of red tail lights and rhythmic clusters of moving pedestrians"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot through windshield",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the crowd and traffic ahead, slight haze softening the far background",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam cinematic",
+  "context": "Ego-view driving footage capturing a congested post-fireworks urban intersection at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03.5",
+      "description": "The vehicle brakes noticeably, decelerating as people begin walking between the cars and smoke drifts through the streetlights; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop in the middle of the intersection with hazard lights flashing and remains fully stationary as the crowd flows around it; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "WALK",
+      "category": "scene_sign",
+      "appearance": "Illuminated white pedestrian-signal glyph on black panel",
+      "spatial_temporal": "Upper right of frame near the intersection, visible throughout",
+      "context": "Pedestrian crossing signal at the intersection"
+    },
+    {
+      "text": "OPEN",
+      "category": "scene_sign",
+      "appearance": "Glowing red and blue neon storefront sign",
+      "spatial_temporal": "Left mid-ground storefront, visible throughout",
+      "context": "Neon shop signage adding urban ambience"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03.5",
+      "description": "The vehicle brakes and decelerates as pedestrians walk between the gridlocked cars and firework smoke swirls through streetlight beams. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped in the middle of the intersection with hazard lights flashing, remaining stationary for the full duration as the dense crowd streams around it. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban night soundscape with a distant lingering echo of fireworks, murmuring and excited chatter of the crowd, occasional laughter and footsteps, idling car engines, faint honking, and the rhythmic tick-tick of the ego vehicle's hazard indicator once activated.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

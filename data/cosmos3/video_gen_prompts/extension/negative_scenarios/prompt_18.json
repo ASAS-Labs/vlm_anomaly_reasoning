@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A pedestrian carrying a large flat rectangular mirror almost as tall as themselves, the reflective surface facing the ego vehicle so that it mirrors the road and sky and partially obscures the person's torso and head.",
+      "appearance_details": "The mirror has a thin dark aluminum frame with a smooth, slightly reflective silver glass surface that catches the sunlight; the person's lower legs, jeans, and casual sneakers are visible below the mirror's edge, along with one hand gripping the frame.",
+      "relationship": "Directly in the ego vehicle's driving path, functioning as an unexpected obstacle whose mirror surface deceives the vehicle's perception.",
+      "location": "Center of frame, mid-distance, straddling the ego lane.",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing toward the camera, the mirror surface angled squarely at the ego vehicle.",
+      "pose": "Upright, walking laterally across the lane while carrying the mirror with both arms braced against its frame.",
+      "action": "Walking across the ego lane holding the mirror upright toward the vehicle.",
+      "state_changes": "Person advances steadily across the lane; the mirror's reflection of road and sky shifts slightly as the person moves, but the figure remains largely hidden behind the glass.",
+      "clothing": "Casual light gray t-shirt partially visible above the mirror edge, blue denim jeans, and white sneakers.",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Young adult",
+      "skin_tone_and_texture": "Medium tone visible only on gripping hands and lower legs",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The large flat mirror itself, a distinct visual object reflecting the road and sky, creating a deceptive illusion of open lane.",
+      "appearance_details": "Rectangular sheet of silvered glass in a slim dark frame, standing nearly the height of the person carrying it; its surface reflects the residential street, asphalt, curbs, and bright blue sky above.",
+      "relationship": "Held by the pedestrian; the object that misleads the ego vehicle's perception into reading clear road ahead.",
+      "location": "Center foreground-to-mid, blocking the direct path.",
+      "relative_size": "Large within frame",
+      "orientation": "Reflective face angled directly at the camera.",
+      "pose": "Held vertically, tilted very slightly backward.",
+      "action": "Reflecting the road and sky toward the ego vehicle as it is carried across the lane.",
+      "state_changes": "The reflected scene within the mirror grows larger and more detailed as the ego vehicle approaches, revealing the deception only at close range.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined with single-family homes, low hedges, driveways, and parked cars along the curb. Mature trees cast dappled shadows across the pavement. The asphalt road is dry with faded lane markings, and the sky above is clear and bright blue with a few distant clouds. Sidewalks run parallel on both sides, and mailboxes and utility poles punctuate the roadside.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High front-side light, sun positioned overhead and slightly ahead",
+    "shadows": "Sharp, consistent shadows cast by trees, poles, and the pedestrian onto the road surface",
+    "illumination_effect": "Even, high-contrast daytime illumination that produces strong specular glare on the mirror surface and crisp definition of road textures"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the residential street, road vanishing toward the horizon, with the mirror-carrying pedestrian framed dead center in the ego lane.",
+    "color_scheme": "Naturalistic palette of gray asphalt, green foliage, warm house facades, and vivid blue sky, with a bright silver highlight on the reflective mirror.",
+    "mood_atmosphere": "Deceptively calm, quietly tense, uncanny",
+    "patterns": "Repeating rhythm of roadside trees, parked cars, and lane markings receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego-vehicle dashcam moving ahead); the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the mirror-carrying pedestrian",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception edge-case demonstrating a mirror-based visual deception of an ego vehicle's road reading.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the residential street; a pedestrian holding a large mirror is visible ahead in the lane, the mirror reflecting road and sky. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at constant cruising speed, reading the reflected open road in the mirror and not slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The gap closes as the vehicle drives directly toward the mirror-carrying pedestrian, still without slowing or stopping, the reflection now filling much of the frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego view establishes the residential street and the pedestrian carrying a tall mirror across the lane, the mirror surface reflecting the road and sky toward the camera. The vehicle maintains cruising speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The pedestrian and mirror grow larger in frame as the vehicle approaches; reflected road detail becomes clearer.",
+      "camera": "Steady forward tracking at constant speed, eye-level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle continues driving directly toward the mirror-carrying pedestrian without slowing or stopping. The mirror's reflection dominates the frame, revealing the deceptive open-lane illusion up close. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Distance to the pedestrian shrinks rapidly; mirror reflection fills more of the frame while speed remains unchanged.",
+      "camera": "Continued steady forward tracking, constant speed, eye-level; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a calm suburban residential street bathed in bright daylight, with parked cars, trees casting sharp shadows, and a person ahead in the ego lane holding a large mirror that reflects the road and sky. By 0:01 the vehicle continues forward at steady cruising speed, the mirror surface clearly mimicking open lane. At 0:02 the pedestrian and mirror grow larger, but the vehicle reads the reflection as clear road and does not decelerate. From 0:03 onward the ego vehicle keeps driving straight toward the mirror-carrying pedestrian, the silvery reflective surface now filling much of the frame, still without any braking or slowing. Through 0:05 the vehicle maintains its cruising speed on a collision course, the deceptive open-lane reflection persisting as the gap narrows. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient suburban daytime sounds: the steady low hum of the car's engine and tires rolling on dry asphalt, faint wind noise, distant birdsong, and occasional soft rustling of leaves. No dialogue, music, or braking sounds are present, emphasizing the vehicle's uninterrupted cruising.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

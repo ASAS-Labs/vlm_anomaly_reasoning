@@ -1,0 +1,109 @@
+{
+  "subjects": [
+    {
+      "description": "A large flatbed truck traveling directly ahead of the ego vehicle, carrying a vertical rack of oversized rectangular mirrors mounted facing rearward toward the ego car",
+      "appearance_details": "Weathered steel-grey cab with a dark canvas-lined flatbed, heavy-duty tires, red tail lights and brake lights framed in a steel bumper; the mirror rack fills the truck's rear, each mirror clean and highly reflective, showing a duplicated view of the road, sky, and the ego vehicle's front",
+      "relationship": "The lead vehicle the ego car is following; its mirrored cargo creates a deceptive reflection of the road behind",
+      "location": "center of frame, slightly filling upper-middle",
+      "relative_size": "Large within frame",
+      "orientation": "rear of truck faces the camera directly",
+      "pose": "upright and level on the road, cargo secured vertically",
+      "action": "driving ahead then decelerating",
+      "state_changes": "Brake lights illuminate as the truck slows in the final portion of the clip",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose forward-facing dashcam perspective frames the entire scene",
+      "appearance_details": "Only the faint upper edge of the hood and windshield reflections are occasionally visible; the car itself is reflected in the truck's mirror cargo, appearing as a ghostly duplicate approaching on a phantom road",
+      "relationship": "The observer and driver following the truck; misinterprets the mirrored road as real drivable space",
+      "location": "implied at camera position, foreground",
+      "relative_size": "Small within frame",
+      "orientation": "facing forward, same direction as travel",
+      "pose": "level and steady on the road",
+      "action": "cruising forward at constant speed toward the mirrors",
+      "state_changes": "Maintains speed without decelerating despite the truck slowing",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural-suburban two-lane asphalt road stretching under a clear blue midday sky. Faded lane markings run down the center, with dry grass shoulders, occasional roadside utility poles, and low green trees lining the distance. The environment is calm and open, with clean visibility and no oncoming traffic. The truck's mirror cargo reflects a mirror-image of this same road, sky, and the approaching ego vehicle, producing an uncanny 'road within a road' illusion.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from upper-front-right",
+    "shadows": "Consistent, short, hard-edged shadows cast beneath the truck and along the roadside, all pointing the same direction",
+    "illumination_effect": "Crisp, evenly lit scene with strong specular highlights on the mirror surfaces and glare across the truck's rear reflections"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the road converging into the truck; the mirror rack dominates the upper-center, framing the reflected phantom road as a symmetrical false continuation",
+    "color_scheme": "Blue sky, grey asphalt, muted green shoulders, silver mirror reflections, and vivid red brake lights",
+    "mood_atmosphere": "Deceptively calm, uncanny, quietly ominous",
+    "patterns": "Repeating vertical mirror panels and their duplicated road reflections"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from fixed dashcam viewpoint, steadily advancing with the ego vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road and the truck's mirrored cargo",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent typical of dashcams"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception edge-case demonstration: a reflective surface deceives the perception system into reading reflected road as drivable space",
+  "actions": [
+    {
+      "time": "0:00-0:03",
+      "description": "The ego vehicle cruises steadily behind the flatbed truck, whose rearward mirrors reflect the road, sky, and the approaching ego car. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The truck's brake lights illuminate red as it slows, yet the ego vehicle maintains its cruising speed, closing distance toward the mirror rack. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego car follows the flatbed truck at constant cruising speed on the clear two-lane road; the mirror cargo shows a convincing reflection of the road, sky, and the ego vehicle, appearing as an open drivable path. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Reflected road illusion becomes more pronounced as distance closes slightly",
+      "camera": "Steady forward tracking at cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The truck's brake lights turn on as it decelerates ahead, but the ego vehicle does not slow, continuing toward the mirrors as if the reflected road were real open space. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Brake lights illuminate; gap between ego car and truck shrinks while ego speed remains unchanged",
+      "camera": "Continued steady forward tracking, gap visibly narrowing; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a clear two-lane road under bright midday sun, following a flatbed truck whose rearward mirror cargo reflects the road, sky, and the ego car itself. Through 0:01 and 0:02 the ego vehicle holds a steady cruising speed, the mirrored reflection creating an uncanny illusion of an open road continuing straight ahead. At 0:03 the truck's brake lights glow red as it begins to slow. From 0:03 to 0:05 the ego vehicle continues at the same speed without decelerating, closing the gap and heading directly toward the reflective mirrors as though the phantom reflected road were drivable space. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient road noise dominates: steady tire hum on asphalt, faint wind against the vehicle, and the low continuous drone of the engine. No music or speech. A subtle mechanical creak from the truck ahead is faintly audible as it decelerates.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

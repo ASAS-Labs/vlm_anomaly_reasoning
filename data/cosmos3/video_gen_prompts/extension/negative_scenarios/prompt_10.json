@@ -1,0 +1,145 @@
+{
+  "subjects": [
+    {
+      "description": "A life-size flat cardboard cutout of a smiling man in a dark business suit, printed with a glossy photographic finish and propped upright on a triangular support stand on the sidewalk",
+      "appearance_details": "Visibly two-dimensional and thin when viewed at an angle, slightly reflective printed surface, a rigid cardboard easel stand behind it, edges cleanly die-cut around the figure",
+      "relationship": "The false hazard that the ego vehicle misidentifies as a pedestrian; associated with the shop it advertises",
+      "location": "right foreground on the sidewalk outside the shop",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera, angled slightly toward the road",
+      "pose": "Standing upright figure with a welcoming posture, one hand slightly gesturing outward, printed and frozen",
+      "action": "Standing motionless on the sidewalk as an advertising prop",
+      "state_changes": "No significant change; remains completely static throughout.",
+      "clothing": "Printed image of a tailored dark navy business suit, white dress shirt, and patterned tie",
+      "expression": "Broad friendly smile with teeth showing, printed and fixed",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "Printed medium skin tone with smooth photographic rendering, no real texture",
+      "facial_features": "Printed short dark neatly combed hair, brown eyes, defined eyebrows, clean-shaven with a slight jawline shadow, warm smile lines around the mouth",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from the driver's first-person perspective through the windshield",
+      "appearance_details": "Dashboard partially visible at the bottom edge, hood extending forward, clean windshield",
+      "relationship": "The point-of-view vehicle experiencing the braking event",
+      "location": "camera position, unseen except for hood and dashboard",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the lane",
+      "pose": "Moving forward then decelerating to a full stop",
+      "action": "Driving down the commercial street, braking hard, then stopping",
+      "state_changes": "Transitions from forward motion to abrupt hard braking to a complete stationary stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy commercial street lined with small shops and storefronts under clear daytime skies. On the right, a shop with large display windows and an awning fronts a paved sidewalk where the cardboard cutout stands. Parked cars line the curb, street signs and light poles punctuate the sidewalk, and the two-lane roadway ahead is clear and unobstructed. Buildings of two to three stories flank both sides, with occasional pedestrians visible farther down the block. The asphalt is dry and marked with faded lane lines.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun from the upper left casting consistent directional shadows",
+    "shadows": "Crisp, well-defined shadows falling consistently to the right of objects, including a thin shadow cast by the flat cutout revealing its two-dimensional shape",
+    "illumination_effect": "Even high-contrast illumination with vivid colors and clear visibility down the street"
+  },
+  "aesthetics": {
+    "composition": "First-person driving composition with the road receding to a central vanishing point, the shop and cutout framed on the right third, dashboard anchoring the bottom edge",
+    "color_scheme": "Neutral grays of asphalt, warm storefront tones, blue sky, with the cutout's navy suit and printed skin tones standing out",
+    "mood_atmosphere": "Ordinary daytime commute, sudden tension, cautious halt",
+    "patterns": "Repeating storefronts, parked cars along the curb, and rhythmic lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver POV",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the roadway ahead and the sidewalk cutout on the right",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception scenario illustrating a false-positive pedestrian detection triggered by a flat advertising cutout",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward at a steady pace along the clear commercial street, approaching the shop on the right with the cardboard cutout on the sidewalk."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop in the lane beside the shop and remains fully stationary while the cutout stays motionless on the sidewalk; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "GRAND OPENING",
+      "category": "scene_sign",
+      "appearance": "Bold red and white banner lettering across the shop window",
+      "spatial_temporal": "On the shop storefront to the right, visible throughout the clip",
+      "context": "Advertising promotion associated with the shop and its cutout mascot"
+    },
+    {
+      "text": "SALE",
+      "category": "physical_in_scene",
+      "appearance": "Yellow poster text in the shop window",
+      "spatial_temporal": "Right side in the shop window, visible throughout",
+      "context": "Retail promotional signage"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Steady forward driving down the commercial street toward the shop, with the cardboard cutout visible on the right sidewalk.",
+      "key_changes": "Cutout grows larger in frame as the vehicle approaches; road remains clear.",
+      "camera": "Smooth forward tracking motion at constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped in the lane beside the shop and remains completely stationary while the cutout stays still on the sidewalk. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward at a steady pace along the clear commercial street, approaching the shop on the right with the cardboard cutout on the sidewalk. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban street sounds with distant traffic and faint city hum, the steady drone of the ego vehicle's engine and tire noise that abruptly rises into a screech and squeal of hard braking, followed by the settled idle of the stationary engine and quiet ambient street noise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

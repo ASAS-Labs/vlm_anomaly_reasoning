@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A small grey domestic cat crouched low on the dark asphalt near the rear wheel of a parked car",
+      "appearance_details": "Short grey fur with faint tabby markings, upright ears, thin tail curled close to its body, reflective greenish-yellow eyes catching the headlights",
+      "relationship": "The potential obstacle the ego vehicle fails to detect",
+      "location": "Right foreground, just inside the ego lane beside a parked car's rear wheel",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the camera, head slightly turned toward the approaching headlights",
+      "pose": "Sitting low and still, body compact and close to the ground",
+      "action": "Sitting motionless, eyes reflecting the headlights",
+      "state_changes": "No significant change; remains still as the vehicle approaches and passes near it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 4
+    },
+    {
+      "description": "A row of cars parked along the right curb of the narrow street",
+      "appearance_details": "Assorted sedans and hatchbacks in dark and muted colors, reflective surfaces catching sparse streetlight and headlight glow, tires and rims dimly visible",
+      "relationship": "Line the ego lane on the right; one shelters the cat by its rear wheel",
+      "location": "Right side of frame, receding into background",
+      "relative_size": "Medium within frame",
+      "orientation": "Parked parallel to the curb, angled away from the camera",
+      "pose": "Stationary, parked flush against the curb",
+      "action": "Parked and still",
+      "state_changes": "No significant change; they slide past as the ego vehicle advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow urban residential street at night, flanked by low buildings and parked vehicles along the right curb. Sparse streetlights cast isolated pools of warm light interrupted by long stretches of darkness. Wet-looking asphalt reflects faint glows, and the road narrows ahead into deep shadow. The scene is quiet and empty of pedestrians, with the ego vehicle's headlights carving a bright cone straight down the curb line.",
+  "lighting": {
+    "conditions": "Nighttime, low ambient light with sparse artificial illumination",
+    "direction": "Front-lit by the ego vehicle's headlights, supplemented by overhead pools from sparse streetlights",
+    "shadows": "Long, deep shadows cast behind parked cars; the cat casts a small faint shadow on the asphalt",
+    "illumination_effect": "High-contrast pools of light against darkness, the cat's eyes glowing brightly where the headlights strike them"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective wide framing with the road converging toward a central vanishing point, parked cars lining the right edge, the cat positioned in the lower-right foreground as a subtle focal detail",
+    "color_scheme": "Dominated by dark blues and blacks with warm amber streetlight highlights and cool white headlight beams",
+    "mood_atmosphere": "Tense, quiet, foreboding, uneasy calm",
+    "patterns": "Repeating parked cars and evenly spaced streetlight pools receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the driver's viewpoint, smooth and steady at constant speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, mounted at driver height facing forward",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the curb line, with the cat sharply visible in the near foreground",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Autonomous driving perception scenario illustrating a detection failure of a small animal at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle moves slowly forward along the narrow street; the grey cat becomes visible sitting still by a parked car's rear wheel, its eyes catching the headlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at steady speed, closing distance to the cat without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives straight along the curb line, passing dangerously close to the still cat, showing no detection or braking response. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels slowly along the narrow night street, headlights revealing parked cars on the right; the grey cat is spotted crouched low near a rear wheel with glowing eyes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The cat comes into clearer view as the vehicle approaches; distance decreases steadily.",
+      "camera": "Forward tracking at constant slow speed, steady dashcam framing; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains its normal speed and straight trajectory along the curb line, passing very close to the motionless cat without any slowing or evasive action. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The cat slides toward and past the lower-right edge of frame as the vehicle fails to react; no braking or steering change.",
+      "camera": "Continuous forward tracking at unchanged speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark narrow city street with sparse streetlights and parked cars along the right curb as the ego vehicle rolls slowly forward. By 0:01 a small grey cat becomes visible sitting low and still near the rear wheel of a parked car, its eyes glowing where the headlights hit them. From 0:02 the vehicle continues at the same steady speed, closing the gap without slowing. By 0:03 the cat is very near the ego lane, still motionless. From 0:03 to 0:05 the vehicle drives straight along the curb line at its normal speed, passing dangerously close to the cat and showing no sign of detection or braking, the cat slipping toward the lower-right edge of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Low ambient night city hum with the steady quiet drone of the ego vehicle's engine and faint tire noise on asphalt. Occasional distant traffic and the subtle whir of the drivetrain. No braking sounds, no horn, and no reactive audio cues, underscoring the vehicle's failure to respond.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

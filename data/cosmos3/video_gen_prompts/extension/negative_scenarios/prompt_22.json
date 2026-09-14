@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A large adult red kangaroo with muscular hind legs, powerful tail, and reddish-brown fur bounding across the rural road",
+      "appearance_details": "Thick tapering tail used for balance, long clawed hind feet, short forelimbs held close to chest, pale underbelly, alert upright ears",
+      "relationship": "The primary hazard subject that crosses into the ego vehicle's path",
+      "location": "Right verge moving toward center foreground of the ego lane",
+      "relative_size": "Medium within frame, growing larger as it nears the road",
+      "orientation": "Body oriented left-to-right across the road, partially facing the camera during landing",
+      "pose": "Mid-hop crouch with hind legs extended, tail streaming behind; then upright landing crouch",
+      "action": "Bounding in high airborne hops from the right verge and landing in the ego lane ahead",
+      "state_changes": "Transitions from airborne mid-leap to grounded landing directly in the vehicle's path",
+      "clothing": "",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose forward-facing dashcam viewpoint frames the entire scene",
+      "appearance_details": "Interior dashboard edge and hood may be faintly visible at the bottom of the frame; windshield reflections minimal",
+      "relationship": "The camera-carrying vehicle whose motion drives the scene toward the kangaroo",
+      "location": "Implied at center, behind the camera viewpoint",
+      "relative_size": "Not directly visible; represented by hood edge at frame bottom",
+      "orientation": "Facing forward along the road, camera pointed straight ahead",
+      "pose": "Traveling forward at cruising speed",
+      "action": "Driving at normal cruising speed toward the kangaroo without slowing or stopping",
+      "state_changes": "Maintains constant speed throughout, no braking or swerving",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A remote two-lane rural road cutting straight through flat, open Australian scrubland. Sparse low vegetation, dry grasses, and scattered shrubs line both verges under a wide, cloudless sky. The asphalt shows faded lane markings and a dusty gravel shoulder. The low sun casts long shadows across the road, and the horizon stretches uninterrupted into hazy distance with occasional stunted trees.",
+  "lighting": {
+    "conditions": "Bright clear daytime with low-angle sun",
+    "direction": "Side-lit from the low sun, casting light across the road at a shallow angle",
+    "shadows": "Long, elongated shadows stretching across the road from roadside vegetation and the bounding kangaroo",
+    "illumination_effect": "Warm, high-contrast illumination with sharp shadow definition and strong depth cues emphasizing the flatness of the terrain"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing perspective with the road converging toward a distant vanishing point; kangaroo enters from the right third",
+    "color_scheme": "Warm earthy palette of ochre, dusty tan, olive scrub green, grey asphalt, and pale blue sky",
+    "mood_atmosphere": "Tense, anticipatory, sense of impending collision hazard",
+    "patterns": "Repeating dashed lane markings and evenly spaced roadside shrubs"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving vehicle's dashcam; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing road, verges, and sky",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road ahead and the approaching kangaroo",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary footage",
+  "context": "Automotive dashcam capturing a wildlife road hazard scenario for driving safety analysis",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle cruises forward along the empty rural road under clear low-sun lighting. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "A large kangaroo appears on the right verge and bounds toward the road in high airborne hops. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The kangaroo lands in the ego lane ahead as the vehicle continues at cruising speed without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Open view of the straight two-lane rural road stretching ahead through scrubland with long shadows. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Establishes the empty road and forward motion of the vehicle.",
+      "camera": "Steady forward tracking from the dashcam; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A large kangaroo enters from the right verge, bounding toward the road in high hops, spending much of each hop airborne. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Kangaroo appears and moves rapidly across into the lane, growing larger in frame.",
+      "camera": "Continued forward tracking, kangaroo entering right third of frame; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The kangaroo lands squarely in the ego lane ahead while the vehicle, misjudging the airborne animal as distant, continues driving at normal cruising speed toward it without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Kangaroo settles into landing crouch directly in the path; vehicle maintains speed, closing distance.",
+      "camera": "Steady forward tracking, kangaroo centered and looming closer; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a straight, empty two-lane rural road cutting through open scrubland, warm low-sun light casting long shadows across the asphalt as the vehicle cruises forward. Around 0:01 a large red kangaroo appears on the right verge and begins bounding toward the road in tall, floating hops, remaining airborne for much of each leap. By 0:02 the kangaroo has crossed onto the shoulder, growing larger in the right of the frame. At 0:03 it lands directly in the ego lane ahead of the vehicle. From 0:03 to 0:05 the vehicle, misjudging the still-airborne-then-landed animal as farther away, holds its normal cruising speed and continues driving straight toward the kangaroo without braking or swerving, steadily closing the distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous low hum of tires on asphalt and steady engine noise from the moving vehicle, faint wind buffeting, occasional soft rattle of the dashboard, and ambient rural quiet with no braking sounds, underscoring the vehicle's uninterrupted cruising speed.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

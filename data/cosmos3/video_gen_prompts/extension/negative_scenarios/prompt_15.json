@@ -1,0 +1,101 @@
+{
+  "subjects": [
+    {
+      "description": "A living street performer painted entirely in metallic silver from head to toe, posing as a motionless statue on a small wooden box at the curb.",
+      "appearance_details": "Uniform silver body paint covering skin, clothing, hair, and hands; matte-metallic finish with subtle reflective highlights along the shoulders and cheekbones; a folded silver hat and a coin bowl rest at the base of the box.",
+      "relationship": "The sole obstacle-of-interest to the ego vehicle; mistakenly classified by the car as a fixed roadside post.",
+      "location": "right edge of frame, beside a lamp post at the curb, foreground as the car approaches",
+      "relative_size": "Medium within frame",
+      "orientation": "facing partially toward the camera, angled slightly toward the street",
+      "pose": "standing perfectly upright and rigid, one arm raised in a frozen gesture, holding a statuesque theatrical pose",
+      "action": "standing completely still, imitating a statue",
+      "state_changes": "No significant change.",
+      "clothing": "flowing robe-like costume entirely coated in silver paint, matching silver gloves and shoes",
+      "expression": "neutral, blank, frozen statue-like expression with fixed gaze",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "obscured entirely by smooth metallic silver body paint",
+      "facial_features": "features flattened under silver paint; visible cheekbones, defined nose bridge, closed calm lips, still eyes under painted eyelids",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A narrow one-way cobblestone street in a historic European-style city center. Aged stone and plaster buildings with shuttered windows and ornate facades line both sides, their walls in warm ochre, cream, and terracotta tones. A cast-iron lamp post stands at the right curb near the performer. Potted plants, small doorways, and hanging shop signs punctuate the street. The lane is empty of other vehicles and pedestrians, giving a quiet, timeless atmosphere under bright, clear midday light.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly front-right of the vehicle",
+    "shadows": "consistent, crisp shadows cast to the left of buildings and beneath the performer's box",
+    "illumination_effect": "even, high-contrast illumination that makes the silver performer glint and the cobblestones and facades appear vivid and warm"
+  },
+  "aesthetics": {
+    "composition": "Ego-view centered on the receding one-way lane, converging perspective lines drawing the eye forward, performer entering from the right foreground as the car advances",
+    "color_scheme": "warm ochre, terracotta and cream building tones contrasted with cool metallic silver of the performer and grey cobblestones",
+    "mood_atmosphere": "quiet, sunlit, historic, subtly tense",
+    "patterns": "repeating cobblestone texture underfoot and rhythmic rows of shuttered windows along facades"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from ego vehicle perspective, moving slowly then continuing at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "sharp across the street scene and the approaching performer",
+    "lens_focal_length": "wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam style",
+  "context": "Autonomous vehicle ego-view demonstrating a perception edge case where a living street performer is misclassified as a static roadside post",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels slowly forward along the narrow one-way street, the silver performer visible ahead on the right curb by the lamp post. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle maintains its cruising speed, treating the performer as a fixed post, and begins to close the distance without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The car skims closely past the motionless silver performer on the right, continuing down the lane without deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SENSO UNICO",
+      "category": "scene_sign",
+      "appearance": "white text on a round blue traffic sign with red border, small",
+      "spatial_temporal": "mounted on a wall at the left side of the street entrance, visible in early frames",
+      "context": "indicates the one-way street direction"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle moves slowly along the historic one-way street, approaching the silver statue performer standing motionless on the right curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "distance to the performer decreases; the car does not slow as it classifies the figure as a fixed post",
+      "camera": "Forward tracking, slow steady advance at dashboard height; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The car continues at cruising speed and skims close past the silver performer on the right without decelerating, the performer remaining perfectly still. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "performer passes rapidly through the right side of frame and out of view; street continues ahead",
+      "camera": "Forward tracking, maintaining steady cruising speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego camera looks down a sunlit narrow cobblestone one-way street in a historic city center, with a silver-painted street performer standing statue-still on a box by a lamp post at the right curb. Over the first two seconds the car rolls slowly forward, the converging facades drawing the eye ahead and the performer growing larger on the right. By 0:02 the vehicle keeps its normal cruising pace, misreading the living performer as a fixed roadside post. From 0:03 to 0:05 the car passes very close to the motionless silver figure without slowing, the performer sweeping briskly through the right of frame while the empty lane continues into bright sunlight ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient historic street atmosphere: gentle tire rumble over cobblestones, soft engine hum, distant birdsong and faint city echo. No dialogue. A brief whoosh of air as the vehicle passes close to the still performer, no braking sounds.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

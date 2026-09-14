@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A tall metal advertising pole rising from a grassy hill, topped with a red octagonal fast-food restaurant logo bearing white lettering",
+      "appearance_details": "Bright red octagonal sign panel with bold white sans-serif text, mounted on a slim gray galvanized steel pole; slight glare on the panel surface from direct overhead sun",
+      "relationship": "The primary object of interest recognized by the ego vehicle as a commercial advertisement rather than a traffic control device",
+      "location": "right background atop a grassy hill beyond the right shoulder",
+      "relative_size": "Small within frame",
+      "orientation": "sign face angled toward the road, facing oncoming traffic and the camera",
+      "pose": "static upright, elevated above the roadside",
+      "action": "standing still as an elevated commercial signboard",
+      "state_changes": "Grows slightly larger and drifts toward the right edge of frame as the vehicle approaches and passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose hood and dashboard edge are subtly implied at the base of the frame",
+      "appearance_details": "Neutral-toned hood surface catching bright daylight, windshield frame faintly visible at frame edges",
+      "relationship": "The moving observer platform from which the entire scene is viewed",
+      "location": "center foreground, camera-as-vehicle",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the road, aligned with direction of travel",
+      "pose": "moving forward in its lane",
+      "action": "driving at steady cruising speed along the road",
+      "state_changes": "Maintains constant velocity throughout; no braking or steering deviation.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban asphalt road stretching straight ahead under a clear blue midday sky. The pavement is dry and light gray with faint lane markings. Grassy shoulders line both sides, and just beyond the right shoulder a low grassy hill rises, topped by a tall advertising pole displaying a red octagonal fast-food logo. Scattered green trees and low suburban vegetation frame the horizon. No intersection, cross street, real stop sign, or cross traffic is present; the road ahead is open and clear.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "top-lit from the sun high overhead",
+    "shadows": "Short, hard shadows falling directly beneath the pole, hill, and roadside objects",
+    "illumination_effect": "High-contrast, evenly lit scene with vivid colors and slight glare off the sign and road surface"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam framing with the road converging toward a central vanishing point; the red octagonal sign sits in the upper right third atop the grassy hill",
+    "color_scheme": "Dominant blue sky, gray asphalt, and green grass, punctuated by the vivid red-and-white logo",
+    "mood_atmosphere": "Calm, routine, sunny, unremarkable suburban drive",
+    "patterns": "Repeating lane markings and roadside utility spacing"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the moving vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the roadside sign",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception scenario distinguishing a commercial advertisement from a traffic control sign",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the open road while the red octagonal logo becomes visible atop the grassy hill on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at steady speed as the logo grows larger; it is identified as an advertisement, not a stop sign. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains cruising speed and passes the hill without slowing, the sign drifting toward and out of the right edge of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Restaurant name in white lettering",
+      "category": "logo",
+      "appearance": "Bold white sans-serif lettering centered on a red octagonal panel",
+      "spatial_temporal": "Upper right region atop the pole, visible throughout and enlarging as the vehicle approaches",
+      "context": "Commercial fast-food restaurant advertisement mounted high for road visibility"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle drives steadily forward on the two-lane road; the red octagonal fast-food logo appears atop the grassy hill on the right and is recognized as an advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The sign grows more prominent as the vehicle approaches; speed remains constant.",
+      "camera": "Smooth forward tracking from the vehicle mount at eye level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle continues at its normal cruising speed past the hill without slowing or stopping, the logo drifting to the right edge and receding from view. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The sign moves rightward and shrinks as it is passed; road ahead stays open and dry.",
+      "camera": "Continuous forward tracking, no deviation in path or speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows an open, dry two-lane suburban road under bright midday sun, with the red octagonal fast-food logo visible atop a grassy hill to the right. From 0:01 to 0:02 the vehicle cruises steadily forward and the logo grows larger against the clear blue sky. Around 0:02 to 0:03 the sign is clearly identified as a commercial advertisement rather than a traffic stop sign, and the vehicle holds its speed. From 0:03 to 0:05 the car continues past the hill at its normal cruising pace without any braking, and the red logo drifts toward the right edge of the frame and recedes as the open road ahead remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise of tires on dry asphalt and a constant engine hum at cruising speed, with faint wind rush against the vehicle. No braking sounds, no honking, and no cross traffic; the audio conveys uninterrupted forward motion.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

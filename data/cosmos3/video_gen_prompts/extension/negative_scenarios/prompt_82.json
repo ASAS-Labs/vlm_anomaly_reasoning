@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A white delivery van double-parked in the ego lane, box-style cargo body with a roll-up rear door, commercial livery on the side panels",
+      "appearance_details": "Amber hazard lights flashing on all four corners, slightly dusty paint, rear license plate mounted below the cargo door, small ventilation slats near the roofline",
+      "relationship": "Obstacle blocking the ego vehicle's path, forcing a lane maneuver",
+      "location": "center foreground, occupying the ego lane ahead",
+      "relative_size": "Large within frame",
+      "orientation": "Rear of van faces the camera, aligned with direction of travel",
+      "pose": "Stationary, parked askew close to the right curb",
+      "action": "Idling with hazard lights blinking",
+      "state_changes": "Grows progressively larger in frame as the ego vehicle approaches, then holds steady once ego stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Parked passenger cars lining both sides of the narrow city street",
+      "appearance_details": "Assorted sedans and hatchbacks in silver, dark blue, and black, reflecting daylight off windshields and hoods",
+      "relationship": "Roadside context narrowing the drivable space",
+      "location": "left and right foreground to midground along the curbs",
+      "relative_size": "Medium within frame",
+      "orientation": "Parallel-parked, facing away and toward the camera on opposite sides",
+      "pose": "Stationary at the curb",
+      "action": "Parked, motionless",
+      "state_changes": "Slide past the frame edges as the ego vehicle advances, then hold still when ego stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow two-way urban city street lined with mid-rise residential and commercial buildings of brick and rendered facades. Parked cars flank both curbs, leaving a tight drivable corridor. Sidewalks with occasional street trees, lampposts, and utility poles frame the scene. The oncoming lane to the left is empty. Clear daytime sky casts consistent, even lighting over the asphalt, which shows faded lane markings and minor patches. Distant intersection and traffic visible far ahead.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-right, casting light down the street",
+    "shadows": "Consistent, sharply defined shadows from parked cars and buildings pooling toward the left of the roadway",
+    "illumination_effect": "Crisp, high-contrast daytime illumination with true colors and reflective highlights on vehicle surfaces"
+  },
+  "aesthetics": {
+    "composition": "First-person driver's perspective centered on the road ahead, van dominating the center as the vanishing point of the street, parked cars leading the eye forward, empty oncoming lane visible to the left",
+    "color_scheme": "Neutral urban palette of grey asphalt, white and silver vehicles, warm brick tones, blue sky accents, amber hazard-light flashes",
+    "mood_atmosphere": "Ordinary, tense-but-mundane urban driving moment; cautious anticipation",
+    "patterns": "Repeating rhythm of parked cars and lampposts receding down the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's eye view",
+    "camera_angle": "Eye-level, mounted at windshield height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the double-parked van",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving / ego-vehicle scenario capturing an urban obstacle-negotiation and stop event",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "Ego vehicle travels forward down the narrow street, approaching the double-parked white van with flashing hazard lights"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "Ego vehicle comes to a complete stop directly behind the van, blocking the street, and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "DELIVERY",
+      "category": "vehicle_graphic",
+      "appearance": "Bold dark sans-serif lettering on the white rear cargo door",
+      "spatial_temporal": "Center of frame on the van's rear, visible throughout as van grows larger",
+      "context": "Identifies the vehicle as a commercial delivery van"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward at moderate speed down the narrow two-way street, van appears ahead in the ego lane with hazard lights flashing",
+      "key_changes": "Van grows larger; distance closes rapidly",
+      "camera": "Smooth forward tracking motion"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "Ego vehicle brakes to a complete stop directly behind the double-parked van, blocking the street, and holds stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle travels forward down the narrow street, approaching the double-parked white van with flashing hazard lights. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban soundscape: steady engine hum decreasing in pitch as the vehicle decelerates, the rhythmic tick of the van's hazard lights faintly audible, tire rolling noise fading to silence, distant city traffic and occasional bird calls, ending in the quiet idle of the stopped vehicle.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

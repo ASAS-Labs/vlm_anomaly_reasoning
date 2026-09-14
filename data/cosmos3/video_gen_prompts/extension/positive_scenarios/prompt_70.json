@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "A programmable LED advertising display sign mounted on a post outside a storefront on the right side of the street, at roughly camera (windshield) height",
+      "appearance_details": "Rectangular full-color LED matrix panel in a slim black bezel, cycling through animated advertisements with vibrant graphics; at one moment it renders a bright red octagon shape as part of its animation sequence",
+      "relationship": "Roadside shop display belonging to the store on the right; it is the focal element the ego vehicle must correctly classify as an advertisement rather than a traffic sign",
+      "location": "right midground, at the edge of the sidewalk in front of the store",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled toward the passing roadway, face oriented partly toward the approaching camera",
+      "pose": "Fixed upright on its mounting post",
+      "action": "Cycling through advertisement animations and briefly flashing a red octagon graphic",
+      "state_changes": "Display content changes from a product ad to a bright red octagon flash, then transitions to another animated ad as the vehicle passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior dashboard edge and hood are faintly visible at the bottom of the frame",
+      "appearance_details": "Modern car interior framing implied by the ego perspective; slight reflection of the dashboard on the windshield",
+      "relationship": "The observing vehicle whose forward-facing camera captures the scene; it interprets the LED sign and maintains cruising speed",
+      "location": "center foreground, defining the point of view",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the street in the direction of travel",
+      "pose": "Moving steadily along the roadway",
+      "action": "Driving forward at normal cruising speed past the store without slowing or stopping",
+      "state_changes": "Maintains constant speed throughout; no braking or acceleration change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy commercial street lined with retail storefronts, shop awnings, glass windows, and sidewalks under clear daytime skies. On the right, a shop entrance is fronted by a programmable LED advertising sign. Parked cars, streetlights, planters, and pedestrians occasionally populate the sidewalks. The asphalt road stretches ahead with lane markings, and buildings of two to three stories flank both sides receding into the distance.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-lit with light coming slightly from the upper left",
+    "shadows": "Consistent, well-defined shadows cast by buildings, poles, and the sign onto the sidewalk and road",
+    "illumination_effect": "Even, natural illumination with good contrast; the LED sign appears vivid but slightly washed by ambient daylight, its red octagon flash still clearly bright and saturated"
+  },
+  "aesthetics": {
+    "composition": "Forward-facing dashcam framing with the road centered, storefronts and the LED sign occupying the right third, vanishing point down the street",
+    "color_scheme": "Neutral urban grays and beiges of buildings and asphalt, blue sky, punctuated by the saturated multicolor LED display and its bright red octagon accent",
+    "mood_atmosphere": "Ordinary, calm, routine daytime commute",
+    "patterns": "Repeating storefront windows, sidewalk paving slabs, and evenly spaced streetlights"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving ego vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the roadside LED sign",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic automotive dashcam / autonomous driving perspective",
+  "context": "Autonomous driving perception test demonstrating correct classification of a dynamic LED advertisement versus a real traffic sign",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the commercial street; the LED sign on the right displays a product advertisement animation. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The LED sign briefly flashes a bright red octagon shape as part of its animation cycle; the vehicle continues at steady speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle drives past the store without slowing or stopping while the sign transitions to another advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SALE 50% OFF",
+      "category": "scene_sign",
+      "appearance": "Bright multicolor LED pixel text, bold sans-serif, animated scroll",
+      "spatial_temporal": "On the LED display, right midground, visible from 0:00 to 0:02",
+      "context": "Promotional advertising content from the store's programmable display"
+    },
+    {
+      "text": "(red octagon shape, no text)",
+      "category": "scene_sign",
+      "appearance": "Solid bright red octagon graphic on the LED matrix, briefly flashed",
+      "spatial_temporal": "On the LED display, right midground, visible around 0:02 to 0:03",
+      "context": "Part of the advertisement animation; superficially resembles a stop sign but is a shop display graphic, not a traffic control device"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises down the commercial street as the roadside LED sign shows an animated product advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The sign approaches from the right as the vehicle moves forward.",
+      "camera": "Smooth forward tracking with the vehicle's motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The LED sign flashes a bright red octagon as part of its ad animation; the vehicle maintains cruising speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign content changes to the red octagon flash; no change in vehicle speed.",
+      "camera": "Continued forward tracking, sign now larger on the right; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle drives past the store without slowing or stopping while the LED sign transitions to a new advertisement and recedes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign passes to the right edge and out of frame; vehicle speed remains constant.",
+      "camera": "Forward tracking, sign exits to the right; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera moves forward along a sunlit commercial street with storefronts on both sides; a programmable LED advertising sign on the right shows an animated 'SALE 50% OFF' promotion. Between 0:01 and 0:02 the vehicle continues at steady cruising speed as the sign grows larger on the right. Around 0:02 to 0:03 the LED display briefly flashes a bright red octagon as part of its animation, yet the vehicle neither brakes nor slows, correctly recognizing it as a dynamic advertisement rather than a real stop sign. From 0:03 to 0:05 the vehicle drives smoothly past the store, the sign transitioning to another advertisement and sliding out of the right side of the frame, while the road ahead remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban daytime soundscape: steady tire hum and engine noise of the moving vehicle, distant traffic, occasional passing vehicle, and faint city background chatter. No speech and no music; the LED sign is silent.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

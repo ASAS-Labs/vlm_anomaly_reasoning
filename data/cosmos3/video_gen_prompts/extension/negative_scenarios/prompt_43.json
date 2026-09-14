@@ -1,0 +1,100 @@
+{
+  "subjects": [
+    {
+      "description": "A flat black rubber car floor mat lying face-down on the road surface, rectangular with a slightly textured, ribbed top surface and worn edges",
+      "appearance_details": "Matte black rubber with faint dust and light surface scuffs; edges curl minimally, lying nearly flush against the asphalt",
+      "relationship": "The road hazard the ego vehicle must avoid; central obstacle in the ego lane",
+      "location": "center of frame, in the ego lane ahead on the pavement",
+      "relative_size": "Small within frame",
+      "orientation": "Lying flat on the pavement, long edge roughly parallel to the road direction",
+      "pose": "Flat and stationary against the road surface",
+      "action": "Resting motionless on the pavement directly in the vehicle's path",
+      "state_changes": "Grows larger in frame as the vehicle approaches, then shifts to the right side of frame as the ego vehicle swerves left to avoid it.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane rural road stretching into the distance under a clear blue daytime sky. The asphalt is grey with a faded yellow center line dividing the ego lane from the empty oncoming lane on the left. Both shoulders are lined with dry grass, low shrubs, and occasional trees, with open fields extending toward a distant tree line and gentle hills on the horizon. The road is otherwise clear of traffic.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-right, casting consistent short shadows",
+    "shadows": "Sharp, well-defined shadows from roadside vegetation and the mat, falling consistently to one side",
+    "illumination_effect": "Even, high-contrast daylight illumination with vivid colors and good visibility of the road surface and hazard"
+  },
+  "aesthetics": {
+    "composition": "Centered vanishing-point composition of the road receding ahead, with the black mat positioned near the center of the ego lane, framed by grassy shoulders",
+    "color_scheme": "Grey asphalt, faded yellow line, green and tan roadside vegetation, blue sky; the matte black mat contrasts against the pavement",
+    "mood_atmosphere": "Tense, sudden-hazard, defensive-driving urgency",
+    "patterns": "Repeating dashed and solid center line markings along the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving ego (dashcam) motion that decelerates sharply and swings left across the center line during the swerve; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's point of view over the hood",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the floor mat obstacle",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Automotive hazard-avoidance / defensive driving demonstration from an ego-vehicle dashcam",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels forward at cruising speed along the ego lane; the black floor mat becomes visible ahead in the center of the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle brakes hard, deceleration visible as the road ahead approaches more slowly and the mat grows larger in frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle swerves left across the center line into the empty oncoming lane, passing the mat on the right while slowing sharply. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Steady forward travel down the two-lane rural road under clear daylight; the black rubber floor mat lies flat in the middle of the ego lane ahead, oncoming lane empty. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The mat comes into clear view and grows in frame as the vehicle approaches.",
+      "camera": "Smooth forward ego motion at constant speed, centered on the road; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The ego vehicle brakes hard; forward motion slows abruptly as the mat looms closer near the center of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sudden deceleration; slight forward pitch of the ego view.",
+      "camera": "Forward motion rapidly decelerating, still centered; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle steers sharply left across the center line into the empty oncoming lane to avoid the mat, which passes on the right, while continuing to slow down sharply. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Lateral shift left across the yellow center line; mat moves to the right side of frame; speed continues to drop.",
+      "camera": "Ego view swings left across the center line then partially settles, continuing to decelerate for at least two seconds; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows a clear two-lane rural road ahead under bright daylight, with a flat black rubber floor mat lying in the middle of the ego lane and the oncoming lane on the left empty. Over the first two seconds the vehicle moves forward at cruising speed and the mat grows steadily larger in frame. Around 0:02 the vehicle brakes hard, its forward motion slowing abruptly and the view pitching slightly as the mat looms close. From 0:03 to 0:05 the vehicle swerves left across the faded yellow center line into the empty oncoming lane, so the mat slides off to the right side of frame, while the vehicle continues to slow down sharply and holds the avoidance maneuver through the final segment. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous engine hum and tire-on-asphalt road noise at cruising speed, followed by the sharp screech of hard braking and tires, then a lower engine tone as the vehicle slows; faint wind noise and rural ambient birdsong in the background, no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

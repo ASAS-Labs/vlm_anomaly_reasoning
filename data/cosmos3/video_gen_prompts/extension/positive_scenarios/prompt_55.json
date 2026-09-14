@@ -1,0 +1,158 @@
+{
+  "subjects": [
+    {
+      "description": "A thick, charged fire hose laid flat across the full width of the roadway, swollen and rigid from internal water pressure, running from a hydrant on the right toward a building on the left",
+      "appearance_details": "Bright yellow-tan canvas jacket hose with brass coupling connectors, glistening with wet reflections under streetlights, subtle vibration from pressurized water inside",
+      "relationship": "Primary obstacle that the ego vehicle recognizes and stops for; connects the roadside hydrant to the fire crew and building",
+      "location": "center foreground, spanning left-to-right across the road ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Laid perpendicular to the ego vehicle's direction of travel",
+      "pose": "Stretched taut and rounded from water pressure, lying across the asphalt",
+      "action": "Lying static across the road, faintly pulsing with water flow",
+      "state_changes": "No significant change; grows more prominent as the vehicle approaches then remains fixed.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A red fire engine parked beyond the hose, angled across the street near the building on the left",
+      "appearance_details": "Glossy red bodywork with reflective chevrons, flashing red and white emergency beacons, extended equipment compartments, ladder mounted on top",
+      "relationship": "Source of the fire crew operation; positioned beyond the hose barrier",
+      "location": "left midground, beyond the hose",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled diagonally facing the building, side toward camera",
+      "pose": "Parked and stationary with beacons active",
+      "action": "Stationed with lights flashing while crew works",
+      "state_changes": "Flashing lights pulse throughout; otherwise static.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Firefighters in protective turnout gear working near the fire engine and building",
+      "appearance_details": "Reflective yellow safety stripes on dark bunker coats and trousers, helmets, silhouetted against the emergency lighting and glow from the scene",
+      "relationship": "Emergency crew responsible for the hose and active fire response",
+      "location": "left background, beyond the hose near the building",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the building and hose, backs and sides toward camera",
+      "pose": "Standing, moving equipment, gesturing during operation",
+      "action": "Attending the fire scene, handling gear and hose lines",
+      "state_changes": "Minor movement as they work; positions shift slightly.",
+      "clothing": "Firefighter turnout gear: bunker coats, trousers, helmets, reflective stripes",
+      "expression": "Not clearly visible at distance",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Not clearly visible at distance",
+      "facial_features": "Obscured by helmets and distance",
+      "number_of_subjects": 3,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A nighttime urban street lined with mid-rise buildings, illuminated by warm sodium-vapor streetlights casting pools of amber light on wet asphalt. On the left stands a building where an active fire response is underway, flanked by a red fire engine with flashing emergency beacons. A fire hydrant sits on the right curb, feeding a charged hose that crosses the roadway. Parked cars, streetlight poles, and faint smoke or haze fill the scene, with the road stretching ahead into darkness.",
+  "lighting": {
+    "conditions": "Nighttime with artificial streetlighting and emergency vehicle beacons",
+    "direction": "Overhead from streetlights, punctuated by pulsing side light from the fire engine on the left",
+    "shadows": "Long, soft shadows cast by streetlights; flickering hard shadows from strobing emergency lights",
+    "illumination_effect": "Moody, high-contrast night scene with warm amber pools of light broken by cool white and red emergency flashes reflecting on wet pavement"
+  },
+  "aesthetics": {
+    "composition": "Ego-view centered on the road ahead, hose spanning the lower-center frame as the focal obstacle, fire engine and crew clustered on the left, hydrant anchoring the right",
+    "color_scheme": "Dominant amber and dark blue night tones with punctuations of vivid red and white from emergency lights, yellow hose and reflective stripes",
+    "mood_atmosphere": "Tense, cautious, urgent, alert",
+    "patterns": "Reflective safety chevrons and repeating streetlight pools along the road"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's eye-level perspective",
+    "camera_angle": "Eye-level, driver's ego view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the charged hose crossing it",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic documentary",
+  "context": "Autonomous vehicle perception demonstration recognizing and stopping for an emergency fire hose obstruction at night",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the night street under streetlights, approaching the fire scene with the charged hose visible ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the hose and remains fully stationary, with the fire engine, crew, and flashing lights visible beyond; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "FIRE",
+      "category": "vehicle_graphic",
+      "appearance": "Bold white reflective lettering on the red fire engine body",
+      "spatial_temporal": "On the side of the fire engine in the left midground, visible throughout",
+      "context": "Identifies the emergency vehicle as a fire engine"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward on the illuminated night street, approaching the active fire scene with the hose stretched across the road ahead.",
+      "key_changes": "Scene approaches, hose and fire engine grow larger in frame, emergency lights flash.",
+      "camera": "Forward motion at steady speed, ego perspective."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped well before the hose and remains completely stationary while the fire crew and engine operate beyond it. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the night street under streetlights, approaching the fire scene with the charged hose visible ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient nighttime city hum with the low idle of the ego vehicle's engine, the soft mechanical whir of deceleration and brake application, distant chatter of firefighters, the rushing hiss of pressurized water, and the intermittent electronic pulse of emergency beacons. No dialogue or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

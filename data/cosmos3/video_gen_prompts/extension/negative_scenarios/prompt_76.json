@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A large advertising box truck driving ahead of the ego vehicle, its entire rear panel a bright LED video screen mounted flush across the back doors",
+      "appearance_details": "Boxy cargo body with a dark metal frame around the glowing LED display, reflective safety tape along the lower bumper, dual red taillights flanking the screen, mud flaps and a visible license plate below",
+      "relationship": "The vehicle directly ahead of the ego car in the same lane; its screen content triggers the ego vehicle's braking reaction",
+      "location": "center foreground, occupying the middle of the frame",
+      "relative_size": "Large within frame",
+      "orientation": "rear-facing toward the camera, moving away in the same direction",
+      "pose": "upright rectangular truck body traveling forward then slowing",
+      "action": "driving ahead, then decelerating as traffic slows",
+      "state_changes": "Truck moves forward at speed, then slows and stops as both vehicles halt in the lane",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Video-only figures of pedestrians displayed on the truck's LED screen, appearing to walk across a crosswalk",
+      "appearance_details": "Silhouetted and lit human figures in casual city clothing, rendered in the slightly pixelated, high-contrast look of an LED panel, mid-stride in a looping crossing animation",
+      "relationship": "They exist only as an advertisement video on the screen; the ego vehicle mistakes them for real crossing pedestrians",
+      "location": "center of frame within the glowing rectangular screen",
+      "relative_size": "Small within frame",
+      "orientation": "walking laterally across the screen, perpendicular to the camera's forward view",
+      "pose": "walking, legs in mid-stride, arms swinging",
+      "action": "appearing to cross the street in a looping pedestrian video",
+      "state_changes": "Continuously loop walking left-to-right and back across the screen; no real motion in the road",
+      "clothing": "assorted casual urban wear as rendered on screen",
+      "expression": "neutral, indistinct due to screen resolution",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "indistinct, rendered in LED pixels",
+      "facial_features": "not clearly visible, blurred by screen pixelation",
+      "number_of_subjects": 4,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A multi-lane city avenue at night, flanked by tall buildings with lit windows and glowing storefront signs. Painted lane markings stretch ahead, wet pavement reflecting neon and streetlights. Traffic signals, other vehicles' taillights, and ambient urban glow fill the surroundings under a dark sky.",
+  "lighting": {
+    "conditions": "Nighttime urban lighting, dominated by the bright LED screen and city light sources",
+    "direction": "front-lit from the glowing truck screen ahead, with mixed side illumination from streetlights and signage",
+    "shadows": "Soft, multi-directional shadows on the pavement; strong glow pooling around the truck's rear screen",
+    "illumination_effect": "The vivid LED screen dominates the scene, casting a bright rectangular glow that overpowers the dimmer surrounding city lights and reflects off wet asphalt"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view composition with the truck's glowing screen as the focal point, road lines converging toward it, framed by dark buildings on both sides",
+    "color_scheme": "Deep night blacks and blues punctuated by bright white and warm LED tones, red taillights, and scattered neon accents",
+    "mood_atmosphere": "Tense, uneasy, uncanny, urban-nocturnal",
+    "patterns": "Repeating lane markings and the looping pedestrian video on the LED screen"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from the driver's viewpoint through the windshield",
+    "camera_angle": "Eye-level, mounted at driver height",
+    "depth_of_field": "Deep",
+    "focus": "The bright LED screen on the truck's rear and the road ahead",
+    "lens_focal_length": "Wide-angle, approximating natural driver field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic dashcam-style",
+  "context": "An autonomous-driving perception edge case where the ego vehicle mistakes on-screen pedestrians for real ones and brakes to a stop",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle follows the advertising truck at moderate speed; the LED screen shows looping pedestrians walking across a street."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop and remains fully stationary in the lane; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "WALK",
+      "category": "scene_sign",
+      "appearance": "Bright pixelated LED text overlaid within the pedestrian ad video, white on dark",
+      "spatial_temporal": "Lower portion of the truck's rear screen, visible throughout",
+      "context": "Part of the advertisement's crosswalk-themed video content"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle cruises along the night avenue behind the advertising truck whose LED screen plays looping pedestrians crossing.",
+      "key_changes": "Steady forward motion; screen figures loop their walking animation",
+      "camera": "Forward tracking at a constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a full stop and remains completely stationary in the lane behind the truck for at least two seconds. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle follows the advertising truck at moderate speed; the LED screen shows looping pedestrians walking across a street. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient nighttime city hum with distant traffic, followed by the sharp squeal and mechanical groan of hard braking around the two-second mark, then relative quiet with idling engine and faint urban background once the vehicle is fully stopped. No dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A pedestrian carrying a large upright mattress in front of their body, so that only their lower legs and shoes are visible beneath a broad rectangular silhouette",
+      "appearance_details": "The mattress is a pale off-white quilted rectangle with a faint fabric texture and slightly rounded corners; the person's dark trousers and sneakers show beneath it",
+      "relationship": "The unexpected obstacle in the ego vehicle's lane that the car fails to classify",
+      "location": "center to left-center, crossing from right to left across the ego lane",
+      "relative_size": "Large within frame",
+      "orientation": "Moving left across the road, body largely hidden facing perpendicular to camera",
+      "pose": "Standing upright, arms presumably gripping the mattress edges (hidden), legs mid-stride while walking",
+      "action": "Walking slowly across the two-lane road carrying the mattress vertically",
+      "state_changes": "The rectangular silhouette drifts steadily from right of the lane toward the left as the ego car approaches and passes close by",
+      "clothing": "Dark trousers and dark low-top sneakers visible below the mattress; upper body hidden",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen only through its forward point-of-view driving down the road",
+      "appearance_details": "Implied by dashboard reflections and headlight beams spilling onto the asphalt ahead; hood edge faintly visible at bottom of frame",
+      "relationship": "The camera platform; its automated driving system fails to recognize the mattress-carrying pedestrian",
+      "location": "camera position, not directly visible",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward along the road direction of travel",
+      "pose": "N/A",
+      "action": "Cruising forward at normal speed without decelerating",
+      "state_changes": "Maintains constant speed throughout, passing close beside the obstacle",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban residential road at dusk. Modest single-story houses with low fences, hedges, and driveways line both sides of the street, their windows beginning to glow warmly. Bare and leafy trees form soft silhouettes against a deep bluish twilight sky. Sidewalks flank the road, and evenly spaced streetlights on tall poles are just flickering to life, casting amber pools onto the darkening asphalt. Painted lane markings are faintly visible on the road surface.",
+  "lighting": {
+    "conditions": "Dim bluish twilight (blue hour) with newly activated streetlights",
+    "direction": "Ambient overhead skylight from above plus warm point sources from roadside streetlights; forward-facing headlight beams from the ego vehicle",
+    "shadows": "Long, soft, low-contrast shadows stretching from the pedestrian and poles; headlights throw the mattress silhouette forward onto the road",
+    "illumination_effect": "A cold, moody atmosphere where the pale mattress catches ambient and headlight glow while surroundings fall into deep blue shadow, reducing detail and contrast"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-driving perspective with the road converging toward a vanishing point; the broad rectangular mattress silhouette dominates the mid-ground of the ego lane",
+    "color_scheme": "Cool bluish grays and deep navy dominate, punctuated by warm amber streetlight highlights and the pale cream of the mattress",
+    "mood_atmosphere": "Tense, uneasy, ominous, cold twilight quiet",
+    "patterns": "Repeating streetlight poles and lane dashes receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a moving vehicle (ego dashcam perspective), steady constant-speed motion; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road width and approaching obstacle",
+    "camera_angle": "Eye-level, driver's forward viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the mattress-carrying pedestrian in the ego lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam / autonomous driving footage documentary style",
+  "context": "Autonomous vehicle perception edge-case scenario illustrating a classification failure of an unusual road obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego car cruises forward down the dim suburban road as streetlights flicker on; a broad pale rectangular shape appears ahead in the lane with legs visible beneath it. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The mattress-carrying pedestrian moves steadily from right to left across the ego lane; the vehicle does not slow. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The car maintains cruising speed and passes close beside the pedestrian, the mattress silhouette sweeping past the side of the frame without any deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Forward drive down the twilight suburban road; the broad rectangular mattress silhouette with legs beneath is revealed crossing the ego lane, drifting from right to left. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Obstacle grows larger and shifts leftward across the lane as distance closes; streetlights fully illuminate.",
+      "camera": "Steady forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle continues at unchanged cruising speed and passes close beside the mattress-carrying pedestrian without braking. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The pale mattress silhouette sweeps rapidly past the side of the frame; road ahead opens up again.",
+      "camera": "Continued forward tracking, no speed change; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car glides forward along a dim, bluish suburban two-lane road as streetlights are just switching on, casting amber pools on the darkening asphalt. By 0:01 a broad pale rectangular shape emerges ahead in the ego lane, with only a pair of legs visible walking beneath it. From 0:02 the mattress-carrying pedestrian moves steadily from the right side toward the left across the lane, yet the vehicle shows no sign of slowing. At 0:03 the car maintains its normal cruising speed and begins to overtake the obstacle. Through 0:04 and 0:05 the pale mattress silhouette sweeps close past the side of the frame without any deceleration, and the road ahead reopens into the deepening twilight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car's engine and tire noise on smooth asphalt at constant speed, with faint wind rush. Subtle ambient dusk quiet with distant muffled suburban sounds. Notably absent are any braking, warning chimes, or deceleration cues, underscoring the vehicle's failure to react.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

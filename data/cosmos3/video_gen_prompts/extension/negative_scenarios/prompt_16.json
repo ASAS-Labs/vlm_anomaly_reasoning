@@ -1,0 +1,145 @@
+{
+  "subjects": [
+    {
+      "description": "Three dressed retail store mannequins displayed on the sidewalk in front of a clothing store, standing rigidly on metal support stands right at the curb edge.",
+      "appearance_details": "Smooth matte fiberglass bodies in beige and light gray tones, headless and full-head variants; one wears a summer dress, one a casual blazer over jeans, one a knit sweater with trousers. Chrome pole stands anchor each at the ankle or base.",
+      "relationship": "Static retail display objects mistaken by the ego vehicle for pedestrians about to step into the road.",
+      "location": "Right side of frame, foreground-to-midground on the sidewalk near the curb in front of the clothing store.",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing partially toward the street and the camera, angled to display clothing to passersby.",
+      "pose": "Rigid, upright mannequin poses; arms fixed in stylized retail positions, motionless on stands.",
+      "action": "Standing completely still on display, never moving.",
+      "state_changes": "No significant change.",
+      "clothing": "Summer dress, casual blazer with jeans, and knit sweater with trousers in muted seasonal retail colors.",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car traveling down a downtown shopping street, seen from a first-person driver's dashboard perspective.",
+      "appearance_details": "Interior dashboard edge and hood barely visible at the bottom of frame; windshield view dominates the scene.",
+      "relationship": "The observing vehicle whose autonomous or driver reaction drives the narrative; reacts to the mannequins.",
+      "location": "Camera/ego position, center of frame looking forward down the road.",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the lane, direction of travel.",
+      "pose": "N/A vehicle perspective.",
+      "action": "Driving forward, then braking hard to a complete stop.",
+      "state_changes": "Transitions from forward motion to hard braking and full stationary stop in the lane.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy downtown shopping street lined with storefronts, awnings, and glass display windows. On the right stands a clothing store with mannequins on the sidewalk near the curb. Parked cars and streetlamps line the sides, with sidewalks, crosswalk markings, and low-rise commercial buildings extending into the distance. The lane ahead is clear and open under bright daytime skies.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-lit with light coming from the upper front-left",
+    "shadows": "Consistent, sharp shadows cast by mannequins, streetlamps, and parked cars onto the sidewalk and street",
+    "illumination_effect": "Crisp, high-contrast daytime illumination with accurate colors and clear visibility down the street"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing dashcam framing centered on the road ahead, with the clothing store and mannequins prominently on the right side, curb leading the eye toward vanishing point",
+    "color_scheme": "Natural urban palette of gray asphalt, beige and glass storefronts, muted mannequin clothing tones, blue sky accents",
+    "mood_atmosphere": "Ordinary urban routine, sudden caution, tense hesitation",
+    "patterns": "Repeating storefronts, streetlamps, and lane markings receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective through windshield",
+    "camera_angle": "Eye-level, forward-facing dashcam view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead, storefronts, and mannequins on the right",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception edge case demonstrating a false-positive pedestrian detection triggering an unnecessary hard brake",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "Ego vehicle drives smoothly forward down the clear downtown lane, approaching the clothing store on the right with the three static mannequins at the curb."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop in the lane directly in front of the store and remains fully stationary; the mannequins stay motionless on the sidewalk; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "CLOTHING",
+      "category": "scene_sign",
+      "appearance": "Modern sans-serif storefront lettering in dark gray on a light signboard above the shop windows",
+      "spatial_temporal": "Mounted above the clothing store entrance on the right side, visible throughout",
+      "context": "Identifies the clothing retail store where the mannequins are displayed"
+    },
+    {
+      "text": "SALE",
+      "category": "physical_in_scene",
+      "appearance": "Red bold poster lettering in the store window",
+      "spatial_temporal": "In the clothing store display window on the right, visible mid to late video",
+      "context": "Retail promotional signage in the shop window"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle cruises forward down the clear downtown shopping street, storefronts and parked cars sliding past, approaching the clothing store with its three curbside mannequins.",
+      "key_changes": "Steady forward motion; mannequins grow larger in frame on the right",
+      "camera": "Smooth forward tracking motion at moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a complete stop in the lane in front of the store and remains fully stationary for over two seconds; the mannequins stand unmoving on the sidewalk and the lane ahead remains clear. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle drives smoothly forward down the clear downtown lane, approaching the clothing store on the right with the three static mannequins at the curb. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient downtown street noise with distant traffic hum and faint pedestrian chatter. The engine tone lowers as the vehicle decelerates, followed by the distinct sound of hard braking and tire friction. A brief seatbelt/chassis creak accompanies the abrupt stop, then near-silence with only quiet idling and background city ambience during the stationary segment.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

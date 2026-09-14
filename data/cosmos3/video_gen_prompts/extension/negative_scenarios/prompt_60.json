@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A black hearse leading a funeral procession, a long formal vehicle with tinted windows and chrome trim, its headlights illuminated in the overcast daylight",
+      "appearance_details": "Polished black paint, ornamental landau bars on the rear side panels, large rear compartment window, small purple flag mounted on the hood",
+      "relationship": "Lead vehicle of the funeral procession crossing in front of the ego car",
+      "location": "center foreground crossing left to right",
+      "relative_size": "Large within frame",
+      "orientation": "Broadside, facing right relative to camera",
+      "pose": "Moving slowly across the intersection",
+      "action": "Leading the procession through the red light",
+      "state_changes": "Exits frame to the right as procession continues",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A line of dark-colored sedans and SUVs following the hearse, each with headlights on and a small purple flag on its hood, moving as an unbroken group",
+      "appearance_details": "Assorted mid-size sedans and SUVs in black, dark gray, and navy, all with daytime headlights illuminated and purple funeral procession flags fluttering slightly on the hoods",
+      "relationship": "Mourners' vehicles following the hearse in a slow single-file procession",
+      "location": "center to left, crossing left to right behind the hearse",
+      "relative_size": "Medium within frame",
+      "orientation": "Broadside, facing right relative to camera",
+      "pose": "Rolling slowly in a continuous line",
+      "action": "Following the hearse across the intersection through the red light",
+      "state_changes": "A gap opens between two cars in the line as the procession advances",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 6,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A busy urban intersection viewed from the driver's seat of a stopped car. Multi-story commercial buildings with glass and concrete facades line the cross streets. Traffic lights hang overhead, storefronts and street signage are visible along the sidewalks, and painted crosswalk lines mark the pavement. The scene is under a flat, overcast sky that mutes colors and softens all shadows. Wet-looking gray asphalt reflects dim ambient light. A green traffic signal glows for the ego vehicle's lane.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "Diffuse top-down ambient light from a cloudy sky",
+    "shadows": "Soft, faint shadows beneath vehicles with little contrast",
+    "illumination_effect": "Even, low-contrast illumination that flattens the scene and makes the vehicle headlights and glowing traffic signals stand out"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical dashcam framing centered on the intersection with the crossing procession filling the mid-ground, traffic signals visible at top",
+    "color_scheme": "Muted grays and desaturated urban tones punctuated by black vehicles, warm white headlight glow, purple flags, and a green traffic signal",
+    "mood_atmosphere": "Somber, tense, quietly urgent",
+    "patterns": "Repeating line of headlight pairs and purple flags along the procession"
+  },
+  "cinematography": {
+    "camera_motion": "Static then forward dolly as the ego vehicle accelerates into the gap; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level ego view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the crossing procession and intersection ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving scenario illustrating an ego vehicle failing to recognize a funeral procession as a single continuous group and driving into a gap",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego car sits stopped at the green light as the black hearse enters the intersection from the left. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The line of following cars with headlights and purple flags crosses slowly in front of the ego vehicle as one unbroken group. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "A gap opens between two procession cars; the ego vehicle accelerates forward into the gap without stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on black rectangular street sign, small",
+      "spatial_temporal": "Upper left background near the cross street, visible throughout",
+      "context": "Standard urban traffic signage"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle is stopped at the green light while the hearse and following cars of the funeral procession cross slowly in front, moving as a single unbroken group with headlights on and purple flags on their hoods. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Procession advances across the intersection; a gap begins to form between two cars",
+      "camera": "Static ego view holding on the intersection; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Treating each car independently, the ego vehicle accelerates forward into the gap between two procession cars without stopping, cutting through the funeral line. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ego vehicle transitions from stationary to forward motion, entering the intersection",
+      "camera": "Forward dolly following the ego vehicle's acceleration; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car is stopped at a green light at an overcast city intersection, and the black hearse rolls in from the left with its headlights on and a purple flag on the hood. From 0:01 to 0:03 the following cars of the funeral procession stream across in front, all with headlights lit and small purple flags, moving as one continuous unbroken group. Around 0:03 a gap opens between two of the procession cars, and from 0:03 to 0:05 the ego vehicle, treating each car as an independent obstacle, accelerates forward into that gap and drives through the funeral line without stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban soundscape with distant traffic hum, faint idling engines of the procession vehicles, and the soft whoosh of tires on damp pavement. As the ego vehicle accelerates, its engine note rises. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

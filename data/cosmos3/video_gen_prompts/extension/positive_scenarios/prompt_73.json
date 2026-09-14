@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A large roadside digital LED billboard mounted on a steel support structure beside the highway, its full screen displaying a bright advertisement video showing the rear of a car with glowing red brake lights",
+      "appearance_details": "Rectangular high-brightness LED panel with a subtle metallic frame; the displayed video shows a close-up of a car's tail-end, twin red brake lights blazing, filling the entire screen with intense red glow",
+      "relationship": "It is a roadside advertisement observed by the ego vehicle; a potential distraction that the ego vehicle correctly identifies as non-relevant to driving",
+      "location": "right side of frame, elevated above the highway",
+      "relative_size": "Large within frame",
+      "orientation": "angled toward the oncoming traffic, facing the camera slightly from the right",
+      "pose": "static mounted structure",
+      "action": "displaying a looping video of red brake lights",
+      "state_changes": "grows larger in frame as the ego vehicle approaches, then slides off to the right and recedes as the car passes",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car, seen implicitly through its point-of-view; interior dashboard edge and hood faintly lit by ambient light",
+      "appearance_details": "Dark dashboard silhouette at the bottom of the frame, faint reflections on the windshield, hood visible catching stray highway lighting",
+      "relationship": "The observer and primary actor; the camera represents the driver's forward view",
+      "location": "camera position, lower foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "facing forward down the highway",
+      "pose": "cruising forward",
+      "action": "driving at steady cruising speed down a clear lane",
+      "state_changes": "maintains constant speed throughout; does not slow or stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A multi-lane highway at night stretching straight ahead into darkness. Lane markings glow faintly under the car's headlights and scattered overhead lighting. The road ahead is completely clear of traffic. To the right, an illuminated digital billboard rises above a low guardrail. Distant city glow and dark tree lines flank the highway shoulders, with occasional reflective road signs and highway poles receding into the night.",
+  "lighting": {
+    "conditions": "Nighttime with artificial illumination dominated by the billboard's bright glow and the car's headlights",
+    "direction": "Primary light from the front (headlights) and from the right (the digital billboard emitting intense red-tinted light)",
+    "shadows": "Long, soft shadows cast to the left of the road from the billboard's glow; deep darkness in the surrounding shoulders",
+    "illumination_effect": "The red brake-light imagery on the billboard casts a warm crimson wash across the right side of the road, contrasting with the cool white headlight beams and the pitch-black night"
+  },
+  "aesthetics": {
+    "composition": "First-person driver perspective with the highway vanishing point centered; the glowing billboard positioned in the right third of the frame as a strong focal accent",
+    "color_scheme": "Deep blacks and navy blues of the night, cool white headlight beams, and a dominant vivid red glow from the billboard's brake-light video",
+    "mood_atmosphere": "Calm, controlled, technologically alert; quiet nighttime highway solitude",
+    "patterns": "Repeating dashed lane markings receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot moving with the ego vehicle at steady speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the highway and roadside billboard",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the digital billboard",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, cinematic autonomous-driving perspective",
+  "context": "Autonomous vehicle perception demonstration showing correct identification of a roadside advertisement versus an actual road hazard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along a clear multi-lane highway at night, headlights illuminating the empty road as the bright digital billboard becomes visible ahead on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The billboard grows larger in frame, its full-screen video of a car's glowing red brake lights clearly displayed; the ego vehicle recognizes it as an advertisement, not a real vehicle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle maintains its cruising speed without slowing, passing the billboard on the right as it slides off-frame; the clear highway continues ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "BRAKE LIGHTS AD",
+      "category": "scene_sign",
+      "appearance": "Bright red glowing imagery filling an LED screen, no distinct typography, dominated by illuminated brake-light shapes",
+      "spatial_temporal": "Displayed on the billboard in the right portion of the frame, visible from 0:01 through 0:04 as the car approaches and passes",
+      "context": "A roadside video advertisement depicting a car's rear with lit brake lights, potentially mistakable for a real vehicle"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establishing forward view of the clear highway at night; the ego vehicle drives at steady cruising speed and the illuminated billboard first appears ahead on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Billboard enters frame and begins to grow larger",
+      "camera": "Forward tracking with the vehicle at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The billboard dominates the right side of the frame, its red brake-light video clearly visible; the ego vehicle correctly classifies it as an advertisement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Billboard reaches maximum apparent size; red glow washes over the right side of the road",
+      "camera": "Continued forward tracking, steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle passes the billboard at unchanged cruising speed; the billboard slides off to the right and recedes while the clear open highway continues ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Billboard exits the frame to the right; road remains clear; speed unchanged",
+      "camera": "Steady forward tracking maintaining constant velocity; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from the driver's seat down a dark, empty multi-lane highway, headlights sweeping the clear lane while a bright glow appears ahead on the right. By 0:01 the digital billboard resolves into a full-screen video of a car's rear with vivid red brake lights. From 0:02 to 0:03 the billboard swells in the right of frame, casting a crimson wash across the road, and the ego vehicle identifies it as a roadside advertisement rather than a real stopped car. From 0:03 to 0:05 the car maintains its steady cruising speed, passing the billboard, which slides off to the right and recedes, leaving the clear highway stretching ahead into the night. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car's engine and tires on asphalt, a faint rush of wind, and occasional subtle mechanical drivetrain sounds. No music or speech; the ambient nighttime highway soundscape remains constant throughout, reinforcing the uninterrupted cruising pace.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

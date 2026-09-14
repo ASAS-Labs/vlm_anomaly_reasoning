@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A white commercial cargo van driving ahead on the road, its rear double doors covered with a photo-realistic vinyl wrap depicting an open highway vanishing toward the horizon, creating a trompe-l'oeil illusion that the road continues through the van",
+      "appearance_details": "Boxy delivery van silhouette, slightly grimy lower panels, chrome rear bumper, dual red brake light clusters flanking the wrapped doors, small license plate centered low",
+      "relationship": "The lead vehicle directly in front of the ego car; the object of the ego vehicle's perception and following behavior",
+      "location": "Center of frame, mid-distance ahead in the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear-facing toward the camera, moving away in the same direction of travel",
+      "pose": "Upright box-van body squarely occupying the lane",
+      "action": "Driving ahead then decelerating, brake lights illuminating",
+      "state_changes": "Brake lights transition from off to bright red; van slows noticeably, closing the visual gap slightly before the ego car matches its reduced speed",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose forward-facing dashcam or driver perspective provides the point of view for the entire clip",
+      "appearance_details": "Implied by the ego viewpoint; faint dashboard reflection and hood edge visible at the lower frame margin",
+      "relationship": "The observing and reacting vehicle following the wrapped van; camera platform",
+      "location": "Occupies the ego lane, camera positioned at driver eye height",
+      "relative_size": "Large within frame (implied, mostly off-screen)",
+      "orientation": "Facing forward down the road",
+      "pose": "Traveling straight in-lane",
+      "action": "Following the van, then braking to maintain a safe following distance at reduced speed",
+      "state_changes": "Transitions from steady cruising to marked deceleration, settling into a slower steady follow",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane rural-to-suburban asphalt road stretching straight under a clear blue daytime sky. Painted lane markings divide the carriageway, with a dashed center line and solid edge lines. Low roadside vegetation, occasional utility poles, and distant trees frame both sides. The tarmac shows mild weathering and consistent hard shadows cast by roadside objects, indicating strong overhead sun. The horizon is open and the road recedes to a vanishing point that visually rhymes with the illusory highway printed on the van's rear doors.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-right, casting short consistent shadows",
+    "shadows": "Crisp, short shadows beneath the van and roadside objects, all pointing in a consistent direction",
+    "illumination_effect": "High contrast, well-saturated colors, clear visibility with a subtly warm midday tone"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point-perspective composition with the road converging toward the horizon; the wrapped van anchors the middle of the frame, its printed highway reinforcing the depth lines",
+    "color_scheme": "Dominant grey asphalt, blue sky, green roadside foliage, white van body, and punctuating red brake lights",
+    "mood_atmosphere": "Calm, ordinary driving; subtly uncanny optical illusion; cautious alertness",
+    "patterns": "Repeating dashed lane markings and the recurring vanishing-point motif echoed by the van wrap"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the moving ego vehicle, gently decelerating with the car; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot of the road ahead with the van centered",
+    "camera_angle": "Eye-level driver perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the van's rear and the road ahead",
+    "lens_focal_length": "Standard wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam documentary",
+  "context": "Autonomous driving perception demonstration showing an ADAS/ego vehicle correctly recognizing a visually deceptive wrapped van as a real vehicle and braking to keep distance",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego car cruises steadily along the two-lane road, following the wrapped van whose rear doors display the illusory continuation of the highway. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The van's brake lights illuminate red as it begins to slow down ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle recognizes the van as a real vehicle and brakes markedly, reducing speed and maintaining a safe following distance behind the van at the lower speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "Photorealistic printed highway scene",
+      "category": "vehicle_graphic",
+      "appearance": "Full-color photographic vinyl wrap depicting an empty asphalt highway receding to the horizon under blue sky",
+      "spatial_temporal": "Across the van's rear double doors, centered in frame, visible throughout the clip",
+      "context": "Decorative/advertising wrap that creates the optical illusion of the road continuing, testing the perception system"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Steady following of the wrapped van under clear daylight, illusion of continuous road visible on the van's rear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Stable speed and constant following distance; no brake lights yet.",
+      "camera": "Smooth forward tracking at constant speed with the ego vehicle; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The van's brake lights switch on and it begins to decelerate ahead of the ego car. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Brake lights turn bright red; slight closing of the gap as the van slows.",
+      "camera": "Forward tracking beginning to decelerate; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle brakes noticeably, recognizing the van as a genuine obstacle, and settles into a slower steady follow keeping a safe distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Marked ego deceleration; following distance stabilizes at reduced speed for at least two seconds.",
+      "camera": "Forward tracking at reduced speed, maintaining steady framing of the van; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from inside the ego car cruising along a sunlit two-lane road behind a white van whose rear doors are wrapped with a photo-realistic image of an open highway, making the van appear to blend into the road. Through 0:02 the follow is steady and the illusion holds. At around 0:02 the van's brake lights glow bright red and it starts slowing. From 0:03 onward the ego vehicle brakes markedly, correctly treating the wrapped van as a real vehicle, and by 0:05 it has settled into a slower, constant following distance behind the van, holding that reduced speed for the final seconds. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient road noise dominates: steady tire hum on asphalt and a low engine drone, with faint wind rush. As the ego car decelerates, the engine note lowers and a subtle brake-application sound is heard. No speech or music; a clean, realistic driving soundscape.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "subjects": [
+    {
+      "description": "Yellow plastic police caution tape strung horizontally across the entire width of the road, tied between two poles at approximately hood height",
+      "appearance_details": "Bright yellow tape with repeating black block lettering reading 'POLICE LINE DO NOT CROSS', slightly sagging in the middle, fluttering faintly in the night breeze",
+      "relationship": "Primary barrier marking the closed scene the ego vehicle approaches",
+      "location": "Center frame, spanning left to right across the road",
+      "relative_size": "Large within frame",
+      "orientation": "Perpendicular to the camera's direction of travel, facing the camera",
+      "pose": "Taut horizontal line with a shallow central droop",
+      "action": "Fluttering slightly, then rushing toward and past the camera as the vehicle drives through it",
+      "state_changes": "Grows rapidly larger in frame, then breaks and whips past as the ego vehicle passes through it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Two red road flares burning on the asphalt on either side of the closed section",
+      "appearance_details": "Intense red-orange flames emitting bright sparks and thick drifting smoke, casting flickering red pools on the wet-looking pavement",
+      "relationship": "Warning markers reinforcing the road closure",
+      "location": "Lower center and lower right of frame on the road surface",
+      "relative_size": "Small within frame",
+      "orientation": "Upright on the ground facing all directions",
+      "pose": "Stationary, flames dancing upward",
+      "action": "Burning steadily, flickering and throwing sparks",
+      "state_changes": "Flames flicker and grow larger as the vehicle approaches; drift past at the end",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Downed overhead power wires drooping and sagging onto the street beyond the caution tape",
+      "appearance_details": "Dark thick cables hanging low, one end coiled on the road, faintly catching streetlight and occasional sparking glints",
+      "relationship": "Hazard lying just beyond the tape, toward which the ego vehicle continues driving",
+      "location": "Center background, sagging across the road behind the tape",
+      "relative_size": "Medium within frame",
+      "orientation": "Draped across the roadway ahead of the camera",
+      "pose": "Sagging catenary curves dipping to the pavement",
+      "action": "Hanging still, faint sway in the breeze",
+      "state_changes": "Grows larger and more distinct as the camera advances toward it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet urban city street at night, flanked by dark storefronts and parked cars along both curbs. Sodium and LED streetlights cast pools of amber and cool white light along the wet asphalt. Utility poles line the roadside, one leaning where wires have come down. The scene is deserted apart from the barrier, flares, and downed cables ahead, giving an eerie sense of an emergency road closure.",
+  "lighting": {
+    "conditions": "Night, artificial street lighting with strong flare glow",
+    "direction": "Overhead streetlights from above and ahead; warm red uplight from ground flares",
+    "shadows": "Long, shifting shadows cast by poles and street furniture; flickering red-tinged shadows near the flares",
+    "illumination_effect": "High-contrast pools of amber light broken by dark shadowed stretches, with pulsing red highlights from the flares emphasizing danger"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-driving perspective with the road converging to a vanishing point; caution tape bisects the frame horizontally, flares anchor the lower thirds, downed wires draw the eye to the center background",
+    "color_scheme": "Deep blacks and cool blue-grays of night, punctuated by warm amber streetlight and vivid red-orange flare and yellow tape accents",
+    "mood_atmosphere": "Tense, ominous, hazardous, foreboding",
+    "patterns": "Repeating utility poles and streetlight pools receding down the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the moving ego vehicle, steady constant cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's eye view over the hood",
+    "camera_angle": "Eye-level dashcam perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road ahead, caution tape, flares, and downed wires",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Ego-vehicle dashcam footage of a car driving through a hazardous road closure at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises down the dark city street under streetlights, revealing yellow caution tape strung ahead and red flares burning on the pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues forward at the same speed, closing distance on the tape as the downed wires beyond become visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The car drives straight through the caution tape, which whips past, and continues toward the drooping downed wires without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "POLICE LINE DO NOT CROSS",
+      "category": "physical_in_scene",
+      "appearance": "Bold black block capital letters repeated along bright yellow plastic tape",
+      "spatial_temporal": "Center frame across the road, legible from 0:00 until the tape rushes past at ~0:04",
+      "context": "Warning that marks the road as a closed emergency scene"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "Ego view driving forward on the night street, streetlights overhead, caution tape and red flares coming into view ahead as the vehicle approaches at cruising speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Tape, flares, and downed wires grow progressively larger in frame",
+      "camera": "Steady forward tracking from the vehicle at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle drives straight through the caution tape without slowing, the tape snapping and whipping past the camera, continuing toward the drooping downed wires on the road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Tape breaks and rushes past; downed wires dominate the center of frame; flares slide past on either side",
+      "camera": "Continuous forward tracking, unbroken motion through the barrier; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark city street at night lit by amber streetlights, with yellow police caution tape strung between two poles ahead at hood height and red road flares burning on the pavement. From 0:01 to 0:02 the vehicle maintains its cruising speed, and the drooping downed power wires beyond the tape become visible in the center background. By 0:03 the tape fills much of the frame as the car closes in without slowing. From 0:03 to 0:05 the vehicle drives straight through the caution tape, which snaps and whips past the windshield, while the flares slide by on the sides and the car continues advancing toward the sagging downed wires on the road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car engine and tire noise on asphalt throughout. Faint hiss and crackle of the burning flares grows as the vehicle nears. A brief snapping flutter as the caution tape breaks and drags across the vehicle at around 0:03-0:04. Distant quiet ambient city night tone with no dialogue or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

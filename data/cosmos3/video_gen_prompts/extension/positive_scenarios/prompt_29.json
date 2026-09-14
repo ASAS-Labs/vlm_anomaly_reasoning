@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A cluster of lit ground fireworks positioned directly in the ego lane, spitting bright coloured sparks and emitting thick plumes of red and green smoke across the road surface",
+      "appearance_details": "Multiple cardboard fireworks tubes and cake-style fountains, some tipped over, showering fountains of gold, white, red, and green sparks with intermittent crackling bursts; glowing embers scatter on the asphalt",
+      "relationship": "The primary hazard obstructing the ego vehicle's path; the reason the car brakes and stops",
+      "location": "center foreground on the road, directly ahead in the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing camera, sparks projecting upward and outward toward the ego vehicle",
+      "pose": "Stationary cluster on the road surface",
+      "action": "Sparking, spitting coloured sparks and belching thick red and green smoke",
+      "state_changes": "Bursts intensify and fade intermittently; smoke thickens and drifts across the road over the video",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Groups of holiday spectators standing on the sidewalks well back from the road, watching the fireworks",
+      "appearance_details": "Bundled in coats and jackets against the night chill, some holding phones up to record the display, silhouetted against streetlights",
+      "relationship": "Bystanders observing the fireworks; positioned safely away from the hazard",
+      "location": "left and right background on the sidewalks",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the road and fireworks, roughly toward camera",
+      "pose": "Standing, some leaning forward, arms raised holding phones",
+      "action": "Watching and filming the fireworks display",
+      "state_changes": "Minor shifting in posture; largely static during the clip",
+      "clothing": "Winter coats, hats, scarves in dark and muted tones",
+      "expression": "Attentive, mildly excited, faces mostly in shadow",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Varied, indistinct in low light",
+      "facial_features": "Largely obscured by darkness and distance",
+      "number_of_subjects": 8,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A city street at night during a holiday celebration. Rows of buildings with darkened storefronts line both sides, streetlights cast warm pools of light on the asphalt, and the sky above is a deep unlit black. The road stretches straight ahead into the frame with painted lane markings partly obscured by drifting smoke. Sidewalks flank both sides where crowds of spectators gather at a safe distance, festive but restrained.",
+  "lighting": {
+    "conditions": "Night, artificial illumination from streetlights supplemented by the flickering glow of the fireworks",
+    "direction": "Overhead from streetlights, plus pulsing front-low light from the fireworks ahead",
+    "shadows": "Long shadows cast on the road from streetlights; dynamic flickering shadows thrown by spark bursts",
+    "illumination_effect": "Warm amber streetlight tones contrast with vivid red and green firework flashes, creating a dramatic, high-contrast nocturnal scene"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the ego lane with the fireworks cluster as the focal hazard; road converging toward vanishing point, sidewalks framing the sides",
+    "color_scheme": "Dark blues and blacks of the night, warm amber streetlights, punctuated by saturated red and green smoke and bright golden-white sparks",
+    "mood_atmosphere": "Festive yet tense, cautionary, dramatic anticipation",
+    "patterns": "Repeating streetlights receding into the distance and rhythmic lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level, ego driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the fireworks cluster and road ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous vehicle hazard recognition demonstration on a holiday night street",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the city street at night, approaching the lit fireworks cluster spitting sparks and smoke ahead"
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the fireworks and remains fully stationary as sparks and smoke continue; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego view moving forward down the night street toward the actively sparking ground fireworks ahead in the lane, spectators visible on the sidewalks",
+      "key_changes": "Fireworks grow larger in frame as the car approaches; sparks and smoke visibly active",
+      "camera": "Steady forward dolly at constant speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped a safe distance from the fireworks and remains stationary while sparks spit and red and green smoke roll across the road. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the city street at night, approaching the lit fireworks cluster spitting sparks and smoke ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient night-time city hum with faint distant crowd chatter, the low idle of the ego vehicle's engine, the sharp crackle and pop of ground fireworks bursting ahead, hissing spark fountains, and the subtle sound of braking as the vehicle slows and stops.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

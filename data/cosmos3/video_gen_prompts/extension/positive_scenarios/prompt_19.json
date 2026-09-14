@@ -1,0 +1,131 @@
+{
+  "subjects": [
+    {
+      "description": "A person seated in a low-profile electric mobility scooter, wearing a dark navy windbreaker jacket and casual grey trousers, gripping the tiller handlebars of the compact scooter.",
+      "appearance_details": "The scooter is a compact four-wheeled electric mobility unit with a red plastic body, a small basket at the front, and a low seat that places the rider's silhouette close to the ground; the rider wears white sneakers.",
+      "relationship": "The primary crossing subject the ego vehicle must yield to; detected as a pedestrian by the ego vehicle's system.",
+      "location": "Enters from right foreground, crosses toward left of frame across the pedestrian crossing",
+      "relative_size": "Medium within frame",
+      "orientation": "Left profile facing the direction of travel, side-on to the ego camera",
+      "pose": "Seated upright, hands on the tiller, leaning slightly forward as the scooter accelerates",
+      "action": "Rolling quickly off the curb and crossing the marked pedestrian crossing in front of the ego vehicle",
+      "state_changes": "Moves from the right curb across the crossing lane, maintaining a fast, steady speed lower than eye-level pedestrian height.",
+      "clothing": "Dark navy windbreaker jacket, grey casual trousers, white sneakers",
+      "expression": "Focused and forward-looking, neutral concentration",
+      "gender": "Unknown",
+      "age": "Elderly",
+      "skin_tone_and_texture": "Light-medium skin tone with slightly weathered texture",
+      "facial_features": "Short greying hair, partly obscured in profile, mild facial wrinkles",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet urban street on a clear day, lined with low commercial buildings, storefronts, and street trees. A marked white-striped pedestrian crossing spans the road just ahead of the ego vehicle. Curbs frame both sides of the roadway, with a sidewalk on the right where the mobility scooter emerges. The road surface is dry grey asphalt with painted lane markings. No other vehicles or pedestrians are present, giving the scene an open, uncluttered feel.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-right of the ego vehicle",
+    "shadows": "Crisp, consistent shadows cast toward the lower-left from buildings, trees, and the scooter user",
+    "illumination_effect": "Even, high-contrast natural illumination with well-defined details and true colors"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing ego perspective with the pedestrian crossing occupying the mid-ground and the road vanishing point near center; the scooter enters from the right to create dynamic lateral motion",
+    "color_scheme": "Neutral greys of asphalt, white crossing stripes, muted building tones, with the red scooter as a focal accent under clear blue sky",
+    "mood_atmosphere": "Calm, cautious, everyday urban driving",
+    "patterns": "Repeating white parallel stripes of the pedestrian crossing and rhythmic street trees"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road, crossing, and the mobility scooter user",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous vehicle perception and yielding behavior demonstration at a pedestrian crossing",
+  "actions": [
+    {
+      "time": "0:00-0:00",
+      "description": "Ego vehicle travels forward along the urban street approaching the marked pedestrian crossing."
+    },
+    {
+      "time": "0:00-0:01.5",
+      "description": "A person on a low electric mobility scooter rolls quickly off the right curb and begins crossing in front of the ego vehicle."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "PEDESTRIAN CROSSING",
+      "category": "scene_sign",
+      "appearance": "Standard black text on yellow diamond warning sign, roadside",
+      "spatial_temporal": "Right side of the road near the crossing, visible throughout",
+      "context": "Warns drivers of the upcoming pedestrian crossing"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:00",
+      "description": "Ego vehicle moves forward smoothly along the empty urban street toward the pedestrian crossing.",
+      "key_changes": "Approach distance to crossing decreases; road stripes grow closer.",
+      "camera": "Forward dolly at moderate speed, steady"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:00-0:01.5",
+      "description": "The mobility scooter user rolls off the right curb and quickly enters the crossing path.",
+      "key_changes": "New subject enters from right; ego vehicle begins to decelerate.",
+      "camera": "Forward dolly decelerating"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 3,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped and remains stationary. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle travels forward along the urban street approaching the marked pedestrian crossing. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient urban daytime sounds with a faint electric hum of the ego vehicle's motor, the soft whir of the approaching mobility scooter, gentle tire rolling noise fading as the vehicle decelerates, and a subtle mechanical brake sound before the vehicle settles into silence at the stop. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:00",
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ],
+    "split_last_beat": true
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "subjects": [
+    {
+      "description": "A thin metal chain strung horizontally across the full width of the lane at bumper height, suspended between two short posts on either side of the pavement",
+      "appearance_details": "Dark galvanized steel links, slightly sagging in the middle under its own weight, low visual contrast against the grey asphalt behind it",
+      "relationship": "The primary obstacle the ego vehicle must detect and stop for; connects the two posts flanking the lane",
+      "location": "Center of frame, spanning left to right across the lane",
+      "relative_size": "Medium within frame",
+      "orientation": "Perpendicular to the vehicle's direction of travel, facing the camera broadside",
+      "pose": "Taut but gently sagging catenary curve between the two posts",
+      "action": "Hangs stationary across the lane blocking passage",
+      "state_changes": "No significant change; remains static as the vehicle approaches and stops.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A small rectangular warning sign hanging from the middle of the chain",
+      "appearance_details": "Weathered laminated placard, faded red and white coloring, swaying almost imperceptibly, printed with a warning notice",
+      "relationship": "Attached to and hangs from the center of the chain to increase its visibility",
+      "location": "Center of frame, at the lowest point of the chain's sag",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the camera directly",
+      "pose": "Suspended vertically from a small hook or wire",
+      "action": "Hangs motionless from the chain",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Two short metal posts anchored on either edge of the lane, holding the chain",
+      "appearance_details": "Squat cylindrical galvanized bollards, roughly bumper height, with eyelets to which the chain attaches",
+      "relationship": "Structural anchors for the chain barrier",
+      "location": "Left and right edges of the lane, mid-frame",
+      "relative_size": "Small within frame",
+      "orientation": "Upright, facing camera",
+      "pose": "Vertical, fixed into the ground",
+      "action": "Stand stationary supporting the chain",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow paved service lane running between low, single-story buildings with plain rendered and brick facades. The asphalt is grey and slightly weathered with faint tire marks and painted edge lines. Low buildings frame both sides of the lane, casting consistent hard-edged shadows across portions of the pavement under a clear daytime sky. Scattered details such as a downpipe, a closed metal door, and a few weeds at the pavement edges reinforce the utilitarian, quiet back-alley atmosphere. The lane recedes toward the chain barrier and continues faintly beyond it.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High side-lit from the upper right, consistent with midday sun",
+    "shadows": "Sharp, well-defined shadows of buildings and posts falling consistently across the pavement",
+    "illumination_effect": "Even, high-contrast natural illumination that flattens the thin chain against the pavement and makes it easy to overlook"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point perspective with the lane leading the eye to the centered chain barrier and hanging sign; low horizon typical of a vehicle bumper-cam view",
+    "color_scheme": "Muted greys of asphalt, warm tans and off-whites of the low buildings, dark steel of the chain, with faded red-and-white accents on the sign",
+    "mood_atmosphere": "Quiet, cautious, mundane utilitarian daytime",
+    "patterns": "Repeating rectangular building panels and the regular chain links"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot of the lane from the driver's forward viewpoint",
+    "camera_angle": "Low eye-level, bumper height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the lane, chain, and buildings",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam / ego-view documentary",
+  "context": "Autonomous driving obstacle-detection demonstration showing the vehicle detecting a thin chain barrier and braking to a safe stop",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03.5",
+      "description": "The vehicle detects the thin chain and begins to decelerate, the forward motion slowing noticeably; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop well before the chain and remains fully stationary for the remainder of the clip; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "PRIVATE ROAD — NO ENTRY",
+      "category": "scene_sign",
+      "appearance": "Faded red text on a weathered white laminated placard, small block lettering",
+      "spatial_temporal": "Center of frame on the hanging sign, visible throughout the clip and increasingly legible as the vehicle nears",
+      "context": "Warns that the lane beyond the chain is restricted, explaining the barrier"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03.5",
+      "description": "The vehicle detects the thin chain and brakes, decelerating smoothly. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped a safe distance before the chain and remains completely stationary, with the chain and warning sign centered ahead. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient outdoor daytime quiet with a faint low hum of the vehicle's engine idling, subtle tire and suspension settling sounds as the brakes engage, distant faint urban background noise, and no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

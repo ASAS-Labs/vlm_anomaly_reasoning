@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A white emergency ambulance with red and orange reflective striping along its side, box-shaped patient compartment, and roof-mounted emergency light bar flashing red and blue",
+      "appearance_details": "Amber turn signals blinking, rear and side warning lights active, reflective chevron markings on the rear, tall boxy silhouette",
+      "relationship": "The primary vehicle the ego car must yield to; in the process of executing a U-turn",
+      "location": "center foreground, directly ahead of ego vehicle",
+      "relative_size": "Large within frame",
+      "orientation": "angled diagonally across the road, front turning toward the left as it begins the U-turn",
+      "pose": "mid-maneuver, wheels turned, body swinging across the lane",
+      "action": "beginning a U-turn across the road directly in front of the ego vehicle",
+      "state_changes": "Rotates further across the roadway as the U-turn progresses, moving from a forward-facing angle toward a leftward diagonal",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A uniformed police officer standing in the roadway, wearing a dark navy patrol uniform with a high-visibility reflective safety vest",
+      "appearance_details": "Reflective yellow-green vest with silver stripes glowing under the flashing lights, dark cap, utility belt, gloved hands raised",
+      "relationship": "Directing traffic; instructing the ego vehicle to move aside for the ambulance",
+      "location": "center-left midground, standing in the road ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "facing toward the ego vehicle/camera",
+      "pose": "standing upright, one arm extended and waving to the side to direct the ego car aside",
+      "action": "waving the ego vehicle aside with an authoritative arm gesture",
+      "state_changes": "Continues gesturing, arm sweeping motion becoming more emphatic as the ego vehicle stops",
+      "clothing": "Dark navy police uniform, high-visibility reflective safety vest, cap, gloves, utility belt",
+      "expression": "focused and serious, mouth slightly open as if calling out instructions",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, slightly weathered under harsh emergency lighting",
+      "facial_features": "Short dark hair beneath cap, clean-shaven, alert eyes, defined jawline partly shadowed",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A dark urban city street at night, flanked by low-rise buildings with darkened shopfronts and scattered streetlights. Wet asphalt reflects the pulsing red and blue emergency lights. Parked cars line the curb, and traffic signals glow faintly in the distance. The active emergency scene dominates the road ahead, with the ambulance and officer forming the focal obstruction.",
+  "lighting": {
+    "conditions": "Nighttime with harsh, pulsing emergency lighting from red and blue light bars",
+    "direction": "Front-lit from the ambulance and officer area, with intermittent colored flashes sweeping the scene",
+    "shadows": "Long, shifting shadows cast by the officer and ambulance that jump and flicker with each light pulse",
+    "illumination_effect": "Alternating red and blue washes over the wet street, creating a tense, strobing atmosphere with high contrast and dark shadowed edges"
+  },
+  "aesthetics": {
+    "composition": "Ego-view centered on the ambulance ahead, with the officer positioned center-left in the roadway, drawing the eye to the emergency activity; low-rise buildings frame the sides",
+    "color_scheme": "Dominant reds and blues from emergency lights against deep blacks and dark grays of the night, with reflective yellow-green accents from the officer's vest",
+    "mood_atmosphere": "Tense, urgent, cautious, alert",
+    "patterns": "Rhythmic strobing of red and blue emergency lights"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's ego perspective",
+    "camera_angle": "Eye-level from inside vehicle",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the ambulance and police officer ahead",
+    "lens_focal_length": "Wide-angle, approximating human driver field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam",
+  "context": "Autonomous driving / dashcam scenario depicting yielding at an active nighttime emergency scene",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03.5",
+      "description": "Ego vehicle applies the brakes, decelerating rapidly as the ambulance rotates further across the road; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "Ego vehicle comes to a complete stop in the middle of the road, directly in the ambulance's turning path, and remains fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "AMBULANCE",
+      "category": "vehicle_graphic",
+      "appearance": "Bold reversed or forward capital lettering in red on white vehicle body",
+      "spatial_temporal": "On the side/rear of the ambulance, visible throughout as it turns",
+      "context": "Identifies the emergency vehicle"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03.5",
+      "description": "The ego vehicle brakes hard, decelerating as the ambulance continues its turn across the road. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a full stop in the middle of the road within the ambulance's turning path and remains completely stationary for the final segment. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient nighttime city sounds with the low idle of the ego engine, the muffled diesel rumble of the ambulance, and the electronic yelp of an intermittent siren. The officer's whistle and shouted directions cut through, along with the soft squeal of the ego vehicle's brakes as it slows and stops.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

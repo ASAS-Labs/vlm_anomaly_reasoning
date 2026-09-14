@@ -1,0 +1,113 @@
+{
+  "subjects": [
+    {
+      "description": "A dense, billowing column of white steam rising from a circular manhole cover in the middle of the ego lane, partly transparent with soft feathered edges",
+      "appearance_details": "Wispy vapor that swirls and drifts laterally across the road surface, translucent enough to reveal the wet asphalt and lane markings behind it",
+      "relationship": "The primary obstacle-appearing element ahead of the ego vehicle, correctly identified as harmless vapor",
+      "location": "center of frame, mid-distance in the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "rising vertically then drifting toward the left across the road",
+      "pose": "diffuse plume expanding upward and outward",
+      "action": "steam continuously rising and drifting across the lane",
+      "state_changes": "plume grows nearer and larger as the vehicle approaches, then parts and disperses as the ego vehicle passes through it",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, a modern passenger car seen only through its forward-facing point of view",
+      "appearance_details": "Portion of the dark dashboard and hood visible at the bottom edge of the frame, windshield glass framing the road ahead",
+      "relationship": "The moving observer whose perspective the entire video is shot from",
+      "location": "foreground, implied at bottom of frame",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the street",
+      "pose": "driving straight ahead",
+      "action": "cruising at normal speed straight toward and through the steam plume",
+      "state_changes": "maintains constant speed with no braking or swerving throughout",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An urban city street on a cold, overcast morning. Multi-story buildings with gray facades line both sides of the road, their windows reflecting the dull sky. The asphalt is damp and slightly reflective from the cold air. Lane markings are visible, curbs edge the sidewalks, and a few parked cars and street furniture sit along the periphery. Bare trees and traffic signals appear in the distance. The overall atmosphere is muted and wintry, with faint fog-like haze in the cold air complementing the manhole steam plume.",
+  "lighting": {
+    "conditions": "Overcast daylight, soft and diffuse",
+    "direction": "flat, top-down ambient light from a cloudy sky",
+    "shadows": "very soft, faint shadows with low contrast beneath vehicles and objects",
+    "illumination_effect": "even, muted illumination that flattens contrast and mutes colors, giving a cold, gray morning feel; the white steam is brightly lit and stands out against the darker road"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-driving composition with the road converging toward a central vanishing point, the steam plume positioned centrally in the ego lane, dashboard visible along the lower edge",
+    "color_scheme": "Cool, desaturated palette dominated by grays, muted blues, and wet-asphalt charcoal, with the bright white steam as the focal highlight",
+    "mood_atmosphere": "Cold, calm, routine, faintly eerie yet undramatic",
+    "patterns": "Repeating lane markings and building facade windows receding toward the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot (ego vehicle POV) moving steadily down the street; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road ahead and surroundings",
+    "camera_angle": "Eye-level, driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the steam plume remain in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary dashcam aesthetic",
+  "context": "Autonomous driving perception demonstration showing the vehicle correctly classifying a harmless steam plume as vapor and proceeding without stopping",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward at cruising speed as the steam plume rising from a manhole becomes visible ahead in the lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The plume grows larger in frame as the vehicle approaches; the road beyond it remains clearly visible through the translucent vapor. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle maintains speed and drives straight through the steam, which parts and disperses around the car as it passes, revealing the clear road ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle cruises down the overcast city street and a thick white column of steam rising from a manhole cover appears ahead in the ego lane, drifting across the road. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steam plume enters frame and grows steadily larger as distance closes; vehicle speed remains constant.",
+      "camera": "Steady forward tracking from the driver's POV, no braking motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Recognizing the plume as harmless vapor, the ego vehicle continues at normal cruising speed and passes straight through the steam without slowing, the vapor parting and dissipating around the vehicle to reveal clear road beyond. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Steam envelops then clears past the windshield; the road ahead is fully revealed as clear.",
+      "camera": "Continuous forward tracking POV, smooth and unbroken through the vapor; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the video opens on a driver's-eye view of a damp, gray city street under overcast morning light, buildings lining both sides and the road stretching ahead. By 0:01 a thick white column of steam is seen rising from a manhole cover in the ego lane and drifting across the road, partly transparent so the lane beyond remains visible. From 0:02 to 0:03 the plume grows nearer and larger as the vehicle continues forward at steady cruising speed, showing no sign of braking. From 0:03 to 0:05 the ego vehicle drives straight through the steam, the vapor parting and swirling around the windshield before dispersing, revealing the clear, unobstructed road ahead as the car cruises onward without stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient city driving audio: the low steady hum of the vehicle engine and tires rolling over damp asphalt, faint distant traffic and city sounds, and a subtle soft whoosh of air and vapor as the car passes through the steam plume. No speech or music, just a calm, realistic morning street soundscape.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

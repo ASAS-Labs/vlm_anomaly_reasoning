@@ -1,0 +1,148 @@
+{
+  "subjects": [
+    {
+      "description": "A traffic signal mounted on a pole ahead of the ego vehicle, displaying a bright glowing green light for the ego lane's direction of travel",
+      "appearance_details": "Standard metal traffic signal housing with three vertical lamps, the lowest green lamp illuminated and glowing with a soft halo bloom in the misty rain",
+      "relationship": "Governs the ego vehicle's right-of-way through the intersection; grants passage with its green signal",
+      "location": "upper center, slightly right, in the mid-distance",
+      "relative_size": "Small within frame",
+      "orientation": "Facing the camera/ego vehicle",
+      "pose": "Fixed and upright on its mast arm",
+      "action": "Displaying steady green light",
+      "state_changes": "Remains green throughout; grows slightly larger as the vehicle approaches.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A red traffic lamp belonging to the cross-street signal, glowing red and casting a long reflection",
+      "appearance_details": "Red illuminated lamp seen at an angle, its light smeared into a vivid red streak on the wet asphalt of the ego lane",
+      "relationship": "Controls the perpendicular cross traffic (stopped) while its reflection deceptively appears in the ego lane",
+      "location": "right side, elevated, with reflection stretching across foreground road surface",
+      "relative_size": "Small within frame",
+      "orientation": "Angled away from the camera, facing the cross street",
+      "pose": "Fixed on cross-street signal pole",
+      "action": "Glowing red and mirrored as a bright streak on the rain-slicked road",
+      "state_changes": "Reflection stretches and shimmers as the vehicle moves; remains red throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car, seen from its interior driver perspective through the windshield",
+      "appearance_details": "Faint dashboard edge and wet windshield visible at the bottom of the frame, wiper streaks intermittently clearing rain droplets",
+      "relationship": "The point-of-view subject travelling through the city intersection",
+      "location": "implied at camera position, foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the street",
+      "pose": "Moving forward at cruising speed",
+      "action": "Driving straight through the intersection on the green light without slowing",
+      "state_changes": "Continuously advances, passing under and beyond the signal.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A nighttime urban city street during light rain. The asphalt is wet and glossy, reflecting the colored glow of traffic signals, streetlights, and neon storefronts. Buildings line both sides of the road, their windows and signage casting warm and cool light onto the slick pavement. An intersection lies ahead with traffic signals suspended overhead. Rain droplets bead on the windshield and light mist softens the distant lights into blooming halos.",
+  "lighting": {
+    "conditions": "Low-light night with artificial illumination and light rain",
+    "direction": "Multiple point sources from overhead signals, streetlights, and storefronts; mixed front and side lighting",
+    "shadows": "Soft, diffuse shadows; strong specular reflections on wet surfaces",
+    "illumination_effect": "Moody, high-contrast glow with vivid colored reflections streaking across the rain-slicked road, green light ahead and a red streak in the ego lane"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam framing with the road converging toward the intersection vanishing point; green signal upper center, red reflection cutting a diagonal streak across the foreground pavement",
+    "color_scheme": "Deep blues and blacks of night contrasted with saturated green signal glow, a bright red reflective streak, and warm amber streetlights",
+    "mood_atmosphere": "Tense yet calm, cinematic, rainy-night urban solitude",
+    "patterns": "Repeating streetlights and lane markings receding into the distance; ripple textures on wet asphalt"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving ego vehicle; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot, driver point-of-view through windshield",
+    "camera_angle": "Eye-level from driver seat",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the green traffic signal at the intersection",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic cinematic dashcam footage",
+  "context": "Autonomous driving perception scenario demonstrating correct signal interpretation despite a misleading red reflection on wet pavement",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle approaches the intersection on a rainy night; the green signal glows ahead while a bright red streak from the cross-street's red lamp reflects on the wet asphalt of the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle maintains cruising speed, disregarding the deceptive surface reflection, as wipers clear the windshield. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle drives straight through the intersection on the green light without slowing or stopping, the signal passing overhead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "ONE WAY",
+      "category": "scene_sign",
+      "appearance": "White text on black rectangular sign with arrow, small in frame",
+      "spatial_temporal": "Mounted near the intersection on the right, visible throughout",
+      "context": "Standard traffic directional signage on the city street"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Establishing the rainy nighttime approach to the intersection, green signal ahead and red reflection streaking across the ego lane pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Reflection shimmers and elongates as the vehicle advances; green signal grows nearer.",
+      "camera": "Forward tracking at cruising speed with slight rain-blur; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle continues at steady speed, ignoring the misleading red surface reflection. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Wiper sweep briefly clears droplets; distance to intersection closes.",
+      "camera": "Continuous forward tracking, no speed change; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle proceeds through the intersection on green without slowing or stopping, signal passing overhead and out of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Green signal rises and exits the top of frame; intersection is traversed.",
+      "camera": "Steady forward motion through and beyond the crossing; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from inside a car driving on a wet city street at night in light rain, with a green traffic signal glowing in the mid-distance and a vivid red streak from the cross-street's red lamp reflected across the rain-slicked asphalt of the ego lane. By 0:02 the vehicle holds its cruising speed, the wipers sweep away droplets, and the deceptive red reflection shimmers on the pavement but is ignored. From 0:03 to 0:05 the car continues straight through the intersection on the green light without slowing or stopping, the signal rising overhead and passing out of frame as the vehicle emerges onto the road beyond. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient nighttime city sounds: the steady hum of the car engine at cruising speed, tires hissing on wet pavement, gentle patter of light rain on the windshield, rhythmic sweep of the wiper blades, and faint distant traffic noise. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

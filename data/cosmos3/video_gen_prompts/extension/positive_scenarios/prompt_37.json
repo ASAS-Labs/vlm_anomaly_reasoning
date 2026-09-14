@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A dense swirling cloud of dry autumn leaves, predominantly amber, rust-orange, yellow, and brown in color, tumbling through the air",
+      "appearance_details": "Curled, brittle leaves of varying sizes, some maple-shaped, some oak-shaped, edges crisped and desiccated, catching the sunlight as they spin and flutter",
+      "relationship": "The primary transient obstacle interacting with the ego vehicle's forward path; harmless particulate matter blown across the lane",
+      "location": "Rising from right verge, sweeping across center and toward the windshield",
+      "relative_size": "Small within frame (individually), Medium within frame (as a collective cloud)",
+      "orientation": "Drifting and tumbling toward the camera from the right",
+      "pose": "Airborne, chaotic tumbling and swirling motion",
+      "action": "Lifted by a gust and blown across the ego lane toward the windshield",
+      "state_changes": "Leaves rise, thicken into a swirling cloud crossing the lane, then thin out and scatter past the vehicle as it continues through",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 0,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car experienced from the driver's first-person point of view through the windshield",
+      "appearance_details": "Visible portions include the top edge of the dashboard, faint reflections on the windshield glass, and the hood extending into the lower frame",
+      "relationship": "The observer/protagonist of the scene; travels forward through the leaf swirl without reacting",
+      "location": "Camera/ego position, foreground implied",
+      "relative_size": "Large within frame (implied dashboard/hood)",
+      "orientation": "Facing forward down the road",
+      "pose": "Driving forward in a straight line along the ego lane",
+      "action": "Maintaining normal cruising speed straight through the swirl of leaves",
+      "state_changes": "No significant change; steady constant velocity throughout",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane rural road flanked on both sides by mature deciduous trees in full autumn color, their canopies a mix of gold, orange, crimson, and lingering green. The road stretches ahead with a faded center line dividing the two lanes, its asphalt clean and dry. Grassy verges on either side are strewn with fallen leaves. A clear blue sky is visible above and between the tree branches, with warm daylight filtering through the foliage and casting dappled patterns onto the road surface. The scene conveys a peaceful, seasonal countryside drive.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "Front-lit and slightly side-lit from the upper right, sun relatively high",
+    "shadows": "Consistent, well-defined shadows from tree trunks and branches stretching across the road, stable throughout",
+    "illumination_effect": "Warm, natural illumination that highlights the golden autumn foliage and makes the airborne leaves glow as they catch the light"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective down the road corridor, vanishing point ahead, framed symmetrically by trees on both sides; dashboard visible along the bottom edge",
+    "color_scheme": "Warm autumn palette of amber, orange, rust, and gold against dark gray asphalt and a clear blue sky",
+    "mood_atmosphere": "Serene, seasonal, calm confidence",
+    "patterns": "Repeating tree trunks and dappled light-and-shadow patterns across the road surface"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from ego vehicle perspective, smooth constant velocity; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's point of view",
+    "camera_angle": "Eye-level, first-person driver view",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and the swirling leaves as they approach the windshield",
+    "lens_focal_length": "Standard wide-angle, approximately 24-35mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic, documentary-style automotive point-of-view",
+  "context": "Autonomous driving perception scenario demonstrating correct classification of harmless airborne debris (leaves) and continued driving without unnecessary braking",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle cruises forward along the clear tree-lined autumn road at steady speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "A gust of wind lifts a dense swirl of dry leaves off the right verge, sending them tumbling across the ego lane toward the windshield. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at normal cruising speed straight through the leaf cloud without slowing; leaves scatter past and the road ahead remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "The ego vehicle drives forward along an empty two-lane autumn road with trees on both sides and dappled sunlight on the asphalt. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Establishing steady forward motion; road ahead is clear.",
+      "camera": "Smooth forward tracking at constant cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A gust of wind lifts a dense cloud of dry leaves from the right verge, which swirls across the ego lane and drifts toward the windshield. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Leaves rise and thicken into a tumbling cloud crossing the lane in front of the vehicle.",
+      "camera": "Continues smooth forward tracking; leaves pass through the frame and toward the lens; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle passes directly through the swirl of harmless leaves at unchanged cruising speed; leaves flutter past and scatter, and the clear road reappears ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Leaf cloud thins and scatters past the vehicle; no braking or steering reaction occurs.",
+      "camera": "Steady forward tracking at constant velocity, no jitter or deceleration; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks forward from the driver's seat down a quiet two-lane autumn road lined with golden and orange trees, sunlight dappling the clean dry asphalt as the car cruises steadily ahead. Around 0:01 a gust of wind stirs the right verge, lifting a dense swirl of dry brown and amber leaves into the air. From 0:01 to 0:03 the leaf cloud tumbles across the ego lane, spiraling toward the windshield and briefly filling part of the view with fluttering foliage. From 0:03 onward the vehicle continues at its normal cruising speed straight through the harmless swirl without slowing; the leaves scatter and stream past the glass, and by 0:05 the road ahead is clear again while the car drives on unperturbed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car's tires on smooth asphalt and a faint engine drone at cruising speed. A rising rush of wind accompanies the gust that lifts the leaves, followed by a soft dry rustling and papery patter as the leaves swirl and brush past the windshield. Distant ambient countryside quiet with faint birdsong underneath. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

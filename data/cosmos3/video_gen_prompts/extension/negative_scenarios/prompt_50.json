@@ -1,0 +1,148 @@
+{
+  "subjects": [
+    {
+      "description": "A large oncoming oversize-load flatbed transport truck hauling an enormous smooth white wind-turbine blade that tapers from a broad root to a slender tip, the load extending well beyond the truck bed and overhanging the highway centre line into the ego lane",
+      "appearance_details": "Bright white glossy composite blade surface catching direct sunlight, red-and-white striped oversize-load warning banners, orange 'OVERSIZE LOAD' sign on the cab, amber rotating hazard beacons on the tractor, multiple axles with dark tires, red support cradles securing the blade",
+      "relationship": "The primary hazard the ego vehicle approaches head-on; escorted by a lead escort vehicle",
+      "location": "center to left-of-center, mid to foreground, advancing toward camera",
+      "relative_size": "Large within frame",
+      "orientation": "front-facing toward the camera, travelling in the opposite lane",
+      "pose": "moving forward along its lane with the blade tip protruding into the ego lane",
+      "action": "driving toward the ego vehicle while its load overhangs the centre line",
+      "state_changes": "grows steadily larger in frame as the distance closes; blade overhang becomes increasingly prominent",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A pilot escort vehicle, a pickup truck with roof-mounted flashing amber warning lights and an oversize-load warning flag, leading ahead of the transport truck",
+      "appearance_details": "Amber strobing roof beacons, orange warning flags, reflective decals, headlights on, positioned ahead of the load in the oncoming lane",
+      "relationship": "Escorts and warns of the following oversize load",
+      "location": "center-left background, ahead of the truck",
+      "relative_size": "Medium within frame",
+      "orientation": "front-facing toward camera, approaching",
+      "pose": "driving forward in the oncoming lane",
+      "action": "leading the convoy with amber lights flashing",
+      "state_changes": "passes closer to the ego vehicle then moves toward the left edge of frame",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, an ordinary passenger car whose dashboard and windshield frame the point of view",
+      "appearance_details": "Partial view of dark dashboard top, subtle reflection of interior on the windshield glass",
+      "relationship": "The observer/driver perspective that is approaching the oversize load",
+      "location": "camera position, foreground implied",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the highway",
+      "pose": "driving straight ahead centered in its lane",
+      "action": "cruising at normal speed without slowing",
+      "state_changes": "maintains steady speed and lane position throughout, no deceleration",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane rural highway cutting through open countryside under a clear blue daytime sky. Flat to gently rolling fields of dry golden and green grass line both shoulders, with scattered low trees and utility poles marching along the roadside. The asphalt is grey with a faded yellow centre line and white edge markings. Distant hills and a flat horizon complete the setting, with the road extending straight ahead into the distance.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly front-right casting consistent shadows",
+    "shadows": "crisp, consistent hard-edged shadows cast to the left of vehicles and poles onto the road and shoulder",
+    "illumination_effect": "high contrast, well-lit scene with strong glare off the white blade and clear visibility of the road ahead"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point-perspective composition with the highway vanishing point ahead, oncoming convoy weighted to the left half, dashboard edge grounding the lower frame",
+    "color_scheme": "Blue sky, grey asphalt, golden-green fields, bright white blade, orange and amber warning accents",
+    "mood_atmosphere": "tense, escalating hazard, ordinary drive turning dangerous",
+    "patterns": "repeating utility poles and lane markings receding to the horizon"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking (ego-motion) along the road at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver POV",
+    "camera_angle": "Eye-level, dashboard-mounted",
+    "depth_of_field": "Deep",
+    "focus": "the oncoming truck, blade, and road ahead",
+    "lens_focal_length": "wide-angle, roughly 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam",
+  "context": "Automotive driving-hazard scenario depicting an ego vehicle failing to react to an encroaching oversize load",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego car cruises down the centre of its lane; the escort vehicle with flashing amber lights and the oversize-load truck appear ahead in the oncoming lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The convoy grows larger; the huge white wind-turbine blade is seen overhanging the centre line and jutting into the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues at unchanged cruising speed straight down the middle of its lane as the blade overhang looms dangerously close, showing no braking or evasion. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "OVERSIZE LOAD",
+      "category": "vehicle_graphic",
+      "appearance": "bold black uppercase lettering on an orange rectangular banner",
+      "spatial_temporal": "mounted on the front of the truck cab and on the escort vehicle, visible from 0:01 onward as the convoy nears",
+      "context": "regulatory warning that the vehicle carries an over-width load"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Open highway POV; the escort vehicle and oversize-load truck appear ahead in the oncoming lane, escort's amber beacons flashing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "convoy enters and grows in the frame",
+      "camera": "forward tracking at cruising speed, steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The enormous white wind-turbine blade becomes clearly visible overhanging the centre line into the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "blade overhang revealed as an encroaching hazard",
+      "camera": "continued steady forward motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle maintains its normal cruising speed dead-centre in its lane, closing on the protruding blade without slowing or steering away. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "no deceleration despite imminent overhang hazard; blade fills more of the frame",
+      "camera": "unchanged forward tracking, no braking-induced dip; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car cruises down a sunny two-lane rural highway, fields on either side, the road stretching straight ahead. By 0:01 an escort pickup with flashing amber lights appears in the oncoming lane, an 'OVERSIZE LOAD' banner visible, followed by a large flatbed truck. At 0:02 the convoy is close enough to reveal an enormous glossy white wind-turbine blade whose tip overhangs the yellow centre line and protrudes into the ego lane. From 0:03 to 0:05 the ego vehicle continues at its steady cruising speed, centered in its lane, making no attempt to brake or move over as the blade looms dangerously near, ending with the overhang perilously close. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the ego car's engine and tires on asphalt, faint wind noise, a growing diesel rumble from the oncoming truck, and a subtle intermittent hint of the escort vehicle passing; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

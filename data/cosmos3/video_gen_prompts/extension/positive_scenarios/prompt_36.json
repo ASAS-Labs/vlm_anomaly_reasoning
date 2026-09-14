@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "An oncoming pickup truck traveling in the opposite lane, equipped with a high-mounted LED light bar across the top of its cab flashing brilliant white light",
+      "appearance_details": "Roof-mounted horizontal LED light bar emitting intense white glare, standard headlights below, dark-colored body barely discernible behind the overwhelming light output",
+      "relationship": "Oncoming traffic in the opposite lane relative to the ego vehicle; source of the glare and lens flare",
+      "location": "center to left-center of frame, approaching along the opposite lane",
+      "relative_size": "Small within frame growing to Medium within frame as it approaches",
+      "orientation": "Front-facing toward the camera, headed in the opposite direction",
+      "pose": "Vehicle upright on the road, wheels aligned within its own lane",
+      "action": "Driving toward the ego vehicle in its own lane with LED light bar flashing",
+      "state_changes": "Grows larger and brighter as it nears, glare peaks at passing point, then recedes behind the camera",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a car driving forward on a rural two-lane road, seen from its own dashboard/driver perspective",
+      "appearance_details": "Faint reflection of dashboard edge and interior at the bottom of frame, windshield framing the road ahead",
+      "relationship": "The camera-carrying vehicle; primary point of view for the scene",
+      "location": "camera position, not directly visible except dashboard hints",
+      "relative_size": "Large within frame (implied by POV)",
+      "orientation": "Facing forward down the road",
+      "pose": "Traveling straight, holding its lane",
+      "action": "Cruising at normal speed, ignoring glare, maintaining lane and speed past the truck",
+      "state_changes": "Maintains constant velocity and lane throughout; no braking or swerving",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dark two-lane rural road at night with no streetlights. The asphalt stretches ahead into blackness, marked by a faint dashed center line and edge markings. Fields, low brush, and the silhouettes of scattered trees line both sides of the road, barely visible beyond the reach of the headlights. The sky is a deep starless black. The only significant illumination comes from the ego vehicle's headlights and the oncoming truck's flashing LED light bar.",
+  "lighting": {
+    "conditions": "Near-total darkness pierced by intense artificial white light from the oncoming truck's LED light bar and the ego vehicle's headlights",
+    "direction": "Front-lit from the oncoming vehicle's light bar and the ego headlights; harsh glare originating from center-left frame",
+    "shadows": "Long, sharp shadows cast backward from roadside vegetation and road features; deep black shadows dominate the periphery",
+    "illumination_effect": "Overwhelming central glare with pronounced lens flare and light bloom washing out detail near the truck, while the surroundings remain enveloped in darkness"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam framing with the road converging toward a vanishing point; the glaring light source dominates the central and left portion of the frame",
+    "color_scheme": "High-contrast palette of deep black night, cool white and blue-white LED glare, warm amber road reflections from headlights",
+    "mood_atmosphere": "Tense, dazzling, disorienting yet steady and controlled",
+    "patterns": "Repeating dashed center-line markings; radial lens-flare streaks from the light source"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from the moving ego vehicle, steady with subtle road vibration; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road ahead through the windshield",
+    "camera_angle": "Eye-level driver POV",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and approaching truck, though partially obscured by glare",
+    "lens_focal_length": "Wide-angle dashcam lens"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving / ADAS scenario demonstrating glare-robust lane keeping past an oncoming vehicle at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises forward on the dark rural road; distant oncoming truck's LED light bar appears and begins flashing brilliant white in the opposite lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The two vehicles close rapidly; intense glare and lens flare wash across the camera as the truck nears, but the ego lane remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Ego vehicle holds its lane and cruising speed, passing the truck on its left without slowing; glare peaks then fades as the truck recedes behind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Night driving POV on unlit rural road; oncoming truck with flashing LED light bar appears in the distance in the opposite lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Truck light bar grows from a distant point to a noticeable bright source; glare begins to build.",
+      "camera": "Steady forward tracking with slight road vibration; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Vehicles close rapidly; intense white glare and lens flare bloom across the frame from center-left as the truck nears. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Glare peaks, washing out detail near the light source while ego lane stays clear.",
+      "camera": "Continues steady forward tracking, unaffected by glare; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle maintains lane and normal cruising speed, passing the truck on the left; glare recedes and the road ahead reopens into darkness. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Truck passes out of frame to the left; lens flare fades; road ahead clears.",
+      "camera": "Steady forward tracking continues without slowing; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car drives forward through pitch-black countryside, its headlights sweeping the empty two-lane road as a distant bright point appears ahead in the opposite lane. By 0:01 the point resolves into an oncoming pickup truck whose high-mounted LED light bar flashes brilliant white. From 0:02 the vehicles close quickly and intense glare with radial lens flare spills across the camera, washing out the left side of the frame, yet the ego lane remains clear. Around 0:03 the glare peaks as the truck passes on the left; the ego vehicle holds its lane and cruising speed without any braking. From 0:03 to 0:05 the truck recedes behind the camera, the flare fades, and the dark road ahead reopens as the car continues driving steadily into the night. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car engine and tires rolling over asphalt, punctuated by faint wind noise. As the oncoming truck approaches, the pitch of its engine briefly rises and Dopplers past. No music or speech; ambient rural night silence dominates between the vehicle sounds.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

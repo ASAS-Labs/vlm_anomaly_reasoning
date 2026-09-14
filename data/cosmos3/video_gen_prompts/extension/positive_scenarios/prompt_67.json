@@ -1,0 +1,155 @@
+{
+  "subjects": [
+    {
+      "description": "A real octagonal-mounted regulatory speed limit sign reading 'SPEED LIMIT 25', white rectangular metal plate with black lettering and a black border, standing on a galvanized metal post at the right edge of the road",
+      "appearance_details": "Retroreflective surface catching the ego vehicle's headlights, slight weathering and road grime at the base of the post, faint rust streak on the pole",
+      "relationship": "The authoritative, legally binding sign the ego vehicle obeys; contrasted against the fake projected sign nearby",
+      "location": "right foreground at the roadside",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the approaching camera, angled slightly toward the lane",
+      "pose": "Fixed upright on its post",
+      "action": "Standing stationary, reflecting headlight glare as the car approaches",
+      "state_changes": "Grows larger and brighter as the car nears, then slides toward the right edge and out of frame as the car passes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A projected fake speed limit image cast onto the trunk of a roadside tree, resembling a speed sign but displaying a much higher number ('65'), visibly warped and broken up by the ridged bark",
+      "appearance_details": "Bright bluish-white projected light, flickering and unstable, edges distorted and smeared over the uneven bark, no physical post or metal plate, semi-transparent glow bleeding onto surrounding leaves",
+      "relationship": "A deceptive spoof attempting to mislead the driver; deliberately contrasted with the genuine metal sign",
+      "location": "right midground, on a tree trunk just beyond the real sign",
+      "relative_size": "Small within frame",
+      "orientation": "Projected roughly toward the road but curved over the cylindrical trunk",
+      "pose": "Static projection on an organic irregular surface",
+      "action": "Flickering, shimmering, and distorting as the car passes",
+      "state_changes": "Momentarily brightens then warps and dims, clearly revealing itself as a light projection rather than a solid sign.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car seen only from the driver's first-person perspective through the windshield",
+      "appearance_details": "Faint dashboard glow at the bottom edge of frame, hood front visible in the low light, headlights illuminating the road ahead",
+      "relationship": "The point-of-view vehicle whose behavior is the focus; it obeys the real sign",
+      "location": "implied at the camera position, hood visible at bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road",
+      "pose": "Traveling forward along the right lane",
+      "action": "Driving into town, then decelerating to the posted 25 limit and continuing at the reduced speed",
+      "state_changes": "Transitions from a moderate approach speed to a clearly slower, steady town speed after passing the real sign.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane rural-to-town road at night, marked by a faded center line and a solid white shoulder line on the right. The vehicle is entering the outskirts of a small town: sparse streetlights begin to appear, low buildings and picket fences line the distance, and mature trees crowd the right shoulder. The asphalt is dark and slightly damp, scattering the headlight beams. A cool, still night atmosphere with a deep navy sky above the tree line.",
+  "lighting": {
+    "conditions": "Nighttime, low ambient light dominated by the car's headlights and occasional streetlamp pools",
+    "direction": "Front-lit from the ego vehicle's headlights; occasional overhead pools from streetlamps; a distinct localized glow from the projector hitting the tree",
+    "shadows": "Long shifting shadows cast forward from roadside posts and trees; the fake projection casts no consistent post shadow, betraying its false nature",
+    "illumination_effect": "High-contrast pools of bright light against surrounding darkness; the real sign glows with retroreflective sharpness while the projected sign shimmers with soft, unstable brightness"
+  },
+  "aesthetics": {
+    "composition": "Centered vanishing-point road composition with the real sign anchored on the right foreground and the projected fake sign staggered slightly beyond on the tree; hood edge grounds the lower frame",
+    "color_scheme": "Deep navy and black night tones, warm amber from streetlights and dashboard, cool white headlight beams, and a stark bluish-white glow on the projected sign",
+    "mood_atmosphere": "Tense, cautious, subtly uncanny; quiet nocturnal calm laced with deception",
+    "patterns": "Repeating dashed lane markings and evenly spaced roadside trees receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam-style motion following the road, decelerating in the final segment; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's eye position",
+    "camera_angle": "Eye-level first-person point of view",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead, the real speed limit sign, and the projected fake sign on the tree",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic dashcam documentary",
+  "context": "Demonstration of an adversarial roadside sign-spoofing scenario in which an autonomous or driver-assisted vehicle correctly ignores a projected fake sign and obeys the real posted limit",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the dark two-lane road, headlights revealing the approach into town; the real SPEED LIMIT 25 sign becomes visible ahead on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The car nears the real sign; just beyond it, the bright flickering projected fake sign showing a higher number appears warped across the tree trunk. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle passes both signs, audibly and visibly decelerating, and continues rolling steadily at the reduced 25 mph town speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 25",
+      "category": "scene_sign",
+      "appearance": "Black bold Highway Gothic lettering on a white retroreflective rectangular plate with a black border",
+      "spatial_temporal": "Right foreground on a metal post, visible and sharpening from 0:00 to 0:03, then passing out of frame",
+      "context": "Genuine regulatory town speed limit the ego vehicle obeys"
+    },
+    {
+      "text": "65",
+      "category": "scene_sign",
+      "appearance": "Bright bluish-white projected numerals inside a rough sign shape, distorted and smeared over tree bark, flickering",
+      "spatial_temporal": "Right midground on the tree trunk, appearing around 0:02 and shimmering through 0:04",
+      "context": "Fake projected spoof sign attempting to mislead the driver into speeding up"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle approaches the town at a moderate speed; the real SPEED LIMIT 25 sign appears ahead on the right, lit by headlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Real sign grows larger and brighter as the car nears.",
+      "camera": "Steady forward tracking motion at approach speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The fake projected higher-number sign appears flickering on the tree trunk just beyond the real sign, clearly distorted by bark. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Projected sign shimmers and warps, revealing itself as light rather than a physical plate.",
+      "camera": "Forward tracking, subtle deceleration beginning; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes both signs and clearly slows to the posted 25 mph limit, then continues rolling at the reduced steady town speed for at least two seconds. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Speed visibly decreases and stabilizes; both signs recede toward the right edge.",
+      "camera": "Forward tracking with noticeably reduced, steady speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the car driving forward along a dark two-lane road entering a small town, headlights sweeping the wet asphalt. By 0:01 the genuine white SPEED LIMIT 25 sign becomes clearly visible ahead on the right post. At 0:02 the car nears the sign and, just beyond it, a bright flickering fake speed-limit image showing '65' appears projected and distorted across the ridged trunk of a roadside tree. From 0:03 the vehicle passes both, ignoring the false projection and obeying the real posted limit, decelerating visibly. Through 0:05 the car continues rolling steadily at the reduced town speed as both signs slide off the right edge of frame. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Quiet nighttime ambience with the steady hum of tires on damp asphalt and a soft engine drone. As the car decelerates, the engine note lowers in pitch and the tire hum eases to a slower, steadier rhythm. Faint wind against the windshield and distant nocturnal town sounds; no speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

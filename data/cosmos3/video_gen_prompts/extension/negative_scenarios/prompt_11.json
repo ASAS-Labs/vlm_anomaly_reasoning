@@ -1,0 +1,135 @@
+{
+  "subjects": [
+    {
+      "description": "A bright yellow standard American school bus stopped in the oncoming lane, with its red warning lights flashing and its red stop arm fully extended on the driver's side facing traffic.",
+      "appearance_details": "Chrome bumpers, black roof rails, amber and red roof-mounted warning lights, black lettering along the side, a hinged red octagonal STOP sign arm swung out, flat front cab and large windshield.",
+      "relationship": "The primary road hazard indicating that traffic in both directions should stop; associated with the crossing child.",
+      "location": "Center to left-center of frame, in the oncoming lane",
+      "relative_size": "Large within frame",
+      "orientation": "Front three-quarter view facing toward and slightly across from the ego vehicle",
+      "pose": "Stationary vehicle, stop arm extended perpendicular to its body",
+      "action": "Stopped with red lights flashing and stop arm deployed",
+      "state_changes": "Remains stopped throughout; red lights continue flashing, stop arm stays extended.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A small child-shaped pedestrian stepping off the curb and walking across the road in front of the stopped bus toward the ego vehicle's lane.",
+      "appearance_details": "Short stature consistent with a young child, wearing a red hooded jacket, dark pants, and carrying a small backpack; brown hair.",
+      "relationship": "The vulnerable pedestrian the stopped bus is protecting; directly in the ego vehicle's path.",
+      "location": "Center of frame, moving from left curb across the road toward the right",
+      "relative_size": "Small within frame",
+      "orientation": "Body facing left-to-right across the road, roughly perpendicular to the camera",
+      "pose": "Upright, mid-stride walking, arms slightly swinging",
+      "action": "Stepping off the curb and walking across the road into the ego lane",
+      "state_changes": "Progresses from the curb into the roadway, moving closer to the center and the ego vehicle's lane as the clip advances.",
+      "clothing": "Red hooded jacket, dark trousers, sneakers, small backpack",
+      "expression": "Neutral, focused on crossing",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Light skin tone, smooth youthful complexion",
+      "facial_features": "Small rounded face, brown hair, indistinct at distance",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A quiet two-lane suburban residential road under a clear blue daytime sky. Modest single-family homes with front lawns, driveways, and mailboxes line both sides. Mature trees cast dappled, consistent shadows onto the asphalt. A painted center line divides the two lanes, curbs edge the road, and sidewalks run along both sides. Parked cars and low fences are visible in the background.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-left lit with strong overhead component",
+    "shadows": "Crisp, consistent shadows cast by trees, the bus, and the pedestrian onto the road surface",
+    "illumination_effect": "Even, high-visibility natural lighting with saturated colors and clear detail"
+  },
+  "aesthetics": {
+    "composition": "First-person driving perspective centered on the road ahead, with the stopped bus occupying the oncoming lane on the left and the crossing child near the center converging on the ego path; vanishing point down the road.",
+    "color_scheme": "Bright bus yellow and red warning accents against gray asphalt, green lawns and foliage, blue sky",
+    "mood_atmosphere": "Deceptively calm suburban scene with rising tension and danger",
+    "patterns": "Repeating lane markings, curb lines, and roadside trees and houses"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's viewpoint",
+    "camera_angle": "Eye-level ego perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the road, bus, and crossing pedestrian",
+    "lens_focal_length": "Wide-angle (approx. 24mm equivalent), typical dashcam field of view"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam footage",
+  "context": "Autonomous driving hazard scenario depicting an unsafe failure to stop for a school bus and crossing child",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "Ego vehicle drives forward along the suburban road, the stopped yellow school bus visible ahead in the oncoming lane with red lights flashing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:03",
+      "description": "The bus's stop arm is fully extended; a child-shaped figure steps off the left curb and begins walking across the road in front of the bus. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues at normal cruising speed without slowing, closing distance on the stopped bus and the crossing child moving toward the ego lane. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SCHOOL BUS",
+      "category": "vehicle_graphic",
+      "appearance": "Bold black uppercase lettering on the yellow body",
+      "spatial_temporal": "Along the side of the bus, visible throughout in left-center of frame",
+      "context": "Identifies the vehicle as a school bus"
+    },
+    {
+      "text": "STOP",
+      "category": "scene_sign",
+      "appearance": "White uppercase letters on a red octagonal sign with white border",
+      "spatial_temporal": "On the extended stop arm of the bus, visible throughout",
+      "context": "Legal signal requiring approaching traffic to stop"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle cruises forward; stopped school bus appears ahead in the oncoming lane with flashing red lights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Bus comes into clear view; distance begins to close.",
+      "camera": "Forward tracking dashcam motion at steady speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "Stop arm fully extended; child-shaped pedestrian steps off the curb and starts crossing in front of the bus. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Pedestrian enters the roadway; hazard becomes evident.",
+      "camera": "Continued forward tracking motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Ego vehicle maintains cruising speed without slowing or stopping, approaching the crossing child and stopped bus. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Gap to bus and child shrinks rapidly; no deceleration.",
+      "camera": "Steady forward tracking motion at unchanged speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows the ego car cruising down a sunny two-lane suburban road, with a yellow school bus stopped ahead in the oncoming lane, its red lights flashing. By 0:01 the bus's red stop arm is fully extended and a small child in a red jacket steps off the left curb. From 0:01 to 0:03 the child walks across the road in front of the bus, heading toward the ego vehicle's lane. From 0:03 to 0:05 the ego vehicle continues forward at its normal cruising speed without slowing or stopping, closing distance on the stopped bus and the crossing child. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady engine hum and tire noise from the moving ego vehicle, faint ambient suburban birdsong and a light breeze, and the rhythmic clicking of the bus's flashing warning lights in the background. No music or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

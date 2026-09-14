@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A knee-high miniature decorative stop sign, a red octagonal ornament with white 'STOP' lettering mounted on a thin metal stake, planted in a residential front-yard flower garden",
+      "appearance_details": "Weathered painted metal or plastic face, slightly faded red, a thin rusting stake pushed into the soil among flowers; obviously ornamental and far smaller than a real traffic sign",
+      "relationship": "The visual focal ornament that the ego vehicle deliberately ignores; sits within a garden distinct from the roadway",
+      "location": "right side of frame, mid-ground, set a few steps back from the sidewalk in a flower bed",
+      "relative_size": "Small within frame",
+      "orientation": "Face angled toward the street, partly toward the passing camera",
+      "pose": "Static upright on its stake, tilted slightly",
+      "action": "Standing motionless as the car passes",
+      "state_changes": "No significant change; only shifts across frame due to camera motion and passes out of view.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A row of suburban single-family houses with neat front lawns and flower gardens lining the right side of a residential street",
+      "appearance_details": "Pastel and neutral siding, gabled roofs, driveways, mailboxes, low hedges and blooming flower beds; sidewalk running parallel to the road",
+      "relationship": "The environment the ego vehicle drives past; hosts the ornamental stop sign",
+      "location": "right side of frame, background to mid-ground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing the street, viewed obliquely as the car passes",
+      "pose": "Static structures",
+      "action": "Sliding past the frame as the vehicle drives",
+      "state_changes": "Houses continuously scroll from front to rear of frame due to forward motion.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street on a clear sunny day. A smooth asphalt road with faint lane markings runs straight ahead, empty of traffic. On the right, a continuous row of tidy single-family houses with mowed front lawns, blooming flower gardens, driveways, and a concrete sidewalk. There is no intersection, cross street, or genuine traffic signage ahead; the road is clear and open. Utility poles, a few trees, and parked cars occasionally dot the roadside. In one of the flower gardens, set back a few steps from the sidewalk, a knee-high ornamental stop sign stands on a thin stake among the flowers.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, front-side-lit from the upper left",
+    "shadows": "Consistent, crisp shadows cast to the right and rear of objects; tree and house shadows fall onto lawns and sidewalk",
+    "illumination_effect": "Even, natural illumination with high visibility, vivid colors, and gentle warmth typical of midday"
+  },
+  "aesthetics": {
+    "composition": "Ego-perspective dashcam framing with the road receding to a vanishing point ahead-center; houses and gardens fill the right third, the ornamental sign appearing mid-right before sliding past",
+    "color_scheme": "Green lawns, warm house tones, gray asphalt, blue sky, with the small red stop-sign ornament as a color accent",
+    "mood_atmosphere": "Calm, ordinary, uneventful suburban drive",
+    "patterns": "Repeating rhythm of houses, driveways, and lawn fences along the roadside"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a moving vehicle at steady cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's forward point of view",
+    "depth_of_field": "Deep",
+    "focus": "Road ahead and the passing houses and garden, all in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous-driving / dashcam scenario demonstrating that an ornamental, non-regulatory stop sign in a private garden is correctly ignored while the vehicle continues normally",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward at steady cruising speed along the clear residential street, houses and lawns beginning to pass on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "A knee-high ornamental stop sign becomes visible in a front-yard flower garden on the right, set back from the sidewalk. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at its normal cruising speed without slowing or stopping, passing the ornamental sign and the garden, road remaining clear ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "White bold sans-serif lettering on a faded red octagon, small and slightly weathered",
+      "spatial_temporal": "Mid-right of frame within the flower garden, visible from about 0:02 until it slides out of view near 0:04",
+      "context": "A decorative garden ornament, not a real regulatory traffic sign; deliberately ignored by the vehicle"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle cruises forward along the empty residential street with houses and lawns passing on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Scenery scrolls steadily rearward; approach toward the garden with the ornament.",
+      "camera": "Forward tracking at constant speed, stable eye-level POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The miniature ornamental stop sign appears in a front-yard flower garden on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ornament enters and grows in frame; no braking behavior.",
+      "camera": "Continuous forward motion, no change in speed or angle; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the ornamental sign and garden at unchanged cruising speed, road clear ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Ornament slides off the right edge; steady forward progress maintained.",
+      "camera": "Forward tracking at constant speed, ornament exiting right of frame; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a clear, sunny residential street with a row of houses and green lawns beginning to slide past on the right as the car cruises steadily forward. By 0:02 a small knee-high ornamental stop sign comes into view within a front-yard flower garden, set back from the sidewalk and obviously far smaller than a real sign. From 0:03 to 0:05 the vehicle maintains its normal cruising speed without slowing or stopping, passing the garden and letting the ornament drift out of the right edge of frame while the empty road continues ahead under crisp midday light. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous ambient audio of a car in motion: steady tire hum on asphalt and low engine drone, with faint suburban ambience such as distant birdsong and a light breeze. No music, no speech, and no braking or stopping sounds, reflecting the uninterrupted cruise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

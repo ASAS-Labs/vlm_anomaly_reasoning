@@ -1,0 +1,165 @@
+{
+  "subjects": [
+    {
+      "description": "A red and white striped railroad crossing gate arm lowered horizontally across the ego vehicle's lane, mounted on a signal post with flashing red warning lights",
+      "appearance_details": "Alternating diagonal red and white reflective stripes on the wooden/metal boom, a round crossbuck signal head with two circular red lamps and a small hanging warning bell housing",
+      "relationship": "The primary obstacle blocking the ego vehicle's path, indicating an active railroad crossing",
+      "location": "center foreground, spanning across the lane",
+      "relative_size": "Large within frame",
+      "orientation": "perpendicular to the camera, arm extending left across the road",
+      "pose": "fully lowered horizontal position",
+      "action": "remaining lowered while warning lights flash",
+      "state_changes": "Lights continue flashing red throughout; gate stays down.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A long freight train approaching from the right along the railroad tracks that cross the road ahead",
+      "appearance_details": "Multiple boxcars and container cars in weathered browns, grays, and rust tones led by a diesel locomotive, moving steadily across the crossing",
+      "relationship": "The reason the crossing gate is active and lowered",
+      "location": "right midground crossing left to right beyond the gate",
+      "relative_size": "Medium within frame",
+      "orientation": "side profile moving from right toward center",
+      "pose": "in motion along the rails",
+      "action": "approaching and passing across the road on the tracks",
+      "state_changes": "Grows slightly larger and more central as it advances across the crossing.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from the driver's first-person perspective",
+      "appearance_details": "Dashboard edge and hood faintly visible at the bottom of the frame, windshield framing the road ahead",
+      "relationship": "The vehicle from which the scene is observed; it brakes and stops at the crossing",
+      "location": "implied camera position, first-person view",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the road",
+      "pose": "moving forward then decelerating to a full stop",
+      "action": "driving, braking, and stopping behind the gate",
+      "state_changes": "Transitions from forward motion to complete standstill.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural-to-suburban two-lane asphalt road stretching toward a railroad crossing under a flat, overcast sky. Gravel shoulders line the road, with scattered utility poles, sparse leafless trees, and low grassy embankments on either side. The railroad tracks run left to right across the road ahead, flanked by signal posts, crossbuck signs, and warning light assemblies. A freight train is visible entering the crossing from the right. The muted daylight gives everything a soft, diffused, slightly desaturated appearance.",
+  "lighting": {
+    "conditions": "Overcast daytime",
+    "direction": "Diffuse, top-down ambient light with no strong directional source",
+    "shadows": "Soft, faint shadows beneath the gate, vehicles, and posts",
+    "illumination_effect": "Even, low-contrast illumination that flattens colors and softens edges, making the flashing red crossing lights stand out vividly"
+  },
+  "aesthetics": {
+    "composition": "Centered first-person driving composition with the road leading to a vanishing point at the crossing; the lowered gate and flashing signals anchor the midground, the train crossing on the right",
+    "color_scheme": "Muted grays and desaturated greens and browns dominate, punctuated by the vivid red and white of the crossing gate and pulsing red warning lights",
+    "mood_atmosphere": "Cautious, tense anticipation, everyday realism",
+    "patterns": "Diagonal red-and-white stripes on the gate arm; repeating railroad ties and lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level, driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "The crossing gate, flashing lights, and approaching train in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving / ADAS perception scenario demonstrating recognition of an active railroad crossing and a safe complete stop",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives forward along the two-lane road, approaching the railroad crossing as the lowered gate and flashing red lights come into clearer view."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop behind the gate and remains fully stationary while the lights flash and the train crosses; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "RAILROAD CROSSING",
+      "category": "scene_sign",
+      "appearance": "White crossbuck sign with bold black lettering, weathered",
+      "spatial_temporal": "Mounted on the signal post left of the gate, visible throughout",
+      "context": "Standard railroad crossing warning signage"
+    },
+    {
+      "text": "STOP HERE ON RED",
+      "category": "scene_sign",
+      "appearance": "White rectangular sign with black text",
+      "spatial_temporal": "Roadside near the crossing, visible in the midground",
+      "context": "Instructs drivers where to stop when the signal is active"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "The ego car travels forward toward the railroad crossing under overcast light, the lowered red-and-white gate and flashing lights ahead, a freight train approaching from the right.",
+      "key_changes": "Crossing details become larger and clearer as the vehicle advances.",
+      "camera": "Forward tracking motion at moderate speed"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped behind the lowered gate and remains stationary as the freight train crosses and the red lights continue to flash. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives forward along the two-lane road, approaching the railroad crossing as the lowered gate and flashing red lights come into clearer view. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient road and tire noise fades as the vehicle decelerates. The rhythmic clang of the crossing bell and the low rumble and rhythmic clatter of the approaching freight train dominate, accompanied by the periodic hum of the flashing signal and a faint diesel drone. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

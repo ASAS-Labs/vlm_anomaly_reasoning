@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A white commercial delivery van driving a few car lengths ahead in the same lane as the ego vehicle, boxy cargo body with dual rear doors",
+      "appearance_details": "Clean white paint, standard rear number plate, no roof beacons or flashing lights, twin rear doors that carry a painted graphic of a red octagonal stop paddle mounted on an extended arm mimicking a school-bus stop sign; the paddle is flat paint, not a physical deployed arm",
+      "relationship": "The lead vehicle the ego car is following; its painted decal is the source of the ego vehicle's misinterpretation",
+      "location": "center of frame, mid-distance ahead in the ego lane",
+      "relative_size": "Medium within frame",
+      "orientation": "rear facing the camera, moving directly away then slowing",
+      "pose": "upright roadgoing stance, tracking straight along the lane",
+      "action": "driving ahead, then gradually slowing as traffic flows",
+      "state_changes": "Van maintains a slight lead, gradually closing distance as ego brakes; van itself continues rolling slowly then is left behind stationary as ego stops",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car seen from the driver's forward point of view through the windshield",
+      "appearance_details": "Dashboard edge and hood front faintly visible at the bottom of frame, windshield frame implied at edges",
+      "relationship": "The observer vehicle whose autonomous or driver behavior is being demonstrated; reacts to the painted decal on the van",
+      "location": "camera position, foreground POV",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the street, same direction as the van",
+      "pose": "traveling forward in the live lane",
+      "action": "following the van, then braking to a complete stop",
+      "state_changes": "Transitions from steady forward motion to deceleration to fully stationary and holds still",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street on a clear sunny day. Single-family homes with front lawns, driveways, mailboxes, and scattered mature trees line both sides of the road. The two-lane asphalt road has painted lane markings and a slight vanishing-point perspective ahead. Parked cars occasionally sit along the curb, and sidewalks run parallel to the road. Traffic is light with a clear stretch of empty road visible beyond the lead van.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High sun, slightly front-side lit casting light across the roadway",
+    "shadows": "Crisp, consistent shadows from trees, poles, and vehicles falling in a uniform direction across the pavement",
+    "illumination_effect": "Even, high-contrast daylight rendering colors vividly with good visibility down the street"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point-perspective composition with the road converging ahead, the white van dominating the mid-frame, and residential scenery framing both sides",
+    "color_scheme": "Neutral grays of asphalt, white van body, green lawns and trees, blue sky, with the red painted stop paddle as the key accent color",
+    "mood_atmosphere": "Calm, routine, everyday driving; subtly tense due to the unnecessary stop",
+    "patterns": "Repeating lane markings, evenly spaced trees and houses along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver POV",
+    "camera_angle": "Eye-level, driver seat height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the van ahead and the road, with distant scenery clear",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent typical of a dashcam"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary footage",
+  "context": "Autonomous driving perception edge case demonstrating a false-positive stop triggered by a painted stop-arm decal on a delivery van",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "Ego vehicle travels forward along the suburban street following the white van a few car lengths ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "Ego vehicle brakes to a complete stop in the live lane and remains fully stationary behind the van; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "vehicle_graphic",
+      "appearance": "White block capital letters on a red octagonal paddle graphic, painted flat, mimicking a school-bus stop sign on an arm",
+      "spatial_temporal": "Centered on the van's rear doors, visible throughout the clip",
+      "context": "A painted decal mimicking a deployed school-bus stop arm; it is only paint with no actual physical arm or flashing lights"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego car drives forward down the clear suburban street, steadily following the white delivery van ahead with the red painted stop paddle visible on its rear doors.",
+      "key_changes": "Steady forward motion; van maintains a consistent lead distance.",
+      "camera": "Forward tracking motion at driving speed, stable dashcam view."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop in the live lane behind the van and remains stationary for the remainder of the clip. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, ego vehicle travels forward along the suburban street following the white van a few car lengths ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sounds: steady engine hum and tire noise on asphalt during the initial roll, faint distant birdsong and light breeze, followed by the subtle sound of brakes engaging and the engine settling to idle as the car comes to a full stop. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

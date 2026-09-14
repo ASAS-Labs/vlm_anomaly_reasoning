@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A white rectangular regulatory speed limit sign mounted on a galvanized metal post at the right shoulder of the road, reading 'SPEED LIMIT 35' in black text",
+      "appearance_details": "Standard MUTCD-style vertical rectangular sign with a black border, black 'SPEED LIMIT' legend above large black numerals '35'; a short horizontal strip of dull black tape has been affixed across the middle of the digit '3', partially bridging its curves so it reads ambiguously like an '8'",
+      "relationship": "The primary object of interest that the ego vehicle approaches and passes; the tampering causes the ego vehicle to misinterpret the posted limit",
+      "location": "right shoulder, moving from center-right background toward right foreground as the vehicle approaches",
+      "relative_size": "Small within frame, growing to Medium within frame as approached",
+      "orientation": "sign face angled toward the oncoming ego vehicle, roughly facing the camera",
+      "pose": "upright, static, mounted vertically on a single post about 2 meters above ground",
+      "action": "standing at the roadside as the vehicle drives past",
+      "state_changes": "Grows larger in frame and shifts to the right edge as the vehicle approaches and passes; exits frame on the right by the end.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car, seen only implicitly through its first-person forward-facing dashboard/windshield perspective",
+      "appearance_details": "Faint suggestion of the car's hood at the bottom edge of the frame, dark dashboard reflections on the lower windshield; no visible occupants as this is an ego view",
+      "relationship": "The observer whose viewpoint the camera represents; it approaches and passes the tampered sign without slowing",
+      "location": "center, implied as the platform of the camera",
+      "relative_size": "Large within frame (as the viewing platform)",
+      "orientation": "facing forward down the road, direction of travel",
+      "pose": "traveling straight ahead at cruising speed",
+      "action": "driving forward along the two-lane rural road at a steady, unchanging speed",
+      "state_changes": "Maintains constant cruising speed throughout; no deceleration as it passes the sign.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A straight two-lane rural road stretching toward a distant horizon under a clear blue daytime sky. The asphalt is medium-gray with a faded yellow center line and white edge lines. Both sides are bordered by grassy shoulders, low scrub, occasional trees, and open fields typical of a rural landscape. The road runs perfectly straight, converging to a vanishing point ahead. Utility poles dot the roadside at intervals. There is no other traffic in either lane near the ego vehicle.",
+  "lighting": {
+    "conditions": "Bright clear daytime lighting",
+    "direction": "Sunlight from high and slightly behind-left, casting soft angled shadows",
+    "shadows": "Soft, moderately long shadows from the sign post and roadside vegetation falling toward the road; gentle, not harsh",
+    "illumination_effect": "Even, natural daylight illumination with good visibility, warm highlights on the sign face and crisp contrast on the black lettering"
+  },
+  "aesthetics": {
+    "composition": "Centered one-point perspective with the road vanishing point near center-frame; the speed limit sign positioned on the right third, drawing attention as it grows in scale on approach",
+    "color_scheme": "Dominated by gray asphalt, green roadside grass, blue sky, and the white sign with black text; muted natural rural palette",
+    "mood_atmosphere": "Calm, ordinary, deceptively routine with an undercurrent of subtle danger",
+    "patterns": "Repeating road lane markings and evenly spaced utility poles receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a moving vehicle, smooth steady dolly-in along the road; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot capturing the full road, shoulders, sky, and the approaching sign",
+    "camera_angle": "Eye-level, driver's forward viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus across the road and the speed limit sign; distant horizon slightly hazy",
+    "lens_focal_length": "Wide-angle, approximately 24-28mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary-style dashcam footage",
+  "context": "An autonomous driving perception scenario demonstrating a vehicle misreading a tampered regulatory sign",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises forward along the straight rural road; the speed limit sign appears small in the center-right distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The sign grows in the frame as the vehicle approaches; the tampered '35' with black tape across the '3' becomes legible, appearing to read like an '85'. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle maintains its full cruising speed and passes the sign on the right without slowing; the sign exits the right edge of the frame as the road continues straight ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 35",
+      "category": "scene_sign",
+      "appearance": "Black legend and numerals on a white rectangular field with a black border; standard highway gothic font; large bold '35' with a strip of black tape across the middle of the '3'",
+      "spatial_temporal": "On the right shoulder, visible from mid-video (~0:02) growing larger until passed at ~0:04",
+      "context": "A regulatory speed limit sign tampered to make the '3' resemble an '8', misleading the vehicle into perceiving a higher limit"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view of the straight rural road under clear daylight; the speed limit sign is a small distant object on the right side. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign begins small and distant, gradually enlarging as the vehicle advances.",
+      "camera": "Smooth forward tracking at constant speed, eye-level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle nears the sign; the tampered digit becomes clearly visible, reading ambiguously as a higher number. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign scales up and shifts toward the right third; tape across the '3' becomes readable.",
+      "camera": "Continued steady forward dolly, no change in speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle passes the sign at full cruising speed without slowing; the sign leaves the frame on the right and the empty straight road continues ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sign moves rapidly to the right edge and exits; road remains clear and straight ahead.",
+      "camera": "Steady forward tracking maintained throughout at unchanged speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the camera looks straight down a quiet two-lane rural road bathed in clear daylight, with a small white sign on the right in the distance. Over the next two seconds the ego vehicle cruises forward at a steady pace, the road markings streaming toward the camera and the sign gradually growing larger. By 0:02 the sign is clearly a 'SPEED LIMIT 35' regulatory sign, but a short strip of black tape across the middle of the '3' makes it look like an '8', suggesting a higher limit. From 0:03 the vehicle maintains its full cruising speed without any deceleration, passing the sign on the right, which slides toward and out of the right edge of the frame by 0:05, leaving the straight open road continuing ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous ambient road noise: steady tire hum on asphalt and a constant engine drone at cruising speed, with faint wind buffeting. No music, no speech, no braking or deceleration sounds; the consistent, unchanging engine and tire pitch reinforces that the vehicle never slows.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

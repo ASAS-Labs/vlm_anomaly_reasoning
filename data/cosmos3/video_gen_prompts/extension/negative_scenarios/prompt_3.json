@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A miniature decorative stop sign styled as a garden ornament: a small octagonal red plate with white 'STOP' lettering mounted atop a thin metal stake pushed into the soil.",
+      "appearance_details": "Weathered red paint with slight fading, glossy plastic or thin metal face, thin silver-gray stake, standing roughly knee-high (about 40 cm tall), noticeably smaller than a real traffic sign.",
+      "relationship": "The object the ego vehicle mistakenly interprets as a real traffic stop sign, prompting an unnecessary stop.",
+      "location": "right side of frame, mid-ground, set a few steps back from the sidewalk within a front-yard flower garden",
+      "relative_size": "Small within frame",
+      "orientation": "face angled toward the street, partially toward the camera",
+      "pose": "upright, planted vertically in the flower bed",
+      "action": "standing stationary as an ornament among flowers",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle itself, a modern passenger car, seen implicitly from the driver's point of view through the windshield.",
+      "appearance_details": "Interior dashboard edge and hood tip faintly visible at the bottom of the frame; clean windshield with clear visibility.",
+      "relationship": "The camera platform whose behavior drives the narrative; it reacts to the ornamental sign.",
+      "location": "center foreground (implied, ego perspective)",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the residential street",
+      "pose": "driving forward then decelerating to a full stop",
+      "action": "travels along the street, brakes, and stops beside the garden",
+      "state_changes": "Transitions from steady forward motion to deceleration to a complete stationary stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street lined on the right by single-family houses with neat green front lawns, low hedges, driveways, and flower gardens. A concrete sidewalk runs alongside the curb. Parked cars appear intermittently along the block. The asphalt road is clean, dry, and empty of traffic, with no visible intersection, cross street, or real traffic signage ahead. Trees cast dappled shade over portions of the lawns while the sky is bright and clear.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "high sun, front-side lit from upper left casting shadows toward the right",
+    "shadows": "consistent, well-defined shadows from trees, houses, and the ornamental sign falling across the lawn and street",
+    "illumination_effect": "even, natural illumination with strong contrast, crisp detail on foliage and pavement, warm neutral tones"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical forward-facing dashcam framing with the road receding to a central vanishing point, houses and lawns filling the right third, sky along the top",
+    "color_scheme": "greens of lawns, warm beige and pastel house facades, gray asphalt, blue sky, and the distinct red of the ornamental sign",
+    "mood_atmosphere": "calm, ordinary, slightly ironic suburban stillness",
+    "patterns": "repeating rhythm of houses, lawns, and sidewalk panels along the street"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "sharp across the road, houses, and the ornamental stop sign",
+    "lens_focal_length": "wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Demonstration of an autonomous or driver-assist vehicle misidentifying a decorative garden ornament as a real stop sign and braking unnecessarily",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle drives steadily forward along the clear residential street, passing houses and lawns on the right."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a full stop in the middle of the street beside the garden and remains completely stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "white block capital letters on a faded red octagonal face, small ornament scale",
+      "spatial_temporal": "right mid-ground within the flower garden, visible throughout as the vehicle approaches and stops",
+      "context": "decorative garden ornament mimicking a traffic stop sign, mistaken by the vehicle for a real sign"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Steady forward drive along the empty residential street with houses and lawns passing on the right.",
+      "key_changes": "consistent forward speed; ornamental sign becomes increasingly visible ahead on the right",
+      "camera": "smooth forward tracking motion"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle reaches a complete stop beside the garden and stays fully stationary for at least two seconds. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle drives steadily forward along the clear residential street, passing houses and lawns on the right. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient suburban daytime sound: gentle wind, distant birdsong, and faint neighborhood hum. The steady low drone of the car engine and tire noise fades as the vehicle decelerates, followed by a soft brake sound and then near-silence once fully stopped.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

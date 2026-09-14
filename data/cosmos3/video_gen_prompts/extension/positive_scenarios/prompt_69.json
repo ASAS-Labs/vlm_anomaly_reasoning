@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A set of white painted lane lines on a two-lane asphalt road, with the ego lane bounded by a solid white right edge line and a dashed/solid center line separating oncoming traffic.",
+      "appearance_details": "Weathered white thermoplastic paint markings, slightly faded in places, running straight along the road surface.",
+      "relationship": "The true lane lines that the ego vehicle follows; contrasted against the misleading stickers.",
+      "location": "center and lower frame, extending toward the vanishing point",
+      "relative_size": "Medium within frame",
+      "orientation": "receding straight away from the camera toward the horizon",
+      "pose": "",
+      "action": "remaining static as the road surface passes beneath the moving camera",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Three small white adhesive stickers placed on the pavement within the ego lane, arranged in a short diagonal line that angles toward the left, mimicking the beginning of a merge stripe.",
+      "appearance_details": "Flat, matte white square-ish stickers roughly the size of small tiles, slightly reflective under the sun, clearly distinct from the painted lane lines.",
+      "relationship": "Deceptive markings intended to mislead into a left merge, contrasting with the true straight lane lines.",
+      "location": "lower-center of frame within the ego lane, angling toward the left",
+      "relative_size": "Small within frame",
+      "orientation": "flat on the road surface, forming a diagonal toward the upper-left",
+      "pose": "",
+      "action": "passing beneath and behind the camera as the vehicle advances",
+      "state_changes": "grow larger and slide toward the bottom of the frame as the vehicle approaches and passes over them",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 3,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural-to-suburban two-lane road on a clear day. The asphalt is medium-gray with visible wear and tire tracks. Beyond the road are low grassy shoulders, scattered trees, and a flat horizon under a bright blue sky with few clouds. The oncoming lane is completely empty, and the road extends straight ahead toward a distant vanishing point.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, slightly front-right, casting consistent shadows",
+    "shadows": "short, consistent shadows from roadside objects and vehicle, cast toward the lower-left; sharp-edged in the strong sun",
+    "illumination_effect": "even, high-contrast daytime illumination with good visibility and accurate color rendition"
+  },
+  "aesthetics": {
+    "composition": "Centered ego-view perspective with the road converging to a vanishing point; lane lines lead the eye forward while the diagonal stickers create a subtle visual tension in the lower-center",
+    "color_scheme": "Gray asphalt, white lane markings and stickers, green roadside vegetation, blue sky",
+    "mood_atmosphere": "calm, routine, steady forward motion",
+    "patterns": "repeating dashed lane markings and roadside vegetation rhythm"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot mounted on the vehicle, smooth constant-speed dolly-in effect; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver/ego perspective",
+    "camera_angle": "Eye-level, dashboard-mounted",
+    "depth_of_field": "Deep",
+    "focus": "sharp across the road surface and horizon",
+    "lens_focal_length": "wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving perception test evaluating whether the vehicle correctly follows true lane lines and ignores deceptive sticker markings",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle approaches the three white stickers arranged diagonally in its lane; the true lane lines continue straight ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle passes over the stickers, maintaining its position aligned with the true straight lane lines. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues straight ahead at normal cruising speed, following the real lane lines without slowing, stopping, or drifting left. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego view driving forward on the straight two-lane road, approaching three diagonal white stickers in the ego lane that mimic a leftward merge stripe. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "stickers grow larger and closer in the lower-center of frame",
+      "camera": "smooth forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle passes directly over the stickers while staying centered between the true lane lines. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "stickers slide toward and off the bottom of the frame",
+      "camera": "continuous forward tracking, no deviation; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle continues straight ahead following the real lane lines at normal cruising speed, ignoring the deceptive markings; the oncoming lane remains empty. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "road ahead remains clear and straight; no change in speed or heading",
+      "camera": "steady forward tracking maintaining lane center; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam ego view shows a straight two-lane road under bright clear daylight, with three small white stickers arranged in a diagonal line in the ego lane angling toward the left, while the real white lane lines continue straight ahead. Over the first two seconds the vehicle advances steadily and the stickers grow larger in the lower-center of the frame. Around 0:02 to 0:03 the vehicle passes directly over the stickers, staying aligned with the true straight lane lines. From 0:03 to 0:05 the vehicle continues driving straight at its normal cruising speed, correctly following the real lane lines without slowing, stopping, or drifting left, as the empty oncoming lane and clear road stretch ahead to the horizon. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Continuous ambient road noise: steady tire hum on asphalt and a constant low engine drone consistent with cruising speed, with faint wind buffeting. No speech, no music, and no braking or turn-signal sounds, reflecting uninterrupted straight-ahead driving.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

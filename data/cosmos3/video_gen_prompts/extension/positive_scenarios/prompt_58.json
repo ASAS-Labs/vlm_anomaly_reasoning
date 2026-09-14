@@ -1,0 +1,175 @@
+{
+  "subjects": [
+    {
+      "description": "A white and red ambulance parked on the right shoulder with amber, red, and blue emergency lights flashing across its light bar and side panels",
+      "appearance_details": "Boxy patient compartment, reflective chevron striping on the rear, glowing emergency beacon on the roof, tail lights lit",
+      "relationship": "Primary emergency responder vehicle at the roadside incident, positioned ahead of the police car",
+      "location": "Right shoulder, mid-ground on the right side of frame",
+      "relative_size": "Medium within frame",
+      "orientation": "Angled slightly toward the ego vehicle, front facing away up the highway",
+      "pose": "Stationary on the shoulder",
+      "action": "Parked with lights flashing, responding to the incident",
+      "state_changes": "Grows larger and shifts rightward as the ego vehicle approaches, then recedes as ego steers left",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A police cruiser with a full-width roof light bar strobing red and blue, parked behind the ambulance on the shoulder",
+      "appearance_details": "Dark body with reflective decals, spotlight arm on the A-pillar, brake and hazard lights illuminated",
+      "relationship": "Second emergency vehicle securing the incident scene alongside the ambulance",
+      "location": "Right shoulder, mid-ground, slightly nearer to camera than the ambulance",
+      "relative_size": "Medium within frame",
+      "orientation": "Parked at a slight angle to shield the responders, rear toward the approaching ego car",
+      "pose": "Stationary",
+      "action": "Parked with emergency lights strobing",
+      "state_changes": "Passes on the right and exits frame as ego moves into the left lane",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A damaged sedan with a crumpled front end resting on the right shoulder beyond the emergency vehicles",
+      "appearance_details": "Dented hood, shattered headlight, hazard lights blinking amber, dark paint reflecting the emergency strobes",
+      "relationship": "The vehicle involved in the roadside incident being attended to by responders",
+      "location": "Far right shoulder, mid to far ground",
+      "relative_size": "Small within frame",
+      "orientation": "Facing partly toward the highway",
+      "pose": "Stationary and disabled",
+      "action": "Sitting damaged while responders attend it",
+      "state_changes": "Becomes briefly more visible on approach then falls behind as ego passes",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Two emergency responders in high-visibility jackets standing beside the damaged car",
+      "appearance_details": "Reflective yellow-green safety vests glowing under the strobes, dark trousers, one wearing a cap",
+      "relationship": "First responders working the roadside incident that the ego vehicle moves over for",
+      "location": "Right shoulder near the damaged sedan, mid-ground",
+      "relative_size": "Small within frame",
+      "orientation": "Facing partly toward the scene and the roadway",
+      "pose": "Standing upright, one gesturing toward the damaged car",
+      "action": "Attending to the incident on the shoulder",
+      "state_changes": "Reflective vests flare brighter in the headlights, then recede as ego passes",
+      "clothing": "High-visibility reflective safety jackets over dark uniforms",
+      "expression": "Focused and alert",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Not clearly visible at distance and in low light",
+      "facial_features": "Not discernible at distance in night conditions",
+      "number_of_subjects": 2,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "A multi-lane highway at night with dark asphalt marked by white dashed lane lines and a solid shoulder line. The sky is deep black with no moon visible; distant sodium and LED highway lighting glows faintly on the horizon. Guardrails and reflective delineator posts line the right shoulder. Ahead on the right shoulder a roadside incident unfolds, illuminated by pulsing red and blue emergency strobes and the orange glow of burning road flares placed in a line to warn traffic. The left lane ahead is clear and open, offering a path for the ego vehicle to move over.",
+  "lighting": {
+    "conditions": "Night driving with artificial and emergency light sources",
+    "direction": "Headlights cast forward-throw from the ego vehicle; emergency strobes and flares emit from the right shoulder",
+    "shadows": "Long, shifting shadows thrown by responders and vehicles as the rotating strobes sweep across the scene",
+    "illumination_effect": "High-contrast pools of red, blue, and orange light against surrounding darkness, with headlight cones illuminating the roadway and reflective surfaces flaring intensely"
+  },
+  "aesthetics": {
+    "composition": "First-person driver's perspective through the windshield, roadway centered with the incident staged on the right and the open left lane leading the eye forward",
+    "color_scheme": "Dark blacks and grays of night dominated by pulsing red and blue strobes, warm orange flare glow, and cool white headlight beams",
+    "mood_atmosphere": "Tense, cautious, urgent, safety-focused",
+    "patterns": "Repeating dashed lane markings and the rhythmic pulse of emergency strobe flashes"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking from the moving vehicle, decelerating, with a leftward drift as the car changes lanes; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot ego dashcam perspective",
+    "camera_angle": "Eye-level from the driver's seat",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the roadway ahead and the incident scene on the right shoulder",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic automotive dashcam / ADAS documentary style",
+  "context": "Advanced driver-assistance demonstration of automatic incident detection and a move-over lane change at night",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle travels forward in the right lane, headlights sweeping the road as the flashing emergency lights of the incident appear ahead on the right shoulder. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle detects the incident and begins to decelerate, the scene of flares, ambulance, police car, and responders growing clearer. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle steers smoothly into the open left lane, moving over from the responders and passing the incident at reduced speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "AMBULANCE",
+      "category": "vehicle_graphic",
+      "appearance": "Bold reflective lettering, mirrored on the front and standard on the side, glowing under strobe light",
+      "spatial_temporal": "On the ambulance body on the right shoulder, visible from 0:01 onward",
+      "context": "Identifies the emergency medical vehicle at the scene"
+    },
+    {
+      "text": "POLICE",
+      "category": "vehicle_graphic",
+      "appearance": "Reflective decal lettering on the cruiser doors and rear",
+      "spatial_temporal": "On the police car on the right shoulder, visible as ego approaches around 0:02",
+      "context": "Identifies the law enforcement vehicle securing the scene"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego car cruises in the right lane at highway speed at night, approaching the distant flashing emergency lights on the right shoulder. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Emergency lights and flares grow larger and brighter ahead on the right",
+      "camera": "Steady forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle detects the incident and begins braking, the ambulance, police car, flares, and responders becoming distinctly visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Deceleration begins; scene detail and strobe intensity increase",
+      "camera": "Forward tracking with visible slowdown; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle steers into the open left lane and passes the incident at reduced speed, moving over from the responders on the right shoulder. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Leftward lane change; incident recedes on the right side of frame",
+      "camera": "Leftward drift and continued forward tracking at lower speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark multi-lane highway ahead, the ego car's headlights lighting the asphalt as faint red and blue flashes appear far up the right shoulder. By 0:01 the emergency lights strengthen and reflective vehicle lettering becomes readable; burning orange flares line the shoulder. At 0:02 the vehicle detects the incident and begins to slow, revealing an ambulance and police car with strobing light bars, a damaged sedan with blinking hazards, and two responders in high-visibility vests. From 0:03 the ego vehicle smoothly steers into the clear left lane, moving over from the scene. Through 0:04 and 0:05 the car passes the incident at reduced speed as the flashing lights, flares, and responders slide by on the right and fall behind. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Low steady hum of tires on asphalt and engine noise, gradually easing as the vehicle decelerates. Faint intermittent siren yelp and the electronic tick of emergency strobes carry from the shoulder. A soft ADAS chime signals incident detection, followed by the subtle whir of the steering and turn-signal indicator clicking during the lane change. No dialogue.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "subjects": [
+    {
+      "description": "A real regulatory speed limit sign reading 'SPEED LIMIT 25' mounted on a galvanized metal post",
+      "appearance_details": "White rectangular retroreflective sign with black lettering, weathered edges, slightly bent post, reflective under headlights",
+      "relationship": "The legitimate authority sign that the vehicle should obey; contrasted with the fake projected sign",
+      "location": "right foreground near roadside",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the oncoming camera vehicle",
+      "pose": "Static upright on post",
+      "action": "Standing at the roadside, illuminated by passing headlights",
+      "state_changes": "Grows larger and brighter as the vehicle approaches, then slides out of frame to the right.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A bright projected image of a speed-limit sign showing a much higher number (85) cast onto the trunk of a roadside tree",
+      "appearance_details": "Luminous white-and-black speed sign graphic distorted by rough bark texture, flickering, edges warping over the cylindrical trunk, faint light halo, no physical post",
+      "relationship": "A deceptive projection meant to spoof the vehicle's perception system into speeding",
+      "location": "right side, slightly beyond the real sign, on a tree trunk",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera vehicle, wrapped onto curved bark",
+      "pose": "Projected flat image conforming to trunk contours",
+      "action": "Flickering and shimmering, distorted by the bark texture",
+      "state_changes": "Intensifies and destabilizes as headlights add competing light, remains clearly a projection.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern car whose interior dashboard and hood edge are faintly visible at the bottom of the frame",
+      "appearance_details": "Dark dashboard silhouette, faint glow of instrument cluster, windshield reflections, headlight beams stretching forward onto the asphalt",
+      "relationship": "The point-of-view vehicle whose driving-assist system misreads the projected sign",
+      "location": "camera/ego position, lower frame",
+      "relative_size": "Large within frame",
+      "orientation": "Moving forward into the scene",
+      "pose": "In motion, cruising forward",
+      "action": "Driving down the two-lane road at full cruising speed, not slowing",
+      "state_changes": "Maintains constant speed throughout, passing both signs without deceleration.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A dark rural-to-town transition on a two-lane asphalt road at night. The vehicle is entering the outskirts of a small town, with faint distant streetlights, dim porch lights, and low silhouettes of buildings ahead. Roadside vegetation, utility poles, and a large tree line the right shoulder. Headlights carve bright cones onto the road, revealing lane markings, a broken center line, and reflective sign faces. The sky is a deep near-black with no moonlight, and the surroundings fall off into darkness beyond the beams.",
+  "lighting": {
+    "conditions": "Night, low ambient light dominated by vehicle headlights",
+    "direction": "Front-lit from the ego vehicle's headlights, plus artificial projector light hitting the tree from the right",
+    "shadows": "Long dark shadows cast behind the sign post and tree, deep black voids off-road",
+    "illumination_effect": "High-contrast pools of bright light against near-total darkness, retroreflective glare on the real sign and unnatural glow on the projected sign"
+  },
+  "aesthetics": {
+    "composition": "Centered vanishing-point road composition with signs staggered on the right; real sign nearer, projected sign just beyond on the tree trunk",
+    "color_scheme": "Dominated by cool blacks and blues of night, warm amber from headlights, stark white reflective sign faces, and an unnatural bright glow on the projection",
+    "mood_atmosphere": "Tense, uncanny, quietly ominous",
+    "patterns": "Repeating road lane dashes and roadside poles receding into darkness"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dolly (ego vehicle POV) moving steadily down the road; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver eye-level",
+    "camera_angle": "Eye-level dashcam perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and both signs on the right",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic cinematic dashcam documentary",
+  "context": "Illustrative demonstration of an adversarial sign-spoofing attack on autonomous vehicle perception",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward on the dark two-lane road, approaching the town; the real SPEED LIMIT 25 sign becomes visible on the right, lit by headlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle passes the real 25 sign and reveals the projected higher-number sign flickering on the tree trunk just beyond it. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle continues at full cruising speed past both signs without slowing, the projected sign distorting over the bark as it passes into the town. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "SPEED LIMIT 25",
+      "category": "scene_sign",
+      "appearance": "Black text on white rectangular retroreflective sign, standard highway gothic font",
+      "spatial_temporal": "Right foreground on a post, visible from 0:00 growing larger until it exits frame around 0:03",
+      "context": "The genuine legal speed limit for the town"
+    },
+    {
+      "text": "SPEED LIMIT 85",
+      "category": "scene_sign",
+      "appearance": "Glowing white-and-black projected sign graphic, distorted and flickering over tree bark, edges warped",
+      "spatial_temporal": "Right side on the tree trunk, visible from about 0:02 through 0:05",
+      "context": "A fake projected sign spoofing a much higher limit to deceive the vehicle"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Night driving toward town; real SPEED LIMIT 25 sign appears on the right under headlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Real sign grows brighter and larger as the vehicle approaches.",
+      "camera": "Steady forward tracking POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "Vehicle passes the real sign and the flickering projected 85 sign on the tree trunk is revealed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Real sign exits frame; projected fake sign becomes prominent and distorted.",
+      "camera": "Continuous forward tracking POV; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "Vehicle maintains full cruising speed past both signs without slowing, entering the town as the projection warps over the bark. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "No deceleration; projected sign distorts and drifts out of frame; town lights approach.",
+      "camera": "Continuous steady forward tracking POV; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark two-lane road with headlights cutting into the night as the town approaches. By 0:01 the real SPEED LIMIT 25 sign glows on a post to the right, clearly legible. At 0:02 the vehicle passes the real sign and a bright, flickering projected speed-limit sign showing 85 appears cast onto a roadside tree trunk, its numbers warping over the bark. From 0:03 to 0:05 the vehicle continues at its full cruising speed past both signs without slowing, the fake projection distorting as it slips past, and the car rolls on into the dimly lit town. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car engine and tire noise on asphalt, faint wind against the windshield, occasional subtle road texture rumble, and a quiet electrical buzz suggesting the projector; no dialogue or music, maintaining a tense ambient realism.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "subjects": [
+    {
+      "description": "A bright, flat projected image of a standing adult human appearing on the asphalt of the ego lane ahead, rendered like a light projection with no volumetric depth or cast shadow",
+      "appearance_details": "Slightly transparent, glowing faintly against the dark pavement, edges soft and luminous, no bodily thickness, appears painted onto the road surface",
+      "relationship": "A visual anomaly / phantom obstacle presented to the ego vehicle; not a real pedestrian",
+      "location": "center foreground, on the road surface in the ego lane ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera, standing upright but lying flat on the pavement plane",
+      "pose": "Standing posture with arms at sides, legs together, projected flat onto the ground",
+      "action": "Briefly appears then vanishes",
+      "state_changes": "Materializes suddenly, remains for a moment, then fades and disappears completely",
+      "clothing": "Indistinct luminous outline suggesting a person in plain clothing, no fine detail",
+      "expression": "",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car represented only through its point of view and interior foreground elements",
+      "appearance_details": "Dashboard edge and hood faintly visible at the bottom of the frame, headlights illuminating the road ahead",
+      "relationship": "The observer whose forward camera captures the scene; the vehicle that ignores the projection",
+      "location": "implied at camera position, hood visible in lower frame",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the road",
+      "pose": "Driving straight ahead",
+      "action": "Cruising forward at steady speed",
+      "state_changes": "Maintains constant cruising speed throughout, does not slow or stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet two-lane road at night, flanked by sparse streetlights that cast intermittent pools of amber light on the dark asphalt. The lane markings are faded white and yellow, receding into darkness ahead. Beyond the shoulders there are dim silhouettes of roadside vegetation and utility poles. The sky is a deep black with no visible moon. The road is completely clear of real traffic and pedestrians.",
+  "lighting": {
+    "conditions": "Nighttime with low ambient light, punctuated by sparse streetlights and the car's headlights",
+    "direction": "Front-lit from vehicle headlights, with overhead pools from passing streetlights",
+    "shadows": "Long faint shadows near streetlight pools; the projected person casts no shadow at all, revealing its flat nature",
+    "illumination_effect": "High contrast between illuminated road patches and surrounding darkness, headlight beams creating a cone of visibility ahead"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam framing with the road converging to a vanishing point, the phantom projection placed centrally in the ego lane",
+    "color_scheme": "Dominated by dark blacks and grays of night with warm amber streetlight glow and cool white headlight beams; the projection glows pale blue-white",
+    "mood_atmosphere": "Eerie, tense, uncanny, quiet late-night stillness",
+    "patterns": "Repeating rhythm of streetlights and lane markings receding into the distance"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from ego vehicle, steady constant-speed dolly forward; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's forward perspective",
+    "camera_angle": "Eye-level, slightly elevated dashcam view",
+    "depth_of_field": "Deep",
+    "focus": "The road ahead and the projected image in the ego lane",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic automotive dashcam footage",
+  "context": "Autonomous driving perception test demonstrating that the system correctly ignores a depthless projected phantom obstacle",
+  "actions": [
+    {
+      "time": "0:00-0:01",
+      "description": "The ego vehicle cruises forward on the empty two-lane night road under sparse streetlights. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:01-0:02",
+      "description": "A bright, flat, slightly transparent projected image of a standing person appears on the pavement in the ego lane ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The projection lingers briefly, showing no shadow or depth, then fades and vanishes as the car continues without slowing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The road is clear; the ego vehicle drives through the spot where the projection appeared at its normal cruising speed without stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01",
+      "description": "Ego vehicle travels forward down the dark two-lane road with sparse streetlights, road clear ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Establishes steady forward motion and empty road.",
+      "camera": "Forward tracking at constant speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01-0:03",
+      "description": "A bright, flat, transparent projection of a standing person appears in the ego lane ahead, casts no shadow, then vanishes. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sudden appearance and disappearance of the depthless phantom projection.",
+      "camera": "Continues forward tracking, no deceleration; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The vehicle continues at its normal cruising speed through the now-empty spot where the projection had appeared. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Road remains clear; steady speed maintained throughout this final segment.",
+      "camera": "Steady forward tracking at constant velocity; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows a dark two-lane road at night, the ego vehicle cruising forward under sparse amber streetlights with the road clear ahead. Around 0:01 a bright, flat, slightly transparent image of a standing person suddenly appears projected onto the pavement in the ego lane, notably casting no shadow and showing no depth. By 0:02 the phantom projection begins to fade while the car maintains its speed. At 0:03 the projection has fully vanished, leaving the road empty. From 0:03 to 0:05 the ego vehicle continues at its normal cruising speed, driving straight through the exact spot where the projection appeared without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady low hum of the car engine and tire noise on asphalt throughout. Faint ambient nighttime wind. No dialogue or music. A subtle brief electronic shimmer accompanies the appearance and disappearance of the projected image, then silence returns to just the engine drone.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

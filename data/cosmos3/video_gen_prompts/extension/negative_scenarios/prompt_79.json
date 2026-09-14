@@ -1,0 +1,120 @@
+{
+  "subjects": [
+    {
+      "description": "A round landscaped planter at the center of a parking-lot roundabout, filled with clipped green shrubs and low ground-cover plants ringed by a concrete or stone curb.",
+      "appearance_details": "Dense evergreen shrubs of varied heights, some trimmed into rounded mounds, with patches of darker mulch or soil visible between plantings; a low grey curb encircles the planter.",
+      "relationship": "The central obstacle the ego vehicle continuously circles; defines the roundabout's geometry.",
+      "location": "center of frame, shifting across the view as the camera circles",
+      "relative_size": "Medium within frame",
+      "orientation": "faces all directions; viewed from its outer edge as the camera orbits",
+      "pose": "static circular planting bed",
+      "action": "remains stationary as the ego vehicle orbits it",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose hood and dashboard edge are implied but out of frame, providing the first-person driving perspective.",
+      "appearance_details": "Only the forward road view is visible; no interior elements shown, consistent with a bumper- or windshield-mounted camera.",
+      "relationship": "The moving viewpoint circling the central planter within the parking lot.",
+      "location": "camera/ego position, unseen",
+      "relative_size": "Large within frame",
+      "orientation": "faces forward along the direction of travel around the circle",
+      "pose": "in motion along a curved path",
+      "action": "circles the roundabout, passes the exit, slows to a crawl, and continues into another loop",
+      "state_changes": "Maintains steady speed, then decelerates to a crawl near the exit and keeps circling.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A small, open parking lot on a clear day, dominated by a compact landscaped roundabout with a circular shrub planter at its center. The asphalt driving surface is grey with faint tire marks and painted lane hints. A single exit lane opens to the right toward the lot's exit road, which leads out of the parking area. Empty parking bays, low curbs, sparse greenery, and distant lot boundaries frame the scene. No other vehicles or pedestrians are present.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "top-lit from a high sun, slightly angled casting side shadows",
+    "shadows": "Consistent, crisp shadows of the planter and curb cast onto the asphalt, staying stable throughout as lighting is constant.",
+    "illumination_effect": "Even, high-contrast daytime illumination with clear colors and well-defined edges on pavement and foliage."
+  },
+  "aesthetics": {
+    "composition": "Forward-facing driving view with the curving asphalt sweeping through the frame and the shrub planter dominating the mid-ground; the exit lane appears on the right side during part of the loop.",
+    "color_scheme": "Grey asphalt, green shrubbery, pale concrete curbs under a bright blue-tinged daylight sky.",
+    "mood_atmosphere": "Calm, uneventful, routine, quiet suburban parking lot",
+    "patterns": "Repeating curved lane markings and the circular arrangement of shrubs around the planter."
+  },
+  "cinematography": {
+    "camera_motion": "Continuous orbiting tracking motion following the car's curved path around the roundabout, decelerating mid-sequence; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the asphalt path and central planter ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "First-person driving footage of a car navigating a parking-lot roundabout, useful for autonomous-driving or navigation scenarios.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives steadily around the shrub planter, curving to the left with the exit lane visible on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The car passes the exit lane opening again without turning off, continuing around the circle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The vehicle slows to a crawl and keeps circling the planter, beginning another loop around the roundabout. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego car circles the roundabout at a steady speed, curving around the central shrub planter with the clear exit lane opening on the right. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Camera orbits smoothly; planter sweeps across the mid-ground; exit appears on the right.",
+      "camera": "Steady orbiting tracking motion following the curved path; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle passes the exit lane again without exiting, maintaining its loop around the planter. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Exit lane passes by on the right and recedes as the car continues circling.",
+      "camera": "Continued orbiting motion, still steady; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The car decelerates to a crawl and keeps circling the shrub planter, starting another slow loop around the roundabout. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Noticeable slowing of the orbiting motion into a crawling pace while continuing the circle.",
+      "camera": "Slowed orbiting motion, crawling speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the first-person view shows the car curving to the left around a circular shrub planter in a quiet parking-lot roundabout under bright, clear daylight, with a single exit lane opening on the right. Through 0:01 the car continues smoothly, shadows crisp and stable on the grey asphalt. By 0:02 it passes the exit lane opening again without turning off, keeping to the circular path. From 0:03 the vehicle noticeably slows to a crawl and continues circling the planter, easing into another loop that carries through to 0:05, with no other traffic present. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor parking-lot sound: the low hum of the car's engine and tires rolling over asphalt, a faint wind, and distant background quiet. No speech or music, no other traffic noise.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

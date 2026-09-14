@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A large white box truck with a boxy cargo body and a rear roll-up door, driving steadily ahead in the same lane as the ego vehicle",
+      "appearance_details": "Weathered white cargo body with faint road grime along the lower edges, rear roll-up door with horizontal corrugated slats, red taillights inset in the rear bumper, mud flaps hanging low, a large printed red circle with a white horizontal bar (a do-not-enter style graphic) centered on the roll-up door as part of the livery",
+      "relationship": "The vehicle directly ahead of the ego car that the ego vehicle is following in the same lane",
+      "location": "center of frame, mid-ground",
+      "relative_size": "Large within frame",
+      "orientation": "rear-facing toward the camera, moving away",
+      "pose": "upright and level on the road surface",
+      "action": "driving forward steadily at a constant speed",
+      "state_changes": "Continues moving steadily ahead; gradually appears larger as the ego vehicle initially closes distance, then holds distance as the ego vehicle brakes.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior dashboard edge and hood are subtly visible at the bottom of the frame",
+      "appearance_details": "Dark dashboard cowl and a sliver of the hood visible at the lower edge of the frame, windshield frame slightly present at frame borders",
+      "relationship": "The point-of-view vehicle from which the entire scene is filmed, following the box truck",
+      "location": "implied at camera position, lower foreground",
+      "relative_size": "Small within frame",
+      "orientation": "forward-facing, aligned with the direction of travel",
+      "pose": "level on the roadway within the lane",
+      "action": "following the box truck, then decelerating to a complete stop",
+      "state_changes": "Transitions from steady forward motion to braking and finally a full stationary state held for the last segment.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane urban city street bathed in clear daytime sunlight. The asphalt is dry and slightly worn with painted lane markings dividing the two lanes. Parked cars line the curb, and low-rise commercial and residential buildings flank both sides of the road, with storefronts, utility poles, street trees, and traffic signals in the distance. The street ahead is clear of obstructions beyond the box truck, and consistent hard shadows fall across the pavement from the buildings and trees.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun, front-side lit casting shadows toward the camera and to one side",
+    "shadows": "Crisp, consistent hard shadows from buildings, trees, and vehicles stretching across the asphalt in a uniform direction",
+    "illumination_effect": "Even, high-contrast natural illumination that renders colors vividly and keeps the whole street clearly visible"
+  },
+  "aesthetics": {
+    "composition": "Centered forward-facing dashcam framing with the box truck occupying the middle of the lane ahead, roadway leading lines converging toward the horizon, parked cars and buildings framing the sides",
+    "color_scheme": "Neutral grays of asphalt, white truck body, punchy red-and-white livery circle, blue sky, and scattered muted earth tones of buildings and vehicles",
+    "mood_atmosphere": "Ordinary, calm urban commute; understated tension from the unnecessary braking",
+    "patterns": "Repeating lane markings, corrugated slats of the roll-up door, and rows of parked cars along the curb"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver perspective",
+    "camera_angle": "Eye-level dashcam view",
+    "depth_of_field": "Deep",
+    "focus": "The box truck's rear door and the road ahead in sharp focus",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving perception edge case demonstrating misclassification of a vehicle livery graphic as a live do-not-enter road sign",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle follows the box truck steadily a few car lengths behind as the truck moves forward on the clear city street."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop and remains fully stationary in the center of the lane as the truck drives farther ahead; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "",
+      "category": "vehicle_graphic",
+      "appearance": "Large printed red circle with a white horizontal bar across its center, glossy livery print",
+      "spatial_temporal": "Centered on the truck's rear roll-up door, visible throughout the entire clip",
+      "context": "A do-not-enter style graphic that is part of the truck's decorative livery, not an actual road sign, which the ego vehicle erroneously treats as a live traffic sign"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Steady following of the box truck along a clear two-lane city street in bright daylight.",
+      "key_changes": "Slight closing of distance to the truck as the ego vehicle maintains speed.",
+      "camera": "Smooth forward tracking with the moving ego vehicle"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle is fully stopped and remains stationary in the center of the lane while the truck continues driving away. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle follows the box truck steadily a few car lengths behind as the truck moves forward on the clear city street. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Ambient city street sounds with the low hum of the ego vehicle's engine and tires on asphalt, distant traffic and occasional passing vehicles. As braking occurs around 0:02, a subtle rise in braking noise and a slight tire scrub is audible, followed by the quieting idle of the stationary vehicle in the final seconds. No speech or music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

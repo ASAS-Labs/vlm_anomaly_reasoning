@@ -1,0 +1,108 @@
+{
+  "subjects": [
+    {
+      "description": "A person seated in a low-slung electric mobility scooter, positioned close to the ground with a compact profile far lower than a standing pedestrian",
+      "appearance_details": "The scooter is a small four-wheeled electric mobility device in dark blue with a low seat, small handlebar tiller, and a woven basket at the front; the rider wears a light jacket and a cap",
+      "relationship": "The pedestrian-equivalent road user crossing in front of the ego vehicle at the marked crossing",
+      "location": "Enters from right side, moves toward center foreground across the crossing",
+      "relative_size": "Medium within frame",
+      "orientation": "Left-facing profile as it crosses from right to left",
+      "pose": "Seated upright, hands on the tiller controls, leaning slightly forward",
+      "action": "Rolling quickly off the curb and across the pedestrian crossing",
+      "state_changes": "Accelerates off the curb and traverses the crossing rapidly, its low fast profile advancing across the ego vehicle's path",
+      "clothing": "Light windbreaker jacket, dark trousers, flat cap",
+      "expression": "Focused, looking ahead across the road",
+      "gender": "Unknown",
+      "age": "Elderly",
+      "skin_tone_and_texture": "Medium tone, weathered skin with age lines",
+      "facial_features": "Partially obscured by cap; grey hair visible at temples, glasses, thin lips set in concentration",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    }
+  ],
+  "background_setting": "An urban street scene viewed from inside a car. Two-lane asphalt road with a clearly marked white zebra pedestrian crossing ahead. Curbside sidewalks flank both sides with low storefronts, street signs, and a few parked cars in the distance. The sky is clear blue with bright daytime light. No other moving traffic is present near the crossing.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper left, front-side lit",
+    "shadows": "Sharp, consistent shadows cast to the right of objects, including the scooter and street furniture",
+    "illumination_effect": "High visibility with crisp contrast, natural saturated daytime colors and clear road surface detail"
+  },
+  "aesthetics": {
+    "composition": "Ego-centric dashcam framing centered on the road ahead, crossing occupying the mid-foreground, scooter entering from the right third",
+    "color_scheme": "Grey asphalt, white crossing stripes, blue sky, muted building tones, dark blue scooter accent",
+    "mood_atmosphere": "Ordinary urban commute, quiet, latent tension",
+    "patterns": "Repeating white parallel stripes of the zebra crossing"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking from moving vehicle at cruising speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level from driver's viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp on the road ahead and the pedestrian crossing",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous driving perception scenario depicting a vehicle failing to yield to a low-profile fast mobility scooter at a crossing",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle drives forward along the urban street at cruising speed, approaching the marked pedestrian crossing with no traffic nearby. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "A person on a low electric mobility scooter rolls quickly off the right curb and begins crossing in front of the ego vehicle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The scooter moves rapidly across the crossing while the ego vehicle continues at its normal cruising speed without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "PED XING",
+      "category": "scene_sign",
+      "appearance": "Yellow diamond road sign with black lettering, medium size",
+      "spatial_temporal": "Right roadside before the crossing, visible throughout",
+      "context": "Warns of the pedestrian crossing ahead"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The ego vehicle cruises forward toward the marked pedestrian crossing under bright clear daylight with no other traffic present. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Crossing grows larger in frame as the vehicle approaches at steady speed",
+      "camera": "Forward tracking at constant cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "A person on a low electric mobility scooter rolls quickly off the right curb and enters the crossing in front of the ego vehicle. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Low fast scooter profile appears from the right and advances into the vehicle path",
+      "camera": "Forward tracking continues without deceleration; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The scooter traverses the crossing rapidly while the ego vehicle continues at its normal speed, misjudging the low fast profile and neither slowing nor stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Scooter crosses the vehicle path; ego speed remains unchanged, closing distance to the crossing",
+      "camera": "Forward tracking at unchanged cruising speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam view shows an urban street in bright clear daylight, the car cruising steadily toward a marked zebra crossing with sharp shadows and no nearby traffic. By 0:02 the crossing fills the mid-foreground as the vehicle maintains its speed. At 0:02-0:03 an elderly person on a low dark-blue electric mobility scooter rolls quickly off the right curb, their compact profile far lower and faster than a walking pedestrian. From 0:03 to 0:05 the scooter moves rapidly across the crossing directly in the vehicle's path, yet the ego vehicle continues at its normal cruising speed without slowing or stopping, closing the gap to the crossing. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient urban road noise with steady tire hum and constant engine sound reflecting unchanged speed; a faint electric whir from the mobility scooter as it crosses; distant city background sounds. No braking sounds or speech.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

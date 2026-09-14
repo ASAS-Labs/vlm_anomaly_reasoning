@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A white box truck with a tall rectangular cargo body and a rear roll-up door, driving steadily a few car lengths ahead in the same lane",
+      "appearance_details": "Corrugated aluminum roll-up rear door, mud flaps behind rear wheels, red brake lights inactive, a large printed decal on the rear door depicting a red circle with a horizontal white bar (a do-not-enter styled livery graphic)",
+      "relationship": "The vehicle directly ahead of the ego car in the same travel lane",
+      "location": "Center of frame, slightly upper-center, on the road ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Rear of truck faces the camera, moving away from the ego vehicle",
+      "pose": "Upright, level on the road surface, tracking straight down the lane",
+      "action": "Driving steadily forward at cruising speed",
+      "state_changes": "Maintains consistent distance ahead; no braking or turning throughout.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior dashboard edge is faintly visible at the bottom of the frame from the driver's forward view",
+      "appearance_details": "Dark dashboard lower rim, faint reflection on windshield, hood front edge visible at very bottom",
+      "relationship": "The observing vehicle from which the point-of-view is captured, following the box truck",
+      "location": "Foreground, bottom edge of frame (implied camera position)",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the street",
+      "pose": "Level, driving straight in lane",
+      "action": "Cruising forward at normal speed behind the truck",
+      "state_changes": "Maintains steady cruising speed; does not slow or stop.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A two-lane city street under clear daytime skies. Rows of mid-rise commercial buildings, storefronts, and parked cars line both sides of the road. Traffic signals, streetlights, and utility poles punctuate the sidewalks. The asphalt is dry with painted lane markings dividing the two lanes. Trees and pedestrians appear intermittently on the sidewalks. The road ahead is clear of other obstructions apart from the box truck being followed.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "High sun, slightly front-side lit from the upper right",
+    "shadows": "Consistent, crisp shadows cast by the truck, poles, and buildings onto the road surface",
+    "illumination_effect": "Even, high-contrast daylight that renders colors vividly and keeps the scene fully legible"
+  },
+  "aesthetics": {
+    "composition": "Centered forward driving perspective with the box truck framed in the middle of the lane, road markings converging toward the vanishing point, buildings flanking both sides",
+    "color_scheme": "Neutral asphalt grays, white truck body, blue sky, with the red-and-white do-not-enter decal providing a vivid accent",
+    "mood_atmosphere": "Calm, routine, uneventful urban commute",
+    "patterns": "Repeating lane markings, sidewalk pavers, and evenly spaced streetlights and building windows"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot moving with the ego vehicle at steady speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot of the road ahead from a driver's forward perspective",
+    "camera_angle": "Eye-level, dashboard height",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the box truck and the road ahead",
+    "lens_focal_length": "Standard wide field of view (~28mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Autonomous driving perception scenario demonstrating correct recognition of a livery graphic that mimics a road sign, distinguishing it from an actual traffic control device",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego car follows the box truck at a steady distance; the do-not-enter decal on the rear door is clearly visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The system recognizes the red circle with white bar as a printed decal rather than a real road sign; the ego car maintains speed. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego car continues at normal cruising speed behind the truck without slowing or stopping; the street ahead remains clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "",
+      "category": "vehicle_graphic",
+      "appearance": "Large printed red circle with a horizontal white bar centered on it, glossy decal finish on the roll-up door",
+      "spatial_temporal": "Center of frame on the truck's rear door, visible throughout the entire clip",
+      "context": "Part of the truck's livery, a do-not-enter styled graphic that is not an actual road sign"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle cruises behind the box truck, keeping a few car lengths of distance; the do-not-enter livery decal is prominent on the rear door. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Truck and ego maintain steady relative positions; decal recognized as non-sign graphic.",
+      "camera": "Forward tracking, steady, eye-level; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego car continues driving at normal cruising speed behind the truck without slowing or stopping, with the clear street ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "No braking or stopping; consistent speed and distance maintained.",
+      "camera": "Forward tracking, steady, eye-level; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego car is cruising down a clear two-lane city street in bright daylight, a few car lengths behind a white box truck whose rear roll-up door displays a large red circle with a white horizontal bar. By 0:02 the graphic is clearly framed in the center of the view, and the driving system interprets it as a printed livery decal rather than an actual do-not-enter road sign. From 0:03 through 0:05 the ego vehicle continues at its normal cruising speed, maintaining the same following distance behind the steadily moving truck, neither slowing nor stopping as the road ahead stays clear. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient road noise with the low hum of the ego car's engine and tire-on-asphalt rolling sound. Faint distant city traffic and occasional muffled background sounds. No speech, no music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

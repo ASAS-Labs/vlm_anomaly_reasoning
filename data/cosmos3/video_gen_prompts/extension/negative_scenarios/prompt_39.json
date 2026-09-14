@@ -1,0 +1,133 @@
+{
+  "subjects": [
+    {
+      "description": "A rectangular patch of freshly poured wet grey concrete filling the ego lane ahead, its surface smooth and glistening with reflective moisture under the daylight",
+      "appearance_details": "Bordered by low wooden forms along its edges, with a slightly darker, uniformly troweled sheen and faint reflections of the sky and surrounding structures on its wet surface",
+      "relationship": "The primary hazard the ego vehicle is approaching and drives onto; occupies the ego lane",
+      "location": "center foreground extending into mid-ground of the ego lane",
+      "relative_size": "Large within frame",
+      "orientation": "flat on the roadway, facing upward toward the sky and camera",
+      "pose": "static horizontal slab set into the lane",
+      "action": "lying wet and undisturbed until the ego vehicle drives onto it",
+      "state_changes": "Surface begins to show tire disturbance and displaced wet concrete as the vehicle rolls onto it in the final segment.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "A road construction worker standing at the edge of the wet concrete holding a trowel",
+      "appearance_details": "Wears a high-visibility orange safety vest, hard hat, work gloves, and sturdy boots; crouched slightly over the concrete edge",
+      "relationship": "Working on the freshly poured concrete the ego vehicle is approaching; positioned at the border of the hazard",
+      "location": "right mid-ground at the edge of the concrete patch",
+      "relative_size": "Small within frame",
+      "orientation": "turned three-quarters toward the concrete, side profile to the camera",
+      "pose": "bent forward at the waist, one hand extending a trowel toward the wet surface",
+      "action": "smoothing the wet concrete with a trowel",
+      "state_changes": "Looks up sharply and reacts with alarm as the vehicle approaches in the final segment.",
+      "clothing": "High-visibility orange vest over grey work shirt, dark work trousers, hard hat, gloves, boots",
+      "expression": "Focused, then alarmed",
+      "gender": "Male",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium tan, weathered from outdoor work",
+      "facial_features": "Short dark hair beneath hard hat, stubble, focused eyes",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A row of bright orange traffic cones lining the boundary of the construction zone",
+      "appearance_details": "Standard reflective orange cones with white reflective bands, some slightly weathered, spaced along the wooden forms",
+      "relationship": "Marks the construction zone perimeter around the wet concrete; warning markers the ego vehicle ignores",
+      "location": "spanning left to right across the mid-ground at the concrete's near edge",
+      "relative_size": "Medium within frame",
+      "orientation": "upright, facing all directions",
+      "pose": "standing upright in a line",
+      "action": "standing as static warning markers",
+      "state_changes": "No significant change.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "An urban city street on a clear, sunny day. Multi-story buildings with storefronts and windows line both sides of the road. The ego vehicle travels in the right lane which is undergoing reconstruction, with a freshly poured rectangular concrete slab occupying the lane ahead, framed by low wooden forms and orange cones. The adjacent left lane remains open and clear for traffic. Painted lane markings, curbs, sidewalks, parked vehicles, and street signage are visible. The road surface leading up to the concrete is dry asphalt, contrasting with the wet grey slab.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper right, casting consistent directional shadows",
+    "shadows": "Sharp, consistent shadows cast to the left of vehicles, cones, and the worker; the wet concrete reflects bright sky highlights",
+    "illumination_effect": "High contrast, crisp daylight illumination that emphasizes the glossy wet sheen of the concrete against the matte dry asphalt"
+  },
+  "aesthetics": {
+    "composition": "Central one-point perspective down the road with the ego lane leading directly into the wet concrete patch; the open adjacent lane on the left, construction elements clustered center-right",
+    "color_scheme": "Dominant greys of concrete and asphalt, punctuated by high-visibility orange cones and vest, muted urban building tones, blue sky",
+    "mood_atmosphere": "Tense, foreboding, everyday-turned-hazardous",
+    "patterns": "Repeating row of orange cones and rhythmic lane markings"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking dashcam motion following the vehicle's path; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot ego perspective from behind the windshield",
+    "camera_angle": "Eye-level driver viewpoint",
+    "depth_of_field": "Deep",
+    "focus": "Sharp focus on the road ahead and the wet concrete patch",
+    "lens_focal_length": "Wide-angle, approx 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic dashcam documentary",
+  "context": "Autonomous vehicle perception failure demonstration where the ego vehicle fails to recognize a wet concrete road hazard",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "Ego vehicle cruises down the city street at normal speed, the wet concrete patch and construction zone coming into view ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "Vehicle approaches the concrete edge without slowing; cones and worker become clearly visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "Vehicle drives straight onto the wet concrete at cruising speed, disturbing the surface, as the worker reacts with alarm. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle travels down the city street under clear daylight, approaching the section of lane under reconstruction. The rectangular wet concrete slab, wooden forms, orange cones, and worker with trowel come into full view ahead. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The construction zone grows larger in frame as the vehicle closes the distance without any speed change.",
+      "camera": "Steady forward tracking dashcam motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "Failing to recognize the wet surface, the ego vehicle continues at cruising speed and drives directly onto the glistening wet concrete, disturbing its smooth surface as the worker looks up in alarm. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle transitions from dry asphalt onto wet concrete; concrete surface disturbed; worker reacts.",
+      "camera": "Continued steady forward tracking as the view moves onto the wet slab; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam shows the ego vehicle cruising down a sunny city street, buildings lining both sides and a clear open lane to the left. By 0:01 a rectangular patch of glistening wet grey concrete appears ahead in the ego lane, bordered by low wooden forms and a row of bright orange cones. At 0:02 a worker in an orange vest and hard hat is visible at the concrete's edge, bent over with a trowel smoothing the surface, while the vehicle maintains its cruising speed. By 0:03 the vehicle reaches the concrete edge without slowing. From 0:03 to 0:05 the vehicle drives straight onto the wet slab at normal speed, disturbing the smooth glistening surface as the worker looks up in alarm, the tires rolling into the fresh concrete. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Steady ambient engine hum and tire noise on asphalt, faint city traffic and distant construction sounds. As the vehicle reaches the concrete, a subtle change in tire sound occurs along with a faint shout of alarm from the worker. No music or narration.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

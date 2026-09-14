@@ -1,0 +1,121 @@
+{
+  "subjects": [
+    {
+      "description": "A white commercial delivery van driving ahead of the ego vehicle, boxy cargo body with dual rear doors and a slightly weathered white finish.",
+      "appearance_details": "Rear doors carry a painted graphic of a red octagonal stop paddle mounted on an arm, mimicking a school-bus stop sign; the paddle is flat paint with no lights, reflectors, or physical hardware. Standard red brake and tail lamps, mud-flecked lower panels, and a rear license plate.",
+      "relationship": "The lead vehicle that the ego car is following a few car lengths behind.",
+      "location": "center of frame, mid-distance ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "rear facing the camera, traveling in the same direction as the ego vehicle",
+      "pose": "upright cargo van traveling forward in the lane",
+      "action": "driving steadily down the suburban street at cruising speed",
+      "state_changes": "Remains at a consistent distance ahead; no braking, no stopping, gradually holds a steady gap as both vehicles cruise.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose forward-facing dashcam perspective frames the scene.",
+      "appearance_details": "Interior elements not visible; only the road ahead and hood edge implied. Clean windshield view with no obstructions.",
+      "relationship": "The observer vehicle following the delivery van.",
+      "location": "camera position, first-person point of view",
+      "relative_size": "Large within frame",
+      "orientation": "facing forward down the street",
+      "pose": "traveling straight in the lane",
+      "action": "cruising at normal speed behind the van without slowing or stopping",
+      "state_changes": "Maintains steady speed throughout; ignores the painted decal and continues driving.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet suburban residential street under clear daytime skies. Modest single-family homes with driveways, trimmed lawns, and mature trees line both sides of the road. Utility poles and overhead wires run along the shoulder, and parked cars sit intermittently at the curb. The two-lane asphalt road has faded lane markings and gentle undulations. Traffic is light, and the roadway ahead beyond the van is clear with no pedestrians or cross traffic.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "high sun from the upper left, front-side lighting the scene",
+    "shadows": "Consistent, crisp shadows cast diagonally from trees, poles, and vehicles onto the pavement, all pointing the same direction.",
+    "illumination_effect": "Even, high-contrast natural illumination that renders colors vividly and keeps the road surface and van clearly readable."
+  },
+  "aesthetics": {
+    "composition": "Centered first-person driving composition with the white van framed slightly right of center in the lane ahead, road converging toward a vanishing point, houses and trees flanking the frame.",
+    "color_scheme": "Bright whites of the van and sky, warm greens of foliage and lawns, grey asphalt, with the saturated red of the painted stop paddle drawing the eye.",
+    "mood_atmosphere": "Calm, ordinary, uneventful commute",
+    "patterns": "Repeating utility poles, curbside parked cars, and rhythmic tree spacing along the street."
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking shot from a fixed dashcam as the ego vehicle drives; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level",
+    "depth_of_field": "Deep",
+    "focus": "The delivery van and the road ahead in sharp focus",
+    "lens_focal_length": "Wide-angle (approximately 24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic documentary dashcam footage",
+  "context": "Autonomous driving / ADAS scenario testing correct handling of a misleading painted stop-arm decal that is not a real regulated signal.",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle cruises behind the white delivery van; the painted red stop paddle on the rear doors becomes clearly visible. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The ego vehicle maintains a steady following distance, showing no braking response to the painted decal. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The ego vehicle continues driving at normal cruising speed behind the van, correctly ignoring the fake stop-arm graphic. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "vehicle_graphic",
+      "appearance": "White block letters centered on a red octagon painted onto the van's rear doors, mimicking a school-bus stop-arm paddle, flat matte paint with no illumination.",
+      "spatial_temporal": "Center of the van's rear doors, visible throughout the entire clip as the ego vehicle follows.",
+      "context": "A misleading painted decal imitating a regulated school-bus stop signal; it carries no legal authority since there are no flashing lights and it is only paint."
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:03",
+      "description": "The ego vehicle follows the white delivery van down the clear suburban street; the painted red stop paddle on the rear doors is clearly visible under bright daylight. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "The decal comes into clear view; the ego vehicle shows no reaction and holds speed.",
+      "camera": "Forward tracking dashcam view, steady, following the van at a constant gap; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:03-0:05",
+      "description": "The ego vehicle continues driving at its normal cruising speed behind the van without slowing or stopping, correctly disregarding the painted decal. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Sustained cruising speed maintained; no braking; the following gap remains stable.",
+      "camera": "Continuous forward tracking dashcam view, no change in speed or heading; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam looks forward down a sunlit suburban street with a white delivery van a few car lengths ahead. By 0:01 the van's rear doors reveal a painted red octagonal stop paddle imitating a school-bus stop arm, though no lights flash and it is clearly just paint on a delivery van. Through 0:02 the ego vehicle maintains a steady following distance with no braking. From 0:03 onward the ego vehicle continues cruising at its normal speed behind the van, correctly ignoring the fake decal, holding a stable gap on the clear road until 0:05. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient road noise dominates: the steady hum of tires on asphalt and the muffled drone of the engine at cruising speed. Faint wind against the vehicle and occasional distant suburban ambience such as birdsong. No speech, no music, and no braking or warning sounds.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

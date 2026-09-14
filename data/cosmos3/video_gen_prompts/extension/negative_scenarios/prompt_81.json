@@ -1,0 +1,138 @@
+{
+  "subjects": [
+    {
+      "description": "A cluster of identical white passenger vehicles, clean modern compact sedans with smooth painted bodywork, arranged and slowly repositioning among the marked parking bays of a depot",
+      "appearance_details": "Glossy white paint reflecting faint overhead lights, dark tinted windows, chrome-trimmed grilles, illuminated red tail lights and white headlights, uniform fleet appearance suggesting an autonomous or rental fleet",
+      "relationship": "Fleet vehicles sharing the depot with the ego car; one of them directly confronts the ego vehicle by pulling out of its bay",
+      "location": "Center and mid background, spread across the marked bays ahead",
+      "relative_size": "Medium within frame",
+      "orientation": "Various; the primary vehicle faces the camera nose to nose, others angled within their bays",
+      "pose": "Vehicles at rest and in slow rolling motion within and out of bays",
+      "action": "Slowly repositioning among bays, one pulling forward directly ahead of the ego vehicle",
+      "state_changes": "The lead white vehicle rolls out of its bay toward the ego car, then halts nose to nose as both come to a stop",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 5,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, an unseen car from which the first-person driving perspective is captured, its front hood faintly visible at the bottom edge of frame",
+      "appearance_details": "Dark dashboard reflections in the lower frame, headlight beams projecting forward onto the depot floor and the white vehicle ahead",
+      "relationship": "The observer's vehicle that brakes, stops, and flashes headlights at the white vehicle blocking its path",
+      "location": "Foreground, camera-mounted viewpoint",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward into the depot, toward the white vehicles",
+      "pose": "Moving slowly forward then stationary",
+      "action": "Rolling forward, braking, stopping fully, and flashing its headlights repeatedly",
+      "state_changes": "Transitions from slow motion to a complete stop; its headlight beams pulse on and off as it flashes",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A large indoor vehicle depot at night, dimly lit by scattered overhead fluorescent and sodium fixtures. The concrete floor is painted with white and yellow parking bay lines, some faded and scuffed. Rows of identical white vehicles occupy the marked bays, receding into the shadowy depth of the facility. Structural steel columns and low ceiling ductwork are barely visible in the darkness, and the far end of the depot fades into near-total blackness.",
+  "lighting": {
+    "conditions": "Dim artificial night lighting, low ambient illumination with pooled light beneath fixtures",
+    "direction": "Top-down overhead lighting supplemented by the ego vehicle's forward-facing headlights",
+    "shadows": "Long, soft shadows cast by vehicles across the painted floor; deep shadow pockets between bays",
+    "illumination_effect": "Moody, low-contrast wash punctuated by bright headlight pools and reflective glints off white paint and chrome"
+  },
+  "aesthetics": {
+    "composition": "Central one-point perspective down the depot lanes, ego hood anchoring the lower frame, lead white vehicle centered ahead, other vehicles flanking in the mid ground",
+    "color_scheme": "Muted cool palette of grays and blues with warm amber highlights, dominated by white vehicle bodies and glowing red tail lights and white headlights",
+    "mood_atmosphere": "Tense, eerie, uncanny standoff, quiet nighttime unease",
+    "patterns": "Repeating rows of identical white vehicles and rhythmic parking bay lines"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:02, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot from driver's first-person viewpoint",
+    "camera_angle": "Eye-level, driver seat height",
+    "depth_of_field": "Deep",
+    "focus": "The lead white vehicle pulling out directly ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "cinematic realistic, atmospheric night driving",
+  "context": "Autonomous or fleet vehicle depot navigation scenario, first-person driving footage depicting a near-miss standoff",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02."
+    },
+    {
+      "time": "0:02-0:03.5",
+      "description": "One white vehicle pulls out of its bay directly into the ego vehicle's path; the ego vehicle brakes; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The ego vehicle comes to a complete stop nose to nose with the pulling-out vehicle and flashes its headlights repeatedly while remaining fully stationary; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "BAY 7",
+      "category": "scene_sign",
+      "appearance": "Stenciled white block letters on the concrete floor, worn and partly faded",
+      "spatial_temporal": "On the floor within the marked bay ahead, visible throughout",
+      "context": "Identifies the numbered parking bay from which the white vehicle emerges"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:02",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:02"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03.5",
+      "description": "A white vehicle pulls out of Bay 7 directly ahead; the ego vehicle brakes as the gap closes. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The ego vehicle is fully stopped nose to nose with the white vehicle, headlights flashing repeatedly, remaining completely stationary for at least two seconds. The camera does not translate at all: the framing is identical from 0:02 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:02. From 0:00 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:02 the vehicle has reached a complete standstill. From 0:02 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Low ambient hum of a large indoor facility, faint electrical buzz of overhead lights, the soft whir and tire scuff of slow-moving vehicles, a subtle brake squeal as the ego car stops, and the faint mechanical click of headlights flashing on and off. No speech or music, tense quiet atmosphere.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:02",
+      "0:02-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}

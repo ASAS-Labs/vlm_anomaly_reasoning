@@ -1,0 +1,144 @@
+{
+  "subjects": [
+    {
+      "description": "An adult school crossing guard wearing a high-visibility bright yellow safety vest over dark clothing, standing in the road holding up a red octagonal handheld STOP paddle",
+      "appearance_details": "Reflective silver striping across the yellow vest, a white cap, and a lanyard whistle around the neck; the STOP paddle is mounted on a short pole",
+      "relationship": "Authority figure protecting the waiting children; directly opposes the ego vehicle's path",
+      "location": "center-right of frame, standing in the roadway near the crosswalk",
+      "relative_size": "Medium within frame",
+      "orientation": "Facing the camera/ego vehicle directly",
+      "pose": "Standing upright, one arm raised holding the STOP paddle toward the oncoming vehicle, feet planted",
+      "action": "Holding up the STOP paddle to halt traffic",
+      "state_changes": "Remains firmly in position as the vehicle approaches and passes; posture stiffens slightly in alarm as the car does not stop",
+      "clothing": "Bright yellow high-visibility vest with reflective strips, dark trousers, white cap, sturdy shoes",
+      "expression": "Alert and increasingly alarmed as the vehicle fails to slow",
+      "gender": "Unknown",
+      "age": "Adult",
+      "skin_tone_and_texture": "Medium skin tone, weathered adult complexion",
+      "facial_features": "Focused eyes, neutral-to-tense mouth partially shadowed by cap brim",
+      "number_of_subjects": 1,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "A small group of school children waiting at the curb to cross the street",
+      "appearance_details": "Backpacks in various colors, casual school clothes, some holding straps of their bags",
+      "relationship": "Pedestrians the crossing guard is protecting; waiting for a safe crossing",
+      "location": "right side of frame, standing on the sidewalk near the crosswalk",
+      "relative_size": "Small within frame",
+      "orientation": "Facing toward the road, some looking at the guard",
+      "pose": "Standing at the curb edge, clustered together",
+      "action": "Waiting to cross the street",
+      "state_changes": "Remain at the curb, some flinch or step back as the car passes",
+      "clothing": "Colorful casual clothing, backpacks, sneakers",
+      "expression": "Anticipant, some startled",
+      "gender": "Unknown",
+      "age": "Child",
+      "skin_tone_and_texture": "Varied skin tones, youthful smooth complexions",
+      "facial_features": "Young faces, varied hair colors and styles",
+      "number_of_subjects": 4,
+      "number_of_arms": 2,
+      "number_of_legs": 2
+    },
+    {
+      "description": "The ego vehicle, a passenger car whose interior dashboard edge is faintly visible at the bottom of the frame",
+      "appearance_details": "Windshield-framed first-person driving perspective, hood edge visible at lower frame",
+      "relationship": "The point-of-view vehicle that ignores the crossing guard and drives through",
+      "location": "implied camera position, hood visible at bottom foreground",
+      "relative_size": "Large within frame",
+      "orientation": "Facing forward down the residential street",
+      "pose": "N/A",
+      "action": "Driving forward at cruising speed through the crosswalk",
+      "state_changes": "Maintains constant speed without slowing or stopping",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A quiet residential street running alongside a school during clear daytime. Single-story homes with front lawns and low fences line the left side, while a school building with a fenced yard sits to the right. A painted crosswalk crosses the road ahead near a school-zone sign. Parked cars, trees casting consistent shadows, and utility poles complete the suburban scene under a bright blue sky.",
+  "lighting": {
+    "conditions": "Bright clear daylight",
+    "direction": "Sunlight from upper front-left, high in the sky",
+    "shadows": "Consistent, sharp-edged shadows cast by trees, poles, and figures onto the pavement",
+    "illumination_effect": "Even, high-contrast illumination that makes the yellow vest and red paddle pop against the neutral street"
+  },
+  "aesthetics": {
+    "composition": "First-person driving POV centered on the road ahead, crosswalk and crossing guard framed slightly right of center, children clustered on the right curb, receding street lines drawing the eye forward",
+    "color_scheme": "Neutral grays of asphalt, green lawns and trees, blue sky, with the bright yellow vest and vivid red STOP paddle as focal accents",
+    "mood_atmosphere": "Tense, alarming, sense of danger and rule violation",
+    "patterns": "Repeating crosswalk stripes and rhythmic fence posts and utility poles"
+  },
+  "cinematography": {
+    "camera_motion": "Forward tracking / dolly-in from the moving ego vehicle at constant speed; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from driver's perspective",
+    "camera_angle": "Eye-level, driver seat height",
+    "depth_of_field": "Deep",
+    "focus": "The crossing guard, STOP paddle, and crosswalk ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "Driving safety / traffic violation illustration showing a vehicle failing to yield at a school crossing",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle travels down the residential street toward the school crosswalk; the crossing guard steps into the road and raises the red STOP paddle while children wait at the curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:05",
+      "description": "The ego vehicle ignores the raised paddle and continues at its normal cruising speed, driving straight through the crosswalk past the alarmed guard and waiting children without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "STOP",
+      "category": "physical_in_scene",
+      "appearance": "Bold white uppercase letters on a red octagonal handheld paddle",
+      "spatial_temporal": "Held up center-right of frame by the crossing guard throughout the clip",
+      "context": "Signals the vehicle to halt for the crossing"
+    },
+    {
+      "text": "SCHOOL ZONE",
+      "category": "scene_sign",
+      "appearance": "Black text on a yellow-green pentagonal road sign",
+      "spatial_temporal": "Mounted on a pole at the right side of the road, visible in early frames",
+      "context": "Warns drivers they are entering a school zone"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Approach segment: the car drives along the residential street toward the crosswalk as the crossing guard steps out and raises the STOP paddle, children waiting at the curb. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Guard steps into road and raises paddle; crosswalk grows larger in frame",
+      "camera": "Forward tracking at steady cruising speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:05",
+      "description": "Violation segment: the ego vehicle continues at unchanged speed, ignoring the paddle, and passes through the crosswalk beside the alarmed guard and startled children. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Vehicle fails to slow; guard and children react; crosswalk passes beneath the vehicle",
+      "camera": "Continuous forward tracking through the crosswalk at constant speed; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the ego vehicle rolls down a sunlit residential street beside a school, the painted crosswalk ahead. By 0:01 an adult crossing guard in a bright yellow vest steps into the road and raises a red STOP paddle while a group of children waits at the right curb. From 0:02 onward the vehicle does not slow at all, maintaining its cruising speed. Through 0:03 and 0:04 it drives straight toward and past the guard, who tenses in alarm, and by 0:05 the car has passed through the crosswalk beside the startled children without ever stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient suburban daytime sounds: steady engine hum and tire noise from the moving car, distant birdsong, faint children's chatter from the curb, and the sharp blast of the crossing guard's whistle as the vehicle fails to stop. No music.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

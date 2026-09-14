@@ -1,0 +1,128 @@
+{
+  "subjects": [
+    {
+      "description": "A thin metal chain strung horizontally across the full width of a narrow lane at bumper height, suspended between two short cylindrical posts",
+      "appearance_details": "Galvanized steel links with a slightly rusted, dull grey finish; a small rectangular sign hangs from the center of the chain",
+      "relationship": "Serves as a barrier blocking the ego vehicle's path; the primary hazard in the scene",
+      "location": "center middle-ground, spanning left to right across the lane",
+      "relative_size": "Small within frame",
+      "orientation": "Perpendicular to the camera's direction of travel, facing the approaching vehicle",
+      "pose": "Taut and horizontal, sagging very slightly in the middle under the weight of the hanging sign",
+      "action": "Remaining static, strung across the lane",
+      "state_changes": "Grows progressively larger in frame as the vehicle approaches; no movement of the chain itself.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "Two short metal posts anchoring the chain, one on each side of the lane",
+      "appearance_details": "Painted dark metal bollards roughly knee-to-waist height, weathered with chipped paint and dust",
+      "relationship": "Support structures holding the chain barrier across the lane",
+      "location": "left and right edges of the lane in the middle-ground",
+      "relative_size": "Small within frame",
+      "orientation": "Upright, facing camera",
+      "pose": "Vertical and stationary, flanking the lane",
+      "action": "Standing fixed at the roadside",
+      "state_changes": "Grow slightly larger as the vehicle nears; otherwise static.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 2,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A narrow paved service lane running between rows of low, single-story buildings with plain rendered walls, roller shutters and small windows. The asphalt is grey and slightly weathered with faded lane markings and scattered dust. Beyond the chain barrier the lane continues toward more low structures. It is a clear, bright day with a pale blue sky visible above the rooftops, and the environment feels quiet and utilitarian, like a warehouse district or industrial estate.",
+  "lighting": {
+    "conditions": "Bright clear daytime sunlight",
+    "direction": "High and slightly from the front-left, casting consistent directional shadows",
+    "shadows": "Crisp, hard-edged shadows cast by posts, buildings and the chain onto the pavement, all consistent in direction",
+    "illumination_effect": "Even, high-contrast daylight that renders the scene clearly but makes the thin chain blend against the sunlit grey pavement, easy to miss"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical one-point-perspective framing with the lane receding to a central vanishing point, low buildings framing both sides, and the chain barrier crossing the middle of the frame",
+    "color_scheme": "Muted greys of asphalt and buildings, dull metallic tones of the chain, pale blue sky, warm sunlit highlights",
+    "mood_atmosphere": "Quiet, mundane, subtly tense; impending unnoticed hazard",
+    "patterns": "Repeating rooflines and wall segments of the low buildings along both sides of the lane"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-tracking ego motion at slow, steady speed toward the chain; the vehicle never brakes or slows, holding a constant speed through the final frame",
+    "framing": "Wide shot from the driver's perspective",
+    "camera_angle": "Eye-level, dashboard-mounted ego view",
+    "depth_of_field": "Deep",
+    "focus": "Sharp across the lane, buildings and the chain barrier ahead",
+    "lens_focal_length": "Wide-angle, approximately 24mm equivalent"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "Realistic documentary dashcam footage",
+  "context": "Autonomous driving perception edge case demonstrating failure to detect a thin low-height chain barrier",
+  "actions": [
+    {
+      "time": "0:00-0:02",
+      "description": "The ego vehicle moves slowly forward along the lane between low buildings, with the thin chain barrier and its hanging sign visible ahead in the middle distance. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:02-0:03",
+      "description": "The vehicle continues at its normal speed, closing the distance to the chain without any deceleration. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    },
+    {
+      "time": "0:03-0:05",
+      "description": "The chain and posts loom larger, filling more of the frame as the vehicle keeps driving directly toward the barrier without slowing or stopping. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip."
+    }
+  ],
+  "text_and_signage_elements": [
+    {
+      "text": "NO ENTRY",
+      "category": "scene_sign",
+      "appearance": "Small rectangular metal sign with white background and bold red lettering, weathered and slightly faded",
+      "spatial_temporal": "Hanging from the center of the chain in the middle-ground, visible throughout and growing larger as the vehicle approaches",
+      "context": "Warns that the lane is closed off by the chain barrier"
+    }
+  ],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:02",
+      "description": "Ego vehicle travels slowly down the lane between low buildings under clear daylight, the thin chain barrier faintly visible ahead against the pavement. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Chain and posts become slightly more distinguishable as distance closes",
+      "camera": "Steady forward ego motion at slow speed; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:02-0:03",
+      "description": "The vehicle maintains its normal speed and continues toward the chain with no perceptible braking. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Barrier grows noticeably larger; no deceleration",
+      "camera": "Continued steady forward ego motion; forward motion continues at constant speed with no deceleration"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03-0:05",
+      "description": "The chain, posts and hanging sign fill more of the frame as the vehicle drives directly at the barrier without slowing or stopping, ending just short of contact. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+      "key_changes": "Barrier dominates the lower-central frame; vehicle fails to react",
+      "camera": "Persistent forward ego motion right up to the barrier; forward motion continues at constant speed with no deceleration"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00 the dashcam ego view shows a quiet paved lane between rows of low buildings under bright, clear daylight, with a thin metal chain strung across the lane at bumper height barely visible against the grey pavement and a small sign hanging in its middle. From 0:00 to 0:02 the vehicle glides slowly forward, the chain and its two supporting posts becoming slightly clearer ahead. Between 0:02 and 0:03 the vehicle holds its normal speed and continues straight toward the barrier without any braking. From 0:03 to 0:05 the chain, posts and the 'NO ENTRY' sign loom larger and fill more of the frame as the vehicle keeps driving directly at the barrier, showing no sign of slowing or stopping right up to the final moment. The vehicle never brakes or slows at any point: its speed is constant from the first frame to the last and it keeps moving steadily through the end of the clip.",
+  "audio_description": "Ambient outdoor daytime sound: the low steady hum of the car's engine and tyres rolling over asphalt, faint wind, and distant industrial background noise. No speech or music, and notably no braking or warning sounds, underscoring the vehicle's failure to react.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "maintain_reinforce": true,
+    "ts": "2026-09-13T20:09:28"
+  }
+}

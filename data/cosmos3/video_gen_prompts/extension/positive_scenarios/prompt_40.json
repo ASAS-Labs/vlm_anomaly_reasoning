@@ -1,0 +1,130 @@
+{
+  "subjects": [
+    {
+      "description": "A wide expanse of deep, fast-moving brown floodwater covering the entire two-lane road surface from edge to edge",
+      "appearance_details": "Turbulent, silt-laden muddy water with visible ripples, swirls, and small standing waves; debris and foam streaks drifting across the surface; rain dimpling the water constantly",
+      "relationship": "The primary obstacle blocking the ego vehicle's path; occupies the road ahead in the low dip",
+      "location": "center to far mid-ground, spanning the full width of the frame",
+      "relative_size": "Large within frame",
+      "orientation": "facing camera, flowing laterally across the road from left to right",
+      "pose": "flat but agitated water surface filling the dip",
+      "action": "flowing rapidly across the roadway, rising slightly at the edges",
+      "state_changes": "As the vehicle approaches, the water fills more of the frame; near the end it dominates the foreground as the car stops at its edge.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    },
+    {
+      "description": "The ego vehicle, a modern passenger car seen from the driver's first-person perspective through a rain-streaked windshield",
+      "appearance_details": "Dashboard edge and hood barely visible at the bottom of frame; wipers sweeping across the glass; headlights casting beams into the rain; interior faintly reflected on the glass",
+      "relationship": "The camera-bearing vehicle experiencing and reacting to the flooded road",
+      "location": "implied at camera position, hood visible in lower foreground",
+      "relative_size": "Medium within frame",
+      "orientation": "facing forward down the road toward the floodwater",
+      "pose": "traveling forward then decelerating to a full stop",
+      "action": "driving, braking, and coming to a complete halt at the water's edge",
+      "state_changes": "Transitions from steady forward motion to deceleration and then a fully stationary state for the final segment.",
+      "clothing": "",
+      "expression": "",
+      "gender": "",
+      "age": "",
+      "skin_tone_and_texture": "",
+      "facial_features": "",
+      "number_of_subjects": 1,
+      "number_of_arms": 0,
+      "number_of_legs": 0
+    }
+  ],
+  "background_setting": "A rural two-lane asphalt road at dusk during a heavy rainstorm. The road descends gently into a low dip where floodwater has pooled and now surges across the entire carriageway. Beyond the water, the far side of the road and grassy shoulders are barely discernible through the gloom and rain haze. Faint silhouettes of roadside trees, utility poles, and dark fields line both sides. The overcast sky is a deep bruised blue-grey with the last faint glow of daylight fading on the horizon. Puddles and sheeting water cover the approach lanes, reflecting the dim ambient light and the car's own headlights.",
+  "lighting": {
+    "conditions": "Dim, overcast dusk lighting combined with heavy rain and the ego vehicle's headlights",
+    "direction": "Diffuse ambient light from the fading sky above; front-lit foreground from the car's own headlights",
+    "shadows": "Soft, indistinct shadows; low contrast due to overcast conditions and rain diffusion",
+    "illumination_effect": "A murky, low-visibility scene with glistening wet surfaces, headlight beams scattering in rain, and reflections shimmering on the floodwater"
+  },
+  "aesthetics": {
+    "composition": "Symmetrical first-person road-ahead framing with the vanishing road centered, floodwater filling the mid to lower frame, and rain-streaked windshield bordering the view",
+    "color_scheme": "Muted, desaturated palette of muddy browns, deep blue-greys, and dim charcoal, with faint warm amber from headlights and taillight reflections",
+    "mood_atmosphere": "Tense, ominous, isolating, hazardous",
+    "patterns": "Repeating rain streaks on the windshield and rhythmic ripple textures across the floodwater"
+  },
+  "cinematography": {
+    "camera_motion": "Forward-moving dashcam perspective at a moderate speed that brakes smoothly and continuously over two full seconds to a complete stop at 0:03.5, then holds completely static and locked off with no movement of any kind",
+    "framing": "Wide shot",
+    "camera_angle": "Eye-level driver's perspective",
+    "depth_of_field": "Deep",
+    "focus": "The flooded road ahead and the water's edge",
+    "lens_focal_length": "Wide-angle (approximately 24mm equivalent)"
+  },
+  "style_medium": "Live-action video",
+  "artistic_style": "realistic dashcam documentary",
+  "context": "A driving hazard scenario depicting a vehicle safely stopping before impassable floodwater",
+  "actions": [
+    {
+      "time": "0:00-0:01.5",
+      "description": "The ego vehicle travels forward along the wet two-lane road in heavy rain, approaching the low dip; the flooded road becomes visible ahead."
+    },
+    {
+      "time": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5."
+    },
+    {
+      "time": "0:03.5-0:05",
+      "description": "The vehicle comes to a complete stop at the edge of the water and remains fully stationary as rain continues to fall and the floodwater surges across the road; the vehicle is parked and perfectly stationary and the camera does not move at all."
+    }
+  ],
+  "text_and_signage_elements": [],
+  "segments": [
+    {
+      "segment_index": 0,
+      "time_range": "0:00-0:01.5",
+      "description": "Ego vehicle drives forward down the sloping road in heavy rain, wipers sweeping, revealing the flooded dip ahead through the rain haze.",
+      "key_changes": "Floodwater grows larger in the frame as the car approaches; visibility remains poor.",
+      "camera": "Forward tracking motion at steady speed, slight bounce from road surface."
+    },
+    {
+      "segment_index": 1,
+      "time_range": "0:01.5-0:03.5",
+      "description": "The vehicle applies smooth, firm, continuous braking. Its speed decreases steadily through the entire two seconds and it reaches a complete standstill by 0:03.5.",
+      "key_changes": "Speed falls steadily from moderate to exactly zero across two full seconds; the forward motion of the scene slows visibly frame by frame until it ceases entirely at 0:03.5",
+      "camera": "Forward dashcam motion decelerating smoothly and continuously, coming to a complete rest at 0:03.5"
+    },
+    {
+      "segment_index": 2,
+      "time_range": "0:03.5-0:05",
+      "description": "The vehicle is fully stopped at the very edge of the deep, fast-moving brown floodwater and remains completely stationary while rain falls and water flows across the road. The camera does not translate at all: the framing is identical from 0:03.5 to 0:05, like a photograph; nothing in the scene moves.",
+      "key_changes": "Zero motion of any kind; the frame is static and locked off; everything holds exactly the same position in frame",
+      "camera": "Locked-off stationary camera, zero translation, zero vibration, as if mounted on a tripod in a parked car"
+    }
+  ],
+  "transitions": [],
+  "temporal_caption": "At 0:00, the ego vehicle travels forward along the wet two-lane road in heavy rain, approaching the low dip; the flooded road becomes visible ahead. From 0:01.5 the vehicle brakes smoothly and continuously, its speed falling steadily. By 0:03.5 the vehicle has reached a complete standstill. From 0:03.5 to 0:05 the vehicle is parked and perfectly motionless: the camera does not translate at all and the framing is identical, like a still photograph.",
+  "audio_description": "Continuous heavy rain drumming on the roof and windshield, the rhythmic squeak and swish of windshield wipers, the low hum of the engine, and the escalating hiss of tires on wet asphalt that fades as the car brakes to a stop. A faint braking sound and settling of the vehicle precede the final quiet where only rain, wipers, and the rush of moving floodwater remain.",
+  "resolution": {
+    "H": 720,
+    "W": 1280
+  },
+  "aspect_ratio": "16,9",
+  "duration": "5s",
+  "fps": 24,
+  "_regen_fix": {
+    "feasible_timing": true,
+    "ts": "2026-09-13T20:09:28",
+    "old_times": [
+      "0:00-0:02",
+      "0:02-0:03",
+      "0:03-0:05"
+    ],
+    "new_times": [
+      "0:00-0:01.5",
+      "0:01.5-0:03.5",
+      "0:03.5-0:05"
+    ]
+  }
+}
