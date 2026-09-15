@@ -80,6 +80,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -208,6 +236,34 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -378,6 +434,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -546,6 +630,34 @@
      "flow_ok": false,
      "id_ok": true,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -884,6 +996,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1012,6 +1152,34 @@
      "flow_ok": false,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1098,6 +1266,13 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1119,21 +1294,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "ambiguous",
-    "head_flow": 0.683,
-    "tail_flow": 0.271,
-    "peak_flow": 0.856,
-    "prompt_video": null
+    "end_state": "stopped",
+    "head_flow": 0.268,
+    "tail_flow": 0.015,
+    "peak_flow": 0.53,
+    "prompt_video": true
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=2.2 final=3.5 mph"
-    ],
-    "start_v": 14.08,
-    "end_v": 2.21,
-    "v_final": 3.53,
-    "max_abs_heading": 4.18
+    "agree": true,
+    "reasons": [],
+    "start_v": 12.6,
+    "end_v": 0.09,
+    "v_final": 0.21,
+    "max_abs_heading": 5.68
    },
    "attempts": [
     {
@@ -1142,10 +1315,24 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 9012,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -1228,6 +1415,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1356,6 +1571,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1442,6 +1685,27 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1464,20 +1728,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.038,
-    "tail_flow": 0.074,
-    "peak_flow": 0.098,
+    "head_flow": 0.098,
+    "tail_flow": 0.089,
+    "peak_flow": 0.177,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected ~constant speed, end/start velocity=3.28"
-    ],
-    "start_v": 2.77,
-    "end_v": 9.08,
-    "v_final": 7.94,
-    "max_abs_heading": 3.29
+    "agree": true,
+    "reasons": [],
+    "start_v": 13.0,
+    "end_v": 18.79,
+    "v_final": 13.56,
+    "max_abs_heading": 8.98
    },
    "attempts": [
     {
@@ -1486,10 +1748,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 9012,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -1530,6 +1820,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1784,6 +2102,34 @@
      "flow_ok": false,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -1847,19 +2193,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "stopped",
-    "head_flow": 0.082,
-    "tail_flow": 0.071,
-    "peak_flow": 2.301,
-    "prompt_video": false
+    "end_state": "unmeasurable",
+    "head_flow": 0.127,
+    "tail_flow": 0.126,
+    "peak_flow": 0.315,
+    "prompt_video": null
    },
    "id": {
     "agree": true,
     "reasons": [],
-    "start_v": 33.41,
-    "end_v": 31.41,
-    "v_final": 22.14,
-    "max_abs_heading": 22.63
+    "start_v": 40.7,
+    "end_v": 37.77,
+    "v_final": 26.36,
+    "max_abs_heading": 12.61
    },
    "attempts": [
     {
@@ -1868,10 +2214,38 @@
      "flow_ok": false,
      "id_ok": true,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 7890,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -2080,6 +2454,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2124,6 +2526,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2168,6 +2598,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2296,6 +2733,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2341,6 +2806,34 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2512,6 +3005,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2576,20 +3097,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.078,
-    "tail_flow": 0.185,
-    "peak_flow": 0.21,
+    "head_flow": 0.09,
+    "tail_flow": 0.017,
+    "peak_flow": 0.119,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=3.3 final=3.5 mph"
-    ],
-    "start_v": 0.12,
-    "end_v": 3.31,
-    "v_final": 3.48,
-    "max_abs_heading": 7.98
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.37,
+    "end_v": 0.22,
+    "v_final": 0.34,
+    "max_abs_heading": 7.62
    },
    "attempts": [
     {
@@ -2598,10 +3117,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 9012,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -2662,20 +3209,18 @@
    },
    "flow": {
     "end_state": "moving",
-    "head_flow": 0.025,
-    "tail_flow": 0.607,
-    "peak_flow": 0.699,
+    "head_flow": 0.356,
+    "tail_flow": 0.49,
+    "peak_flow": 0.624,
     "prompt_video": true
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected deceleration, end/start velocity=105.48"
-    ],
-    "start_v": 0.07,
-    "end_v": 7.68,
-    "v_final": 6.92,
-    "max_abs_heading": 14.59
+    "agree": true,
+    "reasons": [],
+    "start_v": 6.85,
+    "end_v": 2.47,
+    "v_final": 3.75,
+    "max_abs_heading": 8.03
    },
    "attempts": [
     {
@@ -2684,10 +3229,24 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 9012,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -2728,6 +3287,13 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2898,6 +3464,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -2982,6 +3576,34 @@
      "flow_ok": false,
      "id_ok": true,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -3320,6 +3942,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -3468,20 +4097,18 @@
    },
    "flow": {
     "end_state": "moving",
-    "head_flow": 0.168,
-    "tail_flow": 0.473,
-    "peak_flow": 0.628,
+    "head_flow": 0.169,
+    "tail_flow": 0.707,
+    "peak_flow": 0.931,
     "prompt_video": true
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected deceleration, end/start velocity=2.02"
-    ],
-    "start_v": 2.95,
-    "end_v": 5.96,
-    "v_final": 5.34,
-    "max_abs_heading": 49.18
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.15,
+    "end_v": 1.83,
+    "v_final": 1.74,
+    "max_abs_heading": 44.07
    },
    "attempts": [
     {
@@ -3490,10 +4117,17 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 5678,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -3534,6 +4168,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -3662,6 +4303,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -3832,6 +4480,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -3938,20 +4614,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.164,
-    "tail_flow": 0.247,
-    "peak_flow": 0.286,
+    "head_flow": 0.137,
+    "tail_flow": 0.078,
+    "peak_flow": 0.18,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected deceleration, end/start velocity=0.93"
-    ],
-    "start_v": 57.41,
-    "end_v": 53.18,
-    "v_final": 38.53,
-    "max_abs_heading": 4.95
+    "agree": true,
+    "reasons": [],
+    "start_v": 9.11,
+    "end_v": 5.43,
+    "v_final": 4.94,
+    "max_abs_heading": 3.68
    },
    "attempts": [
     {
@@ -3960,10 +4634,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 5678,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -4046,6 +4748,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -4067,21 +4797,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "stopped",
-    "head_flow": 0.157,
-    "tail_flow": 0.057,
-    "peak_flow": 0.688,
-    "prompt_video": true
+    "end_state": "unmeasurable",
+    "head_flow": 0.305,
+    "tail_flow": 0.043,
+    "peak_flow": 0.39,
+    "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=16.8 final=14.2 mph"
-    ],
-    "start_v": 18.07,
-    "end_v": 16.76,
-    "v_final": 14.24,
-    "max_abs_heading": 15.6
+    "agree": true,
+    "reasons": [],
+    "start_v": 5.03,
+    "end_v": 2.02,
+    "v_final": 1.44,
+    "max_abs_heading": 5.65
    },
    "attempts": [
     {
@@ -4090,10 +4818,38 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 7890,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -4176,6 +4932,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -4388,6 +5172,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -4662,20 +5474,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.116,
-    "tail_flow": 0.139,
-    "peak_flow": 0.328,
+    "head_flow": 0.126,
+    "tail_flow": 0.202,
+    "peak_flow": 0.36,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected ~constant speed, end/start velocity=0.44"
-    ],
-    "start_v": 15.63,
-    "end_v": 6.81,
-    "v_final": 5.66,
-    "max_abs_heading": 11.31
+    "agree": true,
+    "reasons": [],
+    "start_v": 13.99,
+    "end_v": 8.53,
+    "v_final": 7.37,
+    "max_abs_heading": 4.2
    },
    "attempts": [
     {
@@ -4684,10 +5494,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 5678,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -4728,6 +5566,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -4834,20 +5679,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.123,
-    "tail_flow": 0.076,
-    "peak_flow": 0.241,
+    "head_flow": 0.187,
+    "tail_flow": 0.033,
+    "peak_flow": 0.384,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=9.3 final=5.9 mph"
-    ],
-    "start_v": 29.21,
-    "end_v": 9.29,
-    "v_final": 5.86,
-    "max_abs_heading": 4.34
+    "agree": true,
+    "reasons": [],
+    "start_v": 27.96,
+    "end_v": 1.12,
+    "v_final": 0.79,
+    "max_abs_heading": 3.04
    },
    "attempts": [
     {
@@ -4856,10 +5699,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 5678,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -4984,6 +5855,20 @@
      "flow_ok": false,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5028,6 +5913,34 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5049,19 +5962,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "stopped",
-    "head_flow": 0.403,
-    "tail_flow": 0.017,
-    "peak_flow": 1.571,
-    "prompt_video": false
+    "end_state": "unmeasurable",
+    "head_flow": 0.325,
+    "tail_flow": 0.006,
+    "peak_flow": 0.43,
+    "prompt_video": null
    },
    "id": {
     "agree": true,
     "reasons": [],
-    "start_v": 69.96,
-    "end_v": 47.0,
-    "v_final": 30.99,
-    "max_abs_heading": 5.72
+    "start_v": 60.74,
+    "end_v": 45.65,
+    "v_final": 33.75,
+    "max_abs_heading": 6.79
    },
    "attempts": [
     {
@@ -5070,10 +5983,38 @@
      "flow_ok": false,
      "id_ok": true,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 7890,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -5114,6 +6055,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5135,21 +6104,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "ambiguous",
-    "head_flow": 0.757,
-    "tail_flow": 0.234,
-    "peak_flow": 1.263,
-    "prompt_video": null
+    "end_state": "stopped",
+    "head_flow": 0.347,
+    "tail_flow": 0.062,
+    "peak_flow": 0.63,
+    "prompt_video": true
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=5.8 final=4.3 mph"
-    ],
-    "start_v": 17.68,
-    "end_v": 5.75,
-    "v_final": 4.33,
-    "max_abs_heading": 10.24
+    "agree": true,
+    "reasons": [],
+    "start_v": 8.98,
+    "end_v": 1.91,
+    "v_final": 1.53,
+    "max_abs_heading": 5.75
    },
    "attempts": [
     {
@@ -5158,10 +6125,24 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 9012,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -5202,6 +6183,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5246,6 +6234,20 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5374,6 +6376,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5460,6 +6490,34 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5504,6 +6562,20 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5548,6 +6620,27 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5570,20 +6663,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.064,
-    "tail_flow": 0.053,
-    "peak_flow": 0.116,
+    "head_flow": 0.045,
+    "tail_flow": 0.037,
+    "peak_flow": 0.083,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected ~constant speed, end/start velocity=0.24"
-    ],
-    "start_v": 7.45,
-    "end_v": 1.77,
-    "v_final": 1.22,
-    "max_abs_heading": 1.62
+    "agree": true,
+    "reasons": [],
+    "start_v": 1.0,
+    "end_v": 0.6,
+    "v_final": 0.71,
+    "max_abs_heading": 2.9
    },
    "attempts": [
     {
@@ -5592,10 +6683,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 7890,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -5804,6 +6923,13 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -5868,20 +6994,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.091,
-    "tail_flow": 0.049,
-    "peak_flow": 0.177,
+    "head_flow": 0.022,
+    "tail_flow": 0.016,
+    "peak_flow": 0.042,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=2.3 final=2.0 mph"
-    ],
-    "start_v": 6.35,
-    "end_v": 2.27,
-    "v_final": 2.05,
-    "max_abs_heading": 6.22
+    "agree": true,
+    "reasons": [],
+    "start_v": 0.32,
+    "end_v": 0.17,
+    "v_final": 0.34,
+    "max_abs_heading": 2.66
    },
    "attempts": [
     {
@@ -5890,10 +7014,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 5678,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -6037,19 +7189,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "stopped",
-    "head_flow": 0.056,
-    "tail_flow": 0.061,
-    "peak_flow": 0.551,
-    "prompt_video": false
+    "end_state": "ambiguous",
+    "head_flow": 0.088,
+    "tail_flow": 0.159,
+    "peak_flow": 0.662,
+    "prompt_video": null
    },
    "id": {
     "agree": true,
     "reasons": [],
-    "start_v": 46.04,
-    "end_v": 43.5,
-    "v_final": 33.78,
-    "max_abs_heading": 7.7
+    "start_v": 45.55,
+    "end_v": 40.46,
+    "v_final": 28.75,
+    "max_abs_heading": 1.88
    },
    "attempts": [
     {
@@ -6058,10 +7210,38 @@
      "flow_ok": false,
      "id_ok": true,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 3456,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -6144,6 +7324,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -6398,6 +7585,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -6420,20 +7635,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.026,
-    "tail_flow": 0.061,
-    "peak_flow": 0.133,
+    "head_flow": 0.06,
+    "tail_flow": 0.053,
+    "peak_flow": 0.187,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected ~constant speed, end/start velocity=4.39"
-    ],
-    "start_v": 5.02,
-    "end_v": 22.02,
-    "v_final": 18.32,
-    "max_abs_heading": 3.49
+    "agree": true,
+    "reasons": [],
+    "start_v": 39.45,
+    "end_v": 40.04,
+    "v_final": 27.3,
+    "max_abs_heading": 10.02
    },
    "attempts": [
     {
@@ -6442,10 +7655,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 7890,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -6486,6 +7727,13 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -6528,6 +7776,34 @@
      "flow_ok": false,
      "id_ok": true,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -6614,6 +7890,20 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": true,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -6678,20 +7968,18 @@
    },
    "flow": {
     "end_state": "unmeasurable",
-    "head_flow": 0.054,
-    "tail_flow": 0.053,
-    "peak_flow": 0.072,
+    "head_flow": 0.085,
+    "tail_flow": 0.018,
+    "peak_flow": 0.113,
     "prompt_video": null
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected a stop, end_v=11.6 final=9.2 mph"
-    ],
-    "start_v": 20.6,
-    "end_v": 11.58,
-    "v_final": 9.25,
-    "max_abs_heading": 0.69
+    "agree": true,
+    "reasons": [],
+    "start_v": 17.48,
+    "end_v": 0.72,
+    "v_final": 0.79,
+    "max_abs_heading": 5.62
    },
    "attempts": [
     {
@@ -6700,10 +7988,38 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": true,
+     "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 9012,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -6889,21 +8205,19 @@
     "steer": false
    },
    "flow": {
-    "end_state": "unmeasurable",
-    "head_flow": 0.229,
-    "tail_flow": 0.118,
-    "peak_flow": 0.426,
-    "prompt_video": null
+    "end_state": "moving",
+    "head_flow": 0.223,
+    "tail_flow": 0.487,
+    "peak_flow": 0.532,
+    "prompt_video": true
    },
    "id": {
-    "agree": false,
-    "reasons": [
-     "expected ~constant speed, end/start velocity=0.27"
-    ],
-    "start_v": 15.03,
-    "end_v": 3.98,
-    "v_final": 2.61,
-    "max_abs_heading": 9.99
+    "agree": true,
+    "reasons": [],
+    "start_v": 14.32,
+    "end_v": 13.06,
+    "v_final": 9.75,
+    "max_abs_heading": 8.19
    },
    "attempts": [
     {
@@ -6912,10 +8226,17 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": true,
+     "id_ok": true,
+     "installed": true
     }
    ],
-   "installed_seed": 1234,
-   "automatic": "invalid",
+   "installed_seed": 5678,
+   "automatic": "valid",
    "human": null,
    "final": null
   },
@@ -6956,6 +8277,34 @@
      "flow_ok": true,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -7000,6 +8349,34 @@
      "flow_ok": null,
      "id_ok": false,
      "installed": true
+    },
+    {
+     "round": 2,
+     "seed": 5678,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 9012,
+     "flow_ok": null,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 3456,
+     "flow_ok": false,
+     "id_ok": null,
+     "installed": false
+    },
+    {
+     "round": 2,
+     "seed": 7890,
+     "flow_ok": null,
+     "id_ok": false,
+     "installed": false
     }
    ],
    "installed_seed": 1234,
@@ -7092,5 +8469,5 @@
    "final": null
   }
  },
- "updated": "2026-09-14T05:27:39Z"
+ "updated": "2026-09-15T21:31:37Z"
 }
