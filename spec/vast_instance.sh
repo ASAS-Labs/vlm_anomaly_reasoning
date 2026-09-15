@@ -79,8 +79,13 @@ cmd_get() {
       stopped)
         _kill_watchdog
         echo "restarting stopped instance $iid" >&2
-        if $VAST start instance "$iid" >/dev/null 2>&1; then
+        local start_out; start_out="$($VAST start instance "$iid" 2>&1)"
+        if ! printf '%s' "$start_out" | grep -qiE "error|fail"; then
           if _wait_running_and_print "$iid"; then return 0; fi
+        fi
+        if printf '%s' "$start_out" | grep -qiE "credit|billing|balance"; then
+          echo "restart failed for billing reasons, keeping instance $iid intact: $start_out" >&2
+          return 1
         fi
         echo "restart failed (GPU likely taken); destroying and creating fresh" >&2
         $VAST destroy instance "$iid" >/dev/null 2>&1 || true
