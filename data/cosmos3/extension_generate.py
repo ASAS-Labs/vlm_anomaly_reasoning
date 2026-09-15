@@ -98,7 +98,8 @@ def cmd_render(args) -> int:
         if rec["accepted"] or any(a["probe_ok"] and a["id_ok"] is None for a in rec["attempts"]):
             continue
         tried = set(t.get("tried_seeds", [])) | {a["seed"] for a in rec["attempts"]}
-        text, n_this = prompt_text(rel), 0
+        text = prompt_text(rel)
+        n_this = sum(1 for a in rec["attempts"] if a["round"] == args.round)  # resumable: cap per round
         for seed in SEEDS:
             if seed in tried or n_this >= args.max_seeds:
                 continue
