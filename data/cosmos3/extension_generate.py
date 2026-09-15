@@ -130,6 +130,19 @@ def to_10fps(src: Path, dst: Path) -> None:
                         "-an", "-c:v", "libx264", "-crf", "12", "-preset", "veryfast", str(dst)], check=True)
 
 
+def pick_candidate(rec: dict):
+    """regen_fix._next_candidate, plus the round-1 rule for moving classes: when the probe
+    cannot judge any candidate (low-texture scene), let the ID cross-check adjudicate the
+    most-moving-looking one instead of leaving the target unscored."""
+    cand = _next_candidate(rec)
+    if cand is None and rec["class"] != "stop":
+        pool = [a for a in rec["attempts"]
+                if a["probe_ok"] is None and a["id_ok"] is None
+                and a["probe"]["end_state"] in ("ambiguous", "unmeasurable")]
+        cand = max(pool, key=lambda a: a["probe"]["tail_flow"]) if pool else None
+    return cand
+
+
 def cmd_stage(args) -> int:
     root, root10 = round_dirs(args.round)
     clips = []
@@ -142,7 +155,7 @@ def cmd_stage(args) -> int:
         for rel, rec in m.items():
             if rec["accepted"]:
                 continue
-            cand = _next_candidate(rec)
+            cand = pick_candidate(rec)
             if cand is None:
                 continue
             cand["staged_round"] = args.round

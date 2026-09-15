@@ -1,0 +1,642 @@
+[
+ {
+  "rel_path": "negative_scenarios/prompt_11.mp4",
+  "k": 11,
+  "taxonomy_id": 29,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_12.mp4",
+  "k": 12,
+  "taxonomy_id": 30,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_14.mp4",
+  "k": 14,
+  "taxonomy_id": 32,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_19.mp4",
+  "k": 19,
+  "taxonomy_id": 38,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_2.mp4",
+  "k": 2,
+  "taxonomy_id": 15,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_26.mp4",
+  "k": 26,
+  "taxonomy_id": 46,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_27.mp4",
+  "k": 27,
+  "taxonomy_id": 47,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_30.mp4",
+  "k": 30,
+  "taxonomy_id": 51,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_33.mp4",
+  "k": 33,
+  "taxonomy_id": 54,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_34.mp4",
+  "k": 34,
+  "taxonomy_id": 55,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_35.mp4",
+  "k": 35,
+  "taxonomy_id": 57,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_36.mp4",
+  "k": 36,
+  "taxonomy_id": 59,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_37.mp4",
+  "k": 37,
+  "taxonomy_id": 60,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_38.mp4",
+  "k": 38,
+  "taxonomy_id": 61,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_39.mp4",
+  "k": 39,
+  "taxonomy_id": 62,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_42.mp4",
+  "k": 42,
+  "taxonomy_id": 66,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_44.mp4",
+  "k": 44,
+  "taxonomy_id": 68,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_45.mp4",
+  "k": 45,
+  "taxonomy_id": 69,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_46.mp4",
+  "k": 46,
+  "taxonomy_id": 70,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_47.mp4",
+  "k": 47,
+  "taxonomy_id": 71,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_52.mp4",
+  "k": 52,
+  "taxonomy_id": 79,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_54.mp4",
+  "k": 54,
+  "taxonomy_id": 81,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_58.mp4",
+  "k": 58,
+  "taxonomy_id": 85,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_6.mp4",
+  "k": 6,
+  "taxonomy_id": 23,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_60.mp4",
+  "k": 60,
+  "taxonomy_id": 87,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_66.mp4",
+  "k": 66,
+  "taxonomy_id": 93,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_67.mp4",
+  "k": 67,
+  "taxonomy_id": 94,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_68.mp4",
+  "k": 68,
+  "taxonomy_id": 95,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_69.mp4",
+  "k": 69,
+  "taxonomy_id": 96,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_71.mp4",
+  "k": 71,
+  "taxonomy_id": 98,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_73.mp4",
+  "k": 73,
+  "taxonomy_id": 101,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_78.mp4",
+  "k": 78,
+  "taxonomy_id": 107,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_79.mp4",
+  "k": 79,
+  "taxonomy_id": 108,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_80.mp4",
+  "k": 80,
+  "taxonomy_id": 109,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "negative_scenarios/prompt_9.mp4",
+  "k": 9,
+  "taxonomy_id": 27,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_1.mp4",
+  "k": 1,
+  "taxonomy_id": 14,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_12.mp4",
+  "k": 12,
+  "taxonomy_id": 30,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_20.mp4",
+  "k": 20,
+  "taxonomy_id": 39,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_23.mp4",
+  "k": 23,
+  "taxonomy_id": 42,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_25.mp4",
+  "k": 25,
+  "taxonomy_id": 44,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_26.mp4",
+  "k": 26,
+  "taxonomy_id": 46,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_28.mp4",
+  "k": 28,
+  "taxonomy_id": 49,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_31.mp4",
+  "k": 31,
+  "taxonomy_id": 52,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_33.mp4",
+  "k": 33,
+  "taxonomy_id": 54,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_34.mp4",
+  "k": 34,
+  "taxonomy_id": 55,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_35.mp4",
+  "k": 35,
+  "taxonomy_id": 57,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_4.mp4",
+  "k": 4,
+  "taxonomy_id": 19,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_41.mp4",
+  "k": 41,
+  "taxonomy_id": 65,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_43.mp4",
+  "k": 43,
+  "taxonomy_id": 67,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_48.mp4",
+  "k": 48,
+  "taxonomy_id": 72,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_49.mp4",
+  "k": 49,
+  "taxonomy_id": 73,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_50.mp4",
+  "k": 50,
+  "taxonomy_id": 74,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_53.mp4",
+  "k": 53,
+  "taxonomy_id": 80,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_54.mp4",
+  "k": 54,
+  "taxonomy_id": 81,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_58.mp4",
+  "k": 58,
+  "taxonomy_id": 85,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_60.mp4",
+  "k": 60,
+  "taxonomy_id": 87,
+  "class": "stop",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_62.mp4",
+  "k": 62,
+  "taxonomy_id": 89,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_63.mp4",
+  "k": 63,
+  "taxonomy_id": 90,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_67.mp4",
+  "k": 67,
+  "taxonomy_id": 94,
+  "class": "decelerate",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_69.mp4",
+  "k": 69,
+  "taxonomy_id": 96,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_77.mp4",
+  "k": 77,
+  "taxonomy_id": 106,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_8.mp4",
+  "k": 8,
+  "taxonomy_id": 25,
+  "class": "maintain",
+  "steer": false,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_81.mp4",
+  "k": 81,
+  "taxonomy_id": 110,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ },
+ {
+  "rel_path": "positive_scenarios/prompt_82.mp4",
+  "k": 82,
+  "taxonomy_id": 111,
+  "class": "decelerate",
+  "steer": true,
+  "tried_seeds": [
+   1234
+  ]
+ }
+]
